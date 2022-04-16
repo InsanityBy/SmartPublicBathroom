@@ -1,0 +1,53 @@
+(ExpressProject "TemperatureSensor"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\ds18b20.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\temperaturesensor.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (GND
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (DS18B20
+      (FullPartName "DS18B20.Normal")
+      (LibraryName
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\1_SIGNALINPUT\TEMPERATURESEMSOR\DS18B20.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\temperaturesensor.dsn")
+      (Path "Design Resources" ".\temperaturesensor.dsn" "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Select "Design Resources" ".\temperaturesensor.dsn" "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 420"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1163 78 537")
+        (Scroll "70 254")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\1_SIGNALINPUT\TEMPERATURESEMSOR\TEMPERATURESENSOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "insan"))

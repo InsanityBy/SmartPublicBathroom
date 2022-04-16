@@ -1,0 +1,165 @@
+(ExpressProject "ShowerTerminal"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\showerterminal.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (Board_sim_option "VHDL_flow")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "FALSE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File
+       "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File
+       "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "TRUE"))
+  (Folder "Outputs"
+    (File ".\showerterminal.bom"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (RESISTOR
+      (FullPartName "RESISTOR.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (GND_SIGNAL
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (TLV2374ID
+      (FullPartName "TLV2374ID.Normal")
+      (LibraryName
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\1_SIGNALINPUT\INFRAREDSENSOR\REFERENCE\UL_TLV2374ID\ORCADCAPTUREXML\TLV2374.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (CON3
+      (FullPartName "CON3.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CAP
+      (FullPartName "CAP.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "insan")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "d:\pku\smartpublicbathroom\0_project\1_showerterminal\showerterminal.dsn")
+      (Path "Design Resources"
+         "d:\pku\smartpublicbathroom\0_project\1_showerterminal\showerterminal.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "d:\pku\smartpublicbathroom\0_project\1_showerterminal\showerterminal.dsn"
+         "SCHEMATIC1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1557 182 637")
+        (Scroll "-241 0")
+        (Zoom "87")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "POWER"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 208 1587 208 667")
+        (Scroll "-171 0")
+        (Zoom "65")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "SIGNALINPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 1379 0 459")
+        (Scroll "-180 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "SIGNALOUTPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 1405 26 485")
+        (Scroll "-180 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "HMI"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 208 1036 208 667")
+        (Scroll "124 273")
+        (Zoom "174")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "COMMUNICATE")))
+  (LastUsedLibraryBrowseDirectory
+     "D:\PKU\SmartPublicBathroom\0_Project\1_ShowerTerminal\1_SignalInput\InfraredSensor\Reference\ul_TLV2374ID\OrcadCaptureXML"))

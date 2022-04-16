@@ -1,0 +1,75 @@
+
+**** 04/13/22 02:21:31 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AF"  [ D:\PKU\SmartPublicBathroom\0_Project\1_ShowerTerminal\1_SignalInput\InfraredSensor\Stimulation\Filter
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AF.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of E:\Cadence\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "E:\Cadence\cds_spb_home\cdssetup\pspTILibDir\LMC7101A.LIB" 
+.lib "E:\Cadence\cds_spb_home\cdssetup\pspTILibDir\SN74CBTLV3253.lib" 
+.lib "E:\Cadence\cds_spb_home\cdssetup\pspTILibDir\lmc7101.lib" 
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10000 1 100
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 N([N01179])
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FILTER&INVERT
+X_U1         N00207 N00129 +5V -5V N00129 LMC7101A
+R_R1         N00222 N00207  9.1k TC=0,0 
+R_R2         N00834 N00222  330k TC=0,0 
+C_C1         N00222 N00129  1u  TC=0,0 
+C_C2         0 N00207  100n  TC=0,0 
+C_C3         N00563 N00571  1u  TC=0,0 
+X_U2         N00647 N00571 +5V -5V N00571 LMC7101A
+R_R3         N00129 N00563  91k TC=0,0 
+C_C4         0 N00647  27k  TC=0,0 
+R_R4         N00563 N00647  9.1k TC=0,0 
+V_V1         N00834 0 DC 0Vdc AC -1Vac 
+V_V2         +5V 0 5Vdc
+V_V3         0 -5V 5Vdc
+X_U3         N01191 N01162 +5V -5V N01179 LMC7101A
+R_R5         N00571 N01162  10k TC=0,0 
+R_R6         N01162 N01179  10k TC=0,0 
+R_R7         N01191 0  5k TC=0,0 
+V_V4         3V3 0 0Vdc
+R_R8         N01397 3V3  1k TC=0,0 
+R_R9         0 N01397  1k TC=0,0 
+D_D1         N01179 N01397 Dbreak 
+
+**** RESUMING AF.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file LMC7101A.ind for library file LMC7101A.LIB.
+
+INFO(ORPSIM-15422): Making new index file LMC7101A.ind for library file LMC7101A.LIB.
+
+Index has 1 entries from 1 file(s).
+
+ERROR(ORPSIM-15108): Subcircuit LMC7101A used by X_U1 is undefined
+
+ERROR(ORPSIM-15108): Subcircuit LMC7101A used by X_U2 is undefined
+
+ERROR(ORPSIM-15108): Subcircuit LMC7101A used by X_U3 is undefined
+
