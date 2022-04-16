@@ -27,4 +27,4 @@
 5. NFC读卡器：NFC_RST，NFC_IRQ，NFC_MISO，NFC_MOSI，NFC_SCK，NFC_NSS
 
 ##通信
-1. ZigBee： ZigBee_RX， ZigBee_TX
+1. ZigBee：ZigBee_RX，ZigBee_TX

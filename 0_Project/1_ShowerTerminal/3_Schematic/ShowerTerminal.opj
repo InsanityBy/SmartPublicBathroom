@@ -91,15 +91,10 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "d:\pku\smartpublicbathroom\0_project\1_showerterminal\showerterminal.dsn")
-      (Path "Design Resources"
-         "d:\pku\smartpublicbathroom\0_project\1_showerterminal\showerterminal.dsn"
-         "SCHEMATIC1")
+      (Path "Design Resources" ".\showerterminal.dsn")
+      (Path "Design Resources" ".\showerterminal.dsn" "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources"
-         "d:\pku\smartpublicbathroom\0_project\1_showerterminal\showerterminal.dsn"
-         "SCHEMATIC1"))
+      (Select "Design Resources" ".\showerterminal.dsn" "SCHEMATIC1" "POWER"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -109,57 +104,13 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 182 1557 182 637")
-        (Scroll "-241 0")
-        (Zoom "87")
+        (Placement "44 0 1 -1 -1 -8 -31 52 1427 52 507")
+        (Scroll "0 584")
+        (Zoom "200")
         (Occurrence "/"))
       (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.DSN")
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\3_SCHEMATIC\SHOWERTERMINAL.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "POWER"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 208 1587 208 667")
-        (Scroll "-171 0")
-        (Zoom "65")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "SIGNALINPUT"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 1379 0 459")
-        (Scroll "-180 0")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "SIGNALOUTPUT"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 26 1405 26 485")
-        (Scroll "-180 0")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "HMI"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 208 1036 208 667")
-        (Scroll "124 273")
-        (Zoom "174")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\SHOWERTERMINAL.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "COMMUNICATE")))
+      (Page "POWER")))
   (LastUsedLibraryBrowseDirectory
      "D:\PKU\SmartPublicBathroom\0_Project\1_ShowerTerminal\1_SignalInput\InfraredSensor\Reference\ul_TLV2374ID\OrcadCaptureXML"))
