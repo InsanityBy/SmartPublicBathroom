@@ -1,0 +1,130 @@
+POWER  Revised: Monday, April 18, 2022
+          Revision: 
+
+Peking University
+
+
+
+
+
+Bill Of Materials          April 18,2022      2:57:02	Page1
+
+Item	Quantity	Reference	Part
+______________________________________________
+
+1	18	C1	0.1u
+		C5	0.1u
+		C8	0.1u
+		C9	0.1u
+		C10	0.1u
+		C11	0.1u
+		C14	0.1u
+		C15	0.1u
+		C16	0.1u
+		C17	0.1u
+		C19	0.1u
+		C21	0.1u
+		C22	0.1u
+		C23	0.1u
+		C24	0.1u
+		C26	0.1u
+		C27	0.1u
+		C30	0.1u
+2	2	C2	220u
+		C6	220u
+3	6	C3	1u
+		C4	1u
+		C12	1u
+		C13	1u
+		C20	1u
+		C25	1u
+4	1	C7	47u
+5	1	C18	10u
+6	2	C28	20p
+		C29	20p
+7	2	C31	15p
+		C32	15p
+8	1	D1	+5V_ON
+9	1	D2	-5V_ON
+10	1	D3	3V3_ON
+11	3	D4	1N4007
+		D5	1N4007
+		D7	1N4007
+12	1	D6	VALVE_ON
+13	1	D8	SPEAKER_ON
+14	1	D9	ZigBee_LINK
+15	1	D10	ZigBee_CMD
+16	4	IR1	DY-IR333C-A
+		IR2	DY-IR333C-A
+		IR3	DY-IR333C-A
+		IR4	DY-IR333C-A
+17	1	IR5	IR-56384
+18	1	J1	RH-30W
+19	1	J2	FlowMeter
+20	1	J3	DS18B20
+21	1	J4	VALVE
+22	1	J5	NFC
+23	1	J6	LCD
+24	1	J7	SWD Port
+25	1	LS1	SPEAKER
+26	1	L1	fcm1608
+27	3	Q1	S8050
+		Q2	S8050
+		Q4	S8050
+28	1	Q3	DY-PT333-3B
+29	1	RL1	973-5VDC-SL-A
+30	10	R1	1k
+		R2	1k
+		R4	1k
+		R5	1k
+		R6	1k
+		R27	1k
+		R30	1k
+		R31	1k
+		R33	1k
+		R34	1k
+31	5	R3	0
+		R37	0
+		R39	0
+		R42	0
+		R43	0
+32	1	R7	1.8k
+33	4	R8	100
+		R10	100
+		R11	100
+		R12	100
+34	2	R9	220
+		R41	220
+35	1	R13	11k
+36	2	R14	100k
+		R40	100k
+37	1	R15	3.9k
+38	8	R16	10k
+		R17	10k
+		R19	10k
+		R25	10k
+		R26	10k
+		R35	10k
+		R36	10k
+		R38	10k
+39	2	R18	620
+		R24	620
+40	1	R20	91k
+41	1	R21	27k
+42	1	R22	330k
+43	1	R23	9.1k
+44	1	R28	8.2k
+45	1	R29	51k
+46	1	R32	330
+47	1	SW1	REPAIR
+48	1	SW2	HELP
+49	1	SW3	ZigBee_RST
+50	1	SW4	ZigBee_WK
+51	1	SW5	MCU_NRST
+52	1	U1	TLV1117LV33_DCY_4
+53	1	U2	TLV2374_D_14
+54	1	U3	WT588F08A-8S
+55	1	U4	A40-C2G4A04S1a
+56	1	U5	STM32F302_303R1
+57	1	Y1	8MHz
+58	1	Y2	32.768kHz
