@@ -1,0 +1,105 @@
+(ExpressProject "Speaker"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\wt588f08a-8s.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\speaker.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (GND
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (HPA00169DGNR
+      (FullPartName "HPA00169DGNR.Normal")
+      (LibraryName
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\4_HUMANMACHINEINTERFACE\SPEAKER\REFERENCE\UL_HPA00169DGNR\ORCADCAPTUREXML\TPA6211A1.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (RESISTOR
+      (FullPartName "RESISTOR.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (WT588F08A-8S
+      (FullPartName "WT588F08A-8S.Normal")
+      (LibraryName
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\4_HUMANMACHINEINTERFACE\SPEAKER\WT588F08A-8S.OLB")
+      (DeviceIndex "0"))
+    (CON6
+      (FullPartName "CON6.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CON8A
+      (FullPartName "CON8A.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (SPEAKER
+      (FullPartName "SPEAKER.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (CON10
+      (FullPartName "CON10.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\speaker.dsn")
+      (Path "Design Resources" ".\speaker.dsn" "SCHEMATIC1")
+      (Path "Design Resources" ".\speaker.dsn" "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library" ".\wt588f08a-8s.olb")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 420"))
+      (Tab 0))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 52 1133 52 507"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\4_HUMANMACHINEINTERFACE\SPEAKER\WT588F08A-8S.OLB")
+      (Package "WT588F08A-8S")
+      (PartType "1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1524 182 641")
+        (Scroll "0 111")
+        (Zoom "174")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\4_HUMANMACHINEINTERFACE\SPEAKER\SPEAKER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "insan")
+  (LastUsedLibraryBrowseDirectory
+     "D:\PKU\SmartPublicBathroom\0_Project\2_ShowerHost\4_HumanMachineInterface\Speaker\Reference\ul_HPA00169DGNR\OrcadCaptureXML"))

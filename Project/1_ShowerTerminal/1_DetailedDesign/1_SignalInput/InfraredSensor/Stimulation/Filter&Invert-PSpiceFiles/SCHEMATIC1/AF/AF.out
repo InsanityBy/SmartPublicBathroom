@@ -1,0 +1,314 @@
+
+**** 04/13/22 02:24:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AF"  [ D:\PKU\SmartPublicBathroom\0_Project\1_ShowerTerminal\1_SignalInput\InfraredSensor\Stimulation\Filter
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AF.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of E:\Cadence\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "E:\Cadence\cds_spb_home\cdssetup\pspTILibDir\LMC7101A.LIB" 
+.lib "E:\Cadence\cds_spb_home\cdssetup\pspTILibDir\SN74CBTLV3253.lib" 
+.lib "E:\Cadence\cds_spb_home\cdssetup\pspTILibDir\lmc7101.lib" 
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10000 1 100
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FILTER&INVERT
+R_R1         N00222 N00207  9.1k TC=0,0 
+R_R2         N00834 N00222  330k TC=0,0 
+C_C1         N00222 N00129  1u  TC=0,0 
+C_C2         0 N00207  100n  TC=0,0 
+C_C3         N00563 N00571  1u  TC=0,0 
+R_R3         N00129 N00563  91k TC=0,0 
+C_C4         0 N00647  100n  TC=0,0 
+R_R4         N00563 N00647  27k TC=0,0 
+V_V1         N00834 0 DC 0Vdc AC -1Vac 
+V_V2         +5V 0 5Vdc
+V_V3         0 -5V 5Vdc
+R_R5         N00571 N01162  10k TC=0,0 
+R_R6         N01162 N01179  10k TC=0,0 
+R_R7         N01191 0  5k TC=0,0 
+V_V4         3V3 0 0Vdc
+R_R8         N01397 3V3  1k TC=0,0 
+R_R9         0 N01397  1k TC=0,0 
+D_D1         N01179 N01397 Dbreak 
+X_U1         N00207 N00129 +5V -5V N00129 LMC7101
+X_U2         N00647 N00571 +5V -5V N00571 LMC7101
+X_U3         N01191 N01162 +5V -5V N01179 LMC7101
+
+**** RESUMING AF.cir ****
+.END
+
+**** 04/13/22 02:24:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AF"  [ D:\PKU\SmartPublicBathroom\0_Project\1_ShowerTerminal\1_SignalInput\InfraredSensor\Stimulation\Filter
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.DA         X_U1.DB         X_U1.DC         X_U1.DX         
+          IS   13.000000E-12   12.000000E-12   10.000000E-12   10.000000E-15 
+
+
+               X_U2.DA         X_U2.DB         X_U2.DC         X_U2.DX         
+          IS   13.000000E-12   12.000000E-12   10.000000E-12   10.000000E-15 
+
+
+               X_U3.DA         X_U3.DB         X_U3.DC         X_U3.DX         
+          IS   13.000000E-12   12.000000E-12   10.000000E-12   10.000000E-15 
+
+
+**** 04/13/22 02:24:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AF"  [ D:\PKU\SmartPublicBathroom\0_Project\1_ShowerTerminal\1_SignalInput\InfraredSensor\Stimulation\Filter
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.MOSFET     X_U2.MOSFET     X_U3.MOSFET     
+               PMOS            PMOS            PMOS            
+       LEVEL    1               1               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    0               0               0            
+          KP    1.842000E-03    1.842000E-03    1.842000E-03 
+       GAMMA    0               0               0            
+         PHI     .6              .6              .6          
+      LAMBDA    0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0            
+          PB     .8              .8              .8          
+        PBSW     .8              .8              .8          
+          CJ    0               0               0            
+        CJSW    0               0               0            
+        CGSO    0               0               0            
+        CGDO    0               0               0            
+        CGBO    0               0               0            
+         TOX    0               0               0            
+          XJ    0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1            
+         VFB    0               0               0            
+        LETA    0               0               0            
+        WETA    0               0               0            
+          U0    0               0               0            
+        TEMP    0               0               0            
+         VDD    5               5               5            
+       XPART    0               0               0            
+
+
+**** 04/13/22 02:24:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AF"  [ D:\PKU\SmartPublicBathroom\0_Project\1_ShowerTerminal\1_SignalInput\InfraredSensor\Stimulation\Filter
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  +5V)    5.0000  (  -5V)   -5.0000  (  3V3)    0.0000  (N00129)     .0040     
+
+(N00207) 1.017E-06 (N00222) 990.0E-09 (N00563)     .0040 (N00571)     .0080     
+
+(N00647)     .0040 (N00834)    0.0000 (N01162)     .0040 (N01179)-1.573E-06     
+
+(N01191) 15.00E-09 (N01397)-1.091E-15 (X_U1.4)     .1001 (X_U1.5)   -4.9520     
+
+(X_U1.6)   -4.9520 (X_U1.7)     .0040 (X_U1.8)    3.4400 (X_U1.9)-8.662E-09     
+
+(X_U2.4)     .1041 (X_U2.5)   -4.9520 (X_U2.6)   -4.9520 (X_U2.7)     .0080     
+
+(X_U2.8)    3.4400 (X_U2.9)-188.3E-09 (X_U3.4)     .1001 (X_U3.5)   -4.9520     
+
+(X_U3.6)   -4.9520 (X_U3.7)     .0040 (X_U3.8)    3.4400 (X_U3.9) 171.0E-09     
+
+(X_U1.10)   -3.4400                   (X_U1.15)-8.662E-09                       
+
+(X_U1.16) 112.5E-09                   (X_U1.17)    0.0000                       
+
+(X_U1.18)-8.662E-09                   (X_U1.19)    0.0000                       
+
+(X_U1.29)-4.925E-06                   (X_U1.30)     .7702                       
+
+(X_U1.31)    -.7698                   (X_U1.35)    5.0001                       
+
+(X_U1.36)    5.0000                   (X_U1.37)    0.0000                       
+
+(X_U1.38)    0.0000                   (X_U1.39) 196.1E-06                       
+
+(X_U1.40) 196.1E-06                   (X_U1.49)    0.0000                       
+
+(X_U1.96)   -5.0000                   (X_U1.97)    5.0000                       
+
+(X_U1.98)    0.0000                   (X_U2.10)   -3.4400                       
+
+(X_U2.15)-188.3E-09                   (X_U2.16) 337.5E-09                       
+
+(X_U2.17)    0.0000                   (X_U2.18)-188.3E-09                       
+
+(X_U2.19)    0.0000                   (X_U2.29)-107.0E-06                       
+
+(X_U2.30)     .7743                   (X_U2.31)    -.7657                       
+
+(X_U2.35)    5.0023                   (X_U2.36)    5.0000                       
+
+(X_U2.37)    0.0000                   (X_U2.38)    0.0000                       
+
+(X_U2.39)     .0043                   (X_U2.40)     .0043                       
+
+(X_U2.49)    0.0000                   (X_U2.96)   -5.0000                       
+
+(X_U2.97)    5.0000                   (X_U2.98)    0.0000                       
+
+(X_U3.10)   -3.4400                   (X_U3.15) 171.0E-09                       
+
+(X_U3.16) 112.5E-09                   (X_U3.17)    0.0000                       
+
+(X_U3.18) 171.0E-09                   (X_U3.19)    0.0000                       
+
+(X_U3.29) 97.24E-06                   (X_U3.30)     .7661                       
+
+(X_U3.31)    -.7739                   (X_U3.35)    4.9979                       
+
+(X_U3.36)    5.0000                   (X_U3.37)    0.0000                       
+
+(X_U3.38)    0.0000                   (X_U3.39)    -.0039                       
+
+(X_U3.40)    -.0039                   (X_U3.49)    0.0000                       
+
+(X_U3.96)   -5.0000                   (X_U3.97)    5.0000                       
+
+(X_U3.98)    0.0000                   (X_U1.115) 196.1E-06                      
+
+(X_U1.120)    2.6040                  (X_U1.121)   -2.5960                      
+
+(X_U1.123) 196.1E-06                  (X_U1.124)     .0276                      
+
+(X_U1.125)    -.0196                  (X_U1.126)     .6340                      
+
+(X_U1.127)    -.6260                  (X_U1.129)    2.6040                      
+
+(X_U1.130)   -2.5960                  (X_U2.115)     .0043                      
+
+(X_U2.120)    2.6080                  (X_U2.121)   -2.5920                      
+
+(X_U2.123)     .0043                  (X_U2.124)     .0316                      
+
+(X_U2.125)    -.0156                  (X_U2.126)     .6380                      
+
+(X_U2.127)    -.6220                  (X_U2.129)    2.6080                      
+
+(X_U2.130)   -2.5920                  (X_U3.115)    -.0039                      
+
+(X_U3.120)    2.6000                  (X_U3.121)   -2.6000                      
+
+(X_U3.123)    -.0039                  (X_U3.124)     .0236                      
+
+(X_U3.125)    -.0236                  (X_U3.126)     .6300                      
+
+(X_U3.127)    -.6300                  (X_U3.129)    2.6000                      
+
+(X_U3.130)   -2.6000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         3.000E-12
+    V_V2        -1.688E-03
+    V_V3        -1.688E-03
+    V_V4        -1.091E-18
+    X_U1.V2      3.450E-12
+    X_U1.V3      3.450E-12
+    X_U1.VA7    -1.440E-16
+    X_U1.VA8     3.922E-16
+    X_U1.VN7    -1.522E-04
+    X_U1.VN6    -1.522E-04
+    X_U1.VN4    -2.614E-12
+    X_U1.VN5    -2.606E-12
+    X_U1.V4      4.240E-12
+    X_U1.V5      4.240E-12
+    X_U2.V2      3.450E-12
+    X_U2.V3      3.450E-12
+    X_U2.VA7    -3.094E-15
+    X_U2.VA8     8.523E-15
+    X_U2.VN7    -1.524E-04
+    X_U2.VN6    -1.520E-04
+    X_U2.VN4    -2.614E-12
+    X_U2.VN5    -2.606E-12
+    X_U2.V4      4.236E-12
+    X_U2.V5      4.244E-12
+    X_U3.V2      3.450E-12
+    X_U3.V3      3.450E-12
+    X_U3.VA7     2.877E-15
+    X_U3.VA8    -7.743E-15
+    X_U3.VN7    -1.520E-04
+    X_U3.VN6    -1.524E-04
+    X_U3.VN4    -2.614E-12
+    X_U3.VN5    -2.606E-12
+    X_U3.V4      4.244E-12
+    X_U3.V5      4.236E-12
+
+    TOTAL POWER DISSIPATION   1.75E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/13/22 02:24:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AF"  [ D:\PKU\SmartPublicBathroom\0_Project\1_ShowerTerminal\1_SignalInput\InfraredSensor\Stimulation\Filter
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       13.23
+  Total job time (using Solver 1)   =        2.22
+

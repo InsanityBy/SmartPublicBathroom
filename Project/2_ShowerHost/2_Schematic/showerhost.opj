@@ -1,0 +1,116 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File
+         "E:\Cadence\Cadence\SPB_17.2\tools\capture\library\MyTitleBlock.OLB"
+        (Type "Schematic Library")))
+    (File ".\showerhost.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector)
+  (MPSSessionName "insan")
+  (LastUsedLibraryBrowseDirectory
+     "E:\Cadence\Cadence\SPB_17.2\tools\capture\library")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "d:\pku\smartpublicbathroom\0_project\2_showerhost\2_schematic\showerhost.dsn")
+      (Path "Design Resources"
+         "d:\pku\smartpublicbathroom\0_project\2_showerhost\2_schematic\showerhost.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "E:\Cadence\Cadence\SPB_17.2\tools\capture\library\MyTitleBlock.OLB")
+      (Select "Design Resources"
+         "d:\pku\smartpublicbathroom\0_project\2_showerhost\2_schematic\showerhost.dsn"
+         "SCHEMATIC1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
+      (Tab 0))
+    (Doc
+      (Type "COrNetSymbolDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 1379 0 459")
+        (Scroll "0 0")
+        (Zoom "100"))
+      (Path
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\MYTITLEBLOCK.OLB")
+      (Symbol "MyTitleBlock"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1688 52 511")
+        (Scroll "-300 0")
+        (Zoom "65")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\2_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "COMMUNICATE"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1714 78 537")
+        (Scroll "-300 0")
+        (Zoom "65")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\2_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "HMI"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1740 104 563")
+        (Scroll "-300 0")
+        (Zoom "65")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\2_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "MCU"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1509 130 589")
+        (Scroll "-171 0")
+        (Zoom "65")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\2_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "POWER"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1535 156 615")
+        (Scroll "-171 0")
+        (Zoom "65")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\2_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "SIGNALINPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1561 182 641")
+        (Scroll "-141 0")
+        (Zoom "69")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\2_SHOWERHOST\2_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "SIGNALOUTPUT"))))

@@ -1,0 +1,93 @@
+(ExpressProject "InfraredSensor"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\ir-56384.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\infraredsensor.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (VCC_BAR
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (LMC7101AIM5
+      (FullPartName "LMC7101AIM5.Normal")
+      (LibraryName
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\1_SIGNALINPUT\INFRAREDSENSOR\REFERENCE\UL_LMC7101AIM5\ORCADCAPTUREXML\LMC7101.OLB")
+      (DeviceIndex "0"))
+    (RESISTOR
+      (FullPartName "RESISTOR.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (OP-07
+      (FullPartName "OP-07.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    ("PHOTO NPN"
+      (FullPartName "PHOTO NPN.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (IRM-56384
+      (FullPartName "IRM-56384.Normal")
+      (LibraryName
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\1_SIGNALINPUT\INFRAREDSENSOR\IR-56384.OLB")
+      (DeviceIndex "0"))
+    (BPW36/TO
+      (FullPartName "BPW36/TO.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\infraredsensor.dsn")
+      (Path "Design Resources" ".\infraredsensor.dsn" "SCHEMATIC1")
+      (Path "Design Resources" ".\infraredsensor.dsn" "Design Cache")
+      (Path "Design Resources" "Library")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 104 1818 104 384")
+        (Scroll "-8 -2")
+        (Zoom "65")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\0_PROJECT\1_SHOWERTERMINAL\1_SIGNALINPUT\INFRAREDSENSOR\INFRAREDSENSOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "insan")
+  (LastUsedLibraryBrowseDirectory
+     "D:\PKU\SmartPublicBathroom\0_Project\1_ShowerTerminal\1_SignalInput\InfraredSensor\Reference\ul_LMC7101AIM5\OrcadCaptureXML"))

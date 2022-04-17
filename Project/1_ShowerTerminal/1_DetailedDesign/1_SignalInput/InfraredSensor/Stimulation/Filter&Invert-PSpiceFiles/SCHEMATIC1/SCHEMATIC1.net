@@ -1,0 +1,22 @@
+* source FILTER&INVERT
+R_R1         N00222 N00207  9.1k TC=0,0 
+R_R2         N00834 N00222  330k TC=0,0 
+C_C1         N00222 N00129  1u  TC=0,0 
+C_C2         0 N00207  100n  TC=0,0 
+C_C3         N00563 N00571  1u  TC=0,0 
+R_R3         N00129 N00563  91k TC=0,0 
+C_C4         0 N00647  100n  TC=0,0 
+R_R4         N00563 N00647  27k TC=0,0 
+V_V2         +5V 0 5Vdc
+V_V3         0 -5V 5Vdc
+R_R5         N00571 N01162  10k TC=0,0 
+R_R6         N01162 N01179  10k TC=0,0 
+R_R7         N01191 0  5k TC=0,0 
+V_V4         3V3 0 3.3Vdc
+D_D1         N01179 3V3 Dbreak 
+X_U1         N00207 N00129 +5V -5V N00129 LMC7101
+X_U2         N00647 N00571 +5V -5V N00571 LMC7101
+X_U3         N01191 N01162 +5V -5V N01179 LMC7101
+V_V5         N00834 0  
++SIN 0 5 5 0 0 0
+D_D2         0 N01179 Dbreak 
