@@ -60,11 +60,14 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" ".\showerterminal.dsn")
-      (Path "Design Resources" ".\showerterminal.dsn" "SCHEMATIC1")
+      (Path "Design Resources"
+         "d:\pku\smartpublicbathroom\project\1_showerterminal\hardware\1_schematic\showerterminal.dsn")
+      (Path "Design Resources"
+         "d:\pku\smartpublicbathroom\project\1_showerterminal\hardware\1_schematic\showerterminal.dsn"
+         "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "Outputs")
-      (Select "Design Resources" ".\showerterminal.dsn" "SCHEMATIC1"))
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -130,8 +133,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 130 1219 130 589")
-        (Scroll "6621 4364")
-        (Zoom "520")
+        (Scroll "-267 -2")
+        (Zoom "65")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
