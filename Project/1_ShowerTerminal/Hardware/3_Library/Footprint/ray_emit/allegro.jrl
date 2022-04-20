@@ -1,0 +1,16 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 19:27:31 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=18948 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\ray_emit\led-th_bd5_9-p2_54-fd.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "led-th_bd5_9-p2_54-fd"
+\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/ray_emit/led-th_bd5_9-p2_54-fd.dra
+\i (00:00:05) trapsize 364
+\i (00:00:05) trapsize 371
+\i (00:00:05) trapsize 364
+\i (00:00:05) trapsize 372
+\i (00:00:05) generaledit 
+\i (00:00:08) exit 
+\t (00:00:08)     Journal end - Mon Apr 18 19:27:37 2022

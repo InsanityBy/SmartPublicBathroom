@@ -1,0 +1,61 @@
+\t (00:00:06) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:06)     Journal start - Mon Apr 18 18:32:24 2022
+\t (00:00:06)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=2540 CPUs=16
+\t (00:00:06) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\红外接收头\opto-th_irm-56384.dra
+\t (00:00:06) 
+   (00:00:06) Loading axlcore.cxt 
+\t (00:00:08) Opening existing design...
+\i (00:00:08) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "opto-th_irm-56384"
+\d (00:00:08) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/红外接收头/opto-th_irm-56384.dra
+\i (00:00:09) trapsize 2109
+\i (00:00:09) trapsize 2151
+\i (00:00:09) trapsize 2109
+\i (00:00:09) trapsize 2849
+\i (00:00:09) trapsize 2786
+\i (00:00:09) generaledit 
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in 395.60 267.45
+\i (00:00:10) trapsize 1393
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in 384.45 267.45
+\i (00:00:10) trapsize 696
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in -94.72 86.37
+\i (00:00:10) trapsize 348
+\i (00:00:12) pick grid 57.81 130.25
+\t (00:00:12) last pick:  100.00 100.00
+\i (00:00:13) pick grid 48.06 126.07
+\t (00:00:13) last pick:  0.00 100.00
+\i (00:00:19) copy 
+\i (00:00:19) paste 
+\t (00:00:19) last pick:  0.00 100.00
+\i (00:00:24) undo 
+\i (00:00:24) trapsize 348
+\i (00:00:24) generaledit 
+\i (00:00:26) pick grid -4.87 139.30
+\t (00:00:26) last pick:  0.00 100.00
+\i (00:00:27) delete 
+\i (00:00:27) generaledit 
+\i (00:00:28) pick grid 327.35 18.81
+\t (00:00:28) last pick:  300.00 0.00
+\i (00:00:29) delete 
+\i (00:00:29) generaledit 
+\i (00:00:31) save 
+\i (00:00:32) fillin yes 
+\t (00:00:32) Symbol 'opto-th_irm-56384.psm' created.
+\i (00:00:32) generaledit 
+\i (00:00:40) drag_start grid 59.90 64.78
+\i (00:00:40) move 
+\t (00:00:40) last pick:  -9.12 37.32
+\t (00:00:40) Pick new location for the element(s).
+\i (00:00:44) drag_stop grid 192.24 2.09
+\i (00:00:44) generaledit 
+\i (00:00:48) save 
+\i (00:00:49) fillin yes 
+\t (00:00:50) Symbol 'opto-th_irm-56384.psm' created.
+\i (00:00:50) generaledit 
+\i (00:00:50) exit 
+\t (00:00:51)     Journal end - Mon Apr 18 18:33:08 2022

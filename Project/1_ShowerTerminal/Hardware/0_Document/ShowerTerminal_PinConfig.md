@@ -4,6 +4,7 @@
 |版本|日期|说明|作者|  
 |----|----|----|----|  
 |V1.0|2022年4月16日|创建淋浴器终端引脚配置|马博阳|  
+|V1.1|2022年4月20日|修改部分引脚名|马博阳|  
 
 ## 电源  
 1. +5V电源：+5V  
@@ -29,4 +30,4 @@
 5. NFC读卡器：NFC_RST，NFC_IRQ，NFC_MISO，NFC_MOSI，NFC_SCK，NFC_NSS  
 
 ## 通信  
-1. ZigBee：ZigBee_RX，ZigBee_TX
+1. ZigBee：ZigBee_RX，ZigBee_TX  

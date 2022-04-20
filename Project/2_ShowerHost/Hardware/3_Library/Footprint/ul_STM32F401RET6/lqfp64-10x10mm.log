@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : LQFP64-10x10mm.dra                            )
+(    Software Version : 17.4S024                                      )
+(    Date/Time        : Tue Apr 19 00:20:52 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/ul_STM32F401RET6
+    Name      = lqfp64-10x10mm.psm
+    User      = Jessi_10
+    Machine   = LAPTOP-M2SH2ORP
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

@@ -1,0 +1,113 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 20:03:09 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=3628 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\r0805\r0805.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged r0805
+\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/r0805/r0805.dra
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2151
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2849
+\i (00:00:05) trapsize 2786
+\i (00:00:05) generaledit 
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in -44.57 256.31
+\i (00:00:07) trapsize 1393
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in -36.21 242.38
+\i (00:00:07) trapsize 696
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 43.20 30.65
+\i (00:00:08) trapsize 348
+\i (00:00:09) pick grid 83.59 25.08
+\t (00:00:09) last pick:  100.00 0.00
+\i (00:00:11) pick grid 106.58 16.72
+\t (00:00:11) last pick:  100.00 0.00
+\i (00:00:12) delete 
+\i (00:00:12) generaledit 
+\i (00:00:13) pick grid 76.63 121.89
+\t (00:00:13) last pick:  100.00 100.00
+\i (00:00:15) delete 
+\i (00:00:15) generaledit 
+\i (00:00:17) drag_start grid 29.96 64.08
+\i (00:00:17) move 
+\t (00:00:17) last pick:  0.00 27.50
+\t (00:00:17) Pick new location for the element(s).
+\i (00:00:18) drag_stop grid 95.43 31.35
+\i (00:00:18) generaledit 
+\i (00:00:18) prepopup 121.90 25.08
+\i (00:00:20) pick grid 128.86 36.92
+\t (00:00:20) last pick:  100.00 0.00
+\i (00:00:21) prepopup 114.24 34.13
+\i (00:00:26) pop dyn_option_select 'Change Text block to@:@55 (15.00,16.10)' 
+\i (00:00:26) text block 
+\t (00:00:26) No DRC errors detected.
+\t (00:00:26) Changed 1 items out of 1 items found.
+\i (00:00:26) generaledit 
+\i (00:00:27) prepopup 110.76 9.06
+\i (00:00:33) pop dyn_option_select 'Change Text block to@:@14 (167.00,225.00)' 
+\i (00:00:33) text block 
+\t (00:00:33) No DRC errors detected.
+\t (00:00:33) Changed 1 items out of 1 items found.
+\i (00:00:33) generaledit 
+\i (00:00:34) prepopup 196.42 114.23
+\i (00:00:40) pop dyn_option_select 'Change Text block to@:@1 (16.00,25.00)' 
+\i (00:00:40) text block 
+\t (00:00:40) No DRC errors detected.
+\t (00:00:40) Changed 1 items out of 1 items found.
+\i (00:00:40) generaledit 
+\i (00:00:41) prepopup 117.72 14.63
+\i (00:00:46) pop dyn_option_select 'Change Text block to@:@2 (36.00,45.00)' 
+\i (00:00:46) text block 
+\t (00:00:46) No DRC errors detected.
+\t (00:00:46) Changed 1 items out of 1 items found.
+\i (00:00:46) generaledit 
+\i (00:00:47) drag_start grid 117.02 27.87
+\i (00:00:47) move 
+\t (00:00:47) last pick:  100.00 0.00
+\t (00:00:47) Pick new location for the element(s).
+\i (00:00:48) drag_stop grid 117.72 15.33
+\i (00:00:48) generaledit 
+\i (00:00:48) prepopup 123.99 24.38
+\i (00:00:50) pop dyn_option_select '@:@Text edit' 
+\i (00:00:50) text edit 
+\i (00:00:54) setwindow form.textedit
+\i (00:00:54) FORM textedit str R 
+\i (00:00:54) FORM textedit done  
+\i (00:00:54) setwindow pcb
+\i (00:00:54) pick 0.00 0.00
+\t (00:00:54) Pick text to edit.
+\i (00:00:54) setwindow pcb
+\i (00:00:54) generaledit 
+\i (00:00:56) save 
+\i (00:00:57) fillin yes 
+\t (00:00:58) Symbol 'r0805.psm' created.
+\i (00:00:58) generaledit 
+\i (00:00:59) pick grid 229.16 226.36
+\t (00:00:59) last pick:  200.00 200.00
+\i (00:01:00) prepopup 113.54 18.81
+\i (00:01:02) pop dyn_option_select 'Change Text block to@:@1 (16.00,25.00)' 
+\i (00:01:02) text block 
+\t (00:01:02) No DRC errors detected.
+\t (00:01:02) Changed 1 items out of 1 items found.
+\i (00:01:02) generaledit 
+\i (00:01:04) prepopup 107.27 7.67
+\i (00:01:11) pop dyn_option_select 'Change Text block to@:@3 (38.00,50.00)' 
+\i (00:01:11) text block 
+\t (00:01:11) No DRC errors detected.
+\t (00:01:11) Changed 1 items out of 1 items found.
+\i (00:01:11) generaledit 
+\i (00:01:12) pick grid 304.38 109.35
+\t (00:01:12) last pick:  300.00 100.00
+\i (00:01:14) save 
+\i (00:01:15) fillin yes 
+\t (00:01:16) Symbol 'r0805.psm' created.
+\i (00:01:16) generaledit 
+\i (00:01:17) exit 
+\t (00:01:18)     Journal end - Mon Apr 18 20:04:25 2022

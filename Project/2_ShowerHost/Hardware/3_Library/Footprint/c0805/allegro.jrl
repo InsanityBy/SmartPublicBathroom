@@ -1,0 +1,83 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 20:00:45 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=4296 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\c0805\c0805.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged c0805
+\d (00:00:05) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/c0805/c0805.dra
+\i (00:00:05) trapsize 364
+\i (00:00:05) trapsize 371
+\i (00:00:05) trapsize 364
+\i (00:00:05) trapsize 372
+\i (00:00:05) generaledit 
+\i (00:00:09) drag_start grid 110.68 4.70
+\i (00:00:09) move 
+\t (00:00:09) last pick:  100.00 0.00
+\t (00:00:09) Pick new location for the element(s).
+\i (00:00:13) drag_stop grid 103.98 -7.21
+\i (00:00:13) generaledit 
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out 1.97 169.24
+\i (00:00:22) trapsize 745
+\i (00:00:24) zoom in 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom in 27.29 9.91
+\i (00:00:24) trapsize 372
+\i (00:00:24) zoom in 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom in 27.29 9.92
+\i (00:00:24) trapsize 186
+\i (00:00:26) zoom in 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom in 99.88 10.29
+\i (00:00:26) trapsize 93
+\i (00:00:27) drag_start grid 101.19 13.65
+\i (00:00:27) move 
+\t (00:00:27) last pick:  100.00 0.00
+\t (00:00:27) Pick new location for the element(s).
+\i (00:00:31) drag_stop grid 80.90 12.34
+\i (00:00:31) generaledit 
+\i (00:00:31) pick grid -19.61 66.51
+\t (00:00:31) last pick:  0.00 100.00
+\i (00:00:38) property edit 
+\t (00:00:38) Adjust find filter then select an element or group of elements.
+\i (00:00:41) property edit 
+\t (00:00:41) Adjust find filter then select an element or group of elements.
+\i (00:00:45) toolswap 
+\i (00:00:47) fillin menu_cancel
+\i (00:00:47) generaledit 
+\i (00:00:49) file_property 
+\i (00:00:49) generaledit 
+\i (00:00:52) setwindow form.fileprop
+\i (00:00:52) FORM fileprop tiering  
+\i (00:00:53) FORM fileprop locking  
+\i (00:00:53) FORM fileprop cancel  
+\i (00:01:47) setwindow pcb
+\i (00:01:47) file_property 
+\i (00:01:47) generaledit 
+\i (00:01:51) setwindow form.fileprop
+\i (00:01:51) FORM fileprop tiering  
+\i (00:01:53) FORM fileprop cancel  
+\i (00:01:55) setwindow pcb
+\i (00:01:55) drag_start grid 106.40 20.35
+\i (00:01:55) move 
+\t (00:01:55) last pick:  100.00 0.00
+\t (00:01:55) Pick new location for the element(s).
+\i (00:02:01) drag_stop grid -4.53 16.07
+\i (00:02:01) generaledit 
+\i (00:02:06) drag_start grid -0.25 14.21
+\i (00:02:06) move 
+\t (00:02:06) last pick:  0.00 0.00
+\t (00:02:06) Pick new location for the element(s).
+\i (00:02:07) drag_stop grid 69.55 12.90
+\i (00:02:07) generaledit 
+\i (00:02:08) pick grid 92.07 63.16
+\t (00:02:08) last pick:  100.00 100.00
+\i (00:02:09) exit 
+\e (00:02:09) Do you want to save the changes you made to c0805.dra?
+\i (00:02:11) fillin yes 
+\t (00:02:11) Symbol 'c0805.psm' created.
+\t (00:02:11)     Journal end - Mon Apr 18 20:02:54 2022

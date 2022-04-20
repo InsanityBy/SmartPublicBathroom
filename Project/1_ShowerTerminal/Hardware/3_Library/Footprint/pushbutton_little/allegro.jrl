@@ -1,0 +1,43 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 21:55:04 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=18212 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\pushbutton_little\sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2"
+\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/pushbutton_little/sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2.dra
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2151
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2849
+\i (00:00:05) trapsize 2786
+\i (00:00:05) generaledit 
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 27.86 217.30
+\i (00:00:06) trapsize 1393
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 27.86 217.30
+\i (00:00:06) trapsize 696
+\i (00:00:07) pick grid 119.80 171.34
+\t (00:00:07) last pick:  100.00 200.00
+\i (00:00:09) delete 
+\i (00:00:09) generaledit 
+\i (00:00:09) pick grid 293.92 16.72
+\t (00:00:09) last pick:  300.00 0.00
+\i (00:00:11) delete 
+\i (00:00:11) generaledit 
+\i (00:00:12) drag_start grid 43.19 119.80
+\i (00:00:12) move 
+\t (00:00:12) last pick:  0.00 97.50
+\t (00:00:12) Pick new location for the element(s).
+\i (00:00:12) drag_stop grid 203.38 107.26
+\i (00:00:12) generaledit 
+\i (00:00:14) save 
+\i (00:00:16) fillin yes 
+\t (00:00:16) Symbol 'sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2.psm' created.
+\i (00:00:16) generaledit 
+\i (00:00:19) exit 
+\t (00:00:19)     Journal end - Mon Apr 18 21:55:21 2022

@@ -1,0 +1,43 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 21:34:22 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=1548 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\2_hole_5mm\conn-th_p5_00_kf127-5_0-2p.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "conn-th_p5_00_kf127-5_0-2p"
+\d (00:00:05) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/2_hole_5mm/conn-th_p5_00_kf127-5_0-2p.dra
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2151
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2849
+\i (00:00:05) trapsize 2786
+\i (00:00:05) generaledit 
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 345.45 -11.14
+\i (00:00:06) trapsize 1393
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 339.88 -5.57
+\i (00:00:06) trapsize 696
+\i (00:00:07) pick grid 390.04 247.95
+\t (00:00:07) last pick:  400.00 200.00
+\i (00:00:08) delete 
+\i (00:00:08) generaledit 
+\i (00:00:09) pick grid 323.17 22.29
+\t (00:00:09) last pick:  300.00 0.00
+\i (00:00:10) delete 
+\i (00:00:10) generaledit 
+\i (00:00:11) drag_start grid 4.18 197.80
+\i (00:00:11) move 
+\t (00:00:11) last pick:  -21.58 157.50
+\t (00:00:11) Pick new location for the element(s).
+\i (00:00:12) drag_stop grid 238.20 174.12
+\i (00:00:12) generaledit 
+\i (00:00:13) save 
+\i (00:00:14) fillin yes 
+\t (00:00:15) Symbol 'conn-th_p5_00_kf127-5_0-2p.psm' created.
+\i (00:00:15) generaledit 
+\i (00:00:16) exit 
+\t (00:00:16)     Journal end - Mon Apr 18 21:34:36 2022

@@ -1,0 +1,93 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 19:27:44 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=17700 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\ray_receive\opto-th_irm-56384.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "opto-th_irm-56384"
+\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/ray_receive/opto-th_irm-56384.dra
+\i (00:00:05) trapsize 348
+\i (00:00:05) trapsize 355
+\i (00:00:05) trapsize 348
+\i (00:00:05) trapsize 356
+\i (00:00:05) generaledit 
+\i (00:00:08) pick grid 247.89 23.84
+\t (00:00:08) last pick:  200.00 0.00
+\i (00:00:09) prepopup 247.89 23.84
+\i (00:00:12) pop dyn_option_select 'Change Text block to@:@60 (15.00,16.10)' 
+\i (00:00:12) text block 
+\t (00:00:12) No DRC errors detected.
+\t (00:00:12) Changed 1 items out of 1 items found.
+\i (00:00:12) generaledit 
+\i (00:00:13) prepopup 230.09 14.58
+\i (00:00:16) pop dyn_option_select 'Change Text block to@:@55 (15.00,16.10)' 
+\i (00:00:16) text block 
+\t (00:00:16) No DRC errors detected.
+\t (00:00:16) Changed 1 items out of 1 items found.
+\i (00:00:16) generaledit 
+\i (00:00:17) prepopup 229.38 9.60
+\i (00:00:25) pop dyn_option_select 'Change Text block to@:@50 (15.00,16.10)' 
+\i (00:00:25) text block 
+\t (00:00:25) No DRC errors detected.
+\t (00:00:25) Changed 1 items out of 1 items found.
+\i (00:00:25) generaledit 
+\i (00:00:26) prepopup 230.09 8.88
+\i (00:00:30) pop dyn_option_select 'Change Text block to@:@45 (15.00,16.10)' 
+\i (00:00:30) text block 
+\t (00:00:30) No DRC errors detected.
+\t (00:00:30) Changed 1 items out of 1 items found.
+\i (00:00:30) generaledit 
+\i (00:00:31) prepopup 218.69 8.88
+\i (00:00:33) pop dyn_option_select 'Change Text block to@:@40 (15.00,16.10)' 
+\i (00:00:33) text block 
+\t (00:00:33) No DRC errors detected.
+\t (00:00:33) Changed 1 items out of 1 items found.
+\i (00:00:33) generaledit 
+\i (00:00:34) prepopup 218.69 12.44
+\i (00:00:38) pop dyn_option_select 'Change Text block to@:@17 (15.00,16.10)' 
+\i (00:00:38) text block 
+\t (00:00:38) No DRC errors detected.
+\t (00:00:38) Changed 1 items out of 1 items found.
+\i (00:00:38) generaledit 
+\i (00:00:40) prepopup 229.38 13.16
+\i (00:00:45) pop dyn_option_select 'Change Text block to@:@60 (15.00,16.10)' 
+\i (00:00:45) text block 
+\t (00:00:46) No DRC errors detected.
+\t (00:00:46) Changed 1 items out of 1 items found.
+\i (00:00:46) generaledit 
+\i (00:00:46) prepopup 229.38 13.87
+\i (00:00:51) pop dyn_option_select 'Change to layer@:@SILKSCREEN_TOP' 
+\i (00:00:51) change layer 
+\w (00:00:51) WARNING(SPMHGE-554): Text already matches option panel settings.
+\i (00:00:51) generaledit 
+\i (00:00:52) prepopup 228.66 9.60
+\i (00:00:54) pop dyn_option_select '@:@Text edit' 
+\i (00:00:54) text edit 
+\i (00:01:12) setwindow form.textedit
+\i (00:01:12) FORM textedit str ray_rece 
+\i (00:01:12) FORM textedit done  
+\i (00:01:12) setwindow pcb
+\i (00:01:12) pick 0.00 0.00
+\t (00:01:12) Pick text to edit.
+\i (00:01:12) setwindow pcb
+\i (00:01:12) generaledit 
+\i (00:01:20) prepopup 321.95 12.44
+\i (00:01:23) pop dyn_option_select '@:@Text edit' 
+\i (00:01:23) text edit 
+\i (00:01:28) setwindow form.textedit
+\i (00:01:28) FORM textedit str RAY_RECEive 
+\i (00:01:28) FORM textedit done  
+\i (00:01:28) setwindow pcb
+\i (00:01:28) pick 0.00 0.00
+\t (00:01:28) Pick text to edit.
+\i (00:01:28) setwindow pcb
+\i (00:01:28) generaledit 
+\i (00:01:29) pick grid 255.72 77.96
+\t (00:01:29) last pick:  300.00 100.00
+\i (00:01:34) save 
+\i (00:01:35) fillin yes 
+\t (00:01:35) Symbol 'opto-th_irm-56384.psm' created.
+\i (00:01:36) generaledit 
+\i (00:01:40) exit 
+\t (00:01:40)     Journal end - Mon Apr 18 19:29:23 2022

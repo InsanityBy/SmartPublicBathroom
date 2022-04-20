@@ -1,0 +1,439 @@
+Date and Time : 04/19/22 17:58:11
+
+--------------------------------------------------
+Checking Schematic: SCHEMATIC1
+--------------------------------------------------
+Checking Electrical Rules 
+WARNING(ORCAP-1608): Net has no driving source ZigBee_RX 
+                    SCHEMATIC1, 5_COMMUNICATE  (8.55, 4.05) 
+
+Checking For Single Node Nets
+WARNING(ORCAP-1600): Net has fewer than two connections ZigBee_TX 
+                    SCHEMATIC1, 5_COMMUNICATE  (8.55, 4.25) 
+WARNING(ORCAP-1600): Net has fewer than two connections ZigBee_RX 
+                    SCHEMATIC1, 5_COMMUNICATE  (8.55, 4.05) 
+WARNING(ORCAP-1600): Net has fewer than two connections NFC_SCK 
+                    SCHEMATIC1, 4_HMI  (4.40, 3.05) 
+WARNING(ORCAP-1600): Net has fewer than two connections NFC_MISO 
+                    SCHEMATIC1, 4_HMI  (4.40, 2.85) 
+WARNING(ORCAP-1600): Net has fewer than two connections NFC_NSS 
+                    SCHEMATIC1, 4_HMI  (4.40, 3.15) 
+WARNING(ORCAP-1600): Net has fewer than two connections LCD_SDA 
+                    SCHEMATIC1, 4_HMI  (4.45, 5.10) 
+WARNING(ORCAP-1600): Net has fewer than two connections NFC_MOSI 
+                    SCHEMATIC1, 4_HMI  (4.40, 2.95) 
+WARNING(ORCAP-1600): Net has fewer than two connections NFC_IRQ 
+                    SCHEMATIC1, 4_HMI  (4.40, 2.75) 
+WARNING(ORCAP-1600): Net has fewer than two connections SPEAKER_CLK 
+                    SCHEMATIC1, 4_HMI  (8.60, 5.85) 
+WARNING(ORCAP-1600): Net has fewer than two connections NFC_RST 
+                    SCHEMATIC1, 4_HMI  (4.40, 2.55) 
+WARNING(ORCAP-1600): Net has fewer than two connections SPEAKER_DATA 
+                    SCHEMATIC1, 4_HMI  (8.60, 6.05) 
+WARNING(ORCAP-1600): Net has fewer than two connections LCD_SCL 
+                    SCHEMATIC1, 4_HMI  (4.45, 5.20) 
+WARNING(ORCAP-1600): Net has fewer than two connections VALVE_CONTROL 
+                    SCHEMATIC1, 3_SIGNALOUTPUT  (5.60, 4.30) 
+WARNING(ORCAP-1600): Net has fewer than two connections INFRARED_HUMAN_RX 
+                    SCHEMATIC1, 2_SIGNALINPUT  (9.35, 1.55) 
+WARNING(ORCAP-1600): Net has fewer than two connections TEMPERATURE 
+                    SCHEMATIC1, 2_SIGNALINPUT  (2.25, 3.55) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA2 
+                    SCHEMATIC1, 6_MCU  (9.50, 1.90) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB0 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.40) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC8 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.50) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC10 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.70) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC3 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.00) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA15 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.20) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC2 
+                    SCHEMATIC1, 6_MCU  (12.70, 1.90) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC7 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.40) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA3 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.00) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA1 
+                    SCHEMATIC1, 6_MCU  (9.50, 1.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA11 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA10 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.70) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA7 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.40) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC4 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.10) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA5 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.20) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB10 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.40) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC6 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.30) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB1 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.50) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA6 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.30) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB8 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.20) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB7 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.10) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB6 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.00) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC11 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB4 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC9 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.60) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA0 
+                    SCHEMATIC1, 6_MCU  (9.50, 1.70) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB3 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.70) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB9 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.30) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB2 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.60) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC0 
+                    SCHEMATIC1, 6_MCU  (12.70, 1.70) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC13 
+                    SCHEMATIC1, 6_MCU  (12.70, 3.00) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB13 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.60) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA4 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.10) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB12 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.50) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB14 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.70) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC5 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.20) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB15 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC12 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.90) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB5 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.90) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA8 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.50) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA9 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.60) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA12 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.90) 
+WARNING(ORCAP-1600): Net has fewer than two connections PD2 
+                    SCHEMATIC1, 6_MCU  (12.70, 3.40) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC1 
+                    SCHEMATIC1, 6_MCU  (12.70, 1.80) 
+
+Checking For Unconnected Bus Nets
+
+Reporting Off-Grid Objects
+
+Reporting Net Names
+    N117089
+    N41461
+    N41513
+    N41473
+    ZIGBEE_TX
+    N41469
+    N41457
+    3V3
+    ZIGBEE_RX
+    N41319
+    GND
+    N22528
+    NFC_SCK
+    NFC_MISO
+    B2
+    B1
+    NFC_NSS
+    LCD_SDA
+    N22562
+    NFC_MOSI
+    NFC_IRQ
+    SPEAKER_CLK
+    N22504
+    N22566
+    NFC_RST
+    SPEAKER_DATA
+    LCD_SCL
+    N21196
+    N21304
+    +5V
+    N23162
+    VALVE_CONTROL
+    N21277
+    N21132
+    N11859
+    4IN+
+    N12977
+    N119191
+    INFRARED_HUMAN_RX
+    N118871
+    1OUT
+    4IN-
+    N12445
+    FLOWMETER
+    2IN-
+    -------------------------------------------------------------------------------
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? 2IN- 
+                    SCHEMATIC1, 2_SIGNALINPUT  (2.25, 8.65) 
+             Alternate Name:  2OUT
+    -------------------------------------------------------------------------------
+
+    N12325
+    3IN+
+    INFRARED_HUMAN_TX
+    AGND
+    TEMPERATURE
+    N119031
+    4OUT
+    -------------------------------------------------------------------------------
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? 4OUT 
+                    SCHEMATIC1, 2_SIGNALINPUT  (13.60, 6.15) 
+             Alternate Name:  INFRARED_OBJECT_RX
+    -------------------------------------------------------------------------------
+
+    2IN+
+    1IN+
+    1IN-
+    INFRARED_OBJECT_TX
+    N12089
+    3IN-
+    -------------------------------------------------------------------------------
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? 3IN- 
+                    SCHEMATIC1, 2_SIGNALINPUT  (4.15, 8.65) 
+             Alternate Name:  3OUT
+    -------------------------------------------------------------------------------
+
+    -5V
+    N07506
+    N12017
+    N12931
+    N121851
+    N05745
+    N05741
+    N05685
+    PA2
+    PB0
+    PC8
+    PC10
+    PA13_SWDIO
+    PC3
+    PA15
+    PC2
+    PC7
+    PA3
+    PA1
+    PA11
+    BOOT0
+    PA10
+    PA7
+    PC4
+    PF1-OSC_OUT
+    PA5
+    PB10
+    PC6
+    N116429
+    N116257
+    PB1
+    PA6
+    PB8
+    PB7
+    PB6
+    N117227
+    PC14-OSC32_IN
+    PF0-OSC_IN
+    PC11
+    PB4
+    PC9
+    PA0
+    PB3
+    PB9
+    N116933
+    N117191
+    NRST
+    N116437
+    PC15-OSC32_OUT
+    PB2
+    PA14_SWCLK
+    PC0
+    PC13
+    PB13
+    PA4
+    PB12
+    PB14
+    PC5
+    PB15
+    PC12
+    PB5
+    PA8
+    PA9
+    PA12
+    PD2
+    PC1
+
+Checking Misleading Tap connection
+
+Checking Physical Rules 
+
+
+Checking Pins and Pin Connections
+
+--------------------------------------------------
+Checking Schematic: SCHEMATIC1
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+INFO(ORCAP-2209): Checking Visible Unconnected Power Pins
+
+--------------------------------------------------
+Checking Entire Design: SHOWERTERMINAL 
+--------------------------------------------------
+
+Checking Power Pin Visibility  
+
+Checking Normal Convert View Sync  
+INFO(ORCAP-36105): Checking Missing Pin Numbers  
+#1 ERROR(ORCAP-36041): Duplicate Pin Name "NC" found on Package A40-C2G4A04S1a , U4 Pin Number 17: SCHEMATIC1, 5_COMMUNICATE (6.45, 2.65). Please renumber one of these.
+#2 ERROR(ORCAP-36041): Duplicate Pin Name "NC" found on Package A40-C2G4A04S1a , U4 Pin Number 18: SCHEMATIC1, 5_COMMUNICATE (6.45, 2.65). Please renumber one of these.
+#3 ERROR(ORCAP-36041): Duplicate Pin Name "NC" found on Package A40-C2G4A04S1a , U4 Pin Number 24: SCHEMATIC1, 5_COMMUNICATE (6.45, 2.65). Please renumber one of these.
+#4 ERROR(ORCAP-36041): Duplicate Pin Name "NC" found on Package A40-C2G4A04S1a , U4 Pin Number 25: SCHEMATIC1, 5_COMMUNICATE (6.45, 2.65). Please renumber one of these.
+
+Checking Device with Zero pins  
+INFO(ORCAP-36101): Checking Missing PCB Footprint Property  
+#5 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R31: SCHEMATIC1, 5_COMMUNICATE (9.00, 2.90).
+#6 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D9: SCHEMATIC1, 4_HMI (7.30, 5.55).
+#7 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C9: SCHEMATIC1, 2_SIGNALINPUT (12.15, 3.20).
+#8 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R17: SCHEMATIC1, 2_SIGNALINPUT (9.95, 5.95).
+#9 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R4: SCHEMATIC1, 1_POWER (5.60, 5.60).
+#10 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R32: SCHEMATIC1, 5_COMMUNICATE (4.55, 3.40).
+#11 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D8: SCHEMATIC1, 3_SIGNALOUTPUT (7.00, 3.50).
+#12 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance RL1: SCHEMATIC1, 3_SIGNALOUTPUT (8.10, 3.40).
+#13 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R14: SCHEMATIC1, 2_SIGNALINPUT (12.65, 3.10).
+#14 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R3: SCHEMATIC1, 1_POWER (5.60, 5.10).
+#15 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R33: SCHEMATIC1, 5_COMMUNICATE (5.15, 3.40).
+#16 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance IR1: SCHEMATIC1, 2_SIGNALINPUT (6.80, 1.00).
+#17 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R15: SCHEMATIC1, 2_SIGNALINPUT (11.25, 5.15).
+#18 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R2: SCHEMATIC1, 1_POWER (5.60, 4.60).
+#19 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C19: SCHEMATIC1, 5_COMMUNICATE (8.85, 5.80).
+#20 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance IR2: SCHEMATIC1, 2_SIGNALINPUT (8.35, 1.15).
+#21 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R1: SCHEMATIC1, 1_POWER (8.85, 4.40).
+#22 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C18: SCHEMATIC1, 5_COMMUNICATE (8.45, 5.80).
+#23 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance IR3: SCHEMATIC1, 2_SIGNALINPUT (12.25, 1.40).
+#24 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C4: SCHEMATIC1, 1_POWER (9.90, 2.80).
+#25 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C17: SCHEMATIC1, 5_COMMUNICATE (9.60, 5.05).
+#26 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R29: SCHEMATIC1, 4_HMI (10.55, 2.70).
+#27 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R18: SCHEMATIC1, 2_SIGNALINPUT (6.95, 6.05).
+#28 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance IR4: SCHEMATIC1, 2_SIGNALINPUT (13.05, 1.40).
+#29 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C5: SCHEMATIC1, 1_POWER (5.25, 3.00).
+#30 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C16: SCHEMATIC1, 5_COMMUNICATE (9.00, 3.60).
+#31 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R28: SCHEMATIC1, 4_HMI (7.30, 2.70).
+#32 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R19: SCHEMATIC1, 2_SIGNALINPUT (7.75, 6.05).
+#33 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance IR5: SCHEMATIC1, 2_SIGNALINPUT (13.85, 1.40).
+#34 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C6: SCHEMATIC1, 1_POWER (5.65, 3.00).
+#35 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R27: SCHEMATIC1, 3_SIGNALOUTPUT (6.50, 4.60).
+#36 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C15: SCHEMATIC1, 2_SIGNALINPUT (4.45, 8.55).
+#37 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C7: SCHEMATIC1, 2_SIGNALINPUT (9.45, 1.65).
+#38 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R26: SCHEMATIC1, 3_SIGNALOUTPUT (5.70, 4.20).
+#39 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C14: SCHEMATIC1, 2_SIGNALINPUT (1.35, 8.55).
+#40 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J8: SCHEMATIC1, 6_MCU (5.85, 6.30).
+#41 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R25: SCHEMATIC1, 3_SIGNALOUTPUT (5.90, 3.40).
+#42 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance SW1: SCHEMATIC1, 4_HMI (7.80, 3.00).
+#43 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C13: SCHEMATIC1, 2_SIGNALINPUT (8.65, 7.05).
+#44 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance Q2: SCHEMATIC1, 2_SIGNALINPUT (12.95, 2.80).
+#45 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D1: SCHEMATIC1, 1_POWER (4.90, 4.60).
+#46 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C1: SCHEMATIC1, 1_POWER (5.25, 2.50).
+#47 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J7: SCHEMATIC1, 4_HMI (11.85, 5.75).
+#48 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C12: SCHEMATIC1, 2_SIGNALINPUT (5.75, 7.15).
+#49 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R24: SCHEMATIC1, 2_SIGNALINPUT (10.65, 6.35).
+#50 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance Q3: SCHEMATIC1, 2_SIGNALINPUT (1.15, 5.75).
+#51 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C2: SCHEMATIC1, 1_POWER (5.65, 2.50).
+#52 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance SW3: SCHEMATIC1, 5_COMMUNICATE (9.55, 3.35).
+#53 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J6: SCHEMATIC1, 4_HMI (4.75, 5.00).
+#54 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R9: SCHEMATIC1, 2_SIGNALINPUT (13.05, 2.00).
+#55 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R23: SCHEMATIC1, 2_SIGNALINPUT (10.35, 6.35).
+#56 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C11: SCHEMATIC1, 2_SIGNALINPUT (5.25, 6.60).
+#57 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D3: SCHEMATIC1, 1_POWER (4.90, 5.60).
+#58 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C3: SCHEMATIC1, 1_POWER (7.70, 2.75).
+#59 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D10: SCHEMATIC1, 5_COMMUNICATE (5.40, 3.75).
+#60 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R34: SCHEMATIC1, 5_COMMUNICATE (9.60, 4.35).
+#61 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U4: SCHEMATIC1, 5_COMMUNICATE (6.45, 2.65).
+#62 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance SW2: SCHEMATIC1, 4_HMI (11.05, 3.00).
+#63 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J5: SCHEMATIC1, 4_HMI (4.70, 2.35).
+#64 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R12: SCHEMATIC1, 2_SIGNALINPUT (6.40, 2.50).
+#65 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R8: SCHEMATIC1, 2_SIGNALINPUT (12.25, 2.00).
+#66 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance Q1: SCHEMATIC1, 2_SIGNALINPUT (6.70, 2.20).
+#67 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R22: SCHEMATIC1, 2_SIGNALINPUT (2.05, 6.45).
+#68 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C10: SCHEMATIC1, 2_SIGNALINPUT (8.15, 6.50).
+#69 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D2: SCHEMATIC1, 1_POWER (4.90, 5.10).
+#70 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D11: SCHEMATIC1, 5_COMMUNICATE (4.80, 3.95).
+#71 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J4: SCHEMATIC1, 3_SIGNALOUTPUT (9.30, 3.40).
+#72 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R21: SCHEMATIC1, 2_SIGNALINPUT (4.85, 6.15).
+#73 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R13: SCHEMATIC1, 2_SIGNALINPUT (12.05, 2.80).
+#74 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D5: SCHEMATIC1, 2_SIGNALINPUT (12.25, 5.55).
+#75 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D4: SCHEMATIC1, 2_SIGNALINPUT (1.85, 1.00).
+#76 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance SW4: SCHEMATIC1, 5_COMMUNICATE (10.15, 4.80).
+#77 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R10: SCHEMATIC1, 2_SIGNALINPUT (13.85, 2.00).
+#78 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R20: SCHEMATIC1, 2_SIGNALINPUT (4.05, 6.15).
+#79 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R7: SCHEMATIC1, 2_SIGNALINPUT (6.80, 1.60).
+#80 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J3: SCHEMATIC1, 2_SIGNALINPUT (2.55, 3.35).
+#81 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D7: SCHEMATIC1, 3_SIGNALOUTPUT (6.30, 3.20).
+#82 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U3: SCHEMATIC1, 4_HMI (8.90, 5.45).
+#83 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance Q4: SCHEMATIC1, 3_SIGNALOUTPUT (6.90, 4.20).
+#84 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R6: SCHEMATIC1, 2_SIGNALINPUT (9.85, 1.05).
+#85 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R11: SCHEMATIC1, 2_SIGNALINPUT (5.80, 2.20).
+#86 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J2: SCHEMATIC1, 2_SIGNALINPUT (3.35, 1.30).
+#87 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R30: SCHEMATIC1, 4_HMI (6.90, 5.15).
+#88 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R16: SCHEMATIC1, 2_SIGNALINPUT (2.75, 5.25).
+#89 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D6: SCHEMATIC1, 2_SIGNALINPUT (12.25, 6.45).
+#90 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C8: SCHEMATIC1, 2_SIGNALINPUT (5.90, 2.60).
+#91 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R5: SCHEMATIC1, 2_SIGNALINPUT (2.55, 1.00).
+#92 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J1: SCHEMATIC1, 1_POWER (4.45, 2.60).
+
+Checking Name Property for Hierarchical Instances  
+
+INFO(ORCAP-2211): Check High Speed Properties Syntax
+
+INFO(ORCAP-2212): Check Power Ground Mismatch
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U5,VSS_3  VSS_3  GND
+                    SCHEMATIC1, 6_MCU  (1.65, 2.65) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U5,VSS_2  VSS_2  GND
+                    SCHEMATIC1, 6_MCU  (1.65, 2.55) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U5,VSS_1  VSS_1  GND
+                    SCHEMATIC1, 6_MCU  (1.65, 2.45) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U5,VSS  VSS  GND
+                    SCHEMATIC1, 6_MCU  (1.65, 2.35) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U2,VDD  VDD  +5V
+                    SCHEMATIC1, 2_SIGNALINPUT  (2.25, 8.35) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U2,GND  GND  -5V
+                    SCHEMATIC1, 2_SIGNALINPUT  (3.85, 8.35) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U1,OUT  OUT  3V3
+                    SCHEMATIC1, 1_POWER  (9.80, 2.50) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U1,OUT  OUT  3V3
+                    SCHEMATIC1, 1_POWER  (9.80, 2.40) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U3,VDD  VDD  3V3
+                    SCHEMATIC1, 4_HMI  (10.80, 6.05) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U4,VCC  VCC  3V3
+                    SCHEMATIC1, 5_COMMUNICATE  (7.95, 5.65) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U5,VDD_2  VDD_2  3V3
+                    SCHEMATIC1, 6_MCU  (4.25, 2.55) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U5,VDD_1  VDD_1  3V3
+                    SCHEMATIC1, 6_MCU  (4.25, 2.45) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U5,VDD_3  VDD_3  3V3
+                    SCHEMATIC1, 6_MCU  (4.25, 2.65) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U5,VDD  VDD  3V3
+                    SCHEMATIC1, 6_MCU  (4.25, 2.35) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U5,VSSA/VREF-  VSSA/VREF-  AGND
+                    SCHEMATIC1, 6_MCU  (1.65, 2.85) 
+
+Reporting Unused Refdes in multiple part packages
+Part	                       Quantity	                       Reference
+-----------------------------------------------------------------------------------------

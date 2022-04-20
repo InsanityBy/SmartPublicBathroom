@@ -5,6 +5,7 @@
 |----|----|----|----|  
 |V1.0|2022年4月10日|创建温度传感器设计|綦浩楠|  
 |V1.1|2022年4月11日|添加设计需求，DS18B20相关内容和设计|马博阳|  
+|V1.2|2022年4月20日|修改原理图|马博阳|  
 
 ## 设计需求  
 1. 供电电压：3.3V或5V直流供电；  
@@ -21,4 +22,4 @@
 
 ## 温度传感器设计  
 使用`DS18B20`，电路设计只需要提供电源，并将数据线与单片机连接即可。  
-![TemperatureSensor_Schematic](../../../Image/TemperatureSensor_Schematic.png)
+![TemperatureSensor_Schematic](../../../Image/TemperatureSensor_Schematic.png)  

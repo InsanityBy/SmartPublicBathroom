@@ -1,0 +1,64 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 20:11:15 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=18976 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\light\led-th_bd5_0_blue.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "led-th_bd5_0_blue"
+\d (00:00:05) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/light/led-th_bd5_0_blue.dra
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2151
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2849
+\i (00:00:05) trapsize 2786
+\i (00:00:05) generaledit 
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 117.01 183.87
+\i (00:00:06) trapsize 1393
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 117.01 181.09
+\i (00:00:06) trapsize 696
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 117.01 181.10
+\i (00:00:06) trapsize 348
+\i (00:00:07) pick grid 103.09 180.40
+\t (00:00:07) last pick:  100.00 200.00
+\i (00:00:10) delete 
+\i (00:00:10) generaledit 
+\i (00:00:11) pick grid 121.89 43.19
+\t (00:00:11) last pick:  100.00 0.00
+\i (00:00:14) delete 
+\i (00:00:14) generaledit 
+\i (00:00:15) drag_start grid 43.19 117.72
+\i (00:00:15) move 
+\t (00:00:15) last pick:  -10.00 81.32
+\t (00:00:15) Pick new location for the element(s).
+\i (00:00:17) drag_stop grid 128.16 68.96
+\i (00:00:17) generaledit 
+\i (00:00:19) prepopup 152.54 117.02
+\i (00:00:27) pop dyn_option_select '@:@Text edit' 
+\i (00:00:27) text edit 
+\i (00:00:44) setwindow form.textedit
+\i (00:00:44) FORM textedit str lightsensor 
+\i (00:00:44) FORM textedit done  
+\i (00:00:44) setwindow pcb
+\i (00:00:44) pick 0.00 0.00
+\t (00:00:44) Pick text to edit.
+\i (00:00:44) setwindow pcb
+\i (00:00:44) generaledit 
+\i (00:00:50) prepopup 253.53 108.66
+\i (00:00:52) pop dyn_option_select 'Change Text block to@:@46 (15.00,16.10)' 
+\i (00:00:52) text block 
+\t (00:00:52) No DRC errors detected.
+\t (00:00:52) Changed 1 items out of 1 items found.
+\i (00:00:52) generaledit 
+\i (00:00:56) save 
+\i (00:00:57) fillin yes 
+\t (00:00:58) Symbol 'led-th_bd5_0_blue.psm' created.
+\i (00:00:58) generaledit 
+\i (00:01:01) exit 
+\t (00:01:01)     Journal end - Mon Apr 18 20:12:14 2022

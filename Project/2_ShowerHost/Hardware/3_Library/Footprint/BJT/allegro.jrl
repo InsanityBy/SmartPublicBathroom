@@ -1,0 +1,77 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 19:21:12 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=7700 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\BJT\sot-23-3_l2_9-w1_6-p1_90-ls2_8-br.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "sot-23-3_l2_9-w1_6-p1_90-ls2_8-br"
+\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/BJT/sot-23-3_l2_9-w1_6-p1_90-ls2_8-br.dra
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2151
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2849
+\i (00:00:05) trapsize 2786
+\i (00:00:05) generaledit 
+\i (00:02:32) zoom in 1 
+\i (00:02:32) setwindow pcb
+\i (00:02:32) zoom in 206.16 -72.43
+\i (00:02:32) trapsize 1393
+\i (00:02:32) zoom in 1 
+\i (00:02:32) setwindow pcb
+\i (00:02:32) zoom in 72.43 -83.57
+\i (00:02:32) trapsize 696
+\i (00:02:32) zoom in 1 
+\i (00:02:32) setwindow pcb
+\i (00:02:32) zoom in 72.44 -83.57
+\i (00:02:32) trapsize 348
+\i (00:02:39) pick grid 105.87 140.00
+\t (00:02:39) last pick:  100.00 100.00
+\i (00:02:40) pick grid 103.78 167.86
+\t (00:02:40) last pick:  100.00 200.00
+\i (00:02:42) delete 
+\i (00:02:42) generaledit 
+\i (00:02:45) pick grid 72.44 28.56
+\t (00:02:45) last pick:  100.00 0.00
+\i (00:02:46) delete 
+\i (00:02:46) generaledit 
+\i (00:02:51) drag_start grid 33.44 87.76
+\i (00:02:51) move 
+\t (00:02:51) last pick:  -0.01 57.50
+\t (00:02:51) Pick new location for the element(s).
+\i (00:02:53) drag_stop grid 111.44 26.47
+\i (00:02:53) generaledit 
+\i (00:02:56) pick grid 160.20 20.21
+\t (00:02:56) last pick:  200.00 0.00
+\i (00:02:56) pick grid dbl 160.20 20.21
+\t (00:02:56) last pick:  200.00 0.00
+\i (00:02:57) prepopup 160.20 20.21
+\i (00:03:13) pop dyn_option_select 'Change to layer@:@SILKSCREEN_TOP' 
+\i (00:03:13) change layer 
+\w (00:03:13) WARNING(SPMHGE-554): Text already matches option panel settings.
+\i (00:03:13) generaledit 
+\i (00:03:14) prepopup 159.50 33.44
+\i (00:03:21) pop dyn_option_select 'Change Text block to@:@62 (15.00,16.10)' 
+\i (00:03:21) text block 
+\t (00:03:21) No DRC errors detected.
+\t (00:03:21) Changed 1 items out of 1 items found.
+\i (00:03:21) generaledit 
+\i (00:03:24) prepopup 129.55 7.67
+\i (00:03:27) pop dyn_option_select '@:@Text edit' 
+\i (00:03:27) text edit 
+\i (00:03:35) setwindow form.textedit
+\i (00:03:35) FORM textedit str BJT 
+\i (00:03:35) FORM textedit done  
+\i (00:03:35) setwindow pcb
+\i (00:03:35) pick 0.00 0.00
+\t (00:03:35) Pick text to edit.
+\i (00:03:35) setwindow pcb
+\i (00:03:35) generaledit 
+\i (00:03:48) pick grid 177.61 -55.01
+\t (00:03:48) last pick:  200.00 -100.00
+\i (00:03:50) save 
+\i (00:03:52) fillin yes 
+\t (00:03:52) Symbol 'sot-23-3_l2_9-w1_6-p1_90-ls2_8-br.psm' created.
+\i (00:03:52) generaledit 
+\i (00:03:54) exit 
+\t (00:03:54)     Journal end - Mon Apr 18 19:25:05 2022

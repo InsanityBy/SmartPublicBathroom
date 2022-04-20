@@ -1,0 +1,24 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 21:01:09 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=11704 CPUs=16
+\t (00:00:02) CmdLine= D:\Cadence\SPB_17.4\tools\bin\allegro.exe
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "osc-th_bd3_0-p1_10-d0_4"
+\d (00:00:05) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/xtal_32k/osc-th_bd3_0-p1_10-d0_4.dra
+\i (00:00:05) trapsize 348
+\i (00:00:05) trapsize 355
+\i (00:00:05) trapsize 348
+\i (00:00:05) trapsize 356
+\i (00:00:05) generaledit 
+\i (00:00:06) zoom out 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom out 3.66 174.27
+\i (00:00:06) trapsize 712
+\i (00:00:06) zoom out 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom out 228.69 481.92
+\i (00:00:06) trapsize 1424
+\i (00:08:06) exit 
+\t (00:08:06)     Journal end - Mon Apr 18 21:09:13 2022

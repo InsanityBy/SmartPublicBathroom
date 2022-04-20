@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : led0805-rd.dra                                )
+(    Software Version : 17.4S024                                      )
+(    Date/Time        : Mon Apr 18 19:27:13 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/led0805
+    Name      = led0805-rd.psm
+    User      = Jessi_10
+    Machine   = LAPTOP-M2SH2ORP
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

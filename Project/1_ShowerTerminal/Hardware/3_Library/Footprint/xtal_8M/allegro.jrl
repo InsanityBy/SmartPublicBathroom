@@ -1,0 +1,55 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 20:47:40 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=8244 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\xtal_8M\osc-th_l11_1-w4_7-p4_88.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "osc-th_l11_1-w4_7-p4_88"
+\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/xtal_8M/osc-th_l11_1-w4_7-p4_88.dra
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2151
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2849
+\i (00:00:05) trapsize 2786
+\i (00:00:05) generaledit 
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in -11.14 -78.01
+\i (00:00:06) trapsize 1393
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in -22.29 -64.08
+\i (00:00:06) trapsize 696
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in -20.89 -64.08
+\i (00:00:06) trapsize 348
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in -16.02 -61.99
+\i (00:00:06) trapsize 174
+\i (00:00:07) zoom out 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom out 45.97 -28.56
+\i (00:00:07) trapsize 348
+\i (00:00:07) pick grid 267.46 28.56
+\t (00:00:07) last pick:  300.00 0.00
+\i (00:00:09) delete 
+\i (00:00:09) generaledit 
+\i (00:00:10) pick grid 84.98 182.48
+\t (00:00:10) last pick:  100.00 200.00
+\i (00:00:11) delete 
+\i (00:00:11) generaledit 
+\i (00:00:12) drag_start grid 25.08 111.44
+\i (00:00:12) move 
+\t (00:00:12) last pick:  0.01 73.96
+\t (00:00:12) Pick new location for the element(s).
+\i (00:00:13) drag_stop grid 201.99 100.29
+\i (00:00:13) generaledit 
+\i (00:00:14) save 
+\i (00:00:15) fillin yes 
+\t (00:00:16) Symbol 'osc-th_l11_1-w4_7-p4_88.psm' created.
+\i (00:00:16) generaledit 
+\i (00:00:19) exit 
+\t (00:00:19)     Journal end - Mon Apr 18 20:47:57 2022

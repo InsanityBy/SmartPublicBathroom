@@ -1,0 +1,14 @@
+skill load "C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/ul_STM32F401RET6/builder.ile" 
+skill changeWorkingDir "C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/ul_STM32F401RET6" 
+skill LB_createFootprint "C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/ul_STM32F401RET6/LQFP64-10x10mm.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist LQFP64-10x10mm.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+exit 

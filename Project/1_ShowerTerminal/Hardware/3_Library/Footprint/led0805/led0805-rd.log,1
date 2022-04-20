@@ -1,0 +1,24 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : led0805-rd.dra                                )
+(    Software Version : 17.4S024                                      )
+(    Date/Time        : Mon Apr 18 17:54:27 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Users/Jessi_10/Desktop/symbols
+    Name      = led0805-rd.psm
+    User      = Jessi_10
+    Machine   = LAPTOP-M2SH2ORP
+
+
+Create symbol started.
+ 
+ ERROR(SPMHCS-1): Symbol is missing a refdes. 
+
+ERROR(SPMHA1-291): Create symbol has been aborted.
+

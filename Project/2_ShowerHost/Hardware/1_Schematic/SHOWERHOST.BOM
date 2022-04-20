@@ -1,4 +1,4 @@
-POWER  Revised: Monday, April 18, 2022
+POWER  Revised: Tuesday, April 19, 2022
           Revision: 
 
 Peking University
@@ -7,7 +7,7 @@ Peking University
 
 
 
-Bill Of Materials          April 18,2022      2:57:13	Page1
+Bill Of Materials          April 19,2022      18:01:41	Page1
 
 Item	Quantity	Reference	Part
 ______________________________________________
@@ -23,15 +23,15 @@ ______________________________________________
 		C15	0.1u
 		C16	0.1u
 		C17	0.1u
-		C20	0.1u
+		C19	0.1u
 		C21	0.1u
 		C23	0.1u
-		C24	0.1u
-		C25	0.1u
 		C26	0.1u
+		C27	0.1u
 		C28	0.1u
 		C29	0.1u
-		C32	0.1u
+		C30	0.1u
+		C33	0.1u
 2	2	C2	220u
 		C6	220u
 3	6	C3	1u
@@ -39,41 +39,47 @@ ______________________________________________
 		C9	1u
 		C10	1u
 		C22	1u
-		C27	1u
+		C25	1u
 4	2	C18	10u
-		C19	10u
-5	2	C30	20p
-		C31	20p
-6	2	C33	15p
-		C34	15p
-7	1	D1	+5V_ON
-8	1	D2	-5V_ON
-9	1	D3	3V3_ON
-10	4	D4	1N4007
+		C20	10u
+5	1	C24	2.2u
+6	2	C31	20pF
+		C32	20pF
+7	2	C34	15pF
+		C35	15pF
+8	1	D1	+5V_ON
+9	1	D2	-5V_ON
+10	1	D3	3V3_ON
+11	4	D4	1N4007
 		D5	1N4007
 		D7	1N4007
 		D9	1N4007
-11	1	D6	FAN_ON
-12	1	D8	LIGHT_ON
-13	1	D10	SPEAKER_ON
-14	1	D11	ZigBee_LINK
-15	1	D12	ZigBee_CMD
-16	1	D13	SOCKET1
-17	1	D14	SOCKET2
-18	1	J1	RH-30W
-19	1	J2	FAN
-20	1	J3	LIGHT
-21	1	J4	LCD
-22	1	J5	SWD Port
-23	1	LS1	SPEAKER
-24	1	L1	fcm1608
-25	1	Q1	HLPT5I850HP25
-26	2	Q2	S8050
+12	1	D6	FAN_ON
+13	1	D8	LIGHT_ON
+14	1	D10	SPEAKER_ON
+15	1	D11	ZigBee_LINK
+16	1	D12	ZigBee_CMD
+17	1	D13	SOCKET1
+18	1	D14	SOCKET2
+19	1	J1	RH-30W_PORT
+20	1	J2	FAN_PORT
+21	1	J3	LIGHT_PORT
+22	1	J4	LCD_PORT
+23	1	J5	SPEAKER_PORT
+24	1	J6	SWD_PORT
+25	1	L1	FCM1608
+26	1	Q1	HLPT5I850HP25
+27	2	Q2	S8050
 		Q3	S8050
-27	2	RL1	973-5VDC-SL-A
+28	2	RL1	973-5VDC-SL-A
 		RL2	973-5VDC-SL-A
-28	11	R1	1k
-		R2	1k
+29	5	R1	0
+		R33	0
+		R36	0
+		R38	0
+		R39	0
+30	11	R2	1k
+		R3	1k
 		R4	1k
 		R15	1k
 		R18	1k
@@ -83,12 +89,7 @@ ______________________________________________
 		R27	1k
 		R29	1k
 		R32	1k
-29	5	R3	0
-		R33	0
-		R35	0
-		R38	0
-		R39	0
-30	12	R5	10k
+31	12	R5	10k
 		R6	10k
 		R7	10k
 		R12	10k
@@ -100,29 +101,29 @@ ______________________________________________
 		R30	10k
 		R31	10k
 		R34	10k
-31	1	R8	91k
-32	1	R9	27k
-33	1	R10	330k
-34	1	R11	9.1k
-35	2	R16	8.2k
+32	1	R8	91k
+33	1	R9	27k
+34	1	R10	330k
+35	1	R11	9.1k
+36	2	R16	8.2k
 		R19	8.2k
-36	2	R17	51k
+37	2	R17	51k
 		R20	51k
-37	1	R23	330
-38	1	R36	100k
-39	1	R37	220
-40	1	SW1	REPAIR
-41	1	SW2	HELP
-42	1	SW3	WiFi_RST
-43	1	SW4	ZigBee_RST
-44	1	SW5	ZigBee_WK
-45	1	SW6	MCU_NRST
-46	1	U1	TLV1117LV33_DCY_4
-47	1	U2	TLV2374_D_14
-48	1	U3	DHT21
-49	1	U4	WT588F08A-8S
-50	1	U5	A51-C2G4A20S1a
-51	1	U6	A40-C2G4A04S1a
-52	1	U7	STM32F302_303R1
-53	1	Y1	8MHz
-54	1	Y2	32.768kHz
+38	1	R23	330
+39	1	R35	100k
+40	1	R37	220
+41	1	SW1	REPAIR
+42	1	SW2	HELP
+43	1	SW3	WiFi_RST
+44	1	SW4	ZigBee_RST
+45	1	SW5	ZigBee_WK
+46	1	SW6	MCU_NRST
+47	1	U1	TLV1117LV33
+48	1	U2	TLV2374
+49	1	U3	DHT21
+50	1	U4	WT588F08A-8S
+51	1	U5	A51-C2G4A20S1a
+52	1	U6	A40-C2G4A04S1a
+53	1	U7	STM32F401RE
+54	1	Y1	8MHz
+55	1	Y2	32.768kHz

@@ -1,0 +1,24 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : led-th_bd5_9-p2_54-fd.dra                     )
+(    Software Version : 17.4S024                                      )
+(    Date/Time        : Mon Apr 18 18:35:48 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/∫ÏÕ‚∑¢…‰π‹
+    Name      = led-th_bd5_9-p2_54-fd.psm
+    User      = Jessi_10
+    Machine   = LAPTOP-M2SH2ORP
+
+
+Create symbol started.
+ 
+ ERROR(SPMHCS-1): Symbol is missing a refdes. 
+
+ERROR(SPMHA1-291): Create symbol has been aborted.
+

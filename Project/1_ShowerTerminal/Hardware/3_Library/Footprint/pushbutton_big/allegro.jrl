@@ -1,0 +1,47 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 21:51:49 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=7444 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\pushbutton\key-th_4p-l6_2-w6_2-p4_50-ls6_5.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "key-th_4p-l6_2-w6_2-p4_50-ls6_5"
+\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/pushbutton/key-th_4p-l6_2-w6_2-p4_50-ls6_5.dra
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2151
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2849
+\i (00:00:05) trapsize 2786
+\i (00:00:05) generaledit 
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 434.60 33.43
+\i (00:00:06) trapsize 1393
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 431.81 39.01
+\i (00:00:06) trapsize 696
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 431.82 44.59
+\i (00:00:06) trapsize 348
+\i (00:00:07) pick grid 316.90 199.21
+\t (00:00:07) last pick:  300.00 200.00
+\i (00:00:08) delete 
+\i (00:00:08) generaledit 
+\i (00:00:09) pick grid 264.66 34.14
+\t (00:00:09) last pick:  300.00 0.00
+\i (00:00:10) delete 
+\i (00:00:10) generaledit 
+\i (00:00:11) drag_start grid 36.91 151.15
+\i (00:00:11) move 
+\t (00:00:11) last pick:  -10.00 117.50
+\t (00:00:11) Pick new location for the element(s).
+\i (00:00:12) drag_stop grid 213.12 136.52
+\i (00:00:12) generaledit 
+\i (00:00:13) save 
+\i (00:00:14) fillin yes 
+\t (00:00:14) Symbol 'key-th_4p-l6_2-w6_2-p4_50-ls6_5.psm' created.
+\i (00:00:14) generaledit 
+\i (00:00:16) exit 
+\t (00:00:16)     Journal end - Mon Apr 18 21:52:03 2022

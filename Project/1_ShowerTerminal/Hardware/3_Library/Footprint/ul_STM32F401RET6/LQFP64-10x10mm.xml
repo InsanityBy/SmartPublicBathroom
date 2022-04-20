@@ -1,0 +1,304 @@
+<Footprint name="LQFP64-10x10mm" >
+  <Units type="mils" precision="3" />
+  <Extents minX="-2844.87796020508" minY="-2749.8779296875" width="4717.75592041016" height="4121.25588989258" />
+  <Padstack name="RX47Y12D0T" type="single" > 
+    <Layers>
+      <Layer name="TOP" >
+        <Pad shape="rectangle" width="47" height="12" /> 
+      </Layer>
+      <Layer name="PASTEMASK_TOP" >
+        <Pad shape="rectangle" width="47" height="12" /> 
+      </Layer>
+      <Layer name="SOLDERMASK_TOP" >
+        <Pad shape="rectangle" width="47" height="12" /> 
+      </Layer>
+    </Layers>
+  </Padstack>
+
+  <Padstack name="RX47Y12D0T" type="single" > 
+    <Layers>
+      <Layer name="TOP" >
+        <Pad shape="rectangle" width="47" height="12" /> 
+      </Layer>
+      <Layer name="PASTEMASK_TOP" >
+        <Pad shape="rectangle" width="47" height="12" /> 
+      </Layer>
+      <Layer name="SOLDERMASK_TOP" >
+        <Pad shape="rectangle" width="47" height="12" /> 
+      </Layer>
+    </Layers>
+  </Padstack>
+  <TextBlocks>
+    <TextBlock name="17" width="6.25" height="25" lineSpacing="25" characterSpacing="6.25" /> 
+  </TextBlocks>
+
+  <Pins>
+    <Pin number="1" padName="RX47Y12D0T" originX="-226.3779" originY="147.6378" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="2" padName="RX47Y12D0T" originX="-226.3779" originY="127.9528" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="3" padName="RX47Y12D0T" originX="-226.3779" originY="108.2677" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="4" padName="RX47Y12D0T" originX="-226.3779" originY="88.5827" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="5" padName="RX47Y12D0T" originX="-226.3779" originY="68.8976" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="6" padName="RX47Y12D0T" originX="-226.3779" originY="49.2126" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="7" padName="RX47Y12D0T" originX="-226.3779" originY="29.5276" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="8" padName="RX47Y12D0T" originX="-226.3779" originY="9.8425" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="9" padName="RX47Y12D0T" originX="-226.3779" originY="-9.8425" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="10" padName="RX47Y12D0T" originX="-226.3779" originY="-29.5276" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="11" padName="RX47Y12D0T" originX="-226.3779" originY="-49.2126" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="12" padName="RX47Y12D0T" originX="-226.3779" originY="-68.8976" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="13" padName="RX47Y12D0T" originX="-226.3779" originY="-88.5827" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="14" padName="RX47Y12D0T" originX="-226.3779" originY="-108.2677" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="15" padName="RX47Y12D0T" originX="-226.3779" originY="-127.9528" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="16" padName="RX47Y12D0T" originX="-226.3779" originY="-147.6378" rotation="0" isMechanical="no" textBlockName="17" />
+    <Pin number="17" padName="RX47Y12D0T" originX="-147.6378" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="18" padName="RX47Y12D0T" originX="-127.9528" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="19" padName="RX47Y12D0T" originX="-108.2677" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="20" padName="RX47Y12D0T" originX="-88.5827" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="21" padName="RX47Y12D0T" originX="-68.8976" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="22" padName="RX47Y12D0T" originX="-49.2126" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="23" padName="RX47Y12D0T" originX="-29.5276" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="24" padName="RX47Y12D0T" originX="-9.8425" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="25" padName="RX47Y12D0T" originX="9.8425" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="26" padName="RX47Y12D0T" originX="29.5276" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="27" padName="RX47Y12D0T" originX="49.2126" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="28" padName="RX47Y12D0T" originX="68.8976" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="29" padName="RX47Y12D0T" originX="88.5827" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="30" padName="RX47Y12D0T" originX="108.2677" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="31" padName="RX47Y12D0T" originX="127.9528" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="32" padName="RX47Y12D0T" originX="147.6378" originY="-226.3779" rotation="90" isMechanical="no" textBlockName="17" />
+    <Pin number="33" padName="RX47Y12D0T" originX="226.3779" originY="-147.6378" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="34" padName="RX47Y12D0T" originX="226.3779" originY="-127.9528" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="35" padName="RX47Y12D0T" originX="226.3779" originY="-108.2677" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="36" padName="RX47Y12D0T" originX="226.3779" originY="-88.5827" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="37" padName="RX47Y12D0T" originX="226.3779" originY="-68.8976" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="38" padName="RX47Y12D0T" originX="226.3779" originY="-49.2126" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="39" padName="RX47Y12D0T" originX="226.3779" originY="-29.5276" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="40" padName="RX47Y12D0T" originX="226.3779" originY="-9.8425" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="41" padName="RX47Y12D0T" originX="226.3779" originY="9.8425" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="42" padName="RX47Y12D0T" originX="226.3779" originY="29.5276" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="43" padName="RX47Y12D0T" originX="226.3779" originY="49.2126" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="44" padName="RX47Y12D0T" originX="226.3779" originY="68.8976" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="45" padName="RX47Y12D0T" originX="226.3779" originY="88.5827" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="46" padName="RX47Y12D0T" originX="226.3779" originY="108.2677" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="47" padName="RX47Y12D0T" originX="226.3779" originY="127.9528" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="48" padName="RX47Y12D0T" originX="226.3779" originY="147.6378" rotation="180" isMechanical="no" textBlockName="17" />
+    <Pin number="49" padName="RX47Y12D0T" originX="147.6378" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="50" padName="RX47Y12D0T" originX="127.9528" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="51" padName="RX47Y12D0T" originX="108.2677" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="52" padName="RX47Y12D0T" originX="88.5827" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="53" padName="RX47Y12D0T" originX="68.8976" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="54" padName="RX47Y12D0T" originX="49.2126" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="55" padName="RX47Y12D0T" originX="29.5276" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="56" padName="RX47Y12D0T" originX="9.8425" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="57" padName="RX47Y12D0T" originX="-9.8425" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="58" padName="RX47Y12D0T" originX="-29.5276" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="59" padName="RX47Y12D0T" originX="-49.2126" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="60" padName="RX47Y12D0T" originX="-68.8976" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="61" padName="RX47Y12D0T" originX="-88.5827" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="62" padName="RX47Y12D0T" originX="-108.2677" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="63" padName="RX47Y12D0T" originX="-127.9528" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+    <Pin number="64" padName="RX47Y12D0T" originX="-147.6378" originY="226.3779" rotation="270" isMechanical="no" textBlockName="17" />
+  </Pins>
+  <Vias>
+  </Vias>
+  <Layers>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="shape" >
+        <Point x="-269.8779" y="-22.0276" />
+        <Point x="-269.8779" y="-37.0276" />
+        <Point x="-259.8779" y="-37.0276" />
+        <Point x="-259.8779" y="-22.0276" />
+        <Point x="-269.8779" y="-22.0276" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="shape" >
+        <Point x="-96.0827" y="-259.8779" />
+        <Point x="-96.0827" y="-269.8779" />
+        <Point x="-81.0827" y="-269.8779" />
+        <Point x="-81.0827" y="-259.8779" />
+        <Point x="-96.0827" y="-259.8779" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="shape" >
+        <Point x="100.7677" y="-259.8779" />
+        <Point x="100.7677" y="-269.8779" />
+        <Point x="115.7677" y="-269.8779" />
+        <Point x="115.7677" y="-259.8779" />
+        <Point x="100.7677" y="-259.8779" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="shape" >
+        <Point x="269.8779" y="-2.3425" />
+        <Point x="269.8779" y="-17.3425" />
+        <Point x="259.8779" y="-17.3425" />
+        <Point x="259.8779" y="-2.3425" />
+        <Point x="269.8779" y="-2.3425" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="shape" >
+        <Point x="120.4528" y="259.8779" />
+        <Point x="120.4528" y="269.8779" />
+        <Point x="135.4528" y="269.8779" />
+        <Point x="135.4528" y="259.8779" />
+        <Point x="120.4528" y="259.8779" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="shape" >
+        <Point x="-76.3976" y="259.8779" />
+        <Point x="-76.3976" y="269.8779" />
+        <Point x="-61.3976" y="269.8779" />
+        <Point x="-61.3976" y="259.8779" />
+        <Point x="-76.3976" y="259.8779" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/PLACE_BOUND_TOP" packageHeight="63" packageHeightMin="2">
+      <Path lineWidth="6" type="shape" >
+        <Point x="-207" y="-207" />
+        <Point x="-207" y="-167.6378" />
+        <Point x="-269.878" y="-167.6378" />
+        <Point x="-269.878" y="167.6378" />
+        <Point x="-207" y="167.6378" />
+        <Point x="-207" y="207" />
+        <Point x="-167.6378" y="207" />
+        <Point x="-167.6378" y="269.878" />
+        <Point x="167.6378" y="269.878" />
+        <Point x="167.6378" y="207" />
+        <Point x="207" y="207" />
+        <Point x="207" y="167.6378" />
+        <Point x="269.878" y="167.6378" />
+        <Point x="269.878" y="-167.6378" />
+        <Point x="207" y="-167.6378" />
+        <Point x="207" y="-207" />
+        <Point x="167.6378" y="-207" />
+        <Point x="167.6378" y="-269.878" />
+        <Point x="-167.6378" y="-269.878" />
+        <Point x="-167.6378" y="-207" />
+        <Point x="-207" y="-207" />
+      </Path>
+    </Layer>
+    <Layer name="MANUFACTURING/NO_PROBE_TOP" packageHeight="63" >
+      <Path lineWidth="6" type="shape" >
+        <Point x="-274.878" y="-274.878" />
+        <Point x="-274.878" y="274.878" />
+        <Point x="274.878" y="274.878" />
+        <Point x="274.878" y="-274.878" />
+        <Point x="-274.878" y="-274.878" />
+      </Path>
+    </Layer>
+    <Layer name="REF DES/SILKSCREEN_TOP" packageHeight="63" >
+      <Label layer="REF DES/SILKSCREEN_TOP" textBlock="3" angle="0" x="0" y="-25" text="Ref" justify="center" />
+    </Layer>
+    <Layer name="DEVICE TYPE/SILKSCREEN_TOP" packageHeight="63" >
+      <Label layer="DEVICE TYPE/SILKSCREEN_TOP" textBlock="3" angle="0" x="0" y="-25" text="Dev" justify="center" />
+    </Layer>
+    <Layer name="USER PART NUMBER/SILKSCREEN_TOP" packageHeight="63" >
+      <Label layer="USER PART NUMBER/SILKSCREEN_TOP" textBlock="3" angle="0" x="0" y="-25" text="PN" justify="center" />
+    </Layer>
+    <Layer name="DEVICE TYPE/ASSEMBLY_TOP" packageHeight="63" >
+      <Label layer="DEVICE TYPE/ASSEMBLY_TOP" textBlock="3" angle="0" x="0" y="-25" text="DEV" justify="center" />
+    </Layer>
+    <Layer name="COMPONENT VALUE/SILKSCREEN_TOP" packageHeight="63" >
+      <Label layer="COMPONENT VALUE/SILKSCREEN_TOP" textBlock="3" angle="0" x="0" y="-25" text="VAL" justify="center" />
+    </Layer>
+    <Layer name="TOLERANCE/SILKSCREEN_TOP" packageHeight="63" >
+      <Label layer="TOLERANCE/SILKSCREEN_TOP" textBlock="3" angle="0" x="0" y="-25" text="TOL" justify="center" />
+    </Layer>
+    <Layer name="REF DES/ASSEMBLY_TOP" packageHeight="63" >
+      <Label layer="REF DES/ASSEMBLY_TOP" textBlock="3" angle="0" x="0" y="-25" text="Ref" justify="center" />
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Circle type="line"  lineWidth="6" originX="-269.7205" originY="147.6378" radius="3" > 
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/ASSEMBLY_TOP" packageHeight="63" >
+      <Circle type="line"  lineWidth="0" originX="-177.8779" originY="147.6378" radius="3" > 
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/ASSEMBLY_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="line" >
+        <Point x="-197" y="147" />
+        <Point x="-147" y="197" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="6" type="line" >
+        <Point x="-202" y="-202" />
+        <Point x="-166.7084" y="-202" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="6" type="line" >
+        <Point x="202" y="-202" />
+        <Point x="202" y="-166.7084" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="6" type="line" >
+        <Point x="202" y="202" />
+        <Point x="166.7084" y="202" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="6" type="line" >
+        <Point x="-202" y="202" />
+        <Point x="-202" y="166.7084" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/ASSEMBLY_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="line" >
+        <Point x="-197" y="-197" />
+        <Point x="197" y="-197" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/ASSEMBLY_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="line" >
+        <Point x="197" y="-197" />
+        <Point x="197" y="197" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/ASSEMBLY_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="line" >
+        <Point x="197" y="197" />
+        <Point x="-197" y="197" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/ASSEMBLY_TOP" packageHeight="63" >
+      <Path lineWidth="0" type="line" >
+        <Point x="-197" y="197" />
+        <Point x="-197" y="-197" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="6" type="line" >
+        <Point x="-202" y="-166.7084" />
+        <Point x="-202" y="-202" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="6" type="line" >
+        <Point x="166.7084" y="-202" />
+        <Point x="202" y="-202" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="6" type="line" >
+        <Point x="202" y="166.7084" />
+        <Point x="202" y="202" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/SILKSCREEN_TOP" packageHeight="63" >
+      <Path lineWidth="6" type="line" >
+        <Point x="-166.7084" y="202" />
+        <Point x="-202" y="202" />
+      </Path>
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/DISPLAY_TOP" packageHeight="63" >
+      <Label layer="PACKAGE GEOMETRY/DISPLAY_TOP" textBlock="3" angle="0" x="0" y="-30" text="Built_By" justify="center" />
+    </Layer>
+    <Layer name="PACKAGE GEOMETRY/Copy Right" packageHeight="63" >
+      <Label layer="PACKAGE GEOMETRY/Copy Right" textBlock="1" angle="0" x="0" y="-.5" text="C" justify="center" />
+    </Layer>
+  </Layers>
+</Footprint>

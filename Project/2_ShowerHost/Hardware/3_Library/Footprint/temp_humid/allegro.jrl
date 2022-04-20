@@ -1,0 +1,51 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 20:40:39 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=19200 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\temp_humid\nil-namemapper.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:05) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "nil-namemapper"
+\d (00:00:05) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/temp_humid/nil-namemapper.dra
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2151
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2849
+\i (00:00:05) trapsize 2786
+\i (00:00:05) generaledit 
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in -356.60 139.30
+\i (00:00:06) trapsize 1393
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in -351.03 139.30
+\i (00:00:06) trapsize 696
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in -348.24 142.09
+\i (00:00:06) trapsize 348
+\i (00:00:07) zoom out 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom out -17.41 181.79
+\i (00:00:07) trapsize 696
+\i (00:00:10) pick grid 495.20 166.48
+\t (00:00:10) last pick:  500.00 200.00
+\i (00:00:12) delete 
+\i (00:00:12) generaledit 
+\i (00:00:13) pick grid 286.26 25.79
+\t (00:00:13) last pick:  300.00 0.00
+\i (00:00:15) delete 
+\i (00:00:15) generaledit 
+\i (00:00:16) drag_start grid 24.38 133.05
+\i (00:00:16) move 
+\t (00:00:16) last pick:  -4.70 102.80
+\t (00:00:16) Pick new location for the element(s).
+\i (00:00:17) drag_stop grid 289.04 117.72
+\i (00:00:17) generaledit 
+\i (00:00:19) save 
+\i (00:00:20) fillin yes 
+\t (00:00:20) Symbol 'nil-namemapper.psm' created.
+\i (00:00:20) generaledit 
+\i (00:00:23) exit 
+\t (00:00:23)     Journal end - Mon Apr 18 20:41:00 2022

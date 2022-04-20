@@ -1,0 +1,47 @@
+\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Apr 18 21:48:45 2022
+\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=14792 CPUs=16
+\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\2p_2.54mm\hdr-th_2p-p2_54-v-f.dra
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "hdr-th_2p-p2_54-v-f"
+\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/2p_2.54mm/hdr-th_2p-p2_54-v-f.dra
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2151
+\i (00:00:05) trapsize 2109
+\i (00:00:05) trapsize 2849
+\i (00:00:05) trapsize 2786
+\i (00:00:05) generaledit 
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 89.15 150.44
+\i (00:00:06) trapsize 1393
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 80.80 203.37
+\i (00:00:06) trapsize 696
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 71.05 206.16
+\i (00:00:06) trapsize 348
+\i (00:00:07) pick grid 71.75 146.96
+\t (00:00:07) last pick:  100.00 100.00
+\i (00:00:08) delete 
+\i (00:00:08) generaledit 
+\i (00:00:09) pick grid 188.06 27.17
+\t (00:00:09) last pick:  200.00 0.00
+\i (00:00:11) delete 
+\i (00:00:11) generaledit 
+\i (00:00:12) drag_start grid 22.99 66.17
+\i (00:00:12) move 
+\t (00:00:12) last pick:  -5.00 42.50
+\t (00:00:12) Pick new location for the element(s).
+\i (00:00:13) drag_stop grid 125.37 64.08
+\i (00:00:13) generaledit 
+\i (00:00:15) save 
+\i (00:00:16) fillin yes 
+\t (00:00:16) Symbol 'hdr-th_2p-p2_54-v-f.psm' created.
+\i (00:00:16) generaledit 
+\i (00:00:19) exit 
+\t (00:00:19)     Journal end - Mon Apr 18 21:49:03 2022
