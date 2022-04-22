@@ -82,6 +82,10 @@
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (MyTitle
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\MYTITLE.OLB")
+      (DeviceIndex "0"))
     (STM32F401RET6_0
       (FullPartName "STM32F401RET6_0B.Normal")
       (LibraryName
@@ -114,46 +118,21 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" ".\showerhost.dsn")
-      (Path "Design Resources" ".\showerhost.dsn" "SCHEMATIC1")
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn")
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "Design Cache")
       (Path "Outputs")
-      (Select "Design Resources" ".\showerhost.dsn" "SCHEMATIC1"))
+      (Select "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 711 0 459")
-        (Scroll "0 0")
-        (Zoom "58")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "6_MCU"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 26 737 26 485")
-        (Scroll "0 40")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "1_POWER"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 763 52 511")
-        (Scroll "0 50")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "2_SIGNALINPUT"))))
+      (Tab 0))))
