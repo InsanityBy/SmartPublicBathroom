@@ -1,5 +1,6 @@
 (ExpressProject ""
   (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2022 S008-[04/24/22]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library")
@@ -76,6 +77,7 @@
     (DRC_Report_Unused_Part_Packages "TRUE")
     (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
     (DRC_Run_Physical_Custom_DRC "FALSE"))
+  (Folder "Layout")
   (Folder "Outputs"
     (File ".\showerterminal.bom"
       (Type "Report"))
@@ -112,27 +114,41 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" ".\showerterminal.dsn")
-      (Path "Design Resources" ".\showerterminal.dsn" "SCHEMATIC1")
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\1_Schematic\showerterminal.dsn")
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\1_Schematic\showerterminal.dsn"
+         "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources" ".\showerterminal.dsn"))
+      (Select "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\1_Schematic\showerterminal.dsn"
+         "SCHEMATIC1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 700"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 156 1126 156 497")
-        (Scroll "0 0")
-        (Zoom "100")
+        (Scroll "2422 1879")
+        (Zoom "260")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
       (Schematic "SCHEMATIC1")
       (Page "1_POWER")))
-  (MPSSessionName "Jessi_10")
+  (MPSSessionName "insan")
   (LastUsedLibraryBrowseDirectory
-     "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library"))
+     "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs"))
