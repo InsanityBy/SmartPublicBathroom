@@ -112,75 +112,27 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\1_Schematic\showerterminal.dsn")
-      (Path "Design Resources"
-         "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\1_Schematic\showerterminal.dsn"
-         "SCHEMATIC1")
+      (Path "Design Resources" ".\showerterminal.dsn")
+      (Path "Design Resources" ".\showerterminal.dsn" "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources"
-         "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\1_Schematic\showerterminal.dsn"))
+      (Select "Design Resources" ".\showerterminal.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 700"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 208 919 208 667")
-        (Scroll "444 616")
-        (Zoom "130")
+        (Placement "44 0 1 -1 -1 -8 -31 156 1126 156 497")
+        (Scroll "0 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "6_MCU"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 1346 0 459")
-        (Scroll "2482 1917")
-        (Zoom "264")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "2_SIGNALINPUT"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 26 1372 26 485")
-        (Scroll "2422 1879")
-        (Zoom "260")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "3_SIGNALOUTPUT"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1398 52 511")
-        (Scroll "870 888")
-        (Zoom "158")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "4_HMI"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 1424 78 537")
-        (Scroll "931 927")
-        (Zoom "162")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "5_COMMUNICATE")))
-  (MPSSessionName "insan")
+      (Page "1_POWER")))
+  (MPSSessionName "Jessi_10")
   (LastUsedLibraryBrowseDirectory
      "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library"))
