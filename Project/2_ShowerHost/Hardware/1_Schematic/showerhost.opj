@@ -1,5 +1,6 @@
 (ExpressProject ""
   (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2022 S008-[04/24/22]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library")
@@ -31,8 +32,9 @@
     (BOM_Report_File
        "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.BOM")
     (BOM_Merge_Include "FALSE")
-    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
-    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Property_Combine_7.0
+       "{Item}\t{Quantity}\t{Reference}\t{Value}\t{PCB Footprint}")
+    (BOM_Header "Item\tQuantity\tReference\tPart\tFootprint")
     (BOM_Include_File
        "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.INC")
     (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
@@ -75,6 +77,7 @@
     (DRC_Report_Unused_Part_Packages "TRUE")
     (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
     (DRC_Run_Physical_Custom_DRC "FALSE"))
+  (Folder "Layout")
   (Folder "Outputs"
     (File ".\showerhost.bom"
       (Type "Report"))
@@ -128,11 +131,85 @@
          "Design Cache")
       (Path "Outputs")
       (Select "Design Resources"
-         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
-         "SCHEMATIC1"))
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
-      (Tab 0))))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1424 78 537")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "1_POWER"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1450 104 563")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "2_SIGNALINPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1476 130 589")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "3_SIGNALOUTPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1502 156 615")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "4_HMI"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1528 182 641")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "5_COMMUNICATE"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 208 1554 208 667")
+        (Scroll "-1 325")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "6_MCU")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs"))
