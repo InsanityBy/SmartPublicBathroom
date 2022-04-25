@@ -42,7 +42,7 @@
     (Open_BOM_in_Excel "FALSE")
     (BOM_View_Output "TRUE")
     (DRC_Scope "0")
-    (DRC_Action "1")
+    (DRC_Action "0")
     (DRC_Create_Warnings "FALSE")
     (DRC_View_Output "TRUE")
     (DRC_Preserved_Waived "FALSE")
@@ -50,9 +50,9 @@
     (DRC_Run_Physical_Rules "TRUE")
     (DRC_Report_File
        "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DRC")
-    (DRC_Check_Ports "FALSE")
-    (DRC_Check_Off-Page_Connectors "FALSE")
-    (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
+    (DRC_Check_Ports "TRUE")
+    (DRC_Check_Off-Page_Connectors "TRUE")
+    (DRC_Report_Ports_and_Off-page_Connectors "TRUE")
     (DRC_SDT_Compatibility "FALSE")
     (DRC_Report_Off-grid_Objects "TRUE")
     (DRC_Check_Unconnected_Nets "TRUE")
@@ -77,7 +77,6 @@
     (DRC_Report_Unused_Part_Packages "TRUE")
     (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
     (DRC_Run_Physical_Custom_DRC "FALSE")
-    (Board_sim_option "VHDL_flow")
     (Netlist_TAB "0")
     ("Create Allegro Netlist" "TRUE")
     ("Allegro Netlist Directory"
@@ -94,7 +93,8 @@
     ("Allegro Setup Part Type Length" "31")
     ("Allegro Netlist Combine Property String" "PCB Footprint")
     ("Allegro Netlist Ignore Fixed Property" "FALSE")
-    ("Allegro Netlist User Defined Property" "FALSE"))
+    ("Allegro Netlist User Defined Property" "FALSE")
+    (Board_sim_option "VHDL_flow"))
   (Folder "Layout")
   (Folder "Outputs"
     (File ".\showerhost.bom"
@@ -112,6 +112,14 @@
       (DisplayName "pstchip.dat")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (OFFPAGELEFT-R
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-L
+      (LibraryName
+         "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (MyTitle
       (LibraryName
          "E:\CADENCE\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\MYTITLE.OLB")
@@ -142,32 +150,93 @@
       (LibraryName
          "C:\USERS\JESSI_10\DESKTOP\UL_STM32F303RBT6\ORCADCAPTUREXML\2022-04-16_14-40-57.OLB")
       (DeviceIndex "0")))
-  (MPSSessionName "Jessi_10")
+  (MPSSessionName "insan")
   (LastUsedLibraryBrowseDirectory
      "E:\Cadence\Cadence\SPB_17.2\tools\capture\library")
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" ".\showerhost.dsn")
-      (Path "Design Resources" ".\showerhost.dsn" "SCHEMATIC1")
-      (Path "Outputs"))
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn")
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 700"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 960 52 397")
-        (Scroll "323 210")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -8 -31 52 960 52 397")
+        (Scroll "0 0")
+        (Zoom "65")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "5_COMMUNICATE")))
+      (Page "5_COMMUNICATE"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 208 1297 208 667")
+        (Scroll "286 232")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "1_POWER"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 1089 0 459")
+        (Scroll "-26 0")
+        (Zoom "65")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "2_SIGNALINPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 1115 26 485")
+        (Scroll "-26 0")
+        (Zoom "65")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "3_SIGNALOUTPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1141 52 511")
+        (Scroll "1128 1131")
+        (Zoom "260")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "4_HMI"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 78 1167 78 537")
+        (Scroll "227 2237")
+        (Zoom "344")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "6_MCU")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles")
     (Folder "Model Libraries"

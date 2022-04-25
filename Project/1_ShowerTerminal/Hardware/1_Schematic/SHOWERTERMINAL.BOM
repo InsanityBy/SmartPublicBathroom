@@ -1,4 +1,4 @@
-  Revised: Sunday, April 24, 2022
+  Revised: Tuesday, April 26, 2022
           Revision: 
 
 Peking University, No.5 Yiheyuan Road, Beijing
@@ -7,29 +7,29 @@ Peking University, No.5 Yiheyuan Road, Beijing
 
 
 
-Bill Of Materials          April 24,2022      21:44:47	Page1
+Bill Of Materials          April 26,2022      2:51:00	Page1
 
 Item	Quantity	Reference	Part	Footprint
 ______________________________________________
 
-1	18	C1	0.1u	c0805
-		C5	0.1u	c0805
-		C8	0.1u	c0805
-		C9	0.1u	c0805
-		C10	0.1u	c0805
-		C11	0.1u	c0805
-		C14	0.1u	c0805
-		C15	0.1u	c0805
-		C16	0.1u	c0805
-		C17	0.1u	c0805
-		C19	0.1u	c0805
-		C21	0.1u	c0805
-		C24	0.1u	c0805
-		C25	0.1u	c0805
-		C26	0.1u	c0805
-		C27	0.1u	c0805
-		C28	0.1u	c0805
-		C31	0.1u	c0805
+1	18	C1	100n	c0805
+		C5	100n	c0805
+		C8	100n	c0805
+		C9	100n	c0805
+		C10	100n	c0805
+		C11	100n	c0805
+		C14	100n	c0805
+		C15	100n	c0805
+		C16	100n	c0805
+		C17	100n	c0805
+		C19	100n	c0805
+		C21	100n	c0805
+		C24	100n	c0805
+		C25	100n	c0805
+		C26	100n	c0805
+		C27	100n	c0805
+		C28	100n	c0805
+		C31	100n	c0805
 2	2	C2	220u	c-220u
 		C6	220u	c-220u
 3	6	C3	1u	c0805
@@ -87,8 +87,8 @@ ______________________________________________
 		R25	1k	r0805
 		R28	1k	r0805
 		R29	1k	r0805
+		R31	1k	r0805
 		R32	1k	r0805
-		R33	1k	r0805
 33	2	R6	220	r0805
 		R39	220	r0805
 34	4	R7	100	r0805
@@ -104,7 +104,7 @@ ______________________________________________
 		R17	10k	r0805
 		R23	10k	r0805
 		R24	10k	r0805
-		R31	10k	r0805
+		R33	10k	r0805
 		R34	10k	r0805
 		R36	10k	r0805
 39	2	R16	620	r0805
