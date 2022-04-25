@@ -3,14 +3,14 @@
 (    CREATE SYMBOL                                                    )
 (                                                                     )
 (    Drawing          : sot-223_l6_7-w3_5-p2_30-br.dra                )
-(    Software Version : 17.4S024                                      )
-(    Date/Time        : Mon Apr 18 20:33:06 2022                      )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Mon Apr 25 14:06:51 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
 Create Symbol of type: PACKAGE
-    Directory = C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/ldo
+    Directory = D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/ldo
     Name      = sot-223_l6_7-w3_5-p2_30-br.psm
     User      = Jessi_10
     Machine   = LAPTOP-M2SH2ORP

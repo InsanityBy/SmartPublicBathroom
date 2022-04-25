@@ -1,40 +1,20 @@
-\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Mon Apr 18 19:26:44 2022
-\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=14344 CPUs=16
-\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\led0805\led0805-rd.dra
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "led0805-rd"
-\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/led0805/led0805-rd.dra
-\i (00:00:05) trapsize 348
-\i (00:00:05) trapsize 355
-\i (00:00:05) trapsize 348
-\i (00:00:05) trapsize 356
-\i (00:00:05) generaledit 
-\i (00:00:11) label refdes 
-\t (00:00:11) Pick text location.
-\i (00:00:15) setwindow form.mini
-\i (00:00:15) FORM mini subclass SILKSCREEN_TOP 
-\i (00:00:15) setwindow pcb
-\i (00:00:15) updateport CVPane
-\i (00:00:18) setwindow form.mini
-\i (00:00:18) FORM mini subcolor color 33 
-\i (00:00:18) setwindow pcb
-\i (00:00:18) updateport CVPane
-\i (00:00:21) pick grid 108.55 6.78
-\t (00:00:21) last pick:  100.00 0.00
-\t (00:00:21) Enter text string.
-\i (00:00:26) setwindow pcb
-\i (00:00:26) prepopup 133.48 176.98
-\i (00:00:27) done 
-\i (00:00:27) setwindow pcb
-\i (00:00:27) pick 100.00 0.00
-\i (00:00:27) setwindow pcb
-\i (00:00:27) generaledit 
-\i (00:00:30) save 
-\i (00:00:31) fillin yes 
-\t (00:00:31) Symbol 'led0805-rd.psm' created.
-\i (00:00:31) generaledit 
-\i (00:00:33) exit 
-\t (00:00:33)     Journal end - Mon Apr 18 19:27:15 2022
+\t (00:00:03) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Mon Apr 25 13:40:26 2022
+\t (00:00:03)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=47920 CPUs=16
+\t (00:00:03) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\led0805\led0805-rd.dra
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
+\t (00:00:06) Opening existing design...
+\i (00:00:06) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged led0805-rd
+\d (00:00:06) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/led0805/led0805-rd.dra
+\i (00:00:06) trapsize 97
+\i (00:00:06) trapsize 99
+\i (00:00:06) trapsize 97
+\i (00:00:06) trapsize 97
+\i (00:00:07) generaledit 
+\i (00:00:08) zoom out 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom out 31.73 -7.04
+\i (00:00:08) trapsize 194
+\i (00:00:13) exit 
+\t (00:00:13)     Journal end - Mon Apr 25 13:40:36 2022

@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : led-th_bd5_9-p2_54-fd.dra                     )
 (    Software Version : 17.4S024                                      )
-(    Date/Time        : Mon Apr 18 18:20:53 2022                      )
+(    Date/Time        : Mon Apr 18 18:23:49 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -18,6 +18,7 @@ Create Symbol of type: PACKAGE
 
 Create symbol started.
  
+ ERROR(SPMHCS-1): Symbol is missing a refdes. 
 
-Create symbol completed.
+ERROR(SPMHA1-291): Create symbol has been aborted.
 

@@ -3,14 +3,14 @@
 (    CREATE SYMBOL                                                    )
 (                                                                     )
 (    Drawing          : led-th_bd6_2-p2_54-rd.dra                     )
-(    Software Version : 17.4S024                                      )
-(    Date/Time        : Mon Apr 18 20:20:50 2022                      )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Mon Apr 25 14:40:42 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
 Create Symbol of type: PACKAGE
-    Directory = C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/phototriode
+    Directory = D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/3_Library/Footprint/phototriode
     Name      = led-th_bd6_2-p2_54-rd.psm
     User      = Jessi_10
     Machine   = LAPTOP-M2SH2ORP

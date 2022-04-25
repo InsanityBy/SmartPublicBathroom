@@ -3,14 +3,14 @@
 (    CREATE SYMBOL                                                    )
 (                                                                     )
 (    Drawing          : do-41_bd2_4-l4_7-p8_70-d0_6-rd.dra            )
-(    Software Version : 17.4S024                                      )
-(    Date/Time        : Mon Apr 18 21:23:35 2022                      )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Mon Apr 25 13:40:14 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
 Create Symbol of type: PACKAGE
-    Directory = C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/diode
+    Directory = D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/diode
     Name      = do-41_bd2_4-l4_7-p8_70-d0_6-rd.psm
     User      = Jessi_10
     Machine   = LAPTOP-M2SH2ORP

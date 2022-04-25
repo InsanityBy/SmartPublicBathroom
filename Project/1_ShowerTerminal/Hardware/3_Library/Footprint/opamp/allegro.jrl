@@ -1,47 +1,19 @@
-\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Mon Apr 18 20:35:16 2022
-\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=10468 CPUs=16
-\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\opamp\soic-14_l8_7-w3_9-p1_27-ls6_0-bl.dra
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "soic-14_l8_7-w3_9-p1_27-ls6_0-bl"
-\d (00:00:05) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/opamp/soic-14_l8_7-w3_9-p1_27-ls6_0-bl.dra
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2151
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2849
-\i (00:00:05) trapsize 2786
-\i (00:00:05) generaledit 
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 44.58 -55.72
-\i (00:00:06) trapsize 1393
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 33.43 -55.72
-\i (00:00:06) trapsize 696
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 33.43 -55.72
-\i (00:00:06) trapsize 348
-\i (00:00:08) pick grid 98.91 219.40
-\t (00:00:08) last pick:  100.00 200.00
-\i (00:00:10) delete 
-\i (00:00:10) generaledit 
-\i (00:00:12) pick grid 227.75 26.47
-\t (00:00:12) last pick:  200.00 0.00
-\i (00:00:22) delete 
-\i (00:00:22) generaledit 
-\i (00:00:23) drag_start grid 13.24 172.73
-\i (00:00:23) move 
-\t (00:00:23) last pick:  -10.00 137.49
-\t (00:00:23) Pick new location for the element(s).
-\i (00:00:25) drag_stop grid 204.77 128.16
-\i (00:00:25) generaledit 
-\i (00:00:27) save 
-\i (00:00:29) fillin yes 
-\t (00:00:29) Symbol 'soic-14_l8_7-w3_9-p1_27-ls6_0-bl.psm' created.
-\i (00:00:29) generaledit 
-\i (00:00:32) exit 
-\t (00:00:33)     Journal end - Mon Apr 18 20:35:47 2022
+\t (00:00:03) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Mon Apr 25 14:13:01 2022
+\t (00:00:03)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=31136 CPUs=16
+\t (00:00:03) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\opamp\soic-14_l8_7-w3_9-p1_27-ls6_0-bl.dra
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
+\t (00:00:06) Opening existing design...
+\i (00:00:06) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged soic-14_l8_7-w3_9-p1_27-ls6_0-bl
+\d (00:00:06) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/opamp/soic-14_l8_7-w3_9-p1_27-ls6_0-bl.dra
+\i (00:00:06) trapsize 380
+\i (00:00:06) trapsize 388
+\i (00:00:06) trapsize 380
+\i (00:00:06) trapsize 380
+\i (00:00:06) generaledit 
+\i (00:00:09) exit 
+\e (00:00:09) Do you want to save the changes you made to soic-14_l8_7-w3_9-p1_27-ls6_0-bl.dra?
+\i (00:00:10) fillin yes 
+\t (00:00:10) Symbol 'soic-14_l8_7-w3_9-p1_27-ls6_0-bl.psm' created.
+\t (00:00:11)     Journal end - Mon Apr 25 14:13:09 2022

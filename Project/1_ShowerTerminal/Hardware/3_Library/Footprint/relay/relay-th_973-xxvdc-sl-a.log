@@ -3,14 +3,14 @@
 (    CREATE SYMBOL                                                    )
 (                                                                     )
 (    Drawing          : relay-th_973-xxvdc-sl-a.dra                   )
-(    Software Version : 17.4S024                                      )
-(    Date/Time        : Mon Apr 18 20:29:24 2022                      )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Mon Apr 25 14:34:11 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
 Create Symbol of type: PACKAGE
-    Directory = C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/relay
+    Directory = D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/relay
     Name      = relay-th_973-xxvdc-sl-a.psm
     User      = Jessi_10
     Machine   = LAPTOP-M2SH2ORP

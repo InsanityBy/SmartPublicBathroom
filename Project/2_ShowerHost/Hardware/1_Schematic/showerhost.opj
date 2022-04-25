@@ -115,67 +115,27 @@
       (LibraryName
          "C:\USERS\JESSI_10\DESKTOP\UL_STM32F303RBT6\ORCADCAPTUREXML\2022-04-16_14-40-57.OLB")
       (DeviceIndex "0")))
-  (MPSSessionName "insan")
+  (MPSSessionName "Jessi_10")
   (LastUsedLibraryBrowseDirectory
      "E:\Cadence\Cadence\SPB_17.2\tools\capture\library")
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn")
-      (Path "Design Resources"
-         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
-         "SCHEMATIC1")
-      (Path "Design Resources"
-         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
-         "Design Cache")
+      (Path "Design Resources" ".\showerhost.dsn")
+      (Path "Design Resources" ".\showerhost.dsn" "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources"
-         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"))
+      (Select "Design Resources" ".\showerhost.dsn" "SCHEMATIC1" "6_MCU"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 283 0 700"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 1424 78 537")
-        (Scroll "0 0")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "1_POWER"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 104 1450 104 563")
-        (Scroll "0 0")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "2_SIGNALINPUT"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 130 1476 130 589")
-        (Scroll "0 0")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "3_SIGNALOUTPUT"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 156 1502 156 615")
-        (Scroll "0 0")
+        (Placement "44 0 1 -1 -1 -8 -31 26 934 26 371")
+        (Scroll "363 324")
         (Zoom "100")
         (Occurrence "/"))
       (Path
@@ -185,8 +145,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 182 1528 182 641")
-        (Scroll "0 0")
+        (Placement "44 0 1 -1 -1 -8 -31 52 960 52 397")
+        (Scroll "160 210")
         (Zoom "100")
         (Occurrence "/"))
       (Path
@@ -196,8 +156,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 208 1554 208 667")
-        (Scroll "-1 325")
+        (Placement "44 2 3 -1 -1 -8 -31 78 986 78 423")
+        (Scroll "488 53")
         (Zoom "100")
         (Occurrence "/"))
       (Path

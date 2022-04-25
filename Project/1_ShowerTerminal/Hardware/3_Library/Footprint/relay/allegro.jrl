@@ -1,102 +1,17 @@
-\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Mon Apr 18 20:28:09 2022
-\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=19240 CPUs=16
-\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\relay\relay-th_973-xxvdc-sl-a.dra
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "relay-th_973-xxvdc-sl-a"
-\d (00:00:05) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/relay/relay-th_973-xxvdc-sl-a.dra
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2151
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2849
-\i (00:00:05) trapsize 2786
-\i (00:00:05) generaledit 
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in -156.01 72.43
-\i (00:00:06) trapsize 1393
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in -156.01 72.44
-\i (00:00:06) trapsize 696
-\i (00:00:07) pick grid 100.30 385.86
-\t (00:00:07) last pick:  100.00 400.00
-\i (00:00:10) pick grid 40.41 316.21
-\t (00:00:10) last pick:  0.00 300.00
-\i (00:00:12) delete 
-\i (00:00:12) generaledit 
-\i (00:00:13) pick grid 69.66 32.04
-\t (00:00:13) last pick:  100.00 0.00
-\i (00:00:15) delete 
-\i (00:00:15) generaledit 
-\i (00:00:16) pick grid 93.34 395.61
-\t (00:00:16) last pick:  100.00 400.00
-\i (00:00:19) prepopup 261.89 406.75
-\i (00:00:21) pop dyn_option_select '@:@Text edit' 
-\i (00:00:21) text edit 
-\i (00:00:27) setwindow form.textedit
-\i (00:00:27) FORM textedit str RELAY 
-\i (00:00:27) FORM textedit done  
-\i (00:00:27) setwindow pcb
-\i (00:00:27) pick 0.00 0.00
-\t (00:00:27) Pick text to edit.
-\i (00:00:27) setwindow pcb
-\i (00:00:27) generaledit 
-\i (00:00:27) pick grid 335.71 423.47
-\t (00:00:27) last pick:  300.00 400.00
-\i (00:00:29) save 
-\i (00:00:30) fillin yes 
-\e (00:00:31) ERROR(SPMHGE-7): Error(s) occurred, check logfile.
-\i (00:00:31) generaledit 
-\i (00:00:36) setwindow text
-\i (00:00:36) close
-\i (00:00:38) setwindow pcb
-\i (00:00:38) pick grid 158.81 391.43
-\t (00:00:38) last pick:  200.00 400.00
-\i (00:00:38) prepopup 137.91 391.43
-\i (00:00:39) pick grid 68.27 390.04
-\t (00:00:39) last pick:  100.00 400.00
-\i (00:00:42) pick grid 78.02 402.57
-\t (00:00:42) last pick:  100.00 400.00
-\i (00:00:46) pick grid 369.15 292.53
-\t (00:00:46) last pick:  400.00 300.00
-\i (00:00:47) pick grid 130.95 367.75
-\t (00:00:47) last pick:  100.00 400.00
-\i (00:00:48) delete 
-\i (00:00:48) generaledit 
-\i (00:00:52) label refdes 
-\t (00:00:52) Pick text location.
-\i (00:00:55) setwindow form.mini
-\i (00:00:55) FORM mini subclass SILKSCREEN_TOP 
-\i (00:00:55) setwindow pcb
-\i (00:00:55) updateport CVPane
-\i (00:00:58) pick grid 444.37 256.31
-\t (00:00:58) last pick:  400.00 300.00
-\t (00:00:58) Enter text string.
-\i (00:01:02) setwindow pcb
-\i (00:01:02) prepopup 734.10 331.53
-\i (00:01:03) done 
-\i (00:01:03) setwindow pcb
-\i (00:01:03) pick 400.00 300.00
-\i (00:01:03) setwindow pcb
-\i (00:01:03) generaledit 
-\i (00:01:04) prepopup 476.40 314.82
-\i (00:01:07) pop dyn_option_select 'Change Text block to@:@2 (36.00,45.00)' 
-\i (00:01:07) text block 
-\t (00:01:07) No DRC errors detected.
-\t (00:01:07) Changed 1 items out of 1 items found.
-\i (00:01:07) generaledit 
-\i (00:01:09) drag_start grid 491.73 327.35
-\i (00:01:09) move 
-\t (00:01:09) last pick:  400.00 300.00
-\t (00:01:09) Pick new location for the element(s).
-\i (00:01:11) drag_stop grid 469.44 330.14
-\i (00:01:11) generaledit 
-\i (00:01:16) save 
-\i (00:01:17) fillin yes 
-\t (00:01:18) Symbol 'relay-th_973-xxvdc-sl-a.psm' created.
-\i (00:01:18) generaledit 
-\i (00:01:19) exit 
-\t (00:01:20)     Journal end - Mon Apr 18 20:29:26 2022
+\t (00:00:06) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:06)     Journal start - Mon Apr 25 14:43:04 2022
+\t (00:00:06)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=45576 CPUs=16
+\t (00:00:06) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\relay\relay-th_973-xxvdc-sl-a.dra
+\t (00:00:06) 
+   (00:00:06) Loading axlcore.cxt 
+\t (00:00:09) Opening existing design...
+\i (00:00:09) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged relay-th_973-xxvdc-sl-a
+\d (00:00:09) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/relay/relay-th_973-xxvdc-sl-a.dra
+\i (00:00:09) trapsize 332
+\i (00:00:09) trapsize 339
+\i (00:00:09) trapsize 332
+\i (00:00:09) trapsize 315
+\i (00:00:09) trapsize 315
+\i (00:00:10) generaledit 
+\i (00:00:11) exit 
+\t (00:00:12)     Journal end - Mon Apr 25 14:43:09 2022

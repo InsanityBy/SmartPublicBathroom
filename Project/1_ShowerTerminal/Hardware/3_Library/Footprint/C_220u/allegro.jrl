@@ -1,61 +1,27 @@
-\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Mon Apr 18 21:19:08 2022
-\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=19520 CPUs=16
-\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\C_220u\cap-smd_bd6_3-l6_6-w6_6-ls7_2-r-rd.dra
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "cap-smd_bd6_3-l6_6-w6_6-ls7_2-r-rd"
-\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/C_220u/cap-smd_bd6_3-l6_6-w6_6-ls7_2-r-rd.dra
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2151
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2849
-\i (00:00:05) trapsize 2786
-\i (00:00:05) generaledit 
-\i (00:00:13) step pkg map 
+\t (00:00:04) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:04)     Journal start - Mon Apr 25 13:38:58 2022
+\t (00:00:04)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=47712 CPUs=16
+\t (00:00:04) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\C_220u\cap-smd_bd6_3-l6_6-w6_6-ls7_2-r-rd.dra
+\t (00:00:04) 
+   (00:00:04) Loading axlcore.cxt 
+\t (00:00:07) Opening existing design...
+\i (00:00:07) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged cap-smd_bd6_3-l6_6-w6_6-ls7_2-r-rd
+\d (00:00:07) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/C_220u/cap-smd_bd6_3-l6_6-w6_6-ls7_2-r-rd.dra
+\i (00:00:07) trapsize 760
+\i (00:00:07) trapsize 776
+\i (00:00:07) trapsize 760
+\i (00:00:07) trapsize 760
+\i (00:00:07) generaledit 
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in -217.23 72.17
+\i (00:00:09) trapsize 380
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in -222.55 75.21
+\i (00:00:09) trapsize 190
+\i (00:00:13) exit 
+\e (00:00:13) Do you want to save the changes you made to cap-smd_bd6_3-l6_6-w6_6-ls7_2-r-rd.dra?
 \i (00:00:14) fillin yes 
-\i (00:00:20) setwindow form.pkgmap3d
-\i (00:00:20) FORM pkgmap3d stplist 0805.step 
-\i (00:00:21) FORM pkgmap3d stplist 0603.step 
-\i (00:00:22) FORM pkgmap3d stplist 0805.step 
-\i (00:00:22) FORM pkgmap3d stplist 0603.step 
-\i (00:00:23) FORM pkgmap3d stplist 0805.step 
-\i (00:00:30) FORM pkgmap3d done  
-\i (00:00:30) setwindow pcb
-\i (00:00:30) generaledit 
-\i (00:00:35) zoom in 1 
-\i (00:00:35) setwindow pcb
-\i (00:00:35) zoom in 245.16 -211.73
-\i (00:00:35) trapsize 1393
-\i (00:00:35) zoom in 1 
-\i (00:00:35) setwindow pcb
-\i (00:00:35) zoom in 236.80 -195.01
-\i (00:00:35) trapsize 696
-\i (00:00:38) pick grid 352.42 210.35
-\t (00:00:38) last pick:  400.00 200.00
-\i (00:00:40) delete 
-\i (00:00:40) generaledit 
-\i (00:00:43) pick grid 270.23 5.58
-\t (00:00:43) last pick:  300.00 0.00
-\i (00:00:44) delete 
-\i (00:00:44) generaledit 
-\i (00:00:45) drag_start grid 23.68 204.78
-\i (00:00:45) move 
-\t (00:00:45) last pick:  17.84 137.09
-\t (00:00:45) Pick new location for the element(s).
-\i (00:00:46) drag_stop grid 196.41 128.16
-\i (00:00:46) generaledit 
-\i (00:00:52) delete 
-\i (00:00:52) generaledit 
-\i (00:00:56) undo 
-\i (00:00:56) trapsize 696
-\i (00:00:56) generaledit 
-\i (00:00:57) pick grid -327.35 352.43
-\t (00:00:57) last pick:  -300.00 400.00
-\i (00:00:58) save 
-\i (00:01:00) fillin yes 
-\t (00:01:00) Symbol 'cap-smd_bd6_3-l6_6-w6_6-ls7_2-r-rd.psm' created.
-\i (00:01:00) generaledit 
-\i (00:01:05) exit 
-\t (00:01:05)     Journal end - Mon Apr 18 21:20:11 2022
+\t (00:00:14) Symbol 'cap-smd_bd6_3-l6_6-w6_6-ls7_2-r-rd.psm' created.
+\t (00:00:15)     Journal end - Mon Apr 25 13:39:09 2022

@@ -1,47 +1,199 @@
-\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Mon Apr 18 21:51:49 2022
-\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=7444 CPUs=16
-\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\pushbutton\key-th_4p-l6_2-w6_2-p4_50-ls6_5.dra
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "key-th_4p-l6_2-w6_2-p4_50-ls6_5"
-\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/pushbutton/key-th_4p-l6_2-w6_2-p4_50-ls6_5.dra
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2151
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2849
-\i (00:00:05) trapsize 2786
-\i (00:00:05) generaledit 
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 434.60 33.43
-\i (00:00:06) trapsize 1393
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 431.81 39.01
-\i (00:00:06) trapsize 696
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 431.82 44.59
-\i (00:00:06) trapsize 348
-\i (00:00:07) pick grid 316.90 199.21
-\t (00:00:07) last pick:  300.00 200.00
-\i (00:00:08) delete 
+\t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:05)     Journal start - Mon Apr 25 14:09:06 2022
+\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=22856 CPUs=16
+\t (00:00:05) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\pushbutton_big\key-th_4p-l6_2-w6_2-p4_50-ls6_5.dra
+\t (00:00:05) 
+   (00:00:05) Loading axlcore.cxt 
+\t (00:00:08) Opening existing design...
+\i (00:00:08) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged key-th_4p-l6_2-w6_2-p4_50-ls6_5
+\d (00:00:08) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/pushbutton_big/key-th_4p-l6_2-w6_2-p4_50-ls6_5.dra
+\i (00:00:08) trapsize 380
+\i (00:00:08) trapsize 388
+\i (00:00:08) trapsize 380
+\i (00:00:08) trapsize 380
 \i (00:00:08) generaledit 
-\i (00:00:09) pick grid 264.66 34.14
-\t (00:00:09) last pick:  300.00 0.00
-\i (00:00:10) delete 
-\i (00:00:10) generaledit 
-\i (00:00:11) drag_start grid 36.91 151.15
-\i (00:00:11) move 
-\t (00:00:11) last pick:  -10.00 117.50
-\t (00:00:11) Pick new location for the element(s).
-\i (00:00:12) drag_stop grid 213.12 136.52
-\i (00:00:12) generaledit 
-\i (00:00:13) save 
-\i (00:00:14) fillin yes 
-\t (00:00:14) Symbol 'key-th_4p-l6_2-w6_2-p4_50-ls6_5.psm' created.
-\i (00:00:14) generaledit 
-\i (00:00:16) exit 
-\t (00:00:16)     Journal end - Mon Apr 18 21:52:03 2022
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 350.67 -63.67
+\i (00:00:14) trapsize 190
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 350.66 -63.66
+\i (00:00:14) trapsize 95
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 350.66 -63.66
+\i (00:00:14) trapsize 47
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 350.66 -63.65
+\i (00:00:14) trapsize 24
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 350.67 -63.65
+\i (00:00:14) trapsize 12
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 350.67 -63.64
+\i (00:00:14) trapsize 6
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 350.67 -63.64
+\i (00:00:14) trapsize 3
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 350.67 -63.64
+\i (00:00:14) trapsize 1
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.68 -63.63
+\i (00:00:14) trapsize 3
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 350.67 -63.64
+\i (00:00:14) trapsize 1
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.68 -63.63
+\i (00:00:14) trapsize 3
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.67 -63.64
+\i (00:00:14) trapsize 6
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.68 -63.64
+\i (00:00:14) trapsize 12
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.68 -63.64
+\i (00:00:14) trapsize 24
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.67 -63.64
+\i (00:00:14) trapsize 47
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.68 -63.64
+\i (00:00:14) trapsize 95
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.66 -63.64
+\i (00:00:14) trapsize 190
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.67 -63.63
+\i (00:00:14) trapsize 380
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.67 -63.63
+\i (00:00:14) trapsize 759
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.67 -63.64
+\i (00:00:14) trapsize 1519
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 350.66 -63.64
+\i (00:00:14) trapsize 2868
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out -421.59 -754.26
+\i (00:00:14) trapsize 2868
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out -421.59 -754.26
+\i (00:00:14) trapsize 2868
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out -421.59 -754.26
+\i (00:00:14) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out -421.59 -754.26
+\i (00:00:15) trapsize 2868
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in 146.26 -232.30
+\i (00:00:16) trapsize 1434
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in 146.26 -232.30
+\i (00:00:16) trapsize 717
+\i (00:00:17) zoom in 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) zoom in -291.09 304.01
+\i (00:00:17) trapsize 358
+\i (00:00:44) exit 
+\e (00:00:44) Do you want to save the changes you made to key-th_4p-l6_2-w6_2-p4_50-ls6_5.dra?
+\i (00:00:45) fillin yes 
+\t (00:00:46) Symbol 'key-th_4p-l6_2-w6_2-p4_50-ls6_5.psm' created.
+\t (00:00:47)     Journal end - Mon Apr 25 14:09:49 2022

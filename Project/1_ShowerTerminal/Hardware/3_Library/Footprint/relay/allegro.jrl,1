@@ -1,0 +1,225 @@
+\t (00:00:08) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:08)     Journal start - Mon Apr 25 14:27:29 2022
+\t (00:00:08)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=43800 CPUs=16
+\t (00:00:08) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\relay\relay-th_973-xxvdc-sl-a.dra
+\t (00:00:08) 
+   (00:00:08) Loading axlcore.cxt 
+\t (00:00:10) Opening existing design...
+\i (00:00:10) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged relay-th_973-xxvdc-sl-a
+\d (00:00:11) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/relay/relay-th_973-xxvdc-sl-a.dra
+\i (00:00:11) trapsize 332
+\i (00:00:11) trapsize 339
+\i (00:00:11) trapsize 332
+\i (00:00:11) trapsize 315
+\i (00:00:11) trapsize 315
+\i (00:00:11) generaledit 
+\i (00:00:19) prepopup 263.69 -230.05
+\i (00:00:20) pop dyn_option_select 'Quick Utilities@:@Design Parameters...' 
+\i (00:00:21) prmed 
+\i (00:00:31) setwindow form.prmedit
+\i (00:00:31) FORM prmedit design  
+\i (00:00:40) FORM prmedit text  
+\i (00:01:10) FORM prmedit text_block 3 
+\i (00:01:11) setwindow pcb
+\i (00:01:11) pick grid 275.02 329.05
+\t (00:01:11) last pick:  300.00 300.00
+\i (00:01:26) setwindow form.prmedit
+\i (00:01:26) FORM prmedit done  
+\i (00:01:26) setwindow pcb
+\i (00:01:26) generaledit 
+\i (00:01:28) pick grid 281.32 -236.97
+\t (00:01:28) last pick:  300.00 -200.00
+\i (00:01:29) pick grid 276.28 -233.19
+\t (00:01:29) last pick:  300.00 -200.00
+\i (00:01:31) prepopup 280.06 -221.86
+\i (00:01:35) pop dyn_option_select 'Quick Utilities@:@Design Parameters...' 
+\i (00:01:35) prmed 
+\i (00:01:40) setwindow form.prmedit
+\i (00:01:40) FORM prmedit text_block 2 
+\i (00:01:40) FORM prmedit done  
+\i (00:01:40) setwindow pcb
+\i (00:01:40) generaledit 
+\i (00:01:40) pick grid 71.03 -191.64
+\t (00:01:40) last pick:  100.00 -200.00
+\i (00:01:48) pick grid -197.81 -231.94
+\t (00:01:48) last pick:  -200.00 -200.00
+\i (00:01:48) pick grid -202.22 -231.94
+\t (00:01:48) last pick:  -200.00 -200.00
+\i (00:01:49) prepopup -200.96 -231.94
+\i (00:01:53) pop dyn_option_select '@:@Show element' 
+\i (00:01:53) show element 
+\i (00:01:53) generaledit 
+\i (00:02:01) setwindow text
+\i (00:02:01) close
+\i (00:02:02) pick grid 286.36 -222.49
+\t (00:02:02) last pick:  300.00 -200.00
+\i (00:02:02) prepopup 281.32 -231.31
+\i (00:02:05) pick grid -173.26 -235.08
+\t (00:02:05) last pick:  -200.00 -200.00
+\i (00:02:06) prepopup -199.07 -231.94
+\i (00:02:07) pop dyn_option_select 'Quick Utilities@:@Design Parameters...' 
+\i (00:02:07) prmed 
+\i (00:02:10) setwindow form.prmedit
+\i (00:02:10) FORM prmedit cancel  
+\i (00:02:10) setwindow pcb
+\i (00:02:10) generaledit 
+\i (00:02:11) pick grid 276.28 -222.49
+\t (00:02:11) last pick:  300.00 -200.00
+\i (00:02:11) prepopup 251.10 -226.27
+\i (00:02:13) pop dyn_option_select '@:@Show element' 
+\i (00:02:13) show element 
+\i (00:02:13) generaledit 
+\i (00:02:34) setwindow text
+\i (00:02:34) close
+\i (00:02:35) pick grid 287.61 -243.27
+\t (00:02:35) last pick:  300.00 -200.00
+\i (00:02:35) prepopup 279.43 -228.79
+\i (00:02:39) pop dyn_option_select 'Quick Utilities@:@Grids...' 
+\i (00:02:39) define grid 
+\t (00:02:39) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (00:02:43) setwindow form.grid
+\i (00:02:43) FORM grid done  
+\i (00:02:44) setwindow pcb
+\i (00:02:44) prepopup 273.76 -236.97
+\i (00:02:48) pop dyn_option_select 'Quick Utilities@:@Design Parameters...' 
+\i (00:02:48) prmed 
+\i (00:02:51) setwindow form.prmedit
+\i (00:02:51) FORM prmedit shapes  
+\i (00:02:53) FORM prmedit route  
+\i (00:02:58) FORM prmedit ee_treelist  Slide 
+\i (00:03:01) FORM prmedit display  
+\i (00:03:08) FORM prmedit design  
+\i (00:03:08) FORM prmedit text  
+\i (00:03:16) FORM prmedit text_name 3 
+\i (00:03:17) FORM prmedit done  
+\i (00:03:17) setwindow pcb
+\i (00:03:17) generaledit 
+\i (00:03:19) pick grid 146.58 -177.16
+\t (00:03:19) last pick:  100.00 -200.00
+\i (00:03:20) pick grid 269.36 -230.05
+\t (00:03:20) last pick:  300.00 -200.00
+\i (00:03:21) prepopup 269.36 -230.05
+\i (00:03:25) pop dyn_option_select 'Quick Utilities@:@Design Parameters...' 
+\i (00:03:25) prmed 
+\i (00:03:34) setwindow form.prmedit
+\i (00:03:34) FORM prmedit text_name 3 
+\i (00:03:34) FORM prmedit done  
+\i (00:03:35) setwindow pcb
+\i (00:03:35) generaledit 
+\i (00:03:38) pick grid 305.87 -230.05
+\t (00:03:38) last pick:  300.00 -200.00
+\i (00:03:38) prepopup 305.87 -230.05
+\i (00:03:41) pop dyn_option_select 'Quick Utilities@:@Design Parameters...' 
+\i (00:03:41) prmed 
+\i (00:03:44) setwindow form.prmedit
+\i (00:03:44) FORM prmedit cancel  
+\i (00:03:45) setwindow pcb
+\i (00:03:45) generaledit 
+\i (00:03:45) pick grid 151.62 140.16
+\t (00:03:45) last pick:  200.00 100.00
+\i (00:03:47) pick grid -199.70 246.57
+\t (00:03:47) last pick:  -200.00 200.00
+\i (00:03:49) prepopup -202.85 249.09
+\i (00:04:13) pop dyn_option_select 'Selection set@:@Select@:@Text 4' 
+\i (00:04:23) prepopup -200.96 245.31
+\i (00:04:30) find_by_name 
+\i (00:04:33) setwindow form.findname
+\i (00:04:33) FORM findname cancel  
+\i (00:04:35) setwindow pcb
+\i (00:04:35) prepopup -200.33 250.35
+\i (00:04:42) pop dyn_option_select '@:@Text edit' 
+\i (00:04:42) text edit 
+\i (00:04:45) setwindow form.textedit
+\i (00:04:45) FORM textedit str 3 
+\i (00:04:45) FORM textedit done  
+\i (00:04:45) setwindow pcb
+\i (00:04:45) pick 0.00 0.00
+\t (00:04:45) Pick text to edit.
+\i (00:04:45) setwindow pcb
+\i (00:04:45) generaledit 
+\i (00:04:46) pick grid -122.89 169.76
+\t (00:04:46) last pick:  -100.00 200.00
+\i (00:04:47) pick grid -167.59 220.75
+\t (00:04:47) last pick:  -200.00 200.00
+\i (00:04:57) undo 
+\i (00:04:57) trapsize 315
+\i (00:04:57) generaledit 
+\i (00:05:00) pick grid 87.40 114.98
+\t (00:05:00) last pick:  100.00 100.00
+\i (00:05:00) pick grid 281.95 -235.08
+\t (00:05:00) last pick:  300.00 -200.00
+\i (00:05:01) pick grid 280.69 -226.90
+\t (00:05:01) last pick:  300.00 -200.00
+\i (00:05:01) prepopup 280.69 -226.90
+\i (00:05:05) pop dyn_option_select 'Selection set@:@Select@:@Text 2' 
+\i (00:05:07) prepopup 280.06 -221.86
+\i (00:05:09) pop dyn_option_select '@:@Text edit' 
+\i (00:05:09) text edit 
+\i (00:05:13) setwindow form.textedit
+\i (00:05:13) FORM textedit str 3 
+\i (00:05:13) FORM textedit done  
+\i (00:05:13) setwindow pcb
+\i (00:05:13) pick 0.00 0.00
+\t (00:05:13) Pick text to edit.
+\i (00:05:13) setwindow pcb
+\i (00:05:13) generaledit 
+\i (00:05:14) pick grid 150.36 -157.64
+\t (00:05:14) last pick:  200.00 -200.00
+\i (00:05:15) pick grid 250.47 -242.01
+\t (00:05:15) last pick:  300.00 -200.00
+\i (00:05:16) prepopup 256.76 -239.49
+\i (00:05:25) pick grid 345.54 -155.75
+\t (00:05:25) last pick:  300.00 -200.00
+\i (00:05:28) zoom out 1 
+\i (00:05:28) setwindow pcb
+\i (00:05:28) zoom out 229.69 -209.27
+\i (00:05:28) trapsize 630
+\i (00:05:28) zoom in 1 
+\i (00:05:28) setwindow pcb
+\i (00:05:28) zoom in 160.43 -73.27
+\i (00:05:28) trapsize 315
+\i (00:05:29) prepopup 267.47 -217.45
+\i (00:05:34) pick grid 99.36 -138.12
+\t (00:05:34) last pick:  100.00 -100.00
+\i (00:05:36) pick grid -197.82 247.83
+\t (00:05:36) last pick:  -200.00 200.00
+\i (00:05:37) prepopup -197.82 247.83
+\i (00:05:42) pop dyn_option_select 'Selection set@:@Select@:@Text 4' 
+\i (00:05:43) prepopup -200.96 249.72
+\i (00:05:46) pop dyn_option_select '@:@Text edit' 
+\i (00:05:46) text edit 
+\i (00:05:49) setwindow form.textedit
+\i (00:05:49) FORM textedit str 2 
+\i (00:05:49) FORM textedit done  
+\i (00:05:49) setwindow pcb
+\i (00:05:49) pick 0.00 0.00
+\t (00:05:49) Pick text to edit.
+\i (00:05:49) setwindow pcb
+\i (00:05:49) generaledit 
+\i (00:05:50) pick grid -106.52 140.80
+\t (00:05:50) last pick:  -100.00 100.00
+\i (00:05:52) pick grid -181.45 118.76
+\t (00:05:52) last pick:  -200.00 100.00
+\i (00:05:53) prepopup -277.15 18.65
+\i (00:05:58) pop dyn_option_select 'Selection set@:@Select@:@Text 5' 
+\i (00:06:00) prepopup -277.78 12.36
+\i (00:06:02) pop dyn_option_select '@:@Text edit' 
+\i (00:06:02) text edit 
+\i (00:06:05) setwindow form.textedit
+\i (00:06:05) FORM textedit str 4 
+\i (00:06:06) FORM textedit done  
+\i (00:06:06) setwindow pcb
+\i (00:06:06) pick 0.00 0.00
+\t (00:06:06) Pick text to edit.
+\i (00:06:06) setwindow pcb
+\i (00:06:06) generaledit 
+\i (00:06:07) pick grid -180.19 85.39
+\t (00:06:07) last pick:  -200.00 100.00
+\i (00:06:43) pick grid 48.36 399.57
+\t (00:06:43) last pick:  0.00 400.00
+\i (00:06:44) save 
+\i (00:06:50) fillin yes 
+\t (00:06:50) Symbol 'relay-th_973-xxvdc-sl-a.psm' created.
+\i (00:06:50) generaledit 
+\i (00:06:58) exit 
+\t (00:07:00)     Journal end - Mon Apr 25 14:34:21 2022

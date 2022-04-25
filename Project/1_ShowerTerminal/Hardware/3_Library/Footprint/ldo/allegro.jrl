@@ -1,49 +1,27 @@
-\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Mon Apr 18 20:32:18 2022
-\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=19208 CPUs=16
-\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\ldo\sot-223_l6_7-w3_5-p2_30-br.dra
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "sot-223_l6_7-w3_5-p2_30-br"
-\d (00:00:05) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/ldo/sot-223_l6_7-w3_5-p2_30-br.dra
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2151
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2849
-\i (00:00:05) trapsize 2786
-\i (00:00:05) generaledit 
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 5.57 -78.01
-\i (00:00:06) trapsize 1393
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 5.57 -66.86
-\i (00:00:06) trapsize 696
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 5.57 -55.71
-\i (00:00:06) trapsize 348
-\i (00:00:08) pick grid 52.94 156.02
-\t (00:00:08) last pick:  100.00 200.00
-\i (00:00:11) pick grid 233.33 39.01
-\t (00:00:11) last pick:  200.00 0.00
-\i (00:00:13) delete 
-\i (00:00:13) generaledit 
-\i (00:00:17) pick grid 116.32 224.97
-\t (00:00:17) last pick:  100.00 200.00
-\i (00:00:19) delete 
-\i (00:00:19) generaledit 
-\i (00:00:21) drag_start grid 25.77 165.77
-\i (00:00:21) move 
-\t (00:00:22) last pick:  -7.00 132.50
-\t (00:00:22) Pick new location for the element(s).
-\i (00:00:24) drag_stop grid 128.16 162.29
-\i (00:00:24) generaledit 
-\i (00:00:49) save 
-\i (00:00:50) fillin yes 
-\t (00:00:51) Symbol 'sot-223_l6_7-w3_5-p2_30-br.psm' created.
-\i (00:00:51) generaledit 
-\i (00:00:53) exit 
-\t (00:00:53)     Journal end - Mon Apr 18 20:33:09 2022
+\t (00:00:03) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Mon Apr 25 13:55:14 2022
+\t (00:00:03)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=48164 CPUs=16
+\t (00:00:03) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\ldo\sot-223_l6_7-w3_5-p2_30-br.dra
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
+\t (00:00:03) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged sot-223_l6_7-w3_5-p2_30-br
+\d (00:00:03) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/ldo/sot-223_l6_7-w3_5-p2_30-br.dra
+\i (00:00:03) trapsize 380
+\i (00:00:03) trapsize 388
+\i (00:00:03) trapsize 380
+\i (00:00:04) trapsize 380
+\i (00:00:04) generaledit 
+\i (00:00:14) pick grid 123.98 91.93
+\t (00:00:14) last pick:  100.00 100.00
+\i (00:00:16) pick grid 131.58 1.53
+\t (00:00:16) last pick:  100.00 0.00
+\i (00:00:17) pick grid 119.42 -112.43
+\t (00:00:17) last pick:  100.00 -100.00
+\i (00:00:18) pick grid -114.57 -10.63
+\t (00:00:18) last pick:  -100.00 0.00
+\i (00:11:40) exit 
+\e (00:11:40) Do you want to save the changes you made to sot-223_l6_7-w3_5-p2_30-br.dra?
+\i (00:11:41) fillin yes 
+\t (00:11:41) Symbol 'sot-223_l6_7-w3_5-p2_30-br.psm' created.
+\t (00:11:42)     Journal end - Mon Apr 25 14:06:52 2022

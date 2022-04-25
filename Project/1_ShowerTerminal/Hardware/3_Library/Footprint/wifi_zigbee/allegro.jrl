@@ -1,55 +1,23 @@
-\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Mon Apr 18 22:02:50 2022
-\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=19652 CPUs=16
-\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\wifi\s24-pad.dra
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "s24-pad"
-\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/wifi/s24-pad.dra
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2151
-\i (00:00:05) trapsize 2109
-\i (00:00:05) trapsize 2849
-\i (00:00:05) trapsize 2786
-\i (00:00:05) generaledit 
-\i (00:00:08) zoom in 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 300.88 -27.86
-\i (00:00:08) trapsize 1393
-\i (00:00:08) zoom in 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 286.95 -19.50
-\i (00:00:08) trapsize 696
-\i (00:00:10) pick grid 197.81 412.32
-\t (00:00:10) last pick:  200.00 400.00
-\i (00:00:12) delete 
-\i (00:00:12) generaledit 
-\i (00:00:13) pick grid 183.88 27.87
-\t (00:00:13) last pick:  200.00 0.00
-\i (00:00:14) delete 
-\i (00:00:14) generaledit 
-\i (00:00:16) drag_start grid 130.94 366.36
-\i (00:00:16) move 
-\t (00:00:16) last pick:  95.78 338.58
-\t (00:00:16) Pick new location for the element(s).
-\i (00:00:17) drag_stop grid 664.45 321.78
-\i (00:00:17) generaledit 
-\i (00:00:18) save 
-\i (00:00:19) fillin yes 
-\t (00:00:20) Symbol 's24-pad.psm' created.
-\i (00:00:20) generaledit 
-\i (00:00:23) drag_start grid 735.49 313.42
-\i (00:00:23) move 
-\t (00:00:23) last pick:  700.00 300.00
-\t (00:00:23) Pick new location for the element(s).
-\i (00:00:25) drag_stop grid -462.46 273.03
-\i (00:00:25) generaledit 
-\i (00:00:26) save 
-\i (00:00:27) fillin yes 
-\t (00:00:28) Symbol 's24-pad.psm' created.
-\i (00:00:28) generaledit 
-\i (00:00:31) pick grid 1383.22 360.78
-\t (00:00:31) last pick:  1400.00 400.00
-\i (00:00:33) exit 
-\t (00:00:34)     Journal end - Mon Apr 18 22:03:21 2022
+\t (00:00:04) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:04)     Journal start - Mon Apr 25 14:11:42 2022
+\t (00:00:04)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=44916 CPUs=16
+\t (00:00:04) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\wifi_zigbee\s24-pad.dra
+\t (00:00:04) 
+   (00:00:04) Loading axlcore.cxt 
+\t (00:00:07) Opening existing design...
+\i (00:00:07) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged s24-pad
+\d (00:00:07) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/wifi_zigbee/s24-pad.dra
+\i (00:00:07) trapsize 760
+\i (00:00:07) trapsize 776
+\i (00:00:07) trapsize 760
+\i (00:00:08) trapsize 760
+\i (00:00:08) generaledit 
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in -445.64 9.88
+\i (00:00:09) trapsize 380
+\i (00:00:30) exit 
+\e (00:00:30) Do you want to save the changes you made to s24-pad.dra?
+\i (00:00:31) fillin yes 
+\t (00:00:31) Symbol 's24-pad.psm' created.
+\t (00:00:32)     Journal end - Mon Apr 25 14:12:10 2022

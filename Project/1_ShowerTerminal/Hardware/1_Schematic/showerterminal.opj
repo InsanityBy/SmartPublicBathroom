@@ -115,7 +115,8 @@
       (Path "Design Resources" ".\showerterminal.dsn")
       (Path "Design Resources" ".\showerterminal.dsn" "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources" ".\showerterminal.dsn"))
+      (Select "Design Resources" ".\showerterminal.dsn" "SCHEMATIC1"
+         "3_SIGNALOUTPUT"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -125,14 +126,14 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 156 1126 156 497")
-        (Scroll "0 0")
+        (Placement "44 0 1 -1 -1 -8 -31 104 1078 104 449")
+        (Scroll "161 157")
         (Zoom "100")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "1_POWER")))
+      (Page "3_SIGNALOUTPUT")))
   (MPSSessionName "Jessi_10")
   (LastUsedLibraryBrowseDirectory
      "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library"))
