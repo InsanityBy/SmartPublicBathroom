@@ -1,16 +1,119 @@
-\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Mon Apr 18 21:58:00 2022
-\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=12588 CPUs=16
-\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\3_hole_2.54mm\hdr-th_3p-p2_54-v-f.dra
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "hdr-th_3p-p2_54-v-f"
-\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/3_hole_2.54mm/hdr-th_3p-p2_54-v-f.dra
-\i (00:00:05) trapsize 356
-\i (00:00:05) trapsize 363
-\i (00:00:05) trapsize 356
-\i (00:00:05) trapsize 364
-\i (00:00:05) generaledit 
-\i (00:00:38) exit 
-\t (00:00:38)     Journal end - Mon Apr 18 21:58:36 2022
+\t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:05)     Journal start - Mon Apr 25 16:10:16 2022
+\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=50168 CPUs=16
+\t (00:00:05) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\3p_2.54mm\hdr-th_3p-p2_54-v-f.dra
+\t (00:00:05) 
+   (00:00:05) Loading axlcore.cxt 
+\t (00:00:07) Opening existing design...
+\i (00:00:07) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged hdr-th_3p-p2_54-v-f
+\d (00:00:07) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/3p_2.54mm/hdr-th_3p-p2_54-v-f.dra
+\i (00:00:07) trapsize 388
+\i (00:00:07) trapsize 397
+\i (00:00:07) trapsize 388
+\i (00:00:08) trapsize 369
+\i (00:00:08) trapsize 369
+\i (00:00:08) generaledit 
+\i (00:00:22) pick grid 196.26 85.36
+\t (00:00:22) last pick:  200.00 100.00
+\i (00:00:23) pick grid 213.22 23.45
+\t (00:00:23) last pick:  200.00 0.00
+\i (00:00:55) auto_pin_renumber 
+\w (00:00:55) We cannot detect a pin array that supports one of our renumber methods.
+\i (00:00:55) generaledit 
+\i (00:00:59) pick grid -101.52 5.02
+\t (00:00:59) last pick:  -100.00 0.00
+\i (00:01:06) pick grid 10.52 -8.25
+\t (00:01:06) last pick:  0.00 0.00
+\i (00:01:07) pick grid 104.13 -12.67
+\t (00:01:07) last pick:  100.00 0.00
+\i (00:01:08) pick grid -18.97 0.60
+\t (00:01:08) last pick:  0.00 0.00
+\i (00:01:08) pick grid -128.79 2.07
+\t (00:01:08) last pick:  -100.00 0.00
+\i (00:01:15) auto_pin_renumber 
+\w (00:01:15) We cannot detect a pin array that supports one of our renumber methods.
+\i (00:01:15) generaledit 
+\i (00:01:17) drag_start grid -228.30 92.74
+\i (00:01:18) drag_stop 275.13 -147.56
+\i (00:01:20) auto_pin_renumber 
+\w (00:01:20) We cannot detect a pin array that supports one of our renumber methods.
+\i (00:01:20) generaledit 
+\i (00:01:30) pick grid 175.62 -173.36
+\t (00:01:30) last pick:  200.00 -200.00
+\i (00:01:30) pick grid -136.17 167.92
+\t (00:01:30) last pick:  -100.00 200.00
+\i (00:01:40) pick grid -145.01 330.82
+\t (00:01:40) last pick:  -100.00 300.00
+\i (00:02:07) pick grid 311.99 66.94
+\t (00:02:07) last pick:  300.00 100.00
+\i (00:05:42) text edit 
+\i (00:05:50) setwindow form.mini
+\i (00:05:50) FORM mini subclass SILKSCREEN_TOP 
+\i (00:05:55) setwindow pcb
+\i (00:05:55) pick grid 74.64 347.77
+\t (00:05:55) last pick:  100.00 300.00
+\e (00:05:55) ERROR(SPMHA1-441): Text not found.
+\i (00:05:56) setwindow pcb
+\i (00:05:56) pick grid 233.86 276.27
+\t (00:05:56) last pick:  200.00 300.00
+\e (00:05:56) ERROR(SPMHA1-441): Text not found.
+\i (00:05:57) setwindow pcb
+\i (00:05:57) pick grid 183.00 250.47
+\t (00:05:57) last pick:  200.00 300.00
+\e (00:05:57) ERROR(SPMHA1-441): Text not found.
+\i (00:05:58) setwindow pcb
+\i (00:05:58) prepopup 188.89 268.90
+\i (00:05:59) done 
+\i (00:05:59) generaledit 
+\i (00:06:02) pick grid 189.63 335.98
+\t (00:06:02) last pick:  200.00 300.00
+\i (00:06:02) prepopup 192.58 333.77
+\i (00:06:03) pick grid -10.12 337.45
+\t (00:06:03) last pick:  0.00 300.00
+\i (00:06:06) text edit 
+\i (00:06:11) pick grid 288.40 10.92
+\t (00:06:11) last pick:  300.00 0.00
+\e (00:06:11) ERROR(SPMHA1-441): Text not found.
+\i (00:06:12) setwindow pcb
+\i (00:06:12) pick grid 157.93 -65.74
+\t (00:06:12) last pick:  200.00 -100.00
+\e (00:06:12) ERROR(SPMHA1-441): Text not found.
+\i (00:06:13) setwindow pcb
+\i (00:06:13) pick grid 179.31 -107.75
+\t (00:06:13) last pick:  200.00 -100.00
+\e (00:06:13) ERROR(SPMHA1-441): Text not found.
+\i (00:06:24) setwindow pcb
+\i (00:06:24) text edit 
+\i (00:06:26) pick grid 230.17 5.02
+\t (00:06:26) last pick:  200.00 0.00
+\i (00:06:28) setwindow pcb
+\i (00:06:28) pick grid 305.35 5.02
+\t (00:06:28) last pick:  300.00 0.00
+\i (00:06:28) setwindow pcb
+\i (00:06:28) pick 230.17 5.02
+\e (00:06:28) ERROR(SPMHA1-441): Text not found.
+\i (00:06:30) setwindow pcb
+\i (00:06:30) prepopup 56.22 293.23
+\i (00:06:31) done 
+\i (00:06:31) generaledit 
+\i (00:06:35) add text 
+\t (00:06:35) Pick text location.
+\i (00:06:38) pick grid 327.47 122.22
+\t (00:06:38) last pick:  300.00 100.00
+\t (00:06:38) Refdes of this subclass is already defined, change subclass.
+\i (00:06:38) pick grid 311.99 128.12
+\t (00:06:38) last pick:  300.00 100.00
+\t (00:06:38) Refdes of this subclass is already defined, change subclass.
+\i (00:06:39) pick grid 362.11 74.31
+\t (00:06:39) last pick:  400.00 100.00
+\t (00:06:39) Refdes of this subclass is already defined, change subclass.
+\i (00:06:49) prepopup 278.82 272.59
+\i (00:06:50) cancel 
+\i (00:06:50) generaledit 
+\i (00:06:51) prepopup 180.05 305.02
+\i (00:06:52) pick grid -23.39 299.12
+\t (00:06:52) last pick:  0.00 300.00
+\i (00:06:54) exit 
+\e (00:06:54) Do you want to save the changes you made to hdr-th_3p-p2_54-v-f.dra?
+\i (00:06:57) fillin no 
+\t (00:06:58)     Journal end - Mon Apr 25 16:17:10 2022

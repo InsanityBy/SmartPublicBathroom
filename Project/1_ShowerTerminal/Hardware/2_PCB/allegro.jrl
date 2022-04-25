@@ -1,0 +1,16 @@
+\t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:05)     Journal start - Mon Apr 25 16:53:16 2022
+\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=15032 CPUs=16
+\t (00:00:05) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\2_PCB\SHOWERTEREMINAL.brd
+\t (00:00:05) 
+   (00:00:05) Loading axlcore.cxt 
+\t (00:00:08) Opening existing design...
+\i (00:00:08) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERTEREMINAL
+\d (00:00:08) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTEREMINAL.brd
+\i (00:00:08) trapsize 49
+\i (00:00:08) trapsize 50
+\i (00:00:08) trapsize 49
+\i (00:00:08) trapsize 49
+\i (00:00:09) placementedit 
+\i (00:00:13) exit 
+\t (00:00:14)     Journal end - Mon Apr 25 16:53:24 2022

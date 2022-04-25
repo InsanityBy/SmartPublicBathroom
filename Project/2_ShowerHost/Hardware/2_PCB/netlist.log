@@ -1,0 +1,44 @@
+{ Using PSTWRITER 17.2.0 d001Apr-25-2022 at 15:28:45 }
+
+#1 WARNING(ORCAP-36006): Part Name "DIODE_DO-41_BD2_4-L4_7-P8_70-D0_6-RD_1N4007" is renamed to "DIODE_DO-41_BD2_4-L4_7-P8_70-D0".
+#2 WARNING(ORCAP-36006): Part Name "CON3_HDR-TH_3P-P2_54-V-F_RH-30W_PORT" is renamed to "CON3_HDR-TH_3P-P2_54-V-F_RH-30W".
+#3 WARNING(ORCAP-36006): Part Name "CON2_CONN-TH_P5_00_KF127-5_0-2P_FAN_PORT" is renamed to "CON2_CONN-TH_P5_00_KF127-5_0-2P".
+#4 WARNING(ORCAP-36006): Part Name "CON2_CONN-TH_P5_00_KF127-5_0-2P_LIGHT_PORT" is renamed to "CON2_CONN-TH_P5_00_KF127-5_0-_1".
+#5 WARNING(ORCAP-36006): Part Name "CON4_HDR-TH_4P-P2_54-V-F_LCD_PORT" is renamed to "CON4_HDR-TH_4P-P2_54-V-F_LCD_PO".
+#6 WARNING(ORCAP-36006): Part Name "CON2_HDR-TH_2P-P2_54-V-F_SPEAKER_PORT" is renamed to "CON2_HDR-TH_2P-P2_54-V-F_SPEAKE".
+#7 WARNING(ORCAP-36006): Part Name "CON4_HDR-TH_4P-P2_54-V-F_SWD_PORT" is renamed to "CON4_HDR-TH_4P-P2_54-V-F_SWD_PO".
+#8 WARNING(ORCAP-36006): Part Name "PHOTO NPN_0_LED-TH_BD5_0_BLUE_HLPT5I850HP25" is renamed to "PHOTO NPN_0_LED-TH_BD5_0_BLUE_H".
+#9 WARNING(ORCAP-36006): Part Name "BPW36/TO_0_SOT-23-3_L2_9-W1_6-P1_90-LS2_8-BR_S8050" is renamed to "BPW36/TO_0_SOT-23-3_L2_9-W1_6-P".
+#10 WARNING(ORCAP-36006): Part Name "RELAY SPST_RELAY-TH_973-XXVDC-SL-A_973-5VDC-SL-A" is renamed to "RELAY SPST_RELAY-TH_973-XXVDC-S".
+#11 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST-2_KEY-TH_4P-L6_2-W6_2-P4_50-LS6_5_REPAIR" is renamed to "SW PUSHBUTTON-SPST-2_KEY-TH_4P-".
+#12 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST-2_KEY-TH_4P-L6_2-W6_2-P4_50-LS6_5_HELP" is renamed to "SW PUSHBUTTON-SPST-2_KEY-TH_4_1".
+#13 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST-2_SW-SMD_4P-L5_1-W5_1-P3_70-LS6_5-TL-2_WIFI_RST" is renamed to "SW PUSHBUTTON-SPST-2_SW-SMD_4P-".
+#14 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST-2_SW-SMD_4P-L5_1-W5_1-P3_70-LS6_5-TL-2_ZIGBEE_RST" is renamed to "SW PUSHBUTTON-SPST-2_SW-SMD_4_1".
+#15 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST-2_SW-SMD_4P-L5_1-W5_1-P3_70-LS6_5-TL-2_ZIGBEE_WK" is renamed to "SW PUSHBUTTON-SPST-2_SW-SMD_4_2".
+#16 WARNING(ORCAP-36006): Part Name "SW PUSHBUTTON-SPST-2_SW-SMD_4P-L5_1-W5_1-P3_70-LS6_5-TL-2_MCU_NRST" is renamed to "SW PUSHBUTTON-SPST-2_SW-SMD_4_3".
+#17 WARNING(ORCAP-36006): Part Name "TLV1117LV33DCYR_SOT-223_L6_7-W3_5-P2_30-BR_TLV1117LV33" is renamed to "TLV1117LV33DCYR_SOT-223_L6_7-W3".
+#18 WARNING(ORCAP-36042): Pin "OUT" is renamed to "OUT#4" as visible power pin of same name already exists in Package TLV1117LV33DCYR , U1: SCHEMATIC1, 1_POWER (8.30, 2.40).
+#19 WARNING(ORCAP-36042): Pin "OUT" is renamed to "OUT#2" as visible power pin of same name already exists in Package TLV1117LV33DCYR , U1: SCHEMATIC1, 1_POWER (8.30, 2.40).
+#20 WARNING(ORCAP-36006): Part Name "TLV2374ID_SOIC-14_L8_7-W3_9-P1_27-LS6_0-BL_TLV2374" is renamed to "TLV2374ID_SOIC-14_L8_7-W3_9-P1_".
+#21 WARNING(ORCAP-36006): Part Name "WT588F08A-8S_SOP-8_L4_9-W3_9-P1_27-LS6_0-BL_WT588F08A-8S" is renamed to "WT588F08A-8S_SOP-8_L4_9-W3_9-P1".
+#22 WARNING(ORCAP-36006): Part Name "A51-C2G4A20S1A_0_S24-PAD_A51-C2G4A20S1A" is renamed to "A51-C2G4A20S1A_0_S24-PAD_A51-C2".
+#23 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#2" as visible power pin of same name already exists in Package A51-C2G4A20S1a_0 , U5: SCHEMATIC1, 5_COMMUNICATE (2.35, 2.85).
+#24 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#13" as visible power pin of same name already exists in Package A51-C2G4A20S1a_0 , U5: SCHEMATIC1, 5_COMMUNICATE (2.35, 2.85).
+#25 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#15" as visible power pin of same name already exists in Package A51-C2G4A20S1a_0 , U5: SCHEMATIC1, 5_COMMUNICATE (2.35, 2.85).
+#26 WARNING(ORCAP-36006): Part Name "A40-C2G4A04S1A_0_S24-PAD_A40-C2G4A04S1A" is renamed to "A40-C2G4A04S1A_0_S24-PAD_A40-C2".
+#27 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#15" as visible power pin of same name already exists in Package A40-C2G4A04S1a_0 , U6: SCHEMATIC1, 5_COMMUNICATE (9.10, 2.85).
+#28 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#13" as visible power pin of same name already exists in Package A40-C2G4A04S1a_0 , U6: SCHEMATIC1, 5_COMMUNICATE (9.10, 2.85).
+#29 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#2" as visible power pin of same name already exists in Package A40-C2G4A04S1a_0 , U6: SCHEMATIC1, 5_COMMUNICATE (9.10, 2.85).
+#30 WARNING(ORCAP-36006): Part Name "STM32F401RET6_0_LQFP64-10X10MM_STM32F401RE" is renamed to "STM32F401RET6_0_LQFP64-10X10MM_".
+#31 WARNING(ORCAP-36006): Part Name "CRYSTAL_OSC-TH_L11_1-W4_7-P4_88_8MHZ" is renamed to "CRYSTAL_OSC-TH_L11_1-W4_7-P4_88".
+#32 WARNING(ORCAP-36006): Part Name "CRYSTAL_OSC-TH_BD3_0-P1_10-D0_4_32.768KHZ" is renamed to "CRYSTAL_OSC-TH_BD3_0-P1_10-D0_4".
+INFO(ORCAP-36080): Scanning netlist files ...
+
+Loading... D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\2_PCB/pstchip.dat
+
+Loading... D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\2_PCB/pstchip.dat
+
+Loading... D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\2_PCB/pstchip.dat
+
+Loading... D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\2_PCB/pstxnet.dat
+packaging the design view...

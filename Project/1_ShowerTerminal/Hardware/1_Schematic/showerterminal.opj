@@ -76,13 +76,40 @@
     (DRC_Visible_Power_pins "TRUE")
     (DRC_Report_Unused_Part_Packages "TRUE")
     (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
-    (DRC_Run_Physical_Custom_DRC "FALSE"))
+    (DRC_Run_Physical_Custom_DRC "FALSE")
+    (Netlist_TAB "0")
+    ("Create Allegro Netlist" "TRUE")
+    ("Allegro Netlist Directory"
+       "D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\2_PCB")
+    ("View Allegro Netlist Files" "FALSE")
+    ("Allegro Netlist Create DCF File" "FALSE")
+    ("Update Allegro Board" "FALSE")
+    ("Allegro Netlist Output Board File" "allegro\SHOWERTERMINAL.brd")
+    ("Allegro Netlist Remove Etch" "FALSE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "31")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE")
+    (Board_sim_option "VHDL_flow"))
   (Folder "Layout")
   (Folder "Outputs"
     (File ".\showerterminal.bom"
       (Type "Report"))
     (File ".\showerterminal.drc"
-      (Type "Report")))
+      (Type "Report"))
+    (File "..\2_pcb\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File "..\2_pcb\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File "..\2_pcb\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat")))
   (Folder "Referenced Projects")
   (PartMRUSelector
     (MyTitle
@@ -117,8 +144,7 @@
       (Path "Design Resources" ".\showerterminal.dsn")
       (Path "Design Resources" ".\showerterminal.dsn" "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources" ".\showerterminal.dsn" "SCHEMATIC1"
-         "2_SIGNALINPUT"))
+      (Select "Outputs" ".\showerterminal.bom"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -129,13 +155,57 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 26 963 26 367")
+        (Scroll "335 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "2_SIGNALINPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1019 78 423")
+        (Scroll "0 60")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "3_SIGNALOUTPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1045 104 449")
         (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "2_SIGNALINPUT"))) >>>>>>> 02549e4cd526fef274da9526fa039c27ea4ea828
+      (Page "4_HMI"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1071 130 475")
+        (Scroll "0 386")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "6_MCU"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 156 1097 156 501")
+        (Scroll "317 160")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "5_COMMUNICATE"))) >>>>>>> 02549e4cd526fef274da9526fa039c27ea4ea828
   (HierarchyView)
   (Doc
     (Type "COrCapturePMDoc")
@@ -156,4 +226,5 @@
        "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
     (Schematic "SCHEMATIC1") <<<<<<< HEAD
     (Page "3_SIGNALOUTPUT"))
-  (MPSSessionName "Jessi_10"))
+  (MPSSessionName "Jessi_10")
+  (ISPCBBASICLICENSE "false"))
