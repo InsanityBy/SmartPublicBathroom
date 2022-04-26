@@ -1,6 +1,6 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Apr-25-2022 at 15:23:19}
-primitive 'CAP NP_C0805_0.1U';
+{ Using PSTWRITER 17.2.0 d001Apr-26-2022 at 23:02:49}
+primitive 'CAP NP_C0805_100N';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -12,7 +12,7 @@ primitive 'CAP NP_C0805_0.1U';
   body
     PART_NAME='CAP NP';
     JEDEC_TYPE='c0805';
-    VALUE='0.1u';
+    VALUE='100n';
   end_body;
 end_primitive;
 primitive 'CAP NP_C0805_1U';

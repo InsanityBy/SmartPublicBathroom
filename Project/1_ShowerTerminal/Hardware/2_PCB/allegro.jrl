@@ -1,16 +1,14 @@
-\t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:05)     Journal start - Mon Apr 25 16:53:16 2022
-\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=15032 CPUs=16
-\t (00:00:05) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\2_PCB\SHOWERTEREMINAL.brd
-\t (00:00:05) 
-   (00:00:05) Loading axlcore.cxt 
-\t (00:00:08) Opening existing design...
-\i (00:00:08) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERTEREMINAL
-\d (00:00:08) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTEREMINAL.brd
-\i (00:00:08) trapsize 49
-\i (00:00:08) trapsize 50
-\i (00:00:08) trapsize 49
-\i (00:00:08) trapsize 49
-\i (00:00:09) placementedit 
-\i (00:00:13) exit 
-\t (00:00:14)     Journal end - Mon Apr 25 16:53:24 2022
+\t (00:00:08) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:08)     Journal start - Tue Apr 26 22:49:35 2022
+\t (00:00:08)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=12044 CPUs=16
+\t (00:00:08) CmdLine= D:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:08) 
+   (00:00:08) Loading axlcore.cxt 
+\t (00:00:10) Starting new design...
+\i (00:00:11) trapsize 29310
+\i (00:00:11) placementedit 
+\i (00:00:13) new 
+\e (00:00:13) Do you want to save the changes you made to unnamed.brd?
+\i (00:00:15) fillin no 
+\i (00:00:50) newdrawfillin "mhole_d_4mm.dra" "Mechanical Symbol"
+\t (00:00:50)     Journal end - Tue Apr 26 22:50:18 2022

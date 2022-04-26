@@ -25,7 +25,7 @@
 
 ## 人机接口  
 1. 报修按键：B1 **- PA5**  
-2. 求助按键：B2 **- PA6**  
+2. 求助按键：B2 **- PA6** 
 3. LCD显示屏：LCD_SDA **- PB7**，LCD_SCL **- PB6**  
 4. 扬声器：SPEAKER_DATA **- PB3**，SPEAKER_CLK **- PB10**  
 5. NFC读卡器：NFC_RST  **- PA7**，NFC_IRQ **- PB0**，NFC_MISO **- PB14**，NFC_MOSI **- PB15**，NFC_SCK **- PB13**，NFC_NSS **- PB12**  
