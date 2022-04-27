@@ -1,0 +1,44 @@
+\t (00:00:04) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:04)     Journal start - Wed Apr 27 23:54:06 2022
+\t (00:00:04)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=26572 CPUs=16
+\t (00:00:04) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\3_Library\Footprint\led_plug\led-th_bd3_0-p2_54-fd.dra
+\t (00:00:04) 
+   (00:00:04) Loading axlcore.cxt 
+\t (00:00:07) Opening existing design...
+\i (00:00:07) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged led-th_bd3_0-p2_54-fd
+\d (00:00:07) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/3_Library/Footprint/led_plug/led-th_bd3_0-p2_54-fd.dra
+\i (00:00:07) trapsize 2300
+\i (00:00:07) trapsize 2350
+\i (00:00:07) trapsize 2300
+\i (00:00:07) trapsize 2183
+\i (00:00:07) trapsize 2868
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in -100.38 146.26
+\i (00:00:08) trapsize 1434
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in -108.98 149.13
+\i (00:00:09) trapsize 717
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in -110.41 149.13
+\i (00:00:09) trapsize 358
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out 439.52 27.24
+\i (00:00:11) trapsize 717
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 419.44 34.42
+\i (00:00:11) trapsize 358
+\i (00:00:12) zoom in 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom in 481.10 41.59
+\i (00:00:12) trapsize 179
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out 408.33 53.06
+\i (00:00:12) trapsize 358
+\i (00:00:25) exit 
+\t (00:00:27)     Journal end - Wed Apr 27 23:54:29 2022

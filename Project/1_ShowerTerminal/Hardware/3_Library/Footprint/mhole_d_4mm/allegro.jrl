@@ -1,33 +1,42 @@
-\t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:05)     Journal start - Tue Apr 26 22:58:58 2022
-\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=22852 CPUs=16
-\t (00:00:05) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\mhole_d_4mm\mhole_d_4mm.dra
-\t (00:00:05) 
-   (00:00:05) Loading axlcore.cxt 
-\t (00:00:08) Opening existing design...
-\i (00:00:08) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged mhole_d_4mm
-\d (00:00:08) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/mhole_d_4mm/mhole_d_4mm.dra
-\i (00:00:08) trapsize 755
-\i (00:00:08) trapsize 775
-\i (00:00:08) trapsize 796
-\i (00:00:08) trapsize 775
-\i (00:00:08) trapsize 755
-\i (00:00:08) trapsize 755
+\t (00:00:08) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:08)     Journal start - Wed Apr 27 23:27:17 2022
+\t (00:00:08)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=8892 CPUs=16
+\t (00:00:08) CmdLine= D:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:08) 
+   (00:00:08) Loading axlcore.cxt 
+\t (00:00:09) Opening existing design...
+\i (00:00:09) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged mhole_d_4mm
+\d (00:00:09) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/mhole_d_4mm/mhole_d_4mm.dra
+\i (00:00:09) trapsize 755
+\i (00:00:09) trapsize 775
+\i (00:00:09) trapsize 796
+\i (00:00:09) trapsize 775
+\i (00:00:09) trapsize 755
+\i (00:00:09) trapsize 755
 \i (00:00:10) zoom in 1 
 \i (00:00:10) setwindow pcb
-\i (00:00:10) zoom in -3.8415 0.4453
+\i (00:00:10) zoom in -0.2642 -0.7623
 \i (00:00:10) trapsize 377
 \i (00:00:10) zoom in 1 
 \i (00:00:10) setwindow pcb
-\i (00:00:10) zoom in -3.8415 0.4453
+\i (00:00:10) zoom in -0.2642 -0.7622
 \i (00:00:10) trapsize 189
-\i (00:00:10) zoom out 1 
+\i (00:00:10) zoom in 1 
 \i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out -3.8377 0.4302
-\i (00:00:10) trapsize 377
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out -3.6490 0.2416
-\i (00:00:10) trapsize 755
-\i (00:00:12) exit 
-\t (00:00:13)     Journal end - Tue Apr 26 22:59:06 2022
+\i (00:00:10) zoom in -0.2641 -0.7622
+\i (00:00:10) trapsize 94
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out -0.1679 -0.8075
+\i (00:00:11) trapsize 189
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out -0.1528 -0.8225
+\i (00:00:11) trapsize 377
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out -0.1226 -0.8527
+\i (00:00:11) trapsize 755
+\i (00:00:14) new 
+\i (00:00:41) newdrawfillin "temp.brd" "Board"
+\t (00:00:41)     Journal end - Wed Apr 27 23:27:50 2022

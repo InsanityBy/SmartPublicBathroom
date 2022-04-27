@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Apr-26-2022 at 23:02:49}
+{ Using PSTWRITER 17.2.0 d001Apr-28-2022 at 00:32:48}
 primitive 'CAP NP_C0805_100N';
   pin
     '1':
@@ -180,7 +180,7 @@ primitive 'LED_1_LED0805-RD_-5V_ON';
     VALUE='-5V_ON';
   end_body;
 end_primitive;
-primitive 'LED_1_LED0805-RD_3V3_ON';
+primitive 'LED_1_LED-TH_BD3_0-P2_54-FD_3V3';
   pin
     'ANODE':
       PIN_NUMBER='(1)';
@@ -191,7 +191,7 @@ primitive 'LED_1_LED0805-RD_3V3_ON';
   end_pin;
   body
     PART_NAME='LED_1';
-    JEDEC_TYPE='led0805-rd';
+    JEDEC_TYPE='led-th_bd3_0-p2_54-fd';
     VALUE='3V3_ON';
   end_body;
 end_primitive;
@@ -210,7 +210,7 @@ primitive 'DIODE_DO-41_BD2_4-L4_7-P8_70-D0';
     VALUE='1N4007';
   end_body;
 end_primitive;
-primitive 'LED_1_LED0805-RD_VALVE_ON';
+primitive 'LED_1_LED-TH_BD3_0-P2_54-FD_VAL';
   pin
     'ANODE':
       PIN_NUMBER='(1)';
@@ -221,7 +221,7 @@ primitive 'LED_1_LED0805-RD_VALVE_ON';
   end_pin;
   body
     PART_NAME='LED_1';
-    JEDEC_TYPE='led0805-rd';
+    JEDEC_TYPE='led-th_bd3_0-p2_54-fd';
     VALUE='VALVE_ON';
   end_body;
 end_primitive;
@@ -238,21 +238,6 @@ primitive 'LED_1_LED0805-RD_SPEAKER_ON';
     PART_NAME='LED_1';
     JEDEC_TYPE='led0805-rd';
     VALUE='SPEAKER_ON';
-  end_body;
-end_primitive;
-primitive 'LED_1_LED-TH_BD5_9-P2_54-FD_DY-';
-  pin
-    'ANODE':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    'CATHODE':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='LED_1';
-    JEDEC_TYPE='led-th_bd5_9-p2_54-fd';
-    VALUE='DY-IR333C-A';
   end_body;
 end_primitive;
 primitive 'IRM-56384_OPTO-TH_IRM-56384_IR-';
@@ -273,7 +258,22 @@ primitive 'IRM-56384_OPTO-TH_IRM-56384_IR-';
     VALUE='IR-56384';
   end_body;
 end_primitive;
-primitive 'CON3_HDR-TH_3P-P2_54-V-F_RH-30W';
+primitive 'LED_1_LED-TH_BD5_9-P2_54-FD_DY-';
+  pin
+    'ANODE':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'CATHODE':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='LED_1';
+    JEDEC_TYPE='led-th_bd5_9-p2_54-fd';
+    VALUE='DY-IR333C-A';
+  end_body;
+end_primitive;
+primitive 'CON3_HDR-TH_3P-P2_54-H-F-W8_6_R';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -287,11 +287,11 @@ primitive 'CON3_HDR-TH_3P-P2_54-V-F_RH-30W';
   end_pin;
   body
     PART_NAME='CON3';
-    JEDEC_TYPE='hdr-th_3p-p2_54-v-f';
+    JEDEC_TYPE='hdr-th_3p-p2_54-h-f-w8_6';
     VALUE='RH-30W_PORT';
   end_body;
 end_primitive;
-primitive 'CON3_HDR-TH_3P-P2_54-V-F_FLOWME';
+primitive 'CON3_HDR-TH_3P-P2_54-H-F-W8_6_F';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -305,11 +305,11 @@ primitive 'CON3_HDR-TH_3P-P2_54-V-F_FLOWME';
   end_pin;
   body
     PART_NAME='CON3';
-    JEDEC_TYPE='hdr-th_3p-p2_54-v-f';
+    JEDEC_TYPE='hdr-th_3p-p2_54-h-f-w8_6';
     VALUE='FLOWMETER_PORT';
   end_body;
 end_primitive;
-primitive 'CON3_HDR-TH_3P-P2_54-V-F_DS18B2';
+primitive 'CON3_HDR-TH_3P-P2_54-H-F-W8_6_D';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -323,8 +323,29 @@ primitive 'CON3_HDR-TH_3P-P2_54-V-F_DS18B2';
   end_pin;
   body
     PART_NAME='CON3';
-    JEDEC_TYPE='hdr-th_3p-p2_54-v-f';
+    JEDEC_TYPE='hdr-th_3p-p2_54-h-f-w8_6';
     VALUE='DS18B20_PORT';
+  end_body;
+end_primitive;
+primitive 'CON4_0_CONN-TH_4P-P2_54_DEALON_';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    '4':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CON4_0';
+    JEDEC_TYPE='conn-th_4p-p2_54_dealon_dw254w-22-04-85';
+    VALUE='INFRARED';
   end_body;
 end_primitive;
 primitive 'CON2_CONN-TH_P5_00_KF127-5_0-2P';
@@ -465,21 +486,6 @@ primitive 'BPW36/TO_0_SOT-23-3_L2_9-W1_6-P';
     VALUE='S8050';
   end_body;
 end_primitive;
-primitive 'PHOTO NPN_0_LED-TH_BD6_2-P2_54-';
-  pin
-    'EMITTER':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    'COLLECTOR':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='PHOTO NPN_0';
-    JEDEC_TYPE='led-th_bd6_2-p2_54-rd';
-    VALUE='DY-PT333-3B';
-  end_body;
-end_primitive;
 primitive 'RESISTOR_R0805_0';
   pin
     '1':
@@ -508,21 +514,6 @@ primitive 'RESISTOR_R0805_100';
     PART_NAME='RESISTOR';
     JEDEC_TYPE='r0805';
     VALUE='100';
-  end_body;
-end_primitive;
-primitive 'RESISTOR_R0805_11K';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='r0805';
-    VALUE='11k';
   end_body;
 end_primitive;
 primitive 'RESISTOR_R0805_100K';
@@ -718,6 +709,21 @@ primitive 'RESISTOR_R0805_220';
     PART_NAME='RESISTOR';
     JEDEC_TYPE='r0805';
     VALUE='220';
+  end_body;
+end_primitive;
+primitive 'RESISTOR_R0805_11K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='r0805';
+    VALUE='11k';
   end_body;
 end_primitive;
 primitive 'RELAY SPST_RELAY-TH_973-XXVDC-S';

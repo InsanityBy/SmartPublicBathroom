@@ -1,0 +1,85 @@
+\t (00:00:06) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:06)     Journal start - Thu Apr 28 00:03:25 2022
+\t (00:00:06)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=26776 CPUs=16
+\t (00:00:06) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\3_Library\Footprint\3p_2.54mm_bent\hdr-th_3p-p2_54-h-f-w8_6.dra
+\t (00:00:06) 
+   (00:00:06) Loading axlcore.cxt 
+\t (00:00:09) Opening existing design...
+\i (00:00:09) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged hdr-th_3p-p2_54-h-f-w8_6
+\d (00:00:09) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/3_Library/Footprint/3p_2.54mm_bent/hdr-th_3p-p2_54-h-f-w8_6.dra
+\i (00:00:09) trapsize 2300
+\i (00:00:09) trapsize 2350
+\i (00:00:09) trapsize 2300
+\i (00:00:09) trapsize 2183
+\i (00:00:09) trapsize 2868
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 77.43 31.55
+\i (00:00:11) trapsize 1434
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 71.70 31.55
+\i (00:00:11) trapsize 717
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 133.36 119.03
+\i (00:00:11) trapsize 358
+\i (00:00:14) delete 
+\i (00:00:15) pick grid 102.53 126.91
+\t (00:00:15) last pick:  100.00 100.00
+\t (00:00:15) Text "Hdr-th_3P-p2.54-H-f-w8.6"
+\i (00:00:17) pick grid 99.67 119.74
+\t (00:00:17) last pick:  100.00 100.00
+\i (00:00:18) pick grid 188.57 23.67
+\t (00:00:18) last pick:  200.00 0.00
+\t (00:00:18) Text ".Designator"
+\i (00:00:18) pick grid 190.01 23.67
+\t (00:00:18) last pick:  200.00 0.00
+\i (00:00:20) prepopup 55.21 239.48
+\i (00:00:21) done 
+\i (00:00:24) move 
+\t (00:00:24) Select element(s) to move.
+\i (00:00:26) pick grid 48.04 58.08
+\t (00:00:26) last pick:  0.00 100.00
+\t (00:00:26) last pick:  -10.00 27.50
+\t (00:00:26) Pick new location for the element(s).
+\i (00:00:29) pick grid 150.57 27.25
+\t (00:00:29) last pick:  200.00 0.00
+\i (00:00:30) prepopup 212.23 25.10
+\i (00:00:43) prepopup 283.21 133.37
+\i (00:00:43) done 
+\i (00:00:46) text edit 
+\i (00:00:47) pick grid 221.55 17.93
+\t (00:00:47) last pick:  200.00 0.00
+\i (00:00:57) setwindow pcb
+\i (00:00:57) prepopup 331.25 60.24
+\i (00:00:57) done 
+\i (00:00:57) setwindow pcb
+\i (00:00:57) pick 221.55 17.93
+\t (00:00:57) Pick text to edit.
+\i (00:01:01) setwindow pcb
+\i (00:01:01) move 
+\t (00:01:01) Select element(s) to move.
+\i (00:01:04) prepopup 150.57 285.37
+\i (00:01:05) done 
+\i (00:01:06) zoom out 1 
+\i (00:01:06) setwindow pcb
+\i (00:01:06) zoom out 99.67 262.42
+\i (00:01:06) trapsize 717
+\i (00:01:06) zoom out 1 
+\i (00:01:06) setwindow pcb
+\i (00:01:06) zoom out 145.55 200.77
+\i (00:01:06) trapsize 1434
+\i (00:01:07) zoom in 1 
+\i (00:01:07) setwindow pcb
+\i (00:01:07) zoom in 136.95 -352.74
+\i (00:01:07) trapsize 717
+\i (00:01:07) zoom in 1 
+\i (00:01:07) setwindow pcb
+\i (00:01:07) zoom in -37.99 -149.11
+\i (00:01:07) trapsize 358
+\i (00:01:10) save 
+\i (00:01:12) fillin yes 
+\t (00:01:12) Symbol 'hdr-th_3p-p2_54-h-f-w8_6.psm' created.
+\i (00:01:14) exit 
+\t (00:01:16)     Journal end - Thu Apr 28 00:04:34 2022

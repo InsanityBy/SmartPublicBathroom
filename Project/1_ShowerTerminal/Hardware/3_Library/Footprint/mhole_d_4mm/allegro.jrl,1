@@ -1,139 +1,33 @@
-\t (00:00:50) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:50)     Journal start - Tue Apr 26 22:50:18 2022
-\t (00:00:50)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=12044 CPUs=16
-\t (00:00:50) CmdLine= D:\Cadence\SPB_17.2\tools\bin\allegro.exe
-\t (00:00:50) 
-\t (00:00:50) Starting new design...
-\i (00:00:50) trapsize 1
-\i (00:00:50) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged mhole_d_4mm
-\i (00:00:51) trapsize 1
-\i (00:00:51) trapsize 1
-\i (00:00:51) trapsize 658
-\i (00:00:51) trapsize 642
-\i (00:00:54) QtSignal spbdip_param_group spbdip_units_combo CurrentIndexChanged Millimeter
-\i (00:01:02) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 500.4000
-\i (00:01:03) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 431.8000
-\i (00:01:07) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 1.0000
-\i (00:01:09) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 431800.0000
-\i (00:01:18) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 0.1
-\i (00:01:22) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 0.1
-\i (00:01:23) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 100.0000
-\i (00:01:24) QtSignal spbdip_param_group spbdip_origin_combo CurrentIndexChanged Center
-\i (00:01:32) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 0.1
-\i (00:01:40) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 100.0000
-\i (00:01:42) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 100.0000
-\i (00:01:43) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 150000.0000
-\i (00:01:45) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 100050.0000
-\i (00:01:45) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 150050000.0000
-\i (00:01:46) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 100050050.0000
-\i (00:01:50) QtSignal spbdip_param_group spbdip_origin_combo CurrentIndexChanged "Bottom Left"
-\i (00:01:53) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 0.1
-\i (00:01:55) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 0.1
-\i (00:02:00) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 50100.0000
-\i (00:02:00) QtSignal spbdip_param_group spbdip_size_combo CurrentIndexChanged A4
-\i (00:02:03) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 210.0000
-\i (00:02:03) QtSignal SPBDesignInitPrompt spbdip_ok_button clicked
-\w (00:02:03) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\i (00:02:03) trapsize 8530
-\t (00:02:03) Performing DRC...
-\t (00:02:03) No DRC errors detected.
-\i (00:02:08) prmed 
-\i (00:02:09) setwindow form.prmedit
-\i (00:02:09) FORM prmedit design  
-\i (00:02:15) FORM prmedit x -100.0000 
-\i (00:02:18) FORM prmedit y -100.0000 
-\i (00:02:27) FORM prmedit x -10.0000 
-\i (00:02:29) FORM prmedit y -10.0000 
-\i (00:02:30) FORM prmedit width 20.0000 
-\i (00:02:33) FORM prmedit height 20.0000 
-\i (00:02:37) FORM prmedit done  
-\i (00:02:37) setwindow pcb
-\i (00:02:37) trapsize 755
-\i (00:02:38) trapsize 775
-\i (00:02:38) trapsize 796
-\i (00:02:38) trapsize 775
-\i (00:02:38) trapsize 755
-\i (00:02:39) zoom out 1 
-\i (00:02:39) setwindow pcb
-\i (00:02:39) zoom out -0.7019 0.0528
-\i (00:02:39) trapsize 755
-\i (00:02:40) zoom out 1 
-\i (00:02:40) setwindow pcb
-\i (00:02:40) zoom out 0.4000 -0.1283
-\i (00:02:40) trapsize 755
-\i (00:02:42) define grid 
-\t (00:02:42) Spacing fields allow simple equations to aid calculations; prefix with =
-\i (00:02:45) setwindow form.grid
-\i (00:02:45) FORM grid non_etch non_etch_x_grids 1 
-\i (00:02:46) FORM grid non_etch non_etch_y_grids 1 
-\i (00:02:47) FORM grid all_etch all_etch_x_grids 1 
-\i (00:02:47) FORM grid all_etch all_etch_y_grids 1 
-\i (00:02:49) FORM grid display YES 
-\i (00:02:50) FORM grid done  
-\i (00:02:53) setwindow pcb
-\i (00:02:53) add pin 
-\i (00:02:55) setwindow form.mini
-\i (00:02:55) FORM mini pad_browse  
-\i (00:03:07) fillin "Mhole_D_4Mm"
-\t (00:03:07) Using 'MHOLE_D_4MM.pad'.
-\i (00:03:09) setwindow pcb
-\i (00:03:09) pick grid 0.0377 0.4905
-\t (00:03:09) last pick:  0.0000 0.0000
-\t (00:03:09) Using 'MHOLE_D_4MM.pad'.
-\i (00:03:12) prepopup 5.7585 1.0038
-\i (00:03:12) done 
-\t (00:03:12) Exiting from Add Pin.
-\i (00:03:49) add circle 
-\t (00:03:49) Pick center point of the circle.
-\t (00:03:49) Pick center point of the circle.
-\i (00:03:54) setwindow form.mini
-\i (00:03:54) FORM mini class PACKAGE GEOMETRY 
-\i (00:03:58) FORM mini subclass SILKSCREEN_TOP 
-\i (00:04:06) FORM mini line_width 0.1000 
-\i (00:04:11) setwindow pcb
-\i (00:04:11) pick grid -1.9849 1.7283
-\t (00:04:11) last pick:  -2.0000 2.0000
-\t (00:04:11) Pick a perimeter point on the circle.
-\i (00:04:18) prepopup -1.8491 1.9396
-\i (00:04:20) oops 
-\t (00:04:20) Pick center point of the circle.
-\i (00:04:21) pick grid -0.0378 -0.0227
-\t (00:04:21) last pick:  0.0000 0.0000
-\t (00:04:21) Pick a perimeter point on the circle.
-\i (00:04:29) prepopup -3.1170 -0.9283
-\i (00:04:30) cancel 
-\i (00:05:08) define grid 
-\t (00:05:08) Spacing fields allow simple equations to aid calculations; prefix with =
-\i (00:05:28) setwindow form.grid
-\i (00:05:28) FORM grid non_etch non_etch_x_grids 1 
-\i (00:05:29) FORM grid done  
-\i (00:05:32) setwindow pcb
-\i (00:05:32) add circle 
-\t (00:05:32) Pick center point of the circle.
-\t (00:05:32) Pick center point of the circle.
-\i (00:05:36) pick grid -0.0076 -0.0528
-\t (00:05:36) last pick:  0.0000 0.0000
-\t (00:05:36) Pick a perimeter point on the circle.
-\i (00:06:02) pick grid -3.5094 -1.3208
-\t (00:06:02) last pick:  -4.0000 -1.0000
-\t (00:06:02) Pick center point of the circle.
-\i (00:06:05) prepopup 6.0000 2.0302
-\i (00:06:06) done 
-\i (00:06:22) save 
-\t (00:06:24) Symbol 'mhole_d_4mm.bsm' created.
-\i (00:06:28) shape add circle 
-\i (00:06:37) setwindow form.mini
-\i (00:06:37) FORM mini class ROUTE KEEPOUT 
-\i (00:06:45) FORM mini subclass TOP 
-\i (00:07:06) setwindow pcb
-\i (00:07:06) pick grid 0.0377 -0.0227
-\t (00:07:06) last pick:  0.0000 0.0000
-\i (00:07:12) pick grid -3.9170 -1.4868
-\t (00:07:12) last pick:  -4.0000 -1.0000
-\i (00:07:14) prepopup 6.9358 2.9962
-\i (00:07:15) done 
-\i (00:07:43) save 
-\i (00:07:50) fillin yes 
-\t (00:07:50) Symbol 'mhole_d_4mm.bsm' created.
-\i (00:09:15) exit 
-\t (00:09:16)     Journal end - Tue Apr 26 22:58:43 2022
+\t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:05)     Journal start - Tue Apr 26 22:58:58 2022
+\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=22852 CPUs=16
+\t (00:00:05) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\mhole_d_4mm\mhole_d_4mm.dra
+\t (00:00:05) 
+   (00:00:05) Loading axlcore.cxt 
+\t (00:00:08) Opening existing design...
+\i (00:00:08) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged mhole_d_4mm
+\d (00:00:08) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/mhole_d_4mm/mhole_d_4mm.dra
+\i (00:00:08) trapsize 755
+\i (00:00:08) trapsize 775
+\i (00:00:08) trapsize 796
+\i (00:00:08) trapsize 775
+\i (00:00:08) trapsize 755
+\i (00:00:08) trapsize 755
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in -3.8415 0.4453
+\i (00:00:10) trapsize 377
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in -3.8415 0.4453
+\i (00:00:10) trapsize 189
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out -3.8377 0.4302
+\i (00:00:10) trapsize 377
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out -3.6490 0.2416
+\i (00:00:10) trapsize 755
+\i (00:00:12) exit 
+\t (00:00:13)     Journal end - Tue Apr 26 22:59:06 2022
