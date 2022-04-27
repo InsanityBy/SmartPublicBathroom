@@ -150,33 +150,108 @@
       (LibraryName
          "C:\USERS\JESSI_10\DESKTOP\UL_STM32F303RBT6\ORCADCAPTUREXML\2022-04-16_14-40-57.OLB")
       (DeviceIndex "0")))
-  (MPSSessionName "Jessi_10")
+  (MPSSessionName "insan")
   (LastUsedLibraryBrowseDirectory
      "E:\Cadence\Cadence\SPB_17.2\tools\capture\library")
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" ".\showerhost.dsn")
-      (Path "Design Resources" ".\showerhost.dsn" "SCHEMATIC1")
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn")
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources" ".\showerhost.dsn"))
+      (Select "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1" "1_POWER")
+      (Select "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1" "2_SIGNALINPUT")
+      (Select "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1" "3_SIGNALOUTPUT")
+      (Select "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1" "4_HMI")
+      (Select "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1" "5_COMMUNICATE")
+      (Select "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1" "6_MCU"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 700"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 960 52 397")
-        (Scroll "-38 0")
-        (Zoom "65")
+        (Placement "44 0 1 -1 -1 -8 -31 78 1424 78 537")
+        (Scroll "0 30")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "5_COMMUNICATE")))
+      (Page "1_POWER"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1450 104 563")
+        (Scroll "0 70")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "2_SIGNALINPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1476 130 589")
+        (Scroll "0 80")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "3_SIGNALOUTPUT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1502 156 615")
+        (Scroll "0 20")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "4_HMI"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1528 182 641")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "5_COMMUNICATE"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 208 1554 208 667")
+        (Scroll "-1 120")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "6_MCU")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles")
     (Folder "Model Libraries"

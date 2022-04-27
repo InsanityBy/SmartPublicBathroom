@@ -1,16 +1,136 @@
-\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Mon Apr 18 21:58:00 2022
-\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=12588 CPUs=16
-\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\3_hole_2.54mm\hdr-th_3p-p2_54-v-f.dra
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "hdr-th_3p-p2_54-v-f"
-\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/3_hole_2.54mm/hdr-th_3p-p2_54-v-f.dra
-\i (00:00:05) trapsize 356
-\i (00:00:05) trapsize 363
-\i (00:00:05) trapsize 356
-\i (00:00:05) trapsize 364
-\i (00:00:05) generaledit 
-\i (00:00:38) exit 
-\t (00:00:38)     Journal end - Mon Apr 18 21:58:36 2022
+\t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:05)     Journal start - Wed Apr 27 11:37:37 2022
+\t (00:00:05)         Host=INSANITY User=insan Pid=7980 CPUs=8
+\t (00:00:05) CmdLine= e:\cadence\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\3_Library\Footprint\3p_2.54mm\hdr-th_3p-p2_54-v-f.dra
+\t (00:00:05) 
+   (00:00:05) Loading axlcore.cxt 
+\t (00:00:06) Opening existing design...
+\i (00:00:06) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged hdr-th_3p-p2_54-v-f
+\d (00:00:07) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/3_Library/Footprint/3p_2.54mm/hdr-th_3p-p2_54-v-f.dra
+\i (00:00:07) trapsize 505
+\i (00:00:07) trapsize 520
+\i (00:00:07) trapsize 505
+\i (00:00:08) trapsize 765
+\i (00:00:08) generaledit 
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in -102.73 133.92
+\i (00:00:09) trapsize 382
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in -102.72 133.93
+\i (00:00:09) trapsize 191
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out -154.34 163.00
+\i (00:00:10) trapsize 382
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out -154.35 163.00
+\i (00:00:10) trapsize 765
+\i (00:00:18) prmed 
+\i (00:00:23) setwindow form.prmedit
+\i (00:00:23) FORM prmedit design  
+\i (00:00:26) FORM prmedit units Millimeter 
+   (00:00:26) Accuracy or unit changes can cause design round-off issues. DRCs and physical changes should be checked.
+\i (00:00:28) fillin confirm
+\e (00:00:28) Change may cause round-off; run dbcheck.
+\i (00:00:33) FORM prmedit done  
+\w (00:00:33) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:00:33) setwindow pcb
+\i (00:00:33) trapsize 1943
+\t (00:00:33) Performing DRC...
+\t (00:00:34) No DRC errors detected.
+\i (00:00:34) trapsize 1998
+\i (00:00:34) trapsize 1943
+\i (00:00:34) generaledit 
+\i (00:00:40) enved 
+\i (00:00:41) generaledit 
+\i (00:00:53) setwindow form.prfedit
+\i (00:00:53) FORM prfedit fontsize  
+\i (00:00:55) FORM prfedit cancel  
+\i (00:01:01) setwindow pcb
+\i (00:01:01) enved 
+\i (00:01:02) generaledit 
+\i (00:01:04) setwindow form.prfedit
+\i (00:01:04) FORM prfedit cancel  
+\i (00:01:08) setwindow pcb
+\i (00:01:08) prmed 
+\i (00:01:10) setwindow form.prmedit
+\i (00:01:10) FORM prmedit cancel  
+\i (00:01:10) setwindow pcb
+\i (00:01:10) generaledit 
+\i (00:01:15) enved 
+\i (00:01:16) generaledit 
+\i (00:01:19) setwindow form.prfedit
+\i (00:01:19) FORM prfedit fontsize  
+\i (00:01:26) FORM prfedit treelist  My_favorites 
+\i (00:01:48) setwindow pcb
+\i (00:01:48) trapsize 2096
+\i (00:01:51) trapsize 1943
+\i (00:01:57) setwindow form.prfedit
+\i (00:01:57) FORM prfedit treelist  Ui 
+\i (00:02:00) FORM prfedit treelist  My_favorites 
+\i (00:02:08) FORM prfedit fontsize 10 
+\i (00:02:21) FORM prfedit fontsize  
+\i (00:02:22) FORM prfedit cancel  
+\i (00:02:25) setwindow pcb
+\i (00:02:25) enved 
+\i (00:02:25) generaledit 
+\i (00:02:31) setwindow form.prfedit
+\i (00:02:31) FORM prfedit fontweight 0 
+\i (00:02:33) FORM prfedit fontsize  
+\i (00:02:35) FORM prfedit fontweight  
+\i (00:03:19) setwindow pcb
+\i (00:03:19) trapsize 3123
+\i (00:03:29) trapsize 16448
+\i (00:03:40) trapsize 1943
+\i (00:03:47) trapsize 2785
+\i (00:03:55) trapsize 1943
+\i (00:04:17) prmed 
+\i (00:04:20) setwindow form.prmedit
+\i (00:04:20) FORM prmedit cancel  
+\i (00:04:20) setwindow pcb
+\i (00:04:20) generaledit 
+\i (00:04:27) pick grid -8.4664 3.9846
+\t (00:04:27) last pick:  -7.6200 5.0800
+\i (00:04:28) show measure 
+\i (00:04:32) show measure 
+\i (00:04:34) zoom in 1 
+\i (00:04:34) setwindow pcb
+\i (00:04:34) zoom in -3.0267 1.1870
+\i (00:04:34) trapsize 971
+\i (00:04:34) zoom in 1 
+\i (00:04:34) setwindow pcb
+\i (00:04:34) zoom in -3.0267 1.1870
+\i (00:04:34) trapsize 486
+\i (00:04:34) zoom in 1 
+\i (00:04:34) setwindow pcb
+\i (00:04:34) zoom in -3.0268 1.1870
+\i (00:04:34) trapsize 243
+\i (00:04:34) zoom in 1 
+\i (00:04:34) setwindow pcb
+\i (00:04:34) zoom in -3.0268 1.1870
+\i (00:04:34) trapsize 121
+\i (00:04:35) zoom out 1 
+\i (00:04:35) setwindow pcb
+\i (00:04:35) zoom out -3.0437 1.1871
+\i (00:04:35) trapsize 243
+\i (00:04:35) zoom out 1 
+\i (00:04:35) setwindow pcb
+\i (00:04:35) zoom out -3.0438 1.1870
+\i (00:04:35) trapsize 486
+\i (00:04:36) pick grid -3.7723 1.2842
+\t (00:04:36) last pick:  -3.8100 1.2700
+\i (00:04:37) pick grid 3.8335 1.2842
+\t (00:04:37) last pick:  3.8100 1.2700
+\i (00:04:51) pick grid -4.4328 1.3133
+\t (00:04:51) last pick:  -4.4450 1.2700
+\i (00:04:52) pick grid 4.3289 1.1967
+\t (00:04:52) last pick:  4.4450 1.2700
+\i (00:09:17) exit 
+\i (00:09:17) setwindow text
+\i (00:09:17) close
+\e (00:09:17) Do you want to save the changes you made to hdr-th_3p-p2_54-v-f.dra?
+\i (00:09:18) fillin no 
+\t (00:09:19)     Journal end - Wed Apr 27 11:46:50 2022
