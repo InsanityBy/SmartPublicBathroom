@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Apr-26-2022 at 23:03:57}
+{ Using PSTWRITER 17.2.0 d001Apr-28-2022 at 00:21:43}
 primitive 'CAP NP_C0805_100N';
   pin
     '1':
@@ -210,7 +210,7 @@ primitive 'LED_LED0805-RD_-5V_ON';
     VALUE='-5V_ON';
   end_body;
 end_primitive;
-primitive 'LED_LED0805-RD_3V3_ON';
+primitive 'LED_LED-TH_BD3_0-P2_54-FD_3V3_O';
   pin
     'ANODE':
       PIN_NUMBER='(2)';
@@ -221,7 +221,7 @@ primitive 'LED_LED0805-RD_3V3_ON';
   end_pin;
   body
     PART_NAME='LED';
-    JEDEC_TYPE='led0805-rd';
+    JEDEC_TYPE='led-th_bd3_0-p2_54-fd';
     VALUE='3V3_ON';
   end_body;
 end_primitive;
@@ -240,7 +240,7 @@ primitive 'DIODE_DO-41_BD2_4-L4_7-P8_70-D0';
     VALUE='1N4007';
   end_body;
 end_primitive;
-primitive 'LED_LED0805-RD_FAN_ON';
+primitive 'LED_LED-TH_BD3_0-P2_54-FD_FAN_O';
   pin
     'ANODE':
       PIN_NUMBER='(2)';
@@ -251,11 +251,11 @@ primitive 'LED_LED0805-RD_FAN_ON';
   end_pin;
   body
     PART_NAME='LED';
-    JEDEC_TYPE='led0805-rd';
+    JEDEC_TYPE='led-th_bd3_0-p2_54-fd';
     VALUE='FAN_ON';
   end_body;
 end_primitive;
-primitive 'LED_LED0805-RD_LIGHT_ON';
+primitive 'LED_LED-TH_BD3_0-P2_54-FD_LIGHT';
   pin
     'ANODE':
       PIN_NUMBER='(2)';
@@ -266,11 +266,11 @@ primitive 'LED_LED0805-RD_LIGHT_ON';
   end_pin;
   body
     PART_NAME='LED';
-    JEDEC_TYPE='led0805-rd';
+    JEDEC_TYPE='led-th_bd3_0-p2_54-fd';
     VALUE='LIGHT_ON';
   end_body;
 end_primitive;
-primitive 'CON3_HDR-TH_3P-P2_54-V-F_RH-30W';
+primitive 'CON3_HDR-TH_3P-P2_54-H-F-W8_6_R';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -284,7 +284,7 @@ primitive 'CON3_HDR-TH_3P-P2_54-V-F_RH-30W';
   end_pin;
   body
     PART_NAME='CON3';
-    JEDEC_TYPE='hdr-th_3p-p2_54-v-f';
+    JEDEC_TYPE='hdr-th_3p-p2_54-h-f-w8_6';
     VALUE='RH-30W_PORT';
   end_body;
 end_primitive;
