@@ -1,6 +1,6 @@
 \t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:05)     Journal start - Thu Apr 28 16:58:32 2022
-\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=8768 CPUs=16
+\t (00:00:05)     Journal start - Thu Apr 28 16:57:05 2022
+\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=8048 CPUs=16
 \t (00:00:05) CmdLine= D:\Cadence\SPB_17.2\tools\bin\allegro.exe
 \t (00:00:05) 
    (00:00:05) Loading axlcore.cxt 
@@ -9,9 +9,10 @@
 \d (00:00:07) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/3_Library/Footprint/2x2p_2.54mm_bent/conn-th_4p-p2_54_dealon_dw254w-22-04-85.dra
 \i (00:00:07) trapsize 756
 \i (00:00:07) trapsize 772
-\i (00:00:08) trapsize 756
+\i (00:00:07) trapsize 756
 \i (00:00:08) trapsize 829
 \i (00:00:08) trapsize 829
-\i (00:00:12) new 
-\i (00:00:44) newdrawfillin "SHOWERHOST.brd" "Board"
-\t (00:00:44)     Journal end - Thu Apr 28 16:59:11 2022
+\i (00:00:13) open 
+\i (00:00:28) fillin "menu_cancel"
+\i (00:00:28) exit 
+\t (00:00:30)     Journal end - Thu Apr 28 16:57:29 2022

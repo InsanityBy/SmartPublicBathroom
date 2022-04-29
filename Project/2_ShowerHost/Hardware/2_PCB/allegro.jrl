@@ -1,177 +1,27 @@
-\t (00:01:56) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:01:56)     Journal start - Mon Apr 25 19:09:15 2022
-\t (00:01:56)         Host=INSANITY User=insan Pid=1576 CPUs=8
-\t (00:01:56) CmdLine= E:\Cadence\Cadence\SPB_17.2\tools\bin\allegro.exe
-\t (00:01:56) 
-\t (00:01:56) Starting new design...
-\i (00:01:56) trapsize 1
-\i (00:01:56) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERHOST
-\i (00:01:56) trapsize 1
-\i (00:01:56) trapsize 1339
-\i (00:02:00) QtSignal spbdip_param_group spbdip_units_combo CurrentIndexChanged Millimeter
-\i (00:02:02) QtSignal spbdip_param_group spbdip_accuracy_box valueChanged 3
-\i (00:02:02) QtSignal spbdip_param_group spbdip_accuracy_box valueChanged 2
-\i (00:02:04) QtSignal spbdip_param_group spbdip_size_combo CurrentIndexChanged A3
-\i (00:02:11) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 297.00
-\i (00:02:11) QtSignal SPBDesignInitPrompt spbdip_ok_button clicked
-\w (00:02:11) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\i (00:02:11) trapsize 340
-\t (00:02:11) Performing DRC...
-\t (00:02:11) Multithreaded DRC update (8 threads).
-\t (00:02:11) No DRC errors detected.
-\i (00:02:11) generaledit 
-\i (00:02:40) showhide options 
-\i (00:02:40) generaledit 
-\i (00:02:54) trapsize 350
-\i (00:02:54) trapsize 380
-\i (00:02:55) trapsize 412
-\i (00:02:55) trapsize 414
-\i (00:03:10) trapsize 415
-\i (00:03:10) trapsize 416
-\i (00:03:10) trapsize 421
-\i (00:03:10) trapsize 422
-\i (00:03:10) trapsize 421
-\i (00:03:10) trapsize 420
-\i (00:03:10) trapsize 421
-\i (00:03:11) trapsize 423
-\i (00:03:11) trapsize 422
-\i (00:03:11) trapsize 419
-\i (00:03:11) trapsize 417
-\i (00:03:17) enved 
-\i (00:03:18) generaledit 
-\i (00:03:24) setwindow form.prfedit
-\i (00:03:24) FORM prfedit treelist  Fonts Ui 
-\i (00:03:26) FORM prfedit favorite.fontsize YES 
-\i (00:03:27) FORM prfedit favorite.fontweight YES 
-\i (00:03:32) FORM prfedit fontsize -20 
-\i (00:03:37) FORM prfedit done  
-\i (00:03:42) setwindow pcb
-\i (00:03:42) prmed 
-\i (00:03:48) setwindow form.prmedit
-\i (00:03:48) FORM prmedit design  
-\i (00:03:58) FORM prmedit x -100.00 
-\i (00:04:05) FORM prmedit y -100.00 
-\i (00:04:08) FORM prmedit width 500.00 
-\i (00:04:09) FORM prmedit height 500.00 
-\i (00:04:15) FORM prmedit done  
-\i (00:04:15) setwindow pcb
-\i (00:04:15) trapsize 331
-\i (00:04:16) generaledit 
-\i (00:04:21) define grid 
-\t (00:04:22) Spacing fields allow simple equations to aid calculations; prefix with =
-\i (00:04:25) setwindow form.grid
-\i (00:04:25) FORM grid non_etch non_etch_x_grids 5 
-\i (00:04:27) FORM grid non_etch non_etch_y_grids 5 
-\i (00:04:27) FORM grid all_etch all_etch_x_grids 5 
-\i (00:04:28) FORM grid all_etch all_etch_y_grids 5 
-\i (00:04:30) FORM grid done  
-\i (00:04:34) setwindow pcb
-\i (00:04:34) color192 
-\i (00:04:34) generaledit 
-\i (00:04:38) define grid 
-\t (00:04:38) Spacing fields allow simple equations to aid calculations; prefix with =
-\i (00:04:40) setwindow form.grid
-\i (00:04:40) FORM grid display YES 
-\i (00:04:41) FORM grid done  
-\i (00:04:50) setwindow pcb
-\i (00:04:50) zoom in 1 
-\i (00:04:50) setwindow pcb
-\i (00:04:50) zoom in -0.79 -0.13
-\i (00:04:50) trapsize 165
-\i (00:04:50) zoom in 1 
-\i (00:04:50) setwindow pcb
-\i (00:04:50) zoom in -0.79 -0.13
-\i (00:04:50) trapsize 83
-\i (00:04:51) zoom in 1 
-\i (00:04:51) setwindow pcb
-\i (00:04:51) zoom in -0.79 0.04
-\i (00:04:51) trapsize 41
-\i (00:04:52) zoom in 1 
-\i (00:04:52) setwindow pcb
-\i (00:04:52) zoom in -0.79 0.05
-\i (00:04:52) trapsize 21
-\i (00:04:58) zoom out 1 
-\i (00:04:58) setwindow pcb
-\i (00:04:58) zoom out 0.12 -0.03
-\i (00:04:58) trapsize 41
-\i (00:18:17) zoom out 1 
-\i (00:18:17) setwindow pcb
-\i (00:18:17) zoom out 28.89 11.46
-\i (00:18:17) trapsize 83
-\i (00:18:17) zoom out 1 
-\i (00:18:17) setwindow pcb
-\i (00:18:17) zoom out 28.39 10.31
-\i (00:18:17) trapsize 165
-\i (00:18:17) zoom out 1 
-\i (00:18:17) setwindow pcb
-\i (00:18:17) zoom out 70.64 9.97
-\i (00:18:17) trapsize 331
-\i (00:18:17) zoom out 1 
-\i (00:18:17) setwindow pcb
-\i (00:18:17) zoom out 240.61 85.85
-\i (00:18:17) trapsize 331
-\i (00:22:06) xname_flush 
-\i (00:22:25) xdehilite 
-\i (00:22:25) xname_flush 
-\i (00:22:25) done 
-\i (00:22:25) generaledit 
-\i (00:24:02) xname_flush 
-\i (00:24:02) xdehilite 
-\i (00:24:03) xname_flush 
-\i (00:24:03) done 
-\i (00:24:03) generaledit 
-\i (00:57:34) xhilite 
-\i (00:57:34) xname_flush 
-\i (00:57:34) done 
-\i (00:57:34) generaledit 
-\i (01:05:59) xname_flush 
-\i (01:06:11) xdehilite 
-\i (01:06:11) xname_flush 
-\i (01:06:11) done 
-\i (01:06:11) xhilite 
-\i (01:06:11) xname_flush 
-\i (01:06:11) done 
-\i (01:06:11) generaledit 
-\i (01:06:16) xdehilite 
-\i (01:06:17) xname_flush 
-\i (01:06:17) done 
-\i (01:06:17) generaledit 
-\i (01:09:38) xname_flush 
-\i (01:09:42) xdehilite 
-\i (01:09:42) xname_flush 
-\i (01:09:42) done 
-\i (01:09:42) generaledit 
-\i (01:09:51) xname_flush 
-\i (01:09:51) xdehilite 
-\i (01:09:52) xname_flush 
-\i (01:09:52) done 
-\i (01:09:52) generaledit 
-\i (01:09:59) xname_flush 
-\i (01:10:00) xdehilite 
-\i (01:10:00) xname_flush 
-\i (01:10:00) done 
-\i (01:10:00) generaledit 
-\i (01:12:18) xname_flush 
-\i (01:12:19) xdehilite 
-\i (01:12:19) xname_flush 
-\i (01:12:19) done 
-\i (01:12:20) generaledit 
-\i (01:12:24) xname_flush 
-\i (01:12:25) xdehilite 
-\i (01:12:26) xname_flush 
-\i (01:12:26) done 
-\i (01:12:26) generaledit 
-\i (01:50:58) xname_flush 
-\i (01:50:59) xdehilite 
-\i (01:50:59) xname_flush 
-\i (01:50:59) done 
-\i (01:50:59) generaledit 
-\i (01:55:26) xname_flush 
-\i (01:55:30) xdehilite 
-\i (01:55:30) xname_flush 
-\i (01:55:30) done 
-\i (01:55:31) generaledit 
-\i (02:00:18) exit 
-\e (02:00:18) Do you want to save the changes you made to SHOWERHOST.brd?
-\i (02:00:20) fillin no 
-\t (02:00:20)     Journal end - Mon Apr 25 21:07:40 2022
+\t (00:00:07) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:07)     Journal start - Fri Apr 29 10:54:48 2022
+\t (00:00:07)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=36796 CPUs=16
+\t (00:00:07) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\2_PCB\SHOWERHOST.brd
+\t (00:00:07) 
+   (00:00:07) Loading axlcore.cxt 
+\t (00:00:09) Opening existing design...
+\i (00:00:09) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERHOST
+\d (00:00:09) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
+\t (00:00:10) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:00:10) trapsize 6038
+\i (00:00:10) trapsize 6197
+\t (00:00:10) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:00:10) trapsize 6197
+\i (00:00:10) generaledit 
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 27.7924 35.6003
+\t (00:00:11) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:00:11) trapsize 3098
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out 29.3416 35.0427
+\t (00:00:11) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:00:11) trapsize 6197
+\i (00:05:14) exit 
+\t (00:05:16)     Journal end - Fri Apr 29 10:59:57 2022
