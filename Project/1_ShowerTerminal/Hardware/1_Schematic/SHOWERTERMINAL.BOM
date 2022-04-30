@@ -1,4 +1,4 @@
-  Revised: Tuesday, April 26, 2022
+  Revised: Saturday, April 30, 2022
           Revision: 
 
 Peking University, No.5 Yiheyuan Road, Beijing
@@ -7,7 +7,7 @@ Peking University, No.5 Yiheyuan Road, Beijing
 
 
 
-Bill Of Materials          April 26,2022      2:51:00	Page1
+Bill Of Materials          April 30,2022      15:05:06	Page1
 
 Item	Quantity	Reference	Part	Footprint
 ______________________________________________
@@ -47,33 +47,32 @@ ______________________________________________
 		C33	15pF	c0805
 9	1	D1	+5V_ON	led0805-rd
 10	1	D2	-5V_ON	led0805-rd
-11	1	D3	3V3_ON	led0805-rd
+11	1	D3	3V3_ON	led-th_bd3_0-p2_54-fd
 12	4	D4	1N4007	do-41_bd2_4-l4_7-p8_70-d0_6-rd
 		D5	1N4007	do-41_bd2_4-l4_7-p8_70-d0_6-rd
 		D6	1N4007	do-41_bd2_4-l4_7-p8_70-d0_6-rd
 		D8	1N4007	do-41_bd2_4-l4_7-p8_70-d0_6-rd
-13	1	D7	VALVE_ON	led0805-rd
+13	1	D7	VALVE_ON	led-th_bd3_0-p2_54-fd
 14	1	D9	SPEAKER_ON	led0805-rd
 15	1	D10	ZigBee_LINK	led0805-rd
 16	1	D11	ZigBee_CMD	led0805-rd
-17	4	IR1	DY-IR333C-A	led-th_bd5_9-p2_54-fd
+17	1	IR1	IR-56384	opto-th_irm-56384
+18	3	IR2	DY-IR333C-A	led-th_bd5_9-p2_54-fd
 		IR3	DY-IR333C-A	led-th_bd5_9-p2_54-fd
 		IR4	DY-IR333C-A	led-th_bd5_9-p2_54-fd
-		IR5	DY-IR333C-A	led-th_bd5_9-p2_54-fd
-18	1	IR2	IR-56384	opto-th_irm-56384
-19	1	J1	RH-30W_PORT	hdr-th_3p-p2_54-v-f
-20	1	J2	FLOWMETER_PORT	hdr-th_3p-p2_54-v-f
-21	1	J3	DS18B20_PORT	hdr-th_3p-p2_54-v-f
-22	1	J4	VALVE_PORT	conn-th_p5_00_kf127-5_0-2p
-23	1	J5	NFC_PORT	hdr-th_8p-p2_54-v-f-1
-24	1	J6	LCD_PORT	hdr-th_4p-p2_54-v-f
-25	1	J7	SPEAKER_PORT	hdr-th_2p-p2_54-v-f
-26	1	J8	SWD_PORT	hdr-th_4p-p2_54-v-f
-27	1	L1	FCM1608	l0603
-28	3	Q1	S8050	sot-23-3_l2_9-w1_6-p1_90-ls2_8-br
+19	1	J1	RH-30W_PORT	conn-th_3p-p2_50_hx25003-3wap
+20	1	J2	FLOWMETER_PORT	conn-th_3p-p2_50_hx25003-3wap
+21	1	J3	DS18B20_PORT	conn-th_3p-p2_50_hx25003-3wap
+22	1	J4	INFRARED	conn-th_4p-p2_54_dealon_dw254w-22-04-85
+23	1	J5	VALVE_PORT	conn-th_p5_00_kf127-5_0-2p
+24	1	J6	NFC_PORT	hdr-th_8p-p2_54-v-f-1
+25	1	J7	LCD_PORT	hdr-th_4p-p2_54-v-f
+26	1	J8	SPEAKER_PORT	hdr-th_2p-p2_54-v-f
+27	1	J9	SWD_PORT	hdr-th_4p-p2_54-v-f
+28	1	L1	FCM1608	l0603
+29	3	Q1	S8050	sot-23-3_l2_9-w1_6-p1_90-ls2_8-br
 		Q2	S8050	sot-23-3_l2_9-w1_6-p1_90-ls2_8-br
-		Q4	S8050	sot-23-3_l2_9-w1_6-p1_90-ls2_8-br
-29	1	Q3	DY-PT333-3B	led-th_bd6_2-p2_54-rd
+		Q3	S8050	sot-23-3_l2_9-w1_6-p1_90-ls2_8-br
 30	1	RL1	973-5VDC-SL-A	relay-th_973-xxvdc-sl-a
 31	5	R1	0	r0805
 		R35	0	r0805
@@ -87,15 +86,15 @@ ______________________________________________
 		R25	1k	r0805
 		R28	1k	r0805
 		R29	1k	r0805
-		R31	1k	r0805
 		R32	1k	r0805
+		R33	1k	r0805
 33	2	R6	220	r0805
 		R39	220	r0805
 34	4	R7	100	r0805
-		R8	100	r0805
 		R9	100	r0805
 		R10	100	r0805
-35	1	R11	11k	r0805
+		R11	100	r0805
+35	1	R8	11k	r0805
 36	2	R12	100k	r0805
 		R37	100k	r0805
 37	1	R13	3.9k	r0805
@@ -104,7 +103,7 @@ ______________________________________________
 		R17	10k	r0805
 		R23	10k	r0805
 		R24	10k	r0805
-		R33	10k	r0805
+		R31	10k	r0805
 		R34	10k	r0805
 		R36	10k	r0805
 39	2	R16	620	r0805
@@ -116,8 +115,8 @@ ______________________________________________
 44	1	R26	8.2k	r0805
 45	1	R27	51k	r0805
 46	1	R30	330	r0805
-47	1	SW1	REPAIR	key-th_4p-l6_2-w6_2-p4_50-ls6_5
-48	1	SW2	HELP	key-th_4p-l6_2-w6_2-p4_50-ls6_5
+47	1	SW1	REPAIR	sw-th_4p-l6_0-w6_0-p4_50-ls6_5
+48	1	SW2	HELP	sw-th_4p-l6_0-w6_0-p4_50-ls6_5
 49	1	SW3	ZigBee_RST	sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2
 50	1	SW4	ZigBee_WK	sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2
 51	1	SW5	MCU_NRST	sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2

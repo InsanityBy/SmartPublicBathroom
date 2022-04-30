@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Apr-28-2022 at 00:21:43}
+{ Using PSTWRITER 17.2.0 d001Apr-30-2022 at 15:22:26}
 primitive 'CAP NP_C0805_100N';
   pin
     '1':
@@ -270,7 +270,7 @@ primitive 'LED_LED-TH_BD3_0-P2_54-FD_LIGHT';
     VALUE='LIGHT_ON';
   end_body;
 end_primitive;
-primitive 'CON3_HDR-TH_3P-P2_54-H-F-W8_6_R';
+primitive 'CON3_CONN-TH_3P-P2_50_HX25003-3';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -284,7 +284,7 @@ primitive 'CON3_HDR-TH_3P-P2_54-H-F-W8_6_R';
   end_pin;
   body
     PART_NAME='CON3';
-    JEDEC_TYPE='hdr-th_3p-p2_54-h-f-w8_6';
+    JEDEC_TYPE='conn-th_3p-p2_50_hx25003-3wap';
     VALUE='RH-30W_PORT';
   end_body;
 end_primitive;
@@ -624,7 +624,7 @@ primitive 'RELAY SPST_RELAY-TH_973-XXVDC-S';
     VALUE='973-5VDC-SL-A';
   end_body;
 end_primitive;
-primitive 'SW PUSHBUTTON-SPST-2_KEY-TH_4P-';
+primitive 'SW PUSHBUTTON-SPST-2_SW-TH_4P-L';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -641,11 +641,11 @@ primitive 'SW PUSHBUTTON-SPST-2_KEY-TH_4P-';
   end_pin;
   body
     PART_NAME='SW PUSHBUTTON-SPST-2';
-    JEDEC_TYPE='key-th_4p-l6_2-w6_2-p4_50-ls6_5';
+    JEDEC_TYPE='sw-th_4p-l6_0-w6_0-p4_50-ls6_5';
     VALUE='REPAIR';
   end_body;
 end_primitive;
-primitive 'SW PUSHBUTTON-SPST-2_KEY-TH_4_1';
+primitive 'SW PUSHBUTTON-SPST-2_SW-TH_4P_1';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -662,7 +662,7 @@ primitive 'SW PUSHBUTTON-SPST-2_KEY-TH_4_1';
   end_pin;
   body
     PART_NAME='SW PUSHBUTTON-SPST-2';
-    JEDEC_TYPE='key-th_4p-l6_2-w6_2-p4_50-ls6_5';
+    JEDEC_TYPE='sw-th_4p-l6_0-w6_0-p4_50-ls6_5';
     VALUE='HELP';
   end_body;
 end_primitive;

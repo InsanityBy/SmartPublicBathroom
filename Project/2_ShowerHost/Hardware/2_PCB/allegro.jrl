@@ -1,27 +1,21 @@
-\t (00:00:07) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:07)     Journal start - Fri Apr 29 10:54:48 2022
-\t (00:00:07)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=36796 CPUs=16
-\t (00:00:07) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\2_PCB\SHOWERHOST.brd
-\t (00:00:07) 
-   (00:00:07) Loading axlcore.cxt 
-\t (00:00:09) Opening existing design...
-\i (00:00:09) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERHOST
-\d (00:00:09) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
-\t (00:00:10) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
-\i (00:00:10) trapsize 6038
-\i (00:00:10) trapsize 6197
-\t (00:00:10) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
-\i (00:00:10) trapsize 6197
-\i (00:00:10) generaledit 
-\i (00:00:11) zoom in 1 
-\i (00:00:11) setwindow pcb
-\i (00:00:11) zoom in 27.7924 35.6003
-\t (00:00:11) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
-\i (00:00:11) trapsize 3098
-\i (00:00:11) zoom out 1 
-\i (00:00:11) setwindow pcb
-\i (00:00:11) zoom out 29.3416 35.0427
-\t (00:00:11) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
-\i (00:00:11) trapsize 6197
-\i (00:05:14) exit 
-\t (00:05:16)     Journal end - Fri Apr 29 10:59:57 2022
+\t (00:00:02) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Fri Apr 29 20:11:37 2022
+\t (00:00:02)         Host=INSANITY User=insan Pid=12716 CPUs=8
+\t (00:00:02) CmdLine= E:\Cadence\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:03) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERHOST
+\d (00:00:03) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
+\t (00:00:03) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:00:03) trapsize 8070
+\i (00:00:03) trapsize 8299
+\i (00:00:03) trapsize 8070
+\t (00:00:03) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:00:03) trapsize 8346
+\t (00:00:03) Grids are drawn 1.6000, 1.6000 apart for enhanced viewing.
+\i (00:00:03) trapsize 10582
+\i (00:00:04) generaledit 
+\i (00:00:07) new 
+\i (00:00:39) newdrawfillin "ADG.brd" "Board"
+\t (00:00:39)     Journal end - Fri Apr 29 20:12:14 2022

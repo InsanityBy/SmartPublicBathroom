@@ -1,4 +1,4 @@
-  Revised: Tuesday, April 26, 2022
+  Revised: Saturday, April 30, 2022
           Revision: 
 
 Peking University, No.5 Yiheyuan Road, Beijing
@@ -7,7 +7,7 @@ Peking University, No.5 Yiheyuan Road, Beijing
 
 
 
-Bill Of Materials          April 26,2022      3:37:47	Page1
+Bill Of Materials          April 30,2022      15:17:51	Page1
 
 Item	Quantity	Reference	Part	Footprint
 ______________________________________________
@@ -49,19 +49,19 @@ ______________________________________________
 		C35	15pF	c0805
 8	1	D1	+5V_ON	led0805-rd
 9	1	D2	-5V_ON	led0805-rd
-10	1	D3	3V3_ON	led0805-rd
+10	1	D3	3V3_ON	led-th_bd3_0-p2_54-fd
 11	4	D4	1N4007	do-41_bd2_4-l4_7-p8_70-d0_6-rd
 		D5	1N4007	do-41_bd2_4-l4_7-p8_70-d0_6-rd
 		D7	1N4007	do-41_bd2_4-l4_7-p8_70-d0_6-rd
 		D9	1N4007	do-41_bd2_4-l4_7-p8_70-d0_6-rd
-12	1	D6	FAN_ON	led0805-rd
-13	1	D8	LIGHT_ON	led0805-rd
+12	1	D6	FAN_ON	led-th_bd3_0-p2_54-fd
+13	1	D8	LIGHT_ON	led-th_bd3_0-p2_54-fd
 14	1	D10	SPEAKER_ON	led0805-rd
 15	1	D11	ZigBee_LINK	led0805-rd
 16	1	D12	ZigBee_CMD	led0805-rd
 17	1	D13	SOCKET1	led0805-rd
 18	1	D14	SOCKET2	led0805-rd
-19	1	J1	RH-30W_PORT	hdr-th_3p-p2_54-v-f
+19	1	J1	RH-30W_PORT	conn-th_3p-p2_50_hx25003-3wap
 20	1	J2	FAN_PORT	conn-th_p5_00_kf127-5_0-2p
 21	1	J3	LIGHT_PORT	conn-th_p5_00_kf127-5_0-2p
 22	1	J4	LCD_PORT	hdr-th_4p-p2_54-v-f
@@ -112,8 +112,8 @@ ______________________________________________
 38	1	R23	330	r0805
 39	1	R35	100k	r0805
 40	1	R37	220	r0805
-41	1	SW1	REPAIR	key-th_4p-l6_2-w6_2-p4_50-ls6_5
-42	1	SW2	HELP	key-th_4p-l6_2-w6_2-p4_50-ls6_5
+41	1	SW1	REPAIR	sw-th_4p-l6_0-w6_0-p4_50-ls6_5
+42	1	SW2	HELP	sw-th_4p-l6_0-w6_0-p4_50-ls6_5
 43	1	SW3	WiFi_RST	sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2
 44	1	SW4	ZigBee_RST	sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2
 45	1	SW5	ZigBee_WK	sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2

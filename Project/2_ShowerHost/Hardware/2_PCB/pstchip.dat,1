@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Apr-30-2022 at 15:20:28}
+{ Using PSTWRITER 17.2.0 d001Apr-28-2022 at 00:21:43}
 primitive 'CAP NP_C0805_100N';
   pin
     '1':
@@ -105,92 +105,122 @@ primitive 'CAP NP_C0805_15PF';
     VALUE='15pF';
   end_body;
 end_primitive;
-primitive 'CAP NP_C0805_47U';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CAP NP';
-    JEDEC_TYPE='c0805';
-    VALUE='47u';
-  end_body;
-end_primitive;
-primitive 'LED_1_LED0805-RD_+5V_ON';
+primitive 'LED_LED0805-RD_+5V_ON';
   pin
     'ANODE':
-      PIN_NUMBER='(1)';
+      PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     'CATHODE':
-      PIN_NUMBER='(2)';
+      PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='LED_1';
+    PART_NAME='LED';
     JEDEC_TYPE='led0805-rd';
     VALUE='+5V_ON';
   end_body;
 end_primitive;
-primitive 'LED_1_LED0805-RD_ZIGBEE_LINK';
+primitive 'LED_LED0805-RD_SPEAKER_ON';
   pin
     'ANODE':
-      PIN_NUMBER='(1)';
+      PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     'CATHODE':
-      PIN_NUMBER='(2)';
+      PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='LED_1';
+    PART_NAME='LED';
+    JEDEC_TYPE='led0805-rd';
+    VALUE='SPEAKER_ON';
+  end_body;
+end_primitive;
+primitive 'LED_LED0805-RD_ZIGBEE_LINK';
+  pin
+    'ANODE':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'CATHODE':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='LED';
     JEDEC_TYPE='led0805-rd';
     VALUE='ZigBee_LINK';
   end_body;
 end_primitive;
-primitive 'LED_1_LED0805-RD_ZIGBEE_CMD';
+primitive 'LED_LED0805-RD_ZIGBEE_CMD';
   pin
     'ANODE':
-      PIN_NUMBER='(1)';
+      PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     'CATHODE':
-      PIN_NUMBER='(2)';
+      PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='LED_1';
+    PART_NAME='LED';
     JEDEC_TYPE='led0805-rd';
     VALUE='ZigBee_CMD';
   end_body;
 end_primitive;
-primitive 'LED_1_LED0805-RD_-5V_ON';
+primitive 'LED_LED0805-RD_SOCKET1';
   pin
     'ANODE':
-      PIN_NUMBER='(1)';
+      PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     'CATHODE':
-      PIN_NUMBER='(2)';
+      PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='LED_1';
+    PART_NAME='LED';
+    JEDEC_TYPE='led0805-rd';
+    VALUE='SOCKET1';
+  end_body;
+end_primitive;
+primitive 'LED_LED0805-RD_SOCKET2';
+  pin
+    'ANODE':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'CATHODE':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='LED';
+    JEDEC_TYPE='led0805-rd';
+    VALUE='SOCKET2';
+  end_body;
+end_primitive;
+primitive 'LED_LED0805-RD_-5V_ON';
+  pin
+    'ANODE':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'CATHODE':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='LED';
     JEDEC_TYPE='led0805-rd';
     VALUE='-5V_ON';
   end_body;
 end_primitive;
-primitive 'LED_1_LED-TH_BD3_0-P2_54-FD_3V3';
+primitive 'LED_LED-TH_BD3_0-P2_54-FD_3V3_O';
   pin
     'ANODE':
-      PIN_NUMBER='(1)';
+      PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     'CATHODE':
-      PIN_NUMBER='(2)';
+      PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='LED_1';
+    PART_NAME='LED';
     JEDEC_TYPE='led-th_bd3_0-p2_54-fd';
     VALUE='3V3_ON';
   end_body;
@@ -210,70 +240,37 @@ primitive 'DIODE_DO-41_BD2_4-L4_7-P8_70-D0';
     VALUE='1N4007';
   end_body;
 end_primitive;
-primitive 'LED_1_LED-TH_BD3_0-P2_54-FD_VAL';
+primitive 'LED_LED-TH_BD3_0-P2_54-FD_FAN_O';
   pin
     'ANODE':
-      PIN_NUMBER='(1)';
+      PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     'CATHODE':
-      PIN_NUMBER='(2)';
+      PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='LED_1';
+    PART_NAME='LED';
     JEDEC_TYPE='led-th_bd3_0-p2_54-fd';
-    VALUE='VALVE_ON';
+    VALUE='FAN_ON';
   end_body;
 end_primitive;
-primitive 'LED_1_LED0805-RD_SPEAKER_ON';
+primitive 'LED_LED-TH_BD3_0-P2_54-FD_LIGHT';
   pin
     'ANODE':
-      PIN_NUMBER='(1)';
+      PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     'CATHODE':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='LED_1';
-    JEDEC_TYPE='led0805-rd';
-    VALUE='SPEAKER_ON';
-  end_body;
-end_primitive;
-primitive 'IRM-56384_OPTO-TH_IRM-56384_IR-';
-  pin
-    'OUT':
-      PIN_NUMBER='(1)';
-      OUTPUT_LOAD='(*)';
-    'GND':
-      PIN_NUMBER='(2)';
-      PINUSE='POWER';
-    'VCC':
-      PIN_NUMBER='(3)';
-      PINUSE='POWER';
-  end_pin;
-  body
-    PART_NAME='IRM-56384';
-    JEDEC_TYPE='opto-th_irm-56384';
-    VALUE='IR-56384';
-  end_body;
-end_primitive;
-primitive 'LED_1_LED-TH_BD5_9-P2_54-FD_DY-';
-  pin
-    'ANODE':
       PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
-    'CATHODE':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='LED_1';
-    JEDEC_TYPE='led-th_bd5_9-p2_54-fd';
-    VALUE='DY-IR333C-A';
+    PART_NAME='LED';
+    JEDEC_TYPE='led-th_bd3_0-p2_54-fd';
+    VALUE='LIGHT_ON';
   end_body;
 end_primitive;
-primitive 'CON3_CONN-TH_3P-P2_50_HX25003-3';
+primitive 'CON3_HDR-TH_3P-P2_54-H-F-W8_6_R';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -287,65 +284,8 @@ primitive 'CON3_CONN-TH_3P-P2_50_HX25003-3';
   end_pin;
   body
     PART_NAME='CON3';
-    JEDEC_TYPE='conn-th_3p-p2_50_hx25003-3wap';
+    JEDEC_TYPE='hdr-th_3p-p2_54-h-f-w8_6';
     VALUE='RH-30W_PORT';
-  end_body;
-end_primitive;
-primitive 'CON3_CONN-TH_3P-P2_50_HX25003_1';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CON3';
-    JEDEC_TYPE='conn-th_3p-p2_50_hx25003-3wap';
-    VALUE='FLOWMETER_PORT';
-  end_body;
-end_primitive;
-primitive 'CON3_CONN-TH_3P-P2_50_HX25003_2';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CON3';
-    JEDEC_TYPE='conn-th_3p-p2_50_hx25003-3wap';
-    VALUE='DS18B20_PORT';
-  end_body;
-end_primitive;
-primitive 'CON4_0_CONN-TH_4P-P2_54_DEALON_';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-    '4':
-      PIN_NUMBER='(4)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CON4_0';
-    JEDEC_TYPE='conn-th_4p-p2_54_dealon_dw254w-22-04-85';
-    VALUE='INFRARED';
   end_body;
 end_primitive;
 primitive 'CON2_CONN-TH_P5_00_KF127-5_0-2P';
@@ -360,10 +300,10 @@ primitive 'CON2_CONN-TH_P5_00_KF127-5_0-2P';
   body
     PART_NAME='CON2';
     JEDEC_TYPE='conn-th_p5_00_kf127-5_0-2p';
-    VALUE='VALVE_PORT';
+    VALUE='FAN_PORT';
   end_body;
 end_primitive;
-primitive 'CON8_HDR-TH_8P-P2_54-V-F-1_NFC_';
+primitive 'CON2_CONN-TH_P5_00_KF127-5_0-_1';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -371,29 +311,11 @@ primitive 'CON8_HDR-TH_8P-P2_54-V-F-1_NFC_';
     '2':
       PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-    '4':
-      PIN_NUMBER='(4)';
-      PINUSE='UNSPEC';
-    '5':
-      PIN_NUMBER='(5)';
-      PINUSE='UNSPEC';
-    '6':
-      PIN_NUMBER='(6)';
-      PINUSE='UNSPEC';
-    '7':
-      PIN_NUMBER='(7)';
-      PINUSE='UNSPEC';
-    '8':
-      PIN_NUMBER='(8)';
-      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='CON8';
-    JEDEC_TYPE='hdr-th_8p-p2_54-v-f-1';
-    VALUE='NFC_PORT';
+    PART_NAME='CON2';
+    JEDEC_TYPE='conn-th_p5_00_kf127-5_0-2p';
+    VALUE='LIGHT_PORT';
   end_body;
 end_primitive;
 primitive 'CON4_HDR-TH_4P-P2_54-V-F_LCD_PO';
@@ -468,6 +390,21 @@ primitive 'CHOKE_L0603_FCM1608';
     VALUE='FCM1608';
   end_body;
 end_primitive;
+primitive 'PHOTO NPN_0_LED-TH_BD5_0_BLUE_H';
+  pin
+    'EMITTER':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'COLLECTOR':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='PHOTO NPN_0';
+    JEDEC_TYPE='led-th_bd5_0_blue';
+    VALUE='HLPT5I850HP25';
+  end_body;
+end_primitive;
 primitive 'BPW36/TO_0_SOT-23-3_L2_9-W1_6-P';
   pin
     'EMITTER':
@@ -501,126 +438,6 @@ primitive 'RESISTOR_R0805_0';
     VALUE='0';
   end_body;
 end_primitive;
-primitive 'RESISTOR_R0805_100';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='r0805';
-    VALUE='100';
-  end_body;
-end_primitive;
-primitive 'RESISTOR_R0805_100K';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='r0805';
-    VALUE='100k';
-  end_body;
-end_primitive;
-primitive 'RESISTOR_R0805_3.9K';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='r0805';
-    VALUE='3.9k';
-  end_body;
-end_primitive;
-primitive 'RESISTOR_R0805_10K';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='r0805';
-    VALUE='10k';
-  end_body;
-end_primitive;
-primitive 'RESISTOR_R0805_620';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='r0805';
-    VALUE='620';
-  end_body;
-end_primitive;
-primitive 'RESISTOR_R0805_91K';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='r0805';
-    VALUE='91k';
-  end_body;
-end_primitive;
-primitive 'RESISTOR_R0805_27K';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='r0805';
-    VALUE='27k';
-  end_body;
-end_primitive;
-primitive 'RESISTOR_R0805_1K';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='r0805';
-    VALUE='1k';
-  end_body;
-end_primitive;
 primitive 'RESISTOR_R0805_330K';
   pin
     '1':
@@ -649,6 +466,36 @@ primitive 'RESISTOR_R0805_9.1K';
     PART_NAME='RESISTOR';
     JEDEC_TYPE='r0805';
     VALUE='9.1k';
+  end_body;
+end_primitive;
+primitive 'RESISTOR_R0805_10K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='r0805';
+    VALUE='10k';
+  end_body;
+end_primitive;
+primitive 'RESISTOR_R0805_1K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='r0805';
+    VALUE='1k';
   end_body;
 end_primitive;
 primitive 'RESISTOR_R0805_8.2K';
@@ -696,6 +543,21 @@ primitive 'RESISTOR_R0805_330';
     VALUE='330';
   end_body;
 end_primitive;
+primitive 'RESISTOR_R0805_100K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='r0805';
+    VALUE='100k';
+  end_body;
+end_primitive;
 primitive 'RESISTOR_R0805_220';
   pin
     '1':
@@ -711,7 +573,7 @@ primitive 'RESISTOR_R0805_220';
     VALUE='220';
   end_body;
 end_primitive;
-primitive 'RESISTOR_R0805_11K';
+primitive 'RESISTOR_R0805_91K';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -723,7 +585,22 @@ primitive 'RESISTOR_R0805_11K';
   body
     PART_NAME='RESISTOR';
     JEDEC_TYPE='r0805';
-    VALUE='11k';
+    VALUE='91k';
+  end_body;
+end_primitive;
+primitive 'RESISTOR_R0805_27K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='r0805';
+    VALUE='27k';
   end_body;
 end_primitive;
 primitive 'RELAY SPST_RELAY-TH_973-XXVDC-S';
@@ -747,7 +624,7 @@ primitive 'RELAY SPST_RELAY-TH_973-XXVDC-S';
     VALUE='973-5VDC-SL-A';
   end_body;
 end_primitive;
-primitive 'SW PUSHBUTTON-SPST-2_SW-TH_4P-L';
+primitive 'SW PUSHBUTTON-SPST-2_KEY-TH_4P-';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -764,11 +641,11 @@ primitive 'SW PUSHBUTTON-SPST-2_SW-TH_4P-L';
   end_pin;
   body
     PART_NAME='SW PUSHBUTTON-SPST-2';
-    JEDEC_TYPE='sw-th_4p-l6_0-w6_0-p4_50-ls6_5';
+    JEDEC_TYPE='key-th_4p-l6_2-w6_2-p4_50-ls6_5';
     VALUE='REPAIR';
   end_body;
 end_primitive;
-primitive 'SW PUSHBUTTON-SPST-2_SW-TH_4P_1';
+primitive 'SW PUSHBUTTON-SPST-2_KEY-TH_4_1';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -785,7 +662,7 @@ primitive 'SW PUSHBUTTON-SPST-2_SW-TH_4P_1';
   end_pin;
   body
     PART_NAME='SW PUSHBUTTON-SPST-2';
-    JEDEC_TYPE='sw-th_4p-l6_0-w6_0-p4_50-ls6_5';
+    JEDEC_TYPE='key-th_4p-l6_2-w6_2-p4_50-ls6_5';
     VALUE='HELP';
   end_body;
 end_primitive;
@@ -807,7 +684,7 @@ primitive 'SW PUSHBUTTON-SPST-2_SW-SMD_4P-';
   body
     PART_NAME='SW PUSHBUTTON-SPST-2';
     JEDEC_TYPE='sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2';
-    VALUE='ZigBee_RST';
+    VALUE='WiFi_RST';
   end_body;
 end_primitive;
 primitive 'SW PUSHBUTTON-SPST-2_SW-SMD_4_1';
@@ -828,10 +705,31 @@ primitive 'SW PUSHBUTTON-SPST-2_SW-SMD_4_1';
   body
     PART_NAME='SW PUSHBUTTON-SPST-2';
     JEDEC_TYPE='sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2';
-    VALUE='ZigBee_WK';
+    VALUE='ZigBee_RST';
   end_body;
 end_primitive;
 primitive 'SW PUSHBUTTON-SPST-2_SW-SMD_4_2';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '4':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='SW PUSHBUTTON-SPST-2';
+    JEDEC_TYPE='sw-smd_4p-l5_1-w5_1-p3_70-ls6_5-tl-2';
+    VALUE='ZigBee_WK';
+  end_body;
+end_primitive;
+primitive 'SW PUSHBUTTON-SPST-2_SW-SMD_4_3';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -924,6 +822,29 @@ primitive 'TLV2374ID_SOIC-14_L8_7-W3_9-P1_';
     VALUE='TLV2374';
   end_body;
 end_primitive;
+primitive 'DHT21_NIL-NAMEMAPPER_DHT21';
+  pin
+    'VDD':
+      PIN_NUMBER='(1)';
+      PINUSE='POWER';
+    'SDA':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(*)';
+      OUTPUT_LOAD='(*)';
+      BIDIRECTIONAL='TRUE';
+    'NC':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'GND':
+      PIN_NUMBER='(4)';
+      PINUSE='POWER';
+  end_pin;
+  body
+    PART_NAME='DHT21';
+    JEDEC_TYPE='nil-namemapper';
+    VALUE='DHT21';
+  end_body;
+end_primitive;
 primitive 'WT588F08A-8S_SOP-8_L4_9-W3_9-P1';
   pin
     'PC2/BUSY':
@@ -961,6 +882,123 @@ primitive 'WT588F08A-8S_SOP-8_L4_9-W3_9-P1';
     PART_NAME='WT588F08A-8S';
     JEDEC_TYPE='sop-8_l4_9-w3_9-p1_27-ls6_0-bl';
     VALUE='WT588F08A-8S';
+  end_body;
+end_primitive;
+primitive 'A51-C2G4A20S1A_0_S24-PAD_A51-C2';
+  pin
+    'VCC':
+      PIN_NUMBER='(1)';
+      PINUSE='POWER';
+    'GND#2':
+      PIN_NUMBER='(2)';
+      PINUSE='POWER';
+    'GPIO14':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(*)';
+      OUTPUT_LOAD='(*)';
+      BIDIRECTIONAL='TRUE';
+    'GPIO12':
+      PIN_NUMBER='(4)';
+      INPUT_LOAD='(*)';
+      OUTPUT_LOAD='(*)';
+      BIDIRECTIONAL='TRUE';
+    'GPIO13':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(*)';
+      OUTPUT_LOAD='(*)';
+      BIDIRECTIONAL='TRUE';
+    'GPIO15':
+      PIN_NUMBER='(6)';
+      INPUT_LOAD='(*)';
+      OUTPUT_LOAD='(*)';
+      BIDIRECTIONAL='TRUE';
+    'GPIO5':
+      PIN_NUMBER='(7)';
+      INPUT_LOAD='(*)';
+      OUTPUT_LOAD='(*)';
+      BIDIRECTIONAL='TRUE';
+    'URXD':
+      PIN_NUMBER='(8)';
+      INPUT_LOAD='(*)';
+    'UTXD':
+      PIN_NUMBER='(9)';
+      OUTPUT_LOAD='(*)';
+    'RST':
+      PIN_NUMBER='(10)';
+      INPUT_LOAD='(*)';
+    'NC1':
+      PIN_NUMBER='(11)';
+      PINUSE='UNSPEC';
+    'NC2':
+      PIN_NUMBER='(12)';
+      PINUSE='UNSPEC';
+    'GND#13':
+      PIN_NUMBER='(13)';
+      PINUSE='POWER';
+    'ANT':
+      PIN_NUMBER='(14)';
+      PINUSE='UNSPEC';
+    'GND#15':
+      PIN_NUMBER='(15)';
+      PINUSE='POWER';
+    'NC3':
+      PIN_NUMBER='(16)';
+      PINUSE='UNSPEC';
+    'NC4':
+      PIN_NUMBER='(17)';
+      PINUSE='UNSPEC';
+    'TOUT':
+      PIN_NUMBER='(18)';
+      INPUT_LOAD='(*)';
+    'CHIP_EN':
+      PIN_NUMBER='(19)';
+      INPUT_LOAD='(*)';
+    'GPIO16':
+      PIN_NUMBER='(20)';
+      INPUT_LOAD='(*)';
+      OUTPUT_LOAD='(*)';
+      BIDIRECTIONAL='TRUE';
+    'NC5':
+      PIN_NUMBER='(21)';
+      PINUSE='UNSPEC';
+    'NC6':
+      PIN_NUMBER='(22)';
+      PINUSE='UNSPEC';
+    'NC7':
+      PIN_NUMBER='(23)';
+      PINUSE='UNSPEC';
+    'NC8':
+      PIN_NUMBER='(24)';
+      PINUSE='UNSPEC';
+    'NC9':
+      PIN_NUMBER='(25)';
+      PINUSE='UNSPEC';
+    'GPIO2':
+      PIN_NUMBER='(26)';
+      INPUT_LOAD='(*)';
+      OUTPUT_LOAD='(*)';
+      BIDIRECTIONAL='TRUE';
+    'GPIO0':
+      PIN_NUMBER='(27)';
+      INPUT_LOAD='(*)';
+      OUTPUT_LOAD='(*)';
+      BIDIRECTIONAL='TRUE';
+    'GPIO4':
+      PIN_NUMBER='(28)';
+      INPUT_LOAD='(*)';
+      OUTPUT_LOAD='(*)';
+      BIDIRECTIONAL='TRUE';
+    'NC10':
+      PIN_NUMBER='(29)';
+      PINUSE='UNSPEC';
+    'NC11':
+      PIN_NUMBER='(30)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='A51-C2G4A20S1a_0';
+    JEDEC_TYPE='s24-pad';
+    VALUE='A51-C2G4A20S1a';
   end_body;
 end_primitive;
 primitive 'A40-C2G4A04S1A_0_S24-PAD_A40-C2';
