@@ -16,7 +16,7 @@
     (DRC_View_Output "TRUE")
     (DRC_Preserved_Waived "FALSE")
     (DRC_Run_Electrical_Rules "TRUE")
-    (DRC_Run_Physical_Rules "FALSE")
+    (DRC_Run_Physical_Rules "TRUE")
     (DRC_Report_File
        "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DRC")
     (DRC_Check_Ports "TRUE")
@@ -42,7 +42,7 @@
     (DRC_Check_Power_Ground_Short "TRUE")
     (DRC_Identical_References "TRUE")
     (DRC_Type_Mismatch "TRUE")
-    (DRC_Visible_Power_pins "FALSE")
+    (DRC_Visible_Power_pins "TRUE")
     (DRC_Report_Unused_Part_Packages "TRUE")
     (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
     (DRC_Run_Physical_Custom_DRC "FALSE")
@@ -114,7 +114,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 78 1681 78 537")
-        (Scroll "17 169")
+        (Scroll "411 200")
         (Zoom "130")
         (Occurrence "/"))
       (Path
@@ -125,7 +125,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 104 1707 104 563")
-        (Scroll "51 139")
+        (Scroll "411 0")
         (Zoom "130")
         (Occurrence "/"))
       (Path
@@ -136,8 +136,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 130 1733 130 589")
-        (Scroll "-253 0")
-        (Zoom "69")
+        (Scroll "-283 0")
+        (Zoom "65")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\1_SHOWERTERMINAL\HARDWARE\1_SCHEMATIC\SHOWERTERMINAL.DSN")
