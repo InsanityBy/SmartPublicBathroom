@@ -1,83 +1,83 @@
-Date and Time : 04/30/22 15:16:54
+Date and Time : 05/01/22 16:54:20
 
 --------------------------------------------------
 Checking Schematic: SCHEMATIC1
 --------------------------------------------------
 Checking Electrical Rules 
-WARNING(ORCAP-1829): Possible pin type conflict U5,UTXD  Output Connected to Bidirectional
-                    SCHEMATIC1, 5_COMMUNICATE  (3.85, 4.25) 
-WARNING(ORCAP-1829): Possible pin type conflict U7,PC7  Bidirectional Connected to Output
-                    SCHEMATIC1, 6_MCU  (12.10, 2.40) 
 WARNING(ORCAP-1829): Possible pin type conflict U6,TXD/P0.3  Output Connected to Bidirectional
                     SCHEMATIC1, 5_COMMUNICATE  (10.60, 4.45) 
 WARNING(ORCAP-1829): Possible pin type conflict U7,PA10  Bidirectional Connected to Output
                     SCHEMATIC1, 6_MCU  (9.50, 2.70) 
+WARNING(ORCAP-1829): Possible pin type conflict U5,UTXD  Output Connected to Bidirectional
+                    SCHEMATIC1, 5_COMMUNICATE  (3.85, 4.25) 
+WARNING(ORCAP-1829): Possible pin type conflict U7,PC7  Bidirectional Connected to Output
+                    SCHEMATIC1, 6_MCU  (12.10, 2.40) 
 WARNING(ORCAP-1829): Possible pin type conflict U2,4OUT  Output Connected to Bidirectional
                     SCHEMATIC1, 2_SIGNALINPUT  (12.15, 5.15) 
 WARNING(ORCAP-1829): Possible pin type conflict U7,PC2  Bidirectional Connected to Output
                     SCHEMATIC1, 6_MCU  (12.10, 1.90) 
 
 Checking For Single Node Nets
-WARNING(ORCAP-1600): Net has fewer than two connections PB0 
-                    SCHEMATIC1, 6_MCU  (9.50, 3.40) 
-WARNING(ORCAP-1600): Net has fewer than two connections PB15 
-                    SCHEMATIC1, 6_MCU  (9.50, 4.80) 
-WARNING(ORCAP-1600): Net has fewer than two connections PB4 
-                    SCHEMATIC1, 6_MCU  (9.50, 3.80) 
-WARNING(ORCAP-1600): Net has fewer than two connections PB2 
-                    SCHEMATIC1, 6_MCU  (9.50, 3.60) 
-WARNING(ORCAP-1600): Net has fewer than two connections PC9 
-                    SCHEMATIC1, 6_MCU  (12.70, 2.60) 
-WARNING(ORCAP-1600): Net has fewer than two connections PC5 
-                    SCHEMATIC1, 6_MCU  (12.70, 2.20) 
-WARNING(ORCAP-1600): Net has fewer than two connections PB1 
-                    SCHEMATIC1, 6_MCU  (9.50, 3.50) 
-WARNING(ORCAP-1600): Net has fewer than two connections PC1 
-                    SCHEMATIC1, 6_MCU  (12.70, 1.80) 
-WARNING(ORCAP-1600): Net has fewer than two connections PC11 
-                    SCHEMATIC1, 6_MCU  (12.70, 2.80) 
-WARNING(ORCAP-1600): Net has fewer than two connections PB12 
-                    SCHEMATIC1, 6_MCU  (9.50, 4.50) 
-WARNING(ORCAP-1600): Net has fewer than two connections PB8 
-                    SCHEMATIC1, 6_MCU  (9.50, 4.20) 
-WARNING(ORCAP-1600): Net has fewer than two connections PC12 
-                    SCHEMATIC1, 6_MCU  (12.70, 2.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections PC8 
-                    SCHEMATIC1, 6_MCU  (12.70, 2.50) 
-WARNING(ORCAP-1600): Net has fewer than two connections PB5 
-                    SCHEMATIC1, 6_MCU  (9.50, 3.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections PB9 
-                    SCHEMATIC1, 6_MCU  (9.50, 4.30) 
-WARNING(ORCAP-1600): Net has fewer than two connections PC13 
-                    SCHEMATIC1, 6_MCU  (12.70, 3.00) 
-WARNING(ORCAP-1600): Net has fewer than two connections PC4 
-                    SCHEMATIC1, 6_MCU  (12.70, 2.10) 
-WARNING(ORCAP-1600): Net has fewer than two connections PB14 
-                    SCHEMATIC1, 6_MCU  (9.50, 4.70) 
-WARNING(ORCAP-1600): Net has fewer than two connections PA8 
-                    SCHEMATIC1, 6_MCU  (9.50, 2.50) 
-WARNING(ORCAP-1600): Net has fewer than two connections PD2 
-                    SCHEMATIC1, 6_MCU  (12.70, 3.40) 
-WARNING(ORCAP-1600): Net has fewer than two connections PA0 
-                    SCHEMATIC1, 6_MCU  (9.50, 1.70) 
-WARNING(ORCAP-1600): Net has fewer than two connections PC3 
-                    SCHEMATIC1, 6_MCU  (12.70, 2.00) 
 WARNING(ORCAP-1600): Net has fewer than two connections PC10 
                     SCHEMATIC1, 6_MCU  (12.70, 2.70) 
-WARNING(ORCAP-1600): Net has fewer than two connections PB13 
-                    SCHEMATIC1, 6_MCU  (9.50, 4.60) 
-WARNING(ORCAP-1600): Net has fewer than two connections PA2 
-                    SCHEMATIC1, 6_MCU  (9.50, 1.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections PA11 
-                    SCHEMATIC1, 6_MCU  (9.50, 2.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB8 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.20) 
 WARNING(ORCAP-1600): Net has fewer than two connections PA12 
                     SCHEMATIC1, 6_MCU  (9.50, 2.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections PA15 
-                    SCHEMATIC1, 6_MCU  (9.50, 3.20) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB12 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.50) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC13 
+                    SCHEMATIC1, 6_MCU  (12.70, 3.00) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB2 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.60) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB13 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.60) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC8 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.50) 
 WARNING(ORCAP-1600): Net has fewer than two connections PC0 
                     SCHEMATIC1, 6_MCU  (12.70, 1.70) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC12 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.90) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC9 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.60) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC1 
+                    SCHEMATIC1, 6_MCU  (12.70, 1.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC4 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.10) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC3 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.00) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA8 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.50) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA15 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.20) 
+WARNING(ORCAP-1600): Net has fewer than two connections PD2 
+                    SCHEMATIC1, 6_MCU  (12.70, 3.40) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB9 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.30) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA11 
+                    SCHEMATIC1, 6_MCU  (9.50, 2.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB4 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB5 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.90) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB15 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC5 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.20) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB0 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.40) 
+WARNING(ORCAP-1600): Net has fewer than two connections PC11 
+                    SCHEMATIC1, 6_MCU  (12.70, 2.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA0 
+                    SCHEMATIC1, 6_MCU  (9.50, 1.70) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB14 
+                    SCHEMATIC1, 6_MCU  (9.50, 4.70) 
+WARNING(ORCAP-1600): Net has fewer than two connections PA2 
+                    SCHEMATIC1, 6_MCU  (9.50, 1.90) 
 WARNING(ORCAP-1600): Net has fewer than two connections PA7 
                     SCHEMATIC1, 6_MCU  (9.50, 2.40) 
+WARNING(ORCAP-1600): Net has fewer than two connections PB1 
+                    SCHEMATIC1, 6_MCU  (9.50, 3.50) 
 
 Checking For Unconnected Bus Nets
 
@@ -90,8 +90,8 @@ Reporting Off-Grid Objects
 Reporting Ports
 
 Reporting Off-Page Connections
-    LCD_SCL
     B1
+    LCD_SCL
     B2
     WiFi_RX
     TEMPERATURE&HUMIDITY
@@ -114,14 +114,24 @@ Reporting Globals
 
 Reporting Net Names
     N34060
-    WIFI_TX
+    N35831
+    ZIGBEE_TX
     -------------------------------------------------------------------------------
-QUESTION(ORCAP-1589): Net has two or more aliases - possible short? WiFi_TX 
-                    SCHEMATIC1, 5_COMMUNICATE  (4.35, 4.25) 
-             Alternate Name:  PC7
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? ZigBee_TX 
+                    SCHEMATIC1, 5_COMMUNICATE  (10.85, 4.45) 
+             Alternate Name:  PA10
     -------------------------------------------------------------------------------
 
-    GND
+    N35952
+    ZIGBEE_RX
+    -------------------------------------------------------------------------------
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? ZigBee_RX 
+                    SCHEMATIC1, 5_COMMUNICATE  (10.85, 4.25) 
+             Alternate Name:  PA9
+    -------------------------------------------------------------------------------
+
+    N80062
+    N80206
     N80218
     WIFI_RX
     -------------------------------------------------------------------------------
@@ -130,55 +140,23 @@ QUESTION(ORCAP-1589): Net has two or more aliases - possible short? WiFi_RX
              Alternate Name:  PC6
     -------------------------------------------------------------------------------
 
-    ZIGBEE_TX
+    WIFI_TX
     -------------------------------------------------------------------------------
-QUESTION(ORCAP-1589): Net has two or more aliases - possible short? ZigBee_TX 
-                    SCHEMATIC1, 5_COMMUNICATE  (10.85, 4.45) 
-             Alternate Name:  PA10
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? WiFi_TX 
+                    SCHEMATIC1, 5_COMMUNICATE  (4.35, 4.25) 
+             Alternate Name:  PC7
     -------------------------------------------------------------------------------
 
-    N80214
-    N35831
-    N35952
-    N80062
-    N36022
     N34448
-    N80202
-    N80206
+    GND
     N33878
-    ZIGBEE_RX
-    -------------------------------------------------------------------------------
-QUESTION(ORCAP-1589): Net has two or more aliases - possible short? ZigBee_RX 
-                    SCHEMATIC1, 5_COMMUNICATE  (10.85, 4.25) 
-             Alternate Name:  PA9
-    -------------------------------------------------------------------------------
-
     N80258
     N35827
+    N80214
+    N36022
+    N80202
     3V3
-    LCD_SDA
-    -------------------------------------------------------------------------------
-QUESTION(ORCAP-1589): Net has two or more aliases - possible short? LCD_SDA 
-                    SCHEMATIC1, 4_HMI  (5.30, 3.10) 
-             Alternate Name:  PB7
-    -------------------------------------------------------------------------------
-
-    N78813
-    N78779
-    B2
-    -------------------------------------------------------------------------------
-QUESTION(ORCAP-1589): Net has two or more aliases - possible short? B2 
-                    SCHEMATIC1, 6_MCU  (9.50, 2.30) 
-             Alternate Name:  PA6
-    -------------------------------------------------------------------------------
-
-    B1
-    -------------------------------------------------------------------------------
-QUESTION(ORCAP-1589): Net has two or more aliases - possible short? B1 
-                    SCHEMATIC1, 6_MCU  (9.50, 2.20) 
-             Alternate Name:  PA5
-    -------------------------------------------------------------------------------
-
+    N78817
     SPEAKER_DATA
     -------------------------------------------------------------------------------
 QUESTION(ORCAP-1589): Net has two or more aliases - possible short? SPEAKER_DATA 
@@ -186,8 +164,6 @@ QUESTION(ORCAP-1589): Net has two or more aliases - possible short? SPEAKER_DATA
              Alternate Name:  PB3
     -------------------------------------------------------------------------------
 
-    N78755
-    N78817
     SPEAKER_CLK
     -------------------------------------------------------------------------------
 QUESTION(ORCAP-1589): Net has two or more aliases - possible short? SPEAKER_CLK 
@@ -195,6 +171,15 @@ QUESTION(ORCAP-1589): Net has two or more aliases - possible short? SPEAKER_CLK
              Alternate Name:  PB10
     -------------------------------------------------------------------------------
 
+    LCD_SDA
+    -------------------------------------------------------------------------------
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? LCD_SDA 
+                    SCHEMATIC1, 4_HMI  (5.30, 3.10) 
+             Alternate Name:  PB7
+    -------------------------------------------------------------------------------
+
+    N78755
+    N78813
     LCD_SCL
     -------------------------------------------------------------------------------
 QUESTION(ORCAP-1589): Net has two or more aliases - possible short? LCD_SCL 
@@ -202,19 +187,25 @@ QUESTION(ORCAP-1589): Net has two or more aliases - possible short? LCD_SCL
              Alternate Name:  PB6
     -------------------------------------------------------------------------------
 
-    N31316
-    LIGHT_CONTROL
+    B2
     -------------------------------------------------------------------------------
-QUESTION(ORCAP-1589): Net has two or more aliases - possible short? LIGHT_CONTROL 
-                    SCHEMATIC1, 3_SIGNALOUTPUT  (6.15, 6.30) 
-             Alternate Name:  PA4
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? B2 
+                    SCHEMATIC1, 4_HMI  (11.15, 3.40) 
+             Alternate Name:  PA6
     -------------------------------------------------------------------------------
 
-    N31416
+    N78779
+    B1
+    -------------------------------------------------------------------------------
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? B1 
+                    SCHEMATIC1, 4_HMI  (7.95, 3.40) 
+             Alternate Name:  PA5
+    -------------------------------------------------------------------------------
+
+    N30979
+    N94912
     N31424
-    N30911
     N30803
-    N30903
     FAN_CONTROL
     -------------------------------------------------------------------------------
 QUESTION(ORCAP-1589): Net has two or more aliases - possible short? FAN_CONTROL 
@@ -222,12 +213,20 @@ QUESTION(ORCAP-1589): Net has two or more aliases - possible short? FAN_CONTROL
              Alternate Name:  PA3
     -------------------------------------------------------------------------------
 
-    +5V
-    N94714
     N31492
-    N94912
-    N30979
-    N28017
+    LIGHT_CONTROL
+    -------------------------------------------------------------------------------
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? LIGHT_CONTROL 
+                    SCHEMATIC1, 3_SIGNALOUTPUT  (6.15, 6.30) 
+             Alternate Name:  PA4
+    -------------------------------------------------------------------------------
+
+    N30911
+    N94714
+    N31416
+    N30903
+    +5V
+    N31316
     TEMPERATURE&HUMIDITY
     -------------------------------------------------------------------------------
 QUESTION(ORCAP-1589): Net has two or more aliases - possible short? TEMPERATURE&HUMIDITY 
@@ -235,7 +234,6 @@ QUESTION(ORCAP-1589): Net has two or more aliases - possible short? TEMPERATURE&
              Alternate Name:  PA1
     -------------------------------------------------------------------------------
 
-    1IN+
     2IN-
     -------------------------------------------------------------------------------
 QUESTION(ORCAP-1589): Net has two or more aliases - possible short? 2IN- 
@@ -243,15 +241,14 @@ QUESTION(ORCAP-1589): Net has two or more aliases - possible short? 2IN-
              Alternate Name:  2OUT
     -------------------------------------------------------------------------------
 
-    -5V
-    2IN+
-    AGND
+    N28017
+    1IN+
     1OUT
+    1IN-
+    N28085
     4IN-
     4IN+
-    3IN+
-    N28085
-    1IN-
+    -5V
     LIGHT_SENSOR
     -------------------------------------------------------------------------------
 QUESTION(ORCAP-1589): Net has two or more aliases - possible short? LIGHT_SENSOR 
@@ -267,54 +264,57 @@ QUESTION(ORCAP-1589): Net has two or more aliases - possible short? 3IN-
              Alternate Name:  3OUT
     -------------------------------------------------------------------------------
 
+    2IN+
+    AGND
+    3IN+
     N26683
-    N26775
     N26855
-    PA14_SWCLK
-    PB0
-    PB15
-    PC15-OSC32_OUT
-    PB4
-    PB2
-    PC9
-    PC5
-    PB1
-    PC1
-    PC11
-    PB12
-    PB8
-    PC12
-    PC8
+    N26775
+    PC10
     N139451
+    PB8
+    PA12
     N140235
+    PB12
+    PC13
+    PB2
+    PB13
+    PC8
+    PC0
+    PC12
+    PC9
     NRST
-    N139639
-    PB5
+    BOOT0
+    PC1
+    PC14-OSC32_IN
+    PC4
+    PA13_SWDIO
+    PC3
+    PA8
+    PC15-OSC32_OUT
+    N140397
+    PA15
+    PD2
     PB9
     N140445
-    PC13
-    PC4
-    PF1-OSC_OUT
-    N140141
-    PB14
-    PA8
-    BOOT0
-    PD2
-    PF0-OSC_IN
-    PA0
-    PC14-OSC32_IN
-    PC3
-    PC10
-    N139647
-    PB13
-    PA2
     PA11
-    PA12
-    PA15
-    PC0
-    PA13_SWDIO
+    PB4
+    PB5
+    PB15
+    PC5
+    PF1-OSC_OUT
+    PB0
+    N140141
+    PA14_SWCLK
+    PF0-OSC_IN
+    N139639
+    PC11
+    PA0
+    PB14
+    N139647
+    PA2
     PA7
-    N140397
+    PB1
 
 Checking Misleading Tap connection
 
