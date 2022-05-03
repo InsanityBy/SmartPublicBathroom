@@ -1,0 +1,827 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Glossing                                                         )
+(                                                                     )
+(    Drawing          : SHOWERHOST.brd                                )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Wed May 04 00:04:05 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+
+
+Via Eliminate glossing in progress.
+Started on Wed May 04 00:04:05 2022
+ with Parameters: 
+   Jog limit            : -1 
+   Used pin escapes        : YES 
+   Unused pin escapes      : YES 
+   Stand alone vias        : YES 
+   Regular through vias    : YES 
+
+
+Eliminations on net N80214 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N80258 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net ZIGBEE_RX :
+Through Via Candidates: 3, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net ZIGBEE_TX :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net WIFI_RX :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net WIFI_TX :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net LIGHT_SENSOR :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net 1IN- :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net LIGHT_CONTROL :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net 1IN+ :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net 3IN+ :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net SPEAKER_DATA :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net B1 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net B2 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N36022 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net LCD_SCL :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net LCD_SDA :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N35827 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N34448 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N34060 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N33878 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N94912 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N94714 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net -5V :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net 3V3 :
+Through Via Candidates: 12, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net +5V :
+Through Via Candidates: 5, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net AGND :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net PA14_SWCLK :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net BOOT0 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net PC14-OSC32_IN :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net NRST :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N139451 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net PA13_SWDIO :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N139639 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N139647 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net GND :
+Through Via Candidates: 16, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N80218 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N80062 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+
+Elapsed time:  0 hr 0 min 1 sec ( 0.00 hr)
+Actual time of completion: Wed May 04 00:04:06 2022
+
+
+Via Eliminate Total Stats:
+Total Through Via Candidates: 79, Eliminations: 0,  = 0 % Eliminated.
+Vias: Total Candidates = 79,  Total Eliminations = 0,  0 % Eliminatons.
+
+
+
+
+Via Eliminate glossing in progress.
+Started on Wed May 04 00:04:06 2022
+ with Parameters: 
+   Jog limit            : -1 
+   Used pin escapes        : YES 
+   Unused pin escapes      : YES 
+   Stand alone vias        : YES 
+   Regular through vias    : YES 
+
+
+Eliminations on net N80214 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N80258 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net ZIGBEE_RX :
+Through Via Candidates: 3, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net ZIGBEE_TX :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net WIFI_RX :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net WIFI_TX :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net LIGHT_SENSOR :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net 1IN- :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net LIGHT_CONTROL :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net 1IN+ :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net 3IN+ :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net SPEAKER_DATA :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net B1 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net B2 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N36022 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net LCD_SCL :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net LCD_SDA :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N35827 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N34448 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N34060 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N33878 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N94912 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N94714 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net -5V :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net 3V3 :
+Through Via Candidates: 12, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net +5V :
+Through Via Candidates: 5, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net AGND :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net PA14_SWCLK :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net BOOT0 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net PC14-OSC32_IN :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net NRST :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N139451 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net PA13_SWDIO :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N139639 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N139647 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net GND :
+Through Via Candidates: 16, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N80218 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net N80062 :
+Through Via Candidates: 1, Eliminations: 0,  = 0 % Eliminated.
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Wed May 04 00:04:06 2022
+
+
+Via Eliminate Total Stats:
+Total Through Via Candidates: 79, Eliminations: 0,  = 0 % Eliminated.
+Vias: Total Candidates = 79,  Total Eliminations = 0,  0 % Eliminatons.
+
+
+
+
+Line entry into Pad glossing in progress.
+Started on Wed May 04 00:04:06 2022
+Bend Distance is 12.00.
+
+ Circular pads:          YES
+ Square pads  :          YES
+ Rectangular pads :      YES
+ Oblong pads :           YES
+ Enter Square Pad :      Side : YES      Corner : YES  
+ Enter Rectangular Pad : Long : YES      Short  : YES      Corner : YES  
+ Enter Oblong Pad :      Side : YES      Round  : YES      Angle  : 45 OR 90
+ Enter Circular Pad :    Angle : 45 OR 90
+ Create Odd Segs:   NO
+ Corner type  :     45
+ Maximum 45 limit is -1.
+
+Glossing attempt unsuccessful. Active pad is at (1469.83,192.91).
+
+Glossing attempt unsuccessful. Active pad is at (1548.42,271.65).
+
+Glossing attempt unsuccessful. Active pad is at (1467.32,350.39).
+
+Glossing attempt unsuccessful. Active pad is at (1765.01,263.39).
+
+Glossing attempt unsuccessful. Active pad is at (2330.71,1036.76).
+
+Glossing attempt unsuccessful. Active pad is at (2214.56,1171.26).
+
+Glossing attempt unsuccessful. Active pad is at (931.89,3413.39).
+
+Glossing attempt unsuccessful. Active pad is at (892.13,3429.38).
+
+Glossing attempt unsuccessful. Active pad is at (2534.11,177.17).
+
+Glossing attempt unsuccessful. Active pad is at (1983.04,313.39).
+
+Glossing attempt unsuccessful. Active pad is at (2459.45,259.84).
+
+Glossing attempt unsuccessful. Active pad is at (1694.38,1593.71).
+
+Glossing was successful:  VIA at (1550.51,1135.94) defined by pad  VIA
+
+Glossing attempt unsuccessful. Active pad is at (1062.99,2568.11).
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,590.55).
+
+Glossing attempt unsuccessful. Active pad is at (1284.79,1866.14).
+
+Glossing attempt unsuccessful. Active pad is at (916.93,818.90).
+
+Glossing attempt unsuccessful. Active pad is at (1675.99,1631.70).
+
+Glossing attempt unsuccessful. Active pad is at (1877.95,1317.72).
+
+Glossing attempt unsuccessful. Active pad is at (1325.58,1798.70).
+
+Glossing attempt unsuccessful. Active pad is at (1996.06,2872.03).
+
+Glossing attempt unsuccessful. Active pad is at (2393.89,1563.19).
+
+Glossing attempt unsuccessful. Active pad is at (2393.89,1563.19).
+
+Glossing attempt unsuccessful. Active pad is at (1194.24,3413.39).
+
+
+Finished execution 1
+
+Glossing attempt unsuccessful. Active pad is at (1469.83,192.91).
+
+Glossing attempt unsuccessful. Active pad is at (1548.42,271.65).
+
+Glossing attempt unsuccessful. Active pad is at (1467.32,350.39).
+
+Glossing attempt unsuccessful. Active pad is at (1765.01,263.39).
+
+Glossing attempt unsuccessful. Active pad is at (2330.71,1036.76).
+
+Glossing attempt unsuccessful. Active pad is at (2214.56,1171.26).
+
+Glossing attempt unsuccessful. Active pad is at (931.89,3413.39).
+
+Glossing attempt unsuccessful. Active pad is at (892.13,3429.38).
+
+Glossing attempt unsuccessful. Active pad is at (2534.11,177.17).
+
+Glossing attempt unsuccessful. Active pad is at (1983.04,313.39).
+
+Glossing attempt unsuccessful. Active pad is at (2459.45,259.84).
+
+Glossing attempt unsuccessful. Active pad is at (1694.38,1593.71).
+
+Glossing attempt unsuccessful. Active pad is at (1062.99,2568.11).
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,590.55).
+
+Glossing attempt unsuccessful. Active pad is at (1284.79,1866.14).
+
+Glossing attempt unsuccessful. Active pad is at (916.93,818.90).
+
+Glossing attempt unsuccessful. Active pad is at (1675.99,1631.70).
+
+Glossing attempt unsuccessful. Active pad is at (1877.95,1317.72).
+
+Glossing attempt unsuccessful. Active pad is at (1325.58,1798.70).
+
+Glossing attempt unsuccessful. Active pad is at (1996.06,2872.03).
+
+Glossing attempt unsuccessful. Active pad is at (2393.89,1563.19).
+
+Glossing attempt unsuccessful. Active pad is at (2393.89,1563.19).
+
+Glossing attempt unsuccessful. Active pad is at (1194.24,3413.39).
+
+
+Finished execution 2
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Wed May 04 00:04:06 2022
+
+
+Line Entry Into Pad Glossings Stats
+
+Number of Glossing Attempts                   : 47
+Number of Actual Glossings                    : 1
+Number of Glossings Aborted by DRC violations : 0
+
+
+
+
+Line Smooth glossing in progress.
+Started on Wed May 04 00:04:06 2022
+
+ Smooth Functions  :  bubbles maximize 45 jogs dangling clines add 45s
+ Number of executions  : 1
+ Corner type  : 45
+ Length limit is -0.01.
+
+ Maximum 45 limit is -0.01.
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Wed May 04 00:04:06 2022
+
+ - 0 - Error(s) from Line smooth Glossing
+
+
+Line Centering Between Pins glossing in progress.
+Started on Wed May 04 00:04:06 2022
+
+Minimum Move Size 2.00.
+Line spacing MINIMUM
+Pad Tolerance 100.00.
+Corner type 45
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Wed May 04 00:04:06 2022
+
+
+
+Line Center Between Pins Stats
+
+Number of Glossing Attempts                   : 493
+Number of Actual Glossings                    : 8
+Number of Glossings Aborted by DRC violations : 10
+Number of Glossings Aborted by No-Gloss nets  : 0
+
+
+
+Line entry into Pad glossing in progress.
+Started on Wed May 04 00:04:06 2022
+Bend Distance is 12.00.
+
+ Circular pads:          YES
+ Square pads  :          YES
+ Rectangular pads :      YES
+ Oblong pads :           YES
+ Enter Square Pad :      Side : YES      Corner : YES  
+ Enter Rectangular Pad : Long : YES      Short  : YES      Corner : YES  
+ Enter Oblong Pad :      Side : YES      Round  : YES      Angle  : 45 OR 90
+ Enter Circular Pad :    Angle : 45 OR 90
+ Create Odd Segs:   NO
+ Corner type  :     45
+ Maximum 45 limit is -1.
+
+Glossing was successful:  SYMBOL PIN at (1944.88,3759.84) defined by pad  SMD_R394X492P0S40
+
+Glossing was successful:  SYMBOL PIN at (2216.54,3759.84) defined by pad  SMD_R394X492P0S40
+
+Glossing was successful:  SYMBOL PIN at (2366.14,3538.19) defined by pad  SMD_O551X276P0S40
+
+Glossing was successful:  VIA at (1079.00,2256.45) defined by pad  VIA
+
+Glossing was successful:  SYMBOL PIN at (1473.77,755.91) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (1765.01,563.39) defined by pad  SMD_O226X802P0S40
+
+Glossing was successful:  SYMBOL PIN at (2530.18,669.29) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (1545.92,429.13) defined by pad  SMD_R446X542P0S40
+
+Glossing attempt unsuccessful. Active pad is at (1469.83,192.91).
+
+Glossing attempt unsuccessful. Active pad is at (1548.42,271.65).
+
+Glossing was successful:  SYMBOL PIN at (2454.09,669.29) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (1469.83,507.87) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (1549.86,755.91) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (2896.95,1513.19) defined by pad  SMD_O248X734P0S40
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,425.20).
+
+Glossing was successful:  SYMBOL PIN at (2540.55,342.52) defined by pad  SMD_R555X532P0S40
+
+Glossing attempt unsuccessful. Active pad is at (2540.55,342.52).
+
+Glossing attempt unsuccessful. Active pad is at (1467.32,350.39).
+
+Glossing attempt unsuccessful. Active pad is at (1765.01,263.39).
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,507.87).
+
+Glossing was successful:  SYMBOL PIN at (2540.55,259.84) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (2530.18,425.20) defined by pad  SMD_R446X542P0S40
+
+Glossing attempt unsuccessful. Active pad is at (2530.18,425.20).
+
+Glossing was successful:  SYMBOL PIN at (830.71,1040.70) defined by pad  SMD_R446X542P0S40
+
+Glossing attempt unsuccessful. Active pad is at (2330.71,1036.76).
+
+Glossing attempt unsuccessful. Active pad is at (2214.56,1171.26).
+
+Glossing was successful:  SYMBOL PIN at (1627.95,1222.44) defined by pad  RX47Y12D0T
+
+Glossing was successful:  SYMBOL PIN at (1275.59,3744.09) defined by pad  SMD_R394X492P0S40
+
+Glossing was successful:  SYMBOL PIN at (2685.73,1413.19) defined by pad  SMD_O248X734P0S40
+
+Glossing was successful:  SYMBOL PIN at (934.40,3503.94) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (2896.95,1563.19) defined by pad  SMD_O248X734P0S40
+
+Glossing was successful:  VIA at (1102.99,3017.68) defined by pad  VIA
+
+Glossing attempt unsuccessful. Active pad is at (931.89,3413.39).
+
+Glossing was successful:  SYMBOL PIN at (934.40,3322.83) defined by pad  SMD_R446X542P0S40
+
+Glossing attempt unsuccessful. Active pad is at (892.13,3429.38).
+
+Glossing attempt unsuccessful. Active pad is at (2534.11,177.17).
+
+Glossing attempt unsuccessful. Active pad is at (1983.04,313.39).
+
+Glossing was successful:  SYMBOL PIN at (2459.45,259.84) defined by pad  SMD_R555X532P0S40
+
+Glossing attempt unsuccessful. Active pad is at (2459.45,259.84).
+
+Glossing was successful:  SYMBOL PIN at (1012.99,1909.45) defined by pad  PTH_C600SLOT360X360S40
+
+Glossing was successful:  SYMBOL PIN at (633.86,2578.74) defined by pad  SMD_R394X492P0S40
+
+Glossing was successful:  SYMBOL PIN at (147.44,3255.91) defined by pad  SMD_R1284X453P0S40
+
+Glossing was successful:  SYMBOL PIN at (1803.15,2675.84) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (1893.70,2982.93) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (1421.21,2535.43) defined by pad  SMD_R866X1378P0S40
+
+Glossing was successful:  SYMBOL PIN at (1216.93,818.90) defined by pad  PTH_S591SLOT354X354S40
+
+Glossing was successful:  SYMBOL PIN at (1396.46,996.06) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (1396.46,1149.61) defined by pad  SMD_R555X532P0S40
+
+Glossing attempt unsuccessful. Active pad is at (1694.38,1593.71).
+
+Glossing was successful:  SYMBOL PIN at (1352.36,1596.46) defined by pad  RX47Y12D0T
+
+Glossing was successful:  SYMBOL PIN at (1283.46,1631.10) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  VIA at (1342.52,3072.42) defined by pad  VIA
+
+Glossing was successful:  VIA at (1550.51,1135.94) defined by pad  VIA
+
+Glossing was successful:  SYMBOL PIN at (1956.69,1556.45) defined by pad  SMD_R446X542P0S40
+
+Glossing attempt unsuccessful. Active pad is at (2039.37,1635.04).
+
+Glossing was successful:  SYMBOL PIN at (2039.37,1635.04) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (552.50,2480.31) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (546.06,2846.46) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (795.28,2578.74) defined by pad  SMD_R394X492P0S40
+
+Glossing was successful:  SYMBOL PIN at (795.28,2578.74) defined by pad  SMD_R394X492P0S40
+
+Glossing was successful:  VIA at (1048.41,2615.87) defined by pad  VIA
+
+Glossing attempt unsuccessful. Active pad is at (1062.99,2568.11).
+
+Glossing was successful:  VIA at (835.84,2553.74) defined by pad  VIA
+
+Glossing was successful:  SYMBOL PIN at (2455.51,755.91) defined by pad  SMD_R555X532P0S40
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,590.55).
+
+Glossing was successful:  SYMBOL PIN at (1467.32,271.65) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (2459.45,342.52) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (876.63,2480.31) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (2208.66,1406.69) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (2122.05,1404.18) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (2122.05,1564.31) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (1284.79,2267.72) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (2208.66,1638.98) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  VIA at (1507.68,1576.77) defined by pad  VIA
+
+Glossing was successful:  SYMBOL PIN at (1901.57,2597.25) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (1960.63,1398.82) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (1960.63,1398.82) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (1282.28,1948.82) defined by pad  SMD_R555X532P0S40
+
+Glossing attempt unsuccessful. Active pad is at (1284.79,1866.14).
+
+Glossing was successful:  SYMBOL PIN at (1956.69,1632.54) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (1805.12,1596.46) defined by pad  RX47Y12D0T
+
+Glossing was successful:  SYMBOL PIN at (544.68,600.39) defined by pad  SMD_R421X236P0S40
+
+Glossing was successful:  SYMBOL PIN at (458.02,854.33) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (458.02,681.10) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (1363.38,2181.10) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (1062.99,2487.01) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (1062.99,2487.01) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (544.68,525.59) defined by pad  SMD_R421X236P0S40
+
+Glossing attempt unsuccessful. Active pad is at (916.93,818.90).
+
+Glossing attempt unsuccessful. Active pad is at (1675.99,1631.70).
+
+Glossing attempt unsuccessful. Active pad is at (1877.95,1317.72).
+
+Glossing was successful:  SYMBOL PIN at (2039.37,1553.94) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (1363.38,1948.82) defined by pad  SMD_R555X532P0S40
+
+Glossing attempt unsuccessful. Active pad is at (1325.58,1798.70).
+
+Glossing was successful:  SYMBOL PIN at (2208.66,1325.59) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  VIA at (1492.88,2872.03) defined by pad  VIA
+
+Glossing was successful:  SYMBOL PIN at (2228.35,2174.55) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (2414.76,2175.20) defined by pad  SMD_R421X236P0S40
+
+Glossing attempt unsuccessful. Active pad is at (1996.06,2872.03).
+
+Glossing was successful:  SYMBOL PIN at (1724.41,2513.79) defined by pad  SMD_R669X394P0S40
+
+Glossing attempt unsuccessful. Active pad is at (2393.89,1563.19).
+
+Glossing attempt unsuccessful. Active pad is at (2393.89,1563.19).
+
+Glossing was successful:  VIA at (1251.97,2860.51) defined by pad  VIA
+
+Glossing was successful:  SYMBOL PIN at (348.63,3255.91) defined by pad  SMD_R1284X453P0S40
+
+Glossing was successful:  SYMBOL PIN at (1194.24,3413.39) defined by pad  SMD_R446X542P0S40
+
+Glossing attempt unsuccessful. Active pad is at (1194.24,3413.39).
+
+Glossing was successful:  SYMBOL PIN at (2354.33,2900.39) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (2354.33,2900.39) defined by pad  SMD_R555X532P0S40
+
+Glossing was successful:  SYMBOL PIN at (1859.60,3448.82) defined by pad  SMD_R446X542P0S40
+
+Glossing was successful:  SYMBOL PIN at (2354.33,2981.49) defined by pad  SMD_R555X532P0S40
+
+
+Finished execution 1
+
+Glossing attempt unsuccessful. Active pad is at (1469.83,192.91).
+
+Glossing attempt unsuccessful. Active pad is at (1548.42,271.65).
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,425.20).
+
+Glossing attempt unsuccessful. Active pad is at (2540.55,342.52).
+
+Glossing attempt unsuccessful. Active pad is at (1467.32,350.39).
+
+Glossing attempt unsuccessful. Active pad is at (1765.01,263.39).
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,507.87).
+
+Glossing attempt unsuccessful. Active pad is at (2530.18,425.20).
+
+Glossing attempt unsuccessful. Active pad is at (2330.71,1036.76).
+
+Glossing attempt unsuccessful. Active pad is at (2214.56,1171.26).
+
+Glossing attempt unsuccessful. Active pad is at (931.89,3413.39).
+
+Glossing attempt unsuccessful. Active pad is at (892.13,3429.38).
+
+Glossing attempt unsuccessful. Active pad is at (2534.11,177.17).
+
+Glossing attempt unsuccessful. Active pad is at (1983.04,313.39).
+
+Glossing attempt unsuccessful. Active pad is at (2459.45,259.84).
+
+Glossing attempt unsuccessful. Active pad is at (1694.38,1593.71).
+
+Glossing was successful:  SYMBOL PIN at (2039.37,1635.04) defined by pad  SMD_R555X532P0S40
+
+Glossing attempt unsuccessful. Active pad is at (1062.99,2568.11).
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,590.55).
+
+Glossing attempt unsuccessful. Active pad is at (1284.79,1866.14).
+
+Glossing attempt unsuccessful. Active pad is at (916.93,818.90).
+
+Glossing attempt unsuccessful. Active pad is at (1675.99,1631.70).
+
+Glossing attempt unsuccessful. Active pad is at (1877.95,1317.72).
+
+Glossing attempt unsuccessful. Active pad is at (1325.58,1798.70).
+
+Glossing attempt unsuccessful. Active pad is at (1996.06,2872.03).
+
+Glossing attempt unsuccessful. Active pad is at (2393.89,1563.19).
+
+Glossing attempt unsuccessful. Active pad is at (2393.89,1563.19).
+
+Glossing attempt unsuccessful. Active pad is at (1194.24,3413.39).
+
+
+Finished execution 2
+
+Glossing attempt unsuccessful. Active pad is at (1469.83,192.91).
+
+Glossing attempt unsuccessful. Active pad is at (1548.42,271.65).
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,425.20).
+
+Glossing attempt unsuccessful. Active pad is at (2540.55,342.52).
+
+Glossing attempt unsuccessful. Active pad is at (1467.32,350.39).
+
+Glossing attempt unsuccessful. Active pad is at (1765.01,263.39).
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,507.87).
+
+Glossing attempt unsuccessful. Active pad is at (2530.18,425.20).
+
+Glossing attempt unsuccessful. Active pad is at (2330.71,1036.76).
+
+Glossing attempt unsuccessful. Active pad is at (2214.56,1171.26).
+
+Glossing attempt unsuccessful. Active pad is at (931.89,3413.39).
+
+Glossing attempt unsuccessful. Active pad is at (892.13,3429.38).
+
+Glossing attempt unsuccessful. Active pad is at (2534.11,177.17).
+
+Glossing attempt unsuccessful. Active pad is at (1983.04,313.39).
+
+Glossing attempt unsuccessful. Active pad is at (2459.45,259.84).
+
+Glossing attempt unsuccessful. Active pad is at (1694.38,1593.71).
+
+Glossing attempt unsuccessful. Active pad is at (1062.99,2568.11).
+
+Glossing attempt unsuccessful. Active pad is at (2454.09,590.55).
+
+Glossing attempt unsuccessful. Active pad is at (1284.79,1866.14).
+
+Glossing attempt unsuccessful. Active pad is at (916.93,818.90).
+
+Glossing attempt unsuccessful. Active pad is at (1675.99,1631.70).
+
+Glossing attempt unsuccessful. Active pad is at (1877.95,1317.72).
+
+Glossing attempt unsuccessful. Active pad is at (1325.58,1798.70).
+
+Glossing attempt unsuccessful. Active pad is at (1996.06,2872.03).
+
+Glossing attempt unsuccessful. Active pad is at (2393.89,1563.19).
+
+Glossing attempt unsuccessful. Active pad is at (2393.89,1563.19).
+
+Glossing attempt unsuccessful. Active pad is at (1194.24,3413.39).
+
+
+Finished execution 3
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Wed May 04 00:04:06 2022
+
+
+Line Entry Into Pad Glossings Stats
+
+Number of Glossing Attempts                   : 165
+Number of Actual Glossings                    : 83
+Number of Glossings Aborted by DRC violations : 0
+
+
+WARNING: Glossing operations may leave fillets out of date.
+
+
+Glossing complete.

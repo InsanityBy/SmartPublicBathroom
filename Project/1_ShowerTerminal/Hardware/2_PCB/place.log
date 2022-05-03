@@ -1,0 +1,79 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    PLACEMENT LOG                                                    )
+(                                                                     )
+(    Drawing          : SHOWERTERMINAL.brd                            )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Mon May 02 20:03:59 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Autoplace D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd 
+ Save as D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd 
+
+ Will search while getting acceptable improvement
+ Will not scale complete graph edges
+ Start time Mon May 02 20:03:59 2022
+
+
+ 
+ 	 	 Placement Task Version 1.00 
+ 
+ 
+ Algorithm  : IC
+ Place within: board
+ Map grid points to: library origin
+ Place leftovers on bottom: YES
+ Allow component overlap: NO
+ Soft boundary: NO
+ Cluster: NO
+ No Rat: YES
+ Remove TAG: NO
+ Components at rotation of 0 degrees are weighted 50
+
+ Components at rotation of 90 degrees are weighted 0
+
+ Components at rotation of 180 degrees are weighted 0
+
+ Components at rotation of 270 degrees are weighted 0
+
+ Board direction of north is weighted 50
+
+ Board direction of east is weighted 50
+
+ Board direction of south is weighted 50
+
+ Board direction of west is weighted 50
+
+ Component mirroring weight is 50
+
+ Component straightness weight is 50
+
+ Warning: unplaced components are not PLACE TAGGED.
+
+ Placement Keepin
+
+  arc end pts 	(78.0001,99.0001) (79.0001,98.0001)
+  arc center 	(78.0000,98.0000) radius 	1.0001
+  line seg 	(79.0001,98.0001) (79.0001,2.0000)
+  arc end pts 	(79.0001,2.0000) (78.0001,1.0000)
+  arc center 	(78.0001,2.0000) radius 	1.0000
+  line seg 	(78.0001,1.0000) (2.0000,1.0000)
+  arc end pts 	(2.0000,1.0000) (1.0000,2.0000)
+  arc center 	(2.0000,2.0000) radius 	1.0000
+  line seg 	(1.0000,2.0000) (1.0000,98.0001)
+  arc end pts 	(1.0000,98.0001) (2.0000,99.0001)
+  arc center 	(2.0000,98.0001) radius 	1.0000
+  line seg 	(2.0000,99.0001) (78.0001,99.0001)
+
+ Error: No Placement Grid was found
+
+ Error: See message(s) above
+
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Mon May 02 20:03:59 2022
+

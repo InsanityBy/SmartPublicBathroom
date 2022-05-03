@@ -1,0 +1,278 @@
+# 
+# ===============================================================================
+#                               Allegro PCB Router                               
+# Copyright 1990-2010 Cadence Design Systems, Inc.  All Rights Reserved.
+# ===============================================================================
+# 
+# Software licensed for sale by Cadence Design Systems, Inc.
+# Current time = Tue May 03 23:54:13 2022
+# 
+# Allegro PCB Router v17-2-51 made 2020/07/07 at 11:25:37
+# Running on: laptop-m2sh2orp, OS Version: WindowsNT 6.2.9200, Architecture: Intel Pentium
+# Licensing: The program will not obey any unlicensed rules
+# No graphics will be displayed.
+# Design Name D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB\SHOWERHOST.dsn
+# Batch File Name: pasde.do
+# Did File Name: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/specctra1.did
+# Current time = Tue May 03 23:54:13 2022
+# PCB D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB
+# Master Unit set up as: MIL 1000
+# PCB Limits xlo=-70.8600 ylo=-110.2300 xhi=3220.4700 yhi=4047.2400
+# Total 75 Images Consolidated.
+# Via VIA z=1, 2 xlo=-12.0000 ylo=-12.0000 xhi= 12.0000 yhi= 12.0000
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# Wires Processed 410, Vias Processed 74
+# Using colormap in design file.
+# Layers Processed: Signal Layers 2
+# Components Placed 119, Images Processed 143, Padstacks Processed 40
+# Nets Processed 105, Net Terminals 426
+# PCB Area=11308845.099  EIC=28  Area/EIC=403887.325  SMDs=94
+# Total Pin Count: 397
+# Signal Connections Created 0
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 8.0000, Clearance= 8.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 8.0000, Clearance= 8.0000
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB\SHOWERHOST.dsn
+# Nets 105 Connections 247 Unroutes 0
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 113, at vias 25 Total Vias 74
+# Percent Connected  100.00
+# Manhattan Length 120131.0700 Horizontal 56891.3410 Vertical 63239.7290
+# Routed Length 119631.2883 Horizontal 66310.4300 Vertical 66787.8600
+# Ratio Actual / Manhattan   0.9958
+# Unconnected Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# Loading Do File pasde.do ...
+# Loading Do File D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB\SHOWERHOST_rules.do ...
+# Colormap Written to File _notify.std
+# Enter command <# Loading Do File C:/Users/Jessi_10/AppData/Local/Temp/#Taaaaau58076.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+set route_diagonal 0
+grid wire 0.010000 (direction x) (offset 0.000000)
+grid wire 0.010000 (direction y) (offset 0.000000)
+grid via 0.010000 (direction x) (offset 0.000000)
+grid via 0.010000 (direction y) (offset 0.000000)
+protect all wires
+# All Wires Protected.
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+# Wires on layer TOP were Unprotected.
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+# Wires on layer BOTTOM were Unprotected.
+cost via -1
+# System default cost will be used.
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+# All Selected Wires Unprotected.
+route 25 1
+# Current time = Tue May 03 23:54:23 2022
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 8.0000, Clearance= 8.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 8.0000, Clearance= 8.0000
+# 
+# Wiring Statistics ----------------- D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB\SHOWERHOST.dsn
+# Nets 105 Connections 247 Unroutes 0
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 113, at vias 25 Total Vias 74
+# Percent Connected  100.00
+# Manhattan Length 120131.0700 Horizontal 56891.3410 Vertical 63239.7290
+# Routed Length 119631.2883 Horizontal 66310.4300 Vertical 66787.8600
+# Ratio Actual / Manhattan   0.9958
+# Unconnected Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Start Route Pass 1 of 25
+# Routing 406 wires.
+# 49 bend points have been removed.
+# 0 bend points have been removed.
+# 34 bend points have been removed.
+# Total Conflicts: 1 (Cross: 1, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 0
+# Attempts 337 Successes 337 Failures 0 Vias 96
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 1 of 25
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Start Route Pass 2 of 25
+# Routing 6 wires.
+# 6 bend points have been removed.
+# 0 bend points have been removed.
+# 1 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 0
+# Attempts 6 Successes 6 Failures 0 Vias 97
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 2 of 25
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 8.0000, Clearance= 8.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 8.0000, Clearance= 8.0000
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|     1|     0|   0|    0|   96|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  2|     0|     0|   0|    0|   97|    0|   0|100|  0:00:00|  0:00:00|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:00:00
+# 
+# Wiring Statistics ----------------- D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB\SHOWERHOST.dsn
+# Nets 105 Connections 247 Unroutes 0
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 118, at vias 25 Total Vias 97
+# Percent Connected  100.00
+# Manhattan Length 120442.4100 Horizontal 57522.4470 Vertical 62919.9630
+# Routed Length 130811.1214 Horizontal 66808.2600 Vertical 65347.1300
+# Ratio Actual / Manhattan   1.0861
+# Unconnected Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+clean 2
+# Current time = Tue May 03 23:54:23 2022
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 8.0000, Clearance= 8.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 8.0000, Clearance= 8.0000
+# 
+# Wiring Statistics ----------------- D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB\SHOWERHOST.dsn
+# Nets 105 Connections 247 Unroutes 0
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 118, at vias 25 Total Vias 97
+# Percent Connected  100.00
+# Manhattan Length 120442.4100 Horizontal 57522.4470 Vertical 62919.9630
+# Routed Length 130811.1214 Horizontal 66808.2600 Vertical 65347.1300
+# Ratio Actual / Manhattan   1.0861
+# Unconnected Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Start Clean Pass 1 of 2
+# Routing 441 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 0
+# Attempts 346 Successes 346 Failures 0 Vias 82
+# Cpu Time = 0:00:01  Elapsed Time = 0:00:00
+# End Pass 1 of 2
+# Start Clean Pass 2 of 2
+# Routing 466 wires.
+# 5 bend points have been removed.
+# 0 bend points have been removed.
+# 12 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 0
+# Attempts 365 Successes 365 Failures 0 Vias 77
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 2 of 2
+# Cpu Time = 0:00:01  Elapsed Time = 0:00:00
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 8.0000, Clearance= 8.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 8.0000, Clearance= 8.0000
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|     1|     0|   0|    0|   96|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  2|     0|     0|   0|    0|   97|    0|   0|100|  0:00:00|  0:00:00|
+# Clean    |  3|     0|     0|   0|    0|   82|    0|   0|   |  0:00:01|  0:00:01|
+# Clean    |  4|     0|     0|   0|    0|   77|    0|   0|   |  0:00:00|  0:00:01|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:00:01
+# 
+# Wiring Statistics ----------------- D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB\SHOWERHOST.dsn
+# Nets 105 Connections 247 Unroutes 0
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 142, at vias 30 Total Vias 77
+# Percent Connected  100.00
+# Manhattan Length 120731.2270 Horizontal 57331.3550 Vertical 63399.8720
+# Routed Length 131360.0943 Horizontal 66364.1870 Vertical 65595.5300
+# Ratio Actual / Manhattan   1.0880
+# Unconnected Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+critic
+# Current time = Tue May 03 23:54:23 2022
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB\SHOWERHOST.dsn
+# Nets 105 Connections 247 Unroutes 0
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 142, at vias 30 Total Vias 77
+# Percent Connected  100.00
+# Manhattan Length 120731.2270 Horizontal 57330.3670 Vertical 63400.8600
+# Routed Length 131360.0943 Horizontal 66364.1870 Vertical 65595.5300
+# Ratio Actual / Manhattan   1.0880
+# Unconnected Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+miter 4 (style diagonal) (pin) (slant) (tjunction) (bend) (layer TOP BOTTOM)
+# Diagonal wire corners are preferred.
+# Current time = Tue May 03 23:54:23 2022
+# 65 bend points have been removed.
+# Convert orthogonal pin exit to diagonal...
+# Convert wire segment to diagonal...
+# Convert orthogonal corner to diagonal...
+# 0 bend points have been removed.
+# Corners changed 381
+# 90 degree wire corners are preferred.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:01  Elapsed Time = 0:00:01
+# 
+# Wiring Statistics ----------------- D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB\SHOWERHOST.dsn
+# Nets 105 Connections 247 Unroutes 0
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 136, at vias 30 Total Vias 77
+# Percent Connected  100.00
+# Manhattan Length 120731.2270 Horizontal 57330.3670 Vertical 63400.8600
+# Routed Length 120876.3094 Horizontal 66795.3070 Vertical 65955.8700
+# Ratio Actual / Manhattan   1.0012
+# Unconnected Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+write routes (changed_only) (reset_changed) C:/Users/Jessi_10/AppData/Local/Temp/#Taaaaav58076.tmp
+# Routing Written to File C:/Users/Jessi_10/AppData/Local/Temp/#Taaaaav58076.tmp
+quit

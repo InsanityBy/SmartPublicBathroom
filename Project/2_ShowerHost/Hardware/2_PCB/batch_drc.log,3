@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : SHOWERHOST.brd                                )
 (    Software Version : 17.2S079                                      )
-(    Date/Time        : Thu Apr 28 20:15:13 2022                      )
+(    Date/Time        : Tue May 03 23:53:57 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -20,7 +20,7 @@
  ========= check standalone text              0:00:00
  ========= check standalone rectangles        0:00:00
 
- ..... Total number of DRC errors  0
+ ..... Total number of DRC errors  472
 
  ..... DRC update completed, total CPU time   0:00:00
  *************************************************************************

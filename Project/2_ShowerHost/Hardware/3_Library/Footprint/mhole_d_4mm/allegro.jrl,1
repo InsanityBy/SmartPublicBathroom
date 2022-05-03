@@ -1,139 +1,143 @@
-\t (00:00:50) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:50)     Journal start - Tue Apr 26 22:50:18 2022
-\t (00:00:50)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=12044 CPUs=16
-\t (00:00:50) CmdLine= D:\Cadence\SPB_17.2\tools\bin\allegro.exe
-\t (00:00:50) 
-\t (00:00:50) Starting new design...
-\i (00:00:50) trapsize 1
-\i (00:00:50) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged mhole_d_4mm
-\i (00:00:51) trapsize 1
-\i (00:00:51) trapsize 1
-\i (00:00:51) trapsize 658
-\i (00:00:51) trapsize 642
-\i (00:00:54) QtSignal spbdip_param_group spbdip_units_combo CurrentIndexChanged Millimeter
-\i (00:01:02) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 500.4000
-\i (00:01:03) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 431.8000
-\i (00:01:07) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 1.0000
-\i (00:01:09) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 431800.0000
-\i (00:01:18) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 0.1
-\i (00:01:22) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 0.1
-\i (00:01:23) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 100.0000
-\i (00:01:24) QtSignal spbdip_param_group spbdip_origin_combo CurrentIndexChanged Center
-\i (00:01:32) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 0.1
-\i (00:01:40) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 100.0000
-\i (00:01:42) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 100.0000
-\i (00:01:43) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 150000.0000
-\i (00:01:45) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 100050.0000
-\i (00:01:45) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 150050000.0000
-\i (00:01:46) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 100050050.0000
-\i (00:01:50) QtSignal spbdip_param_group spbdip_origin_combo CurrentIndexChanged "Bottom Left"
-\i (00:01:53) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 0.1
-\i (00:01:55) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 0.1
-\i (00:02:00) QtSignal spbdip_extents_group spbdip_extwidth_edit editingFinished 50100.0000
-\i (00:02:00) QtSignal spbdip_param_group spbdip_size_combo CurrentIndexChanged A4
-\i (00:02:03) QtSignal spbdip_extents_group spbdip_extheight_edit editingFinished 210.0000
-\i (00:02:03) QtSignal SPBDesignInitPrompt spbdip_ok_button clicked
-\w (00:02:03) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\i (00:02:03) trapsize 8530
-\t (00:02:03) Performing DRC...
-\t (00:02:03) No DRC errors detected.
-\i (00:02:08) prmed 
-\i (00:02:09) setwindow form.prmedit
-\i (00:02:09) FORM prmedit design  
-\i (00:02:15) FORM prmedit x -100.0000 
-\i (00:02:18) FORM prmedit y -100.0000 
-\i (00:02:27) FORM prmedit x -10.0000 
-\i (00:02:29) FORM prmedit y -10.0000 
-\i (00:02:30) FORM prmedit width 20.0000 
-\i (00:02:33) FORM prmedit height 20.0000 
-\i (00:02:37) FORM prmedit done  
-\i (00:02:37) setwindow pcb
-\i (00:02:37) trapsize 755
-\i (00:02:38) trapsize 775
-\i (00:02:38) trapsize 796
-\i (00:02:38) trapsize 775
-\i (00:02:38) trapsize 755
-\i (00:02:39) zoom out 1 
-\i (00:02:39) setwindow pcb
-\i (00:02:39) zoom out -0.7019 0.0528
-\i (00:02:39) trapsize 755
-\i (00:02:40) zoom out 1 
-\i (00:02:40) setwindow pcb
-\i (00:02:40) zoom out 0.4000 -0.1283
-\i (00:02:40) trapsize 755
-\i (00:02:42) define grid 
-\t (00:02:42) Spacing fields allow simple equations to aid calculations; prefix with =
-\i (00:02:45) setwindow form.grid
-\i (00:02:45) FORM grid non_etch non_etch_x_grids 1 
-\i (00:02:46) FORM grid non_etch non_etch_y_grids 1 
-\i (00:02:47) FORM grid all_etch all_etch_x_grids 1 
-\i (00:02:47) FORM grid all_etch all_etch_y_grids 1 
-\i (00:02:49) FORM grid display YES 
-\i (00:02:50) FORM grid done  
-\i (00:02:53) setwindow pcb
-\i (00:02:53) add pin 
-\i (00:02:55) setwindow form.mini
-\i (00:02:55) FORM mini pad_browse  
-\i (00:03:07) fillin "Mhole_D_4Mm"
-\t (00:03:07) Using 'MHOLE_D_4MM.pad'.
-\i (00:03:09) setwindow pcb
-\i (00:03:09) pick grid 0.0377 0.4905
-\t (00:03:09) last pick:  0.0000 0.0000
-\t (00:03:09) Using 'MHOLE_D_4MM.pad'.
-\i (00:03:12) prepopup 5.7585 1.0038
-\i (00:03:12) done 
-\t (00:03:12) Exiting from Add Pin.
-\i (00:03:49) add circle 
-\t (00:03:49) Pick center point of the circle.
-\t (00:03:49) Pick center point of the circle.
-\i (00:03:54) setwindow form.mini
-\i (00:03:54) FORM mini class PACKAGE GEOMETRY 
-\i (00:03:58) FORM mini subclass SILKSCREEN_TOP 
-\i (00:04:06) FORM mini line_width 0.1000 
-\i (00:04:11) setwindow pcb
-\i (00:04:11) pick grid -1.9849 1.7283
-\t (00:04:11) last pick:  -2.0000 2.0000
-\t (00:04:11) Pick a perimeter point on the circle.
-\i (00:04:18) prepopup -1.8491 1.9396
-\i (00:04:20) oops 
-\t (00:04:20) Pick center point of the circle.
-\i (00:04:21) pick grid -0.0378 -0.0227
-\t (00:04:21) last pick:  0.0000 0.0000
-\t (00:04:21) Pick a perimeter point on the circle.
-\i (00:04:29) prepopup -3.1170 -0.9283
-\i (00:04:30) cancel 
-\i (00:05:08) define grid 
-\t (00:05:08) Spacing fields allow simple equations to aid calculations; prefix with =
-\i (00:05:28) setwindow form.grid
-\i (00:05:28) FORM grid non_etch non_etch_x_grids 1 
-\i (00:05:29) FORM grid done  
-\i (00:05:32) setwindow pcb
-\i (00:05:32) add circle 
-\t (00:05:32) Pick center point of the circle.
-\t (00:05:32) Pick center point of the circle.
-\i (00:05:36) pick grid -0.0076 -0.0528
-\t (00:05:36) last pick:  0.0000 0.0000
-\t (00:05:36) Pick a perimeter point on the circle.
-\i (00:06:02) pick grid -3.5094 -1.3208
-\t (00:06:02) last pick:  -4.0000 -1.0000
-\t (00:06:02) Pick center point of the circle.
-\i (00:06:05) prepopup 6.0000 2.0302
-\i (00:06:06) done 
-\i (00:06:22) save 
-\t (00:06:24) Symbol 'mhole_d_4mm.bsm' created.
-\i (00:06:28) shape add circle 
-\i (00:06:37) setwindow form.mini
-\i (00:06:37) FORM mini class ROUTE KEEPOUT 
-\i (00:06:45) FORM mini subclass TOP 
-\i (00:07:06) setwindow pcb
-\i (00:07:06) pick grid 0.0377 -0.0227
-\t (00:07:06) last pick:  0.0000 0.0000
-\i (00:07:12) pick grid -3.9170 -1.4868
-\t (00:07:12) last pick:  -4.0000 -1.0000
-\i (00:07:14) prepopup 6.9358 2.9962
-\i (00:07:15) done 
-\i (00:07:43) save 
-\i (00:07:50) fillin yes 
-\t (00:07:50) Symbol 'mhole_d_4mm.bsm' created.
-\i (00:09:15) exit 
-\t (00:09:16)     Journal end - Tue Apr 26 22:58:43 2022
+\t (00:00:00) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon May 02 20:43:52 2022
+\t (00:00:00)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=52276 CPUs=16
+\t (00:00:00) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\3_Library\Footprint\mhole_d_4mm\mhole_d_4mm.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:01) Opening existing design...
+\i (00:00:01) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged mhole_d_4mm
+\d (00:00:01) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/3_Library/Footprint/mhole_d_4mm/mhole_d_4mm.dra
+\i (00:00:01) trapsize 755
+\i (00:00:01) trapsize 775
+\i (00:00:01) trapsize 796
+\i (00:00:01) trapsize 775
+\i (00:00:01) trapsize 755
+\i (00:00:01) trapsize 755
+\i (00:00:01) generaledit 
+\i (00:00:07) add text 
+\t (00:00:08) Pick text location.
+\i (00:00:10) setwindow form.mini
+\i (00:00:10) FORM mini class REF DES 
+\i (00:00:14) FORM mini subclass SILKSCREEN_TOP 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) pick grid 3.6151 3.4189
+\t (00:00:16) last pick:  4.0000 3.0000
+\t (00:00:16) Enter text string.
+\i (00:00:22) setwindow pcb
+\i (00:00:22) pick grid 6.2717 2.8302
+\t (00:00:22) last pick:  6.0000 3.0000
+\i (00:00:22) setwindow pcb
+\i (00:00:22) pick 4.0000 3.0000
+\i (00:00:23) prepopup 4.2793 3.5396
+\i (00:00:25) done 
+\i (00:00:25) generaledit 
+\i (00:00:25) prepopup 4.4302 3.2377
+\i (00:00:29) pop dyn_option_select 'Change Text block to@:@14 (4.2418,5.7150)' 
+\i (00:00:29) text block 
+\e (00:00:29) ERROR(SPMHGE-556): Text line violates design extents.
+\i (00:00:29) generaledit 
+\i (00:00:30) prepopup 4.1736 3.4491
+\i (00:00:33) pop dyn_option_select 'Change Text block to@:@16 (9.5250,12.7000)' 
+\i (00:00:33) text block 
+\e (00:00:33) ERROR(SPMHGE-556): Text line violates design extents.
+\i (00:00:33) generaledit 
+\i (00:00:35) pick grid 6.3472 4.7170
+\t (00:00:35) last pick:  6.0000 5.0000
+\i (00:00:35) prepopup 6.3472 4.7170
+\i (00:00:36) pick grid 5.0038 4.5660
+\t (00:00:36) last pick:  5.0000 5.0000
+\i (00:00:39) generaledit 
+\i (00:00:40) prepopup 4.3849 3.2076
+\i (00:00:44) pop dyn_option_select 'Change Text block to@:@2 (0.5842,0.7874)' 
+\i (00:00:44) text block 
+\t (00:00:44) No DRC errors detected.
+\t (00:00:44) Changed 1 items out of 1 items found.
+\i (00:00:44) generaledit 
+\i (00:00:44) prepopup 4.3094 3.4642
+\i (00:00:52) pop dyn_option_select 'Change Text block to@:@3 (0.9652,1.2700)' 
+\i (00:00:52) text block 
+\t (00:00:52) No DRC errors detected.
+\t (00:00:52) Changed 1 items out of 1 items found.
+\i (00:00:52) generaledit 
+\i (00:00:53) prepopup 4.8528 3.5849
+\i (00:00:57) pop dyn_option_select 'Change Text block to@:@13 (3.8100,5.0800)' 
+\i (00:00:57) text block 
+\e (00:00:57) ERROR(SPMHGE-556): Text line violates design extents.
+\i (00:00:57) generaledit 
+\i (00:00:58) prepopup 4.7019 3.6000
+\i (00:01:03) pop dyn_option_select 'Change Text block to@:@5 (1.4224,1.9050)' 
+\i (00:01:03) text block 
+\t (00:01:03) No DRC errors detected.
+\t (00:01:03) Changed 1 items out of 1 items found.
+\i (00:01:03) generaledit 
+\i (00:01:04) prepopup 4.8227 3.9019
+\i (00:01:07) pop dyn_option_select 'Change Text block to@:@16 (9.5250,12.7000)' 
+\i (00:01:07) text block 
+\e (00:01:07) ERROR(SPMHGE-556): Text line violates design extents.
+\i (00:01:07) generaledit 
+\i (00:01:08) prepopup 5.1698 4.0528
+\i (00:01:15) pop dyn_option_select 'Change Text block to@:@3 (0.9652,1.2700)' 
+\i (00:01:15) text block 
+\t (00:01:15) No DRC errors detected.
+\t (00:01:15) Changed 1 items out of 1 items found.
+\i (00:01:15) generaledit 
+\i (00:01:25) pick grid 3.2227 4.9434
+\t (00:01:25) last pick:  3.0000 5.0000
+\i (00:01:33) prepopup 4.0981 6.1359
+\i (00:01:34) pick grid 3.6151 6.9359
+\t (00:01:34) last pick:  4.0000 7.0000
+\i (00:01:38) prepopup 4.9887 3.6755
+\i (00:01:43) pick grid 8.3094 5.6981
+\t (00:01:43) last pick:  8.0000 6.0000
+\i (00:01:47) prepopup 5.1396 3.5094
+\t (00:01:54) last pick:  11.6302 0.0377
+\w (00:01:54) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\i (00:02:00) prmed 
+\i (00:02:01) setwindow form.prmedit
+\i (00:02:01) FORM prmedit text  
+\e (00:02:09) Range is 1 to 16.
+\i (00:02:23) FORM prmedit text_block 16 
+\i (00:02:23) FORM prmedit text_setup_button  
+\i (00:03:03) setwindow form.textblock
+\i (00:03:03) FORM textblock 3 photoplot_width 0.2540 
+\i (00:03:04) FORM textblock done  
+\i (00:03:10) setwindow form.prmedit
+\i (00:03:10) FORM prmedit text_setup_button  
+\i (00:03:12) setwindow form.textblock
+\i (00:03:12) FORM textblock done  
+\i (00:04:09) setwindow form.prmedit
+\i (00:04:09) FORM prmedit text_block 3 
+\i (00:04:09) FORM prmedit done  
+\i (00:04:10) setwindow pcb
+\i (00:04:10) trapsize 775
+\i (00:04:10) trapsize 796
+\i (00:04:10) trapsize 775
+\i (00:04:10) trapsize 755
+\i (00:04:10) generaledit 
+\i (00:04:37) prmed 
+\i (00:04:40) setwindow form.prmedit
+\i (00:04:40) FORM prmedit text_setup_button  
+\i (00:20:12) setwindow form.textblock
+\i (00:20:12) FORM textblock 3 photoplot_width 0.1254 
+\i (00:21:41) FORM textblock 3 photoplot_width 0.1524 
+\i (00:21:42) FORM textblock done  
+\i (00:21:55) setwindow form.prmedit
+\i (00:21:55) FORM prmedit done  
+\i (00:21:55) setwindow pcb
+\i (00:21:55) trapsize 775
+\i (00:21:55) trapsize 796
+\i (00:21:55) trapsize 775
+\i (00:21:55) trapsize 755
+\i (00:21:55) generaledit 
+\i (00:39:55) save 
+\i (00:39:56) fillin yes 
+\t (00:39:56) Symbol 'mhole_d_4mm.bsm' created.
+\i (00:39:56) generaledit 
+\i (00:39:58) pick grid 3.0113 5.1698
+\t (00:39:58) last pick:  3.0000 5.0000
+\i (00:39:59) zoom out 1 
+\i (00:39:59) setwindow pcb
+\i (00:39:59) zoom out 2.8906 4.4604
+\i (00:39:59) trapsize 755
+\i (00:40:01) exit 
+\t (00:40:02)     Journal end - Mon May 02 21:23:54 2022

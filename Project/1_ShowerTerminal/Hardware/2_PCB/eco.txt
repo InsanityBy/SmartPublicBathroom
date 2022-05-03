@@ -1,0 +1,843 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  1IN+         pins ADDED TO this new net
+                                 R22.1          U2.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  1IN-         pins ADDED TO this new net
+                                 J4.4           R16.1          U2.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  1OUT         pins ADDED TO this new net
+                                 R16.2          R20.1          U2.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  2IN+         pins ADDED TO this new net
+                                 C11.1          R21.2          U2.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  2IN-         pins ADDED TO this new net
+                                 C12.2          R18.1          U2.6           
+                                 U2.7           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  3IN+         pins ADDED TO this new net
+                                 C10.1          R19.2          U2.10          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  3IN-         pins ADDED TO this new net
+                                 C13.2          R17.1          U2.8           
+                                 U2.9           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  3V3          pins ADDED TO this new net
+                                 C4.1           C18.2          C19.2          
+                                 C24.1          C25.1          C26.1          
+                                 C27.1          C28.1          D3.1           
+                                 D4.1           D5.1           IR2.1          
+                                 IR3.1          IR4.1          J3.1           
+                                 J4.1           J4.2           J6.1           
+                                 J7.3           L1.2           R6.2           
+                                 R28.1          R29.1          R30.1          
+                                 R31.1          R32.1          R33.1          
+                                 R34.1          R35.2          R37.2          
+                                 U1.2           U1.4           U3.6           
+                                 U4.1           U5.19          U5.32          
+                                 U5.48          U5.64          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  4IN+         pins ADDED TO this new net
+                                 R23.1          R24.1          U2.12          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  4IN-         pins ADDED TO this new net
+                                 R15.1          R17.2          U2.13          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  +5V          pins ADDED TO this new net
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 C1.1           C2.1           C3.1           
+                                 C14.1          D1.1           D7.1           
+                                 D8.1           J1.1           R5.1           
+                                 RL1.1          U1.3           U2.4           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  -5V          pins ADDED TO this new net
+                                 C5.2           C6.2           C15.1          
+                                 D2.2           J1.3           U2.11          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  AGND         pins ADDED TO this new net
+                                 C10.2          C11.2          C14.2          
+                                 C15.2          D6.2           R1.2           
+                                 R22.2          R23.2          R24.2          
+                                 U5.12          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  B1           pins ADDED TO this new net
+                                 R28.2          SW1.1          SW1.2          
+                                 U5.21          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  B2           pins ADDED TO this new net
+                                 R29.2          SW2.1          SW2.2          
+                                 U5.22          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  BOOT0        pins ADDED TO this new net
+                                 R36.2          U5.60          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  FLOWMETER    pins ADDED TO this new net
+                                 D4.2           J2.2           U5.14          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GND          pins ADDED TO this new net
+                                 C1.2           C2.2           C3.2           
+                                 C4.2           C5.1           C6.1           
+                                 C7.2           C16.2          C17.2          
+                                 C18.1          C19.1          C20.1          
+                                 C21.1          C22.1          C23.2          
+                                 C24.2          C25.2          C26.2          
+                                 C27.2          C28.2          C29.2          
+                                 C30.2          C31.1          C32.2          
+                                 C33.2          IR1.2          J1.2           
+                                 J2.3           J3.3           J6.3           
+                                 J7.4           J9.4           Q1.2           
+                                 Q2.2           Q3.2           R1.1           
+                                 R2.2           R3.2           R4.2           
+                                 R12.2          R14.2          R27.1          
+                                 R36.1          SW1.3          SW1.4          
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 SW2.3          SW2.4          SW3.3          
+                                 SW3.4          SW4.3          SW4.4          
+                                 SW5.1          SW5.2          U1.1           
+                                 U3.8           U4.2           U4.13          
+                                 U4.15          U5.18          U5.31          
+                                 U5.47          U5.63          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  INFRARED_HUMAN_RX pins ADDED TO this new net
+                                 IR1.1          U5.16          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  INFRARED_HUMAN_TX pins ADDED TO this new net
+                                 C9.1           R13.1          U5.41          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  INFRARED_LED pins ADDED TO this new net
+                                 J4.3           R7.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  INFRARED_OBJECT_RX pins ADDED TO this new net
+                                 D5.2           D6.1           R15.2          
+                                 U2.14          U5.10          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  INFRARED_OBJECT_TX pins ADDED TO this new net
+                                 C8.1           R8.1           U5.17          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  LCD_SCL      pins ADDED TO this new net
+                                 J7.2           U5.58          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  LCD_SDA      pins ADDED TO this new net
+                                 J7.1           U5.59          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N05685       pins ADDED TO this new net
+                                 D1.2           R2.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N05741       pins ADDED TO this new net
+                                 D2.1           R3.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N05745       pins ADDED TO this new net
+                                 D3.2           R4.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N07506       pins ADDED TO this new net
+                                 J2.1           R5.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N11859       pins ADDED TO this new net
+                                 C7.1           IR1.3          R6.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12017       pins ADDED TO this new net
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 Q2.3           R9.2           R10.2          
+                                 R11.2          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12089       pins ADDED TO this new net
+                                 C9.2           Q2.1           R13.2          
+                                 R14.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12325       pins ADDED TO this new net
+                                 Q1.3           R7.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12445       pins ADDED TO this new net
+                                 C8.2           Q1.1           R8.2           
+                                 R12.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12931       pins ADDED TO this new net
+                                 C13.1          R18.2          R19.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12977       pins ADDED TO this new net
+                                 C12.1          R20.2          R21.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N21132       pins ADDED TO this new net
+                                 D8.2           Q3.3           R25.2          
+                                 RL1.2          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N21196       pins ADDED TO this new net
+                                 Q3.1           R26.2          R27.2          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N21277       pins ADDED TO this new net
+                                 J5.1           RL1.4          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N21304       pins ADDED TO this new net
+                                 J5.2           RL1.3          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N22504       pins ADDED TO this new net
+                                 D9.1           R30.2          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N22528       pins ADDED TO this new net
+                                 D9.2           U3.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N22562       pins ADDED TO this new net
+                                 J8.1           U3.7           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N22566       pins ADDED TO this new net
+                                 J8.2           U3.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N23162       pins ADDED TO this new net
+                                 D7.2           R25.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41319       pins ADDED TO this new net
+                                 C16.1          R31.2          SW3.1          
+                                 SW3.2          U4.12          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41457       pins ADDED TO this new net
+                                 D11.1          R32.2          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41461       pins ADDED TO this new net
+                                 D10.1          R33.2          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41469       pins ADDED TO this new net
+                                 D10.2          U4.21          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41473       pins ADDED TO this new net
+                                 C17.1          R34.2          SW4.1          
+                                 SW4.2          U4.10          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41513       pins ADDED TO this new net
+                                 D11.2          U4.22          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N116257      pins ADDED TO this new net
+                                 C20.2          C21.2          L1.1           
+                                 U5.13          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N116429      pins ADDED TO this new net
+                                 C22.2          U5.30          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N116437      pins ADDED TO this new net
+                                 C23.1          R35.1          U5.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N116933      pins ADDED TO this new net
+                                 C29.1          R38.2          Y1.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N117089      pins ADDED TO this new net
+                                 C30.1          R39.2          Y1.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N117191      pins ADDED TO this new net
+                                 C32.1          R40.2          Y2.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N117227      pins ADDED TO this new net
+                                 C33.1          R41.2          Y2.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N118871      pins ADDED TO this new net
+                                 IR2.2          R9.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N119031      pins ADDED TO this new net
+                                 IR3.2          R10.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N119191      pins ADDED TO this new net
+                                 IR4.2          R11.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  NFC_IRQ      pins ADDED TO this new net
+                                 J6.4           U5.26          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  NFC_MISO     pins ADDED TO this new net
+                                 J6.5           U5.35          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  NFC_MOSI     pins ADDED TO this new net
+                                 J6.6           U5.36          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  NFC_NSS      pins ADDED TO this new net
+                                 J6.8           U5.33          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  NFC_RST      pins ADDED TO this new net
+                                 J6.2           U5.23          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  NFC_SCK      pins ADDED TO this new net
+                                 J6.7           U5.34          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  NRST         pins ADDED TO this new net
+                                 C31.2          J9.1           R37.1          
+                                 SW5.3          SW5.4          U5.7           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PA13_SWDIO   pins ADDED TO this new net
+                                 J9.3           U5.46          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PA14_SWCLK   pins ADDED TO this new net
+                                 J9.2           U5.49          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PA11         pins ADDED TO this new net
+                                 U5.44          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PA12         pins ADDED TO this new net
+                                 U5.45          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PA15         pins ADDED TO this new net
+                                 U5.50          
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   7  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  PB1          pins ADDED TO this new net
+                                 U5.27          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PB2          pins ADDED TO this new net
+                                 U5.28          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PB4          pins ADDED TO this new net
+                                 U5.56          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PB5          pins ADDED TO this new net
+                                 U5.57          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PB8          pins ADDED TO this new net
+                                 U5.61          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PB9          pins ADDED TO this new net
+                                 U5.62          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC14-OSC32_IN pins ADDED TO this new net
+                                 R40.1          U5.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC15-OSC32_OUT pins ADDED TO this new net
+                                 R41.1          U5.4           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC0          pins ADDED TO this new net
+                                 U5.8           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC1          pins ADDED TO this new net
+                                 U5.9           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC3          pins ADDED TO this new net
+                                 U5.11          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC4          pins ADDED TO this new net
+                                 U5.24          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC5          pins ADDED TO this new net
+                                 U5.25          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC6          pins ADDED TO this new net
+                                 U5.37          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC7          pins ADDED TO this new net
+                                 U5.38          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   8  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  PC8          pins ADDED TO this new net
+                                 U5.39          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC9          pins ADDED TO this new net
+                                 U5.40          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC10         pins ADDED TO this new net
+                                 U5.51          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC11         pins ADDED TO this new net
+                                 U5.52          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC12         pins ADDED TO this new net
+                                 U5.53          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PC13         pins ADDED TO this new net
+                                 U5.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PD2          pins ADDED TO this new net
+                                 U5.54          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PF0-OSC_IN   pins ADDED TO this new net
+                                 R38.1          U5.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  PF1-OSC_OUT  pins ADDED TO this new net
+                                 R39.1          U5.6           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SPEAKER_CLK  pins ADDED TO this new net
+                                 U3.2           U5.29          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SPEAKER_DATA pins ADDED TO this new net
+                                 U3.3           U5.55          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  TEMPERATURE  pins ADDED TO this new net
+                                 J3.2           U5.15          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VALVE_CONTROL pins ADDED TO this new net
+                                 R26.1          U5.20          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZIGBEE_RX    pins ADDED TO this new net
+                                 U4.9           U5.42          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZIGBEE_TX    pins ADDED TO this new net
+                                 U4.8           U5.43          
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   9  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ A40-C2G4A04S1A_0_S24-PAD_A40-C2
+ BPW36/TO_0_SOT-23-3_L2_9-W1_6-P
+ CAP NP_C0805_1U
+ CAP NP_C0805_2.2U
+ CAP NP_C0805_10U
+ CAP NP_C0805_15PF
+ CAP NP_C0805_20PF
+ CAP NP_C0805_47U
+ CAP NP_C0805_100N
+ CAP_C-220U_220U
+ CHOKE_L0603_FCM1608
+ CON2_CONN-TH_P5_00_KF127-5_0-2P
+ CON2_HDR-TH_2P-P2_54-V-F_SPEAKE
+ CON3_CONN-TH_3P-P2_50_HX25003-3
+ CON3_CONN-TH_3P-P2_50_HX25003_1
+ CON3_CONN-TH_3P-P2_50_HX25003_2
+ CON4_0_CONN-TH_4P-P2_54_DEALON_
+ CON4_HDR-TH_4P-P2_54-V-F_LCD_PO
+ CON4_HDR-TH_4P-P2_54-V-F_SWD_PO
+ CON8_HDR-TH_8P-P2_54-V-F-1_NFC_
+ CRYSTAL_OSC-TH_BD3_0-P1_10-D0_4
+ CRYSTAL_OSC-TH_L11_1-W4_7-P4_88
+ DIODE_DO-41_BD2_4-L4_7-P8_70-D0
+ IRM-56384_OPTO-TH_IRM-56384_IR-
+ LED_1_LED0805-RD_+5V_ON
+ LED_1_LED0805-RD_-5V_ON
+ LED_1_LED0805-RD_SPEAKER_ON
+ LED_1_LED0805-RD_ZIGBEE_CMD
+ LED_1_LED0805-RD_ZIGBEE_LINK
+ LED_1_LED-TH_BD3_0-P2_54-FD_3V3
+ LED_1_LED-TH_BD3_0-P2_54-FD_VAL
+ LED_1_LED-TH_BD5_9-P2_54-FD_DY-
+ RELAY SPST_RELAY-TH_973-XXVDC-S
+ RESISTOR_R0805_1K
+ RESISTOR_R0805_3.9K
+ RESISTOR_R0805_8.2K
+ RESISTOR_R0805_9.1K
+ RESISTOR_R0805_10K
+ RESISTOR_R0805_11K
+ RESISTOR_R0805_27K
+ RESISTOR_R0805_51K
+ RESISTOR_R0805_91K
+ RESISTOR_R0805_100K
+ RESISTOR_R0805_330K
+ RESISTOR_R0805_0
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  10  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ RESISTOR_R0805_100
+ RESISTOR_R0805_220
+ RESISTOR_R0805_330
+ RESISTOR_R0805_620
+ STM32F401RET6_0_LQFP64-10X10MM_
+ SW PUSHBUTTON-SPST-2_SW-SMD_4P-
+ SW PUSHBUTTON-SPST-2_SW-SMD_4_1
+ SW PUSHBUTTON-SPST-2_SW-SMD_4_2
+ SW PUSHBUTTON-SPST-2_SW-TH_4P-L
+ SW PUSHBUTTON-SPST-2_SW-TH_4P_1
+ TLV1117LV33DCYR_SOT-223_L6_7-W3
+ TLV2374ID_SOIC-14_L8_7-W3_9-P1_
+ WT588F08A-8S_SOP-8_L4_9-W3_9-P1
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  11  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1                  CAP NP_C0805_100N     
+ C2                  CAP_C-220U_220U       
+ C3                  CAP NP_C0805_1U       
+ C4                  CAP NP_C0805_1U       
+ C5                  CAP NP_C0805_100N     
+ C6                  CAP_C-220U_220U       
+ C7                  CAP NP_C0805_47U      
+ C8                  CAP NP_C0805_100N     
+ C9                  CAP NP_C0805_100N     
+ C10                 CAP NP_C0805_100N     
+ C11                 CAP NP_C0805_100N     
+ C12                 CAP NP_C0805_1U       
+ C13                 CAP NP_C0805_1U       
+ C14                 CAP NP_C0805_100N     
+ C15                 CAP NP_C0805_100N     
+ C16                 CAP NP_C0805_100N     
+ C17                 CAP NP_C0805_100N     
+ C18                 CAP NP_C0805_10U      
+ C19                 CAP NP_C0805_100N     
+ C20                 CAP NP_C0805_1U       
+ C21                 CAP NP_C0805_100N     
+ C22                 CAP NP_C0805_2.2U     
+ C23                 CAP NP_C0805_1U       
+ C24                 CAP NP_C0805_100N     
+ C25                 CAP NP_C0805_100N     
+ C26                 CAP NP_C0805_100N     
+ C27                 CAP NP_C0805_100N     
+ C28                 CAP NP_C0805_100N     
+ C29                 CAP NP_C0805_20PF     
+ C30                 CAP NP_C0805_20PF     
+ C31                 CAP NP_C0805_100N     
+ C32                 CAP NP_C0805_15PF     
+ C33                 CAP NP_C0805_15PF     
+ D1                  LED_1_LED0805-RD_+5V_ON 
+ D2                  LED_1_LED0805-RD_-5V_ON 
+ D3                  LED_1_LED-TH_BD3_0-P2_54-FD_3V3 
+ D4                  DIODE_DO-41_BD2_4-L4_7-P8_70-D0 
+ D5                  DIODE_DO-41_BD2_4-L4_7-P8_70-D0 
+ D6                  DIODE_DO-41_BD2_4-L4_7-P8_70-D0 
+ D7                  LED_1_LED-TH_BD3_0-P2_54-FD_VAL 
+ D8                  DIODE_DO-41_BD2_4-L4_7-P8_70-D0 
+ D9                  LED_1_LED0805-RD_SPEAKER_ON 
+ D10                 LED_1_LED0805-RD_ZIGBEE_LINK 
+ D11                 LED_1_LED0805-RD_ZIGBEE_CMD 
+ IR1                 IRM-56384_OPTO-TH_IRM-56384_IR- 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  12  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ IR2                 LED_1_LED-TH_BD5_9-P2_54-FD_DY- 
+ IR3                 LED_1_LED-TH_BD5_9-P2_54-FD_DY- 
+ IR4                 LED_1_LED-TH_BD5_9-P2_54-FD_DY- 
+ J1                  CON3_CONN-TH_3P-P2_50_HX25003-3 
+ J2                  CON3_CONN-TH_3P-P2_50_HX25003_1 
+ J3                  CON3_CONN-TH_3P-P2_50_HX25003_2 
+ J4                  CON4_0_CONN-TH_4P-P2_54_DEALON_ 
+ J5                  CON2_CONN-TH_P5_00_KF127-5_0-2P 
+ J6                  CON8_HDR-TH_8P-P2_54-V-F-1_NFC_ 
+ J7                  CON4_HDR-TH_4P-P2_54-V-F_LCD_PO 
+ J8                  CON2_HDR-TH_2P-P2_54-V-F_SPEAKE 
+ J9                  CON4_HDR-TH_4P-P2_54-V-F_SWD_PO 
+ L1                  CHOKE_L0603_FCM1608   
+ Q1                  BPW36/TO_0_SOT-23-3_L2_9-W1_6-P 
+ Q2                  BPW36/TO_0_SOT-23-3_L2_9-W1_6-P 
+ Q3                  BPW36/TO_0_SOT-23-3_L2_9-W1_6-P 
+ R1                  RESISTOR_R0805_0      
+ R2                  RESISTOR_R0805_1K     
+ R3                  RESISTOR_R0805_1K     
+ R4                  RESISTOR_R0805_1K     
+ R5                  RESISTOR_R0805_1K     
+ R6                  RESISTOR_R0805_220    
+ R7                  RESISTOR_R0805_100    
+ R8                  RESISTOR_R0805_11K    
+ R9                  RESISTOR_R0805_100    
+ R10                 RESISTOR_R0805_100    
+ R11                 RESISTOR_R0805_100    
+ R12                 RESISTOR_R0805_100K   
+ R13                 RESISTOR_R0805_3.9K   
+ R14                 RESISTOR_R0805_10K    
+ R15                 RESISTOR_R0805_10K    
+ R16                 RESISTOR_R0805_620    
+ R17                 RESISTOR_R0805_10K    
+ R18                 RESISTOR_R0805_91K    
+ R19                 RESISTOR_R0805_27K    
+ R20                 RESISTOR_R0805_330K   
+ R21                 RESISTOR_R0805_9.1K   
+ R22                 RESISTOR_R0805_620    
+ R23                 RESISTOR_R0805_10K    
+ R24                 RESISTOR_R0805_10K    
+ R25                 RESISTOR_R0805_1K     
+ R26                 RESISTOR_R0805_8.2K   
+ R27                 RESISTOR_R0805_51K    
+ R28                 RESISTOR_R0805_1K     
+ R29                 RESISTOR_R0805_1K     
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  13  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ R30                 RESISTOR_R0805_330    
+ R31                 RESISTOR_R0805_10K    
+ R32                 RESISTOR_R0805_1K     
+ R33                 RESISTOR_R0805_1K     
+ R34                 RESISTOR_R0805_10K    
+ R35                 RESISTOR_R0805_0      
+ R36                 RESISTOR_R0805_10K    
+ R37                 RESISTOR_R0805_100K   
+ R38                 RESISTOR_R0805_0      
+ R39                 RESISTOR_R0805_220    
+ R40                 RESISTOR_R0805_0      
+ R41                 RESISTOR_R0805_0      
+ RL1                 RELAY SPST_RELAY-TH_973-XXVDC-S 
+ SW1                 SW PUSHBUTTON-SPST-2_SW-TH_4P-L 
+ SW2                 SW PUSHBUTTON-SPST-2_SW-TH_4P_1 
+ SW3                 SW PUSHBUTTON-SPST-2_SW-SMD_4P- 
+ SW4                 SW PUSHBUTTON-SPST-2_SW-SMD_4_1 
+ SW5                 SW PUSHBUTTON-SPST-2_SW-SMD_4_2 
+ U1                  TLV1117LV33DCYR_SOT-223_L6_7-W3 
+ U2                  TLV2374ID_SOIC-14_L8_7-W3_9-P1_ 
+ U3                  WT588F08A-8S_SOP-8_L4_9-W3_9-P1 
+ U4                  A40-C2G4A04S1A_0_S24-PAD_A40-C2 
+ U5                  STM32F401RET6_0_LQFP64-10X10MM_ 
+ Y1                  CRYSTAL_OSC-TH_L11_1-W4_7-P4_88 
+ Y2                  CRYSTAL_OSC-TH_BD3_0-P1_10-D0_4 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  14  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1.2                           PRIM_FILE      .\pstchip.dat
+ C2.2                           PRIM_FILE      .\pstchip.dat
+ C3.2                           PRIM_FILE      .\pstchip.dat
+ C4.2                           PRIM_FILE      .\pstchip.dat
+ C5.2                           PRIM_FILE      .\pstchip.dat
+ C6.2                           PRIM_FILE      .\pstchip.dat
+ C7.2                           PRIM_FILE      .\pstchip.dat
+ C8.2                           PRIM_FILE      .\pstchip.dat
+ C9.2                           PRIM_FILE      .\pstchip.dat
+ C10.2                          PRIM_FILE      .\pstchip.dat
+ C11.2                          PRIM_FILE      .\pstchip.dat
+ C12.2                          PRIM_FILE      .\pstchip.dat
+ C13.2                          PRIM_FILE      .\pstchip.dat
+ C14.2                          PRIM_FILE      .\pstchip.dat
+ C15.2                          PRIM_FILE      .\pstchip.dat
+ C16.2                          PRIM_FILE      .\pstchip.dat
+ C17.2                          PRIM_FILE      .\pstchip.dat
+ C18.2                          PRIM_FILE      .\pstchip.dat
+ C19.2                          PRIM_FILE      .\pstchip.dat
+ C20.2                          PRIM_FILE      .\pstchip.dat
+ C21.2                          PRIM_FILE      .\pstchip.dat
+ C22.2                          PRIM_FILE      .\pstchip.dat
+ C23.2                          PRIM_FILE      .\pstchip.dat
+ C24.2                          PRIM_FILE      .\pstchip.dat
+ C25.2                          PRIM_FILE      .\pstchip.dat
+ C26.2                          PRIM_FILE      .\pstchip.dat
+ C27.2                          PRIM_FILE      .\pstchip.dat
+ C28.2                          PRIM_FILE      .\pstchip.dat
+ C29.2                          PRIM_FILE      .\pstchip.dat
+ C30.2                          PRIM_FILE      .\pstchip.dat
+ C31.2                          PRIM_FILE      .\pstchip.dat
+ C32.2                          PRIM_FILE      .\pstchip.dat
+ C33.2                          PRIM_FILE      .\pstchip.dat
+ D1.2                           PRIM_FILE      .\pstchip.dat
+ D2.2                           PRIM_FILE      .\pstchip.dat
+ D3.2                           PRIM_FILE      .\pstchip.dat
+ D4.1                           PRIM_FILE      .\pstchip.dat
+ D5.1                           PRIM_FILE      .\pstchip.dat
+ D6.1                           PRIM_FILE      .\pstchip.dat
+ D7.2                           PRIM_FILE      .\pstchip.dat
+ D8.1                           PRIM_FILE      .\pstchip.dat
+ D9.2                           PRIM_FILE      .\pstchip.dat
+ D10.2                          PRIM_FILE      .\pstchip.dat
+ D11.2                          PRIM_FILE      .\pstchip.dat
+ IR1.3                          PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  15  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ IR2.2                          PRIM_FILE      .\pstchip.dat
+ IR3.2                          PRIM_FILE      .\pstchip.dat
+ IR4.2                          PRIM_FILE      .\pstchip.dat
+ J1.3                           PRIM_FILE      .\pstchip.dat
+ J2.3                           PRIM_FILE      .\pstchip.dat
+ J3.3                           PRIM_FILE      .\pstchip.dat
+ J4.4                           PRIM_FILE      .\pstchip.dat
+ J5.2                           PRIM_FILE      .\pstchip.dat
+ J6.8                           PRIM_FILE      .\pstchip.dat
+ J7.4                           PRIM_FILE      .\pstchip.dat
+ J8.2                           PRIM_FILE      .\pstchip.dat
+ J9.4                           PRIM_FILE      .\pstchip.dat
+ L1.2                           PRIM_FILE      .\pstchip.dat
+ Q1.2                           PRIM_FILE      .\pstchip.dat
+ Q2.2                           PRIM_FILE      .\pstchip.dat
+ Q3.2                           PRIM_FILE      .\pstchip.dat
+ R1.2                           PRIM_FILE      .\pstchip.dat
+ R2.2                           PRIM_FILE      .\pstchip.dat
+ R3.2                           PRIM_FILE      .\pstchip.dat
+ R4.2                           PRIM_FILE      .\pstchip.dat
+ R5.2                           PRIM_FILE      .\pstchip.dat
+ R6.2                           PRIM_FILE      .\pstchip.dat
+ R7.2                           PRIM_FILE      .\pstchip.dat
+ R8.2                           PRIM_FILE      .\pstchip.dat
+ R9.2                           PRIM_FILE      .\pstchip.dat
+ R10.2                          PRIM_FILE      .\pstchip.dat
+ R11.2                          PRIM_FILE      .\pstchip.dat
+ R12.2                          PRIM_FILE      .\pstchip.dat
+ R13.2                          PRIM_FILE      .\pstchip.dat
+ R14.2                          PRIM_FILE      .\pstchip.dat
+ R15.2                          PRIM_FILE      .\pstchip.dat
+ R16.2                          PRIM_FILE      .\pstchip.dat
+ R17.2                          PRIM_FILE      .\pstchip.dat
+ R18.2                          PRIM_FILE      .\pstchip.dat
+ R19.2                          PRIM_FILE      .\pstchip.dat
+ R20.2                          PRIM_FILE      .\pstchip.dat
+ R21.2                          PRIM_FILE      .\pstchip.dat
+ R22.2                          PRIM_FILE      .\pstchip.dat
+ R23.2                          PRIM_FILE      .\pstchip.dat
+ R24.2                          PRIM_FILE      .\pstchip.dat
+ R25.2                          PRIM_FILE      .\pstchip.dat
+ R26.2                          PRIM_FILE      .\pstchip.dat
+ R27.2                          PRIM_FILE      .\pstchip.dat
+ R28.2                          PRIM_FILE      .\pstchip.dat
+ R29.2                          PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  16  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ R30.2                          PRIM_FILE      .\pstchip.dat
+ R31.2                          PRIM_FILE      .\pstchip.dat
+ R32.2                          PRIM_FILE      .\pstchip.dat
+ R33.2                          PRIM_FILE      .\pstchip.dat
+ R34.2                          PRIM_FILE      .\pstchip.dat
+ R35.2                          PRIM_FILE      .\pstchip.dat
+ R36.2                          PRIM_FILE      .\pstchip.dat
+ R37.2                          PRIM_FILE      .\pstchip.dat
+ R38.2                          PRIM_FILE      .\pstchip.dat
+ R39.2                          PRIM_FILE      .\pstchip.dat
+ R40.2                          PRIM_FILE      .\pstchip.dat
+ R41.2                          PRIM_FILE      .\pstchip.dat
+ RL1.3                          PRIM_FILE      .\pstchip.dat
+ SW1.4                          PRIM_FILE      .\pstchip.dat
+ SW2.4                          PRIM_FILE      .\pstchip.dat
+ SW3.4                          PRIM_FILE      .\pstchip.dat
+ SW4.4                          PRIM_FILE      .\pstchip.dat
+ SW5.4                          PRIM_FILE      .\pstchip.dat
+ U1.4                           PRIM_FILE      .\pstchip.dat
+ U2.4                           PRIM_FILE      .\pstchip.dat
+ U3.6                           PRIM_FILE      .\pstchip.dat
+ U4.1                           PRIM_FILE      .\pstchip.dat
+ U5.6                           PRIM_FILE      .\pstchip.dat
+ U5.63                          PRIM_FILE      .\pstchip.dat
+ Y1.2                           PRIM_FILE      .\pstchip.dat
+ Y2.2                           PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  17  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd            |
+|                                                    Mon May 02 11:40:10 2022  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|------------------------------------------------------------------------------|
+|       Nets changed          :     350                                        |
+|       Comp definitions added:      58                                        |
+|       Components added      :     115                                        |
+|       Slot property added   :     116                                        |
+|                                                                              |
+|   Total ECO changes reported:     639                                        |
+|------------------------------------------------------------------------------|

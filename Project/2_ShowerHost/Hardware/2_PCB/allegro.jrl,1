@@ -1,164 +1,28 @@
-\t (00:00:02) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Fri Apr 29 15:16:36 2022
-\t (00:00:02)         Host=INSANITY User=insan Pid=8268 CPUs=8
-\t (00:00:02) CmdLine= E:\Cadence\Cadence\SPB_17.2\tools\bin\allegro.exe
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:05) Opening existing design...
-\i (00:00:05) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERHOST
-\d (00:00:05) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
-\t (00:00:05) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
-\i (00:00:05) trapsize 8070
-\i (00:00:05) trapsize 8299
-\i (00:00:05) trapsize 8070
-\t (00:00:05) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
-\i (00:00:05) trapsize 8346
-\t (00:00:05) Grids are drawn 1.6000, 1.6000 apart for enhanced viewing.
-\i (00:00:05) trapsize 10582
-\i (00:00:06) generaledit 
-\i (00:00:08) zoom in 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 73.4392 80.2116
-\t (00:00:08) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
-\i (00:00:08) trapsize 5291
-\i (00:00:08) zoom in 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 36.7725 80.2116
-\t (00:00:08) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
-\i (00:00:08) trapsize 2646
-\i (00:00:08) zoom in 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 36.7725 80.2116
-\t (00:00:08) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
-\i (00:00:08) trapsize 1323
-\i (00:00:08) zoom in 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 36.7725 80.2117
-\i (00:00:08) trapsize 661
-\i (00:00:08) zoom in 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 36.7726 80.2117
-\i (00:00:08) trapsize 331
-\i (00:00:08) zoom in 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 36.7726 80.2117
-\i (00:00:08) trapsize 165
-\i (00:00:08) zoom out 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom out 37.0636 80.1621
-\i (00:00:08) trapsize 331
-\i (00:00:08) zoom out 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom out 37.0702 80.1489
-\i (00:00:08) trapsize 661
-\i (00:00:09) zoom out 1 
-\i (00:00:09) setwindow pcb
-\i (00:00:09) zoom out 37.0702 80.1356
-\i (00:00:09) trapsize 1323
-\i (00:00:09) zoom in 1 
-\i (00:00:09) setwindow pcb
-\i (00:00:09) zoom in 50.6681 77.6224
-\i (00:00:09) trapsize 661
-\i (00:00:09) zoom in 1 
-\i (00:00:09) setwindow pcb
-\i (00:00:09) zoom in 50.6682 77.6224
-\i (00:00:09) trapsize 331
-\i (00:00:09) zoom in 1 
-\i (00:00:09) setwindow pcb
-\i (00:00:09) zoom in 50.6946 77.6423
-\i (00:00:09) trapsize 165
-\i (00:00:09) zoom in 1 
-\i (00:00:09) setwindow pcb
-\i (00:00:09) zoom in 50.6946 77.6423
-\i (00:00:09) trapsize 83
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 50.6947 77.6424
-\i (00:00:10) trapsize 165
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 50.6946 77.6423
-\i (00:00:10) trapsize 331
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 50.6947 77.6424
-\i (00:00:10) trapsize 661
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 50.6948 77.6424
-\i (00:00:10) trapsize 1323
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 51.5148 77.6689
-\t (00:00:10) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
-\i (00:00:10) trapsize 2646
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 51.5149 77.5630
-\t (00:00:10) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
-\i (00:00:10) trapsize 5291
-\i (00:00:11) zoom in 1 
-\i (00:00:11) setwindow pcb
-\i (00:00:11) zoom in 77.7780 77.0340
-\t (00:00:11) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
-\i (00:00:11) trapsize 2646
-\i (00:00:11) zoom in 1 
-\i (00:00:11) setwindow pcb
-\i (00:00:11) zoom in 77.7779 77.0340
-\t (00:00:11) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
-\i (00:00:11) trapsize 1323
-\i (00:00:11) zoom in 1 
-\i (00:00:11) setwindow pcb
-\i (00:00:11) zoom in 77.7780 77.0340
-\i (00:00:11) trapsize 661
-\i (00:00:11) zoom in 1 
-\i (00:00:11) setwindow pcb
-\i (00:00:11) zoom in 77.7780 77.0340
-\i (00:00:11) trapsize 331
-\i (00:00:12) zoom out 1 
-\i (00:00:12) setwindow pcb
-\i (00:00:12) zoom out 74.1537 77.1068
-\i (00:00:12) trapsize 661
-\i (00:00:12) zoom out 1 
-\i (00:00:12) setwindow pcb
-\i (00:00:12) zoom out 74.6960 77.0142
-\i (00:00:12) trapsize 1323
-\i (00:00:12) zoom out 1 
-\i (00:00:12) setwindow pcb
-\i (00:00:12) zoom out 74.7489 77.0141
-\t (00:00:12) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
-\i (00:00:12) trapsize 2646
-\i (00:00:12) zoom in 1 
-\i (00:00:12) setwindow pcb
-\i (00:00:12) zoom in 66.5478 76.5379
-\t (00:00:12) Grids are drawn 0.2000, 0.2000 apart for enhanced viewing.
-\i (00:00:12) trapsize 1323
-\i (00:00:12) zoom in 1 
-\i (00:00:12) setwindow pcb
-\i (00:00:12) zoom in 66.5478 76.5379
-\i (00:00:12) trapsize 661
-\i (00:00:12) zoom in 1 
-\i (00:00:12) setwindow pcb
-\i (00:00:12) zoom in 66.6272 76.6437
-\i (00:00:12) trapsize 331
-\i (00:00:13) zoom out 1 
-\i (00:00:13) setwindow pcb
-\i (00:00:13) zoom out 66.4949 76.7760
-\i (00:00:13) trapsize 661
-\i (00:00:16) setwindow form.find
-\i (00:00:16) FORM find all_on  
-\i (00:00:19) setwindow pcb
-\i (00:00:19) grid toggle 
-\i (00:00:19) generaledit 
-\i (00:00:22) zoom in 1 
-\i (00:00:22) setwindow pcb
-\i (00:00:22) zoom in 67.5532 77.1861
-\i (00:00:22) trapsize 331
-\i (00:00:23) pick grid 67.5532 77.1862
-\t (00:00:23) last pick:  67.6000 77.2000
-\i (00:00:25) pick grid 67.3218 76.9878
-\t (00:00:25) last pick:  67.3000 77.0000
-\i (01:07:05) exit 
-\e (01:07:06) Do you want to save the changes you made to SHOWERHOST.brd?
-\i (01:07:09) fillin no 
-\t (01:07:09)     Journal end - Fri Apr 29 16:23:44 2022
+\t (00:00:00) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed May 04 00:17:05 2022
+\t (00:00:00)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=51596 CPUs=16
+\t (00:00:00) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\2_PCB\SHOWERHOST.brd
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\i (00:00:01) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERHOST
+\d (00:00:01) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
+\t (00:00:01) Grids are drawn 16.00, 16.00 apart for enhanced viewing.
+\i (00:00:01) trapsize 1309
+\i (00:00:01) trapsize 1338
+\t (00:00:01) Grids are drawn 16.00, 16.00 apart for enhanced viewing.
+\i (00:00:01) trapsize 1372
+\i (00:00:01) trapsize 1372
+\i (00:00:01) etchedit 
+\i (00:00:03) prmed 
+\i (00:00:04) setwindow form.prmedit
+\i (00:00:04) FORM prmedit text  
+\i (00:00:06) FORM prmedit text_setup_button  
+\i (00:00:55) setwindow form.textblock
+\i (00:00:55) FORM textblock done  
+\i (00:00:57) setwindow form.prmedit
+\i (00:00:57) FORM prmedit cancel  
+\i (00:00:57) setwindow pcb
+\i (00:00:57) etchedit 
+\i (00:00:59) exit 
+\t (00:01:00)     Journal end - Wed May 04 00:18:04 2022

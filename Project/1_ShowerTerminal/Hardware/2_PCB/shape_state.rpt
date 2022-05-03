@@ -1,0 +1,19 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Dynamic Status Report                                      )
+(                                                                     )
+(    Drawing          : SHOWERTERMINAL.brd                            )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Tue May 03 19:23:44 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Dynamic shapes out of date: 1 out of 4
+  Current fill mode         : SMOOTH
+
+
+  <<<  ETCH  >>>
+
+    Layer = TOP
+       State: Out of date  Point on shape: (660.00 2340.00)  Net: AGND

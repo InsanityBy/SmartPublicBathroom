@@ -1,33 +1,85 @@
-\t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:05)     Journal start - Tue Apr 26 22:58:58 2022
-\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=22852 CPUs=16
-\t (00:00:05) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\mhole_d_4mm\mhole_d_4mm.dra
-\t (00:00:05) 
-   (00:00:05) Loading axlcore.cxt 
-\t (00:00:08) Opening existing design...
-\i (00:00:08) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged mhole_d_4mm
-\d (00:00:08) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/mhole_d_4mm/mhole_d_4mm.dra
-\i (00:00:08) trapsize 755
-\i (00:00:08) trapsize 775
-\i (00:00:08) trapsize 796
-\i (00:00:08) trapsize 775
-\i (00:00:08) trapsize 755
-\i (00:00:08) trapsize 755
-\i (00:00:10) zoom in 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom in -3.8415 0.4453
-\i (00:00:10) trapsize 377
-\i (00:00:10) zoom in 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom in -3.8415 0.4453
-\i (00:00:10) trapsize 189
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out -3.8377 0.4302
-\i (00:00:10) trapsize 377
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out -3.6490 0.2416
-\i (00:00:10) trapsize 755
-\i (00:00:12) exit 
-\t (00:00:13)     Journal end - Tue Apr 26 22:59:06 2022
+\t (00:00:00) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue May 03 12:15:58 2022
+\t (00:00:00)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=47372 CPUs=16
+\t (00:00:00) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\3_Library\Footprint\mhole_d_4mm\mhole_d_4mm.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\i (00:00:00) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged mhole_d_4mm
+\d (00:00:00) Design opened: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/3_Library/Footprint/mhole_d_4mm/mhole_d_4mm.dra
+\i (00:00:01) trapsize 688
+\i (00:00:01) trapsize 702
+\i (00:00:01) trapsize 688
+\i (00:00:01) trapsize 755
+\i (00:00:01) trapsize 755
+\i (00:00:01) etchedit 
+\i (00:00:08) setwindow form.mini
+\i (00:00:08) FORM mini class ROUTE KEEPOUT 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) pick grid 5.7283 4.9585
+\t (00:00:21) last pick:  6.0000 5.0000
+\i (00:00:23) delete 
+\i (00:00:23) pick grid 4.7019 3.3887
+\t (00:00:23) last pick:  5.0000 3.0000
+\t (00:00:23) Text "H1"
+\i (00:00:24) pick grid 4.8377 3.4642
+\t (00:00:24) last pick:  5.0000 3.0000
+\i (00:00:24) prepopup 4.8076 3.6453
+\i (00:00:25) oops 
+\t (00:00:25) last pick:  5.0000 3.0000
+\i (00:00:26) prepopup 4.9736 3.7057
+\i (00:00:27) done 
+\i (00:00:27) etchedit 
+\i (00:00:28) delete 
+\i (00:00:29) pick grid 4.8830 3.5245
+\t (00:00:29) last pick:  5.0000 4.0000
+\t (00:00:29) Text "H1"
+\i (00:00:29) pick grid dbl 4.8830 3.5245
+\t (00:00:29) last pick:  5.0000 4.0000
+\i (00:00:30) prepopup 5.8189 3.3736
+\i (00:00:31) done 
+\i (00:00:31) etchedit 
+\i (00:00:33) pick grid 3.9623 1.2000
+\t (00:00:33) last pick:  4.0000 1.0000
+\i (00:00:36) setwindow form.mini
+\i (00:00:36) FORM mini subclass ALL 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) prepopup 6.2868 5.7132
+\i (00:00:37) pick grid 4.8679 4.2340
+\t (00:00:37) last pick:  5.0000 4.0000
+\i (00:00:38) zoom in 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom in 1.1094 2.3170
+\i (00:00:38) trapsize 377
+\i (00:00:38) zoom in 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom in 1.1094 2.3170
+\i (00:00:38) trapsize 189
+\i (00:00:42) pick grid 3.0302 2.7925
+\t (00:00:42) last pick:  3.0000 3.0000
+\i (00:00:43) prepopup 2.4717 2.5661
+\i (00:00:46) pop dyn_option_select 'Change to layer@:@ALL' 
+\i (00:00:46) change layer 
+\t (00:00:46) No DRC errors detected.
+\t (00:00:46) Changed 1 items out of 1 items found.
+\i (00:00:46) etchedit 
+\i (00:00:47) pick grid 3.3585 3.0076
+\t (00:00:47) last pick:  3.0000 3.0000
+\i (00:00:50) pick grid 2.9321 2.8680
+\t (00:00:50) last pick:  3.0000 3.0000
+\i (00:00:50) pick grid 3.2113 3.1585
+\t (00:00:50) last pick:  3.0000 3.0000
+\i (00:00:51) zoom out 1 
+\i (00:00:51) setwindow pcb
+\i (00:00:51) zoom out 1.8679 3.0415
+\i (00:00:51) trapsize 377
+\i (00:00:51) zoom out 1 
+\i (00:00:51) setwindow pcb
+\i (00:00:51) zoom out 1.1435 2.3322
+\i (00:00:51) trapsize 755
+\i (00:00:52) save 
+\i (00:00:54) fillin yes 
+\t (00:00:54) Symbol 'mhole_d_4mm.bsm' created.
+\i (00:00:54) etchedit 
+\i (00:00:55) exit 
+\t (00:00:56)     Journal end - Tue May 03 12:16:53 2022
