@@ -76,8 +76,7 @@
     ("Allegro Setup Part Type Length" "31")
     ("Allegro Netlist Combine Property String" "PCB Footprint")
     ("Allegro Netlist Ignore Fixed Property" "FALSE")
-    ("Allegro Netlist User Defined Property" "FALSE")
-    (Board_sim_option "VHDL_flow"))
+    ("Allegro Netlist User Defined Property" "FALSE"))
   (Folder "Outputs"
     (File ".\showerhost.drc"
       (Type "Report"))
@@ -97,19 +96,26 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn")
+      (Path "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources"))
+      (Select "Design Resources"
+         "D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Hardware\1_Schematic\showerhost.dsn"
+         "SCHEMATIC1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 700"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 156 1639 156 615")
-        (Scroll "-223 0")
+        (Placement "44 0 1 -1 -1 -8 -31 156 1759 156 615")
+        (Scroll "-283 0")
         (Zoom "65")
         (Occurrence "/"))
       (Path
@@ -119,8 +125,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 182 1665 182 641")
-        (Scroll "-223 0")
+        (Placement "44 0 1 -1 -1 -8 -31 182 1785 182 641")
+        (Scroll "-283 0")
         (Zoom "65")
         (Occurrence "/"))
       (Path
@@ -130,8 +136,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 208 1691 208 667")
-        (Scroll "-223 104")
+        (Placement "44 0 1 -1 -1 -8 -31 208 1811 208 667")
+        (Scroll "-283 0")
         (Zoom "65")
         (Occurrence "/"))
       (Path
@@ -141,9 +147,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 1483 0 459")
-        (Scroll "447 378")
-        (Zoom "130")
+        (Placement "44 0 1 -1 -1 -8 -31 0 1603 0 459")
+        (Scroll "-283 0")
+        (Zoom "65")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
@@ -152,8 +158,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 26 1509 26 485")
-        (Scroll "-223 36")
+        (Placement "44 0 1 -1 -1 -8 -31 26 1629 26 485")
+        (Scroll "-283 0")
         (Zoom "65")
         (Occurrence "/"))
       (Path
@@ -163,13 +169,13 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1535 52 511")
-        (Scroll "-193 169")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1655 52 511")
+        (Scroll "-237 0")
         (Zoom "69")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
       (Schematic "SCHEMATIC1")
       (Page "6_MCU")))
-  (MPSSessionName "Jessi_10")
+  (MPSSessionName "insan")
   (ISPCBBASICLICENSE "false"))
