@@ -1,0 +1,52 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Auto Silkscreen Log File                                         )
+(                                                                     )
+(    Drawing          : SHOWERTERMINAL.brd                            )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Mon May 02 22:41:16 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Generating Auto Silkscreen for both sides of the board.
+
+Copying all elements.
+
+Element to Pad clearance is 0.2000
+Max Text displacement is 2.5400
+Min Line Length is 0.0000
+Allowing 0 and 90 degree text rotations.
+Text Allowed Under Components.
+Subclass Selections:
+ Board Geometry       : Silkscreen
+ Component Value      : Silkscreen
+ Device Type          : None
+ Package Geometry     : Silkscreen
+ Reference Designator : Silkscreen
+ Tolerance            : None
+ User Part Number     : None
+
+
+     ----- Top Silkscreen -----
+
+Text string 'SW5' is not at a suitable location
+(location: 21.2800, -10.6600)
+Text string 'R37' is not at a suitable location
+(location: 23.3400, -7.6000)
+Text string 'C4' is not at a suitable location
+(location: 18.3400, 73.4000)
+Text string 'C1' is not at a suitable location
+(location: 17.7400, 81.4000)
+Text string 'C17' is not at a suitable location
+(location: 43.3400, 86.8000)
+
+     ----- Bottom Silkscreen -----
+
+Text string 'Y2' is not at a suitable location
+(location: 23.0000, 42.8600)
+
+Total Failures: 6
+
+Log End
+

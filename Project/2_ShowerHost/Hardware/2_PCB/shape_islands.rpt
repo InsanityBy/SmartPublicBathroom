@@ -1,0 +1,55 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Island Report                                              )
+(                                                                     )
+(    Drawing          : SHOWERHOST.brd                                )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Tue May 03 12:31:45 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Total islands on design: 38
+
+
+  <<<  ETCH  >>>
+
+    Layer = BOTTOM
+	Point on shape: (2210.06 645.28)  Net: AGND
+	Point on shape: (1592.18 771.00)  Net: AGND
+	Point on shape: (2572.50 646.52)  Net: AGND
+	Point on shape: (1814.53 489.89)  Net: AGND
+	Point on shape: (2039.50 439.38)  Net: AGND
+	Point on shape: (1624.42 439.38)  Net: AGND
+	Point on shape: (2039.50 339.38)  Net: AGND
+	Point on shape: (2997.61 97.42)  Net: AGND
+	Point on shape: (834.52 2964.58)  Net: GND
+	Point on shape: (1940.82 2960.64)  Net: GND
+	Point on shape: (1389.64 2964.58)  Net: GND
+	Point on shape: (2351.16 2185.23)  Net: GND
+	Point on shape: (1857.78 1823.39)  Net: GND
+	Point on shape: (1218.54 1820.09)  Net: GND
+	Point on shape: (1833.37 1642.83)  Net: GND
+	Point on shape: (2255.25 1651.91)  Net: GND
+	Point on shape: (2997.58 3848.27)  Net: GND
+	Point on shape: (88.74 3848.27)  Net: GND
+	Point on shape: (1052.80 3479.92)  Net: GND
+	Point on shape: (1978.00 3424.80)  Net: GND
+	Point on shape: (1975.70 3334.26)  Net: GND
+	Point on shape: (1052.80 3298.82)  Net: GND
+	Point on shape: (1961.64 3243.70)  Net: GND
+	Point on shape: (873.61 3073.40)  Net: GND
+	Point on shape: (1146.50 2338.96)  Net: GND
+	Point on shape: (995.00 2279.46)  Net: GND
+	Point on shape: (1218.54 2072.13)  Net: GND
+	Point on shape: (1092.63 1863.76)  Net: GND
+	Point on shape: (1000.04 1861.14)  Net: GND
+	Point on shape: (1413.81 1588.44)  Net: GND
+	Point on shape: (1744.36 1575.90)  Net: GND
+	Point on shape: (2108.89 1522.00)  Net: GND
+	Point on shape: (2735.65 1443.31)  Net: GND
+	Point on shape: (1746.08 1296.86)  Net: GND
+	Point on shape: (1501.58 1296.86)  Net: GND
+	Point on shape: (576.42 830.32)  Net: GND
+	Point on shape: (351.24 743.70)  Net: GND
+	Point on shape: (88.74 88.74)  Net: GND

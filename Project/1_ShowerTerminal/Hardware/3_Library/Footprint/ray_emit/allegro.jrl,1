@@ -1,16 +1,398 @@
-\t (00:00:02) allegro 17.4 S024 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Mon Apr 18 19:27:31 2022
-\t (00:00:02)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=18948 CPUs=16
-\t (00:00:02) CmdLine= d:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\Jessi_10\Desktop\SmartPublicBathroom\footprint_library\ray_emit\led-th_bd5_9-p2_54-fd.dra
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "led-th_bd5_9-p2_54-fd"
-\d (00:00:04) Design opened: C:/Users/Jessi_10/Desktop/SmartPublicBathroom/footprint_library/ray_emit/led-th_bd5_9-p2_54-fd.dra
-\i (00:00:05) trapsize 364
-\i (00:00:05) trapsize 371
-\i (00:00:05) trapsize 364
-\i (00:00:05) trapsize 372
-\i (00:00:05) generaledit 
-\i (00:00:08) exit 
-\t (00:00:08)     Journal end - Mon Apr 18 19:27:37 2022
+\t (00:00:00) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon May 02 14:26:13 2022
+\t (00:00:00)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=10676 CPUs=16
+\t (00:00:00) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\3_Library\Footprint\ray_emit\led-th_bd5_9-p2_54-fd.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+\t (00:00:00) Opening existing design...
+\i (00:00:00) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged led-th_bd5_9-p2_54-fd
+\d (00:00:00) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/3_Library/Footprint/ray_emit/led-th_bd5_9-p2_54-fd.dra
+\i (00:00:00) trapsize 199
+\i (00:00:00) trapsize 203
+\i (00:00:01) trapsize 199
+\i (00:00:01) trapsize 218
+\i (00:00:01) trapsize 218
+\i (00:00:01) generaledit 
+\i (00:00:02) zoom in 1 
+\i (00:00:02) setwindow pcb
+\i (00:00:02) zoom in 116.84 20.86
+\i (00:00:02) trapsize 109
+\i (00:00:03) zoom out 1 
+\i (00:00:03) setwindow pcb
+\i (00:00:03) zoom out 110.52 16.07
+\i (00:00:03) trapsize 218
+\i (00:00:24) define grid 
+\t (00:00:24) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (00:00:27) setwindow form.grid
+\i (00:00:27) FORM grid done  
+\i (00:00:30) setwindow pcb
+\i (00:00:30) grid toggle 
+\i (00:00:30) generaledit 
+\i (00:00:36) prmed 
+\i (00:00:37) setwindow form.prmedit
+\i (00:00:37) FORM prmedit design  
+\i (00:00:40) FORM prmedit units Millimeter 
+   (00:00:40) Accuracy or unit changes can cause design round-off issues. DRCs and physical changes should be checked.
+\i (00:00:41) fillin confirm
+\e (00:00:41) Change may cause round-off; run dbcheck.
+\i (00:00:55) FORM prmedit x -10.0000 
+\i (00:00:59) FORM prmedit y -10.0000 
+\i (00:01:00) FORM prmedit width 20.0000 
+\i (00:01:02) FORM prmedit height 20.0000 
+\i (00:01:02) FORM prmedit done  
+\w (00:01:02) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:01:02) setwindow pcb
+\i (00:01:02) trapsize 554
+\t (00:01:02) Performing DRC...
+\t (00:01:02) No DRC errors detected.
+\i (00:01:03) trapsize 567
+\i (00:01:03) trapsize 554
+\i (00:01:03) generaledit 
+\i (00:01:06) define grid 
+\t (00:01:06) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (00:01:14) setwindow form.grid
+\i (00:01:14) FORM grid non_etch non_etch_x_grids 2.5 
+\i (00:01:20) FORM grid non_etch non_etch_y_grids 2.5 
+\i (00:01:21) FORM grid all_etch all_etch_x_grids 2.5 
+\i (00:01:23) FORM grid all_etch all_etch_y_grids 2.5 
+\i (00:01:24) FORM grid top subclass_x_grids 2.5000 
+\i (00:01:24) FORM grid done  
+\i (00:01:27) setwindow pcb
+\i (00:01:27) zoom out 1 
+\i (00:01:27) setwindow pcb
+\i (00:01:27) zoom out -4.1571 0.0760
+\i (00:01:27) trapsize 755
+\i (00:01:39) pick grid 2.0604 2.1660
+\t (00:01:39) last pick:  2.5000 2.5000
+\i (00:01:41) delete 
+\i (00:01:41) generaledit 
+\i (00:01:43) pick grid 2.6340 1.2000
+\t (00:01:43) last pick:  2.5000 0.0000
+\i (00:01:45) delete 
+\i (00:01:45) generaledit 
+\i (00:01:53) undo 
+\i (00:01:53) trapsize 755
+\i (00:01:53) generaledit 
+\i (00:01:54) undo 
+\i (00:01:54) trapsize 755
+\i (00:01:54) generaledit 
+\i (00:01:56) pick grid 4.7019 -0.1283
+\t (00:01:56) last pick:  5.0000 0.0000
+\i (00:02:36) add rarc 
+\t (00:02:36) Pick arc center point.
+\i (00:02:41) setwindow form.mini
+\i (00:02:41) FORM mini subclass SILKSCREEN_TOP 
+\i (00:02:42) setwindow pcb
+\i (00:02:42) pick grid -2.7094 4.4755
+\t (00:02:42) last pick:  -2.5000 5.0000
+\t (00:02:42) Pick arc start point.
+\i (00:02:46) pick grid -5.0943 3.7359
+\t (00:02:46) last pick:  -5.0000 2.5000
+\t (00:02:46) Radius = 3.5355
+\t (00:02:46) Pick arc end point.
+\i (00:02:48) angle -180.000
+\t (00:02:48) last angle:  +180.000 Degrees
+\t (00:02:48) Pick the next arc center point.
+\i (00:02:53) delete 
+\i (00:02:55) pick grid -5.6528 3.5547
+\t (00:02:55) last pick:  -5.0000 2.5000
+\t (00:02:55) Line "Package Geometry/Silkscreen_Top"
+\i (00:02:56) delete 
+\i (00:02:57) prepopup -4.7774 5.6227
+\i (00:02:58) done 
+\i (00:02:58) generaledit 
+\i (00:03:00) add arc 
+\i (00:03:07) pick grid -5.0792 2.4981
+\t (00:03:07) last pick:  -5.0000 2.5000
+\i (00:03:08) pick grid -6.4679 3.7510
+\t (00:03:08) last pick:  -7.5000 5.0000
+\i (00:03:20) prepopup -4.1132 6.2264
+\i (00:03:21) oops 
+\t (00:03:21) last pick:  -5.0000 2.5000
+\i (00:03:23) prepopup -4.5811 4.2642
+\i (00:03:24) oops 
+\i (00:03:24) prepopup -5.8792 4.9736
+\i (00:03:25) cancel 
+\i (00:03:25) generaledit 
+\i (00:05:31) zoom in 1 
+\i (00:05:31) setwindow pcb
+\i (00:05:31) zoom in -1.1094 2.1208
+\i (00:05:31) trapsize 377
+\i (00:05:39) zoom in 1 
+\i (00:05:39) setwindow pcb
+\i (00:05:39) zoom in -0.8075 2.0000
+\i (00:05:39) trapsize 189
+\i (00:05:50) zoom out 1 
+\i (00:05:50) setwindow pcb
+\i (00:05:50) zoom out 0.7585 1.9094
+\i (00:05:50) trapsize 377
+\i (00:05:51) zoom out 1 
+\i (00:05:51) setwindow pcb
+\i (00:05:51) zoom out -3.6867 1.8944
+\i (00:05:51) trapsize 755
+\i (00:05:54) pick grid -2.2113 2.1811
+\t (00:05:54) last pick:  -2.5000 2.5000
+\i (00:05:55) delete 
+\i (00:05:56) generaledit 
+\i (00:05:57) pick grid 2.7396 1.1396
+\t (00:05:57) last pick:  2.5000 0.0000
+\i (00:05:58) delete 
+\i (00:05:58) generaledit 
+\i (00:06:02) zoom in 1 
+\i (00:06:02) setwindow pcb
+\i (00:06:02) zoom in -2.0906 3.2830
+\i (00:06:02) trapsize 377
+\i (00:06:04) drag_start grid -1.5623 3.0566
+\i (00:06:05) drag_stop 1.3962 1.2453
+\i (00:06:11) pick grid -2.2038 2.2491
+\t (00:06:11) last pick:  -2.5000 2.5000
+\i (00:06:12) zoom out 1 
+\i (00:06:12) setwindow pcb
+\i (00:06:12) zoom out -1.7585 2.0075
+\i (00:06:12) trapsize 755
+\i (00:06:21) add arc 
+\i (00:06:24) pick grid 2.4981 2.4227
+\t (00:06:24) last pick:  2.5000 2.5000
+\i (00:06:26) pick grid 2.3774 1.2453
+\t (00:06:26) last pick:  2.5000 0.0000
+\i (00:06:34) prepopup 2.7094 0.9132
+\i (00:06:35) oops 
+\t (00:06:35) last pick:  2.5000 2.5000
+\i (00:06:38) pick grid 3.1774 -1.2604
+\t (00:06:38) last pick:  2.5000 -2.5000
+\i (00:06:52) prepopup -1.7585 0.8981
+\i (00:06:53) oops 
+\t (00:06:53) last pick:  2.5000 2.5000
+\i (00:07:01) prepopup 5.1094 0.9887
+\i (00:07:03) oops 
+\i (00:07:20) define grid 
+\t (00:07:20) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (00:07:27) setwindow form.grid
+\i (00:07:27) FORM grid non_etch non_etch_x_grids 0.5 
+\i (00:07:29) FORM grid non_etch non_etch_y_grids 0.5 
+\i (00:07:30) FORM grid all_etch all_etch_x_grids 0.5 
+\i (00:07:31) FORM grid all_etch all_etch_y_grids 0.5 
+\i (00:07:32) FORM grid done  
+\i (00:07:59) setwindow pcb
+\i (00:07:59) pick grid -0.0226 2.1057
+\t (00:07:59) last pick:  0.0000 2.0000
+\i (00:08:05) prepopup -0.7170 2.6340
+\i (00:08:06) oops 
+\i (00:08:13) add arc 
+\i (00:08:15) pick grid -0.0226 2.0000
+\t (00:08:15) last pick:  0.0000 2.0000
+\i (00:08:18) pick grid -0.0075 -2.2566
+\t (00:08:18) last pick:  0.0000 -2.5000
+\i (00:08:28) pick grid -2.2566 0.1132
+\t (00:08:28) last pick:  -2.5000 0.0000
+\i (00:08:39) prepopup 2.2868 2.5283
+\i (00:08:41) oops 
+\t (00:08:41) last pick:  0.0000 -2.5000
+\i (00:08:42) prepopup -3.2981 0.2943
+\i (00:08:43) oops 
+\t (00:08:43) last pick:  0.0000 2.0000
+\i (00:08:43) prepopup -2.8000 0.3547
+\i (00:08:44) oops 
+\i (00:08:48) pick grid 0.0377 2.5283
+\t (00:08:48) last pick:  0.0000 2.5000
+\i (00:08:50) pick grid -0.0075 -2.2566
+\t (00:08:50) last pick:  0.0000 -2.5000
+\i (00:08:55) pick grid -2.7396 0.2491
+\t (00:08:55) last pick:  -2.5000 0.0000
+\i (00:09:02) setwindow form.mini
+\i (00:09:02) FORM mini line_width 0.2540 
+\i (00:09:07) setwindow pcb
+\i (00:09:07) pick grid 0.0076 2.4679
+\t (00:09:07) last pick:  0.0000 2.5000
+\i (00:09:09) prepopup -0.4906 4.4604
+\i (00:09:09) oops 
+\t (00:09:09) last pick:  -2.5000 0.0000
+\i (00:09:10) prepopup -0.8226 4.5208
+\i (00:09:12) cancel 
+\i (00:09:12) generaledit 
+\i (00:09:14) pick grid -5.3509 5.7887
+\t (00:09:14) last pick:  -5.5000 6.0000
+\i (00:09:15) prepopup -5.1396 5.1547
+\i (00:09:15) pick grid -6.0302 5.9396
+\t (00:09:15) last pick:  -6.0000 6.0000
+\i (00:09:25) add circle 
+\t (00:09:25) Pick center point of the circle.
+\t (00:09:25) Pick center point of the circle.
+\i (00:09:28) pick grid -2.4830 -0.0075
+\t (00:09:28) last pick:  -2.5000 0.0000
+\t (00:09:28) Pick a perimeter point on the circle.
+\i (00:09:30) prepopup -2.3321 -0.1283
+\i (00:09:31) oops 
+\t (00:09:31) Pick center point of the circle.
+\i (00:09:32) pick grid -0.0226 -0.0075
+\t (00:09:32) last pick:  0.0000 0.0000
+\t (00:09:32) Pick a perimeter point on the circle.
+\i (00:09:43) pick grid -2.2566 -0.0075
+\t (00:09:43) last pick:  -2.5000 0.0000
+\t (00:09:43) Pick center point of the circle.
+\i (00:09:45) prepopup -3.6000 3.5849
+\i (00:09:46) done 
+\i (00:09:46) generaledit 
+\i (00:09:47) pick grid -3.9321 3.3585
+\t (00:09:47) last pick:  -4.0000 3.5000
+\i (00:10:00) delete 
+\i (00:10:01) pick grid -0.4151 1.6377
+\t (00:10:01) last pick:  -0.5000 1.5000
+\t (00:10:01) Line "Package Geometry/Silkscreen_Top"
+\i (00:10:02) pick grid -0.0226 1.9094
+\t (00:10:02) last pick:  0.0000 2.0000
+\t (00:10:02) Line "Package Geometry/Silkscreen_Top"
+\i (00:10:03) pick grid 0.0679 2.2566
+\t (00:10:03) last pick:  0.0000 2.5000
+\t (00:10:03) Line "Package Geometry/Silkscreen_Top"
+\i (00:10:04) pick grid 0.3547 2.3321
+\t (00:10:04) last pick:  0.5000 2.5000
+\t (00:10:04) Line "Package Geometry/Silkscreen_Top"
+\i (00:10:04) pick grid 0.0830 1.7585
+\t (00:10:04) last pick:  0.0000 2.0000
+\t (00:10:04) Line "Package Geometry/Silkscreen_Top"
+\i (00:10:05) pick grid -0.8830 1.6076
+\t (00:10:05) last pick:  -1.0000 1.5000
+\i (00:10:06) pick grid 0.0981 1.5472
+\t (00:10:06) last pick:  0.0000 1.5000
+\i (00:10:07) zoom in 1 
+\i (00:10:07) setwindow pcb
+\i (00:10:07) zoom in 0.2642 1.9547
+\i (00:10:07) trapsize 377
+\i (00:10:07) zoom in 1 
+\i (00:10:07) setwindow pcb
+\i (00:10:07) zoom in 0.2642 1.9623
+\i (00:10:07) trapsize 189
+\i (00:10:09) pick grid 0.4567 1.9812
+\t (00:10:09) last pick:  0.5000 2.0000
+\t (00:10:09) Line "Package Geometry/Silkscreen_Top"
+\i (00:10:10) pick grid -0.3396 1.2604
+\t (00:10:10) last pick:  -0.5000 1.5000
+\t (00:10:10) Line "Package Geometry/Silkscreen_Top"
+\i (00:10:11) pick grid 0.1095 1.5321
+\t (00:10:11) last pick:  0.0000 1.5000
+\i (00:10:12) prepopup -0.0263 1.7774
+\i (00:10:12) done 
+\i (00:10:12) generaledit 
+\i (00:10:13) zoom out 1 
+\i (00:10:13) setwindow pcb
+\i (00:10:13) zoom out -0.0226 1.6982
+\i (00:10:13) trapsize 377
+\i (00:10:13) zoom out 1 
+\i (00:10:13) setwindow pcb
+\i (00:10:13) zoom out -0.0150 1.6680
+\i (00:10:13) trapsize 755
+\i (00:10:13) pick grid -4.6566 1.5774
+\t (00:10:13) last pick:  -4.5000 1.5000
+\i (00:10:17) save 
+\i (00:10:19) fillin yes 
+\t (00:10:19) Symbol 'led-th_bd5_9-p2_54-fd.psm' created.
+\i (00:10:19) generaledit 
+\i (00:10:37) zoom in 1 
+\i (00:10:37) setwindow pcb
+\i (00:10:37) zoom in -4.5811 -0.4755
+\i (00:10:37) trapsize 377
+\i (00:10:53) add line 
+\i (00:10:54) pick grid -1.4641 1.4793
+\t (00:10:54) last pick:  -1.5000 1.5000
+\i (00:10:55) pick grid -0.7471 1.4566
+\t (00:10:55) last pick:  -0.5000 1.5000
+\i (00:10:55) pick grid -0.9282 1.7510
+\t (00:10:55) last pick:  -1.0000 2.0000
+\i (00:10:57) prepopup -0.7018 1.7585
+\i (00:10:57) oops 
+\t (00:10:57) last pick:  -0.5000 1.5000
+\i (00:10:58) prepopup -0.3924 1.5019
+\i (00:11:00) oops 
+\t (00:11:00) last pick:  -1.5000 1.5000
+\i (00:11:01) pick grid -0.7471 1.3812
+\t (00:11:01) last pick:  -0.5000 1.5000
+\i (00:11:01) prepopup -0.5660 1.4340
+\i (00:11:02) cancel 
+\i (00:11:03) generaledit 
+\i (00:11:05) add line 
+\i (00:11:06) pick grid -1.4188 1.4717
+\t (00:11:06) last pick:  -1.5000 1.5000
+\i (00:11:07) pick grid -0.7471 1.4416
+\t (00:11:07) last pick:  -0.5000 1.5000
+\i (00:11:08) pick grid -0.7471 1.4114
+\t (00:11:08) last pick:  -0.5000 1.5000
+\t (00:11:08) last pick:  -0.5000 1.5000
+\w (00:11:08) WARNING(SPMHA1-339): Pick equals previous pick ... try again.
+\e (00:11:08) ERROR(SPMHA1-415): Line segments cannot overlap.
+\t (00:11:08) last pick:  -1.5000 1.5000
+\i (00:11:10) prepopup -0.4905 1.4491
+\i (00:11:11) done 
+\i (00:11:11) generaledit 
+\i (00:11:13) add line 
+\i (00:11:14) pick grid -0.9886 1.8944
+\t (00:11:14) last pick:  -1.0000 2.0000
+\i (00:11:17) pick grid -1.0716 1.2453
+\t (00:11:17) last pick:  -1.0000 1.0000
+\i (00:11:17) prepopup -0.6792 1.6831
+\i (00:11:18) done 
+\i (00:11:18) generaledit 
+\i (00:11:21) add line 
+\i (00:11:24) pick grid 1.0189 1.5095
+\t (00:11:24) last pick:  1.0000 1.5000
+\i (00:11:25) pick grid 1.7510 1.4566
+\t (00:11:25) last pick:  2.0000 1.5000
+\i (00:11:26) prepopup 1.2831 1.4868
+\i (00:11:26) done 
+\i (00:11:26) generaledit 
+\i (00:11:28) drag_start grid -0.3471 1.0793
+\i (00:11:29) drag_stop -1.4641 1.7887
+\i (00:11:32) move 
+\i (00:11:33) pick grid -0.8905 1.4642
+\t (00:11:33) last pick:  -1.0000 1.5000
+\t (00:11:33) Element has no origin, using pick.
+\t (00:11:33) Element has no origin, using pick.
+\t (00:11:33) Pick new location for the element(s).
+\i (00:11:36) pick grid -1.2528 1.4868
+\t (00:11:36) last pick:  -1.5000 1.5000
+\i (00:11:36) generaledit 
+\i (00:11:38) pick grid -1.4943 1.4491
+\t (00:11:38) last pick:  -1.5000 1.5000
+\i (00:11:40) pick grid -0.4754 1.2453
+\t (00:11:40) last pick:  -0.5000 1.0000
+\i (00:11:40) drag_start grid -0.8980 1.1095
+\i (00:11:40) drag_stop -1.5320 1.5548
+\i (00:11:41) prepopup -1.4867 1.5548
+\i (00:11:41) pop dyn_option_select @:@Move 
+\i (00:11:41) move 
+\t (00:11:41) last pick:  -1.5000 1.5000
+\t (00:11:41) Element has no origin, using pick.
+\t (00:11:41) Element has no origin, using pick.
+\t (00:11:41) Pick new location for the element(s).
+\i (00:11:42) pick grid -1.2452 1.5246
+\t (00:11:42) last pick:  -1.0000 1.5000
+\i (00:11:42) generaledit 
+\i (00:11:47) pick grid 0.5359 1.3585
+\t (00:11:47) last pick:  0.5000 1.5000
+\i (00:11:48) prepopup 1.1472 1.4717
+\i (00:11:49) pop dyn_option_select @:@Move 
+\i (00:11:49) move 
+\t (00:11:49) last pick:  1.0000 1.5000
+\t (00:11:49) last pick:  1.0000 1.5000
+\t (00:11:49) Element has no origin, using pick.
+\t (00:11:49) Pick new location for the element(s).
+\i (00:11:50) pick grid 0.7472 1.5095
+\t (00:11:50) last pick:  0.5000 1.5000
+\i (00:11:50) generaledit 
+\i (00:11:51) pick grid 0.6265 3.1019
+\t (00:11:51) last pick:  0.5000 3.0000
+\i (00:12:01) pick grid -4.7018 1.8566
+\t (00:12:01) last pick:  -4.5000 2.0000
+\i (00:12:01) prepopup -4.8754 2.0982
+\i (00:12:01) pick grid -3.6377 2.8378
+\t (00:12:01) last pick:  -3.5000 3.0000
+\i (00:12:03) save 
+\i (00:12:04) fillin yes 
+\t (00:12:04) Symbol 'led-th_bd5_9-p2_54-fd.psm' created.
+\i (00:12:04) generaledit 
+\i (00:12:05) zoom out 1 
+\i (00:12:05) setwindow pcb
+\i (00:12:05) zoom out -3.9094 1.2604
+\i (00:12:05) trapsize 755
+\i (00:12:06) exit 
+\t (00:12:08)     Journal end - Mon May 02 14:38:21 2022

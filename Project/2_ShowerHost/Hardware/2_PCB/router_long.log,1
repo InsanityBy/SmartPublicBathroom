@@ -1,0 +1,564 @@
+
+*********************************************************************
+                         ROUTER-LOG
+*********************************************************************
+
+NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
+Started on   Tue May 03 02:51:09 2022
+
+---------------------------------------------------------------------
+Statistics at the Start of the Route:
+----------------------------
+
+    Board Statistics:
+    -----------------
+        Components:  Placed 115  Unplaced 0  Total 115
+        Nets:  W/Rats 75  No/Rats 0  Total 105
+        Pins:  W/Rats 352  No/Rats 0  Unused 41  Unplaced 0  Total 393
+        Equivalent ICs (1 pin = 1/14 EIC)  28
+        Router Keepin (in) (0.0787,0.0787) by (3.0709,3.8583)
+        Board area (sq in) 11.3
+        Board density (sq in/EIC) 0.403
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Manh Distance (inches)     112.73
+        Etch Length (inches)       122.38        0.00       122.38
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+---------------------------------------------------------------------
+General Routing Parameters
+--------------------------
+
+    Checkpoint at:  Last step 1:  Last execution 1
+    Overwrite router.log
+    Auto Save ON
+    Dynamic Control OFF
+    Direct Path Router OFF
+    Component Orientation  HORIZONTAL
+    Order Connections Short First
+    Max net priority 0
+    Corner type: 45
+    Side Entry ALLOWED
+    DO NOT FORCE to Pin Escape
+    Ripup/Cleanup Pin Escapes OFF
+    Via Preference OFF
+
+
+---------------------------------------------------------------------
+Layers and Drc Rules
+--------------------
+
+    Subclass                          Spacing       Line Width
+    Idx Name                Dir   ll    lv    vv    Def   Neck    Via    Max45
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     1  TOP                  H  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     2  BOTTOM               V  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+
+    ATTEMPTS: 0 this step: 0 skips:  
+    count_invalid 0 in 0  0:0:0 hours
+---------------------------------------------------------------------
+Statistics at the End of the Route:
+----------------------------
+
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Etch Length (inches)       122.38        0.00       122.38
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+    Total cpu time - 0:0:30 hours
+    Total elapsed time - 5397:11:36 hours
+    Invalid Count Time: 0 0:0:0 hours
+    Route ended on  Tue May 03 02:51:09 2022
+
+*********************************************************************
+                         ROUTER-LOG
+*********************************************************************
+
+NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
+Started on   Tue May 03 02:51:09 2022
+
+---------------------------------------------------------------------
+Statistics at the Start of the Route:
+----------------------------
+
+    Board Statistics:
+    -----------------
+        Components:  Placed 115  Unplaced 0  Total 115
+        Nets:  W/Rats 75  No/Rats 0  Total 105
+        Pins:  W/Rats 352  No/Rats 0  Unused 41  Unplaced 0  Total 393
+        Equivalent ICs (1 pin = 1/14 EIC)  28
+        Router Keepin (in) (0.0787,0.0787) by (3.0709,3.8583)
+        Board area (sq in) 11.3
+        Board density (sq in/EIC) 0.403
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Manh Distance (inches)     112.73
+        Etch Length (inches)       122.38        0.00       122.38
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+---------------------------------------------------------------------
+General Routing Parameters
+--------------------------
+
+    Checkpoint at:  Last step 1:  Last execution 1
+    Overwrite router.log
+    Auto Save ON
+    Dynamic Control OFF
+    Direct Path Router OFF
+    Component Orientation  HORIZONTAL
+    Order Connections Short First
+    Max net priority 0
+    Corner type: 45
+    Side Entry ALLOWED
+    DO NOT FORCE to Pin Escape
+    Ripup/Cleanup Pin Escapes OFF
+    Via Preference OFF
+
+
+---------------------------------------------------------------------
+Layers and Drc Rules
+--------------------
+
+    Subclass                          Spacing       Line Width
+    Idx Name                Dir   ll    lv    vv    Def   Neck    Via    Max45
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     1  TOP                  H  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     2  BOTTOM               V  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+
+    ATTEMPTS: 0 this step: 0 skips:  
+    count_invalid 0 in 0  0:0:0 hours
+---------------------------------------------------------------------
+Statistics at the End of the Route:
+----------------------------
+
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Etch Length (inches)       122.38        0.00       122.38
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+    Total cpu time - 0:0:30 hours
+    Total elapsed time - 5397:11:36 hours
+    Invalid Count Time: 0 0:0:0 hours
+    Route ended on  Tue May 03 02:51:09 2022
+
+*********************************************************************
+                         ROUTER-LOG
+*********************************************************************
+
+NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
+Started on   Tue May 03 02:51:10 2022
+
+---------------------------------------------------------------------
+Statistics at the Start of the Route:
+----------------------------
+
+    Board Statistics:
+    -----------------
+        Components:  Placed 115  Unplaced 0  Total 115
+        Nets:  W/Rats 75  No/Rats 0  Total 105
+        Pins:  W/Rats 352  No/Rats 0  Unused 41  Unplaced 0  Total 393
+        Equivalent ICs (1 pin = 1/14 EIC)  28
+        Router Keepin (in) (0.0787,0.0787) by (3.0709,3.8583)
+        Board area (sq in) 11.3
+        Board density (sq in/EIC) 0.403
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Manh Distance (inches)     112.73
+        Etch Length (inches)       118.52        0.00       118.52
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+---------------------------------------------------------------------
+General Routing Parameters
+--------------------------
+
+    Checkpoint at:  Last step 1:  Last execution 1
+    Overwrite router.log
+    Auto Save ON
+    Dynamic Control OFF
+    Direct Path Router OFF
+    Component Orientation  HORIZONTAL
+    Order Connections Short First
+    Max net priority 0
+    Corner type: 45
+    Side Entry ALLOWED
+    DO NOT FORCE to Pin Escape
+    Ripup/Cleanup Pin Escapes OFF
+    Via Preference OFF
+
+
+---------------------------------------------------------------------
+Layers and Drc Rules
+--------------------
+
+    Subclass                          Spacing       Line Width
+    Idx Name                Dir   ll    lv    vv    Def   Neck    Via    Max45
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     1  TOP                  H  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     2  BOTTOM               V  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+
+    ATTEMPTS: 0 this step: 0 skips:  
+    count_invalid 0 in 0  0:0:0 hours
+---------------------------------------------------------------------
+Statistics at the End of the Route:
+----------------------------
+
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Etch Length (inches)       118.73        0.00       118.73
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+    Total cpu time - 0:0:31 hours
+    Total elapsed time - 5397:11:37 hours
+    Invalid Count Time: 0 0:0:0 hours
+    Route ended on  Tue May 03 02:51:10 2022
+
+*********************************************************************
+                         ROUTER-LOG
+*********************************************************************
+
+NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
+Started on   Tue May 03 02:54:12 2022
+
+---------------------------------------------------------------------
+Statistics at the Start of the Route:
+----------------------------
+
+    Board Statistics:
+    -----------------
+        Components:  Placed 115  Unplaced 0  Total 115
+        Nets:  W/Rats 75  No/Rats 0  Total 105
+        Pins:  W/Rats 352  No/Rats 0  Unused 41  Unplaced 0  Total 393
+        Equivalent ICs (1 pin = 1/14 EIC)  28
+        Router Keepin (in) (0.0787,0.0787) by (3.0709,3.8583)
+        Board area (sq in) 11.3
+        Board density (sq in/EIC) 0.403
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Manh Distance (inches)     112.73
+        Etch Length (inches)       120.13        0.00       120.13
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+---------------------------------------------------------------------
+General Routing Parameters
+--------------------------
+
+    Checkpoint at:  Last step 1:  Last execution 1
+    Overwrite router.log
+    Auto Save ON
+    Dynamic Control OFF
+    Direct Path Router OFF
+    Component Orientation  HORIZONTAL
+    Order Connections Short First
+    Max net priority 0
+    Corner type: 45
+    Side Entry ALLOWED
+    DO NOT FORCE to Pin Escape
+    Ripup/Cleanup Pin Escapes OFF
+    Via Preference OFF
+
+
+---------------------------------------------------------------------
+Layers and Drc Rules
+--------------------
+
+    Subclass                          Spacing       Line Width
+    Idx Name                Dir   ll    lv    vv    Def   Neck    Via    Max45
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     1  TOP                  H  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     2  BOTTOM               V  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+
+    ATTEMPTS: 0 this step: 0 skips:  
+    count_invalid 0 in 0  0:0:0 hours
+---------------------------------------------------------------------
+Statistics at the End of the Route:
+----------------------------
+
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Etch Length (inches)       120.13        0.00       120.13
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+    Total cpu time - 0:0:51 hours
+    Total elapsed time - 5397:14:38 hours
+    Invalid Count Time: 0 0:0:0 hours
+    Route ended on  Tue May 03 02:54:12 2022
+
+*********************************************************************
+                         ROUTER-LOG
+*********************************************************************
+
+NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
+Started on   Tue May 03 02:54:12 2022
+
+---------------------------------------------------------------------
+Statistics at the Start of the Route:
+----------------------------
+
+    Board Statistics:
+    -----------------
+        Components:  Placed 115  Unplaced 0  Total 115
+        Nets:  W/Rats 75  No/Rats 0  Total 105
+        Pins:  W/Rats 352  No/Rats 0  Unused 41  Unplaced 0  Total 393
+        Equivalent ICs (1 pin = 1/14 EIC)  28
+        Router Keepin (in) (0.0787,0.0787) by (3.0709,3.8583)
+        Board area (sq in) 11.3
+        Board density (sq in/EIC) 0.403
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Manh Distance (inches)     112.73
+        Etch Length (inches)       120.13        0.00       120.13
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+---------------------------------------------------------------------
+General Routing Parameters
+--------------------------
+
+    Checkpoint at:  Last step 1:  Last execution 1
+    Overwrite router.log
+    Auto Save ON
+    Dynamic Control OFF
+    Direct Path Router OFF
+    Component Orientation  HORIZONTAL
+    Order Connections Short First
+    Max net priority 0
+    Corner type: 45
+    Side Entry ALLOWED
+    DO NOT FORCE to Pin Escape
+    Ripup/Cleanup Pin Escapes OFF
+    Via Preference OFF
+
+
+---------------------------------------------------------------------
+Layers and Drc Rules
+--------------------
+
+    Subclass                          Spacing       Line Width
+    Idx Name                Dir   ll    lv    vv    Def   Neck    Via    Max45
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     1  TOP                  H  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     2  BOTTOM               V  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+
+    ATTEMPTS: 0 this step: 0 skips:  
+    count_invalid 0 in 0  0:0:0 hours
+---------------------------------------------------------------------
+Statistics at the End of the Route:
+----------------------------
+
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Etch Length (inches)       120.13        0.00       120.13
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+    Total cpu time - 0:0:51 hours
+    Total elapsed time - 5397:14:38 hours
+    Invalid Count Time: 0 0:0:0 hours
+    Route ended on  Tue May 03 02:54:12 2022
+
+*********************************************************************
+                         ROUTER-LOG
+*********************************************************************
+
+NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd
+Started on   Tue May 03 02:54:13 2022
+
+---------------------------------------------------------------------
+Statistics at the Start of the Route:
+----------------------------
+
+    Board Statistics:
+    -----------------
+        Components:  Placed 115  Unplaced 0  Total 115
+        Nets:  W/Rats 75  No/Rats 0  Total 105
+        Pins:  W/Rats 352  No/Rats 0  Unused 41  Unplaced 0  Total 393
+        Equivalent ICs (1 pin = 1/14 EIC)  28
+        Router Keepin (in) (0.0787,0.0787) by (3.0709,3.8583)
+        Board area (sq in) 11.3
+        Board density (sq in/EIC) 0.403
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Manh Distance (inches)     112.73
+        Etch Length (inches)       118.48        0.00       118.48
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+---------------------------------------------------------------------
+General Routing Parameters
+--------------------------
+
+    Checkpoint at:  Last step 1:  Last execution 1
+    Overwrite router.log
+    Auto Save ON
+    Dynamic Control OFF
+    Direct Path Router OFF
+    Component Orientation  HORIZONTAL
+    Order Connections Short First
+    Max net priority 0
+    Corner type: 45
+    Side Entry ALLOWED
+    DO NOT FORCE to Pin Escape
+    Ripup/Cleanup Pin Escapes OFF
+    Via Preference OFF
+
+
+---------------------------------------------------------------------
+Layers and Drc Rules
+--------------------
+
+    Subclass                          Spacing       Line Width
+    Idx Name                Dir   ll    lv    vv    Def   Neck    Via    Max45
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     1  TOP                  H  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+    --- ----                ---   --    --    --    ---   ----    ---    ---
+     2  BOTTOM               V  8.00  8.00  8.00   8.00  8.00   24.00  25.00
+        X grids:     8.00 9.00 8.00  Offset: 0.00
+        Y grids:     8.00 9.00 8.00  Offset: 0.00
+
+    ATTEMPTS: 0 this step: 0 skips:  
+    count_invalid 0 in 0  0:0:0 hours
+---------------------------------------------------------------------
+Statistics at the End of the Route:
+----------------------------
+
+
+    Connection Statistics:        W/Rats      No/Rats      Total
+    ----------------------        ------      -------      -----
+        Connections                247           0          247
+        Already Connected          247           0          247
+        Missing Connections          0           0            0
+        Connection Completion      100.00%       0.00%      100.00%
+        Etch Length (inches)       118.67        0.00       118.67
+        Number of vias		    74           0           74
+        Vias per Connection          0.30        0.00         0.30
+        Smd pins with attached clines                       266
+
+
+
+    Total cpu time - 0:0:51 hours
+    Total elapsed time - 5397:14:40 hours
+    Invalid Count Time: 0 0:0:0 hours
+    Route ended on  Tue May 03 02:54:13 2022

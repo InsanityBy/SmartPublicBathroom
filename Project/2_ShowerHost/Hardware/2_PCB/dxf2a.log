@@ -1,0 +1,890 @@
+Reading Layer Conversion File 
+Reading DXF file...
+NOTE: Replacing illegal character * with X in *D0.
+NOTE: Replacing illegal character * with X in *D1.
+NOTE: Replacing illegal character * with X in *D2.
+NOTE: Replacing illegal character * with X in *D3.
+NOTE: Replacing illegal character * with X in *D4.
+NOTE: Replacing illegal character * with X in *D5.
+NOTE: Replacing illegal character * with X in *D6.
+NOTE: Replacing illegal character * with X in *D7.
+NOTE: Replacing illegal character * with X in *D8.
+NOTE: Replacing illegal character * with X in *D9.
+NOTE: Replacing illegal character * with X in *D10.
+NOTE: Replacing illegal character * with X in *D11.
+NOTE: Replacing illegal character * with X in *D12.
+NOTE: Replacing illegal character * with X in *D13.
+NOTE: Replacing illegal character * with X in *D14.
+NOTE: Replacing illegal character * with X in *D15.
+NOTE: Replacing illegal character * with X in *D16.
+NOTE: Replacing illegal character * with X in *D17.
+NOTE: Replacing illegal character * with X in *D18.
+NOTE: Replacing illegal character * with X in *D19.
+NOTE: Replacing illegal character * with X in *D20.
+NOTE: Replacing illegal character * with X in *D21.
+NOTE: Replacing illegal character * with X in *D22.
+NOTE: Replacing illegal character * with X in *D23.
+NOTE: Replacing illegal character * with X in *D24.
+NOTE: Replacing illegal character * with X in *D25.
+NOTE: Replacing illegal character * with X in *D26.
+NOTE: Replacing illegal character * with X in *D27.
+NOTE: Replacing illegal character * with X in *D28.
+NOTE: Replacing illegal character * with X in *D29.
+NOTE: Replacing illegal character * with X in *D30.
+NOTE: Replacing illegal character * with X in *D31.
+NOTE: Replacing illegal character * with X in *D32.
+NOTE: Replacing illegal character * with X in *D33.
+NOTE: Replacing illegal character * with X in *D34.
+NOTE: Replacing illegal character * with X in *D35.
+NOTE: Replacing illegal character * with X in *D36.
+NOTE: Replacing illegal character * with X in *D37.
+NOTE: Replacing illegal character * with X in *D38.
+NOTE: Replacing illegal character * with X in *D39.
+NOTE: Replacing illegal character * with X in *D40.
+NOTE: Replacing illegal character * with X in *D41.
+NOTE: Replacing illegal character * with X in *D42.
+NOTE: Replacing illegal character * with X in *D43.
+NOTE: Replacing illegal character * with X in *D44.
+NOTE: Replacing illegal character * with X in *D45.
+NOTE: Replacing illegal character * with X in *D46.
+NOTE: Replacing illegal character * with X in *D47.
+NOTE: Replacing illegal character * with X in *D48.
+NOTE: Replacing illegal character * with X in *D49.
+NOTE: Replacing illegal character * with X in *D50.
+NOTE: Replacing illegal character * with X in *D51.
+NOTE: Replacing illegal character * with X in *D52.
+NOTE: Replacing illegal character * with X in *D53.
+NOTE: Replacing illegal character * with X in *D54.
+NOTE: Replacing illegal character - with X in \U+5706_-_\U+76F4\U+5F84.
+NOTE:  Truncating \U+6D4B\U+91CF\U+5DE5\U+5177 to 28 characters.
+NOTE:  Truncating \U+5782\U+76F4\U+6D4B\U+91CF to 28 characters.
+NOTE:  Truncating \U+53EF\U+5EF6\U+957F\U+7684\U+7EBF\U+6761 to 28 characters.
+NOTE: Replacing illegal character * with X in *D0.
+NOTE: Replacing illegal character * with X in *D1.
+NOTE: Replacing illegal character * with X in *D2.
+NOTE: Replacing illegal character * with X in *D3.
+NOTE: Replacing illegal character * with X in *D4.
+NOTE: Replacing illegal character * with X in *D5.
+NOTE: Replacing illegal character * with X in *D6.
+NOTE: Replacing illegal character * with X in *D7.
+NOTE: Replacing illegal character * with X in *D8.
+NOTE: Replacing illegal character * with X in *D9.
+NOTE: Replacing illegal character * with X in *D10.
+NOTE: Replacing illegal character * with X in *D11.
+NOTE: Replacing illegal character * with X in *D12.
+NOTE: Replacing illegal character * with X in *D13.
+NOTE: Replacing illegal character * with X in *D14.
+NOTE: Replacing illegal character * with X in *D15.
+NOTE: Replacing illegal character * with X in *D16.
+NOTE: Replacing illegal character * with X in *D17.
+NOTE: Replacing illegal character * with X in *D18.
+NOTE: Replacing illegal character * with X in *D19.
+NOTE: Replacing illegal character * with X in *D20.
+NOTE: Replacing illegal character * with X in *D21.
+NOTE: Replacing illegal character * with X in *D22.
+NOTE: Replacing illegal character * with X in *D23.
+NOTE: Replacing illegal character * with X in *D24.
+NOTE: Replacing illegal character * with X in *D25.
+NOTE: Replacing illegal character * with X in *D26.
+NOTE: Replacing illegal character * with X in *D27.
+NOTE: Replacing illegal character * with X in *D28.
+NOTE: Replacing illegal character * with X in *D29.
+NOTE: Replacing illegal character * with X in *D30.
+NOTE: Replacing illegal character * with X in *D31.
+NOTE: Replacing illegal character * with X in *D32.
+NOTE: Replacing illegal character * with X in *D33.
+NOTE: Replacing illegal character * with X in *D34.
+NOTE: Replacing illegal character * with X in *D35.
+NOTE: Replacing illegal character * with X in *D36.
+NOTE: Replacing illegal character * with X in *D37.
+NOTE: Replacing illegal character * with X in *D38.
+NOTE: Replacing illegal character * with X in *D39.
+NOTE: Replacing illegal character * with X in *D40.
+NOTE: Replacing illegal character * with X in *D41.
+NOTE: Replacing illegal character * with X in *D42.
+NOTE: Replacing illegal character * with X in *D43.
+NOTE: Replacing illegal character * with X in *D44.
+NOTE: Replacing illegal character * with X in *D45.
+NOTE: Replacing illegal character * with X in *D46.
+NOTE: Replacing illegal character * with X in *D47.
+NOTE: Replacing illegal character * with X in *D48.
+NOTE: Replacing illegal character * with X in *D49.
+NOTE: Replacing illegal character * with X in *D50.
+NOTE: Replacing illegal character * with X in *D51.
+NOTE: Replacing illegal character * with X in *D52.
+NOTE: Replacing illegal character * with X in *D53.
+NOTE: Replacing illegal character * with X in *D54.
+done.
+NOTE: Ignoring unsupported element MTEXT on line 18834.
+NOTE: Ignoring unsupported element MTEXT on line 18862.
+NOTE: Ignoring unsupported element HATCH on line 18928.
+NOTE: Ignoring unsupported element MTEXT on line 19028.
+NOTE: Ignoring unsupported element MTEXT on line 19090.
+NOTE: Ignoring unsupported element MTEXT on line 19152.
+NOTE: Ignoring unsupported element HATCH on line 19218.
+NOTE: Ignoring unsupported element MTEXT on line 19290.
+NOTE: Ignoring unsupported element MTEXT on line 19352.
+NOTE: Ignoring unsupported element HATCH on line 19418.
+NOTE: Ignoring unsupported element MTEXT on line 19486.
+NOTE: Ignoring unsupported element HATCH on line 19552.
+NOTE: Ignoring unsupported element MTEXT on line 19618.
+NOTE: Ignoring unsupported element HATCH on line 19684.
+NOTE: Ignoring unsupported element MTEXT on line 19750.
+NOTE: Ignoring unsupported element HATCH on line 19812.
+NOTE: Ignoring unsupported element MTEXT on line 19874.
+NOTE: Ignoring unsupported element HATCH on line 19940.
+NOTE: Ignoring unsupported element MTEXT on line 20006.
+NOTE: Ignoring unsupported element HATCH on line 20072.
+NOTE: Ignoring unsupported element MTEXT on line 20138.
+NOTE: Ignoring unsupported element HATCH on line 20204.
+NOTE: Ignoring unsupported element MTEXT on line 20270.
+NOTE: Ignoring unsupported element HATCH on line 20336.
+NOTE: Ignoring unsupported element MTEXT on line 20402.
+NOTE: Ignoring unsupported element HATCH on line 20468.
+NOTE: Ignoring unsupported element MTEXT on line 20534.
+NOTE: Ignoring unsupported element HATCH on line 20600.
+NOTE: Ignoring unsupported element MTEXT on line 20666.
+NOTE: Ignoring unsupported element HATCH on line 20732.
+NOTE: Ignoring unsupported element MTEXT on line 20798.
+NOTE: Ignoring unsupported element HATCH on line 20860.
+NOTE: Ignoring unsupported element MTEXT on line 20922.
+NOTE: Ignoring unsupported element HATCH on line 20984.
+NOTE: Ignoring unsupported element MTEXT on line 21046.
+NOTE: Ignoring unsupported element HATCH on line 21108.
+NOTE: Ignoring unsupported element MTEXT on line 21170.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 2500
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 2524
+NOTE: Ignoring unsupported element POINT on line 2596.
+NOTE: Ignoring unsupported element POINT on line 2612.
+NOTE: Ignoring unsupported element POINT on line 2628.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 2780
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 2804
+NOTE: Ignoring unsupported element POINT on line 2876.
+NOTE: Ignoring unsupported element POINT on line 2892.
+NOTE: Ignoring unsupported element POINT on line 2908.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 3054
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 3078
+NOTE: Ignoring unsupported element POINT on line 3150.
+NOTE: Ignoring unsupported element POINT on line 3166.
+NOTE: Ignoring unsupported element POINT on line 3182.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 3328
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 3352
+NOTE: Ignoring unsupported element POINT on line 3424.
+NOTE: Ignoring unsupported element POINT on line 3440.
+NOTE: Ignoring unsupported element POINT on line 3456.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 3602
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 3626
+NOTE: Ignoring unsupported element POINT on line 3698.
+NOTE: Ignoring unsupported element POINT on line 3714.
+NOTE: Ignoring unsupported element POINT on line 3730.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 3882
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 3906
+NOTE: Ignoring unsupported element POINT on line 3954.
+NOTE: Ignoring unsupported element POINT on line 3970.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 4088
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 4112
+NOTE: Ignoring unsupported element POINT on line 4184.
+NOTE: Ignoring unsupported element POINT on line 4200.
+NOTE: Ignoring unsupported element POINT on line 4216.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 4362
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 4386
+NOTE: Ignoring unsupported element POINT on line 4458.
+NOTE: Ignoring unsupported element POINT on line 4474.
+NOTE: Ignoring unsupported element POINT on line 4490.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 4642
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 4666
+NOTE: Ignoring unsupported element POINT on line 4738.
+NOTE: Ignoring unsupported element POINT on line 4754.
+NOTE: Ignoring unsupported element POINT on line 4770.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 4916
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 4940
+NOTE: Ignoring unsupported element POINT on line 5012.
+NOTE: Ignoring unsupported element POINT on line 5028.
+NOTE: Ignoring unsupported element POINT on line 5044.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 5196
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 5220
+NOTE: Ignoring unsupported element POINT on line 5292.
+NOTE: Ignoring unsupported element POINT on line 5308.
+NOTE: Ignoring unsupported element POINT on line 5324.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 5476
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 5500
+NOTE: Ignoring unsupported element POINT on line 5572.
+NOTE: Ignoring unsupported element POINT on line 5588.
+NOTE: Ignoring unsupported element POINT on line 5604.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 5756
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 5780
+NOTE: Ignoring unsupported element POINT on line 5852.
+NOTE: Ignoring unsupported element POINT on line 5868.
+NOTE: Ignoring unsupported element POINT on line 5884.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 6030
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 6054
+NOTE: Ignoring unsupported element POINT on line 6126.
+NOTE: Ignoring unsupported element POINT on line 6142.
+NOTE: Ignoring unsupported element POINT on line 6158.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 6352
+NOTE: Ignoring unsupported element POINT on line 6376.
+NOTE: Ignoring unsupported element POINT on line 6392.
+NOTE: Ignoring unsupported element POINT on line 6408.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 6560
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 6584
+NOTE: Ignoring unsupported element POINT on line 6656.
+NOTE: Ignoring unsupported element POINT on line 6672.
+NOTE: Ignoring unsupported element POINT on line 6688.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 6834
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 6858
+NOTE: Ignoring unsupported element POINT on line 6930.
+NOTE: Ignoring unsupported element POINT on line 6946.
+NOTE: Ignoring unsupported element POINT on line 6962.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 7108
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 7132
+NOTE: Ignoring unsupported element POINT on line 7204.
+NOTE: Ignoring unsupported element POINT on line 7220.
+NOTE: Ignoring unsupported element POINT on line 7236.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 7388
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 7412
+NOTE: Ignoring unsupported element POINT on line 7484.
+NOTE: Ignoring unsupported element POINT on line 7500.
+NOTE: Ignoring unsupported element POINT on line 7516.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 7668
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 7692
+NOTE: Ignoring unsupported element POINT on line 7744.
+NOTE: Ignoring unsupported element POINT on line 7760.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 7878
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 7902
+NOTE: Ignoring unsupported element POINT on line 7974.
+NOTE: Ignoring unsupported element POINT on line 7990.
+NOTE: Ignoring unsupported element POINT on line 8006.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 8158
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 8182
+NOTE: Ignoring unsupported element POINT on line 8254.
+NOTE: Ignoring unsupported element POINT on line 8270.
+NOTE: Ignoring unsupported element POINT on line 8286.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 8432
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 8456
+NOTE: Ignoring unsupported element POINT on line 8528.
+NOTE: Ignoring unsupported element POINT on line 8544.
+NOTE: Ignoring unsupported element POINT on line 8560.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 8712
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 8736
+NOTE: Ignoring unsupported element POINT on line 8808.
+NOTE: Ignoring unsupported element POINT on line 8824.
+NOTE: Ignoring unsupported element POINT on line 8840.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 8986
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 9010
+NOTE: Ignoring unsupported element POINT on line 9082.
+NOTE: Ignoring unsupported element POINT on line 9098.
+NOTE: Ignoring unsupported element POINT on line 9114.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 9260
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 9284
+NOTE: Ignoring unsupported element POINT on line 9356.
+NOTE: Ignoring unsupported element POINT on line 9372.
+NOTE: Ignoring unsupported element POINT on line 9388.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 9540
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 9564
+NOTE: Ignoring unsupported element POINT on line 9636.
+NOTE: Ignoring unsupported element POINT on line 9652.
+NOTE: Ignoring unsupported element POINT on line 9668.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 9814
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 9838
+NOTE: Ignoring unsupported element POINT on line 9910.
+NOTE: Ignoring unsupported element POINT on line 9926.
+NOTE: Ignoring unsupported element POINT on line 9942.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 10094
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 10118
+NOTE: Ignoring unsupported element POINT on line 10190.
+NOTE: Ignoring unsupported element POINT on line 10206.
+NOTE: Ignoring unsupported element POINT on line 10222.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 10374
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 10398
+NOTE: Ignoring unsupported element POINT on line 10470.
+NOTE: Ignoring unsupported element POINT on line 10486.
+NOTE: Ignoring unsupported element POINT on line 10502.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 10654
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 10678
+NOTE: Ignoring unsupported element POINT on line 10750.
+NOTE: Ignoring unsupported element POINT on line 10766.
+NOTE: Ignoring unsupported element POINT on line 10782.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 10928
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 10952
+NOTE: Ignoring unsupported element POINT on line 11024.
+NOTE: Ignoring unsupported element POINT on line 11040.
+NOTE: Ignoring unsupported element POINT on line 11056.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 11208
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 11232
+NOTE: Ignoring unsupported element POINT on line 11304.
+NOTE: Ignoring unsupported element POINT on line 11320.
+NOTE: Ignoring unsupported element POINT on line 11336.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 11482
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 11506
+NOTE: Ignoring unsupported element POINT on line 11578.
+NOTE: Ignoring unsupported element POINT on line 11594.
+NOTE: Ignoring unsupported element POINT on line 11610.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 11762
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 11786
+NOTE: Ignoring unsupported element POINT on line 11858.
+NOTE: Ignoring unsupported element POINT on line 11874.
+NOTE: Ignoring unsupported element POINT on line 11890.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 12036
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 12060
+NOTE: Ignoring unsupported element POINT on line 12132.
+NOTE: Ignoring unsupported element POINT on line 12148.
+NOTE: Ignoring unsupported element POINT on line 12164.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 12310
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 12334
+NOTE: Ignoring unsupported element POINT on line 12406.
+NOTE: Ignoring unsupported element POINT on line 12422.
+NOTE: Ignoring unsupported element POINT on line 12438.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 12590
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 12614
+NOTE: Ignoring unsupported element POINT on line 12686.
+NOTE: Ignoring unsupported element POINT on line 12702.
+NOTE: Ignoring unsupported element POINT on line 12718.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 12864
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 12888
+NOTE: Ignoring unsupported element POINT on line 12960.
+NOTE: Ignoring unsupported element POINT on line 12976.
+NOTE: Ignoring unsupported element POINT on line 12992.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 13144
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 13168
+NOTE: Ignoring unsupported element POINT on line 13220.
+NOTE: Ignoring unsupported element POINT on line 13236.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 13354
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 13378
+NOTE: Ignoring unsupported element POINT on line 13450.
+NOTE: Ignoring unsupported element POINT on line 13466.
+NOTE: Ignoring unsupported element POINT on line 13482.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 13628
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 13652
+NOTE: Ignoring unsupported element POINT on line 13724.
+NOTE: Ignoring unsupported element POINT on line 13740.
+NOTE: Ignoring unsupported element POINT on line 13756.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 13902
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 13926
+NOTE: Ignoring unsupported element POINT on line 13998.
+NOTE: Ignoring unsupported element POINT on line 14014.
+NOTE: Ignoring unsupported element POINT on line 14030.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 14176
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 14200
+NOTE: Ignoring unsupported element POINT on line 14272.
+NOTE: Ignoring unsupported element POINT on line 14288.
+NOTE: Ignoring unsupported element POINT on line 14304.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 14450
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 14474
+NOTE: Ignoring unsupported element POINT on line 14546.
+NOTE: Ignoring unsupported element POINT on line 14562.
+NOTE: Ignoring unsupported element POINT on line 14578.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 14724
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 14748
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 14820
+NOTE: Ignoring unsupported element POINT on line 14844.
+NOTE: Ignoring unsupported element POINT on line 14860.
+NOTE: Ignoring unsupported element POINT on line 14876.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15022
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15046
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15118
+NOTE: Ignoring unsupported element POINT on line 15142.
+NOTE: Ignoring unsupported element POINT on line 15158.
+NOTE: Ignoring unsupported element POINT on line 15174.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15326
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15350
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15422
+NOTE: Ignoring unsupported element POINT on line 15446.
+NOTE: Ignoring unsupported element POINT on line 15462.
+NOTE: Ignoring unsupported element POINT on line 15478.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15624
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15648
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15720
+NOTE: Ignoring unsupported element POINT on line 15744.
+NOTE: Ignoring unsupported element POINT on line 15760.
+NOTE: Ignoring unsupported element POINT on line 15776.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15928
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 15952
+NOTE: Ignoring unsupported element POINT on line 16024.
+NOTE: Ignoring unsupported element POINT on line 16040.
+NOTE: Ignoring unsupported element POINT on line 16056.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 16256
+NOTE: Ignoring unsupported element POINT on line 16280.
+NOTE: Ignoring unsupported element POINT on line 16296.
+NOTE: Ignoring unsupported element POINT on line 16312.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 16464
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 16488
+NOTE: Ignoring unsupported element POINT on line 16560.
+NOTE: Ignoring unsupported element POINT on line 16576.
+NOTE: Ignoring unsupported element POINT on line 16592.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 16744
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 16768
+NOTE: Ignoring unsupported element POINT on line 16840.
+NOTE: Ignoring unsupported element POINT on line 16856.
+NOTE: Ignoring unsupported element POINT on line 16872.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 17018
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 17042
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 17114
+NOTE: Ignoring unsupported element POINT on line 17138.
+NOTE: Ignoring unsupported element POINT on line 17154.
+NOTE: Ignoring unsupported element POINT on line 17170.
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 17322
+
+ERROR: ERROR(SPMHA1-273): Shape intersects with itself.
+ERROR: Failed to add (LW)POLYLINE
+  on BOARD GEOMETRY / CAD
+  LWPOLYLINE on line number 17346
+NOTE: Ignoring unsupported element POINT on line 17418.
+NOTE: Ignoring unsupported element POINT on line 17434.
+NOTE: Ignoring unsupported element POINT on line 17450.
+Layer conversion file: C:/Users/Jessi_10/Desktop/ShowerHost_EnclosureDesign_PCB_2D _l.cnv
+DXF file: C:/Users/Jessi_10/Desktop/ShowerHost_EnclosureDesign_PCB_2D .dxf
+BRD file: D:/PKU/SmartPublicBathroom/Project/2_ShowerHost/Hardware/2_PCB/#Taaaaal50800.tmp
+Update existing design?: YES
+Use default text?: YES
+DXF units: MILLIMETERS
+Design units: MILLIMETERS
+Design precision: 4
+dxf2a complete.

@@ -3,9 +3,47 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  D:.../Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd                    |
-|                                                    Fri Apr 29 10:45:08 2022  |
+|                                                    Sat Apr 30 16:32:24 2022  |
 |------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ CON3_CONN-TH_3P-P2_50_HX25003-3
+ SW PUSHBUTTON-SPST-2_SW-TH_4P-L
+ SW PUSHBUTTON-SPST-2_SW-TH_4P_1
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
 |------------------------------------------------------------------------------|
+|  D:.../Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd                    |
+|                                                    Sat Apr 30 16:32:24 2022  |
+|------------------------------------------------------------------------------|
+| COMPONENTS CHANGED from one device type to another in design                 |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ J1                  CON3_CONN-TH_3P-P2_50_HX25003-3 10.5000 50.9000 CON3_HDR-TH_3P-P2_54-H-F-W8_6_R
+ SW1                 SW PUSHBUTTON-SPST-2_SW-TH_4P-L 22.0000 28.0000 SW PUSHBUTTON-SPST-2_KEY-TH_4P-
+ SW2                 SW PUSHBUTTON-SPST-2_SW-TH_4P_1 48.0000 28.0000 SW PUSHBUTTON-SPST-2_KEY-TH_4_1
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  D:.../Project/2_ShowerHost/Hardware/2_PCB/SHOWERHOST.brd                    |
+|                                                    Sat Apr 30 16:32:24 2022  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ J1.3           10.5000 50.9000 PRIM_FILE      .\pstchip.dat
+ SW1.4          22.0000 28.0000 PRIM_FILE      .\pstchip.dat
+ SW2.4          48.0000 28.0000 PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|       Comp definitions added:       3                                        |
+|       Components changed    :       3                                        |
+|       Slot property added   :       3                                        |
 |                                                                              |
-|   Total ECO changes reported:       0                                        |
+|   Total ECO changes reported:       9                                        |
 |------------------------------------------------------------------------------|

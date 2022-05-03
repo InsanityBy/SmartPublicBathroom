@@ -1,0 +1,18 @@
+#Allegro PCB Router v17-2-51 made 2020/07/07 at 11:25:37
+#Host 
+#ROUTING STATUS <<< D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB\SHOWERTERMINAL.dsn >>>
+Start  Time: Report Time: Tue May 03 22:13:06 2022
+
+Nets         =      103   Connections         =      247
+Current Wire =        0   Reroute wires       =      348
+Completion   =  100.00%   Unconnections       =        0
+| ROUTING HISTORY ================================================================
+|     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+|   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+|----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+| Route    |  1|     0|     0|   1|    0|  120|    0|   0|  0|  0:00:01|  0:00:01|
+| Clean    |  2|     0|     0|   0|    0|  116|    0|   0|   |  0:00:00|  0:00:01|
+| Clean    |  3|     0|     0|   0|    0|  107|    0|   0|   |  0:00:00|  0:00:01|
+| Critic   |  3|     0|     0|   0|    0|  107|    0|   0|   |  0:00:00|  0:00:01|
+| Miter    |  3|     0|     0|   0|    0|  107|    0|   0|   |  0:00:01|  0:00:02|
+| Conflicts between polygon wires and fixed objects:   0

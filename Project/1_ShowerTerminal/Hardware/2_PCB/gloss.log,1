@@ -1,0 +1,37 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Glossing                                                         )
+(                                                                     )
+(    Drawing          : SHOWERTERMINAL.brd                            )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Tue May 03 18:57:31 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Glossing Corners to Arcs initiated on Tue May 03 18:57:31 2022
+
+Maximum Radius = 1.00.
+Minimum Radius = 2.00.
+Number of Executions = 1
+
+Corners to Arcs Stats
+
+
+Number of Glossing Attempts                   : 582
+Number of Actual Glossings                    : 0
+Number of Failed Glossing Attempts: 582
+Number of by No-Gloss nets  : 0
+There were 0 Corners Converted to Arcs.
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Tue May 03 18:57:31 2022
+
+
+Glossing Corners to Arcs finished.
+
+
+WARNING: Glossing operations may leave fillets out of date.
+
+
+Glossing complete.
