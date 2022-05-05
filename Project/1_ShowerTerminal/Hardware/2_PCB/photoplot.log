@@ -1,0 +1,376 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    ARTWORK LOG                                                      )
+(                                                                     )
+(    Drawing          : SHOWERTERMINAL.brd                            )
+(    Software Version : 17.2S079                                      )
+(    Date/Time        : Thu May 05 21:00:59 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+ ---- Photoplot outline rectangle not found; using drawing extents.
+
+
+
+Results from parameter file ...
+    DEVICE-TYPE           GERBER_RS274X
+    OUTPUT-UNITS          INCHES
+    FILM-SIZE             2400000 1600000
+    FORMAT                2.5
+    ABORT-ON-ERROR        NO
+    SCALE                 1
+    SUPPRESS-LEAD-ZEROES  YES
+    SUPPRESS-TRAIL-ZEROES NO
+    SUPPRESS-EQUAL        YES
+    UNDEF-APT-CONT        NO
+
+
+
+================================================================
+     PROCESSING FILM < TOP >
+     TO FILE < D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/gerber/TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                6.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00800                                  DARK 
+  CIRCLE     0.01000                                  DARK 
+  CIRCLE     0.02400                                  DARK 
+  CIRCLE     0.03150                                  DARK 
+  CIRCLE     0.05512                                  DARK 
+  CIRCLE     0.05906                                  DARK 
+  CIRCLE     0.06000                                  DARK 
+  CIRCLE     0.06693                                  DARK 
+  CIRCLE     0.07087                                  DARK 
+  CIRCLE     0.07874                                  DARK 
+  CIRCLE     0.09449                                  DARK 
+  CIRCLE     0.09842                                  DARK 
+  CIRCLE     0.14173                                  DARK 
+  SQUARE     0.05906                     0.000 NO     DARK 
+  SQUARE     0.06000                     0.000 NO     DARK 
+  SQUARE     0.06693                     0.000 NO     DARK 
+  SQUARE     0.07087                     0.000 NO     DARK 
+  SQUARE     0.07874                     0.000 NO     DARK 
+  RECTANGLE  0.03150     x 0.03402      90.000 NO     DARK 
+  RECTANGLE  0.04213     x 0.02362       0.000 NO     DARK 
+  RECTANGLE  0.04331     x 0.08661      90.000 NO     DARK 
+  RECTANGLE  0.04459     x 0.05421       0.000 NO     DARK 
+  RECTANGLE  0.04459     x 0.05421      90.000 NO     DARK 
+  RECTANGLE  0.05551     x 0.05315       0.000 NO     DARK 
+  RECTANGLE  0.05551     x 0.05315      90.000 NO     DARK 
+  RECTANGLE  0.08661     x 0.13780       0.000 NO     DARK 
+  RECTANGLE  0.12835     x 0.04528       0.000 NO     DARK 
+  OBLONG     0.02260     x 0.08024      90.000 NO     DARK 
+  OBLONG     0.05512     x 0.02756       0.000 NO     DARK 
+
+     TOP created.
+
+
+================================================================
+     PROCESSING FILM < BOTTOM >
+     TO FILE < D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/gerber/BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                6.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00800                                  DARK 
+  CIRCLE     0.01000                                  DARK 
+  CIRCLE     0.02400                                  DARK 
+  CIRCLE     0.03150                                  DARK 
+  CIRCLE     0.05512                                  DARK 
+  CIRCLE     0.05906                                  DARK 
+  CIRCLE     0.06000                                  DARK 
+  CIRCLE     0.06693                                  DARK 
+  CIRCLE     0.07087                                  DARK 
+  CIRCLE     0.07874                                  DARK 
+  CIRCLE     0.09449                                  DARK 
+  CIRCLE     0.09842                                  DARK 
+  CIRCLE     0.14173                                  DARK 
+  SQUARE     0.05906                     0.000 NO     DARK 
+  SQUARE     0.06000                     0.000 NO     DARK 
+  SQUARE     0.06693                     0.000 NO     DARK 
+  SQUARE     0.07087                     0.000 NO     DARK 
+  SQUARE     0.07874                     0.000 NO     DARK 
+  RECTANGLE  0.03937     x 0.04921       0.000 NO     DARK 
+  RECTANGLE  0.04459     x 0.05421       0.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.01200       0.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.01200      90.000 NO     DARK 
+  RECTANGLE  0.05551     x 0.05315       0.000 NO     DARK 
+  RECTANGLE  0.06693     x 0.03937       0.000 NO     DARK 
+  OBLONG     0.02480     x 0.07342      90.000 NO     DARK 
+
+     BOTTOM created.
+
+
+================================================================
+     PROCESSING FILM < Soldermask_Top >
+     TO FILE < D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/gerber/Soldermask_Top.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                6.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.03950                                  DARK 
+  CIRCLE     0.06312                                  DARK 
+  CIRCLE     0.06706                                  DARK 
+  CIRCLE     0.06800                                  DARK 
+  CIRCLE     0.07493                                  DARK 
+  CIRCLE     0.07887                                  DARK 
+  CIRCLE     0.08674                                  DARK 
+  CIRCLE     0.10249                                  DARK 
+  CIRCLE     0.10642                                  DARK 
+  CIRCLE     0.16535                                  DARK 
+  SQUARE     0.06706                     0.000 NO     DARK 
+  SQUARE     0.06800                     0.000 NO     DARK 
+  SQUARE     0.07493                     0.000 NO     DARK 
+  SQUARE     0.07887                     0.000 NO     DARK 
+  SQUARE     0.08674                     0.000 NO     DARK 
+  RECTANGLE  0.03950     x 0.04202      90.000 NO     DARK 
+  RECTANGLE  0.05013     x 0.03162       0.000 NO     DARK 
+  RECTANGLE  0.05131     x 0.09461      90.000 NO     DARK 
+  RECTANGLE  0.05259     x 0.06221       0.000 NO     DARK 
+  RECTANGLE  0.05259     x 0.06221      90.000 NO     DARK 
+  RECTANGLE  0.06351     x 0.06115       0.000 NO     DARK 
+  RECTANGLE  0.06351     x 0.06115      90.000 NO     DARK 
+  RECTANGLE  0.09461     x 0.14580       0.000 NO     DARK 
+  RECTANGLE  0.13635     x 0.05328       0.000 NO     DARK 
+  OBLONG     0.03060     x 0.08824      90.000 NO     DARK 
+  OBLONG     0.06312     x 0.03556       0.000 NO     DARK 
+
+     Soldermask_Top created.
+
+
+================================================================
+     PROCESSING FILM < Soldermask_Bottom >
+     TO FILE < D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/gerber/Soldermask_Bottom.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                6.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.03950                                  DARK 
+  CIRCLE     0.06312                                  DARK 
+  CIRCLE     0.06706                                  DARK 
+  CIRCLE     0.06800                                  DARK 
+  CIRCLE     0.07493                                  DARK 
+  CIRCLE     0.07887                                  DARK 
+  CIRCLE     0.08674                                  DARK 
+  CIRCLE     0.10249                                  DARK 
+  CIRCLE     0.10642                                  DARK 
+  CIRCLE     0.16535                                  DARK 
+  SQUARE     0.06706                     0.000 NO     DARK 
+  SQUARE     0.06800                     0.000 NO     DARK 
+  SQUARE     0.07493                     0.000 NO     DARK 
+  SQUARE     0.07887                     0.000 NO     DARK 
+  SQUARE     0.08674                     0.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.01200       0.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.01200      90.000 NO     DARK 
+  RECTANGLE  0.04737     x 0.05721       0.000 NO     DARK 
+  RECTANGLE  0.05259     x 0.06221       0.000 NO     DARK 
+  RECTANGLE  0.06351     x 0.06115       0.000 NO     DARK 
+  RECTANGLE  0.07493     x 0.04737       0.000 NO     DARK 
+  OBLONG     0.03280     x 0.08142      90.000 NO     DARK 
+
+     Soldermask_Bottom created.
+
+
+================================================================
+     PROCESSING FILM < Silkscreen_Top >
+     TO FILE < D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/gerber/Silkscreen_Top.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                6.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00394                                  DARK 
+  CIRCLE     0.00591                                  DARK 
+  CIRCLE     0.00598                                  DARK 
+  CIRCLE     0.00600                                  DARK 
+  CIRCLE     0.00787                                  DARK 
+  CIRCLE     0.01000                                  DARK 
+  CIRCLE     0.01181                                  DARK 
+  CIRCLE     0.02362                                  DARK 
+
+     Silkscreen_Top created.
+
+
+================================================================
+     PROCESSING FILM < Silkscreen_Bottom >
+     TO FILE < D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/gerber/Silkscreen_Bottom.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                6.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00600                                  DARK 
+  CIRCLE     0.01000                                  DARK 
+  CIRCLE     0.01181                                  DARK 
+
+     Silkscreen_Bottom created.
+
+
+================================================================
+     PROCESSING FILM < Drill_Drawing >
+     TO FILE < D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/gerber/Drill_Drawing.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                6.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: 0 width line found at (-1560.00 -4000.00) in MIL
+           ... using undefined line width of 6.00 MIL
+
+    WARNING: Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 6.00 MIL
+
+    WARNING: text composed 0 width line found at (-1110.50 -937.50) in MIL
+           ... using undefined line width of 6.00 MIL
+
+    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 6.00 MIL
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00600                                  DARK 
+
+     Drill_Drawing created with warnings
+
+
+================================================================
+     PROCESSING FILM < OUTLINE >
+     TO FILE < D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/gerber/OUTLINE.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                6.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00600                                  DARK 
+
+     OUTLINE created.
+
+
+------------------------------------------------------
+ SUMMARY:
+        TOP created.
+        BOTTOM created.
+        Soldermask_Top created.
+        Soldermask_Bottom created.
+        Silkscreen_Top created.
+        Silkscreen_Bottom created.
+        Drill_Drawing created with warnings
+        OUTLINE created.
+
+ ARTWORK had warnings
