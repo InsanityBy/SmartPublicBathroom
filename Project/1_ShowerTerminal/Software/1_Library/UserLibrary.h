@@ -16,6 +16,8 @@
 #include "Delay.h"
 #include "TemperatureSensor.h"
 #include "FlowMeter.h"
+#include "Valve.h"
+#include "Button.h"
 
 #endif
 

@@ -1,16 +1,17 @@
 /**
  ******************************************************************************
- * @file    Delay.h
+ * @file    SignalOutput.h
  * @author  Ma Boyang
  * @version V1.0
- * @date    2022.5.7
- * @brief   This file contains all the functions prototypes for delay using systick
+ * @date    2022.5.8
+ * @brief   This file contains all the functions prototypes to control fan, 
+ *          light.
  ******************************************************************************
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __DELAY_H
-#define __DELAY_H
+#ifndef __SIGNALOUTPUT_H
+#define __SIGNALOUTPUT_H
 
 #ifdef __cplusplus
 extern "C"
@@ -24,11 +25,26 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Delay n us
-void Delay_us(uint32_t n);
+// Initialize fan and light control pins
+void SignalOutput_Init(void);
 
-// Delay n ms
-void Delay_ms(uint32_t n);
+// Start fan
+void Fan_Start(void);
+
+// Stop fan
+void Fan_Stop(void);
+
+//Get fan state
+uint8_t Fan_GetState(void);
+
+// Start light
+void Light_Start(void);
+
+// Stop light
+void Light_Stop(void);
+
+//Get light state
+uint8_t Light_GetState(void);
 
 #ifdef __cplusplus
 }

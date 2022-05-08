@@ -5,8 +5,6 @@
   * @version V1.0
   * @date    2022.5.8
   * @brief   This file contains all the functions of the flow meter.
-  *
-  @verbatim
   ******************************************************************************
   */
 

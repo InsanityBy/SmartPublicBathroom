@@ -21,18 +21,18 @@ extern "C"
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx.h"
 
-    /* Exported types ------------------------------------------------------------*/
-    /* Exported constants --------------------------------------------------------*/
-    /* Exported macro ------------------------------------------------------------*/
-    /* Exported functions --------------------------------------------------------*/
-    // Temperature sensor initialize
-    uint8_t TemperatureSensor_Init(void);
+/* Exported types ------------------------------------------------------------*/
+/* Exported constants --------------------------------------------------------*/
+/* Exported macro ------------------------------------------------------------*/
+/* Exported functions --------------------------------------------------------*/
+// Temperature sensor initialize
+uint8_t TemperatureSensor_Init(void);
 
-    // Start convert
-    void Sensor_Convert(void);
+// Start convert
+void Sensor_Convert(void);
 
-    // Get temperature
-    float Sensor_GetTemperature(void);
+// Get temperature
+float Sensor_GetTemperature(void);
 
 #ifdef __cplusplus
 }

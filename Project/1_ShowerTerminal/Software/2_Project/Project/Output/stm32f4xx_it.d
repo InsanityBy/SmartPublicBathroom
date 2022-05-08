@@ -33,3 +33,5 @@
 .\output\stm32f4xx_it.o: ..\..\1_Library\Delay.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\TemperatureSensor.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\FlowMeter.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\Valve.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\Button.h

@@ -1,16 +1,16 @@
 /**
  ******************************************************************************
- * @file    Delay.h
+ * @file    Button.h
  * @author  Ma Boyang
  * @version V1.0
- * @date    2022.5.7
- * @brief   This file contains all the functions prototypes for delay using systick
+ * @date    2022.5.8
+ * @brief   This file contains all the functions prototypes for button.
  ******************************************************************************
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __DELAY_H
-#define __DELAY_H
+#ifndef __BUTTON_H
+#define __BUTTON_H
 
 #ifdef __cplusplus
 extern "C"
@@ -24,11 +24,8 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Delay n us
-void Delay_us(uint32_t n);
-
-// Delay n ms
-void Delay_ms(uint32_t n);
+// Initialize button input pins
+void Button_Init(void);
 
 #ifdef __cplusplus
 }

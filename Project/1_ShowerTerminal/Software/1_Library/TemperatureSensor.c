@@ -5,8 +5,6 @@
   * @version V1.0
   * @date    2022.5.7
   * @brief   This file contains all the functions of the temperature sensor.
-  *
-  @verbatim
   ******************************************************************************
   */
 

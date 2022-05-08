@@ -1,16 +1,16 @@
 /**
  ******************************************************************************
- * @file    Delay.h
+ * @file    Valve.h
  * @author  Ma Boyang
  * @version V1.0
- * @date    2022.5.7
- * @brief   This file contains all the functions prototypes for delay using systick
+ * @date    2022.5.8
+ * @brief   This file contains all the functions prototypes to control valve.
  ******************************************************************************
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __DELAY_H
-#define __DELAY_H
+#ifndef __VALVE_H
+#define __VALVE_H
 
 #ifdef __cplusplus
 extern "C"
@@ -24,11 +24,17 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Delay n us
-void Delay_us(uint32_t n);
+// Initialize valve control pin
+void Valve_Init(void);
 
-// Delay n ms
-void Delay_ms(uint32_t n);
+// Start valve
+void Valve_Start(void);
+
+// Stop valve
+void Valve_Stop(void);
+
+//Get valve state
+uint8_t Valve_GetState(void);
 
 #ifdef __cplusplus
 }

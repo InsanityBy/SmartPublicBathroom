@@ -87,23 +87,32 @@ int main(void)
 {
     /* Initialize all peripherals*/
     Delay_us(1000);
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
     USART1_Init();
     if (TemperatureSensor_Init())
         printf("ERROR\n");
     FlowMeter_Init();
+    Valve_Init();
+    Button_Init();
     Delay_ms(1);
 
-			FlowMeter_Start();
+	FlowMeter_Start();
 
     /* Infinite loop */
     while (1)
     {
         Sensor_Convert();
+        Valve_Start();
+        printf("Valve:%d\n", Valve_GetState());
+        
         Delay_ms(1000);
-        float Flow = FlowMeter_GetValueL();
-        float Temperature = Sensor_GetTemperature();
-        //printf("Temperature: %f\n", Temperature);
-        printf("Flow:%f\n", Flow);
+
+        Valve_Stop();
+        printf("Temperature: %f\n", Sensor_GetTemperature());
+        printf("Flow:%f\n", FlowMeter_GetValueL());
+        printf("Valve:%d\n", Valve_GetState());
+			
+		Delay_ms(1000);
     }
 }
 
