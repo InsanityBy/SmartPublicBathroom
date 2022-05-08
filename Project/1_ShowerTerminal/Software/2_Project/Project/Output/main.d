@@ -31,4 +31,5 @@
 .\output\main.o: ..\..\1_Library\UserLibrary.h
 .\output\main.o: ..\..\1_Library\Delay.h
 .\output\main.o: ..\..\1_Library\TemperatureSensor.h
+.\output\main.o: ..\..\1_Library\FlowMeter.h
 .\output\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
