@@ -16,6 +16,7 @@
 #include "Delay.h"
 #include "SignalOutput.h"
 #include "Button.h"
+#include "TemperatureHumidity.h"
 
 #endif
 

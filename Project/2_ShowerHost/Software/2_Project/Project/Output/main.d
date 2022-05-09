@@ -30,5 +30,7 @@
 .\output\main.o: ..\Library\inc\misc.h
 .\output\main.o: ..\..\1_Library\UserLibrary.h
 .\output\main.o: ..\..\1_Library\Delay.h
-.\output\main.o: ..\..\1_Library\TemperatureSensor.h
+.\output\main.o: ..\..\1_Library\SignalOutput.h
+.\output\main.o: ..\..\1_Library\Button.h
+.\output\main.o: ..\..\1_Library\TemperatureHumidity.h
 .\output\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

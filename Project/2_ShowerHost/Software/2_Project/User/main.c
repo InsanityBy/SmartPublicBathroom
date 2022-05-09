@@ -91,11 +91,16 @@ int main(void)
     USART1_Init();
     SignalOutput_Init();
     Button_Init();
+    TemperatureHumiditySensor_Init();
     Delay_ms(1);
 
     /* Infinite loop */
     while (1)
     {
+        Sensor_Convert();
+        Delay_ms(1000);
+        printf("Temperature: %f\n", Sensor_GetTemperature());
+        printf("Humidity: %f\n", Sensor_GetHumidity());
     }
 }
 

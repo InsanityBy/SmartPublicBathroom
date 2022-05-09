@@ -31,4 +31,6 @@
 .\output\stm32f4xx_it.o: ..\User\main.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\UserLibrary.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Delay.h
-.\output\stm32f4xx_it.o: ..\..\1_Library\TemperatureSensor.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\SignalOutput.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\Button.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\TemperatureHumidity.h
