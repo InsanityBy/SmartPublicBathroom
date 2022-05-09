@@ -4,8 +4,8 @@
   * @author  Ma boyang
   * @version V1.0
   * @date    2022.5.8
-  * @brief   This file contains all the functions to control fan, 
-  *          light.
+  * @brief   This file contains all the functions to control fan, light.(For
+  *         shower host.)
   ******************************************************************************
   */
 
@@ -140,4 +140,4 @@ void SignalOutput_Init(void)
     Fan_Init();
 }
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

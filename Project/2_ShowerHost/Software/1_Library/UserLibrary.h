@@ -3,8 +3,9 @@
  * @file    UserLibrary.h
  * @author  Ma Boyang
  * @version V1.0
- * @date    2022.5.7
- * @brief   This file contains all the includes of user libraries.
+ * @date    2022.5.9
+ * @brief   This file contains all the includes of user libraries.(For shower
+ *          host.)
  ******************************************************************************
  */
 
@@ -16,8 +17,9 @@
 #include "Delay.h"
 #include "SignalOutput.h"
 #include "Button.h"
-#include "TemperatureHumidity.h"
+#include "TemperatureHumiditySensor.h"
+#include "LightSensor.h"
 
 #endif
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

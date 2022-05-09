@@ -1,16 +1,16 @@
 /**
   ******************************************************************************
-  * @file    TemperatureHumidity.c
+  * @file    TemperatureHumiditySensor.c
   * @author  Ma boyang
   * @version V1.0
   * @date    2022.5.9
-  * @brief   This file contains all the functions for temperature - 
-  *         humidity sensor.
+  * @brief   This file contains all the functions for temperature - humidity
+  *         sensor.(For shower host.)
   ******************************************************************************
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "TemperatureHumidity.h"
+#include "TemperatureHumiditySensor.h"
 #include "Delay.h"
 
 /* Private typedef -----------------------------------------------------------*/
@@ -293,4 +293,4 @@ uint8_t TemperatureHumiditySensor_Init(void)
     return Sensor_Check();
 }
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

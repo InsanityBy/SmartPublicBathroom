@@ -5,7 +5,7 @@
  * @version V1.0
  * @date    2022.5.8
  * @brief   This file contains all the functions prototypes to control fan, 
- *          light.
+ *          light.(For shower host.)
  ******************************************************************************
  */
 
@@ -52,4 +52,4 @@ uint8_t Light_GetState(void);
 
 #endif
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

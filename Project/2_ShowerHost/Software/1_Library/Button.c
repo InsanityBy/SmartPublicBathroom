@@ -6,7 +6,7 @@
   * @date    2022.5.8
   * @brief   This file contains all the functions for button. To do something
   *         when button pushed, add functions between FUNCTION BEGIN and FUNCTION
-  *         END.
+  *         END.(For shower host.)
   ******************************************************************************
   */
 
@@ -211,4 +211,4 @@ void TIM4_IRQHandler(void)
     }
 }
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

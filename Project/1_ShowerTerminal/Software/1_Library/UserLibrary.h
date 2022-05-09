@@ -4,7 +4,8 @@
  * @author  Ma Boyang
  * @version V1.0
  * @date    2022.5.7
- * @brief   This file contains all the includes of user libraries.
+ * @brief   This file contains all the includes of user libraries.(For shower
+ *          terminal.)
  ******************************************************************************
  */
 
@@ -21,4 +22,4 @@
 
 #endif
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

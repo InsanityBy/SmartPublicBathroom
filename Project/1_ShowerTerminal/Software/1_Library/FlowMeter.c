@@ -4,7 +4,8 @@
   * @author  Ma boyang
   * @version V1.0
   * @date    2022.5.8
-  * @brief   This file contains all the functions of the flow meter.
+  * @brief   This file contains all the functions of the flow meter.(For shower
+  *         terminal.)
   ******************************************************************************
   */
 
@@ -107,4 +108,4 @@ float FlowMeter_GetValueL(void)
     return (float)number/450;
 }
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

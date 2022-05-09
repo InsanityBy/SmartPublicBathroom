@@ -4,7 +4,8 @@
  * @author  Ma Boyang
  * @version V1.0
  * @date    2022.5.8
- * @brief   This file contains all the functions prototypes for button.
+ * @brief   This file contains all the functions prototypes for button.(For
+ *          shower terminal.)
  ******************************************************************************
  */
 
@@ -33,4 +34,4 @@ void Button_Init(void);
 
 #endif
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

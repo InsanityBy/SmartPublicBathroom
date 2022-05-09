@@ -4,7 +4,8 @@
   * @author  Ma boyang
   * @version V1.0
   * @date    2022.5.8
-  * @brief   This file contains all the functions to control valve.
+  * @brief   This file contains all the functions to control valve.(For shower
+  *         terminal.)
   ******************************************************************************
   */
 
@@ -73,4 +74,4 @@ uint8_t Valve_GetState(void)
     return Valve_State;
 }
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

@@ -4,7 +4,8 @@
   * @author  Ma boyang
   * @version V1.0
   * @date    2022.5.7
-  * @brief   This file contains all the functions of delay using systick.
+  * @brief   This file contains all the functions of delay using systick.(For
+  *         shower terminal.)
   ******************************************************************************
   */
 
@@ -55,4 +56,4 @@ void Delay_ms(uint32_t n)
     SysTick->VAL = 0x00000000;  // Clear current value
 }
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

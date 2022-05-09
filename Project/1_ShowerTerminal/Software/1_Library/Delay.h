@@ -4,7 +4,8 @@
  * @author  Ma Boyang
  * @version V1.0
  * @date    2022.5.7
- * @brief   This file contains all the functions prototypes for delay using systick
+ * @brief   This file contains all the functions prototypes for delay using
+ *          systick.(For shower terminal.)
  ******************************************************************************
  */
 
@@ -36,4 +37,4 @@ void Delay_ms(uint32_t n);
 
 #endif
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

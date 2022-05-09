@@ -1,17 +1,17 @@
 /**
  ******************************************************************************
- * @file    TemperatureHumidity.h
+ * @file    LightSensor.h
  * @author  Ma Boyang
  * @version V1.0
  * @date    2022.5.9
- * @brief   This file contains all the functions prototypes for temperature - 
- *          humidity sensor.
+ * @brief   This file contains all the functions prototypes for light sensor.
+ *          (For shower host.)
  ******************************************************************************
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __TEMPERATUREHUMIDITY_H
-#define __TEMPERATUREHUMIDITY_H
+#ifndef __LIGHTSENSOR_H
+#define __LIGHTSENSOR_H
 
 #ifdef __cplusplus
 extern "C"
@@ -25,17 +25,14 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Temperature - humidity sensor initialize
-uint8_t TemperatureHumiditySensor_Init(void);
+// Initialize input pin and ADC to sample
+void LightSensor_Init(void);
 
-// Start convert
-void Sensor_Convert(void);
+// Get light state, 1 for environment is dark and light should be on
+uint8_t LightSensor_GetState(void);
 
-// Get temperature
-float Sensor_GetTemperature(void);
-
-// Get humidity
-float Sensor_GetHumidity(void);
+// Get accurate lighting value
+float LightSensor_GetValue(void);
 
 #ifdef __cplusplus
 }
@@ -43,4 +40,4 @@ float Sensor_GetHumidity(void);
 
 #endif
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

@@ -1,17 +1,17 @@
 /**
  ******************************************************************************
- * @file    Button.h
+ * @file    TemperatureHumiditySensor.h
  * @author  Ma Boyang
  * @version V1.0
- * @date    2022.5.8
- * @brief   This file contains all the functions prototypes for button.(For
- *          shower host.)
+ * @date    2022.5.9
+ * @brief   This file contains all the functions prototypes for temperature - 
+ *          humidity sensor.(For shower host.)
  ******************************************************************************
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __BUTTON_H
-#define __BUTTON_H
+#ifndef __TEMPERATUREHUMIDITYSENSOR_H
+#define __TEMPERATUREHUMIDITYSENSOR_H
 
 #ifdef __cplusplus
 extern "C"
@@ -25,8 +25,17 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Initialize button input pins
-void Button_Init(void);
+// Temperature - humidity sensor initialize
+uint8_t TemperatureHumiditySensor_Init(void);
+
+// Start convert
+void Sensor_Convert(void);
+
+// Get temperature
+float Sensor_GetTemperature(void);
+
+// Get humidity
+float Sensor_GetHumidity(void);
 
 #ifdef __cplusplus
 }

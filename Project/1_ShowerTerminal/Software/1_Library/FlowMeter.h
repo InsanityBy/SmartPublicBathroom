@@ -5,7 +5,7 @@
   * @version V1.0
   * @date    2022.5.8
   * @brief   This file contains all the functions prototypes for the flow meter 
-  *          sensor library.
+  *          sensor library.(For shower terminal.)
   ******************************************************************************
   */
 
@@ -48,4 +48,4 @@ uint32_t FlowMeter_GetValueR(void);
 
 #endif
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

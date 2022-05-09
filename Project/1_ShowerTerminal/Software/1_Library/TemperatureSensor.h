@@ -5,7 +5,7 @@
  * @version V1.0
  * @date    2022.5.6
  * @brief   This file contains all the functions prototypes for the temperature
- *          sensor library.
+ *          sensor library.(For shower terminal.)
  ******************************************************************************
  */
 
@@ -40,4 +40,4 @@ float Sensor_GetTemperature(void);
 
 #endif
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/

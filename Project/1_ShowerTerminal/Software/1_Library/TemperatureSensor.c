@@ -4,7 +4,8 @@
   * @author  Ma boyang
   * @version V1.0
   * @date    2022.5.7
-  * @brief   This file contains all the functions of the temperature sensor.
+  * @brief   This file contains all the functions of the temperature sensor.(For
+  *         shower terminal.)
   ******************************************************************************
   */
 
@@ -253,4 +254,4 @@ uint8_t TemperatureSensor_Init(void)
     return Sensor_Check();
 }
 
-/*****************************END OF FILE*****************************/
+/***********************************END OF FILE********************************/
