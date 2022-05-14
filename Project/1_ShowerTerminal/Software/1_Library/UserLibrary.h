@@ -19,6 +19,8 @@
 #include "FlowMeter.h"
 #include "Valve.h"
 #include "Button.h"
+#include "InfraredObject.h"
+#include "InfraredHuman.h"
 
 #endif
 

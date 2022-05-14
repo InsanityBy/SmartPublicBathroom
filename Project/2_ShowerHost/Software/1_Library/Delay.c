@@ -1,13 +1,13 @@
 /**
-  ******************************************************************************
-  * @file    Delay.c
-  * @author  Ma boyang
-  * @version V1.0
-  * @date    2022.5.7
-  * @brief   This file contains all the functions of delay using systick.(For
-  *         shower host.)
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    Delay.c
+ * @author  Ma boyang
+ * @version V1.0
+ * @date    2022.5.7
+ * @brief   This file contains all the functions of delay using systick.(For
+ *         shower terminal.)
+ ******************************************************************************
+ */
 
 /* Includes ------------------------------------------------------------------*/
 #include "Delay.h"
@@ -25,7 +25,7 @@
  */
 void Delay_us(uint32_t n)
 {
-    SysTick->LOAD = SystemCoreClock / 8000000 * n; // Reload value, SysTick clock is HCLK/8
+    SysTick->LOAD = (SystemCoreClock / 1000000) * n / 8; // Reload value, SysTick clock is HCLK/8
     SysTick->VAL = 0x00000000;                     // Clear current value
     SysTick->CTRL = 0x00000001;                    // Enable counter
     uint32_t temp = SysTick->CTRL;                 // Get current CTRL value
@@ -44,7 +44,7 @@ void Delay_us(uint32_t n)
  */
 void Delay_ms(uint32_t n)
 {
-    SysTick->LOAD = SystemCoreClock / 8000 * n;    // Reload value, SysTick clock is HCLK/8
+    SysTick->LOAD = (SystemCoreClock / 1000) * n / 8;    // Reload value, SysTick clock is HCLK/8
     SysTick->VAL = 0x00000000;                     // Clear current value
     SysTick->CTRL = 0x00000001;                    // Enable counter
     uint32_t temp = SysTick->CTRL;                 // Get current CTRL value

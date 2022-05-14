@@ -1,14 +1,14 @@
 /**
-  ******************************************************************************
-  * @file    Button.c
-  * @author  Ma boyang
-  * @version V1.0
-  * @date    2022.5.8
-  * @brief   This file contains all the functions for button. To do something
-  *         when button pushed, add functions between FUNCTION BEGIN and FUNCTION
-  *         END.(For shower terminal.)
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    Button.c
+ * @author  Ma boyang
+ * @version V1.0
+ * @date    2022.5.8
+ * @brief   This file contains all the functions for button. To do something
+ *         when button pushed, add functions between FUNCTION BEGIN and FUNCTION
+ *         END.(For shower terminal.)
+ ******************************************************************************
+ */
 
 /* Includes ------------------------------------------------------------------*/
 #include "Button.h"
@@ -40,16 +40,16 @@
  */
 void TIM3_Init(void)
 {
-    //Timer initialize, count period 10ms
+    // Timer initialize, count period 10ms
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
     TIM_TimeBaseInitTypeDef TIM_InitStructure;
     TIM_InitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
     TIM_InitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-    TIM_InitStructure.TIM_Period = 100-1;
-    TIM_InitStructure.TIM_Prescaler = 4200-1;
+    TIM_InitStructure.TIM_Period = 100 - 1;
+    TIM_InitStructure.TIM_Prescaler = 8400 - 1;
     TIM_TimeBaseInit(TIM3, &TIM_InitStructure);
 
-    //NVIC config for TIM4
+    // NVIC config for TIM4
     NVIC_InitTypeDef NVIC_InitStructure;
     NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
@@ -66,16 +66,16 @@ void TIM3_Init(void)
  */
 void TIM4_Init(void)
 {
-    //Timer initialize, count period 10ms
+    // Timer initialize, count period 10ms
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
     TIM_TimeBaseInitTypeDef TIM_InitStructure;
     TIM_InitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
     TIM_InitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-    TIM_InitStructure.TIM_Period = 100-1;
-    TIM_InitStructure.TIM_Prescaler = 4200-1;
+    TIM_InitStructure.TIM_Period = 100 - 1;
+    TIM_InitStructure.TIM_Prescaler = 8400 - 1;
     TIM_TimeBaseInit(TIM4, &TIM_InitStructure);
 
-    //NVIC config for TIM4
+    // NVIC config for TIM4
     NVIC_InitTypeDef NVIC_InitStructure;
     NVIC_InitStructure.NVIC_IRQChannel = TIM4_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
@@ -92,7 +92,7 @@ void TIM4_Init(void)
  */
 void Button_Init(void)
 {
-    //Repair button pin initialize
+    // Repair button pin initialize
     RCC_AHB1PeriphClockCmd(REPAIR_CLOCK, ENABLE); // Enable clock
     GPIO_InitTypeDef GPIO_InitStructure;
     GPIO_InitStructure.GPIO_Pin = REPAIR_PIN;
@@ -100,7 +100,7 @@ void Button_Init(void)
     GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
     GPIO_Init(REPAIR_PINGROUP, &GPIO_InitStructure);
 
-    //EXTI config for repair pin
+    // EXTI config for repair pin
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
     EXTI_InitTypeDef EXTI_InitStructure;
     SYSCFG_EXTILineConfig(REPAIR_EXTIPINGROUP, REPAIR_EXTIPINSOURCE);
@@ -110,14 +110,14 @@ void Button_Init(void)
     EXTI_InitStructure.EXTI_LineCmd = ENABLE;
     EXTI_Init(&EXTI_InitStructure);
 
-    //Help button pin initialize
+    // Help button pin initialize
     RCC_AHB1PeriphClockCmd(HELP_CLOCK, ENABLE); // Enable clock
     GPIO_InitStructure.GPIO_Pin = HELP_PIN;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
     GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
     GPIO_Init(HELP_PINGROUP, &GPIO_InitStructure);
 
-    //EXTI config for help pin
+    // EXTI config for help pin
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
     SYSCFG_EXTILineConfig(HELP_EXTIPINGROUP, HELP_EXTIPINSOURCE);
     EXTI_InitStructure.EXTI_Line = HELP_EXTILINE;
@@ -126,7 +126,7 @@ void Button_Init(void)
     EXTI_InitStructure.EXTI_LineCmd = ENABLE;
     EXTI_Init(&EXTI_InitStructure);
 
-    //NVIC config
+    // NVIC config
     NVIC_InitTypeDef NVIC_InitStructure;
     NVIC_InitStructure.NVIC_IRQChannel = EXTI9_5_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
@@ -134,7 +134,7 @@ void Button_Init(void)
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
 
-    //Debounce timer initialize
+    // Debounce timer initialize
     TIM3_Init();
     TIM4_Init();
 }
@@ -144,21 +144,21 @@ void Button_Init(void)
  * @param  None.
  * @retval None.
  */
-void EXTI9_5_IRQHandler(void)   //When button pushed, start timer wait 10ms and check again
+void EXTI9_5_IRQHandler(void) // When button pushed, start timer wait 10ms and check again
 {
-    //Repair button
-    if(EXTI_GetITStatus(REPAIR_EXTILINE) != RESET)
+    // Repair button
+    if (EXTI_GetITStatus(REPAIR_EXTILINE) != RESET)
     {
         EXTI_ClearITPendingBit(REPAIR_EXTILINE);
-        TIM_Cmd(TIM3,ENABLE);
+        TIM_Cmd(TIM3, ENABLE);
     }
 
-    //Help button
-    if(EXTI_GetITStatus(HELP_EXTILINE) != RESET)
+    // Help button
+    if (EXTI_GetITStatus(HELP_EXTILINE) != RESET)
     {
         EXTI_ClearITPendingBit(HELP_EXTILINE);
-        TIM_Cmd(TIM4,ENABLE);
-    }    
+        TIM_Cmd(TIM4, ENABLE);
+    }
 }
 
 /**
@@ -168,20 +168,20 @@ void EXTI9_5_IRQHandler(void)   //When button pushed, start timer wait 10ms and 
  */
 void TIM3_IRQHandler(void)
 {
-    if(TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
+    if (TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
     {
-        //Clear flag, stop timer and clear count value
+        // Clear flag, stop timer and clear count value
         TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
         TIM_Cmd(TIM3, DISABLE);
         TIM_SetCounter(TIM3, 0x00000000);
 
-        //Check again
-        if(!GPIO_ReadInputDataBit(REPAIR_PINGROUP, REPAIR_PIN))
+        // Check again
+        if (!GPIO_ReadInputDataBit(REPAIR_PINGROUP, REPAIR_PIN))
         {
-/***************************FUNCTION BEGIN****************************/
+            /***************************FUNCTION BEGIN****************************/
             printf("Repair\n");
 
-/***************************FUNCTION END******************************/
+            /***************************FUNCTION END******************************/
         }
     }
 }
@@ -193,20 +193,20 @@ void TIM3_IRQHandler(void)
  */
 void TIM4_IRQHandler(void)
 {
-    if(TIM_GetITStatus(TIM4, TIM_IT_Update) != RESET)
+    if (TIM_GetITStatus(TIM4, TIM_IT_Update) != RESET)
     {
-        //Clear flag, stop timer and clear count value
+        // Clear flag, stop timer and clear count value
         TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
         TIM_Cmd(TIM4, DISABLE);
         TIM_SetCounter(TIM4, 0x00000000);
 
-        //Check again
-        if(!GPIO_ReadInputDataBit(HELP_PINGROUP, HELP_PIN))
+        // Check again
+        if (!GPIO_ReadInputDataBit(HELP_PINGROUP, HELP_PIN))
         {
-/***************************FUNCTION BEGIN****************************/
+            /***************************FUNCTION BEGIN****************************/
             printf("Help\n");
 
-/***************************FUNCTION END******************************/
+            /***************************FUNCTION END******************************/
         }
     }
 }

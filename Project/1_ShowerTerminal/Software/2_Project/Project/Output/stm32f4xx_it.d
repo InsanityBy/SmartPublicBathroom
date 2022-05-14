@@ -35,3 +35,5 @@
 .\output\stm32f4xx_it.o: ..\..\1_Library\FlowMeter.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Valve.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Button.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\InfraredObject.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\InfraredHuman.h

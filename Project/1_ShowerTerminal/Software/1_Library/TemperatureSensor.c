@@ -1,13 +1,13 @@
 /**
-  ******************************************************************************
-  * @file    TemperatureSensor.c
-  * @author  Ma boyang
-  * @version V1.0
-  * @date    2022.5.7
-  * @brief   This file contains all the functions of the temperature sensor.(For
-  *         shower terminal.)
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    TemperatureSensor.c
+ * @author  Ma boyang
+ * @version V1.0
+ * @date    2022.5.7
+ * @brief   This file contains all the functions of the temperature sensor.(For
+ *         shower terminal.)
+ ******************************************************************************
+ */
 
 /* Includes ------------------------------------------------------------------*/
 #include "TemperatureSensor.h"

@@ -1,13 +1,13 @@
 /**
-  ******************************************************************************
-  * @file    TemperatureHumiditySensor.c
-  * @author  Ma boyang
-  * @version V1.0
-  * @date    2022.5.9
-  * @brief   This file contains all the functions for temperature - humidity
-  *         sensor.(For shower host.)
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    TemperatureHumiditySensor.c
+ * @author  Ma boyang
+ * @version V1.0
+ * @date    2022.5.9
+ * @brief   This file contains all the functions for temperature - humidity
+ *         sensor.(For shower host.)
+ ******************************************************************************
+ */
 
 /* Includes ------------------------------------------------------------------*/
 #include "TemperatureHumiditySensor.h"
@@ -94,7 +94,7 @@ uint8_t Sensor_Check(void)
         return 1;
     else
     {
-        Delay_us(290 - CheckNum); // Wait 45us(max), pulse 240us(max), recover 5us(typ) 
+        Delay_us(290 - CheckNum); // Wait 45us(max), pulse 240us(max), recover 5us(typ)
         return 0;
     }
 }
@@ -188,7 +188,7 @@ void Sensor_WriteByte(uint8_t data)
  */
 void Sensor_Convert(void)
 {
-    //Get calibration value
+    // Get calibration value
     Sensor_Reset();
     Sensor_Check();
     Sensor_WriteByte(0xCC);
@@ -198,7 +198,7 @@ void Sensor_Convert(void)
     OwHumB = Sensor_ReadByte();
     OwHumB = (OwHumB << 8) | Sensor_ReadByte();
 
-    //Start convert
+    // Start convert
     Sensor_Reset();
     Sensor_Check();
     Sensor_WriteByte(0xCC);
@@ -243,7 +243,7 @@ float Sensor_GetHumidity(void)
     Sensor_Reset();
     Sensor_Check();
 
-    //Get temperature first
+    // Get temperature first
     Sensor_WriteByte(0xCC);
     Sensor_WriteByte(0xBD); // Get temperature
     DataL = Sensor_ReadByte();
@@ -252,7 +252,7 @@ float Sensor_GetHumidity(void)
     DataS16 = (DataS16 << 8) | DataL;
     DataS16 = 400 + 10 * DataS16 / 256;
 
-    //Get humidity
+    // Get humidity
     DataL = Sensor_ReadByte();
     DataH = Sensor_ReadByte();
     DataS32 = DataH;
@@ -260,8 +260,10 @@ float Sensor_GetHumidity(void)
     DataS32 = (DataS32 - OwHumB) * 600 / (OwHumA - OwHumB) + 300;
     DataS32 = DataS32 + 25 * (DataS16 - 250) / 100;
     Humidity = (float)DataS32 / 10;
-    if(Humidity > 99.9) Humidity = 99.9;
-    else if(Humidity < 0) Humidity = 0;
+    if (Humidity > 99.9)
+        Humidity = 99.9;
+    else if (Humidity < 0)
+        Humidity = 0;
 
     return Humidity;
 }

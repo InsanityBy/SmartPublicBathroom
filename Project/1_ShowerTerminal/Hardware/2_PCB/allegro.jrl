@@ -1,1119 +1,921 @@
 \t (00:00:01) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:01)     Journal start - Thu May 05 20:42:55 2022
-\t (00:00:01)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=23352 CPUs=16
-\t (00:00:01) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\2_PCB\SHOWERTERMINAL.brd
+\t (00:00:01)     Journal start - Fri May 13 15:17:47 2022
+\t (00:00:01)         Host=INSANITY User=insan Pid=13836 CPUs=8
+\t (00:00:01) CmdLine= e:\cadence\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\2_PCB\SHOWERTERMINAL.brd
 \t (00:00:01) 
    (00:00:01) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERTERMINAL
-\d (00:00:04) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
-\t (00:00:04) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:00:04) trapsize 3329
-\i (00:00:04) trapsize 3401
-\t (00:00:04) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:00:04) trapsize 3490
-\i (00:00:04) trapsize 3490
-\i (00:00:05) generaledit 
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 2559.13 3246.31
-\t (00:00:06) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:00:06) trapsize 1745
-\i (00:00:07) zoom out 1 
-\i (00:00:07) setwindow pcb
-\i (00:00:07) zoom out 2248.54 3019.47
-\t (00:00:07) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:00:07) trapsize 3490
+\t (00:00:01) Opening existing design...
+\i (00:00:01) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERTERMINAL
+\d (00:00:01) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
+\t (00:00:02) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:00:02) trapsize 3346
+\i (00:00:02) trapsize 3441
+\i (00:00:02) trapsize 3346
+\t (00:00:02) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:00:02) trapsize 3461
+\i (00:00:02) trapsize 4016
+\i (00:00:02) generaledit 
+\i (00:00:06) QtSignal CVPLayerGrid CVPBoxAllBottom clicked false
 \i (00:00:07) zoom in 1 
 \i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 1693.65 4021.05
+\i (00:00:07) zoom in 858.95 2548.16
 \t (00:00:07) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:00:07) trapsize 1745
+\i (00:00:07) trapsize 2008
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in 846.91 2576.27
+\i (00:00:07) trapsize 1004
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in 834.87 2602.38
+\i (00:00:07) trapsize 502
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in 829.86 2614.42
+\i (00:00:07) trapsize 251
+\i (00:00:07) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 828.85 2618.44
+\i (00:00:08) trapsize 125
 \i (00:00:08) zoom out 1 
 \i (00:00:08) setwindow pcb
-\i (00:00:08) zoom out 1805.33 3204.43
-\t (00:00:08) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:00:08) trapsize 3490
-\i (00:00:08) zoom in 1 
+\i (00:00:08) zoom out 828.60 2618.69
+\i (00:00:08) trapsize 251
+\i (00:00:08) zoom out 1 
 \i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 1910.02 2639.07
-\t (00:00:08) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:00:08) trapsize 1745
+\i (00:00:08) zoom out 828.60 2618.69
+\i (00:00:08) trapsize 502
+\i (00:00:09) zoom out 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom out 837.64 2618.70
+\i (00:00:09) trapsize 1004
 \i (00:00:09) zoom in 1 
 \i (00:00:09) setwindow pcb
-\i (00:00:09) zoom in 1910.02 2639.07
-\i (00:00:09) trapsize 872
-\i (00:00:10) zoom out 1 
+\i (00:00:09) zoom in 247.36 2068.58
+\i (00:00:10) trapsize 502
+\i (00:00:10) zoom in 1 
 \i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 1862.91 2548.34
-\i (00:00:10) trapsize 1745
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 1845.46 2478.54
-\t (00:00:10) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:00:10) trapsize 3490
-\i (00:00:12) drc update 
-\t (00:00:13) Performing DRC...
-\t (00:00:13) Multithreaded DRC update (16 threads).
-\t (00:00:13) No DRC errors detected.
-\i (00:00:13) generaledit 
-\i (00:00:17) cns onlinedrc 
-\i (00:00:18) generaledit 
-\i (00:00:20) cns onlinedrc 
-\i (00:00:20) generaledit 
-\i (00:00:21) status 
-\i (00:00:21) generaledit 
-\i (00:00:27) setwindow form.status
-\i (00:00:27) FORM status shorts_drc_color 1 
-\i (00:00:27) setwindow pcb
-\i (00:00:27) reports drc_shorts 
-\i (00:00:28) generaledit 
-\i (00:00:29) setwindow text
-\i (00:00:29) close
-\i (00:00:31) setwindow form.status
-\i (00:00:31) FORM status drc_on NO 
-\i (00:00:32) FORM status drc_on YES 
-\i (00:00:33) FORM status done  
-\i (00:00:37) setwindow pcb
-\i (00:00:37) dbdoctor 
-\i (00:00:40) setwindow form.dbdoctor_allegro
-\i (00:00:40) FORM dbdoctor_allegro drc YES 
-\i (00:00:40) FORM dbdoctor_allegro shapes YES 
-\i (00:00:41) FORM dbdoctor_allegro xnets YES 
-\i (00:00:42) FORM dbdoctor_allegro execute  
-\t (00:00:42) Dbdoctor in progress - wait...
-\t (00:00:42) Checking db records
-\t (00:00:42)     checking for orphans...
-\t (00:00:42)     Checked  71 percent
-\t (00:00:42)     Checked 100 percent
-\t (00:00:42) Regenerating DRC
-\t (00:00:42)   Original DRC errors: 0
-\t (00:00:42) Performing DRC...
-\t (00:00:42) Multithreaded DRC update (16 threads).
-\t (00:00:43) No DRC errors detected.
-\t (00:00:43)   Updated DRC errors:  0
-\t (00:00:43) Done dbdoctor.
-\t (00:00:43) Dbdoctor completed.
-\i (00:01:01) FORM dbdoctor_allegro close  
-\i (00:01:01) setwindow pcb
-\i (00:01:01) generaledit 
-\i (00:01:01) zoom in 1 
-\i (00:01:01) setwindow pcb
-\i (00:01:01) zoom in 1889.08 998.85
-\t (00:01:01) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:01:01) trapsize 1745
-\i (00:01:01) zoom in 1 
-\i (00:01:01) setwindow pcb
-\i (00:01:01) zoom in 1868.14 1005.83
-\i (00:01:01) trapsize 872
-\i (00:01:03) zoom in 1 
-\i (00:01:03) setwindow pcb
-\i (00:01:03) zoom in 1627.35 649.87
-\i (00:01:03) trapsize 436
-\i (00:01:03) zoom in 1 
-\i (00:01:03) setwindow pcb
-\i (00:01:03) zoom in 1627.35 649.87
-\i (00:01:03) trapsize 218
-\i (00:01:03) zoom in 1 
-\i (00:01:03) setwindow pcb
-\i (00:01:03) zoom in 1627.35 649.87
-\i (00:01:03) trapsize 109
-\i (00:01:04) zoom in 1 
+\i (00:00:10) zoom in 244.35 2064.56
+\i (00:00:10) trapsize 251
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out 246.36 2061.55
+\i (00:00:11) trapsize 502
+\i (00:00:29) zoom in 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom in 334.70 2036.46
+\i (00:00:29) trapsize 251
+\i (00:00:30) zoom out 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom out 367.33 2031.45
+\i (00:00:30) trapsize 502
+\i (00:01:04) zoom out 1 
 \i (00:01:04) setwindow pcb
-\i (00:01:04) zoom in 1602.93 613.66
-\i (00:01:04) trapsize 55
-\i (00:01:04) zoom in 1 
-\i (00:01:04) setwindow pcb
-\i (00:01:04) zoom in 1602.71 613.66
-\i (00:01:04) trapsize 27
-\i (00:01:04) zoom in 1 
-\i (00:01:04) setwindow pcb
-\i (00:01:04) zoom in 1602.22 613.55
-\i (00:01:04) trapsize 14
-\i (00:01:04) zoom in 1 
-\i (00:01:04) setwindow pcb
-\i (00:01:04) zoom in 1602.08 613.47
-\i (00:01:04) trapsize 7
-\i (00:01:06) zoom out 1 
-\i (00:01:06) setwindow pcb
-\i (00:01:06) zoom out 1601.44 614.42
-\i (00:01:06) trapsize 14
-\i (00:01:14) zoom out 1 
-\i (00:01:14) setwindow pcb
-\i (00:01:14) zoom out 1601.55 614.22
-\i (00:01:14) trapsize 27
-\i (00:01:15) zoom out 1 
-\i (00:01:15) setwindow pcb
-\i (00:01:15) zoom out 1601.77 613.90
-\i (00:01:15) trapsize 55
-\i (00:01:17) zoom in 1 
-\i (00:01:17) setwindow pcb
-\i (00:01:17) zoom in 1605.05 622.74
-\i (00:01:17) trapsize 27
-\i (00:01:20) zoom out 1 
-\i (00:01:20) setwindow pcb
-\i (00:01:20) zoom out 1603.36 620.67
-\i (00:01:20) trapsize 55
-\i (00:01:21) zoom in 1 
-\i (00:01:21) setwindow pcb
-\i (00:01:21) zoom in 1599.21 598.85
-\i (00:01:21) trapsize 27
-\i (00:01:22) zoom in 1 
-\i (00:01:22) setwindow pcb
-\i (00:01:22) zoom in 1599.22 599.67
-\i (00:01:22) trapsize 14
-\i (00:01:24) zoom out 1 
-\i (00:01:24) setwindow pcb
-\i (00:01:24) zoom out 1600.88 606.05
-\i (00:01:24) trapsize 27
-\i (00:01:24) zoom out 1 
-\i (00:01:24) setwindow pcb
-\i (00:01:24) zoom out 1600.72 606.32
-\i (00:01:24) trapsize 55
-\i (00:01:24) zoom out 1 
-\i (00:01:24) setwindow pcb
-\i (00:01:24) zoom out 1601.48 614.62
-\i (00:01:24) trapsize 109
-\i (00:01:24) zoom out 1 
-\i (00:01:24) setwindow pcb
-\i (00:01:24) zoom out 1599.74 614.18
-\i (00:01:24) trapsize 218
-\i (00:01:25) zoom in 1 
-\i (00:01:25) setwindow pcb
-\i (00:01:25) zoom in 1586.65 582.77
-\i (00:01:25) trapsize 109
-\i (00:01:25) zoom in 1 
-\i (00:01:25) setwindow pcb
-\i (00:01:25) zoom in 1586.66 582.77
-\i (00:01:25) trapsize 55
-\i (00:01:28) zoom in 1 
-\i (00:01:28) setwindow pcb
-\i (00:01:28) zoom in 1589.49 589.76
-\i (00:01:28) trapsize 27
-\i (00:01:29) zoom out 1 
-\i (00:01:29) setwindow pcb
-\i (00:01:29) zoom out 1589.28 588.95
-\i (00:01:29) trapsize 55
-\i (00:01:29) zoom out 1 
-\i (00:01:29) setwindow pcb
-\i (00:01:29) zoom out 1589.93 587.41
-\i (00:01:29) trapsize 109
-\i (00:01:29) zoom out 1 
-\i (00:01:29) setwindow pcb
-\i (00:01:29) zoom out 1594.74 584.58
-\i (00:01:29) trapsize 218
-\i (00:01:30) zoom out 1 
-\i (00:01:30) setwindow pcb
-\i (00:01:30) zoom out 1598.22 578.04
-\i (00:01:30) trapsize 436
-\i (00:01:32) save 
-\i (00:01:33) fillin yes 
-   (00:01:33) Loading signal.cxt 
-\i (00:01:33) generaledit 
-\i (00:01:36) status 
-\i (00:01:36) generaledit 
-\i (00:01:38) setwindow form.status
-\i (00:01:38) FORM status drc_update  
-\t (00:01:38) Running DRC, wait...
-\t (00:01:38) Performing DRC...
-\t (00:01:38) Multithreaded DRC update (16 threads).
-\t (00:01:38) No DRC errors detected.
-\t (00:01:38) DRC done.
-\i (00:01:41) FORM status done  
-\i (00:01:44) setwindow pcb
-\i (00:01:44) zoom out 1 
-\i (00:01:44) setwindow pcb
-\i (00:01:44) zoom out 1378.28 673.18
-\i (00:01:44) trapsize 873
-\i (00:01:45) zoom out 1 
-\i (00:01:45) setwindow pcb
-\i (00:01:45) zoom out 1411.44 605.10
-\i (00:01:45) trapsize 1746
-\i (00:01:58) ncdrill customization 
-\i (00:01:58) generaledit 
-\i (00:02:00) setwindow form.nc_drillcustomization
-\i (00:02:00) FORM nc_drillcustomization auto_symbols  
-\i (00:02:01) fillin yes 
-\i (00:02:03) FORM nc_drillcustomization done  
-\i (00:02:04) fillin yes 
+\i (00:01:04) zoom out 512.89 2096.70
+\i (00:01:04) trapsize 1004
+\i (00:01:07) zoom in 1 
+\i (00:01:07) setwindow pcb
+\i (00:01:07) zoom in 1597.07 2387.81
+\i (00:01:08) trapsize 502
+\i (00:01:38) zoom out 1 
+\i (00:01:38) setwindow pcb
+\i (00:01:38) zoom out 1028.88 2202.10
+\i (00:01:38) trapsize 1004
+\i (00:01:40) zoom in 1 
+\i (00:01:40) setwindow pcb
+\i (00:01:40) zoom in 304.08 1989.28
+\i (00:01:40) trapsize 502
+\i (00:01:41) zoom out 1 
+\i (00:01:41) setwindow pcb
+\i (00:01:41) zoom out 507.86 2072.60
+\i (00:01:41) trapsize 1004
+\i (00:02:02) zoom in 1 
+\i (00:02:02) setwindow pcb
+\i (00:02:02) zoom in 1439.47 2387.82
+\i (00:02:02) trapsize 502
+\i (00:02:04) zoom in 1 
+\i (00:02:04) setwindow pcb
+\i (00:02:04) zoom in 1217.62 2428.98
+\i (00:02:04) trapsize 251
+\i (00:02:05) zoom in 1 
 \i (00:02:05) setwindow pcb
-\i (00:02:05) zoom out 1 
-\i (00:02:05) setwindow pcb
-\i (00:02:05) zoom out 1914.18 1753.74
-\t (00:02:05) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:02:05) trapsize 3490
-\i (00:02:16) color192 
-\i (00:02:16) generaledit 
-\i (00:02:17) QtSignal CVDLayerContainer CVDVisibilityOff clicked
-\i (00:02:18) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry
-\i (00:02:22) QtSignal CVDLayerContainer CVDVisibilityOn clicked
-\i (00:02:23) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:02:24) zoom in 1 
-\i (00:02:24) setwindow pcb
-\i (00:02:24) zoom in 262.81 1996.94
-\t (00:02:24) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:02:24) trapsize 1745
-\i (00:02:24) zoom in 1 
-\i (00:02:24) setwindow pcb
-\i (00:02:24) zoom in 259.32 1996.95
-\i (00:02:24) trapsize 872
-\i (00:02:24) zoom in 1 
-\i (00:02:24) setwindow pcb
-\i (00:02:24) zoom in -25.10 1785.81
-\i (00:02:24) trapsize 436
-\i (00:02:24) zoom in 1 
-\i (00:02:24) setwindow pcb
-\i (00:02:24) zoom in -25.10 1785.82
-\i (00:02:24) trapsize 218
-\i (00:02:25) zoom in 1 
-\i (00:02:25) setwindow pcb
-\i (00:02:25) zoom in -1.10 1775.78
-\i (00:02:25) trapsize 109
-\i (00:02:26) zoom in 1 
-\i (00:02:26) setwindow pcb
-\i (00:02:26) zoom in -0.23 1774.47
-\i (00:02:26) trapsize 55
-\i (00:02:27) zoom in 1 
-\i (00:02:27) setwindow pcb
-\i (00:02:27) zoom in -0.88 1774.47
-\i (00:02:27) trapsize 27
-\i (00:02:27) zoom in 1 
-\i (00:02:27) setwindow pcb
-\i (00:02:27) zoom in -1.10 1774.36
-\i (00:02:27) trapsize 14
-\i (00:02:27) zoom in 1 
-\i (00:02:27) setwindow pcb
-\i (00:02:27) zoom in -0.12 1774.47
-\i (00:02:27) trapsize 7
-\i (00:02:27) zoom in 1 
-\i (00:02:27) setwindow pcb
-\i (00:02:27) zoom in -0.12 1774.47
-\i (00:02:27) trapsize 3
+\i (00:02:05) zoom in 1217.62 2428.98
+\i (00:02:05) trapsize 125
+\i (00:02:08) zoom out 1 
+\i (00:02:08) setwindow pcb
+\i (00:02:08) zoom out 1204.82 2422.46
+\i (00:02:08) trapsize 251
+\i (00:02:08) zoom out 1 
+\i (00:02:08) setwindow pcb
+\i (00:02:08) zoom out 1204.82 2422.46
+\i (00:02:08) trapsize 502
+\i (00:02:09) zoom in 1 
+\i (00:02:09) setwindow pcb
+\i (00:02:09) zoom in 1217.88 2458.61
+\i (00:02:09) trapsize 251
+\i (00:02:11) pick grid 1212.36 2501.78
+\t (00:02:11) last pick:  1210.00 2500.00
+\i (00:02:12) pick grid 1218.88 2511.32
+\t (00:02:12) last pick:  1220.00 2510.00
+\i (00:02:14) pick grid 1213.36 2459.12
+\t (00:02:14) last pick:  1210.00 2460.00
+\i (00:02:16) pick grid 1222.90 2509.31
+\t (00:02:16) last pick:  1220.00 2510.00
+\i (00:02:20) hilight 
+\t (00:02:20) No elements found matching this filter.
+\i (00:02:24) cvf_bitmap_chooser -1 
+\i (00:02:25) generaledit 
+\i (00:02:28) zoom out 1 
+\i (00:02:28) setwindow pcb
+\i (00:02:28) zoom out 1244.48 2504.29
+\i (00:02:28) trapsize 502
+\i (00:02:28) zoom out 1 
+\i (00:02:28) setwindow pcb
+\i (00:02:28) zoom out 1244.48 2504.29
+\i (00:02:28) trapsize 1004
 \i (00:02:29) zoom out 1 
 \i (00:02:29) setwindow pcb
-\i (00:02:29) zoom out 0.68 1774.20
-\i (00:02:29) trapsize 7
-\i (00:02:29) zoom out 1 
-\i (00:02:29) setwindow pcb
-\i (00:02:29) zoom out 0.82 1773.94
-\i (00:02:29) trapsize 14
-\i (00:02:29) zoom out 1 
-\i (00:02:29) setwindow pcb
-\i (00:02:29) zoom out 1.01 1773.69
-\i (00:02:29) trapsize 27
-\i (00:02:29) zoom out 1 
-\i (00:02:29) setwindow pcb
-\i (00:02:29) zoom out 3.19 1773.09
-\i (00:02:29) trapsize 55
-\i (00:02:29) zoom out 1 
-\i (00:02:29) setwindow pcb
-\i (00:02:29) zoom out 6.57 1771.88
-\i (00:02:29) trapsize 109
-\i (00:02:30) zoom out 1 
-\i (00:02:30) setwindow pcb
-\i (00:02:30) zoom out 18.36 1772.77
-\i (00:02:30) trapsize 218
-\i (00:02:30) zoom out 1 
-\i (00:02:30) setwindow pcb
-\i (00:02:30) zoom out 21.42 1768.40
-\i (00:02:30) trapsize 436
-\i (00:02:30) zoom out 1 
-\i (00:02:30) setwindow pcb
-\i (00:02:30) zoom out -14.37 1777.13
-\i (00:02:30) trapsize 873
-\i (00:02:31) zoom out 1 
-\i (00:02:31) setwindow pcb
-\i (00:02:31) zoom out -19.61 1771.89
-\i (00:02:31) trapsize 1746
-\i (00:02:31) zoom in 1 
-\i (00:02:31) setwindow pcb
-\i (00:02:31) zoom in -96.42 1810.30
-\i (00:02:31) trapsize 873
-\i (00:02:31) zoom in 1 
-\i (00:02:31) setwindow pcb
-\i (00:02:31) zoom in -117.36 1817.29
-\i (00:02:31) trapsize 436
-\i (00:02:31) zoom in 1 
-\i (00:02:31) setwindow pcb
-\i (00:02:31) zoom in -133.07 1821.66
-\i (00:02:31) trapsize 218
-\i (00:02:32) zoom in 1 
-\i (00:02:32) setwindow pcb
-\i (00:02:32) zoom in 108.70 1830.83
-\i (00:02:32) trapsize 109
-\i (00:02:32) zoom in 1 
-\i (00:02:32) setwindow pcb
-\i (00:02:32) zoom in 108.71 1830.83
-\i (00:02:32) trapsize 55
-\i (00:02:32) zoom in 1 
-\i (00:02:32) setwindow pcb
-\i (00:02:32) zoom in -4.76 1826.57
-\i (00:02:32) trapsize 27
-\i (00:02:33) zoom in 1 
-\i (00:02:33) setwindow pcb
-\i (00:02:33) zoom in -1.70 1827.17
-\i (00:02:33) trapsize 14
-\i (00:02:36) setwindow form.find
-\i (00:02:36) FORM find all_on  
-\i (00:02:45) setwindow pcb
-\i (00:02:45) zoom out 1 
-\i (00:02:45) setwindow pcb
-\i (00:02:45) zoom out -2.16 1823.24
-\i (00:02:45) trapsize 27
-\i (00:02:46) zoom in 1 
-\i (00:02:46) setwindow pcb
-\i (00:02:46) zoom in 0.13 1824.01
-\i (00:02:46) trapsize 14
-\i (00:02:46) zoom out 1 
-\i (00:02:46) setwindow pcb
-\i (00:02:46) zoom out -0.19 1823.99
-\i (00:02:46) trapsize 27
-\i (00:02:47) zoom out 1 
-\i (00:02:47) setwindow pcb
-\i (00:02:47) zoom out 0.02 1823.66
-\i (00:02:47) trapsize 55
-\i (00:02:47) zoom out 1 
-\i (00:02:47) setwindow pcb
-\i (00:02:47) zoom out 0.02 1823.11
-\i (00:02:47) trapsize 109
-\i (00:02:47) zoom out 1 
-\i (00:02:47) setwindow pcb
-\i (00:02:47) zoom out -0.19 1822.02
-\i (00:02:47) trapsize 218
-\i (00:02:47) zoom out 1 
-\i (00:02:47) setwindow pcb
-\i (00:02:47) zoom out -0.18 1821.15
-\i (00:02:47) trapsize 436
-\i (00:02:48) zoom out 1 
-\i (00:02:48) setwindow pcb
-\i (00:02:48) zoom out -2.80 1811.55
-\i (00:02:48) trapsize 873
-\i (00:02:48) zoom in 1 
-\i (00:02:48) setwindow pcb
-\i (00:02:48) zoom in -48.19 1818.55
-\i (00:02:48) trapsize 436
-\i (00:02:48) zoom in 1 
-\i (00:02:48) setwindow pcb
-\i (00:02:48) zoom in -48.19 1818.55
-\i (00:02:48) trapsize 218
-\i (00:02:48) zoom in 1 
-\i (00:02:48) setwindow pcb
-\i (00:02:48) zoom in -48.19 1818.98
-\i (00:02:48) trapsize 109
-\i (00:02:48) zoom in 1 
-\i (00:02:48) setwindow pcb
-\i (00:02:48) zoom in -48.18 1818.99
-\i (00:02:48) trapsize 55
-\i (00:02:49) zoom in 1 
-\i (00:02:49) setwindow pcb
-\i (00:02:49) zoom in -48.18 1818.99
-\i (00:02:49) trapsize 27
-\i (00:02:49) zoom in 1 
-\i (00:02:49) setwindow pcb
-\i (00:02:49) zoom in 9.27 1817.58
-\i (00:02:49) trapsize 14
-\i (00:02:53) color192 
-\i (00:02:53) generaledit 
-\i (00:02:56) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Board geometry"
-\i (00:02:57) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 7 0
-\i (00:02:57) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 7 0
-\i (00:02:57) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:02:58) QtSignal ColorVisibilityDialog CVDOkButton clicked
+\i (00:02:29) zoom out 1162.17 2482.20
+\i (00:02:29) trapsize 2008
+\i (00:02:31) hilight 
+\t (00:02:31) No elements found matching this filter.
+\i (00:02:35) cvf_bitmap_chooser 0 
+\i (00:02:35) generaledit 
+\i (00:02:38) setwindow form.find
+\i (00:02:38) FORM find all_off  
+\i (00:02:40) FORM find name_type Net 
+\i (00:02:53) setwindow pcb
+\i (00:02:53) zoom in 1 
+\i (00:02:53) setwindow pcb
+\i (00:02:53) zoom in 202.47 2072.63
+\i (00:02:53) trapsize 1004
+\i (00:02:54) zoom in 1 
+\i (00:02:54) setwindow pcb
+\i (00:02:54) zoom in 381.16 2054.56
+\i (00:02:54) trapsize 502
+\i (00:02:57) zoom out 1 
+\i (00:02:57) setwindow pcb
+\i (00:02:57) zoom out 883.10 2112.79
+\i (00:02:57) trapsize 1004
+\i (00:02:58) zoom out 1 
+\i (00:02:58) setwindow pcb
+\i (00:02:58) zoom out 45.87 2160.98
+\i (00:02:58) trapsize 2008
+\i (00:02:58) zoom in 1 
+\i (00:02:58) setwindow pcb
+\i (00:02:58) zoom in 1567.75 2610.72
+\i (00:02:58) trapsize 1004
+\i (00:02:59) zoom in 1 
+\i (00:02:59) setwindow pcb
+\i (00:02:59) zoom in 1563.73 2616.74
+\i (00:02:59) trapsize 502
+\i (00:02:59) zoom in 1 
+\i (00:02:59) setwindow pcb
+\i (00:02:59) zoom in 1543.66 2614.73
+\i (00:02:59) trapsize 251
 \i (00:02:59) zoom out 1 
 \i (00:02:59) setwindow pcb
-\i (00:02:59) zoom out -2.79 1819.65
-\i (00:02:59) trapsize 27
-\i (00:02:59) zoom out 1 
-\i (00:02:59) setwindow pcb
-\i (00:02:59) zoom out -2.78 1819.61
-\i (00:02:59) trapsize 55
-\i (00:02:59) zoom out 1 
-\i (00:02:59) setwindow pcb
-\i (00:02:59) zoom out -2.79 1818.95
-\i (00:02:59) trapsize 109
-\i (00:02:59) zoom out 1 
-\i (00:02:59) setwindow pcb
-\i (00:02:59) zoom out 1.15 1815.91
-\i (00:02:59) trapsize 218
-\i (00:03:00) zoom out 1 
-\i (00:03:00) setwindow pcb
-\i (00:03:00) zoom out -86.58 1857.36
-\i (00:03:00) trapsize 436
-\i (00:03:00) zoom out 1 
-\i (00:03:00) setwindow pcb
-\i (00:03:00) zoom out -56.89 1827.68
-\i (00:03:00) trapsize 873
+\i (00:02:59) zoom out 1450.81 2555.00
+\i (00:02:59) trapsize 502
 \i (00:03:01) zoom in 1 
 \i (00:03:01) setwindow pcb
-\i (00:03:01) zoom in -20.24 1637.41
-\i (00:03:01) trapsize 436
+\i (00:03:01) zoom in 1260.07 2428.51
+\i (00:03:01) trapsize 251
 \i (00:03:01) zoom in 1 
 \i (00:03:01) setwindow pcb
-\i (00:03:01) zoom in -15.87 1638.29
-\i (00:03:01) trapsize 218
-\i (00:03:01) zoom out 1 
-\i (00:03:01) setwindow pcb
-\i (00:03:01) zoom out -8.89 1639.60
-\i (00:03:01) trapsize 436
-\i (00:03:01) zoom out 1 
-\i (00:03:01) setwindow pcb
-\i (00:03:01) zoom out -8.89 1639.60
-\i (00:03:01) trapsize 873
-\i (00:03:02) zoom in 1 
-\i (00:03:02) setwindow pcb
-\i (00:03:02) zoom in -211.37 1871.77
-\i (00:03:02) trapsize 436
-\i (00:03:02) zoom out 1 
-\i (00:03:02) setwindow pcb
-\i (00:03:02) zoom out -728.95 2117.91
-\i (00:03:02) trapsize 873
-\i (00:03:02) zoom out 1 
-\i (00:03:02) setwindow pcb
-\i (00:03:02) zoom out -728.96 2117.91
-\i (00:03:02) trapsize 1746
-\i (00:03:03) zoom in 1 
-\i (00:03:03) setwindow pcb
-\i (00:03:03) zoom in -498.53 2446.09
-\i (00:03:03) trapsize 873
-\i (00:03:03) zoom in 1 
-\i (00:03:03) setwindow pcb
-\i (00:03:03) zoom in -498.52 2446.09
-\i (00:03:03) trapsize 436
-\i (00:03:04) zoom out 1 
-\i (00:03:04) setwindow pcb
-\i (00:03:04) zoom out -249.77 2374.52
-\i (00:03:04) trapsize 873
-\i (00:03:04) zoom in 1 
-\i (00:03:04) setwindow pcb
-\i (00:03:04) zoom in 87.15 2311.68
-\i (00:03:04) trapsize 436
-\i (00:03:07) zcopy shape 
-\t (00:03:07) Select cline, cline segment, shape, rectangle or closed polygon.
-   (00:03:07) Loading cmds.cxt 
-\i (00:03:10) setwindow form.mini
-\i (00:03:10) FORM mini class_name BOARD GEOMETRY 
-\i (00:03:13) FORM mini subclass_name DESIGN_OUTLINE 
-\i (00:03:15) setwindow pcb
-\i (00:03:15) zoom in 1 
-\i (00:03:15) setwindow pcb
-\i (00:03:15) zoom in -5.37 2031.50
-\i (00:03:15) trapsize 218
-\i (00:03:15) zoom in 1 
-\i (00:03:15) setwindow pcb
-\i (00:03:15) zoom in -7.55 2031.51
-\i (00:03:15) trapsize 109
-\i (00:03:15) zoom in 1 
-\i (00:03:15) setwindow pcb
-\i (00:03:15) zoom in -7.54 2031.51
-\i (00:03:15) trapsize 55
-\i (00:03:17) pick -0.23 2029.44
-\t (00:03:17) last pick:  -0.23 2029.44
-\i (00:03:19) zoom in 1 
-\i (00:03:19) setwindow pcb
-\i (00:03:19) zoom in 1.62 2030.31
-\i (00:03:19) trapsize 27
-\i (00:03:19) zoom in 1 
-\i (00:03:19) setwindow pcb
-\i (00:03:19) zoom in 1.63 2030.32
-\i (00:03:19) trapsize 14
-\i (00:03:29) prepopup 2.17 2030.78
-\i (00:03:29) pop Done 
-\i (00:03:30) generaledit 
-\i (00:03:31) prepopup 9.04 2029.56
-\i (00:03:31) pick grid 6.26 2031.63
-\t (00:03:31) last pick:  10.00 2030.00
-\i (00:03:32) zoom out 1 
-\i (00:03:32) setwindow pcb
-\i (00:03:32) zoom out -3.28 2036.24
-\i (00:03:32) trapsize 27
+\i (00:03:01) zoom in 1260.07 2428.52
+\i (00:03:01) trapsize 125
+\i (00:03:22) setwindow form.find
+\i (00:03:22) FORM find find_name 4IN- 
+\i (00:03:22) setwindow pcb
+\i (00:03:22) trapsize 386
+\i (00:03:24) zoom out 1 
+\i (00:03:24) setwindow pcb
+\i (00:03:24) zoom out 1015.52 2438.15
+\i (00:03:24) trapsize 772
+\i (00:03:26) zoom in 1 
+\i (00:03:26) setwindow pcb
+\i (00:03:26) zoom in 1240.80 2501.41
+\i (00:03:26) trapsize 386
+\i (00:03:26) zoom in 1 
+\i (00:03:26) setwindow pcb
+\i (00:03:26) zoom in 1233.86 2509.12
+\i (00:03:26) trapsize 193
+\i (00:03:26) zoom in 1 
+\i (00:03:27) setwindow pcb
+\i (00:03:27) zoom in 1233.86 2509.13
+\i (00:03:27) trapsize 96
+\i (00:03:27) zoom out 1 
+\i (00:03:27) setwindow pcb
+\i (00:03:27) zoom out 1239.84 2500.45
+\i (00:03:27) trapsize 193
+\i (00:03:28) zoom out 1 
+\i (00:03:28) setwindow pcb
+\i (00:03:28) zoom out 1184.67 2376.62
+\i (00:03:28) trapsize 386
+\i (00:03:30) pick grid 1209.36 2252.40
+\t (00:03:30) last pick:  1210.00 2250.00
 \i (00:03:32) zoom in 1 
 \i (00:03:32) setwindow pcb
-\i (00:03:32) zoom in -0.23 2034.01
-\i (00:03:32) trapsize 14
-\i (00:03:32) zoom in 1 
-\i (00:03:32) setwindow pcb
-\i (00:03:32) zoom in -0.23 2034.01
-\i (00:03:32) trapsize 7
-\i (00:03:36) zoom out 1 
-\i (00:03:36) setwindow pcb
-\i (00:03:36) zoom out 0.92 2033.47
-\i (00:03:36) trapsize 14
-\i (00:03:36) zoom out 1 
-\i (00:03:36) setwindow pcb
-\i (00:03:36) zoom out 0.84 2033.32
-\i (00:03:36) trapsize 27
-\i (00:03:36) zoom out 1 
-\i (00:03:36) setwindow pcb
-\i (00:03:36) zoom out 0.85 2033.06
-\i (00:03:36) trapsize 55
-\i (00:03:37) zoom out 1 
+\i (00:03:32) zoom in 1215.53 2321.06
+\i (00:03:32) trapsize 193
+\i (00:03:33) zoom in 1 
+\i (00:03:33) setwindow pcb
+\i (00:03:33) zoom in 1215.53 2321.06
+\i (00:03:33) trapsize 96
+\i (00:03:34) pick grid 1210.90 2334.37
+\t (00:03:34) last pick:  1210.00 2330.00
+\i (00:03:35) pick grid 1212.83 2334.37
+\t (00:03:35) last pick:  1210.00 2330.00
+\i (00:03:35) zoom out 1 
+\i (00:03:35) setwindow pcb
+\i (00:03:35) zoom out 1213.02 2334.18
+\i (00:03:35) trapsize 193
+\i (00:03:35) zoom out 1 
+\i (00:03:35) setwindow pcb
+\i (00:03:35) zoom out 1213.03 2333.41
+\i (00:03:35) trapsize 386
+\i (00:03:35) zoom out 1 
+\i (00:03:35) setwindow pcb
+\i (00:03:35) zoom out 1213.80 2332.64
+\i (00:03:35) trapsize 771
+\i (00:03:36) pick grid 1230.77 2261.67
+\t (00:03:36) last pick:  1230.00 2260.00
+\i (00:03:37) zoom in 1 
 \i (00:03:37) setwindow pcb
-\i (00:03:37) zoom out 1.18 2032.84
-\i (00:03:37) trapsize 109
-\i (00:03:37) zoom out 1 
-\i (00:03:37) setwindow pcb
-\i (00:03:37) zoom out 1.83 2032.41
-\i (00:03:37) trapsize 218
-\i (00:03:37) zoom out 1 
-\i (00:03:37) setwindow pcb
-\i (00:03:37) zoom out -11.26 2052.92
-\i (00:03:37) trapsize 436
-\i (00:03:37) zoom out 1 
-\i (00:03:37) setwindow pcb
-\i (00:03:37) zoom out -23.48 2049.43
-\i (00:03:37) trapsize 873
-\i (00:03:39) color192 
-\i (00:03:39) generaledit 
-\i (00:03:40) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry
-\i (00:03:42) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Board geometry"
-\i (00:03:47) QtSignal CVDColorTable CVDColorButton4:9 clicked
-\i (00:03:48) QtSignal CVDLayerTable CVDLayerTableDelegate clickedColor 5 0
-\i (00:03:48) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 5 0
-\i (00:03:49) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:03:51) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:03:52) zoom out 1 
-\i (00:03:52) setwindow pcb
-\i (00:03:52) zoom out -21.72 1483.84
-\i (00:03:52) trapsize 1746
-\i (00:03:52) zoom in 1 
-\i (00:03:52) setwindow pcb
-\i (00:03:52) zoom in -0.78 1580.49
-\i (00:03:52) trapsize 873
-\i (00:03:52) zoom in 1 
-\i (00:03:52) setwindow pcb
-\i (00:03:52) zoom in 0.97 1583.99
-\i (00:03:52) trapsize 436
-\i (00:03:52) zoom in 1 
-\i (00:03:52) setwindow pcb
-\i (00:03:52) zoom in 0.97 1583.99
-\i (00:03:52) trapsize 218
-\i (00:03:52) zoom in 1 
-\i (00:03:52) setwindow pcb
-\i (00:03:52) zoom in 0.97 1584.00
-\i (00:03:52) trapsize 109
-\i (00:03:52) zoom in 1 
-\i (00:03:52) setwindow pcb
-\i (00:03:52) zoom in 0.98 1584.00
-\i (00:03:52) trapsize 55
-\i (00:03:53) zoom in 1 
-\i (00:03:53) setwindow pcb
-\i (00:03:53) zoom in -0.22 1584.11
-\i (00:03:53) trapsize 27
-\i (00:03:53) zoom in 1 
-\i (00:03:53) setwindow pcb
-\i (00:03:53) zoom in -0.22 1584.11
-\i (00:03:53) trapsize 14
-\i (00:03:55) zoom out 1 
-\i (00:03:55) setwindow pcb
-\i (00:03:55) zoom out 0.14 1584.00
-\i (00:03:55) trapsize 27
-\i (00:03:55) zoom out 1 
-\i (00:03:56) setwindow pcb
-\i (00:03:56) zoom out -0.13 1583.89
-\i (00:03:56) trapsize 55
-\i (00:03:56) zoom out 1 
-\i (00:03:56) setwindow pcb
-\i (00:03:56) zoom out -1.11 1583.56
-\i (00:03:56) trapsize 109
-\i (00:03:56) zoom out 1 
-\i (00:03:56) setwindow pcb
-\i (00:03:56) zoom out -3.73 1583.35
-\i (00:03:56) trapsize 218
-\i (00:03:56) zoom out 1 
-\i (00:03:56) setwindow pcb
-\i (00:03:56) zoom out -7.22 1605.62
-\i (00:03:56) trapsize 436
-\i (00:03:56) zoom out 1 
-\i (00:03:56) setwindow pcb
-\i (00:03:56) zoom out -14.21 1599.50
-\i (00:03:56) trapsize 873
-\i (00:03:56) zoom out 1 
-\i (00:03:56) setwindow pcb
-\i (00:03:56) zoom out -42.13 1587.29
-\i (00:03:56) trapsize 1746
-\i (00:03:57) zoom out 1 
-\i (00:03:57) setwindow pcb
-\i (00:03:57) zoom out -188.76 1664.09
-\t (00:03:57) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:03:57) trapsize 3490
-\i (00:03:59) prepopup 3843.39 2206.33
-\i (00:04:00) pick grid 4283.11 2422.70
-\t (00:04:00) last pick:  4280.00 2420.00
-\i (00:04:01) color192 
-\i (00:04:01) generaledit 
-\i (00:04:02) QtSignal CVDLayerContainer CVDVisibilityOff clicked
-\i (00:04:03) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry
-\i (00:04:04) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Board geometry"
-\i (00:04:06) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:06) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 5 0
-\i (00:04:06) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 5 0
-\i (00:04:06) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:06) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:06) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:06) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:06) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:09) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 10 0
-\i (00:04:09) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 10 0
-\i (00:04:09) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:09) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:09) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:10) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:10) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:04:11) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:04:17) ncdrill legend 
-   (00:04:18) Loading mfg.cxt 
-\i (00:04:21) setwindow form.nc_drilllegend
-\i (00:04:21) FORM nc_drilllegend done  
-\i (00:04:25) setwindow pcb
+\i (00:03:37) zoom in 1510.05 2508.55
+\i (00:03:37) trapsize 386
+\i (00:03:38) zoom out 1 
+\i (00:03:38) setwindow pcb
+\i (00:03:38) zoom out 1454.51 2485.41
+\i (00:03:38) trapsize 771
+\i (00:03:42) setwindow form.find
+\i (00:03:42) FORM find nets YES 
+\i (00:03:50) FORM find find_name 4IN- 
+\i (00:03:50) setwindow pcb
+\i (00:03:50) trapsize 386
+\i (00:03:53) prepopup 1174.46 2196.66
+\i (00:03:54) pick grid 1149.00 2177.37
+\t (00:03:54) last pick:  1150.00 2180.00
+\i (00:04:00) hilight 
+\i (00:04:09) setwindow form.find
+\i (00:04:09) FORM find find_name 4IN- 
+\i (00:04:09) setwindow pcb
+\i (00:04:09) trapsize 386
+\t (00:04:09) Net "4In-" highlighted.
+\i (00:04:11) prepopup 1146.68 2209.78
+\i (00:04:11) done 
+\i (00:04:11) generaledit 
+\i (00:04:12) zoom out 1 
+\i (00:04:12) setwindow pcb
+\i (00:04:12) zoom out 1122.76 2212.09
+\i (00:04:12) trapsize 772
+\i (00:04:13) pick grid 1167.51 2181.23
+\t (00:04:13) last pick:  1170.00 2180.00
+\i (00:04:16) zoom in 1 
+\i (00:04:16) setwindow pcb
+\i (00:04:16) zoom in 1264.72 2401.89
+\i (00:04:16) trapsize 386
+\i (00:04:16) zoom in 1 
+\i (00:04:16) setwindow pcb
+\i (00:04:16) zoom in 1263.18 2401.12
+\i (00:04:16) trapsize 193
+\i (00:04:16) zoom in 1 
+\i (00:04:16) setwindow pcb
+\i (00:04:16) zoom in 1262.79 2401.12
+\i (00:04:16) trapsize 96
+\i (00:04:17) zoom out 1 
+\i (00:04:17) setwindow pcb
+\i (00:04:17) zoom out 1246.97 2411.15
+\i (00:04:17) trapsize 193
+\i (00:04:23) zoom out 1 
+\i (00:04:23) setwindow pcb
+\i (00:04:23) zoom out 1248.91 2408.06
+\i (00:04:23) trapsize 386
+\i (00:04:23) zoom out 1 
+\i (00:04:23) setwindow pcb
+\i (00:04:23) zoom out 1248.90 2408.05
+\i (00:04:23) trapsize 771
+\i (00:04:23) zoom out 1 
+\i (00:04:23) setwindow pcb
+\i (00:04:23) zoom out 1250.45 2400.34
+\i (00:04:23) trapsize 1543
+\i (00:04:23) zoom out 1 
+\i (00:04:23) setwindow pcb
+\i (00:04:23) zoom out 1268.97 2230.62
+\t (00:04:23) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:04:23) trapsize 3086
+\i (00:04:24) zoom in 1 
+\i (00:04:24) setwindow pcb
+\i (00:04:24) zoom in 1262.80 2218.28
+\t (00:04:24) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (00:04:24) trapsize 1543
 \i (00:04:25) zoom out 1 
 \i (00:04:25) setwindow pcb
-\i (00:04:25) zoom out -1510.03 -110.93
-\i (00:04:25) trapsize 3490
+\i (00:04:25) zoom out 1256.63 2221.36
+\t (00:04:25) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:04:25) trapsize 3086
+\i (00:04:26) zoom in 1 
+\i (00:04:26) setwindow pcb
+\i (00:04:26) zoom in 1626.95 2986.70
+\t (00:04:26) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (00:04:26) trapsize 1543
+\i (00:04:27) zoom in 1 
+\i (00:04:27) setwindow pcb
+\i (00:04:27) zoom in 1651.64 3113.23
+\i (00:04:27) trapsize 771
+\i (00:04:27) zoom in 1 
+\i (00:04:27) setwindow pcb
+\i (00:04:27) zoom in 1651.64 3113.23
+\i (00:04:27) trapsize 386
+\i (00:04:28) zoom in 1 
+\i (00:04:28) setwindow pcb
+\i (00:04:28) zoom in 1616.92 3054.60
+\i (00:04:28) trapsize 193
+\i (00:04:28) zoom out 1 
+\i (00:04:28) setwindow pcb
+\i (00:04:28) zoom out 1616.92 3054.60
+\i (00:04:28) trapsize 386
+\i (00:04:28) zoom out 1 
+\i (00:04:28) setwindow pcb
+\i (00:04:28) zoom out 1616.92 3054.60
+\i (00:04:28) trapsize 771
 \i (00:04:29) zoom out 1 
 \i (00:04:29) setwindow pcb
-\i (00:04:29) zoom out -1384.40 259.00
-\i (00:04:29) trapsize 3490
-\i (00:04:40) prmed 
-\i (00:04:41) setwindow form.prmedit
-\i (00:04:41) FORM prmedit design  
-\i (00:04:45) FORM prmedit y -4581.10 
-\i (00:04:47) FORM prmedit done  
-\i (00:04:47) setwindow pcb
-\i (00:04:47) generaledit 
-\i (00:04:51) prmed 
-\i (00:04:58) setwindow form.prmedit
-\i (00:04:58) FORM prmedit y -4381.10 
-\i (00:05:04) FORM prmedit y -4281.10 
-\i (00:05:04) FORM prmedit done  
-\i (00:05:04) setwindow pcb
-\i (00:05:04) trapsize 3490
-\i (00:05:04) generaledit 
-\i (00:05:15) ncdrill legend 
-\i (00:05:17) setwindow form.nc_drilllegend
-\i (00:05:17) FORM nc_drilllegend done  
-\i (00:05:25) setwindow pcb
-\i (00:05:25) prepopup -2717.52 2725.24
-\i (00:05:26) pop Cancel 
-\i (00:05:26) generaledit 
-\i (00:05:27) prmed 
-\i (00:05:33) setwindow form.prmedit
-\i (00:05:33) FORM prmedit size B 
-\i (00:05:39) FORM prmedit y -5081.10 
-\i (00:05:39) FORM prmedit done  
-\i (00:05:39) setwindow pcb
-\i (00:05:39) trapsize 3490
-\i (00:05:39) generaledit 
-\i (00:05:40) zoom out 1 
-\i (00:05:40) setwindow pcb
-\i (00:05:40) zoom out 46.44 -1385.80
-\t (00:05:40) Grids are drawn 80.00, 80.00 apart for enhanced viewing.
-\i (00:05:40) trapsize 5393
-\i (00:05:41) zoom out 1 
-\i (00:05:41) setwindow pcb
-\i (00:05:41) zoom out 2139.08 320.55
-\i (00:05:41) trapsize 5393
-\i (00:05:42) zoom in 1 
-\i (00:05:42) setwindow pcb
-\i (00:05:42) zoom in -136.94 1517.89
-\t (00:05:42) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:05:42) trapsize 2697
-\i (00:05:43) zoom out 1 
-\i (00:05:43) setwindow pcb
-\i (00:05:43) zoom out -77.61 401.46
-\t (00:05:43) Grids are drawn 80.00, 80.00 apart for enhanced viewing.
-\i (00:05:43) trapsize 5393
-\i (00:05:52) ncdrill legend 
-\i (00:05:56) setwindow form.nc_drilllegend
-\i (00:05:56) FORM nc_drilllegend done  
+\i (00:04:29) zoom out 1616.93 3054.59
+\i (00:04:29) trapsize 1543
+\i (00:04:29) zoom out 1 
+\i (00:04:29) setwindow pcb
+\i (00:04:29) zoom out 1616.93 3054.60
+\t (00:04:29) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:04:29) trapsize 3086
+\i (00:04:30) zoom in 1 
+\i (00:04:30) setwindow pcb
+\i (00:04:30) zoom in 382.53 517.90
+\t (00:04:30) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (00:04:30) trapsize 1543
+\i (00:04:31) zoom in 1 
+\i (00:04:31) setwindow pcb
+\i (00:04:31) zoom in 370.18 561.11
+\i (00:04:31) trapsize 771
+\i (00:04:32) zoom out 1 
+\i (00:04:32) setwindow pcb
+\i (00:04:32) zoom out 629.41 922.17
+\i (00:04:32) trapsize 1543
+\i (00:04:32) zoom out 1 
+\i (00:04:32) setwindow pcb
+\i (00:04:32) zoom out 870.12 1218.44
+\t (00:04:32) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:04:32) trapsize 3086
+\i (00:04:35) zoom in 1 
+\i (00:04:35) setwindow pcb
+\i (00:04:35) zoom in 703.48 1341.87
+\t (00:04:35) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (00:04:35) trapsize 1543
+\i (00:04:35) zoom in 1 
+\i (00:04:35) setwindow pcb
+\i (00:04:35) zoom in 703.48 1341.88
+\i (00:04:35) trapsize 771
+\i (00:04:39) setwindow form.find
+\i (00:04:39) FORM find find_name 3out 
+\i (00:04:46) FORM find find_name 3OUT 
+\i (00:04:54) setwindow pcb
+\i (00:04:54) zoom out 1 
+\i (00:04:54) setwindow pcb
+\i (00:04:54) zoom out 754.40 1212.27
+\i (00:04:54) trapsize 1543
+\i (00:04:54) zoom out 1 
+\i (00:04:54) setwindow pcb
+\i (00:04:54) zoom out 754.41 1212.27
+\t (00:04:54) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:04:54) trapsize 3086
+\i (00:04:54) zoom out 1 
+\i (00:04:54) setwindow pcb
+\i (00:04:54) zoom out 754.40 1212.28
+\t (00:04:54) Grids are drawn 80.00, 80.00 apart for enhanced viewing.
+\i (00:04:54) trapsize 6172
+\i (00:04:54) zoom out 1 
+\i (00:04:54) setwindow pcb
+\i (00:04:54) zoom out 3207.97 487.53
+\i (00:04:54) trapsize 6922
+\i (00:04:55) zoom in 1 
+\i (00:04:55) setwindow pcb
+\i (00:04:55) zoom in 1247.08 2679.49
+\t (00:04:55) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:04:55) trapsize 3461
+\i (00:04:55) zoom in 1 
+\i (00:04:55) setwindow pcb
+\i (00:04:55) zoom in 1247.08 2679.49
+\t (00:04:55) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (00:04:55) trapsize 1730
+\i (00:04:55) zoom in 1 
+\i (00:04:55) setwindow pcb
+\i (00:04:55) zoom in 1247.08 2679.50
+\i (00:04:55) trapsize 865
+\i (00:04:55) zoom out 1 
+\i (00:04:55) setwindow pcb
+\i (00:04:55) zoom out 1255.73 2662.20
+\i (00:04:55) trapsize 1730
+\i (00:04:56) zoom in 1 
+\i (00:04:56) setwindow pcb
+\i (00:04:56) zoom in 1314.56 2444.16
+\i (00:04:56) trapsize 865
+\i (00:04:56) zoom in 1 
+\i (00:04:56) setwindow pcb
+\i (00:04:56) zoom in 1314.57 2444.16
+\i (00:04:56) trapsize 433
+\i (00:04:56) zoom in 1 
+\i (00:04:56) setwindow pcb
+\i (00:04:56) zoom in 1314.57 2444.16
+\i (00:04:56) trapsize 216
+\i (00:04:57) zoom in 1 
+\i (00:04:57) setwindow pcb
+\i (00:04:57) zoom in 1355.23 2416.91
+\i (00:04:57) trapsize 108
+\i (00:04:58) zoom out 1 
+\i (00:04:58) setwindow pcb
+\i (00:04:58) zoom out 1355.23 2416.92
+\i (00:04:58) trapsize 216
+\i (00:05:01) pick grid 1160.98 2363.70
+\t (00:05:01) last pick:  1160.00 2360.00
+\e (00:05:02) Command not found: 4
+\i (00:05:06) zoom out 1 
+\i (00:05:06) setwindow pcb
+\i (00:05:06) zoom out 1414.93 2397.45
+\i (00:05:06) trapsize 433
+\i (00:05:06) zoom out 1 
+\i (00:05:06) setwindow pcb
+\i (00:05:06) zoom out 1414.06 2397.44
+\i (00:05:06) trapsize 865
+\i (00:05:07) zoom in 1 
+\i (00:05:07) setwindow pcb
+\i (00:05:07) zoom in 1465.99 2523.77
+\i (00:05:07) trapsize 433
+\i (00:05:07) zoom in 1 
+\i (00:05:07) setwindow pcb
+\i (00:05:07) zoom in 1469.45 2522.04
+\i (00:05:07) trapsize 216
+\i (00:05:07) zoom in 1 
+\i (00:05:07) setwindow pcb
+\i (00:05:07) zoom in 1470.32 2520.74
+\i (00:05:07) trapsize 108
+\i (00:05:07) zoom out 1 
+\i (00:05:07) setwindow pcb
+\i (00:05:07) zoom out 1470.54 2520.74
+\i (00:05:07) trapsize 216
+\i (00:05:09) zoom out 1 
+\i (00:05:09) setwindow pcb
+\i (00:05:09) zoom out 1466.21 2506.03
+\i (00:05:09) trapsize 433
+\i (00:05:11) zoom in 1 
+\i (00:05:11) setwindow pcb
+\i (00:05:11) zoom in 1354.59 2339.05
+\i (00:05:11) trapsize 216
+\i (00:05:11) zoom out 1 
+\i (00:05:11) setwindow pcb
+\i (00:05:11) zoom out 1354.59 2339.05
+\i (00:05:11) trapsize 433
+\i (00:05:12) zoom in 1 
+\i (00:05:12) setwindow pcb
+\i (00:05:12) zoom in 1194.52 2385.77
+\i (00:05:12) trapsize 216
+\i (00:05:12) zoom in 1 
+\i (00:05:12) setwindow pcb
+\i (00:05:12) zoom in 1194.52 2385.77
+\i (00:05:12) trapsize 108
+\i (00:05:12) zoom in 1 
+\i (00:05:12) setwindow pcb
+\i (00:05:12) zoom in 1194.74 2385.77
+\i (00:05:12) trapsize 54
+\i (00:05:13) zoom out 1 
+\i (00:05:13) setwindow pcb
+\i (00:05:13) zoom out 1212.16 2392.04
+\i (00:05:13) trapsize 108
+\i (00:05:15) zoom out 1 
+\i (00:05:15) setwindow pcb
+\i (00:05:15) zoom out 1229.89 2387.07
+\i (00:05:15) trapsize 216
+\i (00:05:17) zoom in 1 
+\i (00:05:17) setwindow pcb
+\i (00:05:17) zoom in 1253.69 2496.09
+\i (00:05:17) trapsize 108
+\i (00:05:18) zoom out 1 
+\i (00:05:18) setwindow pcb
+\i (00:05:18) zoom out 1251.96 2480.73
+\i (00:05:18) trapsize 216
+\i (00:05:19) zoom in 1 
+\i (00:05:19) setwindow pcb
+\i (00:05:19) zoom in 1185.77 2411.95
+\i (00:05:19) trapsize 108
+\i (00:05:20) zoom out 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom out 1189.88 2411.95
+\i (00:05:20) trapsize 216
+\i (00:05:20) zoom out 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom out 1189.89 2411.52
+\i (00:05:20) trapsize 433
+\i (00:05:20) zoom out 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom out 1189.88 2411.51
+\i (00:05:20) trapsize 865
+\i (00:05:21) zoom out 1 
+\i (00:05:21) setwindow pcb
+\i (00:05:21) zoom out 1260.84 2390.75
+\i (00:05:21) trapsize 1730
+\i (00:05:21) zoom in 1 
+\i (00:05:22) setwindow pcb
+\i (00:05:22) zoom in 243.31 1916.60
+\i (00:05:22) trapsize 865
+\i (00:05:22) zoom in 1 
+\i (00:05:22) setwindow pcb
+\i (00:05:22) zoom in 243.31 1916.61
+\i (00:05:22) trapsize 433
+\i (00:05:22) zoom in 1 
+\i (00:05:22) setwindow pcb
+\i (00:05:22) zoom in 244.18 1916.61
+\i (00:05:22) trapsize 216
+\i (00:05:23) zoom out 1 
+\i (00:05:23) setwindow pcb
+\i (00:05:23) zoom out 309.94 1931.33
+\i (00:05:23) trapsize 433
+\i (00:05:33) zoom out 1 
+\i (00:05:33) setwindow pcb
+\i (00:05:33) zoom out 303.03 2020.44
+\i (00:05:33) trapsize 865
+\i (00:05:58) zoom out 1 
+\i (00:05:58) setwindow pcb
+\i (00:05:58) zoom out 791.03 2041.21
+\i (00:05:58) trapsize 1730
+\i (00:05:59) zoom out 1 
+\i (00:05:59) setwindow pcb
+\i (00:05:59) zoom out 361.86 2079.28
+\t (00:05:59) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:05:59) trapsize 3461
+\i (00:06:00) zoom in 1 
+\i (00:06:00) setwindow pcb
+\i (00:06:00) zoom in 2050.83 2100.05
+\t (00:06:00) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (00:06:00) trapsize 1730
+\i (00:06:01) zoom in 1 
+\i (00:06:01) setwindow pcb
+\i (00:06:01) zoom in 2050.83 2106.98
+\i (00:06:01) trapsize 865
+\i (00:06:02) zoom in 1 
 \i (00:06:02) setwindow pcb
-\i (00:06:02) pick grid -1560.80 -251.15
-\t (00:06:02) last pick:  -1560.00 -250.00
-\t (00:06:02) NC Drill Legend generation successful
-\i (00:06:02) generaledit 
-\i (00:06:04) zoom in 1 
-\i (00:06:04) setwindow pcb
-\i (00:06:04) zoom in 2904.94 223.47
-\t (00:06:04) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:06:04) trapsize 2697
+\i (00:06:02) zoom in 1820.68 2260.99
+\i (00:06:02) trapsize 433
 \i (00:06:04) zoom out 1 
 \i (00:06:04) setwindow pcb
-\i (00:06:04) zoom out 2333.24 153.36
-\t (00:06:04) Grids are drawn 80.00, 80.00 apart for enhanced viewing.
-\i (00:06:04) trapsize 5393
-\i (00:06:05) zoom out 1 
-\i (00:06:05) setwindow pcb
-\i (00:06:05) zoom out 1793.90 94.03
-\i (00:06:05) trapsize 5393
-\i (00:06:05) zoom out 1 
-\i (00:06:05) setwindow pcb
-\i (00:06:05) zoom out 1793.90 126.39
-\i (00:06:05) trapsize 5393
-\i (00:06:05) prepopup 6464.59 2337.68
-\i (00:06:06) pick grid 5580.07 1884.64
-\t (00:06:06) last pick:  5580.00 1880.00
-\i (00:06:11) ncdrill param 
-\i (00:06:11) generaledit 
-\i (00:06:15) setwindow form.nc_parameters
-\i (00:06:15) FORM nc_parameters integer_places 3 
-\i (00:06:21) FORM nc_parameters decimal_places 6 
-\i (00:06:21) FORM nc_parameters suppress_trail_zeroes YES 
-\i (00:06:22) FORM nc_parameters suppress_equal YES 
-\i (00:06:22) FORM nc_parameters enhanced_format YES 
-\i (00:06:29) FORM nc_parameters done  
-\i (00:06:35) setwindow pcb
-\i (00:06:35) nctape_full 
-\i (00:06:37) setwindow form.nc_drill
-\i (00:06:37) FORM nc_drill auto_tool_select YES 
-\i (00:06:38) FORM nc_drill optimize YES 
-\i (00:06:47) FORM nc_drill auto_tool_select NO 
-\i (00:06:48) FORM nc_drill optimize NO 
-\i (00:07:44) FORM nc_drill cancel  
-\i (00:07:44) setwindow pcb
-\i (00:07:44) generaledit 
-\i (00:07:46) viewlog -last 
-\i (00:07:48) setwindow text
-\i (00:07:48) close
-\i (00:08:58) nctape_full 
-\i (00:08:59) setwindow form.nc_drill
-\i (00:08:59) FORM nc_drill auto_tool_select YES 
-\i (00:09:00) FORM nc_drill optimize YES 
-\i (00:09:02) FORM nc_drill execute  
-\w (00:09:02) WARNING(SPMHMF-269): Design contains slot holes that cannot be drilled. They can be processed by NC Route instead.
-\t (00:09:02) Starting Generating NC Drill...
-\i (00:09:05) FORM nc_drill close  
-\i (00:09:05) setwindow pcb
-\i (00:09:05) generaledit 
-\i (00:09:08) viewlog -last 
-\i (00:09:15) setwindow text
-\i (00:09:15) close
-\i (00:09:18) ncroute 
-\i (00:09:22) setwindow form.nc_route
-\i (00:09:22) FORM nc_route feed_rate 1 
-\i (00:09:22) FORM nc_route execute  
-\t (00:09:22) Starting NC Route...
-\i (00:09:25) FORM nc_route close  
-\i (00:09:25) setwindow pcb
-\i (00:09:25) generaledit 
-\i (00:09:27) viewlog -last 
-\i (00:09:37) setwindow text
-\i (00:09:37) close
-\i (00:10:04) color192 
-\i (00:10:04) generaledit 
-\i (00:10:05) QtSignal CVDLayerContainer CVDVisibilityOn clicked
-\i (00:10:07) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:10:21) artwork 
-\i (00:10:29) setwindow form.film_control
-\i (00:10:29) FORM film_control undefined_line_width 6 
-\i (00:10:29) FORM film_control filmtree  TOP 
-\i (00:10:30) FORM film_control undefined_line_width 6 
-\i (00:10:30) FORM film_control filmtree  BOTTOM 
-\i (00:10:31) FORM film_control filmtree  TOP 
-\i (00:10:34) setwindow pcb
-\i (00:10:34) color192 
-\i (00:10:35) QtSignal CVDLayerContainer CVDVisibilityOff clicked
-\i (00:10:37) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Stack-Up
-\i (00:10:44) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Stack-Up Non-Conductor +
-\i (00:10:44) QtSignal Pin
-\i (00:10:45) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:10:45) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 0 0
-\i (00:10:45) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 0 0
-\i (00:10:45) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:10:51) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Board geometry"
-\i (00:10:51) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:10:51) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:10:51) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:10:51) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:10:53) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 17 0
-\i (00:10:53) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 17 0
-\i (00:10:53) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:10:54) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Package geometry"
-\i (00:10:56) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:10:56) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:10:57) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 20 0
-\i (00:10:57) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 20 0
-\i (00:10:57) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:10:59) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Board geometry"
-\i (00:11:01) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Stack-Up Non-Conductor +
-\i (00:11:01) QtSignal Pin
-\i (00:11:03) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:11:07) setwindow form.film_control
-\i (00:11:07) FORM film_control filmtree popup Add TOP 
-\i (00:11:17) fillin "Soldermask_Top"
-\i (00:11:23) FORM film_control general_parameters  
-\i (00:11:25) FORM film_control film_control  
-\i (00:11:28) setwindow pcb
-\i (00:11:28) color192 
-\i (00:11:28) QtSignal CVDLayerContainer CVDVisibilityOff clicked
-\i (00:11:31) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Stack-Up
-\i (00:11:33) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Stack-Up Non-Conductor +
-\i (00:11:33) QtSignal Pin
-\i (00:11:34) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:11:34) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 1 0
-\i (00:11:34) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 1 0
-\i (00:11:34) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:11:37) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Board geometry"
-\i (00:11:38) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:11:38) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:11:38) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:11:38) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:11:40) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:11:40) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 16 0
-\i (00:11:40) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 16 0
-\i (00:11:40) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:11:41) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Package geometry"
-\i (00:11:42) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 19 0
-\i (00:11:42) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 19 0
-\i (00:11:42) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:11:43) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Stack-Up Non-Conductor +
-\i (00:11:43) QtSignal Pin
-\i (00:11:45) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:11:47) zoom in 1 
-\i (00:11:47) setwindow pcb
-\i (00:11:47) zoom in 1761.54 3081.97
-\t (00:11:47) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:11:47) trapsize 2697
-\i (00:11:47) zoom in 1 
-\i (00:11:47) setwindow pcb
-\i (00:11:47) zoom in 1734.57 3092.76
-\t (00:11:47) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:11:47) trapsize 1348
-\i (00:11:47) zoom out 1 
-\i (00:11:47) setwindow pcb
-\i (00:11:47) zoom out 1694.13 3041.52
-\t (00:11:47) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:11:47) trapsize 2697
-\i (00:11:53) setwindow form.film_control
-\i (00:11:53) FORM film_control filmtree popup Add Soldermask_Top 
-\i (00:12:03) fillin "Soldermask_Bottom"
-\i (00:12:08) setwindow pcb
-\i (00:12:08) color192 
-\i (00:12:08) QtSignal CVDLayerContainer CVDVisibilityOff clicked
-\i (00:12:11) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Board geometry"
-\i (00:12:14) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 15 0
-\i (00:12:14) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 15 0
-\i (00:12:14) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:12:15) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Package geometry"
-\i (00:12:17) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 18 0
-\i (00:12:17) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 18 0
-\i (00:12:17) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:12:22) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Components "Ref des"
-\i (00:12:23) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 5 0
-\i (00:12:23) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 5 0
-\i (00:12:23) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:12:25) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Package geometry"
-\i (00:12:27) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Board geometry"
-\i (00:12:29) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:12:30) zoom in 1 
-\i (00:12:30) setwindow pcb
-\i (00:12:30) zoom in 1214.11 3602.44
-\t (00:12:30) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:12:30) trapsize 1348
-\i (00:12:32) zoom out 1 
-\i (00:12:32) setwindow pcb
-\i (00:12:32) zoom out 1389.40 2291.84
-\t (00:12:32) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:12:32) trapsize 2697
-\i (00:12:35) setwindow form.film_control
-\i (00:12:35) FORM film_control filmtree popup Add Soldermask_Bottom 
-\i (00:12:44) fillin "Silkscreen_Top"
-\i (00:12:53) FORM film_control filmtree  Silkscreen_Top 
-\i (00:12:55) setwindow pcb
-\i (00:12:55) color192 
-\i (00:12:56) QtSignal CVDLayerContainer CVDVisibilityOff clicked
-\i (00:12:59) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Board geometry"
-\i (00:13:00) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:13:00) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:13:00) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:13:02) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 14 0
-\i (00:13:02) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 14 0
-\i (00:13:02) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:13:03) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Package geometry"
-\i (00:13:03) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:13:03) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:13:04) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 17 0
-\i (00:13:04) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 17 0
-\i (00:13:05) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:13:06) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Components "Ref des"
-\i (00:13:07) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 4 0
-\i (00:13:07) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 4 0
-\i (00:13:07) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:13:08) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:13:10) zoom in 1 
-\i (00:13:10) setwindow pcb
-\i (00:13:10) zoom in 1885.58 1935.88
-\t (00:13:10) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:13:10) trapsize 1348
-\i (00:13:10) zoom out 1 
-\i (00:13:10) setwindow pcb
-\i (00:13:10) zoom out 1899.07 1927.79
-\t (00:13:10) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:13:10) trapsize 2697
-\i (00:13:16) setwindow form.film_control
-\i (00:13:16) FORM film_control filmtree popup Add Silkscreen_Top 
-\i (00:13:29) fillin "Silkscreen_Bottom"
-\i (00:13:31) FORM film_control filmtree  Silkscreen_Bottom 
-\i (00:13:33) setwindow pcb
-\i (00:13:33) color192 
-\i (00:13:35) QtSignal CVDLayerContainer CVDVisibilityOff clicked
-\i (00:14:00) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry "Board geometry"
-\i (00:14:02) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:14:02) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 5 0
-\i (00:14:02) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 5 0
-\i (00:14:02) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:14:03) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Manufacturing
-\i (00:14:06) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 4 0
-\i (00:14:06) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 4 0
-\i (00:14:06) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:14:08) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:14:09) zoom out 1 
-\i (00:14:09) setwindow pcb
-\i (00:14:09) zoom out 1316.57 843.72
-\t (00:14:09) Grids are drawn 80.00, 80.00 apart for enhanced viewing.
-\i (00:14:09) trapsize 5393
-\i (00:14:12) setwindow form.film_control
-\i (00:14:12) FORM film_control filmtree popup Add Silkscreen_Bottom 
-\i (00:14:21) fillin "Drill_Drawing"
-\i (00:14:22) FORM film_control filmtree  TOP 
-\i (00:14:25) FORM film_control filmtree popup Add TOP 
-\i (00:14:31) fillin "OUTLINE"
-\i (00:14:35) FORM film_control filmtree  MANUFACTURING/NCLEGEND-1-2 OUTLINE 
-\i (00:14:36) FORM film_control filmtree popup Cut MANUFACTURING/NCLEGEND-1-2 OUTLINE 
-\i (00:14:40) FORM film_control filmtree  OUTLINE 
-\i (00:14:42) setwindow pcb
-\i (00:14:42) shadow toggle 
-\i (00:14:45) shadow toggle 
-\i (00:14:47) QtSignal ColorVisibilityPane CVPGlobalVisOn clicked
-\i (00:14:54) setwindow form.film_control
-\i (00:14:54) FORM film_control filmtree  BOTTOM 
-\i (00:14:57) FORM film_control filmtree  TOP 
-\i (00:14:57) FORM film_control filmtree  OUTLINE 
-\i (00:15:00) FORM film_control undefined_line_width 6 
-\i (00:15:00) FORM film_control filmtree  Soldermask_Top 
-\i (00:15:01) FORM film_control undefined_line_width 6 
-\i (00:15:01) FORM film_control filmtree  Soldermask_Bottom 
-\i (00:15:03) FORM film_control undefined_line_width 6 
-\i (00:15:03) FORM film_control filmtree  Silkscreen_Top 
-\i (00:15:04) FORM film_control undefined_line_width 6 
-\i (00:15:04) FORM film_control filmtree  Silkscreen_Bottom 
-\i (00:15:05) FORM film_control undefined_line_width 6 
-\i (00:15:05) FORM film_control filmtree  Drill_Drawing 
-\i (00:15:07) FORM film_control undefined_line_width 6 
-\i (00:15:07) FORM film_control filmtree  Silkscreen_Bottom 
-\i (00:15:07) FORM film_control filmtree  Drill_Drawing 
-\i (00:15:08) FORM film_control filmtree  Silkscreen_Bottom 
-\i (00:15:08) FORM film_control filmtree  Silkscreen_Top 
-\i (00:15:08) FORM film_control filmtree  Soldermask_Bottom 
-\i (00:15:09) FORM film_control filmtree  Soldermask_Top 
-\i (00:15:09) FORM film_control filmtree  OUTLINE 
-\i (00:15:10) FORM film_control filmtree  TOP 
-\i (00:15:10) FORM film_control filmtree  BOTTOM 
-\i (00:15:11) FORM film_control select_all  
-\i (00:15:24) FORM film_control ok  
-\i (00:15:24) setwindow pcb
-\i (00:15:24) generaledit 
-\i (00:15:28) status 
-\i (00:15:28) generaledit 
-\i (00:15:38) setwindow form.status
-\i (00:15:38) FORM status fill_update  
-\t (00:15:38) Updating dynamic shape (1 of 1) Gnd, Boundary/Top @ (3060.87 88.74) ...
-\i (00:15:40) FORM status drc_update  
-\t (00:15:40) Running DRC, wait...
-\t (00:15:40) Performing DRC...
-\t (00:15:40) Multithreaded DRC update (16 threads).
-\t (00:15:40) No DRC errors detected.
-\t (00:15:40) DRC done.
-\i (00:15:53) FORM status drc_update  
-\t (00:15:53) Running DRC, wait...
-\t (00:15:53) Performing DRC...
-\t (00:15:53) Multithreaded DRC update (16 threads).
-\t (00:15:53) No DRC errors detected.
-\t (00:15:53) DRC done.
-\i (00:15:54) FORM status done  
-\i (00:16:14) setwindow pcb
-\i (00:16:14) ncdrill customization 
-\i (00:16:14) generaledit 
-\i (00:16:20) setwindow form.nc_drillcustomization
-\i (00:16:20) FORM nc_drillcustomization cancel  
-\i (00:16:26) setwindow pcb
-\i (00:16:26) artwork 
-\i (00:16:39) setwindow form.film_control
-\i (00:16:39) FORM film_control filmtree  Drill_Drawing 
-\i (00:16:40) FORM film_control filmtree  BOTTOM 
-\i (00:16:42) FORM film_control select_all  
-\i (00:17:25) FORM film_control filmtree  ETCH/TOP TOP 
-\i (00:17:30) setwindow pcb
-\i (00:17:30) color192 
-\i (00:17:32) QtSignal CVDLayerContainer CVDVisibilityOff clicked
-\i (00:17:35) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Stack-Up Conductor Etch
-\i (00:17:36) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 0 0
-\i (00:17:36) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 0 0
-\i (00:17:36) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
-\i (00:17:37) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:17:38) zoom in 1 
-\i (00:17:38) setwindow pcb
-\i (00:17:38) zoom in 1232.99 2715.22
-\t (00:17:38) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:17:38) trapsize 2697
-\i (00:17:38) zoom in 1 
-\i (00:17:38) setwindow pcb
-\i (00:17:38) zoom in 1232.99 2715.22
-\t (00:17:38) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:17:38) trapsize 1348
-\i (00:17:39) zoom in 1 
-\i (00:17:39) setwindow pcb
-\i (00:17:39) zoom in 1232.99 2715.22
-\i (00:17:39) trapsize 674
-\i (00:17:40) zoom out 1 
-\i (00:17:40) setwindow pcb
-\i (00:17:40) zoom out 1323.33 2591.17
-\i (00:17:40) trapsize 1348
-\i (00:17:40) zoom out 1 
-\i (00:17:40) setwindow pcb
-\i (00:17:40) zoom out 1379.96 2512.97
-\t (00:17:40) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:17:40) trapsize 2697
-\i (00:17:41) zoom in 1 
-\i (00:17:41) setwindow pcb
-\i (00:17:41) zoom in 1390.75 2518.36
-\t (00:17:41) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:17:41) trapsize 1348
-\i (00:17:41) zoom out 1 
-\i (00:17:41) setwindow pcb
-\i (00:17:41) zoom out 1390.75 2521.06
-\t (00:17:41) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:17:41) trapsize 2697
-\i (00:17:43) color192 
-\i (00:17:44) QtSignal CVDLayerContainer CVDVisibilityOn clicked
-\i (00:17:45) QtSignal ColorVisibilityDialog CVDOkButton clicked
-\i (00:17:46) setwindow form.film_control
-\i (00:17:46) FORM film_control filmtree  TOP 
-\i (00:17:48) FORM film_control select_all  
-\i (00:17:54) FORM film_control general_parameters  
-\i (00:17:56) FORM film_control film_control  
-\i (00:17:58) FORM film_control general_parameters  
-\i (00:18:01) FORM film_control film_control  
-\i (00:18:02) FORM film_control filmtree  Soldermask_Top 
-\i (00:18:04) FORM film_control select_all  
-\i (00:18:05) FORM film_control create  
-\t (00:18:05) Checking db records
-\t (00:18:05)     checking for orphans...
-\t (00:18:05)     Checked  62 percent
-\t (00:18:05)     Checked 100 percent
-\t (00:18:05) Done dbdoctor.
-\t (00:18:05) Starting Create artwork films...
-\w (00:18:06) WARNING(SPMHGE-269): artwork had warnings, use Viewlog to review the log file.
-\w (00:18:07) Artwork generated with warnings.
-\i (00:18:30) setwindow pcb
-\i (00:18:30) setwindow text
-\i (00:18:30) close
-\i (00:18:32) setwindow form.film_control
-\i (00:18:32) FORM film_control ok  
-\i (00:18:32) setwindow pcb
-\i (00:18:32) generaledit 
-\i (00:18:33) prepopup 3618.23 2634.33
-\i (00:18:34) pick grid 4055.10 2871.64
-\t (00:18:34) last pick:  4060.00 2870.00
-\i (00:18:36) exit 
-\e (00:18:36) Do you want to save the changes you made to D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd?
-\i (00:18:41) fillin yes 
-\t (00:18:42)     Journal end - Thu May 05 21:01:36 2022
+\i (00:06:04) zoom out 1748.86 2261.86
+\i (00:06:04) trapsize 865
+\i (00:06:06) zoom out 1 
+\i (00:06:06) setwindow pcb
+\i (00:06:06) zoom out 1722.91 2249.75
+\i (00:06:06) trapsize 1730
+\i (00:06:06) zoom in 1 
+\i (00:06:06) setwindow pcb
+\i (00:06:06) zoom in 1729.84 2263.59
+\i (00:06:06) trapsize 865
+\i (00:06:06) zoom in 1 
+\i (00:06:06) setwindow pcb
+\i (00:06:06) zoom in 1726.38 2267.05
+\i (00:06:06) trapsize 433
+\i (00:22:58) zoom out 1 
+\i (00:22:58) setwindow pcb
+\i (00:22:58) zoom out 1663.22 2062.86
+\i (00:22:58) trapsize 865
+\i (00:22:59) zoom out 1 
+\i (00:22:59) setwindow pcb
+\i (00:22:59) zoom out 1654.57 2059.39
+\i (00:22:59) trapsize 1730
+\i (00:22:59) zoom out 1 
+\i (00:22:59) setwindow pcb
+\i (00:22:59) zoom out 1509.21 2402.04
+\t (00:22:59) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:22:59) trapsize 3461
+\i (00:23:00) zoom out 1 
+\i (00:23:00) setwindow pcb
+\i (00:23:00) zoom out 1509.22 2402.03
+\t (00:23:00) Grids are drawn 80.00, 80.00 apart for enhanced viewing.
+\i (00:23:00) trapsize 6922
+\i (00:23:23) zoom in 1 
+\i (00:23:23) setwindow pcb
+\i (00:23:23) zoom in 1274.76 893.66
+\t (00:23:23) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:23:23) trapsize 3461
+\i (00:23:23) zoom in 1 
+\i (00:23:23) setwindow pcb
+\i (00:23:23) zoom in 1274.76 893.66
+\t (00:23:23) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (00:23:23) trapsize 1730
+\i (00:23:24) zoom in 1 
+\i (00:23:24) setwindow pcb
+\i (00:23:24) zoom in 1870.04 1039.02
+\i (00:23:24) trapsize 865
+\i (00:23:24) zoom in 1 
+\i (00:23:24) setwindow pcb
+\i (00:23:24) zoom in 1833.70 1030.37
+\i (00:23:24) trapsize 433
+\i (00:23:25) zoom out 1 
+\i (00:23:25) setwindow pcb
+\i (00:23:25) zoom out 1860.52 1014.79
+\i (00:23:25) trapsize 865
+\i (00:23:27) zoom out 1 
+\i (00:23:27) setwindow pcb
+\i (00:23:27) zoom out 2028.38 578.73
+\i (00:23:27) trapsize 1730
+\i (00:23:28) zoom in 1 
+\i (00:23:28) setwindow pcb
+\i (00:23:28) zoom in 1315.42 1246.68
+\i (00:23:28) trapsize 865
+\i (00:23:30) zoom out 1 
+\i (00:23:30) setwindow pcb
+\i (00:23:30) zoom out 1147.57 957.70
+\i (00:23:30) trapsize 1730
+\i (01:38:36) xname_flush 
+\i (01:38:37) xname_flush 
+\i (02:17:25) setwindow form.find
+\i (02:17:25) FORM find find_name 3V3 
+\i (02:17:25) setwindow pcb
+\i (02:17:25) trapsize 2270
+\i (02:17:27) zoom in 1 
+\i (02:17:27) setwindow pcb
+\i (02:17:27) zoom in 463.89 2916.59
+\i (02:17:27) trapsize 1135
+\i (02:17:27) zoom in 1 
+\i (02:17:27) setwindow pcb
+\i (02:17:27) zoom in 463.90 2916.60
+\i (02:17:27) trapsize 568
+\i (02:17:27) zoom in 1 
+\i (02:17:27) setwindow pcb
+\i (02:17:27) zoom in 463.90 2916.60
+\i (02:17:27) trapsize 284
+\i (02:17:27) zoom in 1 
+\i (02:17:27) setwindow pcb
+\i (02:17:27) zoom in 463.90 2916.60
+\i (02:17:27) trapsize 142
+\i (02:17:28) zoom out 1 
+\i (02:17:28) setwindow pcb
+\i (02:17:28) zoom out 484.05 2910.08
+\i (02:17:28) trapsize 284
+\i (02:17:28) zoom out 1 
+\i (02:17:28) setwindow pcb
+\i (02:17:28) zoom out 484.06 2910.08
+\i (02:17:28) trapsize 568
+\i (02:17:30) zoom out 1 
+\i (02:17:30) setwindow pcb
+\i (02:17:30) zoom out 640.72 2709.14
+\i (02:17:30) trapsize 1135
+\i (02:17:31) zoom in 1 
+\i (02:17:31) setwindow pcb
+\i (02:17:31) zoom in 499.94 2722.77
+\i (02:17:31) trapsize 568
+\i (02:17:31) zoom in 1 
+\i (02:17:31) setwindow pcb
+\i (02:17:31) zoom in 501.08 2722.77
+\i (02:17:31) trapsize 284
+\i (02:17:32) zoom out 1 
+\i (02:17:32) setwindow pcb
+\i (02:17:32) zoom out 558.98 2750.02
+\i (02:17:32) trapsize 568
+\i (02:17:33) zoom in 1 
+\i (02:17:33) setwindow pcb
+\i (02:17:33) zoom in 558.98 2905.55
+\i (02:17:33) trapsize 284
+\i (02:17:33) zoom in 1 
+\i (02:17:33) setwindow pcb
+\i (02:17:33) zoom in 558.98 2905.56
+\i (02:17:33) trapsize 142
+\i (02:17:33) zoom in 1 
+\i (02:17:33) setwindow pcb
+\i (02:17:33) zoom in 549.62 2901.87
+\i (02:17:33) trapsize 71
+\i (02:17:34) zoom in 1 
+\i (02:17:34) setwindow pcb
+\i (02:17:34) zoom in 549.63 2901.87
+\i (02:17:34) trapsize 35
+\i (02:17:34) zoom out 1 
+\i (02:17:34) setwindow pcb
+\i (02:17:34) zoom out 541.54 2899.26
+\i (02:17:34) trapsize 71
+\i (02:17:34) zoom out 1 
+\i (02:17:34) setwindow pcb
+\i (02:17:34) zoom out 541.53 2899.26
+\i (02:17:34) trapsize 142
+\i (02:17:35) zoom out 1 
+\i (02:17:35) setwindow pcb
+\i (02:17:35) zoom out 549.20 2900.67
+\i (02:17:35) trapsize 284
+\i (02:17:35) zoom out 1 
+\i (02:17:35) setwindow pcb
+\i (02:17:35) zoom out 549.19 2900.68
+\i (02:17:35) trapsize 568
+\i (02:17:37) zoom out 1 
+\i (02:17:37) setwindow pcb
+\i (02:17:37) zoom out 835.33 2801.89
+\i (02:17:37) trapsize 1135
+\i (02:17:37) zoom in 1 
+\i (02:17:37) setwindow pcb
+\i (02:17:37) zoom in 553.75 2652.01
+\i (02:17:37) trapsize 568
+\i (02:17:37) zoom in 1 
+\i (02:17:37) setwindow pcb
+\i (02:17:37) zoom in 553.75 2661.10
+\i (02:17:37) trapsize 284
+\i (02:17:37) zoom in 1 
+\i (02:17:37) setwindow pcb
+\i (02:17:37) zoom in 556.03 2668.48
+\i (02:17:37) trapsize 142
+\i (02:17:38) zoom out 1 
+\i (02:17:38) setwindow pcb
+\i (02:17:38) zoom out 585.26 2733.49
+\i (02:17:38) trapsize 284
+\i (02:17:38) zoom out 1 
+\i (02:17:38) setwindow pcb
+\i (02:17:38) zoom out 583.00 2727.24
+\i (02:17:38) trapsize 568
+\i (02:17:38) zoom in 1 
+\i (02:17:38) setwindow pcb
+\i (02:17:38) zoom in 647.72 2907.78
+\i (02:17:38) trapsize 284
+\i (02:17:38) zoom in 1 
+\i (02:17:38) setwindow pcb
+\i (02:17:38) zoom in 647.15 2907.78
+\i (02:17:38) trapsize 142
+\i (02:17:39) zoom in 1 
+\i (02:17:39) setwindow pcb
+\i (02:17:39) zoom in 647.15 2907.78
+\i (02:17:39) trapsize 71
+\i (02:17:39) zoom out 1 
+\i (02:17:39) setwindow pcb
+\i (02:17:39) zoom out 643.18 2910.90
+\i (02:17:39) trapsize 142
+\i (02:17:39) zoom out 1 
+\i (02:17:39) setwindow pcb
+\i (02:17:39) zoom out 642.62 2910.90
+\i (02:17:39) trapsize 284
+\i (02:17:41) zoom out 1 
+\i (02:17:41) setwindow pcb
+\i (02:17:41) zoom out 615.37 2814.40
+\i (02:17:41) trapsize 568
+\i (02:17:46) zoom out 1 
+\i (02:17:46) setwindow pcb
+\i (02:17:46) zoom out 760.71 2835.97
+\i (02:17:46) trapsize 1135
+\i (02:17:46) zoom in 1 
+\i (02:17:46) setwindow pcb
+\i (02:17:46) zoom in 760.71 2835.97
+\i (02:17:46) trapsize 568
+\i (02:17:47) zoom in 1 
+\i (02:17:47) setwindow pcb
+\i (02:17:47) zoom in 760.71 2835.97
+\i (02:17:47) trapsize 284
+\i (02:17:48) zoom out 1 
+\i (02:17:48) setwindow pcb
+\i (02:17:48) zoom out 803.29 2665.09
+\i (02:17:48) trapsize 568
+\i (02:17:49) zoom out 1 
+\i (02:17:49) setwindow pcb
+\i (02:17:49) zoom out 803.29 2661.68
+\i (02:17:49) trapsize 1135
+\i (02:17:49) zoom in 1 
+\i (02:17:49) setwindow pcb
+\i (02:17:49) zoom in 862.33 2620.80
+\i (02:17:49) trapsize 568
+\i (02:17:49) zoom in 1 
+\i (02:17:49) setwindow pcb
+\i (02:17:49) zoom in 862.33 2620.80
+\i (02:17:49) trapsize 284
+\i (02:17:49) zoom in 1 
+\i (02:17:49) setwindow pcb
+\i (02:17:49) zoom in 862.33 2620.81
+\i (02:17:49) trapsize 142
+\i (02:17:52) zoom out 1 
+\i (02:17:52) setwindow pcb
+\i (02:17:52) zoom out 833.37 2618.25
+\i (02:17:52) trapsize 284
+\i (02:17:52) zoom out 1 
+\i (02:17:52) setwindow pcb
+\i (02:17:52) zoom out 833.38 2618.26
+\i (02:17:52) trapsize 568
+\i (02:17:52) zoom out 1 
+\i (02:17:52) setwindow pcb
+\i (02:17:52) zoom out 833.38 2618.25
+\i (02:17:52) trapsize 1135
+\i (02:17:53) zoom in 1 
+\i (02:17:53) setwindow pcb
+\i (02:17:53) zoom in 956.02 2627.34
+\i (02:17:53) trapsize 568
+\i (02:17:54) zoom in 1 
+\i (02:17:54) setwindow pcb
+\i (02:17:54) zoom in 956.02 2627.35
+\i (02:17:54) trapsize 284
+\i (02:17:54) zoom in 1 
+\i (02:17:54) setwindow pcb
+\i (02:17:54) zoom in 956.02 2627.35
+\i (02:17:54) trapsize 142
+\i (02:17:55) zoom out 1 
+\i (02:17:55) setwindow pcb
+\i (02:17:55) zoom out 956.02 2627.35
+\i (02:17:55) trapsize 284
+\i (02:17:55) zoom out 1 
+\i (02:17:55) setwindow pcb
+\i (02:17:55) zoom out 956.03 2627.35
+\i (02:17:55) trapsize 568
+\i (02:17:56) zoom out 1 
+\i (02:17:56) setwindow pcb
+\i (02:17:56) zoom out 956.03 2627.35
+\i (02:17:56) trapsize 1135
+\i (02:17:56) zoom in 1 
+\i (02:17:56) setwindow pcb
+\i (02:17:56) zoom in 956.03 2627.34
+\i (02:17:56) trapsize 568
+\i (02:17:56) zoom in 1 
+\i (02:17:56) setwindow pcb
+\i (02:17:56) zoom in 956.03 2627.35
+\i (02:17:56) trapsize 284
+\i (02:17:57) zoom out 1 
+\i (02:17:57) setwindow pcb
+\i (02:17:57) zoom out 956.03 2627.35
+\i (02:17:57) trapsize 568
+\i (02:17:57) zoom out 1 
+\i (02:17:57) setwindow pcb
+\i (02:17:57) zoom out 956.03 2627.35
+\i (02:17:57) trapsize 1135
+\i (02:17:57) zoom out 1 
+\i (02:17:57) setwindow pcb
+\i (02:17:57) zoom out 956.03 2627.34
+\i (02:17:57) trapsize 2271
+\i (02:17:59) QtSignal CVPLayerGrid CVPBoxAllBottom clicked true
+\i (02:17:59) zoom in 1 
+\i (02:17:59) setwindow pcb
+\i (02:17:59) zoom in 1914.35 2472.92
+\i (02:17:59) trapsize 1135
+\i (02:17:59) zoom in 1 
+\i (02:17:59) setwindow pcb
+\i (02:17:59) zoom in 1909.81 2472.92
+\i (02:17:59) trapsize 568
+\i (02:18:00) zoom in 1 
+\i (02:18:00) setwindow pcb
+\i (02:18:00) zoom in 1909.81 2472.92
+\i (02:18:00) trapsize 284
+\i (02:18:03) QtSignal CVPLayerGrid CVPBoxAllTop clicked false
+\i (02:18:04) zoom out 1 
+\i (02:18:04) setwindow pcb
+\i (02:18:04) zoom out 1838.85 2535.94
+\i (02:18:04) trapsize 568
+\i (02:18:04) zoom out 1 
+\i (02:18:04) setwindow pcb
+\i (02:18:04) zoom out 1837.71 2532.54
+\i (02:18:04) trapsize 1135
+\i (02:18:04) zoom out 1 
+\i (02:18:04) setwindow pcb
+\i (02:18:04) zoom out 1837.71 2532.54
+\i (02:18:04) trapsize 2271
+\i (02:18:04) zoom out 1 
+\i (02:18:04) setwindow pcb
+\i (02:18:04) zoom out 1837.71 2532.54
+\t (02:18:04) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (02:18:04) trapsize 4542
+\i (02:18:04) zoom in 1 
+\i (02:18:04) setwindow pcb
+\i (02:18:04) zoom in 3939.36 1876.68
+\t (02:18:04) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (02:18:04) trapsize 2271
+\i (02:18:04) zoom in 1 
+\i (02:18:04) setwindow pcb
+\i (02:18:04) zoom in 3657.77 1876.68
+\i (02:18:04) trapsize 1135
+\i (02:18:05) zoom out 1 
+\i (02:18:05) setwindow pcb
+\i (02:18:05) zoom out 2104.47 2015.21
+\i (02:18:05) trapsize 2271
+\i (02:18:06) zoom out 1 
+\i (02:18:06) setwindow pcb
+\i (02:18:06) zoom out 2322.47 1969.79
+\t (02:18:06) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (02:18:06) trapsize 4542
+\i (02:18:06) zoom out 1 
+\i (02:18:06) setwindow pcb
+\i (02:18:06) zoom out 2322.47 1969.80
+\t (02:18:06) Grids are drawn 80.00, 80.00 apart for enhanced viewing.
+\i (02:18:06) trapsize 6922
+\i (02:18:06) zoom in 1 
+\i (02:18:06) setwindow pcb
+\i (02:18:06) zoom in 942.52 2734.86
+\t (02:18:06) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (02:18:06) trapsize 3461
+\i (02:18:06) zoom in 1 
+\i (02:18:06) setwindow pcb
+\i (02:18:06) zoom in 963.28 2741.78
+\t (02:18:06) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (02:18:06) trapsize 1730
+\i (02:18:06) zoom in 1 
+\i (02:18:06) setwindow pcb
+\i (02:18:06) zoom in 963.29 2741.78
+\i (02:18:06) trapsize 865
+\i (02:38:18) exit 
+\e (02:38:18) Do you want to save the changes you made to SHOWERTERMINAL.brd?
+\i (02:38:19) fillin no 
+\t (02:38:19)     Journal end - Fri May 13 17:56:05 2022

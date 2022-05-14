@@ -16,6 +16,8 @@
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
+extern uint8_t Data_Human;
+
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 void USART1_Init(void)
@@ -51,7 +53,8 @@ void USART1_Init(void)
 
 void USART1_SendData(uint8_t Data)
 {
-    while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET) ;
+    while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET)
+        ;
     USART_SendData(USART1, Data);
 }
 
@@ -59,6 +62,19 @@ int fputc(int ch, FILE *f)
 {
     USART1_SendData((uint8_t)ch);
     return (ch);
+}
+
+void Program_Timer()
+{
+    // Timer initialize, count period 1800us max
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM9, ENABLE);
+    TIM_TimeBaseInitTypeDef TIM_InitStructure;
+    TIM_InitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
+    TIM_InitStructure.TIM_CounterMode = TIM_CounterMode_Up;
+    TIM_InitStructure.TIM_Period = 0xFFFF;
+    TIM_InitStructure.TIM_Prescaler = 84 - 1;
+    TIM_TimeBaseInit(TIM9, &TIM_InitStructure);
+    TIM_Cmd(TIM9, ENABLE);
 }
 
 /**
@@ -72,29 +88,36 @@ int main(void)
     Delay_us(1000);
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
     USART1_Init();
-    TemperatureSensor_Init();
-    FlowMeter_Init();
-    Valve_Init();
-    Button_Init();
+    // TemperatureSensor_Init();
+    // FlowMeter_Init();
+    // Valve_Init();
+    // Button_Init();
+    InfraredObject_Init();
+    InfraredHuman_Init();
+    Program_Timer();
     Delay_ms(1);
 
-	FlowMeter_Start();
+    // FlowMeter_Start();
 
     /* Infinite loop */
     while (1)
     {
-        Sensor_Convert();
-        Valve_Start();
-        printf("Valve:%d\n", Valve_GetState());
-        
-        Delay_ms(1000);
+        // Sensor_Convert();
+        // Valve_Start();
+        //  printf("Valve:%d\n", Valve_GetState());
 
-        Valve_Stop();
-        printf("Temperature: %f\n", Sensor_GetTemperature());
-        printf("Flow:%f\n", FlowMeter_GetValueL());
-        printf("Valve:%d\n", Valve_GetState());
-			
-		Delay_ms(1000);
+        // Delay_ms(1000);
+        // Valve_Stop();
+        //  printf("Temperature: %f\n", Sensor_GetTemperature());
+        //  printf("Flow: %f\n", FlowMeter_GetValueL());
+        //  printf("Valve: %d\n", Valve_GetState());
+        //  printf("InfraredState: %d\n", InfraredObject_GetState());
+        // printf("InfraredValue: %f\n", (float)InfraredObject_GetValue() / 4096 * 3.3);
+        //  InfraredObject_GetValue();
+        printf("InfraredState: %d\n", InfraredHuman_GetState());
+        printf("InfraredValue: %d\n", InfraredHuman_GetValue());
+
+        Delay_ms(1000);
     }
 }
 

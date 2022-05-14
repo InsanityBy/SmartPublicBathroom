@@ -1,13 +1,13 @@
 /**
-  ******************************************************************************
-  * @file    SignalOutput.c
-  * @author  Ma boyang
-  * @version V1.0
-  * @date    2022.5.8
-  * @brief   This file contains all the functions to control fan, light.(For
-  *         shower host.)
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    SignalOutput.c
+ * @author  Ma boyang
+ * @version V1.0
+ * @date    2022.5.8
+ * @brief   This file contains all the functions to control fan, light.(For
+ *         shower host.)
+ ******************************************************************************
+ */
 
 /* Includes ------------------------------------------------------------------*/
 #include "SignalOutput.h"

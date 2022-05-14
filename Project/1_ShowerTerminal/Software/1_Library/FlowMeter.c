@@ -1,13 +1,13 @@
 /**
-  ******************************************************************************
-  * @file    FlowMeter.c
-  * @author  Ma boyang
-  * @version V1.0
-  * @date    2022.5.8
-  * @brief   This file contains all the functions of the flow meter.(For shower
-  *         terminal.)
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    FlowMeter.c
+ * @author  Ma boyang
+ * @version V1.0
+ * @date    2022.5.8
+ * @brief   This file contains all the functions of the flow meter.(For shower
+ *         terminal.)
+ ******************************************************************************
+ */
 
 /* Includes ------------------------------------------------------------------*/
 #include "FlowMeter.h"
@@ -31,8 +31,8 @@
 void FlowMeter_Init(void)
 {
     // GPIO initialize
-    RCC_AHB1PeriphClockCmd(FLOWMETER_CLOCK, ENABLE); // Enable clock
-    GPIO_PinAFConfig(FLOWMETER_PINGROUP, FLOWMETER_PINSOURCE, GPIO_AF_TIM2);    //PA0 -> TIM2CH1
+    RCC_AHB1PeriphClockCmd(FLOWMETER_CLOCK, ENABLE);                         // Enable clock
+    GPIO_PinAFConfig(FLOWMETER_PINGROUP, FLOWMETER_PINSOURCE, GPIO_AF_TIM2); // PA0 -> TIM2CH1
     GPIO_InitTypeDef GPIO_InitStructure;
     GPIO_InitStructure.GPIO_Pin = FLOWMETER_PIN;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
@@ -52,7 +52,7 @@ void FlowMeter_Init(void)
     // Set external clock
     TIM_TIxExternalClockConfig(TIM2, TIM_TIxExternalCLK1Source_TI1, TIM_ICPolarity_Rising, 0x00);
 
-    //Clear TIM2 value
+    // Clear TIM2 value
     TIM2->CNT = 0x00000000;
 }
 
@@ -105,7 +105,7 @@ uint32_t FlowMeter_GetValueR(void)
 float FlowMeter_GetValueL(void)
 {
     uint32_t number = FlowMeter_GetValueR();
-    return (float)number/450;
+    return (float)number / 450;
 }
 
 /***********************************END OF FILE********************************/

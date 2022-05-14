@@ -11,6 +11,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "LightSensor.h"
+#include "Delay.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -22,10 +23,10 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 // Light threshold
-uint16_t Threshold = 2048;
+float Threshold = 1.65;
 
 // Ratio to convert ADC sample value to actual lighting value
-float ConvertRatio = 3.3 / 4056;
+float ConvertRatio = 3.3 / 4096;
 
 // Sample 10 times and get average value
 uint16_t Data[10];
@@ -90,17 +91,7 @@ void LightSensor_Init(void)
  */
 uint8_t LightSensor_GetState(void)
 {
-    uint16_t Light_Original = 0;
-    for (int i = 0; i < 10; i++)
-    {
-        ADC_SoftwareStartConv(ADC1);
-    }
-    for (int i = 0; i < 10; i++)
-    {
-        Light_Original += Data[i];
-    }
-    Light_Original /= 10;
-    if (Light_Original > Threshold)
+    if (LightSensor_GetValue() > Threshold)
         return 0x00;
     else
         return 0x01;
@@ -117,6 +108,7 @@ float LightSensor_GetValue(void)
     for (int i = 0; i < 10; i++)
     {
         ADC_SoftwareStartConv(ADC1);
+        Delay_us(1);
     }
     for (int i = 0; i < 10; i++)
     {
