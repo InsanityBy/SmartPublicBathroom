@@ -82,10 +82,10 @@ int main(void)
     /* Infinite loop */
     while (1)
     {
-        Sensor_Convert();
-        Delay_ms(1000);
-        printf("Temperature: %f\n", Sensor_GetTemperature());
-        printf("Humidity: %f\n", Sensor_GetHumidity());
+        //Sensor_Convert();
+        Delay_ms(2000);
+        //printf("Temperature: %f\n", Sensor_GetTemperature());
+        //printf("Humidity: %f\n", Sensor_GetHumidity());
         printf("LightState: %d\n", LightSensor_GetState());
         printf("LightValue: %f\n", LightSensor_GetValue());
     }

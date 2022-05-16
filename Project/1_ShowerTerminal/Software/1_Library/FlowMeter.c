@@ -6,6 +6,13 @@
  * @date    2022.5.8
  * @brief   This file contains all the functions of the flow meter.(For shower
  *         terminal.)
+ * @note    Follow steps to use.
+ *          - Use FlowMeter_Init() to initialize device.
+ *          - Use FlowMeter_Start() to start record.
+ *          - Use FlowMeter_Stop() to stop record.
+ *          - Use FlowMeter_Clear() to clear the data. MUST CLEAR BEFORE START!
+ *          - Use FlowMeter_GetValueL() to get data, unit is liter.
+ *          - Use FlowMeter_GetValueR() to get data, unit is round.
  ******************************************************************************
  */
 
@@ -14,6 +21,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
+// Flow meter input - PA0
 #define FLOWMETER_CLOCK RCC_AHB1Periph_GPIOA
 #define FLOWMETER_PINGROUP GPIOA
 #define FLOWMETER_PIN GPIO_Pin_0

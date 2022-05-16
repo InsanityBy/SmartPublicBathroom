@@ -14,13 +14,14 @@
 #define __USERLIBRARY_H
 
 /* Includes ------------------------------------------------------------------*/
-#include "Delay.h"
-#include "TemperatureSensor.h"
-#include "FlowMeter.h"
-#include "Valve.h"
 #include "Button.h"
-#include "InfraredObject.h"
+#include "Delay.h"
+#include "FlowMeter.h"
 #include "InfraredHuman.h"
+#include "InfraredObject.h"
+#include "NFC.h"
+#include "TemperatureSensor.h"
+#include "Valve.h"
 
 #endif
 

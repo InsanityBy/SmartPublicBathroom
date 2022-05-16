@@ -6,6 +6,11 @@
  * @date    2022.5.8
  * @brief   This file contains all the functions to control valve.(For shower
  *         terminal.)
+ * @note    Follow steps to use.
+ *          - Use Valve_Init() to initialize device.
+ *          - Use Vale_Start() to turn on valve.
+ *          - Use Valve_Stop() to tuen off valve.
+ *          - Use Valve_GetState() to get current state of valve.
  ******************************************************************************
  */
 
@@ -14,6 +19,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
+// Valve output pin - PA4
 #define VALVE_CLOCK RCC_AHB1Periph_GPIOA
 #define VALVE_PINGROUP GPIOA
 #define VALVE_PIN GPIO_Pin_4

@@ -152,9 +152,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>222</LineNumber>
+          <LineNumber>301</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220006</Address>
+          <Address>134218692</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -163,39 +163,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\..\1_Library\InfraredHuman.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\STM32F401RE\../../1_Library/InfraredHuman.c\222</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>297</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134218954</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\1_Library\InfraredHuman.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\STM32F401RE\../../1_Library/InfraredHuman.c\297</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>246</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\..\1_Library\InfraredHuman.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\STM32F401RE\../../1_Library/InfraredHuman.c\301</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -1056,6 +1024,18 @@
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\1_Library\InfraredHuman.c</PathWithFileName>
       <FilenameWithoutPath>InfraredHuman.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>62</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\1_Library\NFC.c</PathWithFileName>
+      <FilenameWithoutPath>NFC.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

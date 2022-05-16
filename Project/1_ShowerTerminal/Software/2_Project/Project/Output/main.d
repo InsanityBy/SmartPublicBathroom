@@ -36,4 +36,5 @@
 .\output\main.o: ..\..\1_Library\Button.h
 .\output\main.o: ..\..\1_Library\InfraredObject.h
 .\output\main.o: ..\..\1_Library\InfraredHuman.h
+.\output\main.o: ..\..\1_Library\NFC.h
 .\output\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

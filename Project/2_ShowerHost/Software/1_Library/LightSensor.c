@@ -6,6 +6,10 @@
  * @date    2022.5.9
  * @brief   This file contains all the functions for light sensor.(For shower
  *         host.)
+ * @note    Follow steps to use.
+ *          - Use LightSensor_Init() to initialize device.
+ *          - Use LightSensor_GetState() to get current environment light state.
+ *          - Use LightSensor_GetValue() to get specific ADC sample value.
  ******************************************************************************
  */
 
@@ -15,9 +19,12 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
+// Light sensor input pin - PC2
 #define LIGHTSENSOR_CLOCK RCC_AHB1Periph_GPIOC
 #define LIGHTSENSOR_PINGROUP GPIOC
 #define LIGHTSENSOR_PIN GPIO_Pin_2
+
+// Use ADC1, Channel 12
 #define ADC_CHANNEL ADC_Channel_12
 
 /* Private macro -------------------------------------------------------------*/
@@ -79,9 +86,6 @@ void LightSensor_Init(void)
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
     ADC_ITConfig(ADC1, ADC_IT_EOC, ENABLE);
-
-    // Enable ADC
-    ADC_Cmd(ADC1, ENABLE);
 }
 
 /**
@@ -98,13 +102,16 @@ uint8_t LightSensor_GetState(void)
 }
 
 /**
- * @brief  Get accurate lighting value.
+ * @brief  Get specific lighting value.
  * @param  None.
  * @retval Accurate lighting value.
  */
 float LightSensor_GetValue(void)
 {
     uint16_t Light_Original = 0;
+    // Enable ADC
+    ADC_Cmd(ADC1, ENABLE);
+
     for (int i = 0; i < 10; i++)
     {
         ADC_SoftwareStartConv(ADC1);
@@ -114,6 +121,10 @@ float LightSensor_GetValue(void)
     {
         Light_Original += Data[i];
     }
+
+    // Disable ADC to save power
+    ADC_Cmd(ADC1, DISABLE);
+
     return (float)Light_Original * ConvertRatio / 10;
 }
 

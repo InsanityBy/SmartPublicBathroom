@@ -7,6 +7,8 @@
  * @brief   This file contains all the functions for button. To do something
  *         when button pushed, add functions between FUNCTION BEGIN and FUNCTION
  *         END.(For shower host.)
+ * @note    Follow steps to use.
+ *          - Only need to use Button_Init() to initialize.
  ******************************************************************************
  */
 
@@ -16,12 +18,15 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
+// Repair button - PA5
 #define REPAIR_CLOCK RCC_AHB1Periph_GPIOA
 #define REPAIR_PINGROUP GPIOA
 #define REPAIR_PIN GPIO_Pin_5
 #define REPAIR_EXTIPINGROUP EXTI_PortSourceGPIOA
 #define REPAIR_EXTIPINSOURCE EXTI_PinSource5
 #define REPAIR_EXTILINE EXTI_Line5
+
+// Help button - PA6
 #define HELP_CLOCK RCC_AHB1Periph_GPIOA
 #define HELP_PINGROUP GPIOA
 #define HELP_PIN GPIO_Pin_6

@@ -92,32 +92,35 @@ int main(void)
     // FlowMeter_Init();
     // Valve_Init();
     // Button_Init();
-    InfraredObject_Init();
-    InfraredHuman_Init();
+     InfraredObject_Init();
+    // InfraredHuman_Init();
+    // NFC_Init();
     Program_Timer();
     Delay_ms(1);
+    printf("Initialize finished\n");
 
     // FlowMeter_Start();
 
     /* Infinite loop */
     while (1)
     {
+        // uint8_t Card_Data[16];
         // Sensor_Convert();
         // Valve_Start();
-        //  printf("Valve:%d\n", Valve_GetState());
+        // printf("Valve:%d\n", Valve_GetState());
 
         // Delay_ms(1000);
         // Valve_Stop();
-        //  printf("Temperature: %f\n", Sensor_GetTemperature());
-        //  printf("Flow: %f\n", FlowMeter_GetValueL());
-        //  printf("Valve: %d\n", Valve_GetState());
-        //  printf("InfraredState: %d\n", InfraredObject_GetState());
-        // printf("InfraredValue: %f\n", (float)InfraredObject_GetValue() / 4096 * 3.3);
-        //  InfraredObject_GetValue();
-        printf("InfraredState: %d\n", InfraredHuman_GetState());
-        printf("InfraredValue: %d\n", InfraredHuman_GetValue());
-
-        Delay_ms(1000);
+        // printf("Temperature: %f\n", Sensor_GetTemperature());
+        // printf("Flow: %fL\n", FlowMeter_GetValueL());
+        // printf("Valve: %d\n", Valve_GetState());
+         printf("InfraredObjectState: %d\n", InfraredObject_GetState());
+         printf("InfraredObjectValue: %f\n", (float)InfraredObject_GetValue() / 4096 * 3.3);
+        // InfraredObject_GetValue();
+        // printf("InfraredHumanState: %d\n", InfraredHuman_GetState());
+        // printf("InfraredHumanValue: %d\n", InfraredHuman_GetValue());
+        // NFC_GetData(Card_Data);
+        Delay_ms(2000);
     }
 }
 

@@ -28,3 +28,4 @@
 .\output\lightsensor.o: ..\Library\inc\stm32f4xx_usart.h
 .\output\lightsensor.o: ..\Library\inc\stm32f4xx_wwdg.h
 .\output\lightsensor.o: ..\Library\inc\misc.h
+.\output\lightsensor.o: ..\..\1_Library\Delay.h

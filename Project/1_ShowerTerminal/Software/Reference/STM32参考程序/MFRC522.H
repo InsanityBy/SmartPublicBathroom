@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////
-//函数原型
+//???????
 /////////////////////////////////////////////////////////////////////
 extern char PcdReset(void);
 extern void PcdAntennaOn(void);
@@ -27,40 +27,40 @@ extern char M500PcdConfigISOType(unsigned char type);
 extern void delay_10ms(unsigned int _10ms);
 extern void WaitCardOff(void);
 /////////////////////////////////////////////////////////////////////
-//MF522命令字
+//MF522??????
 /////////////////////////////////////////////////////////////////////
-#define PCD_IDLE              0x00               //取消当前命令
-#define PCD_AUTHENT           0x0E               //验证密钥
-#define PCD_RECEIVE           0x08               //接收数据
-#define PCD_TRANSMIT          0x04               //发送数据
-#define PCD_TRANSCEIVE        0x0C               //发送并接收数据
-#define PCD_RESETPHASE        0x0F               //复位
-#define PCD_CALCCRC           0x03               //CRC计算
+#define PCD_IDLE              0x00               //??????????
+#define PCD_AUTHENT           0x0E               //??????
+#define PCD_RECEIVE           0x08               //????????
+#define PCD_TRANSMIT          0x04               //????????
+#define PCD_TRANSCEIVE        0x0C               //?????????????
+#define PCD_RESETPHASE        0x0F               //??λ
+#define PCD_CALCCRC           0x03               //CRC????
 
 /////////////////////////////////////////////////////////////////////
-//Mifare_One卡片命令字
+//Mifare_One?????????
 /////////////////////////////////////////////////////////////////////
-#define PICC_REQIDL           0x26               //寻天线区内未进入休眠状态
-#define PICC_REQALL           0x52               //寻天线区内全部卡
-#define PICC_ANTICOLL1        0x93               //防冲撞
-#define PICC_ANTICOLL2        0x95               //防冲撞
-#define PICC_AUTHENT1A        0x60               //验证A密钥
-#define PICC_AUTHENT1B        0x61               //验证B密钥
-#define PICC_READ             0x30               //读块
-#define PICC_WRITE            0xA0               //写块
-#define PICC_DECREMENT        0xC0               //扣款
-#define PICC_INCREMENT        0xC1               //充值
-#define PICC_RESTORE          0xC2               //调块数据到缓冲区
-#define PICC_TRANSFER         0xB0               //保存缓冲区中数据
-#define PICC_HALT             0x50               //休眠
+#define PICC_REQIDL           0x26               //?????????δ??????????
+#define PICC_REQALL           0x52               //??????????????
+#define PICC_ANTICOLL1        0x93               //?????
+#define PICC_ANTICOLL2        0x95               //?????
+#define PICC_AUTHENT1A        0x60               //???A???
+#define PICC_AUTHENT1B        0x61               //???B???
+#define PICC_READ             0x30               //????
+#define PICC_WRITE            0xA0               //д??
+#define PICC_DECREMENT        0xC0               //???
+#define PICC_INCREMENT        0xC1               //???
+#define PICC_RESTORE          0xC2               //???????????????
+#define PICC_TRANSFER         0xB0               //???滺??????????
+#define PICC_HALT             0x50               //????
 
 /////////////////////////////////////////////////////////////////////
-//MF522 FIFO长度定义
+//MF522 FIFO???????
 /////////////////////////////////////////////////////////////////////
 #define DEF_FIFO_LENGTH       64                 //FIFO size=64byte
 
 /////////////////////////////////////////////////////////////////////
-//MF522寄存器定义
+//MF522?????????
 /////////////////////////////////////////////////////////////////////
 // PAGE 0
 #define     RFU00                 0x00    
@@ -136,7 +136,7 @@ extern void WaitCardOff(void);
 #define     KEYA                  0x60
 
 /////////////////////////////////////////////////////////////////////
-//和MF522通讯时返回的错误代码
+//??MF522??????????????
 /////////////////////////////////////////////////////////////////////
 #define MI_OK                          (char)0
 #define MI_NOTAGERR                    (char)(-1)

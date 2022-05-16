@@ -6,6 +6,11 @@
  * @date    2022.5.7
  * @brief   This file contains all the functions of the temperature sensor.(For
  *         shower terminal.)
+ * @note    Follow steps to use.
+ *          - Use TemperatureSensor_Init() to initialize device.
+ *          - Use Sensor_Convert() to start convert.
+ *          - Use Sensor_GetTemperature() to get current temperature. MUST
+ *              START CONVERT BEFORE GET TEMPERATURE.
  ******************************************************************************
  */
 
@@ -15,6 +20,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
+// Temperature input pin - PA1
 #define SENSOR_CLOCK RCC_AHB1Periph_GPIOA
 #define SENSOR_PINGROUP GPIOA
 #define SENSOR_PIN GPIO_Pin_1

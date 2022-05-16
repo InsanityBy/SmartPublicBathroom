@@ -6,6 +6,11 @@
  * @date    2022.5.15
  * @brief   This file contains all the functions for infrared human sensor.(For
  *          shower terminal.)
+ * @note    Follow steps to use.
+ *          - Use InfraredHuman_Init() to initialize device.
+ *          - Use InfraredHuman_GetState() to get human presence state.
+ *          - Use InfraredHuman_GetValue() to get specific number correct
+ *              reception.
  ******************************************************************************
  */
 
@@ -15,6 +20,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
+// Infrared human sensor receive pin - PA2
 #define INFRAREDHUMANRX_CLOCK RCC_AHB1Periph_GPIOA
 #define INFRAREDHUMANRX_PINGROUP GPIOA
 #define INFRAREDHUMANRX_PIN GPIO_Pin_2
@@ -22,6 +28,7 @@
 #define INFRAREDHUMANRX_EXTIPINSOURCE EXTI_PinSource2
 #define INFRAREDHUMANRX_EXTILINE EXTI_Line2
 
+// Infrared human sensor transmit pin - PA8
 #define INFRAREDHUMANTX_CLOCK RCC_AHB1Periph_GPIOA
 #define INFRAREDHUMANTX_PINGROUP GPIOA
 #define INFRAREDHUMANTX_PIN GPIO_Pin_8
@@ -29,7 +36,7 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
-// Number of correct receptions indicating human presence
+// The fewest correct receptions indicating human presence
 uint8_t Threshold_Human = 8;
 
 // Receive flag, 1 for receive finished, 0 for not

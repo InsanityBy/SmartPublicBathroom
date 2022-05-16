@@ -37,3 +37,4 @@
 .\output\stm32f4xx_it.o: ..\..\1_Library\Button.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\InfraredObject.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\InfraredHuman.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\NFC.h

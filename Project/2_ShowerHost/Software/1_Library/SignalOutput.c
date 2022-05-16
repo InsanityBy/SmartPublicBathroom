@@ -6,6 +6,12 @@
  * @date    2022.5.8
  * @brief   This file contains all the functions to control fan, light.(For
  *         shower host.)
+ * @note    Follow steps to use.
+ *          - Use Fan_Init() or Light_Init() to initialize device.
+ *          - Use Vale_Start() or Light_Start() to turn on device.
+ *          - Use Valve_Stop() or Light_Stop() to tuen off device.
+ *          - Use Valve_GetState() or Light_GetState() to get current state of
+ *              device.
  ******************************************************************************
  */
 
@@ -14,9 +20,12 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
+// Fan output pin - PA3
 #define FAN_CLOCK RCC_AHB1Periph_GPIOA
 #define FAN_PINGROUP GPIOA
 #define FAN_PIN GPIO_Pin_3
+
+// Light output pin - PA4
 #define LIGHT_CLOCK RCC_AHB1Periph_GPIOA
 #define LIGHT_PINGROUP GPIOA
 #define LIGHT_PIN GPIO_Pin_4

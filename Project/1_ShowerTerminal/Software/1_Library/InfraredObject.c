@@ -6,6 +6,10 @@
  * @date    2022.5.9
  * @brief   This file contains all the functions for infrared object sensor.(For
  *          shower terminal.)
+ * @note    Follow steps to use.
+ *          - Use InfraredObject_Init() to initialize device.
+ *          - Use InfraredObject_GetState() to get object presence state.
+ *          - Use InfraredObject_GetValue() to get specific ADC sample value.
  ******************************************************************************
  */
 
@@ -15,17 +19,22 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
+// Infrared objeect sensor receive pin - PC2
 #define INFRAREDOBJECTRX_CLOCK RCC_AHB1Periph_GPIOC
 #define INFRAREDOBJECTRX_PINGROUP GPIOC
 #define INFRAREDOBJECTRX_PIN GPIO_Pin_2
+
+// Infrared objeect sensor transmit pin - PA3
 #define INFRAREDOBJECTTX_CLOCK RCC_AHB1Periph_GPIOA
 #define INFRAREDOBJECTTX_PINGROUP GPIOA
 #define INFRAREDOBJECTTX_PIN GPIO_Pin_3
+
+// Use ADC1, Channel 12
 #define ADC_CHANNEL ADC_Channel_12
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
-// Infrared intensity threshold
+// Infrared intensity threshold indicating object presence
 uint16_t Threshold_Object = 2048;
 
 // Sample 10 times and get average value
@@ -79,9 +88,6 @@ void InfraredObjectRX_Init(void)
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
     ADC_ITConfig(ADC1, ADC_IT_EOC, ENABLE);
-
-    // Enable ADC
-    ADC_Cmd(ADC1, ENABLE);
 }
 
 /**
@@ -134,6 +140,9 @@ uint16_t InfraredObject_GetValue(void)
 {
     uint16_t Intensity = 0;
 
+    // Enable ADC
+    ADC_Cmd(ADC1, ENABLE);
+
     // Emit infrared
     GPIO_SetBits(INFRAREDOBJECTTX_PINGROUP, INFRAREDOBJECTTX_PIN);
 
@@ -151,6 +160,9 @@ uint16_t InfraredObject_GetValue(void)
 
     // Stop emitting to save power
     GPIO_ResetBits(INFRAREDOBJECTTX_PINGROUP, INFRAREDOBJECTTX_PIN);
+
+    // Disable ADC to save power
+    ADC_Cmd(ADC1, DISABLE);
 
     return Intensity;
 }

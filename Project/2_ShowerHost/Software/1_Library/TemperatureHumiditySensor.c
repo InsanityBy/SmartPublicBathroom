@@ -6,6 +6,13 @@
  * @date    2022.5.9
  * @brief   This file contains all the functions for temperature - humidity
  *         sensor.(For shower host.)
+ * @note    Follow steps to use.
+ *          - Use TemperatureHumiditySensor_Init() to initialize device.
+ *          - Use Sensor_Convert() to start convert.
+ *          - Use Sensor_GetTemperature() to get current temperature. MUST
+ *              START CONVERT BEFORE GET TEMPERATURE.
+ *          - Use Sensor_GetHumidity() to get current humidity. MUST START
+ *              CONVERT BEFORE GET TEMPERATURE.
  ******************************************************************************
  */
 
@@ -15,6 +22,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
+// Temperature humidity sensor input pin - PA1
 #define SENSOR_CLOCK RCC_AHB1Periph_GPIOA
 #define SENSOR_PINGROUP GPIOA
 #define SENSOR_PIN GPIO_Pin_1

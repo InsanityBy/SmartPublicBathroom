@@ -1,17 +1,17 @@
 /**
  ******************************************************************************
- * @file    LightSensor.h
+ * @file    NFC.h
  * @author  Ma Boyang
  * @version V1.0
- * @date    2022.5.9
- * @brief   This file contains all the functions prototypes for light sensor.
- *          (For shower host.)
+ * @date    2022.5.15
+ * @brief   This file contains all the functions prototypes for NFC reader.
+ *          (For shower terminal.)
  ******************************************************************************
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __LIGHTSENSOR_H
-#define __LIGHTSENSOR_H
+#ifndef __NFC_H
+#define __NFC_H
 
 #ifdef __cplusplus
 extern "C"
@@ -25,14 +25,14 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Initialize input pin and ADC to sample
-void LightSensor_Init(void);
+// Initialize all pins and SPI2
+void NFC_PinInit(void);
 
-// Get light state, 1 for environment is dark and light should be on
-uint8_t LightSensor_GetState(void);
+// Initialize RC522
+void NFC_Init(void);
 
-// Get specific lighting value
-float LightSensor_GetValue(void);
+// Get data from card
+char NFC_GetData(uint8_t *pData);
 
 #ifdef __cplusplus
 }
