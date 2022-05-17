@@ -6,6 +6,10 @@
  * @date    2022.5.16
  * @brief   This file contains all the functions for NFC reader.(For shower
  *          terminal.)
+ * @note    Follow steps to use.
+ *          - Use NFC_Init() to initialize device.
+ *          - Use NFC_ReadData() to get data from card.
+ *          - Use NFC_WriteData() to write data to card.
  ******************************************************************************
  */
 
@@ -145,9 +149,6 @@
 #define RFU3D 0x3D
 #define RFU3E 0x3E
 #define RFU3F 0x3F
-
-#define REQ_ALL 0x52
-#define KEYA 0x60
 
 // Response
 #define MFRC_OK (char)0
@@ -431,7 +432,7 @@ char M500PcdConfigISOType(uint8_t type)
 }
 
 /*===============================================================================
-*************************RC522 basic operation functions*************************
+*************************Card reading operation functions************************
 ================================================================================*/
 /**
  * @brief  Find card within reach.
@@ -812,67 +813,73 @@ void NFC_Init(void)
 }
 
 /**
- * @brief  Get data from NFC card.
+ * @brief  Read data from NFC card.
+ * @param  sector: Select sector to operate, can be 0~15. Sector0 block0 READ ONLY!
+ * @param  block: Select block to operate,can be 0~3. Block 3 is control block.
+ * @param  keyA: Pointer of 6 byte key to sector, default is all 0xFF.
  * @param  pData: Pointer of data received.
  * @retval None.
  */
-char NFC_GetData(uint8_t *pData)
+char NFC_ReadData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData)
 {
-    /*
-    uint8_t snr,
-        TagType[2],
-        SelectedSnr[4],
-        DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
-    char status = PCD_Request(REQ_ALL, TagType);
-    if (!status)
+
+    uint8_t TagType[2], SelectedSnr[4];
+    char status = PCD_Request(PICC_REQALL, TagType); // Find card
+    if (status == MFRC_OK)
     {
-        //printf("Found\n");
-        status = PCD_Anticoll(SelectedSnr);
-        if (!status)
+        status = PCD_Anticoll(SelectedSnr); // Prervent collision
+        if (status == MFRC_OK)
         {
-            //printf("Anti\n");
-            status = PCD_Select(SelectedSnr);
-            if (!status)
+            status = PCD_Select(SelectedSnr); // Select card
+            if (status == MFRC_OK)
             {
-                //printf("Selected\n");
-                snr = 1;                                                              // Sector number 1
-                status = PCD_AuthState(KEYA, (snr * 4 + 3), DefaultKey, SelectedSnr); // Verify key
+                status = PCD_AuthState(PICC_AUTHENT1A, (sector * 4 + 3), keyA, SelectedSnr); // Verify key
+                if (status == MFRC_OK)
                 {
-                    if (!status)
+                    status = PCD_Read((sector * 4 + block), pData); // Read
+                    if (status == MFRC_OK)
                     {
-                        status = PCD_Read((snr * 4 + 0), pData); // Read
-                        // status = PcdWrite((snr*4+0), buf);  // write
-                        if (!status)
-                        {
-                            //printf("Read\n");
-                        }
+                        printf("Read!\n");
                     }
                 }
             }
         }
     }
+    status = PCD_Halt(); // Go into sleep
     return status;
-    */
-    char cStr[30], tStr[30];
-    uint8_t ucArray_ID[4];  //先后存放IC卡的类型和UID(IC卡序列号)
-    uint8_t ucStatusReturn; //返回状态
-    while (1)
-    {
-        //寻卡
-        if ((ucStatusReturn = PCD_Request(PICC_REQALL, ucArray_ID)) != MFRC_OK)
-            ///若失败再次寻卡
-            ucStatusReturn = PCD_Request(PICC_REQALL, ucArray_ID);
+}
 
-        if (ucStatusReturn == MFRC_OK)
+/**
+ * @brief  Write data to NFC card.
+ * @param  sector: Select sector to operate, can be 0~15. Sector0 block0 READ ONLY!
+ * @param  block: Select block to operate,can be 0~3. Block 3 is control block.
+ * @param  keyA: Pointer of 6 byte key to sector, default is all 0xFF.
+ * @param  pData: Pointer of data to write.
+ * @retval None.
+ */
+char NFC_WriteData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData)
+{
+
+    uint8_t TagType[2], SelectedSnr[4];
+    char status = PCD_Request(PICC_REQALL, TagType); // Find card
+    if (status == MFRC_OK)
+    {
+        status = PCD_Anticoll(SelectedSnr); // Prervent collision
+        if (status == MFRC_OK)
         {
-            printf("The Card Type is: %02X%02X\n", ucArray_ID[0], ucArray_ID[1]);
-            //防冲撞（当有多张卡进入读写器操作范围时，防冲突机制会从其中选择一张进行操作）
-            if (PCD_Anticoll(ucArray_ID) == MFRC_OK)
+            status = PCD_Select(SelectedSnr); // Select card
+            if (status == MFRC_OK)
             {
-                printf("The Card ID is: %02X%02X%02X%02X\n", ucArray_ID[0], ucArray_ID[1], ucArray_ID[2], ucArray_ID[3]);
+                status = PCD_AuthState(PICC_AUTHENT1A, (sector * 4 + 3), keyA, SelectedSnr); // Verify key
+                if (status == MFRC_OK)
+                {
+                    status = PCD_Write((sector * 4 + block), pData); // Write
+                }
             }
         }
     }
+    status = PCD_Halt(); // Go into sleep
+    return status;
 }
 
 /***********************************END OF FILE********************************/

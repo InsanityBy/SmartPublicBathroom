@@ -29,12 +29,12 @@
 .\output\main.o: ..\Library\inc\stm32f4xx_wwdg.h
 .\output\main.o: ..\Library\inc\misc.h
 .\output\main.o: ..\..\1_Library\UserLibrary.h
-.\output\main.o: ..\..\1_Library\Delay.h
-.\output\main.o: ..\..\1_Library\TemperatureSensor.h
-.\output\main.o: ..\..\1_Library\FlowMeter.h
-.\output\main.o: ..\..\1_Library\Valve.h
 .\output\main.o: ..\..\1_Library\Button.h
-.\output\main.o: ..\..\1_Library\InfraredObject.h
+.\output\main.o: ..\..\1_Library\Delay.h
+.\output\main.o: ..\..\1_Library\FlowMeter.h
 .\output\main.o: ..\..\1_Library\InfraredHuman.h
+.\output\main.o: ..\..\1_Library\InfraredObject.h
 .\output\main.o: ..\..\1_Library\NFC.h
+.\output\main.o: ..\..\1_Library\TemperatureSensor.h
+.\output\main.o: ..\..\1_Library\Valve.h
 .\output\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

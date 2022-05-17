@@ -31,8 +31,11 @@ void NFC_PinInit(void);
 // Initialize RC522
 void NFC_Init(void);
 
-// Get data from card
-char NFC_GetData(uint8_t *pData);
+// Read data from card
+char NFC_ReadData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData);
+
+// Write data to card
+char NFC_WriteData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData);
 
 #ifdef __cplusplus
 }
