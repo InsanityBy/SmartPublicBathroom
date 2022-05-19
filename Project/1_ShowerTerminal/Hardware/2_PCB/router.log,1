@@ -1,96 +1,144 @@
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:57:23 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:46:32 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   132.0  0:00:25  0:00:25
+  Start    ----       247    0    0 100%    0   97   130.0  0:00:11  0:00:11
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:57:23 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:46:32 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   132.0  0:00:25  0:00:25
+  Start    ----       247    0    0 100%    0   97   130.0  0:00:12  0:00:12
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:57:24 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:46:32 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   129.0  0:00:25  0:00:25
+  Start    ----       247    0    0 100%    0   97   129.0  0:00:12  0:00:12
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:57:38 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:49:44 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   130.0  0:00:30  0:00:30
+  Start    ----       247    0    0 100%    0  104   131.0  0:00:41  0:00:41
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:57:38 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:49:44 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   130.0  0:00:30  0:00:30
+  Start    ----       247    0    0 100%    0  104   131.0  0:00:41  0:00:41
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:57:38 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:49:44 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   129.0  0:00:31  0:00:31
+  Start    ----       247    0    0 100%    0  104   127.0  0:00:42  0:00:42
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:57:44 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:50:06 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   130.0  0:00:33  0:00:33
+  Start    ----       247    0    0 100%    0  104   129.0  0:00:45  0:00:45
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:57:44 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:50:06 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   130.0  0:00:33  0:00:33
+  Start    ----       247    0    0 100%    0  104   129.0  0:00:45  0:00:45
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:57:44 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:50:06 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   129.0  0:00:33  0:00:33
+  Start    ----       247    0    0 100%    0  104   128.0  0:00:45  0:00:45
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:58:21 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:52:26 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   130.0  0:00:40  0:00:40
+  Start    ----       247    0    0 100%    0  104   129.0  0:00:47  0:00:47
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:58:21 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:52:26 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   130.0  0:00:40  0:00:40
+  Start    ----       247    0    0 100%    0  104   129.0  0:00:48  0:00:48
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 02:58:21 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 03 18:52:27 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0   97   129.0  0:00:40  0:00:40
+  Start    ----       247    0    0 100%    0  104   127.0  0:00:48  0:00:48
+
+---------------------------------------------------------------------------
+BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
+DATE: Tue May 03 18:57:19 2022        HOST: LAPTOP-M2SH2ORP
+---------------------------------------------------------------------------
+Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
+--------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
+  Start    ----       247    0    0 100%    0  104   129.0  0:01:06  0:01:06
+
+---------------------------------------------------------------------------
+BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
+DATE: Tue May 03 18:57:19 2022        HOST: LAPTOP-M2SH2ORP
+---------------------------------------------------------------------------
+Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
+--------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
+  Start    ----       247    0    0 100%    0  104   129.0  0:01:06  0:01:06
+
+---------------------------------------------------------------------------
+BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
+DATE: Tue May 03 18:57:19 2022        HOST: LAPTOP-M2SH2ORP
+---------------------------------------------------------------------------
+Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
+--------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
+  Start    ----       247    0    0 100%    0  104   127.0  0:01:06  0:01:06
+
+---------------------------------------------------------------------------
+BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
+DATE: Tue May 03 18:58:05 2022        HOST: LAPTOP-M2SH2ORP
+---------------------------------------------------------------------------
+Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
+--------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
+  Start    ----       247    0    0 100%    0  104   129.0  0:01:09  0:01:09
+
+---------------------------------------------------------------------------
+BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
+DATE: Tue May 03 18:58:05 2022        HOST: LAPTOP-M2SH2ORP
+---------------------------------------------------------------------------
+Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
+--------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
+  Start    ----       247    0    0 100%    0  104   129.0  0:01:09  0:01:09
+
+---------------------------------------------------------------------------
+BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
+DATE: Tue May 03 18:58:06 2022        HOST: LAPTOP-M2SH2ORP
+---------------------------------------------------------------------------
+Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
+--------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
+  Start    ----       247    0    0 100%    0  104   127.0  0:01:10  0:01:10

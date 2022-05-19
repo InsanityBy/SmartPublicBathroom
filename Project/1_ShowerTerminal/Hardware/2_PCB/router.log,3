@@ -1,48 +1,48 @@
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 21:55:45 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 17 00:39:41 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0  105   132.0  0:01:21  0:01:21
+  Start    ----       247    0    0 100%    0  101   133.0  0:04:09  0:04:09
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 21:55:45 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 17 00:39:41 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0  105   132.0  0:01:21  0:01:21
+  Start    ----       247    0    0 100%    0  101   133.0  0:04:09  0:04:09
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 21:55:46 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 17 00:39:42 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0  105   128.0  0:01:22  0:01:22
+  Start    ----       247    0    0 100%    0  101   129.0  0:04:10  0:04:10
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 22:13:40 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 17 00:41:36 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0  107   131.0  0:02:46  0:02:46
+  Start    ----       247    0    0 100%    0  101   131.0  0:04:29  0:04:29
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 22:13:40 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 17 00:41:36 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0  106   131.0  0:02:47  0:02:47
+  Start    ----       247    0    0 100%    0  101   131.0  0:04:29  0:04:29
 
 ---------------------------------------------------------------------------
 BOARD: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd ROUTER: 17.2
-DATE: Tue May 03 22:13:41 2022        HOST: LAPTOP-M2SH2ORP
+DATE: Tue May 17 00:41:37 2022        HOST: LAPTOP-M2SH2ORP
 ---------------------------------------------------------------------------
 Cnt St-ex Router      Att  Inv Miss Com% Drcs Vias   Etch  Cpu exec  Cpu Tot
 --------- ------    ----- ---- ---- ---- ---- ---- ------  -------- --------
-  Start    ----       247    0    0 100%    0  106   128.0  0:02:47  0:02:47
+  Start    ----       247    0    0 100%    0  101   129.0  0:04:30  0:04:30

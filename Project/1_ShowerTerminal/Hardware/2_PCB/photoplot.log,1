@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : SHOWERTERMINAL.brd                            )
 (    Software Version : 17.2S079                                      )
-(    Date/Time        : Tue May 17 01:09:55 2022                      )
+(    Date/Time        : Thu May 05 21:00:59 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -155,7 +155,6 @@ Results from parameter file ...
   ---------------------------------------------------------
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
-  CIRCLE     0.00600                                  DARK 
   CIRCLE     0.03950                                  DARK 
   CIRCLE     0.06312                                  DARK 
   CIRCLE     0.06706                                  DARK 
