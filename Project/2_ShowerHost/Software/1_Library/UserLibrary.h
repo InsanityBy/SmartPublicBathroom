@@ -19,6 +19,8 @@
 #include "Button.h"
 #include "TemperatureHumiditySensor.h"
 #include "LightSensor.h"
+#include "Communicate.h"
+#include "Audio.h"
 
 #endif
 

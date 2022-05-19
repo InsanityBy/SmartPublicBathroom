@@ -98,12 +98,12 @@
     (FileView
       (Path "Design Resources")
       (Path "Outputs")
-      (Select "Design Resources"))
+      (Select "Design Resources" ".\showerhost.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 700"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 866"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
@@ -153,8 +153,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 26 1509 26 485")
-        (Scroll "0 348")
-        (Zoom "130")
+        (Scroll "-267 -2")
+        (Zoom "65")
         (Occurrence "/"))
       (Path
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
@@ -171,5 +171,5 @@
          "D:\PKU\SMARTPUBLICBATHROOM\PROJECT\2_SHOWERHOST\HARDWARE\1_SCHEMATIC\SHOWERHOST.DSN")
       (Schematic "SCHEMATIC1")
       (Page "6_MCU")))
-  (MPSSessionName "Jessi_10")
+  (MPSSessionName "insan")
   (ISPCBBASICLICENSE "false"))

@@ -49,6 +49,9 @@
 ".\output\signaloutput.o"
 ".\output\lightsensor.o"
 ".\output\temperaturehumiditysensor.o"
+".\output\zigbee.o"
+".\output\wifi.o"
+".\output\audio.o"
 --library_type=microlib --strict --scatter ".\Output\STM32F401RE.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
