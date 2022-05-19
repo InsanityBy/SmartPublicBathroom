@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : SHOWERTERMINAL.brd                            )
 (    Software Version : 17.2S079                                      )
-(    Date/Time        : Tue May 17 01:06:49 2022                      )
+(    Date/Time        : Tue May 17 01:06:16 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -15,7 +15,7 @@
  NC PARAMETERS
  -------------
 
- FORMAT   		3.6
+ FORMAT   		2.5
  MACHINE-OFFSET		x:0.00000	y:0.00000   (inch)
  FEEDRATE		1
  COORDINATES		ABSOLUTE
@@ -35,6 +35,8 @@
  ENHANCED_EXCELLON	YES
  SCALE			1.000000
 
+ WARNING(SPMHMF-358): Design precision is the same as that of the drill output file data.
+ WARNING(SPMHMF-359): Data rounding errors may still be possible.
  WARNING(SPMHMF-365): This design contains 70 slot holes that cannot be drilled.
  WARNING(SPMHMF-366): They can be processed by NC routing instead.
  WARNING(SPMHMF-368): Cannot find NC Drill tool file 'nc_tools.txt'

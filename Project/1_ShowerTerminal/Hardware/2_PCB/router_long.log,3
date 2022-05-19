@@ -4,7 +4,7 @@
 *********************************************************************
 
 NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
-Started on   Tue May 03 21:55:45 2022
+Started on   Tue May 17 00:39:41 2022
 
 ---------------------------------------------------------------------
 Statistics at the Start of the Route:
@@ -26,10 +26,10 @@ Statistics at the Start of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Manh Distance (inches)     123.49
-        Etch Length (inches)       131.89        0.00       131.89
-        Number of vias		   105           0          105
-        Vias per Connection          0.43        0.00         0.43
+        Manh Distance (inches)     123.67
+        Etch Length (inches)       132.55        0.00       132.55
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
@@ -81,24 +81,24 @@ Statistics at the End of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Etch Length (inches)       131.89        0.00       131.89
-        Number of vias		   105           0          105
-        Vias per Connection          0.43        0.00         0.43
+        Etch Length (inches)       132.55        0.00       132.55
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
 
-    Total cpu time - 0:1:21 hours
-    Total elapsed time - 5416:16:12 hours
+    Total cpu time - 0:4:9 hours
+    Total elapsed time - 5731:0:8 hours
     Invalid Count Time: 0 0:0:0 hours
-    Route ended on  Tue May 03 21:55:45 2022
+    Route ended on  Tue May 17 00:39:41 2022
 
 *********************************************************************
                          ROUTER-LOG
 *********************************************************************
 
 NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
-Started on   Tue May 03 21:55:45 2022
+Started on   Tue May 17 00:39:41 2022
 
 ---------------------------------------------------------------------
 Statistics at the Start of the Route:
@@ -120,10 +120,10 @@ Statistics at the Start of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Manh Distance (inches)     123.49
-        Etch Length (inches)       131.89        0.00       131.89
-        Number of vias		   105           0          105
-        Vias per Connection          0.43        0.00         0.43
+        Manh Distance (inches)     123.67
+        Etch Length (inches)       132.55        0.00       132.55
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
@@ -175,24 +175,24 @@ Statistics at the End of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Etch Length (inches)       131.89        0.00       131.89
-        Number of vias		   105           0          105
-        Vias per Connection          0.43        0.00         0.43
+        Etch Length (inches)       132.55        0.00       132.55
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
 
-    Total cpu time - 0:1:21 hours
-    Total elapsed time - 5416:16:12 hours
+    Total cpu time - 0:4:9 hours
+    Total elapsed time - 5731:0:8 hours
     Invalid Count Time: 0 0:0:0 hours
-    Route ended on  Tue May 03 21:55:45 2022
+    Route ended on  Tue May 17 00:39:41 2022
 
 *********************************************************************
                          ROUTER-LOG
 *********************************************************************
 
 NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
-Started on   Tue May 03 21:55:46 2022
+Started on   Tue May 17 00:39:42 2022
 
 ---------------------------------------------------------------------
 Statistics at the Start of the Route:
@@ -214,10 +214,10 @@ Statistics at the Start of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Manh Distance (inches)     123.49
-        Etch Length (inches)       127.96        0.00       127.96
-        Number of vias		   105           0          105
-        Vias per Connection          0.43        0.00         0.43
+        Manh Distance (inches)     123.67
+        Etch Length (inches)       129.09        0.00       129.09
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
@@ -269,24 +269,24 @@ Statistics at the End of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Etch Length (inches)       128.24        0.00       128.24
-        Number of vias		   105           0          105
-        Vias per Connection          0.43        0.00         0.43
+        Etch Length (inches)       129.38        0.00       129.38
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
 
-    Total cpu time - 0:1:22 hours
-    Total elapsed time - 5416:16:13 hours
+    Total cpu time - 0:4:10 hours
+    Total elapsed time - 5731:0:8 hours
     Invalid Count Time: 0 0:0:0 hours
-    Route ended on  Tue May 03 21:55:46 2022
+    Route ended on  Tue May 17 00:39:42 2022
 
 *********************************************************************
                          ROUTER-LOG
 *********************************************************************
 
 NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
-Started on   Tue May 03 22:13:40 2022
+Started on   Tue May 17 00:41:36 2022
 
 ---------------------------------------------------------------------
 Statistics at the Start of the Route:
@@ -308,10 +308,10 @@ Statistics at the Start of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Manh Distance (inches)     123.26
-        Etch Length (inches)       131.30        0.00       131.30
-        Number of vias		   107           0          107
-        Vias per Connection          0.43        0.00         0.43
+        Manh Distance (inches)     123.67
+        Etch Length (inches)       130.79        0.00       130.79
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
@@ -363,24 +363,24 @@ Statistics at the End of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Etch Length (inches)       131.30        0.00       131.30
-        Number of vias		   106           0          106
-        Vias per Connection          0.43        0.00         0.43
+        Etch Length (inches)       130.79        0.00       130.79
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
 
-    Total cpu time - 0:2:47 hours
-    Total elapsed time - 5416:34:7 hours
+    Total cpu time - 0:4:29 hours
+    Total elapsed time - 5731:2:3 hours
     Invalid Count Time: 0 0:0:0 hours
-    Route ended on  Tue May 03 22:13:40 2022
+    Route ended on  Tue May 17 00:41:36 2022
 
 *********************************************************************
                          ROUTER-LOG
 *********************************************************************
 
 NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
-Started on   Tue May 03 22:13:40 2022
+Started on   Tue May 17 00:41:36 2022
 
 ---------------------------------------------------------------------
 Statistics at the Start of the Route:
@@ -402,10 +402,10 @@ Statistics at the Start of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Manh Distance (inches)     123.26
-        Etch Length (inches)       131.30        0.00       131.30
-        Number of vias		   106           0          106
-        Vias per Connection          0.43        0.00         0.43
+        Manh Distance (inches)     123.67
+        Etch Length (inches)       130.79        0.00       130.79
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
@@ -457,24 +457,24 @@ Statistics at the End of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Etch Length (inches)       131.30        0.00       131.30
-        Number of vias		   106           0          106
-        Vias per Connection          0.43        0.00         0.43
+        Etch Length (inches)       130.79        0.00       130.79
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
 
-    Total cpu time - 0:2:47 hours
-    Total elapsed time - 5416:34:7 hours
+    Total cpu time - 0:4:29 hours
+    Total elapsed time - 5731:2:3 hours
     Invalid Count Time: 0 0:0:0 hours
-    Route ended on  Tue May 03 22:13:40 2022
+    Route ended on  Tue May 17 00:41:36 2022
 
 *********************************************************************
                          ROUTER-LOG
 *********************************************************************
 
 NEW ROUTE on D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
-Started on   Tue May 03 22:13:41 2022
+Started on   Tue May 17 00:41:37 2022
 
 ---------------------------------------------------------------------
 Statistics at the Start of the Route:
@@ -496,10 +496,10 @@ Statistics at the Start of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Manh Distance (inches)     123.44
-        Etch Length (inches)       127.77        0.00       127.77
-        Number of vias		   106           0          106
-        Vias per Connection          0.43        0.00         0.43
+        Manh Distance (inches)     123.67
+        Etch Length (inches)       129.10        0.00       129.10
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
@@ -551,14 +551,14 @@ Statistics at the End of the Route:
         Already Connected          247           0          247
         Missing Connections          0           0            0
         Connection Completion      100.00%       0.00%      100.00%
-        Etch Length (inches)       128.19        0.00       128.19
-        Number of vias		   106           0          106
-        Vias per Connection          0.43        0.00         0.43
+        Etch Length (inches)       129.38        0.00       129.38
+        Number of vias		   101           0          101
+        Vias per Connection          0.41        0.00         0.41
         Smd pins with attached clines                       257
 
 
 
-    Total cpu time - 0:2:47 hours
-    Total elapsed time - 5416:34:7 hours
+    Total cpu time - 0:4:30 hours
+    Total elapsed time - 5731:2:4 hours
     Invalid Count Time: 0 0:0:0 hours
-    Route ended on  Tue May 03 22:13:41 2022
+    Route ended on  Tue May 17 00:41:37 2022

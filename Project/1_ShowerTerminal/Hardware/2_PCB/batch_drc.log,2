@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : SHOWERTERMINAL.brd                            )
 (    Software Version : 17.2S079                                      )
-(    Date/Time        : Thu May 05 20:44:32 2022                      )
+(    Date/Time        : Tue May 17 01:01:46 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -21,9 +21,6 @@
  ========= check standalone rectangles        0:00:00
 
  ..... Total number of DRC errors  0
-
-
-WARNING: 1 dynamic shape(s) out of date; checking skipped on these elements.
 
  ..... DRC update completed, total CPU time   0:00:00
  *************************************************************************
