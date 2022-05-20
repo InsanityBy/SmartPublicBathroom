@@ -152,18 +152,34 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>89</LineNumber>
+          <LineNumber>213</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134223110</Address>
+          <Address>134219876</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\User\main.c</Filename>
+          <Filename>..\..\1_Library\Display.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\STM32F401RE\../User/main.c\89</Expression>
+          <Expression>\\STM32F401RE\../../1_Library/Display.c\213</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>205</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134219856</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\..\1_Library\Display.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\STM32F401RE\../../1_Library/Display.c\205</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -1041,6 +1057,18 @@
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\1_Library\Audio.c</PathWithFileName>
       <FilenameWithoutPath>Audio.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>63</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\1_Library\Display.c</PathWithFileName>
+      <FilenameWithoutPath>Display.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

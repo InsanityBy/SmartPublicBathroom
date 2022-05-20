@@ -21,6 +21,7 @@
 #include "LightSensor.h"
 #include "Communicate.h"
 #include "Audio.h"
+#include "Display.h"
 
 #endif
 

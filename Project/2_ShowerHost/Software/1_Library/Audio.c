@@ -17,7 +17,7 @@
  */
 
 /* Includes ------------------------------------------------------------------*/
-#include "WiFi.h"
+#include "Audio.h"
 #include "Delay.h"
 #include <stdio.h>
 
@@ -45,8 +45,7 @@
 /* Private functions ---------------------------------------------------------*/
 /**
  * @brief  Initialize GPIO pins.
- * @param  pTransmitData: Pointer of transmit data buffer.
- * @param  pReceiveData: Pointer of receive data buffer.
+ * @param  None.
  * @retval None.
  */
 void Audio_Init(void)

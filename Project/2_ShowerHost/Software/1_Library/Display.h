@@ -1,17 +1,17 @@
 /**
  ******************************************************************************
- * @file    Audio.h
+ * @file    Display.h
  * @author  Ma Boyang
  * @version V1.0
- * @date    2022.5.19
- * @brief   This file contains all the functions prototypes for audio device.
+ * @date    2022.5.20
+ * @brief   This file contains all the functions prototypes for display device.
  *          (For shower host.)
  ******************************************************************************
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __AUDIO_H
-#define __AUDIO_H
+#ifndef __DISPLAY_H
+#define __DISPLAY_H
 
 #ifdef __cplusplus
 extern "C"
@@ -24,24 +24,37 @@ extern "C"
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
+// Set font size
+#define FONTSIZE_16 0x01
+#define FONTSIZE_8 0x00
+
 /* Exported functions --------------------------------------------------------*/
-// Initialize audio device
-void Audio_Init(void);
+// Initialize display device
+void Display_Init(void);
 
-// Play sound, break into current play
-void Audio_Play(uint16_t address);
+// Turn on display
+void Display_On(void);
 
-// Play sound after current play
-void Audio_PlayAfter(uint16_t address);
+// Turn off display
+void Display_Off(void);
 
-// Start loop mode
-void Audio_Loop(void);
+// Clear screen
+void Display_Clear(void);
 
-// Stop play
-void Audio_Stop(void);
+// Turn on and light up screen
+void Display_LightUp(void);
 
-// Set volume
-void Audio_Volume(uint8_t volume);
+// Set position
+void Display_SetPosition(uint8_t x, uint8_t y);
+
+// Show char on screen
+void Display_ShowChar(uint8_t x, uint8_t y, uint8_t data, uint8_t size);
+
+// Show string on screen
+void Display_ShowString(uint8_t x, uint8_t y, uint8_t *data, uint8_t size);
+
+// Draw a bmp image on screen
+void Display_DrawBMP(uint8_t x1, uint8_t y1 ,uint8_t x2, uint8_t y2, uint8_t *data);
 
 #ifdef __cplusplus
 }

@@ -39,3 +39,4 @@
 .\output\stm32f4xx_it.o: ..\..\1_Library\ZigBee.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\WiFi.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Audio.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\Display.h

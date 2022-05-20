@@ -1,5 +1,5 @@
 .\output\audio.o: ..\..\1_Library\Audio.c
-.\output\audio.o: ..\..\1_Library\WiFi.h
+.\output\audio.o: ..\..\1_Library\Audio.h
 .\output\audio.o: ..\CMSIS\stm32f4xx.h
 .\output\audio.o: ..\CMSIS\core_cm4.h
 .\output\audio.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h

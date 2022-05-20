@@ -38,4 +38,5 @@
 .\output\main.o: ..\..\1_Library\ZigBee.h
 .\output\main.o: ..\..\1_Library\WiFi.h
 .\output\main.o: ..\..\1_Library\Audio.h
+.\output\main.o: ..\..\1_Library\Display.h
 .\output\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
