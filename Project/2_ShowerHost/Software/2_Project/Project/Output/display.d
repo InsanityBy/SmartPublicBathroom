@@ -30,4 +30,3 @@
 .\output\display.o: ..\Library\inc\misc.h
 .\output\display.o: ..\..\1_Library\Display_Data.h
 .\output\display.o: ..\..\1_Library\Delay.h
-.\output\display.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

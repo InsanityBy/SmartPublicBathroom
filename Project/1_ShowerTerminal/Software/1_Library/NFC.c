@@ -10,6 +10,10 @@
  *          - Use NFC_Init() to initialize device.
  *          - Use NFC_ReadData() to get data from card.
  *          - Use NFC_WriteData() to write data to card.
+ *          - Use NFC_SetCheckCardNumber(uint32_t CardNumber, uint8_t operation)
+ *              to set or check the card number.
+ *          - Use NFC_SetCheckUserNumber(uint32_t UserNumber, uint8_t operation)
+ *              to set or check the user number.
  ******************************************************************************
  */
 
@@ -156,9 +160,17 @@
 #define MFRC_ERR (char)(-2)
 
 #define MAXRLEN 18
+#define NFCTIMEOUT 500
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
+// Default settings
+uint8_t CardNumber_Sector = 0x01;
+uint8_t CardNumber_Block = 0x02;
+uint8_t UserNumber_Sector = 0x05;
+uint8_t UserNumber_Block = 0x02;
+uint8_t key[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 /*===============================================================================
@@ -171,12 +183,22 @@
  */
 uint8_t SPI2_WriteReadByte(uint8_t data)
 {
-
-    while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_TXE) == RESET)
-        ;                         // Transmit buffer empty
+    uint16_t wait = 0;
+    while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_TXE) == RESET) // Transmit buffer empty
+    {
+        wait++;
+        if (wait > NFCTIMEOUT)
+            return 0x00;
+    }
     SPI_I2S_SendData(SPI2, data); // Transmit data
-    while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_RXNE) == RESET)
-        ;                             // Receive buffer not empty
+
+    wait = 0;
+    while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_RXNE) == RESET) // Receive buffer not empty
+    {
+        wait++;
+        if (wait > NFCTIMEOUT)
+            return 0x00;
+    }
     return SPI_I2S_ReceiveData(SPI2); // Recent data from slave
 }
 
@@ -684,6 +706,8 @@ char PCD_Halt(void)
  */
 char PCD_Reset(void)
 {
+    uint16_t wait = 0;
+
     // Hardware reset
     GPIO_SetBits(NFC_RST_PINGROUP, NFC_RST_PIN);
     Delay_us(10);
@@ -695,7 +719,11 @@ char PCD_Reset(void)
     // Software reset
     MFRC_WriteReg(CommandReg, PCD_RESETPHASE);
     while (MFRC_ReadReg(CommandReg) & 0x0F)
-        ;
+    {
+        wait++;
+        if (wait > NFCTIMEOUT)
+            return MFRC_ERR;
+    }
     Delay_us(1);
 
     MFRC_WriteReg(ModeReg, 0x3D);
@@ -818,7 +846,7 @@ void NFC_Init(void)
  * @param  block: Select block to operate,can be 0~3. Block 3 is control block.
  * @param  keyA: Pointer of 6 byte key to sector, default is all 0xFF.
  * @param  pData: Pointer of data received.
- * @retval None.
+ * @retval Status: OK for success.
  */
 char NFC_ReadData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData)
 {
@@ -839,7 +867,7 @@ char NFC_ReadData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData)
                     status = PCD_Read((sector * 4 + block), pData); // Read
                     if (status == MFRC_OK)
                     {
-                        printf("Read!\n");
+                        // printf("Read!\n");
                     }
                 }
             }
@@ -855,7 +883,7 @@ char NFC_ReadData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData)
  * @param  block: Select block to operate,can be 0~3. Block 3 is control block.
  * @param  keyA: Pointer of 6 byte key to sector, default is all 0xFF.
  * @param  pData: Pointer of data to write.
- * @retval None.
+ * @retval Status: OK for success.
  */
 char NFC_WriteData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData)
 {
@@ -874,12 +902,92 @@ char NFC_WriteData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData)
                 if (status == MFRC_OK)
                 {
                     status = PCD_Write((sector * 4 + block), pData); // Write
+                    if (status == MFRC_OK)
+                    {
+                        // printf("Write!\n");
+                    }
                 }
             }
         }
     }
     status = PCD_Halt(); // Go into sleep
     return status;
+}
+
+/**
+ * @brief  Set or check card number.
+ * @param  CardNumber: 4 byte card number, will be ignored when check.
+ * @param  operation: Operation can be NFC_SET or NFC_CHECK.
+ * @retval Current card number
+ */
+uint32_t NFC_SetCheckCardNumber(uint32_t CardNumber, uint8_t operation)
+{
+    uint8_t data[16];
+    uint32_t CardNumber_Current = 0x00000000;
+    char status;
+    if (operation == NFC_SET)
+    {
+        CardNumber_Current = CardNumber;
+        for (int i = 0; i < 4; i++)
+        {
+            data[i] = (CardNumber & 0xFF000000) >> 24;
+            CardNumber = CardNumber << 8;
+        }
+        status = NFC_WriteData(CardNumber_Sector, CardNumber_Block, key, data);
+        if (status != MFRC_OK)
+            return status;
+    }
+    else
+    {
+        status = NFC_ReadData(CardNumber_Sector, CardNumber_Block, key, data);
+        if (status != MFRC_OK)
+            return status;
+        for (int i = 0; i < 3; i++)
+        {
+            CardNumber_Current = CardNumber_Current | data[i];
+            CardNumber_Current = CardNumber_Current << 8;
+        }
+        CardNumber_Current = CardNumber_Current | data[3];
+    }
+    return CardNumber_Current;
+}
+
+/**
+ * @brief  Set or check user number.
+ * @param  UserNumber: 4 byte user number, will be ignored when check.
+ * @param  operation: Operation can be NFC_SET or NFC_CHECK.
+ * @retval Current user number
+ */
+uint32_t NFC_SetCheckUserNumber(uint32_t UserNumber, uint8_t operation)
+{
+    uint8_t data[16];
+    uint32_t UserNumber_Current = 0x00000000;
+    char status;
+    if (operation == NFC_SET)
+    {
+        UserNumber_Current = UserNumber;
+        for (int i = 0; i < 4; i++)
+        {
+            data[i] = (UserNumber & 0xFF000000) >> 24;
+            UserNumber = UserNumber << 8;
+        }
+        status = NFC_WriteData(UserNumber_Sector, UserNumber_Block, key, data);
+        if (status != MFRC_OK)
+            return status;
+    }
+    else
+    {
+        status = NFC_ReadData(UserNumber_Sector, UserNumber_Block, key, data);
+        if (status != MFRC_OK)
+            return status;
+        for (int i = 0; i < 3; i++)
+        {
+            UserNumber_Current = UserNumber_Current | data[i];
+            UserNumber_Current = UserNumber_Current << 8;
+        }
+        UserNumber_Current = UserNumber_Current | data[3];
+    }
+    return UserNumber_Current;
 }
 
 /***********************************END OF FILE********************************/

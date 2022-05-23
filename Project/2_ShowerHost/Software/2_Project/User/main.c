@@ -106,8 +106,7 @@ int fputc(int ch, FILE *f)
 int main(void)
 {
     /* Initialize all peripherals*/
-    // char Receive_Buffer[256] = "AT+ZIGB_TYPE=0\r\n";
-    // char Transmit_Buffer[] = "Temperature: 12";
+    // char Transmit_Buffer[] = "AT+ZIGB_TYPE=0\r\n";
     // char Receive_Buffer[256];
     Delay_us(1000);
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
@@ -117,10 +116,10 @@ int main(void)
     // TemperatureHumiditySensor_Init();
     // LightSensor_Init();
     // ZigBee_Init(Transmit_Buffer, Receive_Buffer);
-    //  WiFi_Init(Transmit_Buffer, Receive_Buffer);
+    // WiFi_Init(Transmit_Buffer, Receive_Buffer);
     // Audio_Init();
     // Audio_Volume(15);
-    Display_Init();
+     Display_Init();
     Delay_ms(1);
     // printf("Initialize finished!\n");
     // uint16_t temp = sizeof(Transmit_Buffer) / sizeof(Transmit_Buffer[0]) - 1;

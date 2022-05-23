@@ -30,7 +30,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 // Light threshold
-float Threshold = 1.65;
+float Threshold = 2.8;
 
 // Ratio to convert ADC sample value to actual lighting value
 float ConvertRatio = 3.3 / 4096;

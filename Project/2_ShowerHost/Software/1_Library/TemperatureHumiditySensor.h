@@ -37,6 +37,9 @@ float Sensor_GetTemperature(void);
 // Get humidity
 float Sensor_GetHumidity(void);
 
+// Get temperature and humidity state, 1 for fan should be on and 0 for off.
+uint8_t Sensor_Getstate(void);
+
 #ifdef __cplusplus
 }
 #endif

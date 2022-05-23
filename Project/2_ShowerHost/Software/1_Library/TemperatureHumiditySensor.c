@@ -13,6 +13,8 @@
  *              START CONVERT BEFORE GET TEMPERATURE.
  *          - Use Sensor_GetHumidity() to get current humidity. MUST START
  *              CONVERT BEFORE GET TEMPERATURE.
+ *          - USe Sensor_Getstate() to get current state of tempertature and
+ *              humidity, 1 for fan should be turned on, 0 for not.
  ******************************************************************************
  */
 
@@ -31,6 +33,8 @@
 /* Private variables ---------------------------------------------------------*/
 float Temperature;
 float Humidity;
+float Temperature_Threshold = 26;
+float Humidity_Threshold = 30;
 uint16_t OwHumA, OwHumB;
 
 /* Private function prototypes -----------------------------------------------*/
@@ -274,6 +278,26 @@ float Sensor_GetHumidity(void)
         Humidity = 0;
 
     return Humidity;
+}
+
+/**
+ * @brief  Get temperature and humidity state.
+ * @param  None.
+ * @retval 1 for fan should be on and 0 for off.
+ */
+uint8_t Sensor_Getstate(void)
+{
+    float temperature_current, humidity_current;
+    Sensor_Convert;
+    temperature_current = Sensor_GetTemperature();
+    Sensor_Convert;
+    humidity_current = Sensor_GetHumidity();
+
+    if ((temperature_current > Temperature_Threshold) || (humidity_current > Humidity_Threshold))
+    {
+        return 1;
+    }
+    return 0;
 }
 
 /**

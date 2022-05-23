@@ -36,6 +36,25 @@
 #define ZIGBEETX_PIN GPIO_Pin_10
 #define ZIGBEETX_PINSOURCE GPIO_PinSource10
 
+#define ZIGBEETIMEOUT 500
+
+// AT Command
+#define ZigBee_DeviceReset "AT+UT_RESET\r\n"
+
+#define ZigBee_Type "AT+ZIGB_TYPE="
+#define ZigBee_TypeCoordinator 0x00
+#define ZigBee_TypeRouter 0x01
+#define ZigBee_TypeTerminal 0x02
+
+#define ZigBee_UserID "AT+UT_UID="
+
+#define ZigBee_Addressing "AT+ZIGB_UIDTOID="
+
+#define ZigBee_DataFormat "AT+ZIGB_RXMODE="
+#define ZigBee_DataFormatOnlyData 0x00
+
+#define ZigBee_Send "AT+UT_SEND="
+
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 // String receive flag, 1 for finished, 0 for not
@@ -208,8 +227,13 @@ void ZigBee_Init(uint8_t *pTransmitData, uint8_t *pReceiveData)
 void ZigBee_TransmitByte(uint8_t data)
 {
     // Wait till TX buffer empty
+    uint16_t wait = 0;
     while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET)
-        ;
+    {
+        wait++;
+        if (wait > ZIGBEETIMEOUT)
+            return;
+    }
     // Transmit data
     USART_SendData(USART1, data);
 }
@@ -225,7 +249,7 @@ void ZigBee_TransmitString(uint16_t length, uint16_t nTime)
     // Length = 0, no need to transmit
     if (length == 0)
         return;
-    
+
     // Wait till last transmit finish
     for (int i = 0; i < nTime; i++)
     {
@@ -255,8 +279,13 @@ void ZigBee_TransmitString(uint16_t length, uint16_t nTime)
 uint8_t ZigBee_ReceiveByte(void)
 {
     // Wait till RX buffer not empty
+    uint16_t wait = 0;
     while (USART_GetFlagStatus(USART1, USART_FLAG_RXNE) == RESET)
-        ;
+    {
+        wait++;
+        if (wait > ZIGBEETIMEOUT)
+            return;
+    }
     // Receive data
     return USART_ReceiveData(USART1);
 }
@@ -279,7 +308,7 @@ uint16_t ZigBee_ReceiveString(uint16_t nTime)
     // Last receive time out
     if (!ZigBeeStringReceive_Flag)
         return ZigBeeDataLength;
-        
+
     ZigBeeStringReceive_Flag = 0x00;
 
     // Enable DMA
@@ -297,9 +326,9 @@ void USART1_IRQHandler(void)
 {
     if (USART_GetITStatus(USART1, USART_IT_IDLE) != RESET)
     {
-        uint8_t clear = USART_ReceiveData(USART1); // IDLE flag is cleared by reading SR and DR
         ZigBeeDataLength = 0xFFFF - DMA_GetCurrDataCounter(DMA2_Stream5);
         DMA_Cmd(DMA2_Stream5, DISABLE);
+        uint8_t clear = USART_ReceiveData(USART1); // IDLE flag is cleared by reading SR and DR
     }
 }
 

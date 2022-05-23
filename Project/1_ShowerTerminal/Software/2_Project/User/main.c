@@ -23,16 +23,16 @@ extern uint8_t Data_Human;
 void USART1_Init(void)
 {
     // GPIO Config
-    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE); // GPIO Clock
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE); // GPIO Clock
     GPIO_InitTypeDef GPIO_USART;                          // GPIO Init Structure
-    // USART1 TX - PA9
-    GPIO_PinAFConfig(GPIOA, GPIO_PinSource9, GPIO_AF_USART1);
-    GPIO_USART.GPIO_Pin = GPIO_Pin_9;
+    // USART1 TX - PB6
+    GPIO_PinAFConfig(GPIOB, GPIO_PinSource6, GPIO_AF_USART1);
+    GPIO_USART.GPIO_Pin = GPIO_Pin_6;
     GPIO_USART.GPIO_Mode = GPIO_Mode_AF;
     GPIO_USART.GPIO_OType = GPIO_OType_PP;
     GPIO_USART.GPIO_PuPd = GPIO_PuPd_UP;
     GPIO_USART.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_Init(GPIOA, &GPIO_USART);
+    GPIO_Init(GPIOB, &GPIO_USART);
     // USART1 RX - PA10
     GPIO_PinAFConfig(GPIOA, GPIO_PinSource10, GPIO_AF_USART1);
     GPIO_USART.GPIO_Pin = GPIO_Pin_10;
@@ -41,7 +41,7 @@ void USART1_Init(void)
     // USART1 Config
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE); // USART Clock
     USART_InitTypeDef USART_InitStructure;                 // USART Init Structure
-    USART_InitStructure.USART_BaudRate = 9600;
+    USART_InitStructure.USART_BaudRate = 115200;
     USART_InitStructure.USART_WordLength = USART_WordLength_8b;
     USART_InitStructure.USART_StopBits = USART_StopBits_1;
     USART_InitStructure.USART_Parity = USART_Parity_No;
@@ -94,7 +94,7 @@ int main(void)
     // Button_Init();
     // InfraredObject_Init();
     // InfraredHuman_Init();
-    NFC_Init();
+     NFC_Init();
     Program_Timer();
     Delay_ms(1);
     printf("Initialize finished\n");
@@ -104,7 +104,8 @@ int main(void)
     /* Infinite loop */
     while (1)
     {
-        char Card_Data[16];
+      /*  
+			char Card_Data[16];
         for (int i = 0; i < 16; i++)
         {
             Card_Data[i] = 0x00;
@@ -115,6 +116,7 @@ int main(void)
             Card_Data_send[i] = i + 2;
         }
         char key[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+			*/
         // Sensor_Convert();
         // Valve_Start();
         // printf("Valve:%d\n", Valve_GetState());
@@ -125,18 +127,21 @@ int main(void)
         // printf("Flow: %fL\n", FlowMeter_GetValueL());
         // printf("Valve: %d\n", Valve_GetState());
         // printf("InfraredObjectState: %d\n", InfraredObject_GetState());
-        // printf("InfraredObjectValue: %f\n", (float)InfraredObject_GetValue() / 4096 * 3.3);
+        // printf("InfraredObjectValue: %f\n", (float)InfraredObject_GetValue());
         // InfraredObject_GetValue();
         // printf("InfraredHumanState: %d\n", InfraredHuman_GetState());
         // printf("InfraredHumanValue: %d\n", InfraredHuman_GetValue());
         // NFC_WriteData(1, 0, key, Card_Data_send);
         // Delay_ms(3000);
-        NFC_ReadData(1, 0, key, Card_Data);
-        for (int i = 0; i < 15; i++)
+        
+				uint32_t CardData = NFC_SetCheckCardNumber(0x00000000, NFC_CHECK);
+        printf("%d\n", CardData);
+				/*for (int i = 0; i < 15; i++)
         {
             printf("%02X ", Card_Data[i]);
         }
-        printf("%02X\n", Card_Data[15]);
+        printf("%02X\n", Card_Data[15]);*/
+
         Delay_ms(1000);
     }
 }

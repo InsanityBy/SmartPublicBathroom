@@ -1,81 +1,39 @@
-\t (00:00:01) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:01)     Journal start - Tue May 17 01:28:18 2022
-\t (00:00:01)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=24572 CPUs=16
-\t (00:00:01) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\2_PCB\SHOWERTERMINAL.brd
-\t (00:00:01) 
-   (00:00:02) Loading axlcore.cxt 
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERTERMINAL
-\d (00:00:04) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
-\t (00:00:04) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:00:04) trapsize 4452
-\i (00:00:04) trapsize 4548
-\t (00:00:04) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:00:04) trapsize 4666
-\i (00:00:04) trapsize 4666
-\i (00:00:05) generaledit 
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 1591.40 2437.77
-\t (00:00:06) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:00:06) trapsize 2333
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 1866.72 1765.81
-\i (00:00:06) trapsize 1167
+\t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
+\t (00:00:05)     Journal start - Thu May 19 17:53:40 2022
+\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=29344 CPUs=16
+\t (00:00:05) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\2_PCB\SHOWERTERMINAL.brd
+\t (00:00:05) 
+   (00:00:05) Loading axlcore.cxt 
+\t (00:00:06) Opening existing design...
+\i (00:00:06) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERTERMINAL
+\d (00:00:06) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
+\t (00:00:06) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:00:06) trapsize 4452
+\i (00:00:06) trapsize 4548
+\t (00:00:06) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:00:06) trapsize 4666
+\i (00:00:06) trapsize 4666
+\i (00:00:06) generaledit 
 \i (00:00:07) zoom in 1 
 \i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 1983.38 1005.19
+\i (00:00:07) zoom in 2291.36 1308.50
+\t (00:00:07) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (00:00:07) trapsize 2333
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in 2286.70 1303.83
+\i (00:00:07) trapsize 1167
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in 2286.70 1299.17
 \i (00:00:07) trapsize 583
 \i (00:00:07) zoom in 1 
 \i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 1983.38 1005.20
+\i (00:00:07) zoom in 2223.71 1097.35
 \i (00:00:07) trapsize 292
-\i (00:00:08) zoom out 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom out 2014.89 968.45
-\i (00:00:08) trapsize 583
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 2019.55 955.62
-\i (00:00:10) trapsize 1167
-\i (00:00:11) QtSignal CVPLayerGrid CVPBoxAllBottom clicked false
-\i (00:00:12) zoom out 1 
-\i (00:00:12) setwindow pcb
-\i (00:00:12) zoom out 1058.27 2192.21
-\i (00:00:12) trapsize 2333
-\i (00:00:12) zoom in 1 
-\i (00:00:12) setwindow pcb
-\i (00:00:12) zoom in 932.27 3167.49
-\i (00:00:12) trapsize 1167
-\i (00:00:13) zoom in 1 
-\i (00:00:13) setwindow pcb
-\i (00:00:13) zoom in 1135.26 2087.22
-\i (00:00:13) trapsize 583
-\i (00:00:14) zoom in 1 
-\i (00:00:14) setwindow pcb
-\i (00:00:14) zoom in 1533.08 1859.73
-\i (00:00:14) trapsize 292
-\i (00:00:17) zoom out 1 
-\i (00:00:17) setwindow pcb
-\i (00:00:17) zoom out 1719.74 1904.06
-\i (00:00:17) trapsize 583
-\i (00:00:17) zoom out 1 
-\i (00:00:17) setwindow pcb
-\i (00:00:17) zoom out 1363.92 1964.73
-\i (00:00:17) trapsize 1167
-\i (00:00:18) zoom in 1 
-\i (00:00:18) setwindow pcb
-\i (00:00:18) zoom in 2227.21 1801.40
-\i (00:00:18) trapsize 583
-\i (00:00:19) zoom out 1 
-\i (00:00:19) setwindow pcb
-\i (00:00:19) zoom out 2565.53 1691.74
-\i (00:00:19) trapsize 1167
-\i (00:00:20) zoom in 1 
-\i (00:00:20) setwindow pcb
-\i (00:00:20) zoom in -150.31 2501.37
-\i (00:00:20) trapsize 583
-\i (00:00:22) QtSignal CVPLayerGrid CVPBoxAllBottom clicked true
-\i (00:00:23) exit 
-\t (00:00:24)     Journal end - Tue May 17 01:28:40 2022
+\i (00:00:09) zoom out 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom out 2260.46 892.03
+\i (00:00:09) trapsize 583
+\i (00:00:10) exit 
+\t (00:00:11)     Journal end - Thu May 19 17:53:46 2022

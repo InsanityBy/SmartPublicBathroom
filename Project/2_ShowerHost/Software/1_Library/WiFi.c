@@ -31,10 +31,38 @@
 #define WIFIRX_PINSOURCE GPIO_PinSource6
 
 // WiFi TX  - PC7
-#define WIFITX_CLOCK RCC_AHB1Periph_GPIOA
-#define WIFITX_PINGROUP GPIOA
-#define WIFITX_PIN GPIO_Pin_12
-#define WIFITX_PINSOURCE GPIO_PinSource12
+#define WIFITX_CLOCK RCC_AHB1Periph_GPIOC
+#define WIFITX_PINGROUP GPIOC
+#define WIFITX_PIN GPIO_Pin_7
+#define WIFITX_PINSOURCE GPIO_PinSource7
+
+#define WIFITIMEOUT 500
+
+// AT Command
+#define WiFi_DeviceReset "AT+UT_RESET\r\n"
+
+#define WiFi_Version "AT+UT_VER=?\r\n"
+
+#define WiFi_WorkMode "AT+UT_WKMODE="
+#define WiFi_WorkModeAT "CMD"
+#define WiFi_WorkModeTransparent "NET"
+
+#define WiFi_WiFiConfig "AT+WIFI="
+#define WiFi_WiFiModeSTA "STA"
+#define WiFi_WiFiModeAP "AP"
+
+#define WiFi_Socket1EN "AT+ETH_CH1EN="
+#define WiFi_Socket2EN "AT+ETH_CH2EN="
+#define WiFi_Enable "ENABLE"
+#define WiFi_Disable "DISABLE"
+
+#define WiFi_Socket1Config "AT+ETH_CH1P="
+#define WiFi_Socket2Config "AT+ETH_CH2P="
+
+#define WiFi_SocketUDPClient "UDPC"
+#define WiFi_SocketUDPService "UDPS"
+#define WiFi_SocketTCPClient "TCPC"
+#define WiFi_SocketTCPService "TCPS"
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
@@ -46,6 +74,10 @@ uint8_t WiFiStringTransmit_Flag = 1;
 
 // Length of received data
 uint16_t WiFiDataLength;
+
+// WiFi information
+uint8_t WiFi_Name[] = "insanity";
+uint8_t WiFi_Password[] = "20010120";
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -208,8 +240,13 @@ void WiFi_Init(uint8_t *pTransmitData, uint8_t *pReceiveData)
 void WiFi_TransmitByte(uint8_t data)
 {
     // Wait till TX buffer empty
+    uint16_t wait;
     while (USART_GetFlagStatus(USART6, USART_FLAG_TXE) == RESET)
-        ;
+    {
+        wait++;
+        if (wait > WIFITIMEOUT)
+            return;
+    }
     // Transmit data
     USART_SendData(USART6, data);
 }
@@ -255,8 +292,13 @@ void WiFi_TransmitString(uint16_t length, uint16_t nTime)
 uint8_t WiFi_ReceiveByte(void)
 {
     // Wait till RX buffer not empty
+    uint16_t wait = 0;
     while (USART_GetFlagStatus(USART6, USART_FLAG_RXNE) == RESET)
-        ;
+    {
+        wait++;
+        if (wait > WIFITIMEOUT)
+            return 0x00;
+    }
     // Receive data
     return USART_ReceiveData(USART6);
 }
@@ -297,9 +339,9 @@ void USART6_IRQHandler(void)
 {
     if (USART_GetITStatus(USART6, USART_IT_IDLE) != RESET)
     {
-        uint8_t clear = USART_ReceiveData(USART6); // IDLE flag is cleared by reading SR and DR
         WiFiDataLength = 0xFFFF - DMA_GetCurrDataCounter(DMA2_Stream1);
         DMA_Cmd(DMA2_Stream1, DISABLE);
+        uint8_t clear = USART_ReceiveData(USART6); // IDLE flag is cleared by reading SR and DR
     }
 }
 

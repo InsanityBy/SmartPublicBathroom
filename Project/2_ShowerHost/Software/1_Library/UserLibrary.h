@@ -14,14 +14,14 @@
 #define __USERLIBRARY_H
 
 /* Includes ------------------------------------------------------------------*/
-#include "Delay.h"
-#include "SignalOutput.h"
-#include "Button.h"
-#include "TemperatureHumiditySensor.h"
-#include "LightSensor.h"
-#include "Communicate.h"
 #include "Audio.h"
+#include "Button.h"
+#include "Communicate.h"
+#include "Delay.h"
 #include "Display.h"
+#include "LightSensor.h"
+#include "SignalOutput.h"
+#include "TemperatureHumiditySensor.h"
 
 #endif
 

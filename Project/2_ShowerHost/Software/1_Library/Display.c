@@ -11,8 +11,6 @@
  *          - Use Display_On() and Display_Off() to turn on and turn off display.
  *          - Use Display_Clear() to clear screen, screen will be dark.
  *          - Use Display_LightUp() to light up all screen.
- *          - Use Display_FillScreen(uint8_t data) to fill screen with all dark
- *              or bright.
  *          - Use Display_SetPosition(uint8_t x, uint8_t y) to set display position.
  *          - Use Display_ShowChar(uint8_t x, uint8_t y, uint8_t data, uint8_t
  *              size) to show a char, position and size can be configured.
@@ -28,7 +26,6 @@
 #include "Display.h"
 #include "Display_Data.h"
 #include "Delay.h"
-#include <stdio.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -37,7 +34,7 @@
 #define DISPLAYDATA_PINGROUP GPIOB
 #define DISPLAYDATA_PIN GPIO_Pin_7
 
-// Display clovk pin - PB6
+// Display clock pin - PB6
 #define DISPLAYCLOCK_CLOCK RCC_AHB1Periph_GPIOB
 #define DISPLAYCLOCK_PINGROUP GPIOB
 #define DISPLAYCLOCK_PIN GPIO_Pin_6
@@ -53,7 +50,7 @@
 #define TRANSMIT_DATA 0x00
 #define TRANSMIT_COMMAND 0x01
 #define MAX_COLUMN 128
-#define MAX_ROW 4
+#define MAX_ROW 4 // 32 pixes in row, divided into 4 page, 1 byte for each page
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
@@ -316,6 +313,10 @@ void Display_ShowChar(uint8_t x, uint8_t y, uint8_t data, uint8_t size)
 
     if (size == FONTSIZE_16)
     {
+        if (ch >= 95) // Non-printing characters, display space
+        {
+            ch = 0;
+        }
         if (x > MAX_COLUMN - 8)
         {
             x = 0;
@@ -328,11 +329,15 @@ void Display_ShowChar(uint8_t x, uint8_t y, uint8_t data, uint8_t size)
         for (i = 0; i < 8; i++)
             I2C_TransmitDataCommand(F8X16[ch][i], TRANSMIT_DATA);
         Display_SetPosition(x, y + 1);
-        for (i = 0; i < 8; i++)
-            I2C_TransmitDataCommand(F8X16[ch][i + 8], TRANSMIT_DATA);
+        for (i = 8; i < 16; i++)
+            I2C_TransmitDataCommand(F8X16[ch][i], TRANSMIT_DATA);
     }
     else
     {
+        if (ch >= 92) // Non-printing characters, display space
+        {
+            ch = 0;
+        }
         if (x > MAX_COLUMN - 6)
         {
             x = 0;

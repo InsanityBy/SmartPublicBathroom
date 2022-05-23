@@ -1,39 +1,270 @@
 \t (00:00:05) allegro 17.2 S079 Windows SPB 64-bit Edition
-\t (00:00:05)     Journal start - Thu May 19 17:53:40 2022
-\t (00:00:05)         Host=LAPTOP-M2SH2ORP User=Jessi_10 Pid=29344 CPUs=16
-\t (00:00:05) CmdLine= d:\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\2_PCB\SHOWERTERMINAL.brd
+\t (00:00:05)     Journal start - Sat May 21 17:25:25 2022
+\t (00:00:05)         Host=INSANITY User=insan Pid=3104 CPUs=8
+\t (00:00:05) CmdLine= e:\cadence\cadence\spb_17.2\tools\bin\allegro.exe D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Hardware\2_PCB\SHOWERTERMINAL.brd
 \t (00:00:05) 
    (00:00:05) Loading axlcore.cxt 
 \t (00:00:06) Opening existing design...
-\i (00:00:06) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERTERMINAL
-\d (00:00:06) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
-\t (00:00:06) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:00:06) trapsize 4452
-\i (00:00:06) trapsize 4548
-\t (00:00:06) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
-\i (00:00:06) trapsize 4666
-\i (00:00:06) trapsize 4666
-\i (00:00:06) generaledit 
-\i (00:00:07) zoom in 1 
-\i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 2291.36 1308.50
-\t (00:00:07) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
-\i (00:00:07) trapsize 2333
-\i (00:00:07) zoom in 1 
-\i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 2286.70 1303.83
-\i (00:00:07) trapsize 1167
-\i (00:00:07) zoom in 1 
-\i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 2286.70 1299.17
-\i (00:00:07) trapsize 583
-\i (00:00:07) zoom in 1 
-\i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 2223.71 1097.35
-\i (00:00:07) trapsize 292
-\i (00:00:09) zoom out 1 
-\i (00:00:09) setwindow pcb
-\i (00:00:09) zoom out 2260.46 892.03
-\i (00:00:09) trapsize 583
-\i (00:00:10) exit 
-\t (00:00:11)     Journal end - Thu May 19 17:53:46 2022
+\i (00:00:07) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged SHOWERTERMINAL
+\d (00:00:07) Design opened: D:/PKU/SmartPublicBathroom/Project/1_ShowerTerminal/Hardware/2_PCB/SHOWERTERMINAL.brd
+\t (00:00:07) Grids are drawn 80.00, 80.00 apart for enhanced viewing.
+\i (00:00:08) trapsize 5791
+\i (00:00:08) trapsize 5955
+\i (00:00:08) trapsize 5791
+\t (00:00:08) Grids are drawn 80.00, 80.00 apart for enhanced viewing.
+\i (00:00:08) trapsize 5989
+\i (00:00:08) trapsize 6922
+\i (00:00:09) generaledit 
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 914.83 1433.56
+\t (00:00:11) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (00:00:11) trapsize 3461
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 907.91 1461.25
+\t (00:00:11) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (00:00:11) trapsize 1730
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 707.18 2056.53
+\i (00:00:11) trapsize 865
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 707.18 2056.53
+\i (00:00:11) trapsize 433
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 707.18 2056.53
+\i (00:00:11) trapsize 216
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out 715.83 2041.83
+\i (00:00:11) trapsize 433
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out 723.61 2029.71
+\i (00:00:12) trapsize 865
+\i (00:00:13) QtSignal CVPLayerGrid CVPBoxAllBottom clicked false
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 1144.13 2017.60
+\i (00:00:14) trapsize 1730
+\i (00:00:15) zoom in 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom in 867.26 2249.49
+\i (00:00:15) trapsize 865
+\i (00:00:15) zoom in 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom in 867.26 2249.49
+\i (00:00:15) trapsize 433
+\i (00:00:15) zoom in 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom in 867.26 2249.49
+\i (00:00:15) trapsize 216
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out 867.26 2249.50
+\i (00:00:15) trapsize 433
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out 867.26 2249.49
+\i (00:00:15) trapsize 865
+\i (00:00:21) zoom in 1 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) zoom in 958.98 2265.08
+\i (00:00:21) trapsize 433
+\i (00:00:21) zoom in 1 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) zoom in 959.84 2263.35
+\i (00:00:21) trapsize 216
+\i (00:00:21) zoom in 1 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) zoom in 959.84 2263.36
+\i (00:00:21) trapsize 108
+\i (00:00:21) zoom in 1 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) zoom in 959.85 2263.36
+\i (00:00:21) trapsize 54
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out 963.64 2257.52
+\i (00:00:22) trapsize 108
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out 963.42 2254.49
+\i (00:00:22) trapsize 216
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out 962.99 2250.59
+\i (00:00:22) trapsize 433
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in 1097.96 1970.26
+\i (00:00:23) trapsize 216
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in 1097.53 1968.97
+\i (00:00:23) trapsize 108
+\i (00:00:24) zoom out 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom out 1038.91 1956.42
+\i (00:00:24) trapsize 216
+\i (00:00:24) zoom out 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom out 1037.62 1954.69
+\i (00:00:24) trapsize 433
+\i (00:00:25) zoom in 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom in 724.39 2246.28
+\i (00:00:25) trapsize 216
+\i (00:00:25) zoom in 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom in 724.40 2246.29
+\i (00:00:25) trapsize 108
+\i (00:00:26) zoom out 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom out 773.93 2230.94
+\i (00:00:26) trapsize 216
+\i (00:00:26) zoom out 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom out 774.37 2229.63
+\i (00:00:26) trapsize 433
+\i (00:00:26) zoom in 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom in 774.37 1983.04
+\i (00:00:26) trapsize 216
+\i (00:00:26) zoom in 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom in 774.37 1983.05
+\i (00:00:26) trapsize 108
+\i (00:00:26) zoom in 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom in 774.37 1983.05
+\i (00:00:26) trapsize 54
+\i (00:00:27) zoom out 1 
+\i (00:00:27) setwindow pcb
+\i (00:00:27) zoom out 774.37 1982.40
+\i (00:00:27) trapsize 108
+\i (00:00:28) zoom out 1 
+\i (00:00:28) setwindow pcb
+\i (00:00:28) zoom out 783.68 1958.39
+\i (00:00:28) trapsize 216
+\i (00:00:28) zoom in 1 
+\i (00:00:28) setwindow pcb
+\i (00:00:28) zoom in 797.53 1936.33
+\i (00:00:28) trapsize 108
+\i (00:00:29) zoom in 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom in 800.13 1927.24
+\i (00:00:29) trapsize 54
+\i (00:00:39) zoom out 1 
+\i (00:00:39) setwindow pcb
+\i (00:00:39) zoom out 822.20 1935.03
+\i (00:00:39) trapsize 108
+\i (00:00:39) zoom out 1 
+\i (00:00:39) setwindow pcb
+\i (00:00:39) zoom out 822.41 1935.90
+\i (00:00:39) trapsize 216
+\i (00:00:39) zoom out 1 
+\i (00:00:39) setwindow pcb
+\i (00:00:39) zoom out 836.69 1952.78
+\i (00:00:39) trapsize 433
+\i (00:00:39) zoom out 1 
+\i (00:00:40) setwindow pcb
+\i (00:00:40) zoom out 846.21 1963.16
+\i (00:00:40) trapsize 865
+\i (00:00:40) zoom in 1 
+\i (00:00:40) setwindow pcb
+\i (00:00:40) zoom in 853.14 1970.07
+\i (00:00:40) trapsize 433
+\i (00:00:41) zoom in 1 
+\i (00:00:41) setwindow pcb
+\i (00:00:41) zoom in 911.11 2034.97
+\i (00:00:41) trapsize 216
+\i (00:00:42) zoom out 1 
+\i (00:00:42) setwindow pcb
+\i (00:00:42) zoom out 927.99 2043.63
+\i (00:00:42) trapsize 433
+\i (00:00:42) zoom in 1 
+\i (00:00:42) setwindow pcb
+\i (00:00:42) zoom in 1011.05 1901.72
+\i (00:00:42) trapsize 216
+\i (00:00:43) zoom in 1 
+\i (00:00:43) setwindow pcb
+\i (00:00:43) zoom in 1011.05 1901.73
+\i (00:00:43) trapsize 108
+\i (00:00:43) zoom in 1 
+\i (00:00:43) setwindow pcb
+\i (00:00:43) zoom in 1011.05 1901.73
+\i (00:00:43) trapsize 54
+\i (00:01:00) zoom out 1 
+\i (00:01:00) setwindow pcb
+\i (00:01:00) zoom out 1013.86 1910.38
+\i (00:01:00) trapsize 108
+\i (00:01:00) zoom out 1 
+\i (00:01:00) setwindow pcb
+\i (00:01:00) zoom out 1015.61 1915.58
+\i (00:01:00) trapsize 216
+\i (00:01:01) zoom out 1 
+\i (00:01:01) setwindow pcb
+\i (00:01:01) zoom out 1018.63 1941.10
+\i (00:01:01) trapsize 433
+\i (00:01:01) zoom out 1 
+\i (00:01:01) setwindow pcb
+\i (00:01:01) zoom out 1018.63 1941.11
+\i (00:01:01) trapsize 865
+\i (00:01:01) zoom out 1 
+\i (00:01:01) setwindow pcb
+\i (00:01:01) zoom out 1018.63 1941.11
+\i (00:01:01) trapsize 1730
+\i (00:01:01) zoom in 1 
+\i (00:01:01) setwindow pcb
+\i (00:01:01) zoom in 1011.71 2238.76
+\i (00:01:01) trapsize 865
+\i (00:01:01) zoom in 1 
+\i (00:01:01) setwindow pcb
+\i (00:01:01) zoom in 1011.71 2238.76
+\i (00:01:01) trapsize 433
+\i (00:01:01) zoom in 1 
+\i (00:01:01) setwindow pcb
+\i (00:01:01) zoom in 1011.71 2238.76
+\i (00:01:01) trapsize 216
+\i (00:01:02) zoom in 1 
+\i (00:01:02) setwindow pcb
+\i (00:01:02) zoom in 1011.71 2238.76
+\i (00:01:02) trapsize 108
+\i (00:01:02) zoom out 1 
+\i (00:01:02) setwindow pcb
+\i (00:01:02) zoom out 1011.72 2238.77
+\i (00:01:02) trapsize 216
+\i (00:01:02) zoom out 1 
+\i (00:01:02) setwindow pcb
+\i (00:01:02) zoom out 1011.71 2238.76
+\i (00:01:02) trapsize 433
+\i (00:14:39) zoom out 1 
+\i (00:14:39) setwindow pcb
+\i (00:14:39) zoom out 604.19 2140.12
+\i (00:14:39) trapsize 865
+\i (00:14:39) zoom in 1 
+\i (00:14:39) setwindow pcb
+\i (00:14:39) zoom in 891.45 1885.74
+\i (00:14:39) trapsize 433
+\i (00:14:39) zoom in 1 
+\i (00:14:39) setwindow pcb
+\i (00:14:39) zoom in 871.55 1918.62
+\i (00:14:39) trapsize 216
+\i (00:14:40) zoom in 1 
+\i (00:14:40) setwindow pcb
+\i (00:14:40) zoom in 1061.91 1933.33
+\i (00:14:40) trapsize 108
+\i (00:14:41) zoom in 1 
+\i (00:14:41) setwindow pcb
+\i (00:14:41) zoom in 1060.40 1933.33
+\i (00:14:41) trapsize 54
+\i (00:14:41) zoom out 1 
+\i (00:14:41) setwindow pcb
+\i (00:14:41) zoom out 1059.85 1934.74
+\i (00:14:41) trapsize 108
+\i (01:10:09) exit 
+\t (01:10:09)     Journal end - Sat May 21 18:35:28 2022

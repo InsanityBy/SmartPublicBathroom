@@ -11,7 +11,10 @@
  *          - Use Audio_Play(uint16_t address) to play sound. NOTE: WILL BREAK
  *              CURRENT PLAY!
  *          - Use Audio_PlayAfter(uint16_t address) to play sound when finished.
- *          - Use Audio_Stop(void) to stop play.
+ *          - Use void Audio_Loop() to go into loop mode. Use this function again
+ *              or use other function except Audio_Volume(uint8_t volume) to go
+ *              out of loop mode.
+ *          - Use Audio_Stop() to stop play.
  *          - Use Audio_Volume(uint8_t volume) to set volume.
  ******************************************************************************
  */
@@ -19,7 +22,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "Audio.h"
 #include "Delay.h"
-#include <stdio.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/

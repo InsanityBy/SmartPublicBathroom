@@ -29,4 +29,3 @@
 .\output\audio.o: ..\Library\inc\stm32f4xx_wwdg.h
 .\output\audio.o: ..\Library\inc\misc.h
 .\output\audio.o: ..\..\1_Library\Delay.h
-.\output\audio.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

@@ -7,7 +7,7 @@
  * @brief   This file contains all the functions to control fan, light.(For
  *         shower host.)
  * @note    Follow steps to use.
- *          - Use Fan_Init() or Light_Init() to initialize device.
+ *          - Use SignalOutput_Init() to initialize fan and light device.
  *          - Use Vale_Start() or Light_Start() to turn on device.
  *          - Use Valve_Stop() or Light_Stop() to tuen off device.
  *          - Use Valve_GetState() or Light_GetState() to get current state of
