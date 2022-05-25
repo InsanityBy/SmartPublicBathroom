@@ -8,9 +8,9 @@
  *         shower host.)
  * @note    Follow steps to use.
  *          - Use SignalOutput_Init() to initialize fan and light device.
- *          - Use Vale_Start() or Light_Start() to turn on device.
- *          - Use Valve_Stop() or Light_Stop() to tuen off device.
- *          - Use Valve_GetState() or Light_GetState() to get current state of
+ *          - Use Fan_Start() or Light_Start() to turn on device.
+ *          - Use Fan_Stop() or Light_Stop() to tuen off device.
+ *          - Use Fan_GetState() or Light_GetState() to get current state of
  *              device.
  ******************************************************************************
  */

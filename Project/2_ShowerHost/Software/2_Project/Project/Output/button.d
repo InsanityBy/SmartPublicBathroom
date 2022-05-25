@@ -1,5 +1,6 @@
 .\output\button.o: ..\..\1_Library\Button.c
-.\output\button.o: ..\..\1_Library\Button.h
+.\output\button.o: ..\..\1_Library\UserLibrary.h
+.\output\button.o: ..\..\1_Library\Audio.h
 .\output\button.o: ..\CMSIS\stm32f4xx.h
 .\output\button.o: ..\CMSIS\core_cm4.h
 .\output\button.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -28,4 +29,13 @@
 .\output\button.o: ..\Library\inc\stm32f4xx_usart.h
 .\output\button.o: ..\Library\inc\stm32f4xx_wwdg.h
 .\output\button.o: ..\Library\inc\misc.h
+.\output\button.o: ..\..\1_Library\Button.h
+.\output\button.o: ..\..\1_Library\Communicate.h
+.\output\button.o: ..\..\1_Library\ZigBee.h
+.\output\button.o: ..\..\1_Library\WiFi.h
+.\output\button.o: ..\..\1_Library\Delay.h
+.\output\button.o: ..\..\1_Library\Display.h
+.\output\button.o: ..\..\1_Library\LightSensor.h
+.\output\button.o: ..\..\1_Library\SignalOutput.h
+.\output\button.o: ..\..\1_Library\TemperatureHumiditySensor.h
 .\output\button.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

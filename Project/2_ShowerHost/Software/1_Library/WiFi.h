@@ -24,6 +24,32 @@ extern "C"
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
+// AT Command
+#define WiFi_DeviceReset "AT+UT_RESET\r\n"
+
+#define WiFi_Version "AT+UT_VER=?\r\n"
+
+#define WiFi_WorkMode "AT+UT_WKMODE="
+#define WiFi_WorkModeAT "CMD"
+#define WiFi_WorkModeTransparent "NET"
+
+#define WiFi_WiFiConfig "AT+WIFI="
+#define WiFi_WiFiModeSTA "STA"
+#define WiFi_WiFiModeAP "AP"
+
+#define WiFi_Socket1EN "AT+ETH_CH1EN="
+#define WiFi_Socket2EN "AT+ETH_CH2EN="
+#define WiFi_Enable "ENABLE"
+#define WiFi_Disable "DISABLE"
+
+#define WiFi_Socket1Config "AT+ETH_CH1P="
+#define WiFi_Socket2Config "AT+ETH_CH2P="
+
+#define WiFi_SocketUDPClient "UDPC"
+#define WiFi_SocketUDPServer "UDPS"
+#define WiFi_SocketTCPClient "TCPC"
+#define WiFi_SocketTCPServer "TCPS"
+
 /* Exported functions --------------------------------------------------------*/
 // Initialize WiFi device
 void WiFi_Init(uint8_t *pTransmitData, uint8_t *pReceiveData);

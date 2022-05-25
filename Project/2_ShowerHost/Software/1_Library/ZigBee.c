@@ -38,23 +38,6 @@
 
 #define ZIGBEETIMEOUT 500
 
-// AT Command
-#define ZigBee_DeviceReset "AT+UT_RESET\r\n"
-
-#define ZigBee_Type "AT+ZIGB_TYPE="
-#define ZigBee_TypeCoordinator 0x00
-#define ZigBee_TypeRouter 0x01
-#define ZigBee_TypeTerminal 0x02
-
-#define ZigBee_UserID "AT+UT_UID="
-
-#define ZigBee_Addressing "AT+ZIGB_UIDTOID="
-
-#define ZigBee_DataFormat "AT+ZIGB_RXMODE="
-#define ZigBee_DataFormatOnlyData 0x00
-
-#define ZigBee_Send "AT+UT_SEND="
-
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 // String receive flag, 1 for finished, 0 for not
@@ -284,7 +267,7 @@ uint8_t ZigBee_ReceiveByte(void)
     {
         wait++;
         if (wait > ZIGBEETIMEOUT)
-            return;
+            return 0x00;
     }
     // Receive data
     return USART_ReceiveData(USART1);

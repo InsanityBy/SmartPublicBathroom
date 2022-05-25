@@ -38,32 +38,6 @@
 
 #define WIFITIMEOUT 500
 
-// AT Command
-#define WiFi_DeviceReset "AT+UT_RESET\r\n"
-
-#define WiFi_Version "AT+UT_VER=?\r\n"
-
-#define WiFi_WorkMode "AT+UT_WKMODE="
-#define WiFi_WorkModeAT "CMD"
-#define WiFi_WorkModeTransparent "NET"
-
-#define WiFi_WiFiConfig "AT+WIFI="
-#define WiFi_WiFiModeSTA "STA"
-#define WiFi_WiFiModeAP "AP"
-
-#define WiFi_Socket1EN "AT+ETH_CH1EN="
-#define WiFi_Socket2EN "AT+ETH_CH2EN="
-#define WiFi_Enable "ENABLE"
-#define WiFi_Disable "DISABLE"
-
-#define WiFi_Socket1Config "AT+ETH_CH1P="
-#define WiFi_Socket2Config "AT+ETH_CH2P="
-
-#define WiFi_SocketUDPClient "UDPC"
-#define WiFi_SocketUDPService "UDPS"
-#define WiFi_SocketTCPClient "TCPC"
-#define WiFi_SocketTCPService "TCPS"
-
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 // String receive flag, 1 for finished, 0 for not
@@ -74,10 +48,6 @@ uint8_t WiFiStringTransmit_Flag = 1;
 
 // Length of received data
 uint16_t WiFiDataLength;
-
-// WiFi information
-uint8_t WiFi_Name[] = "insanity";
-uint8_t WiFi_Password[] = "20010120";
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/

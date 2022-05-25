@@ -14,8 +14,10 @@
 #define __USERLIBRARY_H
 
 /* Includes ------------------------------------------------------------------*/
+#include "Audio.h"
 #include "Button.h"
 #include "Delay.h"
+#include "Display.h"
 #include "FlowMeter.h"
 #include "InfraredHuman.h"
 #include "InfraredObject.h"

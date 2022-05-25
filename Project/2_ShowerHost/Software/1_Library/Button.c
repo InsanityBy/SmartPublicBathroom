@@ -13,6 +13,7 @@
  */
 
 /* Includes ------------------------------------------------------------------*/
+#include "UserLibrary.h"
 #include "Button.h"
 #include <stdio.h>
 
@@ -184,7 +185,11 @@ void TIM3_IRQHandler(void)
         if (!GPIO_ReadInputDataBit(REPAIR_PINGROUP, REPAIR_PIN))
         {
             /***************************FUNCTION BEGIN****************************/
-            printf("Repair\n");
+            uint8_t data[256];
+            sprintf(data, "Repair\n");
+            Display_ShowString(0, 0, data, FONTSIZE_16);
+            Delay_ms(1000);
+            Display_Clear();
 
             /***************************FUNCTION END******************************/
         }
@@ -209,8 +214,12 @@ void TIM4_IRQHandler(void)
         if (!GPIO_ReadInputDataBit(HELP_PINGROUP, HELP_PIN))
         {
             /***************************FUNCTION BEGIN****************************/
-            printf("Help\n");
-
+            uint8_t data[256];
+            sprintf(data, "Help\n");
+            Display_ShowString(0, 2, data, FONTSIZE_16);
+            Delay_ms(1000);
+            Display_Clear();
+            
             /***************************FUNCTION END******************************/
         }
     }

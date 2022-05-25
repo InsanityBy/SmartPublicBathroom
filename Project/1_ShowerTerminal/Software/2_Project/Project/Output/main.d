@@ -29,8 +29,10 @@
 .\output\main.o: ..\Library\inc\stm32f4xx_wwdg.h
 .\output\main.o: ..\Library\inc\misc.h
 .\output\main.o: ..\..\1_Library\UserLibrary.h
+.\output\main.o: ..\..\1_Library\Audio.h
 .\output\main.o: ..\..\1_Library\Button.h
 .\output\main.o: ..\..\1_Library\Delay.h
+.\output\main.o: ..\..\1_Library\Display.h
 .\output\main.o: ..\..\1_Library\FlowMeter.h
 .\output\main.o: ..\..\1_Library\InfraredHuman.h
 .\output\main.o: ..\..\1_Library\InfraredObject.h
