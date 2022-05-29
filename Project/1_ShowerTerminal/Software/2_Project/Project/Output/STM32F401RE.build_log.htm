@@ -22,19 +22,25 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Software\2_Project\Project\ShowerTerminal.uvprojx
-Project File Date:  05/24/2022
+Project File Date:  05/29/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'F401RE'
 compiling main.c...
-..\User\main.c(121): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
-          sprintf(Content, "%d\n", CardData);
-..\User\main.c: 1 warning, 0 errors
+..\User\main.c(122): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "%d\r\n", status);
+..\User\main.c(126): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+          Communicate_ZigBeeRX(Receive_Buffer);
+..\User\main.c(131): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+          Display_ShowString(0, 0, Receive_Buffer, 0xFF, FONTSIZE_8);
+..\User\main.c(88): warning:  #177-D: variable "Transmit_Buffer"  was declared but never referenced
+      char Transmit_Buffer[] = "Hello world!";
+..\User\main.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=6252 RO-data=2508 RW-data=44 ZI-data=1044  
+Program Size: Code=6968 RO-data=2764 RW-data=56 ZI-data=1560  
 FromELF: creating hex file...
-".\Output\STM32F401RE.axf" - 0 Error(s), 1 Warning(s).
+".\Output\STM32F401RE.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 

@@ -16,6 +16,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "Audio.h"
 #include "Button.h"
+#include "Communicate.h"
 #include "Delay.h"
 #include "Display.h"
 #include "FlowMeter.h"

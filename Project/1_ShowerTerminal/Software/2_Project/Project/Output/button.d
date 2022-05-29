@@ -30,6 +30,8 @@
 .\output\button.o: ..\Library\inc\stm32f4xx_wwdg.h
 .\output\button.o: ..\Library\inc\misc.h
 .\output\button.o: ..\..\1_Library\Button.h
+.\output\button.o: ..\..\1_Library\Communicate.h
+.\output\button.o: ..\..\1_Library\ZigBee.h
 .\output\button.o: ..\..\1_Library\Delay.h
 .\output\button.o: ..\..\1_Library\Display.h
 .\output\button.o: ..\..\1_Library\FlowMeter.h

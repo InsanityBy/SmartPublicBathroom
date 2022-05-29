@@ -25,13 +25,14 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 // AT Command
+#define WiFi_Recovery "AT+UT_RECOVERY\r\n"
 #define WiFi_DeviceReset "AT+UT_RESET\r\n"
-
+#define WiFi_EchoDisable "AT+UT_RESHOW=DISABLE\r\n"
 #define WiFi_Version "AT+UT_VER=?\r\n"
 
 #define WiFi_WorkMode "AT+UT_WKMODE="
 #define WiFi_WorkModeAT "CMD"
-#define WiFi_WorkModeTransparent "NET"
+#define WiFi_WorkModeTransparent "TCPUDP"
 
 #define WiFi_WiFiConfig "AT+WIFI="
 #define WiFi_WiFiModeSTA "STA"
@@ -44,6 +45,9 @@ extern "C"
 
 #define WiFi_Socket1Config "AT+ETH_CH1P="
 #define WiFi_Socket2Config "AT+ETH_CH2P="
+
+#define WiFi_Socket1Heart "AT+ETH_CH1HTP="
+#define WiFi_Socket2Heart "AT+ETH_CH2HTP="
 
 #define WiFi_SocketUDPClient "UDPC"
 #define WiFi_SocketUDPServer "UDPS"

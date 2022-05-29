@@ -20,7 +20,7 @@ extern uint8_t Data_Human;
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
-void USART1_Init(void)
+/*void USART1_Init(void)
 {
     // GPIO Config
     RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE); // GPIO Clock
@@ -63,7 +63,7 @@ int fputc(int ch, FILE *f)
     USART1_SendData((uint8_t)ch);
     return (ch);
 }
-
+*/
 void Program_Timer()
 {
     // Timer initialize, count period 1800us max
@@ -85,8 +85,10 @@ void Program_Timer()
 int main(void)
 {
     /* Initialize all peripherals*/
-    uint8_t Content[256];
-    Delay_us(1000);
+    char Transmit_Buffer[] = "Hello world!";
+    char Receive_Buffer[256];
+    uint8_t Content[256] = "Hello world!";
+    Delay_ms(1000);
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
     // USART1_Init();
     // Valve_Init();
@@ -95,10 +97,12 @@ int main(void)
     // Button_Init();
     // InfraredObject_Init();
     // InfraredHuman_Init();
-    NFC_Init();
-    Program_Timer();
+    // NFC_Init();
+    // Program_Timer();
     Display_Init();
-    Delay_ms(1);
+    uint8_t status;
+    status = Communicate_Init();
+    Delay_ms(1000);
     // printf("Initialize finished\n");
     // FlowMeter_Start();
 
@@ -115,11 +119,16 @@ int main(void)
         // printf("InfraredObjectState: %d\n", InfraredObject_GetState());
         // printf("InfraredObjectValue: %f\n", (float)InfraredObject_GetValue());
         // printf("InfraredHumanState: %d\n", InfraredHuman_GetState());
-        // printf("InfraredHumanValue: %d\n", InfraredHuman_GetValue());
-        // Delay_ms(1000);
-        uint32_t CardData = NFC_SetCheckUserNumber(0x00000000, NFC_CHECK);
-        sprintf(Content, "%d\n", CardData);
-        Display_ShowString(0, 0, Content, FONTSIZE_16);
+        sprintf(Content, "%d\r\n", status);
+        Display_Clear();
+        Display_ShowString(0, 0, Content, 0xFF, FONTSIZE_8);
+        // Communicate_ZigBeeTX(ZigBee_TypeTerminal, 0x01, Transmit_Buffer);
+        Communicate_ZigBeeRX(Receive_Buffer);
+        Delay_ms(1000);
+        // uint32_t CardData = NFC_SetCheckUserNumber(0x00000000, NFC_CHECK);
+        // sprintf(Content, "%d\n", CardData);
+        Display_Clear();
+        Display_ShowString(0, 0, Receive_Buffer, 0xFF, FONTSIZE_8);
     }
 }
-    /***********************************END OF FILE********************************/
+/***********************************END OF FILE********************************/

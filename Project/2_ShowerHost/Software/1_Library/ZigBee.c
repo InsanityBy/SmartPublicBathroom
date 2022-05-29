@@ -41,7 +41,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 // String receive flag, 1 for finished, 0 for not
-uint8_t ZigBeeStringReceive_Flag = 1;
+uint8_t ZigBeeStringReceive_Flag = 0;
 
 // String transmit flag, 1 for finished, 0 for not
 uint8_t ZigBeeStringTransmit_Flag = 1;
@@ -224,7 +224,7 @@ void ZigBee_TransmitByte(uint8_t data)
 /**
  * @brief  Transmit string by USART.
  * @param  length: Length of data.
- * @param  nTime: Wait nTime us.
+ * @param  nTime: Wait nTime ms.
  * @retval None.
  */
 void ZigBee_TransmitString(uint16_t length, uint16_t nTime)
@@ -238,7 +238,7 @@ void ZigBee_TransmitString(uint16_t length, uint16_t nTime)
     {
         if (ZigBeeStringTransmit_Flag)
             break;
-        Delay_us(1);
+        Delay_ms(1);
     }
 
     //  Last transmit time out, return
@@ -275,7 +275,7 @@ uint8_t ZigBee_ReceiveByte(void)
 
 /**
  * @brief  Receive string by USART.
- * @param  nTime: Wait nTime us.
+ * @param  nTime: Wait nTime ms.
  * @retval Length of the ddta.
  */
 uint16_t ZigBee_ReceiveString(uint16_t nTime)
@@ -285,7 +285,7 @@ uint16_t ZigBee_ReceiveString(uint16_t nTime)
     {
         if (ZigBeeStringReceive_Flag)
             break;
-        Delay_us(1);
+        Delay_ms(1);
     }
 
     // Last receive time out
@@ -293,9 +293,6 @@ uint16_t ZigBee_ReceiveString(uint16_t nTime)
         return ZigBeeDataLength;
 
     ZigBeeStringReceive_Flag = 0x00;
-
-    // Enable DMA
-    DMA_Cmd(DMA2_Stream5, ENABLE);
 
     return ZigBeeDataLength;
 }
@@ -340,6 +337,7 @@ void DMA2_Stream5_IRQHandler(void)
     {
         DMA_ClearITPendingBit(DMA2_Stream5, DMA_IT_TCIF5);
         ZigBeeStringReceive_Flag = 0x01;
+        DMA_Cmd(DMA2_Stream5, ENABLE);
     }
 }
 /***********************************END OF FILE********************************/

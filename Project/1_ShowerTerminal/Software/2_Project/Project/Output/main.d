@@ -31,6 +31,8 @@
 .\output\main.o: ..\..\1_Library\UserLibrary.h
 .\output\main.o: ..\..\1_Library\Audio.h
 .\output\main.o: ..\..\1_Library\Button.h
+.\output\main.o: ..\..\1_Library\Communicate.h
+.\output\main.o: ..\..\1_Library\ZigBee.h
 .\output\main.o: ..\..\1_Library\Delay.h
 .\output\main.o: ..\..\1_Library\Display.h
 .\output\main.o: ..\..\1_Library\FlowMeter.h

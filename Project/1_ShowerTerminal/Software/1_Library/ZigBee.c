@@ -1,65 +1,65 @@
 /**
  ******************************************************************************
- * @file    WiFi.c
+ * @file    ZigBee.c
  * @author  Ma boyang
  * @version V1.0
- * @date    2022.5.17
+ * @date    2022.5.29
  * @brief   This file contains all the functions for communicate between shower
- *          host and shower terminal by WiFi.(For shower host.)
+ *          host and shower terminal by ZigBee.(For shower terminal.)
  * @note    Follow steps to use.
- *          - Use WiFi_Init(uint8_t *pTransmitData, uint8_t *pReceiveData) to
- *              initialize WiFi device.
- *          - Use WiFi_TransmitByte(uint8_t data) to send 1 byte data.
- *          - Use WiFi_TransmitString(uint16_t length, uint16_t nTime) to send
+ *          - Use ZigBee_Init(uint8_t *pTransmitData, uint8_t *pReceiveData) to
+ *              initialize ZigBee device.
+ *          - Use ZigBee_TransmitByte(uint8_t data) to send 1 byte data.
+ *          - Use ZigBee_TransmitString(uint16_t length, uint16_t nTime) to send
  *              string.
- *          - Use WiFi_ReceiveByte() to receive 1 byte data.
- *          - Use WiFi_ReceiveString(uint16_t nTime) to receive string.
+ *          - Use ZigBee_ReceiveByte() to receive 1 byte data.
+ *          - Use ZigBee_ReceiveString(uint16_t nTime) to receive string.
  ******************************************************************************
  */
 
 /* Includes ------------------------------------------------------------------*/
-#include "WiFi.h"
+#include "ZigBee.h"
 #include "Delay.h"
 #include <stdio.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
-// WiFi RX pin - PC6
-#define WIFIRX_CLOCK RCC_AHB1Periph_GPIOC
-#define WIFIRX_PINGROUP GPIOC
-#define WIFIRX_PIN GPIO_Pin_6
-#define WIFIRX_PINSOURCE GPIO_PinSource6
+// ZigBee RX pin - PA9
+#define ZIGBEERX_CLOCK RCC_AHB1Periph_GPIOA
+#define ZIGBEERX_PINGROUP GPIOA
+#define ZIGBEERX_PIN GPIO_Pin_9
+#define ZIGBEERX_PINSOURCE GPIO_PinSource9
 
-// WiFi TX  - PC7
-#define WIFITX_CLOCK RCC_AHB1Periph_GPIOC
-#define WIFITX_PINGROUP GPIOC
-#define WIFITX_PIN GPIO_Pin_7
-#define WIFITX_PINSOURCE GPIO_PinSource7
+// ZigBee TX  - PA10
+#define ZIGBEETX_CLOCK RCC_AHB1Periph_GPIOA
+#define ZIGBEETX_PINGROUP GPIOA
+#define ZIGBEETX_PIN GPIO_Pin_10
+#define ZIGBEETX_PINSOURCE GPIO_PinSource10
 
-#define WIFITIMEOUT 500
+#define ZIGBEETIMEOUT 500
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 // String receive flag, 1 for finished, 0 for not
-uint8_t WiFiStringReceive_Flag = 0;
+uint8_t ZigBeeStringReceive_Flag = 0;
 
 // String transmit flag, 1 for finished, 0 for not
-uint8_t WiFiStringTransmit_Flag = 1;
+uint8_t ZigBeeStringTransmit_Flag = 1;
 
 // Length of received data
-uint16_t WiFiDataLength;
+uint16_t ZigBeeDataLength;
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 /**
- * @brief  Initialize USART6 for communicate with WiFi module.
+ * @brief  Initialize USART1 for communicate with ZigBee module.
  * @param  None.
  * @retval None.
  */
-void USART6_Init(void)
+void USART1_Init(void)
 {
-    // USART6 Config
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART6, ENABLE); // USART Clock
+    // USART1 Config
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE); // USART Clock
     USART_InitTypeDef USART_InitStructure;                 // USART Init Structure
     USART_InitStructure.USART_BaudRate = 115200;
     USART_InitStructure.USART_WordLength = USART_WordLength_8b;
@@ -67,25 +67,25 @@ void USART6_Init(void)
     USART_InitStructure.USART_Parity = USART_Parity_No;
     USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
     USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-    USART_Init(USART6, &USART_InitStructure);
+    USART_Init(USART1, &USART_InitStructure);
 
     // Enable IDLE interrupt for DMA
-    USART_ITConfig(USART6, USART_IT_IDLE, ENABLE);
+    USART_ITConfig(USART1, USART_IT_IDLE, ENABLE);
 
-    // NVIC config for USART6
+    // NVIC config for USART1
     NVIC_InitTypeDef NVIC_InitStructure;
-    NVIC_InitStructure.NVIC_IRQChannel = USART6_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
 
     // Enable RX and TX request for DMA
-    USART_DMACmd(USART6, USART_DMAReq_Rx, ENABLE);
-    USART_DMACmd(USART6, USART_DMAReq_Tx, ENABLE);
+    USART_DMACmd(USART1, USART_DMAReq_Rx, ENABLE);
+    USART_DMACmd(USART1, USART_DMAReq_Tx, ENABLE);
 
-    // Enable USART6
-    USART_Cmd(USART6, ENABLE);
+    // Enable USART1
+    USART_Cmd(USART1, ENABLE);
 }
 
 /**
@@ -93,17 +93,17 @@ void USART6_Init(void)
  * @param  pData: Pointer of data buffer.
  * @retval None.
  */
-void USART6_DMAReceiveInit(uint8_t *pData)
+void USART1_DMAReceiveInit(uint8_t *pData)
 {
     RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA2, ENABLE); // Enable DMA2 clock
     DMA_InitTypeDef DMA_InitStructure;
-    DMA_InitStructure.DMA_Channel = DMA_Channel_5;                          // Use channel5
+    DMA_InitStructure.DMA_Channel = DMA_Channel_4;                          // Use channel4
     DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralToMemory;                 // Direction
     DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;                           // Normal mode, not circular
     DMA_InitStructure.DMA_Priority = DMA_Priority_VeryHigh;                 // Priority
     DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;                  // FIFO not use
     DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_Full;           // Invalid
-    DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)USART6 + 0x0004;   // USART6 data registor
+    DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)USART1 + 0x0004;   // USART1 data registor
     DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte; // uint8_t
     DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
     DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
@@ -112,22 +112,22 @@ void USART6_DMAReceiveInit(uint8_t *pData)
     DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
     DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
     DMA_InitStructure.DMA_BufferSize = 0xFFFF; // Max buffer size
-    DMA_Init(DMA2_Stream1, &DMA_InitStructure);
+    DMA_Init(DMA2_Stream5, &DMA_InitStructure);
 
     // Interrupt
-    DMA_ClearITPendingBit(DMA2_Stream1, DMA_IT_TCIF1);
-    DMA_ITConfig(DMA2_Stream1, DMA_IT_TC, ENABLE);
+    DMA_ClearITPendingBit(DMA2_Stream5, DMA_IT_TCIF5);
+    DMA_ITConfig(DMA2_Stream5, DMA_IT_TC, ENABLE);
 
-    // NVIC config for DMA2 Stream1
+    // NVIC config for DMA2 Stream7
     NVIC_InitTypeDef NVIC_InitStructure;
-    NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream1_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream5_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
 
     // Enable DMA
-    DMA_Cmd(DMA2_Stream1, ENABLE);
+    DMA_Cmd(DMA2_Stream5, ENABLE);
 }
 
 /**
@@ -135,17 +135,17 @@ void USART6_DMAReceiveInit(uint8_t *pData)
  * @param  pData: Transmit data buffer.
  * @retval None.
  */
-void USART6_DMATransmitInit(uint8_t *pData)
+void USART1_DMATransmitInit(uint8_t *pData)
 {
     RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA2, ENABLE); // Enable DMA2 clock
     DMA_InitTypeDef DMA_InitStructure;
-    DMA_InitStructure.DMA_Channel = DMA_Channel_5;                          // Use channel5
+    DMA_InitStructure.DMA_Channel = DMA_Channel_4;                          // Use channel4
     DMA_InitStructure.DMA_DIR = DMA_DIR_MemoryToPeripheral;                 // Direction
     DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;                           // Normal mode, not circular
     DMA_InitStructure.DMA_Priority = DMA_Priority_VeryHigh;                 // Priority
     DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;                  // FIFO not use
     DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_Full;           // Invalid
-    DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)USART6 + 0x0004;   // USART6 data registor
+    DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)USART1 + 0x0004;   // USART1 data registor
     DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte; // uint8_t
     DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
     DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
@@ -154,15 +154,15 @@ void USART6_DMATransmitInit(uint8_t *pData)
     DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
     DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
     DMA_InitStructure.DMA_BufferSize = 0xFFFF; // Default buffer size, max
-    DMA_Init(DMA2_Stream6, &DMA_InitStructure);
+    DMA_Init(DMA2_Stream7, &DMA_InitStructure);
 
     // Interrupt
-    DMA_ClearITPendingBit(DMA2_Stream6, DMA_IT_TCIF6);
-    DMA_ITConfig(DMA2_Stream6, DMA_IT_TC, ENABLE);
+    DMA_ClearITPendingBit(DMA2_Stream7, DMA_IT_TCIF7);
+    DMA_ITConfig(DMA2_Stream7, DMA_IT_TC, ENABLE);
 
-    // NVIC config for DMA2 Stream6
+    // NVIC config for DMA2 Stream7
     NVIC_InitTypeDef NVIC_InitStructure;
-    NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream6_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream7_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
@@ -175,31 +175,31 @@ void USART6_DMATransmitInit(uint8_t *pData)
  * @param  pReceiveData: Pointer of receive data buffer.
  * @retval None.
  */
-void WiFi_Init(uint8_t *pTransmitData, uint8_t *pReceiveData)
+void ZigBee_Init(uint8_t *pTransmitData, uint8_t *pReceiveData)
 {
     // GPIO initialize
     GPIO_InitTypeDef GPIO_InitStructure;
-    // WiFi RX - USART6 TX - PC6
-    RCC_AHB1PeriphClockCmd(WIFIRX_CLOCK, ENABLE);                        // Enable clock
-    GPIO_PinAFConfig(WIFIRX_PINGROUP, WIFIRX_PINSOURCE, GPIO_AF_USART6); // PC6 -> USART6 TX
-    GPIO_InitStructure.GPIO_Pin = WIFIRX_PIN;
+    // ZigBee RX - USART1 TX - PA9
+    RCC_AHB1PeriphClockCmd(ZIGBEERX_CLOCK, ENABLE);                          // Enable clock
+    GPIO_PinAFConfig(ZIGBEERX_PINGROUP, ZIGBEERX_PINSOURCE, GPIO_AF_USART1); // PA9 -> USART1 TX
+    GPIO_InitStructure.GPIO_Pin = ZIGBEERX_PIN;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
     GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
     GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_Init(WIFIRX_PINGROUP, &GPIO_InitStructure);
+    GPIO_Init(ZIGBEERX_PINGROUP, &GPIO_InitStructure);
 
-    // WiFi TX - USART6 RX - PC7
-    RCC_AHB1PeriphClockCmd(WIFITX_CLOCK, ENABLE);                        // Enable clock
-    GPIO_PinAFConfig(WIFITX_PINGROUP, WIFITX_PINSOURCE, GPIO_AF_USART6); // PC7 -> USART6 RX
-    GPIO_InitStructure.GPIO_Pin = WIFITX_PIN;
+    // ZigBee TX - USART1 RX - PA10
+    RCC_AHB1PeriphClockCmd(ZIGBEETX_CLOCK, ENABLE);                          // Enable clock
+    GPIO_PinAFConfig(ZIGBEETX_PINGROUP, ZIGBEETX_PINSOURCE, GPIO_AF_USART1); // PA10 -> USART1 RX
+    GPIO_InitStructure.GPIO_Pin = ZIGBEETX_PIN;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
     GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
-    GPIO_Init(WIFITX_PINGROUP, &GPIO_InitStructure);
+    GPIO_Init(ZIGBEETX_PINGROUP, &GPIO_InitStructure);
 
-    USART6_Init();
-    USART6_DMAReceiveInit(pReceiveData);
-    USART6_DMATransmitInit(pTransmitData);
+    USART1_Init();
+    USART1_DMAReceiveInit(pReceiveData);
+    USART1_DMATransmitInit(pTransmitData);
 }
 
 /**
@@ -207,18 +207,18 @@ void WiFi_Init(uint8_t *pTransmitData, uint8_t *pReceiveData)
  * @param  data: 1 byte data to transmit.
  * @retval None.
  */
-void WiFi_TransmitByte(uint8_t data)
+void ZigBee_TransmitByte(uint8_t data)
 {
     // Wait till TX buffer empty
-    uint16_t wait;
-    while (USART_GetFlagStatus(USART6, USART_FLAG_TXE) == RESET)
+    uint16_t wait = 0;
+    while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET)
     {
         wait++;
-        if (wait > WIFITIMEOUT)
+        if (wait > ZIGBEETIMEOUT)
             return;
     }
     // Transmit data
-    USART_SendData(USART6, data);
+    USART_SendData(USART1, data);
 }
 
 /**
@@ -227,7 +227,7 @@ void WiFi_TransmitByte(uint8_t data)
  * @param  nTime: Wait nTime ms.
  * @retval None.
  */
-void WiFi_TransmitString(uint16_t length, uint16_t nTime)
+void ZigBee_TransmitString(uint16_t length, uint16_t nTime)
 {
     // Length = 0, no need to transmit
     if (length == 0)
@@ -236,22 +236,22 @@ void WiFi_TransmitString(uint16_t length, uint16_t nTime)
     // Wait till last transmit finish
     for (int i = 0; i < nTime; i++)
     {
-        if (WiFiStringTransmit_Flag)
+        if (ZigBeeStringTransmit_Flag)
             break;
         Delay_ms(1);
     }
 
     //  Last transmit time out, return
-    if (!WiFiStringTransmit_Flag)
+    if (!ZigBeeStringTransmit_Flag)
         return;
 
     // Initialize DMA
-    DMA_Cmd(DMA2_Stream6, DISABLE);
-    DMA_SetCurrDataCounter(DMA2_Stream6, length);
+    DMA_Cmd(DMA2_Stream7, DISABLE);
+    DMA_SetCurrDataCounter(DMA2_Stream7, length);
 
     // Enable DMA
-    WiFiStringTransmit_Flag = 0x00; // Transmitting...
-    DMA_Cmd(DMA2_Stream6, ENABLE);
+    ZigBeeStringTransmit_Flag = 0x00; // Transmitting...
+    DMA_Cmd(DMA2_Stream7, ENABLE);
 }
 
 /**
@@ -259,56 +259,56 @@ void WiFi_TransmitString(uint16_t length, uint16_t nTime)
  * @param  None.
  * @retval 1 byte data received.
  */
-uint8_t WiFi_ReceiveByte(void)
+uint8_t ZigBee_ReceiveByte(void)
 {
     // Wait till RX buffer not empty
     uint16_t wait = 0;
-    while (USART_GetFlagStatus(USART6, USART_FLAG_RXNE) == RESET)
+    while (USART_GetFlagStatus(USART1, USART_FLAG_RXNE) == RESET)
     {
         wait++;
-        if (wait > WIFITIMEOUT)
+        if (wait > ZIGBEETIMEOUT)
             return 0x00;
     }
     // Receive data
-    return USART_ReceiveData(USART6);
+    return USART_ReceiveData(USART1);
 }
 
 /**
  * @brief  Receive string by USART.
- * @param  nTime: Wait nTime ms.
+ * @param  nTime: Wait nTime us.
  * @retval Length of the ddta.
  */
-uint16_t WiFi_ReceiveString(uint16_t nTime)
+uint16_t ZigBee_ReceiveString(uint16_t nTime)
 {
     // Wait till receive finish
     for (int i = 0; i < nTime; i++)
     {
-        if (WiFiStringReceive_Flag)
+        if (ZigBeeStringReceive_Flag)
             break;
         Delay_ms(1);
     }
 
     // Last receive time out
-    if (!WiFiStringReceive_Flag)
-        return WiFiDataLength;
+    if (!ZigBeeStringReceive_Flag)
+        return ZigBeeDataLength;
 
-    WiFiStringReceive_Flag = 0x00;
+    ZigBeeStringReceive_Flag = 0x00;
 
-    return WiFiDataLength;
+    return ZigBeeDataLength;
 }
 
 /**
- * @brief  USART6 interrupt function. Handle RXNE and IDLE interrupt.
+ * @brief  USART1 interrupt function. Handle RXNE and IDLE interrupt.
  * @param  None.
  * @retval None.
  */
-void USART6_IRQHandler(void)
+void USART1_IRQHandler(void)
 {
-    if (USART_GetITStatus(USART6, USART_IT_IDLE) != RESET)
+    if (USART_GetITStatus(USART1, USART_IT_IDLE) != RESET)
     {
-        WiFiDataLength = 0xFFFF - DMA_GetCurrDataCounter(DMA2_Stream1);
-        DMA_Cmd(DMA2_Stream1, DISABLE);
-        uint8_t clear = USART_ReceiveData(USART6); // IDLE flag is cleared by reading SR and DR
+        ZigBeeDataLength = 0xFFFF - DMA_GetCurrDataCounter(DMA2_Stream5);
+        DMA_Cmd(DMA2_Stream5, DISABLE);
+        uint8_t clear = USART_ReceiveData(USART1); // IDLE flag is cleared by reading SR and DR
     }
 }
 
@@ -317,12 +317,12 @@ void USART6_IRQHandler(void)
  * @param  None.
  * @retval None.
  */
-void DMA2_Stream6_IRQHandler(void)
+void DMA2_Stream7_IRQHandler(void)
 {
-    if (DMA_GetITStatus(DMA2_Stream6, DMA_IT_TCIF6) != RESET)
+    if (DMA_GetITStatus(DMA2_Stream7, DMA_IT_TCIF7) != RESET)
     {
-        DMA_ClearITPendingBit(DMA2_Stream6, DMA_IT_TCIF6);
-        WiFiStringTransmit_Flag = 0x01;
+        DMA_ClearITPendingBit(DMA2_Stream7, DMA_IT_TCIF7);
+        ZigBeeStringTransmit_Flag = 0x01;
     }
 }
 
@@ -331,13 +331,13 @@ void DMA2_Stream6_IRQHandler(void)
  * @param  None.
  * @retval None.
  */
-void DMA2_Stream1_IRQHandler(void)
+void DMA2_Stream5_IRQHandler(void)
 {
-    if (DMA_GetITStatus(DMA2_Stream1, DMA_IT_TCIF1) != RESET)
+    if (DMA_GetITStatus(DMA2_Stream5, DMA_IT_TCIF5) != RESET)
     {
-        DMA_ClearITPendingBit(DMA2_Stream1, DMA_IT_TCIF1);
-        WiFiStringReceive_Flag = 0x01;
-        DMA_Cmd(DMA2_Stream1, ENABLE);
+        DMA_ClearITPendingBit(DMA2_Stream5, DMA_IT_TCIF5);
+        ZigBeeStringReceive_Flag = 0x01;
+        DMA_Cmd(DMA2_Stream5, ENABLE);
     }
 }
 /***********************************END OF FILE********************************/

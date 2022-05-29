@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="gb2312"?>
+<A600-CAT1_01_defaultcfg>
+  <paraBoxesShowStates>
+    <UT_WKMODE UT_WKMODE="True" />
+    <UT_RESHOW UT_RESHOW="True" />
+    <UT_FLGCFG UT_FLGCFG="False" />
+    <UT_CPUCLK UT_CPUCLK="False" />
+    <UT_MID UT_MID="False" />
+    <LP LP="False" />
+    <UART UART="True" />
+    <UART_HTP UART_HTP="False" />
+    <WIFI WIFI="True" />
+    <ETH_CH1EN ETH_CH1EN="True" />
+    <ETH_CH2EN ETH_CH2EN="True" />
+    <ETH_CH1P ETH_CH1P="True" />
+    <ETH_CH2P ETH_CH2P="True" />
+    <ETH_CH1HTP ETH_CH1HTP="True" />
+    <ETH_CH2HTP ETH_CH2HTP="True" />
+    <ETH_CH1RGP ETH_CH1RGP="False" />
+    <ETH_CH2RGP ETH_CH2RGP="False" />
+    <ETH_CH1STC ETH_CH1STC="False" />
+    <ETH_CH2STC ETH_CH2STC="False" />
+  </paraBoxesShowStates>
+  <intoCmdFlg />
+</A600-CAT1_01_defaultcfg>

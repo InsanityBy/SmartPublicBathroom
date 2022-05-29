@@ -106,9 +106,10 @@ int fputc(int ch, FILE *f)
 int main(void)
 {
     /* Initialize all peripherals*/
-    // char Transmit_Buffer[] = "AT+ZIGB_TYPE=0\r\n";
-    char Transmit_Buffer[] = "AT+UT_VER=?\r\n";
+    char Transmit_Buffer[] = "Hello world!";
+    // char Transmit_Buffer[] = "AT+WIFI=STA,\"insanity\",\"20010120\",OPEN\r\n";
     char Receive_Buffer[256];
+    uint8_t Content[256] = "Hello world!";
     Delay_us(1000);
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
     // USART_TestInit();
@@ -117,43 +118,54 @@ int main(void)
     // TemperatureHumiditySensor_Init();
     // LightSensor_Init();
     // ZigBee_Init(Transmit_Buffer, Receive_Buffer);
-    WiFi_Init(Transmit_Buffer, Receive_Buffer);
+    // WiFi_Init(Transmit_Buffer, Receive_Buffer);
     // Audio_Init();
     // Audio_Volume(15);
-    // Display_Init();
+    Display_Init();
+    uint8_t status;
+    status = Communicate_Init();
     Delay_ms(1000);
     // printf("Initialize finished!\n");
-    uint16_t temp = sizeof(Transmit_Buffer) / sizeof(Transmit_Buffer[0]) - 1;
-    WiFi_TransmitString(temp, 100);
+    // uint16_t temp = sizeof(Transmit_Buffer) / sizeof(Transmit_Buffer[0]) - 1;
+    // WiFi_TransmitString(temp, 100);
     // ZigBee_TransmitString(temp, 100);
+    // uint16_t cnt = 0;
 
     /* Infinite loop */
     while (1)
     {
-        // uint8_t Content[256];
         // Fan_Start();
         // Light_Start();
         // Display_LightUp();
-        // Display_Clear();
-        Audio_Play(0x0000);
+        // Audio_Play(0x0000);
         Delay_ms(1000);
-        Delay_ms(1000);
-        Delay_ms(1000);
-        Delay_ms(1000);
-        Delay_ms(1000);
+        // Delay_ms(1000);
+        // Delay_ms(1000);
+        // Delay_ms(1000);
+        // Delay_ms(1000);
         // Fan_Stop();
         // Light_Stop();
         // Sensor_Convert();
-        // sprintf(Content, "Temperature: %f \n", Sensor_GetTemperature());
-        // sprintf(Content, "Humidity: %f\n", Sensor_GetHumidity());
+        // if ((cnt & 0x0001) == 0)
+        //     sprintf(Content, "Temperature: %f \n", Sensor_GetTemperature());
+        // else
+        //     sprintf(Content, "Humidity: %f\n", Sensor_GetHumidity());
         // printf("LightState: %d\n", LightSensor_GetState());
         // sprintf(Content, "LightValue: %f\n", LightSensor_GetValue());
-        // ZigBee_ReceiveString(100);
+        // uint16_t length = ZigBee_ReceiveString(100);
         // uint16_t length = WiFi_ReceiveString(100);
-        // Display_ShowString(0, 0, Transmit_Buffer, FONTSIZE_8);
+        sprintf(Content, "%d\r\n", status);
+        Display_Clear();
+        Display_ShowString(0, 0, Content, 0xFF, FONTSIZE_8);
+        Communicate_ZigBeeTX(ZigBee_TypeTerminal, 0x01, Transmit_Buffer);
+        Communicate_ZigBeeRX(Receive_Buffer);
         // Display_DrawBMP(0, 0, 127, 3, BMP1);
         // Display_ShowString(0, 0, Content, FONTSIZE_16);
         Delay_ms(1000);
+        Display_Clear();
+        Display_ShowString(0, 0, Receive_Buffer, 0xFF, FONTSIZE_8);
+        
+        // cnt++;
     }
 }
 

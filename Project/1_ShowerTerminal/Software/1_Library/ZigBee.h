@@ -3,9 +3,9 @@
  * @file    ZigBee.h
  * @author  Ma Boyang
  * @version V1.0
- * @date    2022.5.17
+ * @date    2022.5.29
  * @brief   This file contains all the functions prototypes for communicata by
- *          ZigBee.(For shower host.)
+ *          ZigBee.(For shower terminal.)
  ******************************************************************************
  */
 

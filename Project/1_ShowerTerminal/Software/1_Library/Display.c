@@ -357,15 +357,16 @@ void Display_ShowChar(uint8_t x, uint8_t y, uint8_t data, uint8_t size)
  * @param  x: Position x.
  * @param  y: Position y.
  * @param  data: Data to display.
+ * @param  length: Length of the data.
  * @param  size: Size of char, FONTSIZE_16 or FONTSIZE_6
  * @retval None.
  */
-void Display_ShowString(uint8_t x, uint8_t y, uint8_t *data, uint8_t size)
+void Display_ShowString(uint8_t x, uint8_t y, uint8_t *data, uint8_t length, uint8_t size)
 {
     uint8_t i = 0;
     if (size == FONTSIZE_16)
     {
-        while (data[i] != '\0')
+        while ((data[i] != '\0') && (i < length))
         {
             Display_ShowChar(x, y, data[i], size);
             x += 8;
@@ -381,7 +382,7 @@ void Display_ShowString(uint8_t x, uint8_t y, uint8_t *data, uint8_t size)
     }
     else
     {
-        while (data[i] != '\0')
+        while ((data[i] != '\0') && (i < length))
         {
             Display_ShowChar(x, y, data[i], size);
             x += 6;

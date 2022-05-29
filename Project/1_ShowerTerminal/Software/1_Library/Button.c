@@ -187,7 +187,7 @@ void TIM3_IRQHandler(void)
             /***************************FUNCTION BEGIN****************************/
             uint8_t data[256];
             sprintf(data, "Repair\n");
-            Display_ShowString(0, 0, data, FONTSIZE_16);
+            Display_ShowString(0, 0, data, 0xFF, FONTSIZE_16);
             Delay_ms(1000);
             Display_Clear();
 
@@ -216,7 +216,7 @@ void TIM4_IRQHandler(void)
             /***************************FUNCTION BEGIN****************************/
             uint8_t data[256];
             sprintf(data, "Help\n");
-            Display_ShowString(0, 2, data, FONTSIZE_16);
+            Display_ShowString(0, 2, data, 0xFF, FONTSIZE_16);
             Delay_ms(1000);
             Display_Clear();
 

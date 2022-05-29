@@ -32,6 +32,8 @@
 .\output\stm32f4xx_it.o: ..\..\1_Library\UserLibrary.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Audio.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Button.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\Communicate.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\ZigBee.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Delay.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Display.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\FlowMeter.h
