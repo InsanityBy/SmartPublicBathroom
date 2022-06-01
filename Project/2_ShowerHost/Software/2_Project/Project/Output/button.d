@@ -35,6 +35,7 @@
 .\output\button.o: ..\..\1_Library\WiFi.h
 .\output\button.o: ..\..\1_Library\Delay.h
 .\output\button.o: ..\..\1_Library\Display.h
+.\output\button.o: ..\..\1_Library\Information.h
 .\output\button.o: ..\..\1_Library\LightSensor.h
 .\output\button.o: ..\..\1_Library\SignalOutput.h
 .\output\button.o: ..\..\1_Library\TemperatureHumiditySensor.h

@@ -687,6 +687,7 @@ char PCD_Write(uint8_t addr, uint8_t *pData)
  */
 char PCD_Halt(void)
 {
+    char status;
     uint16_t unLen;
     uint8_t ucComMF522Buf[MAXRLEN];
 
@@ -694,9 +695,9 @@ char PCD_Halt(void)
     ucComMF522Buf[1] = 0;
     CalculateCRC(ucComMF522Buf, 2, &ucComMF522Buf[2]);
 
-    MFRC_CmdFrame(PCD_TRANSCEIVE, ucComMF522Buf, 4, ucComMF522Buf, &unLen);
+    status = MFRC_CmdFrame(PCD_TRANSCEIVE, ucComMF522Buf, 4, ucComMF522Buf, &unLen);
 
-    return MFRC_OK;
+    return status;
 }
 
 /**
@@ -873,7 +874,7 @@ char NFC_ReadData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData)
             }
         }
     }
-    status = PCD_Halt(); // Go into sleep
+    PCD_Halt(); // Go into sleep
     return status;
 }
 
@@ -910,7 +911,7 @@ char NFC_WriteData(uint8_t sector, uint8_t block, uint8_t *keyA, uint8_t *pData)
             }
         }
     }
-    status = PCD_Halt(); // Go into sleep
+    PCD_Halt(); // Go into sleep
     return status;
 }
 

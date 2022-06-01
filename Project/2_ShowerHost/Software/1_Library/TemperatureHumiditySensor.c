@@ -288,9 +288,9 @@ float Sensor_GetHumidity(void)
 uint8_t Sensor_Getstate(void)
 {
     float temperature_current, humidity_current;
-    Sensor_Convert;
+    Sensor_Convert();
     temperature_current = Sensor_GetTemperature();
-    Sensor_Convert;
+    Sensor_Convert();
     humidity_current = Sensor_GetHumidity();
 
     if ((temperature_current > Temperature_Threshold) || (humidity_current > Humidity_Threshold))

@@ -22,25 +22,63 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 D:\PKU\SmartPublicBathroom\Project\1_ShowerTerminal\Software\2_Project\Project\ShowerTerminal.uvprojx
-Project File Date:  05/29/2022
+Project File Date:  06/01/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'F401RE'
-compiling main.c...
-..\User\main.c(122): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
-          sprintf(Content, "%d\r\n", status);
-..\User\main.c(126): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
-          Communicate_ZigBeeRX(Receive_Buffer);
-..\User\main.c(131): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
-          Display_ShowString(0, 0, Receive_Buffer, 0xFF, FONTSIZE_8);
-..\User\main.c(88): warning:  #177-D: variable "Transmit_Buffer"  was declared but never referenced
-      char Transmit_Buffer[] = "Hello world!";
-..\User\main.c: 4 warnings, 0 errors
+compiling UserLibrary.c...
+..\..\1_Library\UserLibrary.c(207): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                  sprintf(ACK, "$%cA$", ShowerTerminalSerial);
+..\..\1_Library\UserLibrary.c(213): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                  sprintf(NAK, "$%cN$", ShowerTerminalSerial);
+..\..\1_Library\UserLibrary.c(422): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Temp: %.2f", Terminal_Information.WaterTemperature);
+..\..\1_Library\UserLibrary.c(426): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Flow: %.2f", Terminal_Information.WaterFlow);
+..\..\1_Library\UserLibrary.c(430): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Remain: %.2f", remain);
+..\..\1_Library\UserLibrary.c(443): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Water Stop!");
+..\..\1_Library\UserLibrary.c(462): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Time Up!");
+..\..\1_Library\UserLibrary.c(469): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Time Up Soon!");
+..\..\1_Library\UserLibrary.c(480): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "No Appointment!");
+..\..\1_Library\UserLibrary.c(517): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "Cost: %.2f", cost);
+..\..\1_Library\UserLibrary.c(542): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "Swipe Card!");
+..\..\1_Library\UserLibrary.c(554): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "Object Left!");
+..\..\1_Library\UserLibrary.c(564): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Reserved!");
+..\..\1_Library\UserLibrary.c(568): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Idle...");
+..\..\1_Library\UserLibrary.c(637): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "%02d%02d%02d %02d:%02d ", Terminal_Information.CurrentDate.RTC_Year,
+..\..\1_Library\UserLibrary.c(645): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "WaterON");
+..\..\1_Library\UserLibrary.c(649): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "NoWater");
+..\..\1_Library\UserLibrary.c(654): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      uint8_t FrontSpace = (16 - strlen(MainContent)) / 2;
+..\..\1_Library\UserLibrary.c(659): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      Display_ShowString(FrontSpace * 8, 1, MainContent, strlen(MainContent), FONTSIZE_16);
+..\..\1_Library\UserLibrary.c(660): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      for (int i = FrontSpace + strlen(MainContent); i < 16; i++)
+..\..\1_Library\UserLibrary.c(668): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Valve ON ");
+..\..\1_Library\UserLibrary.c(672): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Valve OFF ");
+..\..\1_Library\UserLibrary.c(676): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "%011d", Terminal_Information.UserSerial);
+..\..\1_Library\UserLibrary.c: 23 warnings, 0 errors
 linking...
-Program Size: Code=6968 RO-data=2764 RW-data=56 ZI-data=1560  
+Program Size: Code=21012 RO-data=2532 RW-data=80 ZI-data=1864  
 FromELF: creating hex file...
-".\Output\STM32F401RE.axf" - 0 Error(s), 4 Warning(s).
+".\Output\STM32F401RE.axf" - 0 Error(s), 23 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -53,7 +91,7 @@ Package Vendor: Keil
   E:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

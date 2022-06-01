@@ -36,6 +36,7 @@
 .\output\main.o: ..\..\1_Library\Delay.h
 .\output\main.o: ..\..\1_Library\Display.h
 .\output\main.o: ..\..\1_Library\FlowMeter.h
+.\output\main.o: ..\..\1_Library\Information.h
 .\output\main.o: ..\..\1_Library\InfraredHuman.h
 .\output\main.o: ..\..\1_Library\InfraredObject.h
 .\output\main.o: ..\..\1_Library\NFC.h

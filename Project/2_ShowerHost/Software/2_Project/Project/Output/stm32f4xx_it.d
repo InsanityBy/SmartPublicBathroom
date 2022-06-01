@@ -37,6 +37,7 @@
 .\output\stm32f4xx_it.o: ..\..\1_Library\WiFi.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Delay.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Display.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\Information.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\LightSensor.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\SignalOutput.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\TemperatureHumiditySensor.h

@@ -41,19 +41,22 @@
 #define COMMUNICATE_MAXLENGTH 256
 
 // Timeout(ms)
-#define Communicate_TimeOut 300
+#define Communicate_TimeOut 100
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
-// ID of ZigBee device
+// Information of ZigBee device
 uint8_t ZigBee_ID = 0x01;
+uint8_t ZigBee_Channel = 15;
+uint16_t ZigBee_PANID = 0x1234;
+uint16_t ZigBee_GroupID = 0x1111;
 
 // Name and password of WiFi
 char WiFi_Name[] = "\"insanity\"";
 char WiFi_Password[] = "\"20010120\"";
 
 // IP and port of TCP server
-char Socket_IP[] = "\"192.168.137.121\"";
+char Socket_IP[] = "\"192.168.137.135\"";
 uint16_t Socket_Port = 10000;
 
 // Buffer
@@ -77,7 +80,7 @@ uint8_t Communicate_WiFiCheck(void);
  */
 uint8_t Communicate_Init(void)
 {
-    Delay_ms(1000);
+    Delay_s(1);
 
     // Initialize ZigBee device
     ZigBee_Init(ZigBee_TXBuffer, ZigBee_RXBuffer);
@@ -89,7 +92,7 @@ uint8_t Communicate_Init(void)
     {
         return COMMUNICATE_ERR;
     }
-    Delay_ms(5);
+    Delay_s(3);
 
     // ZigBee config
     if (Communicate_ZigBeeConfig(ZigBee_TypeCoordinator,
@@ -97,6 +100,7 @@ uint8_t Communicate_Init(void)
     {
         return COMMUNICATE_ERR;
     }
+    Delay_s(1);
 
     // Initialize WiFi device
     WiFi_Init(WiFi_TXBuffer, WiFi_RXBuffer);
@@ -105,14 +109,10 @@ uint8_t Communicate_Init(void)
     strcpy(WiFi_TXBuffer, "<->");
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
     Communicate_WiFiCheck();
-    Delay_ms(1000);
-    Delay_ms(1000);
-    Delay_ms(1000);
-    Delay_ms(1000);
-    Delay_ms(1000);
+    Delay_s(5);
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
     Communicate_WiFiCheck();
-    Delay_ms(1000);
+    Delay_s(1);
 
     // WiFi recovery
     strcpy(WiFi_TXBuffer, WiFi_Recovery);
@@ -121,13 +121,14 @@ uint8_t Communicate_Init(void)
     {
         return COMMUNICATE_ERR;
     }
-    Delay_ms(5);
+    Delay_s(1);
 
     // WiFi config
     if (Communicate_WiFiConfig(WiFi_WiFiModeSTA, WiFi_SocketTCPClient) != COMMUNICATE_OK)
     {
         return COMMUNICATE_ERR;
     }
+    Delay_s(1);
 
     return COMMUNICATE_OK;
 }
@@ -152,8 +153,27 @@ uint8_t Communicate_ZigBeeConfig(uint8_t DeviceType, uint8_t DataFormat, uint8_t
         return COMMUNICATE_ERR;
     }
 
-    // Software reset
-    strcpy(ZigBee_TXBuffer, ZigBee_DeviceReset);
+    // Set channel
+    sprintf(Command, "%s%d\r\n", ZigBee_SetChannel, ZigBee_Channel);
+    strcpy(ZigBee_TXBuffer, Command);
+    ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+    if (Communicate_ZigBeeCheck() != COMMUNICATE_OK)
+    {
+        return COMMUNICATE_ERR;
+    }
+
+    // Set PANID
+    sprintf(Command, "%s%04X\r\n", ZigBee_SetPANID, ZigBee_PANID);
+    strcpy(ZigBee_TXBuffer, Command);
+    ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+    if (Communicate_ZigBeeCheck() != COMMUNICATE_OK)
+    {
+        return COMMUNICATE_ERR;
+    }
+
+    // Set group ID
+    sprintf(Command, "%s%04X\r\n", ZigBee_SetGroupID, ZigBee_GroupID);
+    strcpy(ZigBee_TXBuffer, Command);
     ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
     if (Communicate_ZigBeeCheck() != COMMUNICATE_OK)
     {
@@ -178,6 +198,15 @@ uint8_t Communicate_ZigBeeConfig(uint8_t DeviceType, uint8_t DataFormat, uint8_t
         return COMMUNICATE_ERR;
     }
 
+    // Software reset
+    strcpy(ZigBee_TXBuffer, ZigBee_DeviceReset);
+    ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+    if (Communicate_ZigBeeCheck() != COMMUNICATE_OK)
+    {
+        return COMMUNICATE_ERR;
+    }
+    Delay_s(3);
+
     // Status
     strcpy(ZigBee_TXBuffer, "AT+ZIGB_STATUS=?\r\n");
     ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
@@ -194,9 +223,10 @@ uint8_t Communicate_ZigBeeConfig(uint8_t DeviceType, uint8_t DataFormat, uint8_t
  * @param  DeviceType: Device type of destination.
  * @param  ID: ID of destination.
  * @param  Data: Pointer to data buffer.
+ * @param  Length: Length of the data.
  * @retval Status, COMMUNICATE_OK for success, COMMUNICATE_ERR for not.
  */
-uint8_t Communicate_ZigBeeTX(uint8_t DeviceType, uint8_t ID, uint8_t *Data)
+uint8_t Communicate_ZigBeeTX(uint8_t DeviceType, uint8_t ID, uint8_t *Data, uint16_t Length)
 {
     uint8_t Command[COMMUNICATE_MAXLENGTH];
 
@@ -210,9 +240,12 @@ uint8_t Communicate_ZigBeeTX(uint8_t DeviceType, uint8_t ID, uint8_t *Data)
     }
 
     // Transmit data
-    sprintf(Command, "%s03,%02X%02X,%s\r\n", ZigBee_Send, DeviceType, ID, Data);
-    strcpy(ZigBee_TXBuffer, Command);
-    ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+    sprintf(Command, "%s03,%02X%02X,", ZigBee_Send, DeviceType, ID);
+    memcpy(Command + 19, Data, Length);
+    Command[19 + Length] = '\r';
+    Command[20 + Length] = '\r';
+    Length += 21;
+    memcpy(ZigBee_TXBuffer, Command, Length);
     if (Communicate_ZigBeeCheck() != COMMUNICATE_OK)
     {
         return COMMUNICATE_ERR;
@@ -224,21 +257,20 @@ uint8_t Communicate_ZigBeeTX(uint8_t DeviceType, uint8_t ID, uint8_t *Data)
 /**
  * @brief  ZigBee receive data.
  * @param  Data: Pointer to data buffer.
- * @retval Status, COMMUNICATE_OK for success, COMMUNICATE_ERR for not.
+ * @retval Length of received data.
  */
-uint8_t Communicate_ZigBeeRX(uint8_t *Data)
+uint16_t Communicate_ZigBeeRX(uint8_t *Data)
 {
     uint16_t length; // Received data length
 
     length = ZigBee_ReceiveString(Communicate_TimeOut);
     if (length == 0)
     {
-        return COMMUNICATE_ERR;
+        return length;
     }
 
-    ZigBee_RXBuffer[length] = '\0'; // String
-    strcpy(Data, ZigBee_RXBuffer);
-    return COMMUNICATE_OK;
+    memcpy(Data, ZigBee_RXBuffer, length);
+    return length;
 }
 
 /**
@@ -249,15 +281,19 @@ uint8_t Communicate_ZigBeeRX(uint8_t *Data)
 uint8_t Communicate_ZigBeeCheck(void)
 {
     uint8_t ReceivedData[COMMUNICATE_MAXLENGTH];
-    if (Communicate_ZigBeeRX(ReceivedData) != COMMUNICATE_OK)
+    for (int i = 0; i < 5; i++)
     {
-        return COMMUNICATE_ERR;
+        if (Communicate_ZigBeeRX(ReceivedData) == 0)
+        {
+            continue;
+        }
+        else if (strstr(ReceivedData, "OK") != NULL)
+        {
+            return COMMUNICATE_OK;
+        }
+        Delay_ms(1);
     }
-    else if (strstr(ReceivedData, "OK") == NULL)
-    {
-        return COMMUNICATE_ERR;
-    }
-    return COMMUNICATE_OK;
+    return COMMUNICATE_ERR;
 }
 
 /**
@@ -268,15 +304,12 @@ uint8_t Communicate_ZigBeeCheck(void)
  */
 uint8_t Communicate_WiFiConfig(uint8_t *WiFiMode, uint8_t *SocketMode)
 {
-    uint16_t length;
     uint8_t Command[COMMUNICATE_MAXLENGTH];
 
     // Close command echo
     strcpy(WiFi_TXBuffer, WiFi_EchoDisable);
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
-    length = WiFi_ReceiveString(Communicate_TimeOut);
-    WiFi_RXBuffer[length] = '\0';
-    if (strstr(WiFi_RXBuffer, "OK") == NULL)
+    if (Communicate_WiFiCheck() != COMMUNICATE_OK)
     {
         return COMMUNICATE_ERR;
     }
@@ -285,9 +318,7 @@ uint8_t Communicate_WiFiConfig(uint8_t *WiFiMode, uint8_t *SocketMode)
     sprintf(Command, "%s%s,%s,%s,OPEN\r\n", WiFi_WiFiConfig, WiFiMode, WiFi_Name, WiFi_Password);
     strcpy(WiFi_TXBuffer, Command);
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
-    length = WiFi_ReceiveString(Communicate_TimeOut);
-    WiFi_RXBuffer[length] = '\0';
-    if (strstr(WiFi_RXBuffer, "OK") == NULL)
+    if (Communicate_WiFiCheck() != COMMUNICATE_OK)
     {
         return COMMUNICATE_ERR;
     }
@@ -296,28 +327,24 @@ uint8_t Communicate_WiFiConfig(uint8_t *WiFiMode, uint8_t *SocketMode)
     sprintf(Command, "%s%s\r\n", WiFi_Socket1EN, WiFi_Disable); // Disable
     strcpy(WiFi_TXBuffer, Command);
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
-    length = WiFi_ReceiveString(Communicate_TimeOut);
-    WiFi_RXBuffer[length] = '\0';
-    if (strstr(WiFi_RXBuffer, "OK") == NULL)
+    if (Communicate_WiFiCheck() != COMMUNICATE_OK)
     {
         return COMMUNICATE_ERR;
     }
+
     sprintf(Command, "%s%s,%s,%d\r\n", WiFi_Socket1Config, // Config
             WiFi_SocketTCPClient, Socket_IP, Socket_Port);
     strcpy(WiFi_TXBuffer, Command);
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
-    length = WiFi_ReceiveString(Communicate_TimeOut);
-    WiFi_RXBuffer[length] = '\0';
-    if (strstr(WiFi_RXBuffer, "OK") == NULL)
+    if (Communicate_WiFiCheck() != COMMUNICATE_OK)
     {
         return COMMUNICATE_ERR;
     }
+
     sprintf(Command, "%s%s\r\n", WiFi_Socket1EN, WiFi_Enable); // Enable
     strcpy(WiFi_TXBuffer, Command);
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
-    length = WiFi_ReceiveString(Communicate_TimeOut);
-    WiFi_RXBuffer[length] = '\0';
-    if (strstr(WiFi_RXBuffer, "OK") == NULL)
+    if (Communicate_WiFiCheck() != COMMUNICATE_OK)
     {
         return COMMUNICATE_ERR;
     }
@@ -326,9 +353,7 @@ uint8_t Communicate_WiFiConfig(uint8_t *WiFiMode, uint8_t *SocketMode)
     sprintf(Command, "%s%d,%s\r\n", WiFi_Socket1Heart, 0, "123456");
     strcpy(WiFi_TXBuffer, Command);
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
-    length = WiFi_ReceiveString(Communicate_TimeOut);
-    WiFi_RXBuffer[length] = '\0';
-    if (strstr(WiFi_RXBuffer, "OK") == NULL)
+    if (Communicate_WiFiCheck() != COMMUNICATE_OK)
     {
         return COMMUNICATE_ERR;
     }
@@ -337,9 +362,7 @@ uint8_t Communicate_WiFiConfig(uint8_t *WiFiMode, uint8_t *SocketMode)
     sprintf(Command, "%s%s\r\n", WiFi_WorkMode, WiFi_WorkModeTransparent);
     strcpy(WiFi_TXBuffer, Command);
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
-    length = WiFi_ReceiveString(Communicate_TimeOut);
-    WiFi_RXBuffer[length] = '\0';
-    if (strstr(WiFi_RXBuffer, "OK") == NULL)
+    if (Communicate_WiFiCheck() != COMMUNICATE_OK)
     {
         return COMMUNICATE_ERR;
     }
@@ -347,8 +370,7 @@ uint8_t Communicate_WiFiConfig(uint8_t *WiFiMode, uint8_t *SocketMode)
     // Reset
     strcpy(WiFi_TXBuffer, WiFi_DeviceReset);
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
-    length = WiFi_ReceiveString(Communicate_TimeOut);
-    WiFi_RXBuffer[length] = '\0';
+    Communicate_WiFiCheck();
     Delay_ms(5);
 
     return COMMUNICATE_OK;
@@ -357,32 +379,32 @@ uint8_t Communicate_WiFiConfig(uint8_t *WiFiMode, uint8_t *SocketMode)
 /**
  * @brief  WiFi transmit data.
  * @param  Data: Pointer to data buffer.
+ * @param  Length: Length of the data.
  * @retval Status, COMMUNICATE_OK for success, COMMUNICATE_ERR for not.
  */
-uint8_t Communicate_WiFiTX(uint8_t *Data)
+uint8_t Communicate_WiFiTX(uint8_t *Data, uint16_t Length)
 {
-    strcpy(WiFi_TXBuffer, Data);
-    WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
+    memcpy(WiFi_TXBuffer, Data, Length);
+    WiFi_TransmitString(Length, Communicate_TimeOut);
 }
 
 /**
  * @brief  WiFi receive data.
  * @param  Data: Pointer to data buffer.
- * @retval Status, COMMUNICATE_OK for success, COMMUNICATE_ERR for not.
+ * @retval Length of received data.
  */
-uint8_t Communicate_WiFiRX(uint8_t *Data)
+uint16_t Communicate_WiFiRX(uint8_t *Data)
 {
     uint16_t length; // Received data length
 
     length = WiFi_ReceiveString(Communicate_TimeOut);
     if (length == 0)
     {
-        return COMMUNICATE_ERR;
+        return length;
     }
 
-    WiFi_RXBuffer[length] = '\0'; // String
-    strcpy(Data, WiFi_RXBuffer);
-    return COMMUNICATE_OK;
+    memcpy(Data, WiFi_RXBuffer, length);
+    return length;
 }
 
 /**
@@ -393,15 +415,19 @@ uint8_t Communicate_WiFiRX(uint8_t *Data)
 uint8_t Communicate_WiFiCheck(void)
 {
     uint8_t ReceivedData[COMMUNICATE_MAXLENGTH];
-    if (Communicate_WiFiRX(ReceivedData) != COMMUNICATE_OK)
+    for (int i = 0; i < 5; i++)
     {
-        return COMMUNICATE_ERR;
+        if (Communicate_WiFiRX(ReceivedData) == 0)
+        {
+            continue;
+        }
+        else if (strstr(ReceivedData, "OK") != NULL)
+        {
+            return COMMUNICATE_OK;
+        }
+        Delay_ms(1);
     }
-    else if (strstr(ReceivedData, "OK") == NULL)
-    {
-        return COMMUNICATE_ERR;
-    }
-    return COMMUNICATE_OK;
+    return COMMUNICATE_ERR;
 }
 
 /***********************************END OF FILE********************************/

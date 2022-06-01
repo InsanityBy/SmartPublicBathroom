@@ -22,12 +22,107 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 D:\PKU\SmartPublicBathroom\Project\2_ShowerHost\Software\2_Project\Project\ShowerHost.uvprojx
-Project File Date:  05/27/2022
+Project File Date:  05/30/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'F401RE'
-".\Output\STM32F401RE.axf" - 0 Error(s), 0 Warning(s).
+compiling UserLibrary.c...
+..\..\1_Library\UserLibrary.c(107): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(ACK, "A%c@", Host_Information.HostSerial);
+..\..\1_Library\UserLibrary.c(109): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(NACK, "N%c@", Host_Information.HostSerial);
+..\..\1_Library\UserLibrary.c(129): warning:  #177-D: variable "ACK"  was declared but never referenced
+      uint8_t ACK[] = "A$";
+..\..\1_Library\UserLibrary.c(130): warning:  #177-D: variable "NACK"  was declared but never referenced
+      uint8_t NACK[] = "N$";
+..\..\1_Library\UserLibrary.c(132): warning:  #177-D: variable "StartNum"  was declared but never referenced
+      uint16_t StartNum;
+..\..\1_Library\UserLibrary.c(314): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "%02d%02d%02d %02d:%02d ", Host_Information.CurrentDate.RTC_Year,
+..\..\1_Library\UserLibrary.c(322): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "WaterON");
+..\..\1_Library\UserLibrary.c(326): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "NoWater");
+..\..\1_Library\UserLibrary.c(331): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "NEED HELP!   ");
+..\..\1_Library\UserLibrary.c(337): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Fan ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(337): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Fan ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(341): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Fan OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(341): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Fan OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(346): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Light ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(346): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Light ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(350): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Light OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(350): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Light OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(353): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "%d", Host_Information.TerminalNumber);
+..\..\1_Library\UserLibrary.c(362): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "%02d%02d%02d %02d:%02d ", Host_Information.CurrentDate.RTC_Year,
+..\..\1_Library\UserLibrary.c(370): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "WaterON");
+..\..\1_Library\UserLibrary.c(374): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "NoWater");
+..\..\1_Library\UserLibrary.c(379): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "Device Failure!");
+..\..\1_Library\UserLibrary.c(385): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Fan ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(385): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Fan ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(389): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Fan OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(389): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Fan OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(394): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Light ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(394): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Light ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(398): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Light OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(398): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Light OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(401): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "%d", Host_Information.TerminalNumber);
+..\..\1_Library\UserLibrary.c(411): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "%02d%02d%02d %02d:%02d ", Host_Information.CurrentDate.RTC_Year,
+..\..\1_Library\UserLibrary.c(419): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "WaterON");
+..\..\1_Library\UserLibrary.c(423): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "NoWater");
+..\..\1_Library\UserLibrary.c(430): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Temp: %.2f  ", Host_Information.Temperature);
+..\..\1_Library\UserLibrary.c(434): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Hum: %.2f   ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(441): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Fan ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(441): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Fan ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(445): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Fan OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(445): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Fan OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(450): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Light ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(450): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Light ON ", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(454): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(Content, "Light OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(454): warning:  #225-D: the format string ends before this argument
+          sprintf(Content, "Light OFF", Host_Information.Humidity);
+..\..\1_Library\UserLibrary.c(457): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Content, "%d", Host_Information.TerminalNumber);
+..\..\1_Library\UserLibrary.c: 45 warnings, 0 errors
+linking...
+Program Size: Code=17178 RO-data=2510 RW-data=132 ZI-data=3636  
+FromELF: creating hex file...
+".\Output\STM32F401RE.axf" - 0 Error(s), 45 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -40,7 +135,7 @@ Package Vendor: Keil
   E:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

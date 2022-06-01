@@ -56,4 +56,17 @@ void Delay_ms(uint32_t n)
     SysTick->VAL = 0x00000000;  // Clear current value
 }
 
+/**
+ * @brief  Delay n s.
+ * @param  n: Delay n s.
+ * @retval None.
+ */
+void Delay_s(uint32_t n)
+{
+    while(n--)
+    {
+        Delay_ms(1000);
+    }
+}
+
 /***********************************END OF FILE********************************/

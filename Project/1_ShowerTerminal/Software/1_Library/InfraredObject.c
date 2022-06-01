@@ -145,7 +145,7 @@ uint16_t InfraredObject_GetValue(void)
 
     // Emit infrared
     GPIO_SetBits(INFRAREDOBJECTTX_PINGROUP, INFRAREDOBJECTTX_PIN);
-	Delay_ms(100);
+    Delay_ms(100);
 
     // Receive and sample
     for (int i = 0; i < 10; i++)
@@ -180,7 +180,7 @@ void ADC_IRQHandler(void)
     {
         ADC_ClearITPendingBit(ADC1, ADC_IT_EOC);
         Data_Object[num] = ADC_GetConversionValue(ADC1);
-			printf("%d\n", Data_Object[num]);
+        //	printf("%d\n", Data_Object[num]);
         num++;
         if (num >= 10)
             num = 0;

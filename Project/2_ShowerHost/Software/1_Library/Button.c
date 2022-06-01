@@ -185,12 +185,9 @@ void TIM3_IRQHandler(void)
         if (!GPIO_ReadInputDataBit(REPAIR_PINGROUP, REPAIR_PIN))
         {
             /***************************FUNCTION BEGIN****************************/
-            uint8_t data[256];
-            sprintf(data, "Repair\n");
-            Display_ShowString(0, 0, data, 0xFF, FONTSIZE_16);
-            Delay_ms(1000);
-            Display_Clear();
-
+            ShowerHost_SetRepairState();
+            ShowerHost_DisplayRepair();
+            Audio_Play(AudioRepair);
             /***************************FUNCTION END******************************/
         }
     }
@@ -214,12 +211,12 @@ void TIM4_IRQHandler(void)
         if (!GPIO_ReadInputDataBit(HELP_PINGROUP, HELP_PIN))
         {
             /***************************FUNCTION BEGIN****************************/
-            uint8_t data[256];
-            sprintf(data, "Help\n");
-            Display_ShowString(0, 2, data, 0xFF, FONTSIZE_16);
-            Delay_ms(1000);
-            Display_Clear();
-            
+            ShowerHost_SetHelpState();
+            if (!ShowerHost_GetRepairState())
+            {
+                ShowerHost_DisplayHelp();
+            }
+            Audio_Play(AudioHelp);
             /***************************FUNCTION END******************************/
         }
     }

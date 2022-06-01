@@ -152,25 +152,25 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>130</LineNumber>
+          <LineNumber>568</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134219002</Address>
+          <Address>134232676</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\1_Library\Communicate.c</Filename>
+          <Filename>..\..\1_Library\UserLibrary.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\STM32F401RE\../../1_Library/Communicate.c\130</Expression>
+          <Expression>\\STM32F401RE\../../1_Library/UserLibrary.c\568</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>127</LineNumber>
+          <LineNumber>201</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134218998</Address>
+          <Address>134222068</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -179,23 +179,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\..\1_Library\Communicate.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\STM32F401RE\../../1_Library/Communicate.c\127</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>126</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134225240</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\User\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\STM32F401RE\../User/main.c\126</Expression>
+          <Expression>\\STM32F401RE\../../1_Library/Communicate.c\201</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -213,6 +197,21 @@
           <count>2</count>
           <WinNumber>1</WinNumber>
           <ItemText>ZigBee_RXBuffer</ItemText>
+        </Ww>
+        <Ww>
+          <count>3</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>ZigBeeDataLength</ItemText>
+        </Ww>
+        <Ww>
+          <count>4</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>Terminal_Information</ItemText>
+        </Ww>
+        <Ww>
+          <count>5</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>Threshold_Human</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>
@@ -1120,6 +1119,30 @@
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\1_Library\ZigBee.c</PathWithFileName>
       <FilenameWithoutPath>ZigBee.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>67</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\1_Library\Information.c</PathWithFileName>
+      <FilenameWithoutPath>Information.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>68</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\1_Library\UserLibrary.c</PathWithFileName>
+      <FilenameWithoutPath>UserLibrary.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

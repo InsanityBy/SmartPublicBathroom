@@ -33,6 +33,10 @@ extern "C"
 #define ZigBee_TypeRouter 0x01
 #define ZigBee_TypeTerminal 0x02
 
+#define ZigBee_SetChannel "AT+RF_CHANNEL="
+#define ZigBee_SetPANID "AT+ZIGB_PANID="
+#define ZigBee_SetGroupID "AT+NET_GROUPID="
+
 #define ZigBee_UserID "AT+UT_UID="
 
 #define ZigBee_Addressing "AT+ZIGB_UIDTOID="

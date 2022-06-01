@@ -37,6 +37,7 @@
 .\output\stm32f4xx_it.o: ..\..\1_Library\Delay.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\Display.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\FlowMeter.h
+.\output\stm32f4xx_it.o: ..\..\1_Library\Information.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\InfraredHuman.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\InfraredObject.h
 .\output\stm32f4xx_it.o: ..\..\1_Library\NFC.h

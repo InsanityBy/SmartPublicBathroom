@@ -5,7 +5,7 @@
  * @version V1.0
  * @date    2022.5.7
  * @brief   This file contains all the functions of delay using systick.(For
- *         shower terminal.)
+ *         shower host.)
  ******************************************************************************
  */
 
@@ -54,6 +54,19 @@ void Delay_ms(uint32_t n)
     }
     SysTick->CTRL = 0x00000000; // Disable counter
     SysTick->VAL = 0x00000000;  // Clear current value
+}
+
+/**
+ * @brief  Delay n s.
+ * @param  n: Delay n s.
+ * @retval None.
+ */
+void Delay_s(uint32_t n)
+{
+    while(n--)
+    {
+        Delay_ms(1000);
+    }
 }
 
 /***********************************END OF FILE********************************/

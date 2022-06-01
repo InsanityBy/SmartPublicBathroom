@@ -23,6 +23,11 @@ extern "C"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
+#define AudioRemind 0x0000
+#define AudioWarn 0x0001
+#define AudioHelp 0x0002
+#define AudioRepair 0x0003
+
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
 // Initialize audio device

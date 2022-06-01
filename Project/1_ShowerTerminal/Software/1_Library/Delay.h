@@ -31,6 +31,9 @@ void Delay_us(uint32_t n);
 // Delay n ms
 void Delay_ms(uint32_t n);
 
+// Delay n s
+void Delay_s(uint32_t n);
+
 #ifdef __cplusplus
 }
 #endif

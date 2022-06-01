@@ -33,10 +33,10 @@ uint8_t Communicate_Init(void);
 uint8_t Communicate_ZigBeeConfig(uint8_t DeviceType, uint8_t DataFormat, uint8_t ID);
 
 // ZigBee transmit
-uint8_t Communicate_ZigBeeTX(uint8_t DeviceType, uint8_t ID, uint8_t *Data);
+uint8_t Communicate_ZigBeeTX(uint8_t DeviceType, uint8_t ID, uint8_t *Data, uint16_t Length);
 
 // ZigBee receive
-uint8_t Communicate_ZigBeeRX(uint8_t *Data);
+uint16_t Communicate_ZigBeeRX(uint8_t *Data);
 
 #ifdef __cplusplus
 }

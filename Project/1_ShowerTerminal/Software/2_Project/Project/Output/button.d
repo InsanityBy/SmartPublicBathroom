@@ -35,6 +35,7 @@
 .\output\button.o: ..\..\1_Library\Delay.h
 .\output\button.o: ..\..\1_Library\Display.h
 .\output\button.o: ..\..\1_Library\FlowMeter.h
+.\output\button.o: ..\..\1_Library\Information.h
 .\output\button.o: ..\..\1_Library\InfraredHuman.h
 .\output\button.o: ..\..\1_Library\InfraredObject.h
 .\output\button.o: ..\..\1_Library\NFC.h

@@ -37,7 +37,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 // The fewest correct receptions indicating human presence
-uint8_t Threshold_Human = 8;
+uint8_t Threshold_Human = 11;
 
 // Receive flag, 1 for receive finished, 0 for not
 uint8_t Receive_Flag = 0;

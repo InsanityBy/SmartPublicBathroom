@@ -193,7 +193,7 @@ void ZigBee_Init(uint8_t *pTransmitData, uint8_t *pReceiveData)
     RCC_AHB1PeriphClockCmd(ZIGBEETX_CLOCK, ENABLE);                          // Enable clock
     GPIO_PinAFConfig(ZIGBEETX_PINGROUP, ZIGBEETX_PINSOURCE, GPIO_AF_USART1); // PA10 -> USART1 RX
     GPIO_InitStructure.GPIO_Pin = ZIGBEETX_PIN;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF	;
     GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
     GPIO_Init(ZIGBEETX_PINGROUP, &GPIO_InitStructure);
 
