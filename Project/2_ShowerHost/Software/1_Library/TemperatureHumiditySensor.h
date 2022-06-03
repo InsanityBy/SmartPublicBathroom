@@ -26,7 +26,7 @@ extern "C"
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
 // Temperature - humidity sensor initialize
-uint8_t TemperatureHumiditySensor_Init(void);
+uint8_t TemperatureHumiditySensor_Init(float TempThreshold, float HumThreshold);
 
 // Start convert
 void Sensor_Convert(void);

@@ -27,6 +27,9 @@ extern "C"
 #define AudioWarn 0x0001
 #define AudioHelp 0x0002
 #define AudioRepair 0x0003
+#define AudioObjectLeft 0x0004
+#define AudioTimeUp 0x0005
+#define AudioWaterStop 0x0006
 
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/

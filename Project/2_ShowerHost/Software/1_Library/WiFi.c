@@ -21,6 +21,7 @@
 #include "WiFi.h"
 #include "Delay.h"
 #include <stdio.h>
+#include <string.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -47,7 +48,11 @@ uint8_t WiFiStringReceive_Flag = 0;
 uint8_t WiFiStringTransmit_Flag = 1;
 
 // Length of received data
-uint16_t WiFiDataLength;
+uint16_t WiFiDataLength = 0;
+
+// Received data buffer
+uint8_t *pWiFiReceivedDataRead;
+uint8_t WiFiReceivedDataBuffer[1024];
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -107,8 +112,8 @@ void USART6_DMAReceiveInit(uint8_t *pData)
     DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte; // uint8_t
     DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
     DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
-    DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)pData;        // Receive buffer
-    DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte; // uint8_t
+    DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)WiFiReceivedDataBuffer; // Receive buffer
+    DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;       // uint8_t
     DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
     DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
     DMA_InitStructure.DMA_BufferSize = 0xFFFF; // Max buffer size
@@ -128,6 +133,8 @@ void USART6_DMAReceiveInit(uint8_t *pData)
 
     // Enable DMA
     DMA_Cmd(DMA2_Stream1, ENABLE);
+
+    pWiFiReceivedDataRead = pData;
 }
 
 /**
@@ -149,7 +156,7 @@ void USART6_DMATransmitInit(uint8_t *pData)
     DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte; // uint8_t
     DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
     DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
-    DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)pData;        // Receive buffer
+    DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)pData;        // Transmit buffer
     DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte; // uint8_t
     DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
     DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
@@ -292,9 +299,11 @@ uint16_t WiFi_ReceiveString(uint16_t nTime)
     if (!WiFiStringReceive_Flag)
         return WiFiDataLength;
 
+    uint16_t CurrentLength = WiFiDataLength;
     WiFiStringReceive_Flag = 0x00;
+    WiFiDataLength = 0;
 
-    return WiFiDataLength;
+    return CurrentLength;
 }
 
 /**
@@ -336,6 +345,11 @@ void DMA2_Stream1_IRQHandler(void)
     if (DMA_GetITStatus(DMA2_Stream1, DMA_IT_TCIF1) != RESET)
     {
         DMA_ClearITPendingBit(DMA2_Stream1, DMA_IT_TCIF1);
+        if (WiFiDataLength > 1024)
+        {
+            WiFiDataLength = 1024;
+        }
+        memcpy(pWiFiReceivedDataRead, WiFiReceivedDataBuffer, WiFiDataLength);
         WiFiStringReceive_Flag = 0x01;
         DMA_Cmd(DMA2_Stream1, ENABLE);
     }

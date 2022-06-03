@@ -30,7 +30,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 // Light threshold
-float Threshold = 2.8;
+float LightThreshold = 2.8;
 
 // Ratio to convert ADC sample value to actual lighting value
 float ConvertRatio = 3.3 / 4096;
@@ -42,11 +42,13 @@ uint16_t Data[10];
 /* Private functions ---------------------------------------------------------*/
 /**
  * @brief  Initialize input pin and ADC to sample.
- * @param  None.
+ * @param  Threshold: Light threshold, 0 ~ 3.3.
  * @retval None.
  */
-void LightSensor_Init(void)
+void LightSensor_Init(float Threshold)
 {
+    LightThreshold = Threshold;
+
     // GPIO config
     RCC_AHB1PeriphClockCmd(LIGHTSENSOR_CLOCK, ENABLE); // Enable clock
     GPIO_InitTypeDef GPIO_InitStructure;
@@ -95,7 +97,7 @@ void LightSensor_Init(void)
  */
 uint8_t LightSensor_GetState(void)
 {
-    if (LightSensor_GetValue() > Threshold)
+    if (LightSensor_GetValue() > LightThreshold)
         return 0x00;
     else
         return 0x01;

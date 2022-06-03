@@ -31,7 +31,7 @@
 #define COMMUNICATE_ERR 0x01
 
 // Buffer max length
-#define COMMUNICATE_MAXLENGTH 256
+#define COMMUNICATE_MAXLENGTH 1024
 
 // Timeout(ms)
 #define Communicate_TimeOut 100
@@ -58,8 +58,13 @@ uint8_t Communicate_ZigBeeCheck(void);
  * @param  None.
  * @retval Status, COMMUNICATE_OK for success, COMMUNICATE_ERR for not.
  */
-uint8_t Communicate_Init(void)
+uint8_t Communicate_Init(uint8_t ID, uint8_t Channel, uint16_t PANID, uint16_t GroupID)
 {
+    ZigBee_ID = ID;
+    ZigBee_Channel = Channel;
+    ZigBee_PANID = PANID;
+    ZigBee_GroupID = GroupID;
+
     Delay_s(2);
 
     // Initialize ZigBee device

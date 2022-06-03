@@ -30,3 +30,4 @@
 .\output\wifi.o: ..\Library\inc\misc.h
 .\output\wifi.o: ..\..\1_Library\Delay.h
 .\output\wifi.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\output\wifi.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

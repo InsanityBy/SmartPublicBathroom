@@ -29,8 +29,8 @@ int main(void)
     /* Infinite loop */
     while (1)
     {
-        //ShowerTerminal_GetZigBeeData();
-        ShowerTerminal_SetDevice();
+        ShowerTerminal_SendZigBeeData(2);
+        ShowerTerminal_GetZigBeeData(2);
 
         if (ShowerTerminal_ObjectLeftCheck())
         {
@@ -46,50 +46,52 @@ int main(void)
             uint8_t Content[] = "NEED HELP!";
             ShowerTerminal_DisplayContent(Content);
         }
-        else if (ShowerTerminal_HumanDetect()) // Human presence
+        else
         {
-            if (ShowerTerminal_CardDetect()) // Have card
+            if (ShowerTerminal_HumanDetect()) // Human presence
             {
-                if (ShowerTerminal_CardFirstRead()) // First swipe card
+                if (ShowerTerminal_CardDetect()) // Have card
                 {
-                    ShowerTerminal_CardFirstReadProcess();
-                }
+                    if (ShowerTerminal_CardFirstRead()) // First swipe card
+                    {
+                        ShowerTerminal_CardFirstReadProcess();
+                    }
 
-                if (ShowerTerminal_ReservationCheck()) // Have reservation
-                {
-                    ShowerTerminal_InUseProcess();
-                    ShowerTerminal_WaterStopRemind();
-                    ShowerTerminal_NearReservationEnd();
+                    if (ShowerTerminal_ReservationCheck()) // Have reservation
+                    {
+                        ShowerTerminal_InUseProcess();
+                        ShowerTerminal_WaterStopRemind();
+                        ShowerTerminal_NearReservationEnd();
+                    }
+                    else // Have no reservation
+                    {
+                        ShowerTerminal_NoReservationProcess();
+                    }
                 }
-                else // Have no reservation
+                else // No card
                 {
-                    ShowerTerminal_NoReservationProcess();
+                    if (ShowerTerminal_CardTake()) // Take the card
+                    {
+                        ShowerTerminal_CardTakeProcess();
+                    }
+                    else // Not swipe card yet
+                    {
+                        ShowerTerminal_NotUseProcess();
+                    }
                 }
             }
-            else // No card
+            else // Human absence
             {
-                if (ShowerTerminal_CardTake()) // Take the card
+                if (ShowerTerminal_CardDetect() || ShowerTerminal_ObjectDetect()) // Have card or object
                 {
-                    ShowerTerminal_CardTakeProcess();
+                    ShowerTerminal_CardObjectLeft();
                 }
-                else // Not swipe card yet
+                else
                 {
-                    ShowerTerminal_NotUseProcess();
+                    ShowerTerminal_IdleState();
                 }
             }
         }
-        else // Human absence
-        {
-            if (ShowerTerminal_CardDetect() || ShowerTerminal_ObjectDetect()) // Have card or object
-            {
-                ShowerTerminal_CardObjectLeft();
-            }
-            else
-            {
-                ShowerTerminal_IdleState();
-            }
-        }
-        //ShowerTerminal_SendZigBeeData();
     }
 }
 /***********************************END OF FILE********************************/

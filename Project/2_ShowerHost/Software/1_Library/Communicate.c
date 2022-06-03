@@ -38,7 +38,7 @@
 #define COMMUNICATE_ERR 0x01
 
 // Buffer max length
-#define COMMUNICATE_MAXLENGTH 256
+#define COMMUNICATE_MAXLENGTH 1024
 
 // Timeout(ms)
 #define Communicate_TimeOut 100
@@ -78,8 +78,13 @@ uint8_t Communicate_WiFiCheck(void);
  * @param  None.
  * @retval Status, COMMUNICATE_OK for success, COMMUNICATE_ERR for not.
  */
-uint8_t Communicate_Init(void)
+uint8_t Communicate_Init(uint8_t ID, uint8_t Channel, uint16_t PANID, uint16_t GroupID)
 {
+    ZigBee_ID = ID;
+    ZigBee_Channel = Channel;
+    ZigBee_PANID = PANID;
+    ZigBee_GroupID = GroupID;
+    
     Delay_s(1);
 
     // Initialize ZigBee device
@@ -243,9 +248,10 @@ uint8_t Communicate_ZigBeeTX(uint8_t DeviceType, uint8_t ID, uint8_t *Data, uint
     sprintf(Command, "%s03,%02X%02X,", ZigBee_Send, DeviceType, ID);
     memcpy(Command + 19, Data, Length);
     Command[19 + Length] = '\r';
-    Command[20 + Length] = '\r';
+    Command[20 + Length] = '\n';
     Length += 21;
     memcpy(ZigBee_TXBuffer, Command, Length);
+    ZigBee_TransmitString(Length, Communicate_TimeOut);
     if (Communicate_ZigBeeCheck() != COMMUNICATE_OK)
     {
         return COMMUNICATE_ERR;

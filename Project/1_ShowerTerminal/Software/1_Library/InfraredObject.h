@@ -26,7 +26,7 @@ extern "C"
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
 // Initialize output pin to emit infrared, input pin and ADC to sample
-void InfraredObject_Init(void);
+void InfraredObject_Init(uint16_t Threshold);
 
 // Get object state, 1 for object presence, 0 for not
 uint8_t InfraredObject_GetState(void);

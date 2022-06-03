@@ -233,9 +233,10 @@ Section Cross References
     stm32f4xx_usart.o(i.USART_Init) refers to stm32f4xx_rcc.o(i.RCC_GetClocksFreq) for RCC_GetClocksFreq
     stm32f4xx_wwdg.o(i.WWDG_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
     main.o(i.main) refers to userlibrary.o(i.ShowerHost_Init) for ShowerHost_Init
-    main.o(i.main) refers to userlibrary.o(i.ShowerHost_GetWiFiData) for ShowerHost_GetWiFiData
     main.o(i.main) refers to userlibrary.o(i.ShowerHost_GetZigBeeData) for ShowerHost_GetZigBeeData
-    main.o(i.main) refers to userlibrary.o(i.ShowerHost_SetDevice) for ShowerHost_SetDevice
+    main.o(i.main) refers to userlibrary.o(i.ShowerHost_SendWiFiData) for ShowerHost_SendWiFiData
+    main.o(i.main) refers to userlibrary.o(i.ShowerHost_GetWiFiData) for ShowerHost_GetWiFiData
+    main.o(i.main) refers to userlibrary.o(i.ShowerHost_SendZigBeeData) for ShowerHost_SendZigBeeData
     main.o(i.main) refers to userlibrary.o(i.ShowerHost_GetRepairState) for ShowerHost_GetRepairState
     main.o(i.main) refers to userlibrary.o(i.ShowerHost_DisplayRepair) for ShowerHost_DisplayRepair
     main.o(i.main) refers to userlibrary.o(i.ShowerHost_GetHelpState) for ShowerHost_GetHelpState
@@ -268,6 +269,7 @@ Section Cross References
     button.o(i.TIM3_IRQHandler) refers to userlibrary.o(i.ShowerHost_SetRepairState) for ShowerHost_SetRepairState
     button.o(i.TIM3_IRQHandler) refers to userlibrary.o(i.ShowerHost_DisplayRepair) for ShowerHost_DisplayRepair
     button.o(i.TIM3_IRQHandler) refers to audio.o(i.Audio_Play) for Audio_Play
+    button.o(i.TIM3_IRQHandler) refers to delay.o(i.Delay_ms) for Delay_ms
     button.o(i.TIM3_Init) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
     button.o(i.TIM3_Init) refers to stm32f4xx_tim.o(i.TIM_TimeBaseInit) for TIM_TimeBaseInit
     button.o(i.TIM3_Init) refers to misc.o(i.NVIC_Init) for NVIC_Init
@@ -281,6 +283,7 @@ Section Cross References
     button.o(i.TIM4_IRQHandler) refers to userlibrary.o(i.ShowerHost_GetRepairState) for ShowerHost_GetRepairState
     button.o(i.TIM4_IRQHandler) refers to userlibrary.o(i.ShowerHost_DisplayHelp) for ShowerHost_DisplayHelp
     button.o(i.TIM4_IRQHandler) refers to audio.o(i.Audio_Play) for Audio_Play
+    button.o(i.TIM4_IRQHandler) refers to delay.o(i.Delay_ms) for Delay_ms
     button.o(i.TIM4_Init) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
     button.o(i.TIM4_Init) refers to stm32f4xx_tim.o(i.TIM_TimeBaseInit) for TIM_TimeBaseInit
     button.o(i.TIM4_Init) refers to misc.o(i.NVIC_Init) for NVIC_Init
@@ -307,7 +310,7 @@ Section Cross References
     lightsensor.o(i.ADC_IRQHandler) refers to lightsensor.o(.bss) for Data
     lightsensor.o(i.ADC_IRQHandler) refers to lightsensor.o(.data) for num
     lightsensor.o(i.LightSensor_GetState) refers to lightsensor.o(i.LightSensor_GetValue) for LightSensor_GetValue
-    lightsensor.o(i.LightSensor_GetState) refers to lightsensor.o(.data) for Threshold
+    lightsensor.o(i.LightSensor_GetState) refers to lightsensor.o(.data) for LightThreshold
     lightsensor.o(i.LightSensor_GetValue) refers to stm32f4xx_adc.o(i.ADC_Cmd) for ADC_Cmd
     lightsensor.o(i.LightSensor_GetValue) refers to stm32f4xx_adc.o(i.ADC_SoftwareStartConv) for ADC_SoftwareStartConv
     lightsensor.o(i.LightSensor_GetValue) refers to delay.o(i.Delay_us) for Delay_us
@@ -322,6 +325,7 @@ Section Cross References
     lightsensor.o(i.LightSensor_Init) refers to stm32f4xx_adc.o(i.ADC_RegularChannelConfig) for ADC_RegularChannelConfig
     lightsensor.o(i.LightSensor_Init) refers to misc.o(i.NVIC_Init) for NVIC_Init
     lightsensor.o(i.LightSensor_Init) refers to stm32f4xx_adc.o(i.ADC_ITConfig) for ADC_ITConfig
+    lightsensor.o(i.LightSensor_Init) refers to lightsensor.o(.data) for LightThreshold
     temperaturehumiditysensor.o(i.Pin_Input) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
     temperaturehumiditysensor.o(i.Pin_Input) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
     temperaturehumiditysensor.o(i.Pin_Output) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
@@ -371,10 +375,13 @@ Section Cross References
     temperaturehumiditysensor.o(i.TemperatureHumiditySensor_Init) refers to stm32f4xx_gpio.o(i.GPIO_SetBits) for GPIO_SetBits
     temperaturehumiditysensor.o(i.TemperatureHumiditySensor_Init) refers to temperaturehumiditysensor.o(i.Sensor_Reset) for Sensor_Reset
     temperaturehumiditysensor.o(i.TemperatureHumiditySensor_Init) refers to temperaturehumiditysensor.o(i.Sensor_Check) for Sensor_Check
+    temperaturehumiditysensor.o(i.TemperatureHumiditySensor_Init) refers to temperaturehumiditysensor.o(.data) for Temperature_Threshold
     zigbee.o(i.DMA2_Stream5_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_GetITStatus) for DMA_GetITStatus
     zigbee.o(i.DMA2_Stream5_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_ClearITPendingBit) for DMA_ClearITPendingBit
+    zigbee.o(i.DMA2_Stream5_IRQHandler) refers to memcpya.o(.text) for __aeabi_memcpy
     zigbee.o(i.DMA2_Stream5_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_Cmd) for DMA_Cmd
-    zigbee.o(i.DMA2_Stream5_IRQHandler) refers to zigbee.o(.data) for ZigBeeStringReceive_Flag
+    zigbee.o(i.DMA2_Stream5_IRQHandler) refers to zigbee.o(.data) for ZigBeeDataLength
+    zigbee.o(i.DMA2_Stream5_IRQHandler) refers to zigbee.o(.bss) for ZigBeeReceivedDataBuffer
     zigbee.o(i.DMA2_Stream7_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_GetITStatus) for DMA_GetITStatus
     zigbee.o(i.DMA2_Stream7_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_ClearITPendingBit) for DMA_ClearITPendingBit
     zigbee.o(i.DMA2_Stream7_IRQHandler) refers to zigbee.o(.data) for ZigBeeStringTransmit_Flag
@@ -384,6 +391,8 @@ Section Cross References
     zigbee.o(i.USART1_DMAReceiveInit) refers to stm32f4xx_dma.o(i.DMA_ITConfig) for DMA_ITConfig
     zigbee.o(i.USART1_DMAReceiveInit) refers to misc.o(i.NVIC_Init) for NVIC_Init
     zigbee.o(i.USART1_DMAReceiveInit) refers to stm32f4xx_dma.o(i.DMA_Cmd) for DMA_Cmd
+    zigbee.o(i.USART1_DMAReceiveInit) refers to zigbee.o(.bss) for ZigBeeReceivedDataBuffer
+    zigbee.o(i.USART1_DMAReceiveInit) refers to zigbee.o(.data) for pZigBeeReceivedDataRead
     zigbee.o(i.USART1_DMATransmitInit) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
     zigbee.o(i.USART1_DMATransmitInit) refers to stm32f4xx_dma.o(i.DMA_Init) for DMA_Init
     zigbee.o(i.USART1_DMATransmitInit) refers to stm32f4xx_dma.o(i.DMA_ClearITPendingBit) for DMA_ClearITPendingBit
@@ -418,8 +427,10 @@ Section Cross References
     zigbee.o(i.ZigBee_TransmitString) refers to zigbee.o(.data) for ZigBeeStringTransmit_Flag
     wifi.o(i.DMA2_Stream1_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_GetITStatus) for DMA_GetITStatus
     wifi.o(i.DMA2_Stream1_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_ClearITPendingBit) for DMA_ClearITPendingBit
+    wifi.o(i.DMA2_Stream1_IRQHandler) refers to memcpya.o(.text) for __aeabi_memcpy
     wifi.o(i.DMA2_Stream1_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_Cmd) for DMA_Cmd
-    wifi.o(i.DMA2_Stream1_IRQHandler) refers to wifi.o(.data) for WiFiStringReceive_Flag
+    wifi.o(i.DMA2_Stream1_IRQHandler) refers to wifi.o(.data) for WiFiDataLength
+    wifi.o(i.DMA2_Stream1_IRQHandler) refers to wifi.o(.bss) for WiFiReceivedDataBuffer
     wifi.o(i.DMA2_Stream6_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_GetITStatus) for DMA_GetITStatus
     wifi.o(i.DMA2_Stream6_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_ClearITPendingBit) for DMA_ClearITPendingBit
     wifi.o(i.DMA2_Stream6_IRQHandler) refers to wifi.o(.data) for WiFiStringTransmit_Flag
@@ -429,6 +440,8 @@ Section Cross References
     wifi.o(i.USART6_DMAReceiveInit) refers to stm32f4xx_dma.o(i.DMA_ITConfig) for DMA_ITConfig
     wifi.o(i.USART6_DMAReceiveInit) refers to misc.o(i.NVIC_Init) for NVIC_Init
     wifi.o(i.USART6_DMAReceiveInit) refers to stm32f4xx_dma.o(i.DMA_Cmd) for DMA_Cmd
+    wifi.o(i.USART6_DMAReceiveInit) refers to wifi.o(.bss) for WiFiReceivedDataBuffer
+    wifi.o(i.USART6_DMAReceiveInit) refers to wifi.o(.data) for pWiFiReceivedDataRead
     wifi.o(i.USART6_DMATransmitInit) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
     wifi.o(i.USART6_DMATransmitInit) refers to stm32f4xx_dma.o(i.DMA_Init) for DMA_Init
     wifi.o(i.USART6_DMATransmitInit) refers to stm32f4xx_dma.o(i.DMA_ClearITPendingBit) for DMA_ClearITPendingBit
@@ -521,8 +534,8 @@ Section Cross References
     communicate.o(i.Communicate_Init) refers to wifi.o(i.WiFi_TransmitString) for WiFi_TransmitString
     communicate.o(i.Communicate_Init) refers to communicate.o(i.Communicate_WiFiCheck) for Communicate_WiFiCheck
     communicate.o(i.Communicate_Init) refers to communicate.o(i.Communicate_WiFiConfig) for Communicate_WiFiConfig
-    communicate.o(i.Communicate_Init) refers to communicate.o(.bss) for ZigBee_RXBuffer
     communicate.o(i.Communicate_Init) refers to communicate.o(.data) for ZigBee_ID
+    communicate.o(i.Communicate_Init) refers to communicate.o(.bss) for ZigBee_RXBuffer
     communicate.o(i.Communicate_WiFiCheck) refers to communicate.o(i.Communicate_WiFiRX) for Communicate_WiFiRX
     communicate.o(i.Communicate_WiFiCheck) refers to strstr.o(.text) for strstr
     communicate.o(i.Communicate_WiFiCheck) refers to delay.o(i.Delay_ms) for Delay_ms
@@ -582,15 +595,18 @@ Section Cross References
     information.o(i.Information_SetDateTime) refers to stm32f4xx_pwr.o(i.PWR_BackupAccessCmd) for PWR_BackupAccessCmd
     information.o(i.Information_SetDateTime) refers to stm32f4xx_rtc.o(i.RTC_SetDate) for RTC_SetDate
     information.o(i.Information_SetDateTime) refers to stm32f4xx_rtc.o(i.RTC_SetTime) for RTC_SetTime
+    userlibrary.o(i.ShowerHost_DisplayHelp) refers to information.o(i.Information_GetDateTime) for Information_GetDateTime
     userlibrary.o(i.ShowerHost_DisplayHelp) refers to printfa.o(i.__0sprintf) for __2sprintf
     userlibrary.o(i.ShowerHost_DisplayHelp) refers to display.o(i.Display_ShowString) for Display_ShowString
     userlibrary.o(i.ShowerHost_DisplayHelp) refers to f2d.o(.text) for __aeabi_f2d
     userlibrary.o(i.ShowerHost_DisplayHelp) refers to userlibrary.o(.bss) for Host_Information
+    userlibrary.o(i.ShowerHost_DisplayNormal) refers to information.o(i.Information_GetDateTime) for Information_GetDateTime
     userlibrary.o(i.ShowerHost_DisplayNormal) refers to printfa.o(i.__0sprintf) for __2sprintf
     userlibrary.o(i.ShowerHost_DisplayNormal) refers to display.o(i.Display_ShowString) for Display_ShowString
     userlibrary.o(i.ShowerHost_DisplayNormal) refers to f2d.o(.text) for __aeabi_f2d
     userlibrary.o(i.ShowerHost_DisplayNormal) refers to userlibrary.o(.bss) for Host_Information
     userlibrary.o(i.ShowerHost_DisplayNormal) refers to userlibrary.o(.data) for cnt
+    userlibrary.o(i.ShowerHost_DisplayRepair) refers to information.o(i.Information_GetDateTime) for Information_GetDateTime
     userlibrary.o(i.ShowerHost_DisplayRepair) refers to printfa.o(i.__0sprintf) for __2sprintf
     userlibrary.o(i.ShowerHost_DisplayRepair) refers to display.o(i.Display_ShowString) for Display_ShowString
     userlibrary.o(i.ShowerHost_DisplayRepair) refers to f2d.o(.text) for __aeabi_f2d
@@ -604,10 +620,20 @@ Section Cross References
     userlibrary.o(i.ShowerHost_FanControl) refers to userlibrary.o(.bss) for Host_Information
     userlibrary.o(i.ShowerHost_GetHelpState) refers to userlibrary.o(.bss) for Host_Information
     userlibrary.o(i.ShowerHost_GetRepairState) refers to userlibrary.o(.bss) for Host_Information
-    userlibrary.o(i.ShowerHost_GetWiFiData) refers to printfa.o(i.__0sprintf) for __2sprintf
+    userlibrary.o(i.ShowerHost_GetWiFiData) refers to information.o(i.Information_GetTimeStamp) for Information_GetTimeStamp
     userlibrary.o(i.ShowerHost_GetWiFiData) refers to communicate.o(i.Communicate_WiFiRX) for Communicate_WiFiRX
+    userlibrary.o(i.ShowerHost_GetWiFiData) refers to printfa.o(i.__0sprintf) for __2sprintf
+    userlibrary.o(i.ShowerHost_GetWiFiData) refers to communicate.o(i.Communicate_WiFiTX) for Communicate_WiFiTX
+    userlibrary.o(i.ShowerHost_GetWiFiData) refers to userlibrary.o(i.ShowerHost_SetDevice) for ShowerHost_SetDevice
     userlibrary.o(i.ShowerHost_GetWiFiData) refers to userlibrary.o(.bss) for Host_Information
+    userlibrary.o(i.ShowerHost_GetWiFiData) refers to userlibrary.o(.data) for ShowerHostSerial
+    userlibrary.o(i.ShowerHost_GetZigBeeData) refers to information.o(i.Information_GetTimeStamp) for Information_GetTimeStamp
     userlibrary.o(i.ShowerHost_GetZigBeeData) refers to communicate.o(i.Communicate_ZigBeeRX) for Communicate_ZigBeeRX
+    userlibrary.o(i.ShowerHost_GetZigBeeData) refers to memcpya.o(.text) for __aeabi_memcpy
+    userlibrary.o(i.ShowerHost_GetZigBeeData) refers to printfa.o(i.__0sprintf) for __2sprintf
+    userlibrary.o(i.ShowerHost_GetZigBeeData) refers to communicate.o(i.Communicate_ZigBeeTX) for Communicate_ZigBeeTX
+    userlibrary.o(i.ShowerHost_GetZigBeeData) refers to userlibrary.o(.data) for ReceivedOnceFromTerminalFlag
+    userlibrary.o(i.ShowerHost_GetZigBeeData) refers to userlibrary.o(.bss) for Terminal_InformationFromTerminal
     userlibrary.o(i.ShowerHost_HumidityDetect) refers to temperaturehumiditysensor.o(i.Sensor_Convert) for Sensor_Convert
     userlibrary.o(i.ShowerHost_HumidityDetect) refers to temperaturehumiditysensor.o(i.Sensor_GetHumidity) for Sensor_GetHumidity
     userlibrary.o(i.ShowerHost_HumidityDetect) refers to userlibrary.o(.bss) for Host_Information
@@ -624,6 +650,7 @@ Section Cross References
     userlibrary.o(i.ShowerHost_Init) refers to temperaturehumiditysensor.o(i.TemperatureHumiditySensor_Init) for TemperatureHumiditySensor_Init
     userlibrary.o(i.ShowerHost_Init) refers to display.o(i.Display_ShowString) for Display_ShowString
     userlibrary.o(i.ShowerHost_Init) refers to delay.o(i.Delay_s) for Delay_s
+    userlibrary.o(i.ShowerHost_Init) refers to userlibrary.o(.data) for Communicate_ZigBeeGroupID
     userlibrary.o(i.ShowerHost_InitInformation) refers to information.o(i.Information_GetDateTime) for Information_GetDateTime
     userlibrary.o(i.ShowerHost_InitInformation) refers to userlibrary.o(.data) for ShowerHostSerial
     userlibrary.o(i.ShowerHost_InitInformation) refers to userlibrary.o(.bss) for Host_Information
@@ -636,6 +663,20 @@ Section Cross References
     userlibrary.o(i.ShowerHost_LightControl) refers to userlibrary.o(.bss) for Host_Information
     userlibrary.o(i.ShowerHost_LightDetect) refers to lightsensor.o(i.LightSensor_GetValue) for LightSensor_GetValue
     userlibrary.o(i.ShowerHost_LightDetect) refers to userlibrary.o(.bss) for Host_Information
+    userlibrary.o(i.ShowerHost_SendWiFiData) refers to userlibrary.o(i.Int32toInt8) for Int32toInt8
+    userlibrary.o(i.ShowerHost_SendWiFiData) refers to memcpya.o(.text) for __aeabi_memcpy
+    userlibrary.o(i.ShowerHost_SendWiFiData) refers to communicate.o(i.Communicate_WiFiTX) for Communicate_WiFiTX
+    userlibrary.o(i.ShowerHost_SendWiFiData) refers to userlibrary.o(i.ShowerHost_WiFiCheck) for ShowerHost_WiFiCheck
+    userlibrary.o(i.ShowerHost_SendWiFiData) refers to delay.o(i.Delay_ms) for Delay_ms
+    userlibrary.o(i.ShowerHost_SendWiFiData) refers to userlibrary.o(.data) for ShowerHostSerial
+    userlibrary.o(i.ShowerHost_SendWiFiData) refers to userlibrary.o(.bss) for Host_Information
+    userlibrary.o(i.ShowerHost_SendZigBeeData) refers to information.o(i.Information_GetTimeStamp) for Information_GetTimeStamp
+    userlibrary.o(i.ShowerHost_SendZigBeeData) refers to memcpya.o(.text) for __aeabi_memcpy
+    userlibrary.o(i.ShowerHost_SendZigBeeData) refers to communicate.o(i.Communicate_ZigBeeTX) for Communicate_ZigBeeTX
+    userlibrary.o(i.ShowerHost_SendZigBeeData) refers to delay.o(i.Delay_ms) for Delay_ms
+    userlibrary.o(i.ShowerHost_SendZigBeeData) refers to userlibrary.o(i.ShowerHost_ZigBeeCheck) for ShowerHost_ZigBeeCheck
+    userlibrary.o(i.ShowerHost_SendZigBeeData) refers to userlibrary.o(.data) for GetNewDataFromTerminal
+    userlibrary.o(i.ShowerHost_SendZigBeeData) refers to userlibrary.o(.bss) for Terminal_InformationFromCloud
     userlibrary.o(i.ShowerHost_SetDevice) refers to information.o(i.Information_SetDateTime) for Information_SetDateTime
     userlibrary.o(i.ShowerHost_SetDevice) refers to signaloutput.o(i.Fan_GetState) for Fan_GetState
     userlibrary.o(i.ShowerHost_SetDevice) refers to audio.o(i.Audio_Play) for Audio_Play
@@ -651,6 +692,11 @@ Section Cross References
     userlibrary.o(i.ShowerHost_TemperatureDetect) refers to temperaturehumiditysensor.o(i.Sensor_Convert) for Sensor_Convert
     userlibrary.o(i.ShowerHost_TemperatureDetect) refers to temperaturehumiditysensor.o(i.Sensor_GetTemperature) for Sensor_GetTemperature
     userlibrary.o(i.ShowerHost_TemperatureDetect) refers to userlibrary.o(.bss) for Host_Information
+    userlibrary.o(i.ShowerHost_WiFiCheck) refers to delay.o(i.Delay_ms) for Delay_ms
+    userlibrary.o(i.ShowerHost_WiFiCheck) refers to communicate.o(i.Communicate_WiFiRX) for Communicate_WiFiRX
+    userlibrary.o(i.ShowerHost_WiFiCheck) refers to userlibrary.o(.data) for ShowerHostSerial
+    userlibrary.o(i.ShowerHost_ZigBeeCheck) refers to delay.o(i.Delay_ms) for Delay_ms
+    userlibrary.o(i.ShowerHost_ZigBeeCheck) refers to communicate.o(i.Communicate_ZigBeeRX) for Communicate_ZigBeeRX
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
@@ -1719,18 +1765,18 @@ Removing Unused input sections from the image.
     Removing communicate.o(.rev16_text), (4 bytes).
     Removing communicate.o(.revsh_text), (4 bytes).
     Removing communicate.o(.rrx_text), (6 bytes).
-    Removing communicate.o(i.Communicate_WiFiTX), (32 bytes).
-    Removing communicate.o(i.Communicate_ZigBeeTX), (204 bytes).
     Removing information.o(.rev16_text), (4 bytes).
     Removing information.o(.revsh_text), (4 bytes).
     Removing information.o(.rrx_text), (6 bytes).
-    Removing information.o(i.Information_GetTimeStamp), (66 bytes).
     Removing userlibrary.o(.rev16_text), (4 bytes).
     Removing userlibrary.o(.revsh_text), (4 bytes).
     Removing userlibrary.o(.rrx_text), (6 bytes).
+    Removing userlibrary.o(i.Int8toInt32), (22 bytes).
+    Removing userlibrary.o(i.Int8toUint32), (22 bytes).
     Removing userlibrary.o(i.ShowerHost_LightControl), (120 bytes).
+    Removing userlibrary.o(i.Uint32toInt8), (20 bytes).
 
-800 unused section(s) (total 32656 bytes) removed from the image.
+800 unused section(s) (total 32418 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1742,46 +1788,46 @@ Image Symbol Table
 
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/fputc.c           0x00000000   Number         0  fputc.o ABSOLUTE
     ../clib/microlib/stdio/semi.s            0x00000000   Number         0  semi.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
-    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
     ../clib/microlib/string/strcpy.c         0x00000000   Number         0  strcpy.o ABSOLUTE
     ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
     ../clib/microlib/string/strstr.c         0x00000000   Number         0  strstr.o ABSOLUTE
-    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemip.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemip.o ABSOLUTE
     ../clib/microlib/time/localtime.c        0x00000000   Number         0  localtime_i.o ABSOLUTE
     ../clib/microlib/time/localtime.c        0x00000000   Number         0  localtime_w.o ABSOLUTE
     ../clib/microlib/time/mktime.c           0x00000000   Number         0  mktime.o ABSOLUTE
@@ -1922,207 +1968,221 @@ Image Symbol Table
     __lit__00000000                          0x080001a8   Data           4  entry2.o(.ARM.Collect$$$$00002712)
     .text                                    0x080001ac   Section       36  startup_stm32f401xx.o(.text)
     $v0                                      0x080001ac   Number         0  startup_stm32f401xx.o(.text)
-    .text                                    0x080001d0   Section        0  memcpya.o(.text)
-    .text                                    0x080001f4   Section        0  strstr.o(.text)
-    .text                                    0x08000218   Section        0  strlen.o(.text)
-    .text                                    0x08000226   Section        0  strcpy.o(.text)
-    .text                                    0x08000238   Section        0  f2d.o(.text)
-    .text                                    0x08000260   Section       48  cdrcmple.o(.text)
-    .text                                    0x08000290   Section        0  uidiv.o(.text)
-    .text                                    0x080002bc   Section        0  uldiv.o(.text)
-    .text                                    0x0800031e   Section        0  iusefp.o(.text)
-    .text                                    0x0800031e   Section        0  dadd.o(.text)
-    .text                                    0x0800046c   Section        0  dmul.o(.text)
-    .text                                    0x08000550   Section        0  ddiv.o(.text)
-    .text                                    0x0800062e   Section        0  dfixul.o(.text)
-    .text                                    0x08000660   Section       36  init.o(.text)
-    .text                                    0x08000684   Section        0  llshl.o(.text)
-    .text                                    0x080006a2   Section        0  llushr.o(.text)
-    .text                                    0x080006c2   Section        0  llsshr.o(.text)
-    .text                                    0x080006e6   Section        0  depilogue.o(.text)
-    i.ADC_ClearITPendingBit                  0x080007a0   Section        0  stm32f4xx_adc.o(i.ADC_ClearITPendingBit)
-    i.ADC_Cmd                                0x080007aa   Section        0  stm32f4xx_adc.o(i.ADC_Cmd)
-    i.ADC_CommonInit                         0x080007c0   Section        0  stm32f4xx_adc.o(i.ADC_CommonInit)
-    i.ADC_DeInit                             0x080007f0   Section        0  stm32f4xx_adc.o(i.ADC_DeInit)
-    i.ADC_GetConversionValue                 0x08000806   Section        0  stm32f4xx_adc.o(i.ADC_GetConversionValue)
-    i.ADC_GetITStatus                        0x0800080e   Section        0  stm32f4xx_adc.o(i.ADC_GetITStatus)
-    i.ADC_IRQHandler                         0x08000834   Section        0  lightsensor.o(i.ADC_IRQHandler)
-    i.ADC_ITConfig                           0x08000880   Section        0  stm32f4xx_adc.o(i.ADC_ITConfig)
-    i.ADC_Init                               0x080008a0   Section        0  stm32f4xx_adc.o(i.ADC_Init)
-    i.ADC_RegularChannelConfig               0x080008f4   Section        0  stm32f4xx_adc.o(i.ADC_RegularChannelConfig)
-    i.ADC_SoftwareStartConv                  0x080009ac   Section        0  stm32f4xx_adc.o(i.ADC_SoftwareStartConv)
-    i.Audio_Play                             0x080009b6   Section        0  audio.o(i.Audio_Play)
-    i.Audio_Transmit16Bits                   0x080009c2   Section        0  audio.o(i.Audio_Transmit16Bits)
-    i.Audio_TransmitByte                     0x080009e4   Section        0  audio.o(i.Audio_TransmitByte)
-    i.Audio_Volume                           0x08000a54   Section        0  audio.o(i.Audio_Volume)
-    i.BusFault_Handler                       0x08000a66   Section        0  stm32f4xx_it.o(i.BusFault_Handler)
-    i.Button_Init                            0x08000a6c   Section        0  button.o(i.Button_Init)
-    i.Communicate_Init                       0x08000b38   Section        0  communicate.o(i.Communicate_Init)
-    i.Communicate_WiFiCheck                  0x08000c44   Section        0  communicate.o(i.Communicate_WiFiCheck)
-    i.Communicate_WiFiConfig                 0x08000c7c   Section        0  communicate.o(i.Communicate_WiFiConfig)
-    i.Communicate_WiFiRX                     0x08000ee0   Section        0  communicate.o(i.Communicate_WiFiRX)
-    i.Communicate_ZigBeeCheck                0x08000f04   Section        0  communicate.o(i.Communicate_ZigBeeCheck)
-    i.Communicate_ZigBeeConfig               0x08000f3c   Section        0  communicate.o(i.Communicate_ZigBeeConfig)
-    i.Communicate_ZigBeeRX                   0x08001168   Section        0  communicate.o(i.Communicate_ZigBeeRX)
-    i.DMA2_Stream1_IRQHandler                0x0800118c   Section        0  wifi.o(i.DMA2_Stream1_IRQHandler)
-    i.DMA2_Stream5_IRQHandler                0x080011bc   Section        0  zigbee.o(i.DMA2_Stream5_IRQHandler)
-    i.DMA2_Stream6_IRQHandler                0x080011ec   Section        0  wifi.o(i.DMA2_Stream6_IRQHandler)
-    i.DMA2_Stream7_IRQHandler                0x08001214   Section        0  zigbee.o(i.DMA2_Stream7_IRQHandler)
-    i.DMA_ClearITPendingBit                  0x0800123c   Section        0  stm32f4xx_dma.o(i.DMA_ClearITPendingBit)
-    i.DMA_Cmd                                0x08001270   Section        0  stm32f4xx_dma.o(i.DMA_Cmd)
-    i.DMA_GetCurrDataCounter                 0x08001286   Section        0  stm32f4xx_dma.o(i.DMA_GetCurrDataCounter)
-    i.DMA_GetITStatus                        0x08001290   Section        0  stm32f4xx_dma.o(i.DMA_GetITStatus)
-    i.DMA_ITConfig                           0x080012f4   Section        0  stm32f4xx_dma.o(i.DMA_ITConfig)
-    i.DMA_Init                               0x08001330   Section        0  stm32f4xx_dma.o(i.DMA_Init)
-    i.DMA_SetCurrDataCounter                 0x08001388   Section        0  stm32f4xx_dma.o(i.DMA_SetCurrDataCounter)
-    i.DebugMon_Handler                       0x0800138c   Section        0  stm32f4xx_it.o(i.DebugMon_Handler)
-    i.Delay_ms                               0x08001390   Section        0  delay.o(i.Delay_ms)
-    i.Delay_s                                0x080013d8   Section        0  delay.o(i.Delay_s)
-    i.Delay_us                               0x080013f0   Section        0  delay.o(i.Delay_us)
-    i.Display_Clear                          0x0800143c   Section        0  display.o(i.Display_Clear)
-    i.Display_HardwareInit                   0x0800147c   Section        0  display.o(i.Display_HardwareInit)
-    i.Display_Init                           0x080014e0   Section        0  display.o(i.Display_Init)
-    i.Display_SetPosition                    0x080015c0   Section        0  display.o(i.Display_SetPosition)
-    i.Display_ShowChar                       0x080015ec   Section        0  display.o(i.Display_ShowChar)
-    i.Display_ShowString                     0x080016a8   Section        0  display.o(i.Display_ShowString)
-    i.EXTI9_5_IRQHandler                     0x08001728   Section        0  button.o(i.EXTI9_5_IRQHandler)
-    i.EXTI_ClearITPendingBit                 0x08001760   Section        0  stm32f4xx_exti.o(i.EXTI_ClearITPendingBit)
-    i.EXTI_GetITStatus                       0x0800176c   Section        0  stm32f4xx_exti.o(i.EXTI_GetITStatus)
-    i.EXTI_Init                              0x08001784   Section        0  stm32f4xx_exti.o(i.EXTI_Init)
-    i.Fan_GetState                           0x08001818   Section        0  signaloutput.o(i.Fan_GetState)
-    i.Fan_Init                               0x08001824   Section        0  signaloutput.o(i.Fan_Init)
-    i.Fan_Start                              0x08001858   Section        0  signaloutput.o(i.Fan_Start)
-    i.Fan_Stop                               0x08001874   Section        0  signaloutput.o(i.Fan_Stop)
-    i.GPIO_Init                              0x08001890   Section        0  stm32f4xx_gpio.o(i.GPIO_Init)
-    i.GPIO_PinAFConfig                       0x08001920   Section        0  stm32f4xx_gpio.o(i.GPIO_PinAFConfig)
-    i.GPIO_ReadInputDataBit                  0x08001966   Section        0  stm32f4xx_gpio.o(i.GPIO_ReadInputDataBit)
-    i.GPIO_ResetBits                         0x08001978   Section        0  stm32f4xx_gpio.o(i.GPIO_ResetBits)
-    i.GPIO_SetBits                           0x0800197c   Section        0  stm32f4xx_gpio.o(i.GPIO_SetBits)
-    i.HardFault_Handler                      0x08001980   Section        0  stm32f4xx_it.o(i.HardFault_Handler)
-    i.I2C_CheckACK                           0x08001984   Section        0  display.o(i.I2C_CheckACK)
-    i.I2C_Start                              0x080019d4   Section        0  display.o(i.I2C_Start)
-    i.I2C_Stop                               0x08001a08   Section        0  display.o(i.I2C_Stop)
-    i.I2C_TransmitByte                       0x08001a3c   Section        0  display.o(i.I2C_TransmitByte)
-    i.I2C_TransmitDataCommand                0x08001a98   Section        0  display.o(i.I2C_TransmitDataCommand)
-    i.Information_GetDateTime                0x08001ae4   Section        0  information.o(i.Information_GetDateTime)
-    i.Information_InitializeRTC              0x08001afc   Section        0  information.o(i.Information_InitializeRTC)
-    i.Information_SetDateTime                0x08001b9c   Section        0  information.o(i.Information_SetDateTime)
-    i.LightSensor_GetValue                   0x08001bc8   Section        0  lightsensor.o(i.LightSensor_GetValue)
-    i.LightSensor_Init                       0x08001c30   Section        0  lightsensor.o(i.LightSensor_Init)
-    i.Light_GetState                         0x08001cdc   Section        0  signaloutput.o(i.Light_GetState)
-    i.Light_Init                             0x08001ce8   Section        0  signaloutput.o(i.Light_Init)
-    i.Light_Start                            0x08001d1c   Section        0  signaloutput.o(i.Light_Start)
-    i.Light_Stop                             0x08001d38   Section        0  signaloutput.o(i.Light_Stop)
-    i.MemManage_Handler                      0x08001d54   Section        0  stm32f4xx_it.o(i.MemManage_Handler)
-    i.NMI_Handler                            0x08001d58   Section        0  stm32f4xx_it.o(i.NMI_Handler)
-    i.NVIC_Init                              0x08001d5c   Section        0  misc.o(i.NVIC_Init)
-    i.PWR_BackupAccessCmd                    0x08001dd4   Section        0  stm32f4xx_pwr.o(i.PWR_BackupAccessCmd)
-    i.PendSV_Handler                         0x08001de0   Section        0  stm32f4xx_it.o(i.PendSV_Handler)
-    i.Pin_Input                              0x08001de4   Section        0  temperaturehumiditysensor.o(i.Pin_Input)
-    i.Pin_Output                             0x08001e0c   Section        0  temperaturehumiditysensor.o(i.Pin_Output)
-    i.RCC_AHB1PeriphClockCmd                 0x08001e40   Section        0  stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd)
-    i.RCC_APB1PeriphClockCmd                 0x08001e60   Section        0  stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd)
-    i.RCC_APB2PeriphClockCmd                 0x08001e80   Section        0  stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd)
-    i.RCC_APB2PeriphResetCmd                 0x08001ea0   Section        0  stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd)
-    i.RCC_GetClocksFreq                      0x08001ec0   Section        0  stm32f4xx_rcc.o(i.RCC_GetClocksFreq)
-    i.RCC_GetFlagStatus                      0x08001fa8   Section        0  stm32f4xx_rcc.o(i.RCC_GetFlagStatus)
-    i.RCC_LSEConfig                          0x08001fe8   Section        0  stm32f4xx_rcc.o(i.RCC_LSEConfig)
-    i.RCC_RTCCLKCmd                          0x08002014   Section        0  stm32f4xx_rcc.o(i.RCC_RTCCLKCmd)
-    i.RCC_RTCCLKConfig                       0x08002020   Section        0  stm32f4xx_rcc.o(i.RCC_RTCCLKConfig)
-    i.RTC_Bcd2ToByte                         0x0800205c   Section        0  stm32f4xx_rtc.o(i.RTC_Bcd2ToByte)
-    RTC_Bcd2ToByte                           0x0800205d   Thumb Code    22  stm32f4xx_rtc.o(i.RTC_Bcd2ToByte)
-    i.RTC_ByteToBcd2                         0x08002072   Section        0  stm32f4xx_rtc.o(i.RTC_ByteToBcd2)
-    RTC_ByteToBcd2                           0x08002073   Thumb Code    28  stm32f4xx_rtc.o(i.RTC_ByteToBcd2)
-    i.RTC_EnterInitMode                      0x08002090   Section        0  stm32f4xx_rtc.o(i.RTC_EnterInitMode)
-    i.RTC_ExitInitMode                       0x080020e0   Section        0  stm32f4xx_rtc.o(i.RTC_ExitInitMode)
-    i.RTC_GetDate                            0x080020f4   Section        0  stm32f4xx_rtc.o(i.RTC_GetDate)
-    i.RTC_GetTime                            0x08002140   Section        0  stm32f4xx_rtc.o(i.RTC_GetTime)
-    i.RTC_Init                               0x08002190   Section        0  stm32f4xx_rtc.o(i.RTC_Init)
-    i.RTC_SetDate                            0x080021f4   Section        0  stm32f4xx_rtc.o(i.RTC_SetDate)
-    i.RTC_SetTime                            0x080022bc   Section        0  stm32f4xx_rtc.o(i.RTC_SetTime)
-    i.RTC_WaitForSynchro                     0x0800238c   Section        0  stm32f4xx_rtc.o(i.RTC_WaitForSynchro)
-    i.RTC_WriteProtectionCmd                 0x080023ec   Section        0  stm32f4xx_rtc.o(i.RTC_WriteProtectionCmd)
-    i.SVC_Handler                            0x08002408   Section        0  stm32f4xx_it.o(i.SVC_Handler)
-    i.SYSCFG_EXTILineConfig                  0x0800240c   Section        0  stm32f4xx_syscfg.o(i.SYSCFG_EXTILineConfig)
-    i.Sensor_Check                           0x0800244c   Section        0  temperaturehumiditysensor.o(i.Sensor_Check)
-    i.Sensor_Convert                         0x08002488   Section        0  temperaturehumiditysensor.o(i.Sensor_Convert)
-    i.Sensor_GetHumidity                     0x080024ec   Section        0  temperaturehumiditysensor.o(i.Sensor_GetHumidity)
-    i.Sensor_GetTemperature                  0x080025ec   Section        0  temperaturehumiditysensor.o(i.Sensor_GetTemperature)
-    i.Sensor_Getstate                        0x08002648   Section        0  temperaturehumiditysensor.o(i.Sensor_Getstate)
-    i.Sensor_ReadBit                         0x0800269c   Section        0  temperaturehumiditysensor.o(i.Sensor_ReadBit)
-    i.Sensor_ReadByte                        0x080026e0   Section        0  temperaturehumiditysensor.o(i.Sensor_ReadByte)
-    i.Sensor_Reset                           0x08002700   Section        0  temperaturehumiditysensor.o(i.Sensor_Reset)
-    i.Sensor_WriteBit                        0x0800272c   Section        0  temperaturehumiditysensor.o(i.Sensor_WriteBit)
-    i.Sensor_WriteByte                       0x08002778   Section        0  temperaturehumiditysensor.o(i.Sensor_WriteByte)
-    i.SetSysClock                            0x08002794   Section        0  system_stm32f4xx.o(i.SetSysClock)
-    SetSysClock                              0x08002795   Thumb Code   216  system_stm32f4xx.o(i.SetSysClock)
-    i.ShowerHost_DisplayHelp                 0x0800287c   Section        0  userlibrary.o(i.ShowerHost_DisplayHelp)
-    i.ShowerHost_DisplayNormal               0x08002a40   Section        0  userlibrary.o(i.ShowerHost_DisplayNormal)
-    i.ShowerHost_DisplayRepair               0x08002c6c   Section        0  userlibrary.o(i.ShowerHost_DisplayRepair)
-    i.ShowerHost_FanControl                  0x08002e30   Section        0  userlibrary.o(i.ShowerHost_FanControl)
-    i.ShowerHost_GetHelpState                0x08002e98   Section        0  userlibrary.o(i.ShowerHost_GetHelpState)
-    i.ShowerHost_GetRepairState              0x08002eb0   Section        0  userlibrary.o(i.ShowerHost_GetRepairState)
-    i.ShowerHost_GetWiFiData                 0x08002ec8   Section        0  userlibrary.o(i.ShowerHost_GetWiFiData)
-    i.ShowerHost_GetZigBeeData               0x08002f18   Section        0  userlibrary.o(i.ShowerHost_GetZigBeeData)
-    i.ShowerHost_HumidityDetect              0x08002f50   Section        0  userlibrary.o(i.ShowerHost_HumidityDetect)
-    i.ShowerHost_Init                        0x08002f68   Section        0  userlibrary.o(i.ShowerHost_Init)
-    i.ShowerHost_InitInformation             0x08002fd8   Section        0  userlibrary.o(i.ShowerHost_InitInformation)
-    i.ShowerHost_LightDetect                 0x08003028   Section        0  userlibrary.o(i.ShowerHost_LightDetect)
-    i.ShowerHost_SetDevice                   0x0800303c   Section        0  userlibrary.o(i.ShowerHost_SetDevice)
-    i.ShowerHost_SetHelpState                0x080030c8   Section        0  userlibrary.o(i.ShowerHost_SetHelpState)
-    i.ShowerHost_SetRepairState              0x080030dc   Section        0  userlibrary.o(i.ShowerHost_SetRepairState)
-    i.ShowerHost_TemperatureDetect           0x080030f0   Section        0  userlibrary.o(i.ShowerHost_TemperatureDetect)
-    i.SignalOutput_Init                      0x08003108   Section        0  signaloutput.o(i.SignalOutput_Init)
-    i.SysTick_Handler                        0x08003114   Section        0  stm32f4xx_it.o(i.SysTick_Handler)
-    i.SystemInit                             0x08003118   Section        0  system_stm32f4xx.o(i.SystemInit)
-    i.TIM3_IRQHandler                        0x08003180   Section        0  button.o(i.TIM3_IRQHandler)
-    i.TIM3_Init                              0x080031c8   Section        0  button.o(i.TIM3_Init)
-    i.TIM4_IRQHandler                        0x0800321c   Section        0  button.o(i.TIM4_IRQHandler)
-    i.TIM4_Init                              0x08003268   Section        0  button.o(i.TIM4_Init)
-    i.TIM_ClearITPendingBit                  0x080032bc   Section        0  stm32f4xx_tim.o(i.TIM_ClearITPendingBit)
-    i.TIM_Cmd                                0x080032c2   Section        0  stm32f4xx_tim.o(i.TIM_Cmd)
-    i.TIM_GetITStatus                        0x080032da   Section        0  stm32f4xx_tim.o(i.TIM_GetITStatus)
-    i.TIM_ITConfig                           0x080032fc   Section        0  stm32f4xx_tim.o(i.TIM_ITConfig)
-    i.TIM_SetCounter                         0x0800330e   Section        0  stm32f4xx_tim.o(i.TIM_SetCounter)
-    i.TIM_TimeBaseInit                       0x08003314   Section        0  stm32f4xx_tim.o(i.TIM_TimeBaseInit)
-    i.TemperatureHumiditySensor_Init         0x08003398   Section        0  temperaturehumiditysensor.o(i.TemperatureHumiditySensor_Init)
-    i.USART1_DMAReceiveInit                  0x080033dc   Section        0  zigbee.o(i.USART1_DMAReceiveInit)
-    i.USART1_DMATransmitInit                 0x08003474   Section        0  zigbee.o(i.USART1_DMATransmitInit)
-    i.USART1_IRQHandler                      0x08003508   Section        0  zigbee.o(i.USART1_IRQHandler)
-    i.USART1_Init                            0x08003548   Section        0  zigbee.o(i.USART1_Init)
-    i.USART6_DMAReceiveInit                  0x080035c8   Section        0  wifi.o(i.USART6_DMAReceiveInit)
-    i.USART6_DMATransmitInit                 0x08003660   Section        0  wifi.o(i.USART6_DMATransmitInit)
-    i.USART6_IRQHandler                      0x080036f4   Section        0  wifi.o(i.USART6_IRQHandler)
-    i.USART6_Init                            0x08003734   Section        0  wifi.o(i.USART6_Init)
-    i.USART_Cmd                              0x080037b4   Section        0  stm32f4xx_usart.o(i.USART_Cmd)
-    i.USART_DMACmd                           0x080037cc   Section        0  stm32f4xx_usart.o(i.USART_DMACmd)
-    i.USART_GetITStatus                      0x080037de   Section        0  stm32f4xx_usart.o(i.USART_GetITStatus)
-    i.USART_ITConfig                         0x08003832   Section        0  stm32f4xx_usart.o(i.USART_ITConfig)
-    i.USART_Init                             0x0800387c   Section        0  stm32f4xx_usart.o(i.USART_Init)
-    i.USART_ReceiveData                      0x08003950   Section        0  stm32f4xx_usart.o(i.USART_ReceiveData)
-    i.UsageFault_Handler                     0x0800395a   Section        0  stm32f4xx_it.o(i.UsageFault_Handler)
-    i.WiFi_Init                              0x08003960   Section        0  wifi.o(i.WiFi_Init)
-    i.WiFi_ReceiveString                     0x080039dc   Section        0  wifi.o(i.WiFi_ReceiveString)
-    i.WiFi_TransmitString                    0x08003a1c   Section        0  wifi.o(i.WiFi_TransmitString)
-    i.ZigBee_Init                            0x08003a74   Section        0  zigbee.o(i.ZigBee_Init)
-    i.ZigBee_ReceiveString                   0x08003af4   Section        0  zigbee.o(i.ZigBee_ReceiveString)
-    i.ZigBee_TransmitString                  0x08003b34   Section        0  zigbee.o(i.ZigBee_TransmitString)
-    i.__0sprintf                             0x08003b8c   Section        0  printfa.o(i.__0sprintf)
-    i.__scatterload_copy                     0x08003bb4   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08003bc2   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08003bc4   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._fp_digits                             0x08003bd4   Section        0  printfa.o(i._fp_digits)
-    _fp_digits                               0x08003bd5   Thumb Code   366  printfa.o(i._fp_digits)
-    i._printf_core                           0x08003d58   Section        0  printfa.o(i._printf_core)
-    _printf_core                             0x08003d59   Thumb Code  1704  printfa.o(i._printf_core)
-    i._printf_post_padding                   0x0800440c   Section        0  printfa.o(i._printf_post_padding)
-    _printf_post_padding                     0x0800440d   Thumb Code    36  printfa.o(i._printf_post_padding)
-    i._printf_pre_padding                    0x08004430   Section        0  printfa.o(i._printf_pre_padding)
-    _printf_pre_padding                      0x08004431   Thumb Code    46  printfa.o(i._printf_pre_padding)
-    i._sputc                                 0x0800445e   Section        0  printfa.o(i._sputc)
-    _sputc                                   0x0800445f   Thumb Code    10  printfa.o(i._sputc)
-    i.main                                   0x08004468   Section        0  main.o(i.main)
-    .constdata                               0x080044ae   Section     2072  display.o(.constdata)
+    .text                                    0x080001d0   Section        0  mktime.o(.text)
+    .text                                    0x08000278   Section        0  memcpya.o(.text)
+    .text                                    0x0800029c   Section        0  strstr.o(.text)
+    .text                                    0x080002c0   Section        0  strlen.o(.text)
+    .text                                    0x080002ce   Section        0  strcpy.o(.text)
+    .text                                    0x080002e0   Section        0  f2d.o(.text)
+    .text                                    0x08000308   Section       48  cdrcmple.o(.text)
+    .text                                    0x08000338   Section        0  uidiv.o(.text)
+    .text                                    0x08000364   Section        0  uldiv.o(.text)
+    .text                                    0x080003c8   Section        0  localtime_i.o(.text)
+    .text                                    0x08000454   Section        0  dadd.o(.text)
+    .text                                    0x08000454   Section        0  iusefp.o(.text)
+    .text                                    0x080005a2   Section        0  dmul.o(.text)
+    .text                                    0x08000686   Section        0  ddiv.o(.text)
+    .text                                    0x08000764   Section        0  dfixul.o(.text)
+    .text                                    0x08000794   Section       36  init.o(.text)
+    .text                                    0x080007b8   Section        0  llshl.o(.text)
+    .text                                    0x080007d6   Section        0  llushr.o(.text)
+    .text                                    0x080007f6   Section        0  llsshr.o(.text)
+    .text                                    0x0800081a   Section        0  depilogue.o(.text)
+    i.ADC_ClearITPendingBit                  0x080008d4   Section        0  stm32f4xx_adc.o(i.ADC_ClearITPendingBit)
+    i.ADC_Cmd                                0x080008de   Section        0  stm32f4xx_adc.o(i.ADC_Cmd)
+    i.ADC_CommonInit                         0x080008f4   Section        0  stm32f4xx_adc.o(i.ADC_CommonInit)
+    i.ADC_DeInit                             0x08000924   Section        0  stm32f4xx_adc.o(i.ADC_DeInit)
+    i.ADC_GetConversionValue                 0x0800093a   Section        0  stm32f4xx_adc.o(i.ADC_GetConversionValue)
+    i.ADC_GetITStatus                        0x08000942   Section        0  stm32f4xx_adc.o(i.ADC_GetITStatus)
+    i.ADC_IRQHandler                         0x08000968   Section        0  lightsensor.o(i.ADC_IRQHandler)
+    i.ADC_ITConfig                           0x080009b4   Section        0  stm32f4xx_adc.o(i.ADC_ITConfig)
+    i.ADC_Init                               0x080009d4   Section        0  stm32f4xx_adc.o(i.ADC_Init)
+    i.ADC_RegularChannelConfig               0x08000a28   Section        0  stm32f4xx_adc.o(i.ADC_RegularChannelConfig)
+    i.ADC_SoftwareStartConv                  0x08000ae0   Section        0  stm32f4xx_adc.o(i.ADC_SoftwareStartConv)
+    i.Audio_Play                             0x08000aea   Section        0  audio.o(i.Audio_Play)
+    i.Audio_Transmit16Bits                   0x08000af6   Section        0  audio.o(i.Audio_Transmit16Bits)
+    i.Audio_TransmitByte                     0x08000b18   Section        0  audio.o(i.Audio_TransmitByte)
+    i.Audio_Volume                           0x08000b88   Section        0  audio.o(i.Audio_Volume)
+    i.BusFault_Handler                       0x08000b9a   Section        0  stm32f4xx_it.o(i.BusFault_Handler)
+    i.Button_Init                            0x08000ba0   Section        0  button.o(i.Button_Init)
+    i.Communicate_Init                       0x08000c6c   Section        0  communicate.o(i.Communicate_Init)
+    i.Communicate_WiFiCheck                  0x08000da8   Section        0  communicate.o(i.Communicate_WiFiCheck)
+    i.Communicate_WiFiConfig                 0x08000de4   Section        0  communicate.o(i.Communicate_WiFiConfig)
+    i.Communicate_WiFiRX                     0x0800104c   Section        0  communicate.o(i.Communicate_WiFiRX)
+    i.Communicate_WiFiTX                     0x08001070   Section        0  communicate.o(i.Communicate_WiFiTX)
+    i.Communicate_ZigBeeCheck                0x08001090   Section        0  communicate.o(i.Communicate_ZigBeeCheck)
+    i.Communicate_ZigBeeConfig               0x080010cc   Section        0  communicate.o(i.Communicate_ZigBeeConfig)
+    i.Communicate_ZigBeeRX                   0x080012fc   Section        0  communicate.o(i.Communicate_ZigBeeRX)
+    i.Communicate_ZigBeeTX                   0x08001320   Section        0  communicate.o(i.Communicate_ZigBeeTX)
+    i.DMA2_Stream1_IRQHandler                0x080013fc   Section        0  wifi.o(i.DMA2_Stream1_IRQHandler)
+    i.DMA2_Stream5_IRQHandler                0x08001458   Section        0  zigbee.o(i.DMA2_Stream5_IRQHandler)
+    i.DMA2_Stream6_IRQHandler                0x080014b4   Section        0  wifi.o(i.DMA2_Stream6_IRQHandler)
+    i.DMA2_Stream7_IRQHandler                0x080014dc   Section        0  zigbee.o(i.DMA2_Stream7_IRQHandler)
+    i.DMA_ClearITPendingBit                  0x08001504   Section        0  stm32f4xx_dma.o(i.DMA_ClearITPendingBit)
+    i.DMA_Cmd                                0x08001538   Section        0  stm32f4xx_dma.o(i.DMA_Cmd)
+    i.DMA_GetCurrDataCounter                 0x0800154e   Section        0  stm32f4xx_dma.o(i.DMA_GetCurrDataCounter)
+    i.DMA_GetITStatus                        0x08001558   Section        0  stm32f4xx_dma.o(i.DMA_GetITStatus)
+    i.DMA_ITConfig                           0x080015bc   Section        0  stm32f4xx_dma.o(i.DMA_ITConfig)
+    i.DMA_Init                               0x080015f8   Section        0  stm32f4xx_dma.o(i.DMA_Init)
+    i.DMA_SetCurrDataCounter                 0x08001650   Section        0  stm32f4xx_dma.o(i.DMA_SetCurrDataCounter)
+    i.DebugMon_Handler                       0x08001654   Section        0  stm32f4xx_it.o(i.DebugMon_Handler)
+    i.Delay_ms                               0x08001658   Section        0  delay.o(i.Delay_ms)
+    i.Delay_s                                0x080016a0   Section        0  delay.o(i.Delay_s)
+    i.Delay_us                               0x080016b8   Section        0  delay.o(i.Delay_us)
+    i.Display_Clear                          0x08001704   Section        0  display.o(i.Display_Clear)
+    i.Display_HardwareInit                   0x08001744   Section        0  display.o(i.Display_HardwareInit)
+    i.Display_Init                           0x080017a8   Section        0  display.o(i.Display_Init)
+    i.Display_SetPosition                    0x08001888   Section        0  display.o(i.Display_SetPosition)
+    i.Display_ShowChar                       0x080018b4   Section        0  display.o(i.Display_ShowChar)
+    i.Display_ShowString                     0x08001970   Section        0  display.o(i.Display_ShowString)
+    i.EXTI9_5_IRQHandler                     0x080019f0   Section        0  button.o(i.EXTI9_5_IRQHandler)
+    i.EXTI_ClearITPendingBit                 0x08001a28   Section        0  stm32f4xx_exti.o(i.EXTI_ClearITPendingBit)
+    i.EXTI_GetITStatus                       0x08001a34   Section        0  stm32f4xx_exti.o(i.EXTI_GetITStatus)
+    i.EXTI_Init                              0x08001a4c   Section        0  stm32f4xx_exti.o(i.EXTI_Init)
+    i.Fan_GetState                           0x08001ae0   Section        0  signaloutput.o(i.Fan_GetState)
+    i.Fan_Init                               0x08001aec   Section        0  signaloutput.o(i.Fan_Init)
+    i.Fan_Start                              0x08001b20   Section        0  signaloutput.o(i.Fan_Start)
+    i.Fan_Stop                               0x08001b3c   Section        0  signaloutput.o(i.Fan_Stop)
+    i.GPIO_Init                              0x08001b58   Section        0  stm32f4xx_gpio.o(i.GPIO_Init)
+    i.GPIO_PinAFConfig                       0x08001be8   Section        0  stm32f4xx_gpio.o(i.GPIO_PinAFConfig)
+    i.GPIO_ReadInputDataBit                  0x08001c2e   Section        0  stm32f4xx_gpio.o(i.GPIO_ReadInputDataBit)
+    i.GPIO_ResetBits                         0x08001c40   Section        0  stm32f4xx_gpio.o(i.GPIO_ResetBits)
+    i.GPIO_SetBits                           0x08001c44   Section        0  stm32f4xx_gpio.o(i.GPIO_SetBits)
+    i.HardFault_Handler                      0x08001c48   Section        0  stm32f4xx_it.o(i.HardFault_Handler)
+    i.I2C_CheckACK                           0x08001c4c   Section        0  display.o(i.I2C_CheckACK)
+    i.I2C_Start                              0x08001c9c   Section        0  display.o(i.I2C_Start)
+    i.I2C_Stop                               0x08001cd0   Section        0  display.o(i.I2C_Stop)
+    i.I2C_TransmitByte                       0x08001d04   Section        0  display.o(i.I2C_TransmitByte)
+    i.I2C_TransmitDataCommand                0x08001d60   Section        0  display.o(i.I2C_TransmitDataCommand)
+    i.Information_GetDateTime                0x08001dac   Section        0  information.o(i.Information_GetDateTime)
+    i.Information_GetTimeStamp               0x08001dc4   Section        0  information.o(i.Information_GetTimeStamp)
+    i.Information_InitializeRTC              0x08001e06   Section        0  information.o(i.Information_InitializeRTC)
+    i.Information_SetDateTime                0x08001ea6   Section        0  information.o(i.Information_SetDateTime)
+    i.Int32toInt8                            0x08001ed2   Section        0  userlibrary.o(i.Int32toInt8)
+    i.LightSensor_GetValue                   0x08001ee8   Section        0  lightsensor.o(i.LightSensor_GetValue)
+    i.LightSensor_Init                       0x08001f50   Section        0  lightsensor.o(i.LightSensor_Init)
+    i.Light_GetState                         0x08002010   Section        0  signaloutput.o(i.Light_GetState)
+    i.Light_Init                             0x0800201c   Section        0  signaloutput.o(i.Light_Init)
+    i.Light_Start                            0x08002050   Section        0  signaloutput.o(i.Light_Start)
+    i.Light_Stop                             0x0800206c   Section        0  signaloutput.o(i.Light_Stop)
+    i.MemManage_Handler                      0x08002088   Section        0  stm32f4xx_it.o(i.MemManage_Handler)
+    i.NMI_Handler                            0x0800208c   Section        0  stm32f4xx_it.o(i.NMI_Handler)
+    i.NVIC_Init                              0x08002090   Section        0  misc.o(i.NVIC_Init)
+    i.PWR_BackupAccessCmd                    0x08002108   Section        0  stm32f4xx_pwr.o(i.PWR_BackupAccessCmd)
+    i.PendSV_Handler                         0x08002114   Section        0  stm32f4xx_it.o(i.PendSV_Handler)
+    i.Pin_Input                              0x08002118   Section        0  temperaturehumiditysensor.o(i.Pin_Input)
+    i.Pin_Output                             0x08002140   Section        0  temperaturehumiditysensor.o(i.Pin_Output)
+    i.RCC_AHB1PeriphClockCmd                 0x08002174   Section        0  stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd)
+    i.RCC_APB1PeriphClockCmd                 0x08002194   Section        0  stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd)
+    i.RCC_APB2PeriphClockCmd                 0x080021b4   Section        0  stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd)
+    i.RCC_APB2PeriphResetCmd                 0x080021d4   Section        0  stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd)
+    i.RCC_GetClocksFreq                      0x080021f4   Section        0  stm32f4xx_rcc.o(i.RCC_GetClocksFreq)
+    i.RCC_GetFlagStatus                      0x080022dc   Section        0  stm32f4xx_rcc.o(i.RCC_GetFlagStatus)
+    i.RCC_LSEConfig                          0x0800231c   Section        0  stm32f4xx_rcc.o(i.RCC_LSEConfig)
+    i.RCC_RTCCLKCmd                          0x08002348   Section        0  stm32f4xx_rcc.o(i.RCC_RTCCLKCmd)
+    i.RCC_RTCCLKConfig                       0x08002354   Section        0  stm32f4xx_rcc.o(i.RCC_RTCCLKConfig)
+    i.RTC_Bcd2ToByte                         0x08002390   Section        0  stm32f4xx_rtc.o(i.RTC_Bcd2ToByte)
+    RTC_Bcd2ToByte                           0x08002391   Thumb Code    22  stm32f4xx_rtc.o(i.RTC_Bcd2ToByte)
+    i.RTC_ByteToBcd2                         0x080023a6   Section        0  stm32f4xx_rtc.o(i.RTC_ByteToBcd2)
+    RTC_ByteToBcd2                           0x080023a7   Thumb Code    28  stm32f4xx_rtc.o(i.RTC_ByteToBcd2)
+    i.RTC_EnterInitMode                      0x080023c4   Section        0  stm32f4xx_rtc.o(i.RTC_EnterInitMode)
+    i.RTC_ExitInitMode                       0x08002414   Section        0  stm32f4xx_rtc.o(i.RTC_ExitInitMode)
+    i.RTC_GetDate                            0x08002428   Section        0  stm32f4xx_rtc.o(i.RTC_GetDate)
+    i.RTC_GetTime                            0x08002474   Section        0  stm32f4xx_rtc.o(i.RTC_GetTime)
+    i.RTC_Init                               0x080024c4   Section        0  stm32f4xx_rtc.o(i.RTC_Init)
+    i.RTC_SetDate                            0x08002528   Section        0  stm32f4xx_rtc.o(i.RTC_SetDate)
+    i.RTC_SetTime                            0x080025f0   Section        0  stm32f4xx_rtc.o(i.RTC_SetTime)
+    i.RTC_WaitForSynchro                     0x080026c0   Section        0  stm32f4xx_rtc.o(i.RTC_WaitForSynchro)
+    i.RTC_WriteProtectionCmd                 0x08002720   Section        0  stm32f4xx_rtc.o(i.RTC_WriteProtectionCmd)
+    i.SVC_Handler                            0x0800273c   Section        0  stm32f4xx_it.o(i.SVC_Handler)
+    i.SYSCFG_EXTILineConfig                  0x08002740   Section        0  stm32f4xx_syscfg.o(i.SYSCFG_EXTILineConfig)
+    i.Sensor_Check                           0x08002780   Section        0  temperaturehumiditysensor.o(i.Sensor_Check)
+    i.Sensor_Convert                         0x080027bc   Section        0  temperaturehumiditysensor.o(i.Sensor_Convert)
+    i.Sensor_GetHumidity                     0x08002820   Section        0  temperaturehumiditysensor.o(i.Sensor_GetHumidity)
+    i.Sensor_GetTemperature                  0x08002920   Section        0  temperaturehumiditysensor.o(i.Sensor_GetTemperature)
+    i.Sensor_Getstate                        0x0800297c   Section        0  temperaturehumiditysensor.o(i.Sensor_Getstate)
+    i.Sensor_ReadBit                         0x080029d0   Section        0  temperaturehumiditysensor.o(i.Sensor_ReadBit)
+    i.Sensor_ReadByte                        0x08002a14   Section        0  temperaturehumiditysensor.o(i.Sensor_ReadByte)
+    i.Sensor_Reset                           0x08002a34   Section        0  temperaturehumiditysensor.o(i.Sensor_Reset)
+    i.Sensor_WriteBit                        0x08002a60   Section        0  temperaturehumiditysensor.o(i.Sensor_WriteBit)
+    i.Sensor_WriteByte                       0x08002aac   Section        0  temperaturehumiditysensor.o(i.Sensor_WriteByte)
+    i.SetSysClock                            0x08002ac8   Section        0  system_stm32f4xx.o(i.SetSysClock)
+    SetSysClock                              0x08002ac9   Thumb Code   216  system_stm32f4xx.o(i.SetSysClock)
+    i.ShowerHost_DisplayHelp                 0x08002bb0   Section        0  userlibrary.o(i.ShowerHost_DisplayHelp)
+    i.ShowerHost_DisplayNormal               0x08002db0   Section        0  userlibrary.o(i.ShowerHost_DisplayNormal)
+    i.ShowerHost_DisplayRepair               0x0800301c   Section        0  userlibrary.o(i.ShowerHost_DisplayRepair)
+    i.ShowerHost_FanControl                  0x0800321c   Section        0  userlibrary.o(i.ShowerHost_FanControl)
+    i.ShowerHost_GetHelpState                0x08003284   Section        0  userlibrary.o(i.ShowerHost_GetHelpState)
+    i.ShowerHost_GetRepairState              0x0800329c   Section        0  userlibrary.o(i.ShowerHost_GetRepairState)
+    i.ShowerHost_GetWiFiData                 0x080032b4   Section        0  userlibrary.o(i.ShowerHost_GetWiFiData)
+    i.ShowerHost_GetZigBeeData               0x080033f0   Section        0  userlibrary.o(i.ShowerHost_GetZigBeeData)
+    i.ShowerHost_HumidityDetect              0x080034dc   Section        0  userlibrary.o(i.ShowerHost_HumidityDetect)
+    i.ShowerHost_Init                        0x080034f4   Section        0  userlibrary.o(i.ShowerHost_Init)
+    i.ShowerHost_InitInformation             0x080035a0   Section        0  userlibrary.o(i.ShowerHost_InitInformation)
+    i.ShowerHost_LightDetect                 0x080035f0   Section        0  userlibrary.o(i.ShowerHost_LightDetect)
+    i.ShowerHost_SendWiFiData                0x08003604   Section        0  userlibrary.o(i.ShowerHost_SendWiFiData)
+    i.ShowerHost_SendZigBeeData              0x08003758   Section        0  userlibrary.o(i.ShowerHost_SendZigBeeData)
+    i.ShowerHost_SetDevice                   0x08003804   Section        0  userlibrary.o(i.ShowerHost_SetDevice)
+    i.ShowerHost_SetHelpState                0x08003890   Section        0  userlibrary.o(i.ShowerHost_SetHelpState)
+    i.ShowerHost_SetRepairState              0x080038a4   Section        0  userlibrary.o(i.ShowerHost_SetRepairState)
+    i.ShowerHost_TemperatureDetect           0x080038b8   Section        0  userlibrary.o(i.ShowerHost_TemperatureDetect)
+    i.ShowerHost_WiFiCheck                   0x080038d0   Section        0  userlibrary.o(i.ShowerHost_WiFiCheck)
+    i.ShowerHost_ZigBeeCheck                 0x0800392c   Section        0  userlibrary.o(i.ShowerHost_ZigBeeCheck)
+    i.SignalOutput_Init                      0x08003982   Section        0  signaloutput.o(i.SignalOutput_Init)
+    i.SysTick_Handler                        0x0800398e   Section        0  stm32f4xx_it.o(i.SysTick_Handler)
+    i.SystemInit                             0x08003990   Section        0  system_stm32f4xx.o(i.SystemInit)
+    i.TIM3_IRQHandler                        0x080039f8   Section        0  button.o(i.TIM3_IRQHandler)
+    i.TIM3_Init                              0x08003a44   Section        0  button.o(i.TIM3_Init)
+    i.TIM4_IRQHandler                        0x08003a98   Section        0  button.o(i.TIM4_IRQHandler)
+    i.TIM4_Init                              0x08003aec   Section        0  button.o(i.TIM4_Init)
+    i.TIM_ClearITPendingBit                  0x08003b40   Section        0  stm32f4xx_tim.o(i.TIM_ClearITPendingBit)
+    i.TIM_Cmd                                0x08003b46   Section        0  stm32f4xx_tim.o(i.TIM_Cmd)
+    i.TIM_GetITStatus                        0x08003b5e   Section        0  stm32f4xx_tim.o(i.TIM_GetITStatus)
+    i.TIM_ITConfig                           0x08003b80   Section        0  stm32f4xx_tim.o(i.TIM_ITConfig)
+    i.TIM_SetCounter                         0x08003b92   Section        0  stm32f4xx_tim.o(i.TIM_SetCounter)
+    i.TIM_TimeBaseInit                       0x08003b98   Section        0  stm32f4xx_tim.o(i.TIM_TimeBaseInit)
+    i.TemperatureHumiditySensor_Init         0x08003c1c   Section        0  temperaturehumiditysensor.o(i.TemperatureHumiditySensor_Init)
+    i.USART1_DMAReceiveInit                  0x08003c88   Section        0  zigbee.o(i.USART1_DMAReceiveInit)
+    i.USART1_DMATransmitInit                 0x08003d30   Section        0  zigbee.o(i.USART1_DMATransmitInit)
+    i.USART1_IRQHandler                      0x08003dc4   Section        0  zigbee.o(i.USART1_IRQHandler)
+    i.USART1_Init                            0x08003e04   Section        0  zigbee.o(i.USART1_Init)
+    i.USART6_DMAReceiveInit                  0x08003e84   Section        0  wifi.o(i.USART6_DMAReceiveInit)
+    i.USART6_DMATransmitInit                 0x08003f2c   Section        0  wifi.o(i.USART6_DMATransmitInit)
+    i.USART6_IRQHandler                      0x08003fc0   Section        0  wifi.o(i.USART6_IRQHandler)
+    i.USART6_Init                            0x08004000   Section        0  wifi.o(i.USART6_Init)
+    i.USART_Cmd                              0x08004080   Section        0  stm32f4xx_usart.o(i.USART_Cmd)
+    i.USART_DMACmd                           0x08004098   Section        0  stm32f4xx_usart.o(i.USART_DMACmd)
+    i.USART_GetITStatus                      0x080040aa   Section        0  stm32f4xx_usart.o(i.USART_GetITStatus)
+    i.USART_ITConfig                         0x080040fe   Section        0  stm32f4xx_usart.o(i.USART_ITConfig)
+    i.USART_Init                             0x08004148   Section        0  stm32f4xx_usart.o(i.USART_Init)
+    i.USART_ReceiveData                      0x0800421c   Section        0  stm32f4xx_usart.o(i.USART_ReceiveData)
+    i.UsageFault_Handler                     0x08004226   Section        0  stm32f4xx_it.o(i.UsageFault_Handler)
+    i.WiFi_Init                              0x0800422c   Section        0  wifi.o(i.WiFi_Init)
+    i.WiFi_ReceiveString                     0x080042a8   Section        0  wifi.o(i.WiFi_ReceiveString)
+    i.WiFi_TransmitString                    0x080042ec   Section        0  wifi.o(i.WiFi_TransmitString)
+    i.ZigBee_Init                            0x08004344   Section        0  zigbee.o(i.ZigBee_Init)
+    i.ZigBee_ReceiveString                   0x080043c4   Section        0  zigbee.o(i.ZigBee_ReceiveString)
+    i.ZigBee_TransmitString                  0x08004408   Section        0  zigbee.o(i.ZigBee_TransmitString)
+    i.__0sprintf                             0x08004460   Section        0  printfa.o(i.__0sprintf)
+    i.__scatterload_copy                     0x08004488   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08004496   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08004498   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._fp_digits                             0x080044a8   Section        0  printfa.o(i._fp_digits)
+    _fp_digits                               0x080044a9   Thumb Code   366  printfa.o(i._fp_digits)
+    i._printf_core                           0x0800462c   Section        0  printfa.o(i._printf_core)
+    _printf_core                             0x0800462d   Thumb Code  1704  printfa.o(i._printf_core)
+    i._printf_post_padding                   0x08004ce0   Section        0  printfa.o(i._printf_post_padding)
+    _printf_post_padding                     0x08004ce1   Thumb Code    36  printfa.o(i._printf_post_padding)
+    i._printf_pre_padding                    0x08004d04   Section        0  printfa.o(i._printf_pre_padding)
+    _printf_pre_padding                      0x08004d05   Thumb Code    46  printfa.o(i._printf_pre_padding)
+    i._sputc                                 0x08004d32   Section        0  printfa.o(i._sputc)
+    _sputc                                   0x08004d33   Thumb Code    10  printfa.o(i._sputc)
+    i.main                                   0x08004d3c   Section        0  main.o(i.main)
+    .constdata                               0x08004d8e   Section     2072  display.o(.constdata)
+    .constdata                               0x080055a6   Section       12  mktime.o(.constdata)
+    monlen                                   0x080055a6   Data          12  mktime.o(.constdata)
+    .constdata                               0x080055b2   Section       12  localtime_i.o(.constdata)
+    monlen                                   0x080055b2   Data          12  localtime_i.o(.constdata)
     .data                                    0x20000000   Section       20  system_stm32f4xx.o(.data)
     .data                                    0x20000014   Section       16  stm32f4xx_rcc.o(.data)
     APBAHBPrescTable                         0x20000014   Data          16  stm32f4xx_rcc.o(.data)
@@ -2130,15 +2190,17 @@ Image Symbol Table
     .data                                    0x20000028   Section        9  lightsensor.o(.data)
     num                                      0x20000030   Data           1  lightsensor.o(.data)
     .data                                    0x20000034   Section       20  temperaturehumiditysensor.o(.data)
-    .data                                    0x20000048   Section        4  zigbee.o(.data)
-    .data                                    0x2000004c   Section        4  wifi.o(.data)
-    .data                                    0x20000050   Section       48  communicate.o(.data)
-    .data                                    0x20000080   Section        3  userlibrary.o(.data)
-    cnt                                      0x20000082   Data           1  userlibrary.o(.data)
-    .bss                                     0x20000084   Section       20  lightsensor.o(.bss)
-    .bss                                     0x20000098   Section     1024  communicate.o(.bss)
-    .bss                                     0x20000498   Section     1564  userlibrary.o(.bss)
-    STACK                                    0x20000ab8   Section     1024  startup_stm32f401xx.o(STACK)
+    .data                                    0x20000048   Section        8  zigbee.o(.data)
+    .data                                    0x20000050   Section        8  wifi.o(.data)
+    .data                                    0x20000058   Section       48  communicate.o(.data)
+    .data                                    0x20000088   Section       39  userlibrary.o(.data)
+    cnt                                      0x200000ae   Data           1  userlibrary.o(.data)
+    .bss                                     0x200000b0   Section       20  lightsensor.o(.bss)
+    .bss                                     0x200000c4   Section     1024  zigbee.o(.bss)
+    .bss                                     0x200004c4   Section     1024  wifi.o(.bss)
+    .bss                                     0x200008c4   Section     4096  communicate.o(.bss)
+    .bss                                     0x200018c4   Section    16412  userlibrary.o(.bss)
+    STACK                                    0x200058e0   Section     1024  startup_stm32f401xx.o(STACK)
 
     Global Symbols
 
@@ -2253,213 +2315,223 @@ Image Symbol Table
     TIM5_IRQHandler                          0x080001c7   Thumb Code     0  startup_stm32f401xx.o(.text)
     USART2_IRQHandler                        0x080001c7   Thumb Code     0  startup_stm32f401xx.o(.text)
     WWDG_IRQHandler                          0x080001c7   Thumb Code     0  startup_stm32f401xx.o(.text)
-    __aeabi_memcpy                           0x080001d1   Thumb Code    36  memcpya.o(.text)
-    __aeabi_memcpy4                          0x080001d1   Thumb Code     0  memcpya.o(.text)
-    __aeabi_memcpy8                          0x080001d1   Thumb Code     0  memcpya.o(.text)
-    strstr                                   0x080001f5   Thumb Code    36  strstr.o(.text)
-    strlen                                   0x08000219   Thumb Code    14  strlen.o(.text)
-    strcpy                                   0x08000227   Thumb Code    18  strcpy.o(.text)
-    __aeabi_f2d                              0x08000239   Thumb Code    38  f2d.o(.text)
-    __aeabi_cdrcmple                         0x08000261   Thumb Code    48  cdrcmple.o(.text)
-    __aeabi_uidiv                            0x08000291   Thumb Code     0  uidiv.o(.text)
-    __aeabi_uidivmod                         0x08000291   Thumb Code    44  uidiv.o(.text)
-    __aeabi_uldivmod                         0x080002bd   Thumb Code    98  uldiv.o(.text)
-    __I$use$fp                               0x0800031f   Thumb Code     0  iusefp.o(.text)
-    __aeabi_dadd                             0x0800031f   Thumb Code   322  dadd.o(.text)
-    __aeabi_dsub                             0x08000461   Thumb Code     6  dadd.o(.text)
-    __aeabi_drsub                            0x08000467   Thumb Code     6  dadd.o(.text)
-    __aeabi_dmul                             0x0800046d   Thumb Code   228  dmul.o(.text)
-    __aeabi_ddiv                             0x08000551   Thumb Code   222  ddiv.o(.text)
-    __aeabi_d2ulz                            0x0800062f   Thumb Code    48  dfixul.o(.text)
-    __scatterload                            0x08000661   Thumb Code    28  init.o(.text)
-    __scatterload_rt2                        0x08000661   Thumb Code     0  init.o(.text)
-    __aeabi_llsl                             0x08000685   Thumb Code    30  llshl.o(.text)
-    _ll_shift_l                              0x08000685   Thumb Code     0  llshl.o(.text)
-    __aeabi_llsr                             0x080006a3   Thumb Code    32  llushr.o(.text)
-    _ll_ushift_r                             0x080006a3   Thumb Code     0  llushr.o(.text)
-    __aeabi_lasr                             0x080006c3   Thumb Code    36  llsshr.o(.text)
-    _ll_sshift_r                             0x080006c3   Thumb Code     0  llsshr.o(.text)
-    _double_round                            0x080006e7   Thumb Code    30  depilogue.o(.text)
-    _double_epilogue                         0x08000705   Thumb Code   156  depilogue.o(.text)
-    ADC_ClearITPendingBit                    0x080007a1   Thumb Code    10  stm32f4xx_adc.o(i.ADC_ClearITPendingBit)
-    ADC_Cmd                                  0x080007ab   Thumb Code    22  stm32f4xx_adc.o(i.ADC_Cmd)
-    ADC_CommonInit                           0x080007c1   Thumb Code    34  stm32f4xx_adc.o(i.ADC_CommonInit)
-    ADC_DeInit                               0x080007f1   Thumb Code    22  stm32f4xx_adc.o(i.ADC_DeInit)
-    ADC_GetConversionValue                   0x08000807   Thumb Code     8  stm32f4xx_adc.o(i.ADC_GetConversionValue)
-    ADC_GetITStatus                          0x0800080f   Thumb Code    38  stm32f4xx_adc.o(i.ADC_GetITStatus)
-    ADC_IRQHandler                           0x08000835   Thumb Code    64  lightsensor.o(i.ADC_IRQHandler)
-    ADC_ITConfig                             0x08000881   Thumb Code    32  stm32f4xx_adc.o(i.ADC_ITConfig)
-    ADC_Init                                 0x080008a1   Thumb Code    74  stm32f4xx_adc.o(i.ADC_Init)
-    ADC_RegularChannelConfig                 0x080008f5   Thumb Code   184  stm32f4xx_adc.o(i.ADC_RegularChannelConfig)
-    ADC_SoftwareStartConv                    0x080009ad   Thumb Code    10  stm32f4xx_adc.o(i.ADC_SoftwareStartConv)
-    Audio_Play                               0x080009b7   Thumb Code    12  audio.o(i.Audio_Play)
-    Audio_Transmit16Bits                     0x080009c3   Thumb Code    34  audio.o(i.Audio_Transmit16Bits)
-    Audio_TransmitByte                       0x080009e5   Thumb Code   108  audio.o(i.Audio_TransmitByte)
-    Audio_Volume                             0x08000a55   Thumb Code    18  audio.o(i.Audio_Volume)
-    BusFault_Handler                         0x08000a67   Thumb Code     4  stm32f4xx_it.o(i.BusFault_Handler)
-    Button_Init                              0x08000a6d   Thumb Code   198  button.o(i.Button_Init)
-    Communicate_Init                         0x08000b39   Thumb Code   212  communicate.o(i.Communicate_Init)
-    Communicate_WiFiCheck                    0x08000c45   Thumb Code    52  communicate.o(i.Communicate_WiFiCheck)
-    Communicate_WiFiConfig                   0x08000c7d   Thumb Code   380  communicate.o(i.Communicate_WiFiConfig)
-    Communicate_WiFiRX                       0x08000ee1   Thumb Code    32  communicate.o(i.Communicate_WiFiRX)
-    Communicate_ZigBeeCheck                  0x08000f05   Thumb Code    52  communicate.o(i.Communicate_ZigBeeCheck)
-    Communicate_ZigBeeConfig                 0x08000f3d   Thumb Code   374  communicate.o(i.Communicate_ZigBeeConfig)
-    Communicate_ZigBeeRX                     0x08001169   Thumb Code    32  communicate.o(i.Communicate_ZigBeeRX)
-    DMA2_Stream1_IRQHandler                  0x0800118d   Thumb Code    36  wifi.o(i.DMA2_Stream1_IRQHandler)
-    DMA2_Stream5_IRQHandler                  0x080011bd   Thumb Code    36  zigbee.o(i.DMA2_Stream5_IRQHandler)
-    DMA2_Stream6_IRQHandler                  0x080011ed   Thumb Code    28  wifi.o(i.DMA2_Stream6_IRQHandler)
-    DMA2_Stream7_IRQHandler                  0x08001215   Thumb Code    28  zigbee.o(i.DMA2_Stream7_IRQHandler)
-    DMA_ClearITPendingBit                    0x0800123d   Thumb Code    38  stm32f4xx_dma.o(i.DMA_ClearITPendingBit)
-    DMA_Cmd                                  0x08001271   Thumb Code    22  stm32f4xx_dma.o(i.DMA_Cmd)
-    DMA_GetCurrDataCounter                   0x08001287   Thumb Code     8  stm32f4xx_dma.o(i.DMA_GetCurrDataCounter)
-    DMA_GetITStatus                          0x08001291   Thumb Code    82  stm32f4xx_dma.o(i.DMA_GetITStatus)
-    DMA_ITConfig                             0x080012f5   Thumb Code    58  stm32f4xx_dma.o(i.DMA_ITConfig)
-    DMA_Init                                 0x08001331   Thumb Code    82  stm32f4xx_dma.o(i.DMA_Init)
-    DMA_SetCurrDataCounter                   0x08001389   Thumb Code     4  stm32f4xx_dma.o(i.DMA_SetCurrDataCounter)
-    DebugMon_Handler                         0x0800138d   Thumb Code     2  stm32f4xx_it.o(i.DebugMon_Handler)
-    Delay_ms                                 0x08001391   Thumb Code    68  delay.o(i.Delay_ms)
-    Delay_s                                  0x080013d9   Thumb Code    24  delay.o(i.Delay_s)
-    Delay_us                                 0x080013f1   Thumb Code    66  delay.o(i.Delay_us)
-    Display_Clear                            0x0800143d   Thumb Code    64  display.o(i.Display_Clear)
-    Display_HardwareInit                     0x0800147d   Thumb Code    96  display.o(i.Display_HardwareInit)
-    Display_Init                             0x080014e1   Thumb Code   224  display.o(i.Display_Init)
-    Display_SetPosition                      0x080015c1   Thumb Code    42  display.o(i.Display_SetPosition)
-    Display_ShowChar                         0x080015ed   Thumb Code   178  display.o(i.Display_ShowChar)
-    Display_ShowString                       0x080016a9   Thumb Code   126  display.o(i.Display_ShowString)
-    EXTI9_5_IRQHandler                       0x08001729   Thumb Code    48  button.o(i.EXTI9_5_IRQHandler)
-    EXTI_ClearITPendingBit                   0x08001761   Thumb Code     6  stm32f4xx_exti.o(i.EXTI_ClearITPendingBit)
-    EXTI_GetITStatus                         0x0800176d   Thumb Code    20  stm32f4xx_exti.o(i.EXTI_GetITStatus)
-    EXTI_Init                                0x08001785   Thumb Code   142  stm32f4xx_exti.o(i.EXTI_Init)
-    Fan_GetState                             0x08001819   Thumb Code     6  signaloutput.o(i.Fan_GetState)
-    Fan_Init                                 0x08001825   Thumb Code    48  signaloutput.o(i.Fan_Init)
-    Fan_Start                                0x08001859   Thumb Code    18  signaloutput.o(i.Fan_Start)
-    Fan_Stop                                 0x08001875   Thumb Code    18  signaloutput.o(i.Fan_Stop)
-    GPIO_Init                                0x08001891   Thumb Code   144  stm32f4xx_gpio.o(i.GPIO_Init)
-    GPIO_PinAFConfig                         0x08001921   Thumb Code    70  stm32f4xx_gpio.o(i.GPIO_PinAFConfig)
-    GPIO_ReadInputDataBit                    0x08001967   Thumb Code    18  stm32f4xx_gpio.o(i.GPIO_ReadInputDataBit)
-    GPIO_ResetBits                           0x08001979   Thumb Code     4  stm32f4xx_gpio.o(i.GPIO_ResetBits)
-    GPIO_SetBits                             0x0800197d   Thumb Code     4  stm32f4xx_gpio.o(i.GPIO_SetBits)
-    HardFault_Handler                        0x08001981   Thumb Code     4  stm32f4xx_it.o(i.HardFault_Handler)
-    I2C_CheckACK                             0x08001985   Thumb Code    74  display.o(i.I2C_CheckACK)
-    I2C_Start                                0x080019d5   Thumb Code    48  display.o(i.I2C_Start)
-    I2C_Stop                                 0x08001a09   Thumb Code    48  display.o(i.I2C_Stop)
-    I2C_TransmitByte                         0x08001a3d   Thumb Code    88  display.o(i.I2C_TransmitByte)
-    I2C_TransmitDataCommand                  0x08001a99   Thumb Code    76  display.o(i.I2C_TransmitDataCommand)
-    Information_GetDateTime                  0x08001ae5   Thumb Code    24  information.o(i.Information_GetDateTime)
-    Information_InitializeRTC                0x08001afd   Thumb Code   160  information.o(i.Information_InitializeRTC)
-    Information_SetDateTime                  0x08001b9d   Thumb Code    44  information.o(i.Information_SetDateTime)
-    LightSensor_GetValue                     0x08001bc9   Thumb Code    90  lightsensor.o(i.LightSensor_GetValue)
-    LightSensor_Init                         0x08001c31   Thumb Code   162  lightsensor.o(i.LightSensor_Init)
-    Light_GetState                           0x08001cdd   Thumb Code     6  signaloutput.o(i.Light_GetState)
-    Light_Init                               0x08001ce9   Thumb Code    48  signaloutput.o(i.Light_Init)
-    Light_Start                              0x08001d1d   Thumb Code    18  signaloutput.o(i.Light_Start)
-    Light_Stop                               0x08001d39   Thumb Code    18  signaloutput.o(i.Light_Stop)
-    MemManage_Handler                        0x08001d55   Thumb Code     4  stm32f4xx_it.o(i.MemManage_Handler)
-    NMI_Handler                              0x08001d59   Thumb Code     2  stm32f4xx_it.o(i.NMI_Handler)
-    NVIC_Init                                0x08001d5d   Thumb Code   106  misc.o(i.NVIC_Init)
-    PWR_BackupAccessCmd                      0x08001dd5   Thumb Code     6  stm32f4xx_pwr.o(i.PWR_BackupAccessCmd)
-    PendSV_Handler                           0x08001de1   Thumb Code     2  stm32f4xx_it.o(i.PendSV_Handler)
-    Pin_Input                                0x08001de5   Thumb Code    36  temperaturehumiditysensor.o(i.Pin_Input)
-    Pin_Output                               0x08001e0d   Thumb Code    48  temperaturehumiditysensor.o(i.Pin_Output)
-    RCC_AHB1PeriphClockCmd                   0x08001e41   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd)
-    RCC_APB1PeriphClockCmd                   0x08001e61   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd)
-    RCC_APB2PeriphClockCmd                   0x08001e81   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd)
-    RCC_APB2PeriphResetCmd                   0x08001ea1   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd)
-    RCC_GetClocksFreq                        0x08001ec1   Thumb Code   214  stm32f4xx_rcc.o(i.RCC_GetClocksFreq)
-    RCC_GetFlagStatus                        0x08001fa9   Thumb Code    60  stm32f4xx_rcc.o(i.RCC_GetFlagStatus)
-    RCC_LSEConfig                            0x08001fe9   Thumb Code    40  stm32f4xx_rcc.o(i.RCC_LSEConfig)
-    RCC_RTCCLKCmd                            0x08002015   Thumb Code     6  stm32f4xx_rcc.o(i.RCC_RTCCLKCmd)
-    RCC_RTCCLKConfig                         0x08002021   Thumb Code    50  stm32f4xx_rcc.o(i.RCC_RTCCLKConfig)
-    RTC_EnterInitMode                        0x08002091   Thumb Code    76  stm32f4xx_rtc.o(i.RTC_EnterInitMode)
-    RTC_ExitInitMode                         0x080020e1   Thumb Code    14  stm32f4xx_rtc.o(i.RTC_ExitInitMode)
-    RTC_GetDate                              0x080020f5   Thumb Code    68  stm32f4xx_rtc.o(i.RTC_GetDate)
-    RTC_GetTime                              0x08002141   Thumb Code    72  stm32f4xx_rtc.o(i.RTC_GetTime)
-    RTC_Init                                 0x08002191   Thumb Code    94  stm32f4xx_rtc.o(i.RTC_Init)
-    RTC_SetDate                              0x080021f5   Thumb Code   190  stm32f4xx_rtc.o(i.RTC_SetDate)
-    RTC_SetTime                              0x080022bd   Thumb Code   198  stm32f4xx_rtc.o(i.RTC_SetTime)
-    RTC_WaitForSynchro                       0x0800238d   Thumb Code    92  stm32f4xx_rtc.o(i.RTC_WaitForSynchro)
-    RTC_WriteProtectionCmd                   0x080023ed   Thumb Code    22  stm32f4xx_rtc.o(i.RTC_WriteProtectionCmd)
-    SVC_Handler                              0x08002409   Thumb Code     2  stm32f4xx_it.o(i.SVC_Handler)
-    SYSCFG_EXTILineConfig                    0x0800240d   Thumb Code    60  stm32f4xx_syscfg.o(i.SYSCFG_EXTILineConfig)
-    Sensor_Check                             0x0800244d   Thumb Code    54  temperaturehumiditysensor.o(i.Sensor_Check)
-    Sensor_Convert                           0x08002489   Thumb Code    92  temperaturehumiditysensor.o(i.Sensor_Convert)
-    Sensor_GetHumidity                       0x080024ed   Thumb Code   226  temperaturehumiditysensor.o(i.Sensor_GetHumidity)
-    Sensor_GetTemperature                    0x080025ed   Thumb Code    88  temperaturehumiditysensor.o(i.Sensor_GetTemperature)
-    Sensor_Getstate                          0x08002649   Thumb Code    74  temperaturehumiditysensor.o(i.Sensor_Getstate)
-    Sensor_ReadBit                           0x0800269d   Thumb Code    64  temperaturehumiditysensor.o(i.Sensor_ReadBit)
-    Sensor_ReadByte                          0x080026e1   Thumb Code    32  temperaturehumiditysensor.o(i.Sensor_ReadByte)
-    Sensor_Reset                             0x08002701   Thumb Code    38  temperaturehumiditysensor.o(i.Sensor_Reset)
-    Sensor_WriteBit                          0x0800272d   Thumb Code    70  temperaturehumiditysensor.o(i.Sensor_WriteBit)
-    Sensor_WriteByte                         0x08002779   Thumb Code    28  temperaturehumiditysensor.o(i.Sensor_WriteByte)
-    ShowerHost_DisplayHelp                   0x0800287d   Thumb Code   346  userlibrary.o(i.ShowerHost_DisplayHelp)
-    ShowerHost_DisplayNormal                 0x08002a41   Thumb Code   430  userlibrary.o(i.ShowerHost_DisplayNormal)
-    ShowerHost_DisplayRepair                 0x08002c6d   Thumb Code   346  userlibrary.o(i.ShowerHost_DisplayRepair)
-    ShowerHost_FanControl                    0x08002e31   Thumb Code    98  userlibrary.o(i.ShowerHost_FanControl)
-    ShowerHost_GetHelpState                  0x08002e99   Thumb Code    18  userlibrary.o(i.ShowerHost_GetHelpState)
-    ShowerHost_GetRepairState                0x08002eb1   Thumb Code    20  userlibrary.o(i.ShowerHost_GetRepairState)
-    ShowerHost_GetWiFiData                   0x08002ec9   Thumb Code    60  userlibrary.o(i.ShowerHost_GetWiFiData)
-    ShowerHost_GetZigBeeData                 0x08002f19   Thumb Code    46  userlibrary.o(i.ShowerHost_GetZigBeeData)
-    ShowerHost_HumidityDetect                0x08002f51   Thumb Code    18  userlibrary.o(i.ShowerHost_HumidityDetect)
-    ShowerHost_Init                          0x08002f69   Thumb Code    94  userlibrary.o(i.ShowerHost_Init)
-    ShowerHost_InitInformation               0x08002fd9   Thumb Code    60  userlibrary.o(i.ShowerHost_InitInformation)
-    ShowerHost_LightDetect                   0x08003029   Thumb Code    14  userlibrary.o(i.ShowerHost_LightDetect)
-    ShowerHost_SetDevice                     0x0800303d   Thumb Code   136  userlibrary.o(i.ShowerHost_SetDevice)
-    ShowerHost_SetHelpState                  0x080030c9   Thumb Code    14  userlibrary.o(i.ShowerHost_SetHelpState)
-    ShowerHost_SetRepairState                0x080030dd   Thumb Code    14  userlibrary.o(i.ShowerHost_SetRepairState)
-    ShowerHost_TemperatureDetect             0x080030f1   Thumb Code    18  userlibrary.o(i.ShowerHost_TemperatureDetect)
-    SignalOutput_Init                        0x08003109   Thumb Code    12  signaloutput.o(i.SignalOutput_Init)
-    SysTick_Handler                          0x08003115   Thumb Code     2  stm32f4xx_it.o(i.SysTick_Handler)
-    SystemInit                               0x08003119   Thumb Code    88  system_stm32f4xx.o(i.SystemInit)
-    TIM3_IRQHandler                          0x08003181   Thumb Code    62  button.o(i.TIM3_IRQHandler)
-    TIM3_Init                                0x080031c9   Thumb Code    80  button.o(i.TIM3_Init)
-    TIM4_IRQHandler                          0x0800321d   Thumb Code    68  button.o(i.TIM4_IRQHandler)
-    TIM4_Init                                0x08003269   Thumb Code    80  button.o(i.TIM4_Init)
-    TIM_ClearITPendingBit                    0x080032bd   Thumb Code     6  stm32f4xx_tim.o(i.TIM_ClearITPendingBit)
-    TIM_Cmd                                  0x080032c3   Thumb Code    24  stm32f4xx_tim.o(i.TIM_Cmd)
-    TIM_GetITStatus                          0x080032db   Thumb Code    34  stm32f4xx_tim.o(i.TIM_GetITStatus)
-    TIM_ITConfig                             0x080032fd   Thumb Code    18  stm32f4xx_tim.o(i.TIM_ITConfig)
-    TIM_SetCounter                           0x0800330f   Thumb Code     4  stm32f4xx_tim.o(i.TIM_SetCounter)
-    TIM_TimeBaseInit                         0x08003315   Thumb Code   104  stm32f4xx_tim.o(i.TIM_TimeBaseInit)
-    TemperatureHumiditySensor_Init           0x08003399   Thumb Code    64  temperaturehumiditysensor.o(i.TemperatureHumiditySensor_Init)
-    USART1_DMAReceiveInit                    0x080033dd   Thumb Code   140  zigbee.o(i.USART1_DMAReceiveInit)
-    USART1_DMATransmitInit                   0x08003475   Thumb Code   134  zigbee.o(i.USART1_DMATransmitInit)
-    USART1_IRQHandler                        0x08003509   Thumb Code    50  zigbee.o(i.USART1_IRQHandler)
-    USART1_Init                              0x08003549   Thumb Code   124  zigbee.o(i.USART1_Init)
-    USART6_DMAReceiveInit                    0x080035c9   Thumb Code   140  wifi.o(i.USART6_DMAReceiveInit)
-    USART6_DMATransmitInit                   0x08003661   Thumb Code   134  wifi.o(i.USART6_DMATransmitInit)
-    USART6_IRQHandler                        0x080036f5   Thumb Code    50  wifi.o(i.USART6_IRQHandler)
-    USART6_Init                              0x08003735   Thumb Code   124  wifi.o(i.USART6_Init)
-    USART_Cmd                                0x080037b5   Thumb Code    24  stm32f4xx_usart.o(i.USART_Cmd)
-    USART_DMACmd                             0x080037cd   Thumb Code    18  stm32f4xx_usart.o(i.USART_DMACmd)
-    USART_GetITStatus                        0x080037df   Thumb Code    84  stm32f4xx_usart.o(i.USART_GetITStatus)
-    USART_ITConfig                           0x08003833   Thumb Code    74  stm32f4xx_usart.o(i.USART_ITConfig)
-    USART_Init                               0x0800387d   Thumb Code   204  stm32f4xx_usart.o(i.USART_Init)
-    USART_ReceiveData                        0x08003951   Thumb Code    10  stm32f4xx_usart.o(i.USART_ReceiveData)
-    UsageFault_Handler                       0x0800395b   Thumb Code     4  stm32f4xx_it.o(i.UsageFault_Handler)
-    WiFi_Init                                0x08003961   Thumb Code   120  wifi.o(i.WiFi_Init)
-    WiFi_ReceiveString                       0x080039dd   Thumb Code    54  wifi.o(i.WiFi_ReceiveString)
-    WiFi_TransmitString                      0x08003a1d   Thumb Code    78  wifi.o(i.WiFi_TransmitString)
-    ZigBee_Init                              0x08003a75   Thumb Code   124  zigbee.o(i.ZigBee_Init)
-    ZigBee_ReceiveString                     0x08003af5   Thumb Code    54  zigbee.o(i.ZigBee_ReceiveString)
-    ZigBee_TransmitString                    0x08003b35   Thumb Code    78  zigbee.o(i.ZigBee_TransmitString)
-    __0sprintf                               0x08003b8d   Thumb Code    34  printfa.o(i.__0sprintf)
-    __1sprintf                               0x08003b8d   Thumb Code     0  printfa.o(i.__0sprintf)
-    __2sprintf                               0x08003b8d   Thumb Code     0  printfa.o(i.__0sprintf)
-    __c89sprintf                             0x08003b8d   Thumb Code     0  printfa.o(i.__0sprintf)
-    sprintf                                  0x08003b8d   Thumb Code     0  printfa.o(i.__0sprintf)
-    __scatterload_copy                       0x08003bb5   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08003bc3   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08003bc5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    main                                     0x08004469   Thumb Code    70  main.o(i.main)
-    F6x8                                     0x080044ae   Data         552  display.o(.constdata)
-    F8X16                                    0x080046d6   Data        1520  display.o(.constdata)
-    Region$$Table$$Base                      0x08004cc8   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08004ce8   Number         0  anon$$obj.o(Region$$Table)
+    mktime                                   0x080001d1   Thumb Code   150  mktime.o(.text)
+    __aeabi_memcpy                           0x08000279   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x08000279   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x08000279   Thumb Code     0  memcpya.o(.text)
+    strstr                                   0x0800029d   Thumb Code    36  strstr.o(.text)
+    strlen                                   0x080002c1   Thumb Code    14  strlen.o(.text)
+    strcpy                                   0x080002cf   Thumb Code    18  strcpy.o(.text)
+    __aeabi_f2d                              0x080002e1   Thumb Code    38  f2d.o(.text)
+    __aeabi_cdrcmple                         0x08000309   Thumb Code    48  cdrcmple.o(.text)
+    __aeabi_uidiv                            0x08000339   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x08000339   Thumb Code    44  uidiv.o(.text)
+    __aeabi_uldivmod                         0x08000365   Thumb Code    98  uldiv.o(.text)
+    _localtime                               0x080003c9   Thumb Code   134  localtime_i.o(.text)
+    __I$use$fp                               0x08000455   Thumb Code     0  iusefp.o(.text)
+    __aeabi_dadd                             0x08000455   Thumb Code   322  dadd.o(.text)
+    __aeabi_dsub                             0x08000597   Thumb Code     6  dadd.o(.text)
+    __aeabi_drsub                            0x0800059d   Thumb Code     6  dadd.o(.text)
+    __aeabi_dmul                             0x080005a3   Thumb Code   228  dmul.o(.text)
+    __aeabi_ddiv                             0x08000687   Thumb Code   222  ddiv.o(.text)
+    __aeabi_d2ulz                            0x08000765   Thumb Code    48  dfixul.o(.text)
+    __scatterload                            0x08000795   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x08000795   Thumb Code     0  init.o(.text)
+    __aeabi_llsl                             0x080007b9   Thumb Code    30  llshl.o(.text)
+    _ll_shift_l                              0x080007b9   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x080007d7   Thumb Code    32  llushr.o(.text)
+    _ll_ushift_r                             0x080007d7   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x080007f7   Thumb Code    36  llsshr.o(.text)
+    _ll_sshift_r                             0x080007f7   Thumb Code     0  llsshr.o(.text)
+    _double_round                            0x0800081b   Thumb Code    30  depilogue.o(.text)
+    _double_epilogue                         0x08000839   Thumb Code   156  depilogue.o(.text)
+    ADC_ClearITPendingBit                    0x080008d5   Thumb Code    10  stm32f4xx_adc.o(i.ADC_ClearITPendingBit)
+    ADC_Cmd                                  0x080008df   Thumb Code    22  stm32f4xx_adc.o(i.ADC_Cmd)
+    ADC_CommonInit                           0x080008f5   Thumb Code    34  stm32f4xx_adc.o(i.ADC_CommonInit)
+    ADC_DeInit                               0x08000925   Thumb Code    22  stm32f4xx_adc.o(i.ADC_DeInit)
+    ADC_GetConversionValue                   0x0800093b   Thumb Code     8  stm32f4xx_adc.o(i.ADC_GetConversionValue)
+    ADC_GetITStatus                          0x08000943   Thumb Code    38  stm32f4xx_adc.o(i.ADC_GetITStatus)
+    ADC_IRQHandler                           0x08000969   Thumb Code    64  lightsensor.o(i.ADC_IRQHandler)
+    ADC_ITConfig                             0x080009b5   Thumb Code    32  stm32f4xx_adc.o(i.ADC_ITConfig)
+    ADC_Init                                 0x080009d5   Thumb Code    74  stm32f4xx_adc.o(i.ADC_Init)
+    ADC_RegularChannelConfig                 0x08000a29   Thumb Code   184  stm32f4xx_adc.o(i.ADC_RegularChannelConfig)
+    ADC_SoftwareStartConv                    0x08000ae1   Thumb Code    10  stm32f4xx_adc.o(i.ADC_SoftwareStartConv)
+    Audio_Play                               0x08000aeb   Thumb Code    12  audio.o(i.Audio_Play)
+    Audio_Transmit16Bits                     0x08000af7   Thumb Code    34  audio.o(i.Audio_Transmit16Bits)
+    Audio_TransmitByte                       0x08000b19   Thumb Code   108  audio.o(i.Audio_TransmitByte)
+    Audio_Volume                             0x08000b89   Thumb Code    18  audio.o(i.Audio_Volume)
+    BusFault_Handler                         0x08000b9b   Thumb Code     4  stm32f4xx_it.o(i.BusFault_Handler)
+    Button_Init                              0x08000ba1   Thumb Code   198  button.o(i.Button_Init)
+    Communicate_Init                         0x08000c6d   Thumb Code   248  communicate.o(i.Communicate_Init)
+    Communicate_WiFiCheck                    0x08000da9   Thumb Code    56  communicate.o(i.Communicate_WiFiCheck)
+    Communicate_WiFiConfig                   0x08000de5   Thumb Code   384  communicate.o(i.Communicate_WiFiConfig)
+    Communicate_WiFiRX                       0x0800104d   Thumb Code    32  communicate.o(i.Communicate_WiFiRX)
+    Communicate_WiFiTX                       0x08001071   Thumb Code    26  communicate.o(i.Communicate_WiFiTX)
+    Communicate_ZigBeeCheck                  0x08001091   Thumb Code    56  communicate.o(i.Communicate_ZigBeeCheck)
+    Communicate_ZigBeeConfig                 0x080010cd   Thumb Code   378  communicate.o(i.Communicate_ZigBeeConfig)
+    Communicate_ZigBeeRX                     0x080012fd   Thumb Code    32  communicate.o(i.Communicate_ZigBeeRX)
+    Communicate_ZigBeeTX                     0x08001321   Thumb Code   150  communicate.o(i.Communicate_ZigBeeTX)
+    DMA2_Stream1_IRQHandler                  0x080013fd   Thumb Code    68  wifi.o(i.DMA2_Stream1_IRQHandler)
+    DMA2_Stream5_IRQHandler                  0x08001459   Thumb Code    68  zigbee.o(i.DMA2_Stream5_IRQHandler)
+    DMA2_Stream6_IRQHandler                  0x080014b5   Thumb Code    28  wifi.o(i.DMA2_Stream6_IRQHandler)
+    DMA2_Stream7_IRQHandler                  0x080014dd   Thumb Code    28  zigbee.o(i.DMA2_Stream7_IRQHandler)
+    DMA_ClearITPendingBit                    0x08001505   Thumb Code    38  stm32f4xx_dma.o(i.DMA_ClearITPendingBit)
+    DMA_Cmd                                  0x08001539   Thumb Code    22  stm32f4xx_dma.o(i.DMA_Cmd)
+    DMA_GetCurrDataCounter                   0x0800154f   Thumb Code     8  stm32f4xx_dma.o(i.DMA_GetCurrDataCounter)
+    DMA_GetITStatus                          0x08001559   Thumb Code    82  stm32f4xx_dma.o(i.DMA_GetITStatus)
+    DMA_ITConfig                             0x080015bd   Thumb Code    58  stm32f4xx_dma.o(i.DMA_ITConfig)
+    DMA_Init                                 0x080015f9   Thumb Code    82  stm32f4xx_dma.o(i.DMA_Init)
+    DMA_SetCurrDataCounter                   0x08001651   Thumb Code     4  stm32f4xx_dma.o(i.DMA_SetCurrDataCounter)
+    DebugMon_Handler                         0x08001655   Thumb Code     2  stm32f4xx_it.o(i.DebugMon_Handler)
+    Delay_ms                                 0x08001659   Thumb Code    68  delay.o(i.Delay_ms)
+    Delay_s                                  0x080016a1   Thumb Code    24  delay.o(i.Delay_s)
+    Delay_us                                 0x080016b9   Thumb Code    66  delay.o(i.Delay_us)
+    Display_Clear                            0x08001705   Thumb Code    64  display.o(i.Display_Clear)
+    Display_HardwareInit                     0x08001745   Thumb Code    96  display.o(i.Display_HardwareInit)
+    Display_Init                             0x080017a9   Thumb Code   224  display.o(i.Display_Init)
+    Display_SetPosition                      0x08001889   Thumb Code    42  display.o(i.Display_SetPosition)
+    Display_ShowChar                         0x080018b5   Thumb Code   178  display.o(i.Display_ShowChar)
+    Display_ShowString                       0x08001971   Thumb Code   126  display.o(i.Display_ShowString)
+    EXTI9_5_IRQHandler                       0x080019f1   Thumb Code    48  button.o(i.EXTI9_5_IRQHandler)
+    EXTI_ClearITPendingBit                   0x08001a29   Thumb Code     6  stm32f4xx_exti.o(i.EXTI_ClearITPendingBit)
+    EXTI_GetITStatus                         0x08001a35   Thumb Code    20  stm32f4xx_exti.o(i.EXTI_GetITStatus)
+    EXTI_Init                                0x08001a4d   Thumb Code   142  stm32f4xx_exti.o(i.EXTI_Init)
+    Fan_GetState                             0x08001ae1   Thumb Code     6  signaloutput.o(i.Fan_GetState)
+    Fan_Init                                 0x08001aed   Thumb Code    48  signaloutput.o(i.Fan_Init)
+    Fan_Start                                0x08001b21   Thumb Code    18  signaloutput.o(i.Fan_Start)
+    Fan_Stop                                 0x08001b3d   Thumb Code    18  signaloutput.o(i.Fan_Stop)
+    GPIO_Init                                0x08001b59   Thumb Code   144  stm32f4xx_gpio.o(i.GPIO_Init)
+    GPIO_PinAFConfig                         0x08001be9   Thumb Code    70  stm32f4xx_gpio.o(i.GPIO_PinAFConfig)
+    GPIO_ReadInputDataBit                    0x08001c2f   Thumb Code    18  stm32f4xx_gpio.o(i.GPIO_ReadInputDataBit)
+    GPIO_ResetBits                           0x08001c41   Thumb Code     4  stm32f4xx_gpio.o(i.GPIO_ResetBits)
+    GPIO_SetBits                             0x08001c45   Thumb Code     4  stm32f4xx_gpio.o(i.GPIO_SetBits)
+    HardFault_Handler                        0x08001c49   Thumb Code     4  stm32f4xx_it.o(i.HardFault_Handler)
+    I2C_CheckACK                             0x08001c4d   Thumb Code    74  display.o(i.I2C_CheckACK)
+    I2C_Start                                0x08001c9d   Thumb Code    48  display.o(i.I2C_Start)
+    I2C_Stop                                 0x08001cd1   Thumb Code    48  display.o(i.I2C_Stop)
+    I2C_TransmitByte                         0x08001d05   Thumb Code    88  display.o(i.I2C_TransmitByte)
+    I2C_TransmitDataCommand                  0x08001d61   Thumb Code    76  display.o(i.I2C_TransmitDataCommand)
+    Information_GetDateTime                  0x08001dad   Thumb Code    24  information.o(i.Information_GetDateTime)
+    Information_GetTimeStamp                 0x08001dc5   Thumb Code    66  information.o(i.Information_GetTimeStamp)
+    Information_InitializeRTC                0x08001e07   Thumb Code   160  information.o(i.Information_InitializeRTC)
+    Information_SetDateTime                  0x08001ea7   Thumb Code    44  information.o(i.Information_SetDateTime)
+    Int32toInt8                              0x08001ed3   Thumb Code    20  userlibrary.o(i.Int32toInt8)
+    LightSensor_GetValue                     0x08001ee9   Thumb Code    90  lightsensor.o(i.LightSensor_GetValue)
+    LightSensor_Init                         0x08001f51   Thumb Code   180  lightsensor.o(i.LightSensor_Init)
+    Light_GetState                           0x08002011   Thumb Code     6  signaloutput.o(i.Light_GetState)
+    Light_Init                               0x0800201d   Thumb Code    48  signaloutput.o(i.Light_Init)
+    Light_Start                              0x08002051   Thumb Code    18  signaloutput.o(i.Light_Start)
+    Light_Stop                               0x0800206d   Thumb Code    18  signaloutput.o(i.Light_Stop)
+    MemManage_Handler                        0x08002089   Thumb Code     4  stm32f4xx_it.o(i.MemManage_Handler)
+    NMI_Handler                              0x0800208d   Thumb Code     2  stm32f4xx_it.o(i.NMI_Handler)
+    NVIC_Init                                0x08002091   Thumb Code   106  misc.o(i.NVIC_Init)
+    PWR_BackupAccessCmd                      0x08002109   Thumb Code     6  stm32f4xx_pwr.o(i.PWR_BackupAccessCmd)
+    PendSV_Handler                           0x08002115   Thumb Code     2  stm32f4xx_it.o(i.PendSV_Handler)
+    Pin_Input                                0x08002119   Thumb Code    36  temperaturehumiditysensor.o(i.Pin_Input)
+    Pin_Output                               0x08002141   Thumb Code    48  temperaturehumiditysensor.o(i.Pin_Output)
+    RCC_AHB1PeriphClockCmd                   0x08002175   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd)
+    RCC_APB1PeriphClockCmd                   0x08002195   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd)
+    RCC_APB2PeriphClockCmd                   0x080021b5   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd)
+    RCC_APB2PeriphResetCmd                   0x080021d5   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd)
+    RCC_GetClocksFreq                        0x080021f5   Thumb Code   214  stm32f4xx_rcc.o(i.RCC_GetClocksFreq)
+    RCC_GetFlagStatus                        0x080022dd   Thumb Code    60  stm32f4xx_rcc.o(i.RCC_GetFlagStatus)
+    RCC_LSEConfig                            0x0800231d   Thumb Code    40  stm32f4xx_rcc.o(i.RCC_LSEConfig)
+    RCC_RTCCLKCmd                            0x08002349   Thumb Code     6  stm32f4xx_rcc.o(i.RCC_RTCCLKCmd)
+    RCC_RTCCLKConfig                         0x08002355   Thumb Code    50  stm32f4xx_rcc.o(i.RCC_RTCCLKConfig)
+    RTC_EnterInitMode                        0x080023c5   Thumb Code    76  stm32f4xx_rtc.o(i.RTC_EnterInitMode)
+    RTC_ExitInitMode                         0x08002415   Thumb Code    14  stm32f4xx_rtc.o(i.RTC_ExitInitMode)
+    RTC_GetDate                              0x08002429   Thumb Code    68  stm32f4xx_rtc.o(i.RTC_GetDate)
+    RTC_GetTime                              0x08002475   Thumb Code    72  stm32f4xx_rtc.o(i.RTC_GetTime)
+    RTC_Init                                 0x080024c5   Thumb Code    94  stm32f4xx_rtc.o(i.RTC_Init)
+    RTC_SetDate                              0x08002529   Thumb Code   190  stm32f4xx_rtc.o(i.RTC_SetDate)
+    RTC_SetTime                              0x080025f1   Thumb Code   198  stm32f4xx_rtc.o(i.RTC_SetTime)
+    RTC_WaitForSynchro                       0x080026c1   Thumb Code    92  stm32f4xx_rtc.o(i.RTC_WaitForSynchro)
+    RTC_WriteProtectionCmd                   0x08002721   Thumb Code    22  stm32f4xx_rtc.o(i.RTC_WriteProtectionCmd)
+    SVC_Handler                              0x0800273d   Thumb Code     2  stm32f4xx_it.o(i.SVC_Handler)
+    SYSCFG_EXTILineConfig                    0x08002741   Thumb Code    60  stm32f4xx_syscfg.o(i.SYSCFG_EXTILineConfig)
+    Sensor_Check                             0x08002781   Thumb Code    54  temperaturehumiditysensor.o(i.Sensor_Check)
+    Sensor_Convert                           0x080027bd   Thumb Code    92  temperaturehumiditysensor.o(i.Sensor_Convert)
+    Sensor_GetHumidity                       0x08002821   Thumb Code   226  temperaturehumiditysensor.o(i.Sensor_GetHumidity)
+    Sensor_GetTemperature                    0x08002921   Thumb Code    88  temperaturehumiditysensor.o(i.Sensor_GetTemperature)
+    Sensor_Getstate                          0x0800297d   Thumb Code    74  temperaturehumiditysensor.o(i.Sensor_Getstate)
+    Sensor_ReadBit                           0x080029d1   Thumb Code    64  temperaturehumiditysensor.o(i.Sensor_ReadBit)
+    Sensor_ReadByte                          0x08002a15   Thumb Code    32  temperaturehumiditysensor.o(i.Sensor_ReadByte)
+    Sensor_Reset                             0x08002a35   Thumb Code    38  temperaturehumiditysensor.o(i.Sensor_Reset)
+    Sensor_WriteBit                          0x08002a61   Thumb Code    70  temperaturehumiditysensor.o(i.Sensor_WriteBit)
+    Sensor_WriteByte                         0x08002aad   Thumb Code    28  temperaturehumiditysensor.o(i.Sensor_WriteByte)
+    ShowerHost_DisplayHelp                   0x08002bb1   Thumb Code   402  userlibrary.o(i.ShowerHost_DisplayHelp)
+    ShowerHost_DisplayNormal                 0x08002db1   Thumb Code   490  userlibrary.o(i.ShowerHost_DisplayNormal)
+    ShowerHost_DisplayRepair                 0x0800301d   Thumb Code   402  userlibrary.o(i.ShowerHost_DisplayRepair)
+    ShowerHost_FanControl                    0x0800321d   Thumb Code    98  userlibrary.o(i.ShowerHost_FanControl)
+    ShowerHost_GetHelpState                  0x08003285   Thumb Code    18  userlibrary.o(i.ShowerHost_GetHelpState)
+    ShowerHost_GetRepairState                0x0800329d   Thumb Code    20  userlibrary.o(i.ShowerHost_GetRepairState)
+    ShowerHost_GetWiFiData                   0x080032b5   Thumb Code   274  userlibrary.o(i.ShowerHost_GetWiFiData)
+    ShowerHost_GetZigBeeData                 0x080033f1   Thumb Code   202  userlibrary.o(i.ShowerHost_GetZigBeeData)
+    ShowerHost_HumidityDetect                0x080034dd   Thumb Code    18  userlibrary.o(i.ShowerHost_HumidityDetect)
+    ShowerHost_Init                          0x080034f5   Thumb Code   128  userlibrary.o(i.ShowerHost_Init)
+    ShowerHost_InitInformation               0x080035a1   Thumb Code    60  userlibrary.o(i.ShowerHost_InitInformation)
+    ShowerHost_LightDetect                   0x080035f1   Thumb Code    14  userlibrary.o(i.ShowerHost_LightDetect)
+    ShowerHost_SendWiFiData                  0x08003605   Thumb Code   322  userlibrary.o(i.ShowerHost_SendWiFiData)
+    ShowerHost_SendZigBeeData                0x08003759   Thumb Code   156  userlibrary.o(i.ShowerHost_SendZigBeeData)
+    ShowerHost_SetDevice                     0x08003805   Thumb Code   136  userlibrary.o(i.ShowerHost_SetDevice)
+    ShowerHost_SetHelpState                  0x08003891   Thumb Code    14  userlibrary.o(i.ShowerHost_SetHelpState)
+    ShowerHost_SetRepairState                0x080038a5   Thumb Code    14  userlibrary.o(i.ShowerHost_SetRepairState)
+    ShowerHost_TemperatureDetect             0x080038b9   Thumb Code    18  userlibrary.o(i.ShowerHost_TemperatureDetect)
+    ShowerHost_WiFiCheck                     0x080038d1   Thumb Code    88  userlibrary.o(i.ShowerHost_WiFiCheck)
+    ShowerHost_ZigBeeCheck                   0x0800392d   Thumb Code    86  userlibrary.o(i.ShowerHost_ZigBeeCheck)
+    SignalOutput_Init                        0x08003983   Thumb Code    12  signaloutput.o(i.SignalOutput_Init)
+    SysTick_Handler                          0x0800398f   Thumb Code     2  stm32f4xx_it.o(i.SysTick_Handler)
+    SystemInit                               0x08003991   Thumb Code    88  system_stm32f4xx.o(i.SystemInit)
+    TIM3_IRQHandler                          0x080039f9   Thumb Code    68  button.o(i.TIM3_IRQHandler)
+    TIM3_Init                                0x08003a45   Thumb Code    80  button.o(i.TIM3_Init)
+    TIM4_IRQHandler                          0x08003a99   Thumb Code    74  button.o(i.TIM4_IRQHandler)
+    TIM4_Init                                0x08003aed   Thumb Code    80  button.o(i.TIM4_Init)
+    TIM_ClearITPendingBit                    0x08003b41   Thumb Code     6  stm32f4xx_tim.o(i.TIM_ClearITPendingBit)
+    TIM_Cmd                                  0x08003b47   Thumb Code    24  stm32f4xx_tim.o(i.TIM_Cmd)
+    TIM_GetITStatus                          0x08003b5f   Thumb Code    34  stm32f4xx_tim.o(i.TIM_GetITStatus)
+    TIM_ITConfig                             0x08003b81   Thumb Code    18  stm32f4xx_tim.o(i.TIM_ITConfig)
+    TIM_SetCounter                           0x08003b93   Thumb Code     4  stm32f4xx_tim.o(i.TIM_SetCounter)
+    TIM_TimeBaseInit                         0x08003b99   Thumb Code   104  stm32f4xx_tim.o(i.TIM_TimeBaseInit)
+    TemperatureHumiditySensor_Init           0x08003c1d   Thumb Code    96  temperaturehumiditysensor.o(i.TemperatureHumiditySensor_Init)
+    USART1_DMAReceiveInit                    0x08003c89   Thumb Code   148  zigbee.o(i.USART1_DMAReceiveInit)
+    USART1_DMATransmitInit                   0x08003d31   Thumb Code   134  zigbee.o(i.USART1_DMATransmitInit)
+    USART1_IRQHandler                        0x08003dc5   Thumb Code    50  zigbee.o(i.USART1_IRQHandler)
+    USART1_Init                              0x08003e05   Thumb Code   124  zigbee.o(i.USART1_Init)
+    USART6_DMAReceiveInit                    0x08003e85   Thumb Code   148  wifi.o(i.USART6_DMAReceiveInit)
+    USART6_DMATransmitInit                   0x08003f2d   Thumb Code   134  wifi.o(i.USART6_DMATransmitInit)
+    USART6_IRQHandler                        0x08003fc1   Thumb Code    50  wifi.o(i.USART6_IRQHandler)
+    USART6_Init                              0x08004001   Thumb Code   124  wifi.o(i.USART6_Init)
+    USART_Cmd                                0x08004081   Thumb Code    24  stm32f4xx_usart.o(i.USART_Cmd)
+    USART_DMACmd                             0x08004099   Thumb Code    18  stm32f4xx_usart.o(i.USART_DMACmd)
+    USART_GetITStatus                        0x080040ab   Thumb Code    84  stm32f4xx_usart.o(i.USART_GetITStatus)
+    USART_ITConfig                           0x080040ff   Thumb Code    74  stm32f4xx_usart.o(i.USART_ITConfig)
+    USART_Init                               0x08004149   Thumb Code   204  stm32f4xx_usart.o(i.USART_Init)
+    USART_ReceiveData                        0x0800421d   Thumb Code    10  stm32f4xx_usart.o(i.USART_ReceiveData)
+    UsageFault_Handler                       0x08004227   Thumb Code     4  stm32f4xx_it.o(i.UsageFault_Handler)
+    WiFi_Init                                0x0800422d   Thumb Code   120  wifi.o(i.WiFi_Init)
+    WiFi_ReceiveString                       0x080042a9   Thumb Code    60  wifi.o(i.WiFi_ReceiveString)
+    WiFi_TransmitString                      0x080042ed   Thumb Code    78  wifi.o(i.WiFi_TransmitString)
+    ZigBee_Init                              0x08004345   Thumb Code   124  zigbee.o(i.ZigBee_Init)
+    ZigBee_ReceiveString                     0x080043c5   Thumb Code    60  zigbee.o(i.ZigBee_ReceiveString)
+    ZigBee_TransmitString                    0x08004409   Thumb Code    78  zigbee.o(i.ZigBee_TransmitString)
+    __0sprintf                               0x08004461   Thumb Code    34  printfa.o(i.__0sprintf)
+    __1sprintf                               0x08004461   Thumb Code     0  printfa.o(i.__0sprintf)
+    __2sprintf                               0x08004461   Thumb Code     0  printfa.o(i.__0sprintf)
+    __c89sprintf                             0x08004461   Thumb Code     0  printfa.o(i.__0sprintf)
+    sprintf                                  0x08004461   Thumb Code     0  printfa.o(i.__0sprintf)
+    __scatterload_copy                       0x08004489   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08004497   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08004499   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    main                                     0x08004d3d   Thumb Code    82  main.o(i.main)
+    F6x8                                     0x08004d8e   Data         552  display.o(.constdata)
+    F8X16                                    0x08004fb6   Data        1520  display.o(.constdata)
+    Region$$Table$$Base                      0x080055c0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080055e0   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f4xx.o(.data)
     AHBPrescTable                            0x20000004   Data          16  system_stm32f4xx.o(.data)
     Fan_State                                0x20000024   Data           1  signaloutput.o(.data)
     Light_State                              0x20000025   Data           1  signaloutput.o(.data)
-    Threshold                                0x20000028   Data           4  lightsensor.o(.data)
+    LightThreshold                           0x20000028   Data           4  lightsensor.o(.data)
     ConvertRatio                             0x2000002c   Data           4  lightsensor.o(.data)
     Temperature                              0x20000034   Data           4  temperaturehumiditysensor.o(.data)
     Humidity                                 0x20000038   Data           4  temperaturehumiditysensor.o(.data)
@@ -2470,28 +2542,44 @@ Image Symbol Table
     ZigBeeStringReceive_Flag                 0x20000048   Data           1  zigbee.o(.data)
     ZigBeeStringTransmit_Flag                0x20000049   Data           1  zigbee.o(.data)
     ZigBeeDataLength                         0x2000004a   Data           2  zigbee.o(.data)
-    WiFiStringReceive_Flag                   0x2000004c   Data           1  wifi.o(.data)
-    WiFiStringTransmit_Flag                  0x2000004d   Data           1  wifi.o(.data)
-    WiFiDataLength                           0x2000004e   Data           2  wifi.o(.data)
-    ZigBee_ID                                0x20000050   Data           1  communicate.o(.data)
-    ZigBee_Channel                           0x20000051   Data           1  communicate.o(.data)
-    ZigBee_PANID                             0x20000052   Data           2  communicate.o(.data)
-    ZigBee_GroupID                           0x20000054   Data           2  communicate.o(.data)
-    WiFi_Name                                0x20000056   Data          11  communicate.o(.data)
-    WiFi_Password                            0x20000061   Data          11  communicate.o(.data)
-    Socket_IP                                0x2000006c   Data          18  communicate.o(.data)
-    Socket_Port                              0x2000007e   Data           2  communicate.o(.data)
-    ShowerHostSerial                         0x20000080   Data           1  userlibrary.o(.data)
-    ShowerTerminalNumber                     0x20000081   Data           1  userlibrary.o(.data)
-    Data                                     0x20000084   Data          20  lightsensor.o(.bss)
-    ZigBee_TXBuffer                          0x20000098   Data         256  communicate.o(.bss)
-    ZigBee_RXBuffer                          0x20000198   Data         256  communicate.o(.bss)
-    WiFi_TXBuffer                            0x20000298   Data         256  communicate.o(.bss)
-    WiFi_RXBuffer                            0x20000398   Data         256  communicate.o(.bss)
-    Host_Information                         0x20000498   Data          28  userlibrary.o(.bss)
-    Terminal_InformationFromCloud            0x200004b4   Data         768  userlibrary.o(.bss)
-    Terminal_InformationFromTerminal         0x200007b4   Data         768  userlibrary.o(.bss)
-    __initial_sp                             0x20000eb8   Data           0  startup_stm32f401xx.o(STACK)
+    pZigBeeReceivedDataRead                  0x2000004c   Data           4  zigbee.o(.data)
+    WiFiStringReceive_Flag                   0x20000050   Data           1  wifi.o(.data)
+    WiFiStringTransmit_Flag                  0x20000051   Data           1  wifi.o(.data)
+    WiFiDataLength                           0x20000052   Data           2  wifi.o(.data)
+    pWiFiReceivedDataRead                    0x20000054   Data           4  wifi.o(.data)
+    ZigBee_ID                                0x20000058   Data           1  communicate.o(.data)
+    ZigBee_Channel                           0x20000059   Data           1  communicate.o(.data)
+    ZigBee_PANID                             0x2000005a   Data           2  communicate.o(.data)
+    ZigBee_GroupID                           0x2000005c   Data           2  communicate.o(.data)
+    WiFi_Name                                0x2000005e   Data          11  communicate.o(.data)
+    WiFi_Password                            0x20000069   Data          11  communicate.o(.data)
+    Socket_IP                                0x20000074   Data          18  communicate.o(.data)
+    Socket_Port                              0x20000086   Data           2  communicate.o(.data)
+    ShowerHostSerial                         0x20000088   Data           1  userlibrary.o(.data)
+    ShowerTerminalNumber                     0x20000089   Data           1  userlibrary.o(.data)
+    Communicate_ZigBeeChannel                0x2000008a   Data           1  userlibrary.o(.data)
+    Communicate_ZigBeePANID                  0x2000008c   Data           2  userlibrary.o(.data)
+    Communicate_ZigBeeGroupID                0x2000008e   Data           2  userlibrary.o(.data)
+    OnlineTerminalFlag                       0x20000090   Data           7  userlibrary.o(.data)
+    ReceivedOnceFromTerminalFlag             0x20000097   Data           7  userlibrary.o(.data)
+    LightSensorThreshold                     0x200000a0   Data           4  userlibrary.o(.data)
+    TemperatureSensorThreshold               0x200000a4   Data           4  userlibrary.o(.data)
+    HumiditySensorThreshold                  0x200000a8   Data           4  userlibrary.o(.data)
+    GetNewDataFromTerminal                   0x200000ac   Data           1  userlibrary.o(.data)
+    GetNewDataFromCloud                      0x200000ad   Data           1  userlibrary.o(.data)
+    Data                                     0x200000b0   Data          20  lightsensor.o(.bss)
+    ZigBeeReceivedDataBuffer                 0x200000c4   Data        1024  zigbee.o(.bss)
+    WiFiReceivedDataBuffer                   0x200004c4   Data        1024  wifi.o(.bss)
+    ZigBee_TXBuffer                          0x200008c4   Data        1024  communicate.o(.bss)
+    ZigBee_RXBuffer                          0x20000cc4   Data        1024  communicate.o(.bss)
+    WiFi_TXBuffer                            0x200010c4   Data        1024  communicate.o(.bss)
+    WiFi_RXBuffer                            0x200014c4   Data        1024  communicate.o(.bss)
+    Host_Information                         0x200018c4   Data          28  userlibrary.o(.bss)
+    Terminal_InformationFromCloud            0x200018e0   Data        7168  userlibrary.o(.bss)
+    Terminal_InformationFromTerminal         0x200034e0   Data        7168  userlibrary.o(.bss)
+    ACK                                      0x200050e0   Data        1024  userlibrary.o(.bss)
+    NAK                                      0x200054e0   Data        1024  userlibrary.o(.bss)
+    __initial_sp                             0x20005ce0   Data           0  startup_stm32f401xx.o(STACK)
 
 
 
@@ -2501,258 +2589,271 @@ Memory Map of the image
 
   Image Entry point : 0x08000195
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00004d6c, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00005690, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00004ce8, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000055e0, Max: 0x00080000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000194   Data   RO          126    RESET               startup_stm32f401xx.o
-    0x08000194   0x08000194   0x00000000   Code   RO         6011  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000194   0x08000194   0x00000004   Code   RO         6292    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x08000198   0x08000198   0x00000004   Code   RO         6295    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x0800019c   0x0800019c   0x00000000   Code   RO         6297    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x0800019c   0x0800019c   0x00000000   Code   RO         6299    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x0800019c   0x0800019c   0x00000008   Code   RO         6300    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x080001a4   0x080001a4   0x00000004   Code   RO         6307    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
-    0x080001a8   0x080001a8   0x00000000   Code   RO         6302    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
-    0x080001a8   0x080001a8   0x00000000   Code   RO         6304    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
-    0x080001a8   0x080001a8   0x00000004   Code   RO         6293    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000194   0x08000194   0x00000000   Code   RO         6068  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000194   0x08000194   0x00000004   Code   RO         6349    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000198   0x08000198   0x00000004   Code   RO         6352    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0800019c   0x0800019c   0x00000000   Code   RO         6354    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x0800019c   0x0800019c   0x00000000   Code   RO         6356    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x0800019c   0x0800019c   0x00000008   Code   RO         6357    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080001a4   0x080001a4   0x00000004   Code   RO         6364    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
+    0x080001a8   0x080001a8   0x00000000   Code   RO         6359    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
+    0x080001a8   0x080001a8   0x00000000   Code   RO         6361    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
+    0x080001a8   0x080001a8   0x00000004   Code   RO         6350    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x080001ac   0x080001ac   0x00000024   Code   RO          127    .text               startup_stm32f401xx.o
-    0x080001d0   0x080001d0   0x00000024   Code   RO         6017    .text               mc_w.l(memcpya.o)
-    0x080001f4   0x080001f4   0x00000024   Code   RO         6019    .text               mc_w.l(strstr.o)
-    0x08000218   0x08000218   0x0000000e   Code   RO         6021    .text               mc_w.l(strlen.o)
-    0x08000226   0x08000226   0x00000012   Code   RO         6023    .text               mc_w.l(strcpy.o)
-    0x08000238   0x08000238   0x00000026   Code   RO         6288    .text               mf_w.l(f2d.o)
-    0x0800025e   0x0800025e   0x00000002   PAD
-    0x08000260   0x08000260   0x00000030   Code   RO         6290    .text               mf_w.l(cdrcmple.o)
-    0x08000290   0x08000290   0x0000002c   Code   RO         6311    .text               mc_w.l(uidiv.o)
-    0x080002bc   0x080002bc   0x00000062   Code   RO         6313    .text               mc_w.l(uldiv.o)
-    0x0800031e   0x0800031e   0x00000000   Code   RO         6321    .text               mc_w.l(iusefp.o)
-    0x0800031e   0x0800031e   0x0000014e   Code   RO         6322    .text               mf_w.l(dadd.o)
-    0x0800046c   0x0800046c   0x000000e4   Code   RO         6324    .text               mf_w.l(dmul.o)
-    0x08000550   0x08000550   0x000000de   Code   RO         6326    .text               mf_w.l(ddiv.o)
-    0x0800062e   0x0800062e   0x00000030   Code   RO         6328    .text               mf_w.l(dfixul.o)
-    0x0800065e   0x0800065e   0x00000002   PAD
-    0x08000660   0x08000660   0x00000024   Code   RO         6330    .text               mc_w.l(init.o)
-    0x08000684   0x08000684   0x0000001e   Code   RO         6333    .text               mc_w.l(llshl.o)
-    0x080006a2   0x080006a2   0x00000020   Code   RO         6335    .text               mc_w.l(llushr.o)
-    0x080006c2   0x080006c2   0x00000024   Code   RO         6337    .text               mc_w.l(llsshr.o)
-    0x080006e6   0x080006e6   0x000000ba   Code   RO         6340    .text               mf_w.l(depilogue.o)
-    0x080007a0   0x080007a0   0x0000000a   Code   RO          305    i.ADC_ClearITPendingBit  stm32f4xx_adc.o
-    0x080007aa   0x080007aa   0x00000016   Code   RO          306    i.ADC_Cmd           stm32f4xx_adc.o
-    0x080007c0   0x080007c0   0x00000030   Code   RO          307    i.ADC_CommonInit    stm32f4xx_adc.o
-    0x080007f0   0x080007f0   0x00000016   Code   RO          312    i.ADC_DeInit        stm32f4xx_adc.o
-    0x08000806   0x08000806   0x00000008   Code   RO          318    i.ADC_GetConversionValue  stm32f4xx_adc.o
-    0x0800080e   0x0800080e   0x00000026   Code   RO          320    i.ADC_GetITStatus   stm32f4xx_adc.o
-    0x08000834   0x08000834   0x0000004c   Code   RO         5267    i.ADC_IRQHandler    lightsensor.o
-    0x08000880   0x08000880   0x00000020   Code   RO          325    i.ADC_ITConfig      stm32f4xx_adc.o
-    0x080008a0   0x080008a0   0x00000054   Code   RO          326    i.ADC_Init          stm32f4xx_adc.o
-    0x080008f4   0x080008f4   0x000000b8   Code   RO          331    i.ADC_RegularChannelConfig  stm32f4xx_adc.o
-    0x080009ac   0x080009ac   0x0000000a   Code   RO          333    i.ADC_SoftwareStartConv  stm32f4xx_adc.o
-    0x080009b6   0x080009b6   0x0000000c   Code   RO         5588    i.Audio_Play        audio.o
-    0x080009c2   0x080009c2   0x00000022   Code   RO         5591    i.Audio_Transmit16Bits  audio.o
-    0x080009e4   0x080009e4   0x00000070   Code   RO         5592    i.Audio_TransmitByte  audio.o
-    0x08000a54   0x08000a54   0x00000012   Code   RO         5593    i.Audio_Volume      audio.o
-    0x08000a66   0x08000a66   0x00000004   Code   RO          134    i.BusFault_Handler  stm32f4xx_it.o
-    0x08000a6a   0x08000a6a   0x00000002   PAD
-    0x08000a6c   0x08000a6c   0x000000cc   Code   RO         5134    i.Button_Init       button.o
-    0x08000b38   0x08000b38   0x0000010c   Code   RO         5766    i.Communicate_Init  communicate.o
-    0x08000c44   0x08000c44   0x00000038   Code   RO         5767    i.Communicate_WiFiCheck  communicate.o
-    0x08000c7c   0x08000c7c   0x00000264   Code   RO         5768    i.Communicate_WiFiConfig  communicate.o
-    0x08000ee0   0x08000ee0   0x00000024   Code   RO         5769    i.Communicate_WiFiRX  communicate.o
-    0x08000f04   0x08000f04   0x00000038   Code   RO         5771    i.Communicate_ZigBeeCheck  communicate.o
-    0x08000f3c   0x08000f3c   0x0000022c   Code   RO         5772    i.Communicate_ZigBeeConfig  communicate.o
-    0x08001168   0x08001168   0x00000024   Code   RO         5773    i.Communicate_ZigBeeRX  communicate.o
-    0x0800118c   0x0800118c   0x00000030   Code   RO         5499    i.DMA2_Stream1_IRQHandler  wifi.o
-    0x080011bc   0x080011bc   0x00000030   Code   RO         5412    i.DMA2_Stream5_IRQHandler  zigbee.o
-    0x080011ec   0x080011ec   0x00000028   Code   RO         5500    i.DMA2_Stream6_IRQHandler  wifi.o
-    0x08001214   0x08001214   0x00000028   Code   RO         5413    i.DMA2_Stream7_IRQHandler  zigbee.o
-    0x0800123c   0x0800123c   0x00000034   Code   RO         1338    i.DMA_ClearITPendingBit  stm32f4xx_dma.o
-    0x08001270   0x08001270   0x00000016   Code   RO         1339    i.DMA_Cmd           stm32f4xx_dma.o
-    0x08001286   0x08001286   0x00000008   Code   RO         1345    i.DMA_GetCurrDataCounter  stm32f4xx_dma.o
-    0x0800128e   0x0800128e   0x00000002   PAD
-    0x08001290   0x08001290   0x00000064   Code   RO         1349    i.DMA_GetITStatus   stm32f4xx_dma.o
-    0x080012f4   0x080012f4   0x0000003a   Code   RO         1350    i.DMA_ITConfig      stm32f4xx_dma.o
-    0x0800132e   0x0800132e   0x00000002   PAD
-    0x08001330   0x08001330   0x00000058   Code   RO         1351    i.DMA_Init          stm32f4xx_dma.o
-    0x08001388   0x08001388   0x00000004   Code   RO         1354    i.DMA_SetCurrDataCounter  stm32f4xx_dma.o
-    0x0800138c   0x0800138c   0x00000002   Code   RO          135    i.DebugMon_Handler  stm32f4xx_it.o
-    0x0800138e   0x0800138e   0x00000002   PAD
-    0x08001390   0x08001390   0x00000048   Code   RO         5098    i.Delay_ms          delay.o
-    0x080013d8   0x080013d8   0x00000018   Code   RO         5099    i.Delay_s           delay.o
-    0x080013f0   0x080013f0   0x0000004c   Code   RO         5100    i.Delay_us          delay.o
-    0x0800143c   0x0800143c   0x00000040   Code   RO         5652    i.Display_Clear     display.o
-    0x0800147c   0x0800147c   0x00000064   Code   RO         5654    i.Display_HardwareInit  display.o
-    0x080014e0   0x080014e0   0x000000e0   Code   RO         5655    i.Display_Init      display.o
-    0x080015c0   0x080015c0   0x0000002a   Code   RO         5659    i.Display_SetPosition  display.o
-    0x080015ea   0x080015ea   0x00000002   PAD
-    0x080015ec   0x080015ec   0x000000bc   Code   RO         5660    i.Display_ShowChar  display.o
-    0x080016a8   0x080016a8   0x0000007e   Code   RO         5661    i.Display_ShowString  display.o
-    0x08001726   0x08001726   0x00000002   PAD
-    0x08001728   0x08001728   0x00000038   Code   RO         5135    i.EXTI9_5_IRQHandler  button.o
-    0x08001760   0x08001760   0x0000000c   Code   RO         1626    i.EXTI_ClearITPendingBit  stm32f4xx_exti.o
-    0x0800176c   0x0800176c   0x00000018   Code   RO         1630    i.EXTI_GetITStatus  stm32f4xx_exti.o
-    0x08001784   0x08001784   0x00000094   Code   RO         1631    i.EXTI_Init         stm32f4xx_exti.o
-    0x08001818   0x08001818   0x0000000c   Code   RO         5192    i.Fan_GetState      signaloutput.o
-    0x08001824   0x08001824   0x00000034   Code   RO         5193    i.Fan_Init          signaloutput.o
-    0x08001858   0x08001858   0x0000001c   Code   RO         5194    i.Fan_Start         signaloutput.o
-    0x08001874   0x08001874   0x0000001c   Code   RO         5195    i.Fan_Stop          signaloutput.o
-    0x08001890   0x08001890   0x00000090   Code   RO         2004    i.GPIO_Init         stm32f4xx_gpio.o
-    0x08001920   0x08001920   0x00000046   Code   RO         2005    i.GPIO_PinAFConfig  stm32f4xx_gpio.o
-    0x08001966   0x08001966   0x00000012   Code   RO         2008    i.GPIO_ReadInputDataBit  stm32f4xx_gpio.o
-    0x08001978   0x08001978   0x00000004   Code   RO         2011    i.GPIO_ResetBits    stm32f4xx_gpio.o
-    0x0800197c   0x0800197c   0x00000004   Code   RO         2012    i.GPIO_SetBits      stm32f4xx_gpio.o
-    0x08001980   0x08001980   0x00000004   Code   RO          136    i.HardFault_Handler  stm32f4xx_it.o
-    0x08001984   0x08001984   0x00000050   Code   RO         5662    i.I2C_CheckACK      display.o
-    0x080019d4   0x080019d4   0x00000034   Code   RO         5663    i.I2C_Start         display.o
-    0x08001a08   0x08001a08   0x00000034   Code   RO         5664    i.I2C_Stop          display.o
-    0x08001a3c   0x08001a3c   0x0000005c   Code   RO         5665    i.I2C_TransmitByte  display.o
-    0x08001a98   0x08001a98   0x0000004c   Code   RO         5666    i.I2C_TransmitDataCommand  display.o
-    0x08001ae4   0x08001ae4   0x00000018   Code   RO         5845    i.Information_GetDateTime  information.o
-    0x08001afc   0x08001afc   0x000000a0   Code   RO         5847    i.Information_InitializeRTC  information.o
-    0x08001b9c   0x08001b9c   0x0000002c   Code   RO         5848    i.Information_SetDateTime  information.o
-    0x08001bc8   0x08001bc8   0x00000068   Code   RO         5269    i.LightSensor_GetValue  lightsensor.o
-    0x08001c30   0x08001c30   0x000000ac   Code   RO         5270    i.LightSensor_Init  lightsensor.o
-    0x08001cdc   0x08001cdc   0x0000000c   Code   RO         5196    i.Light_GetState    signaloutput.o
-    0x08001ce8   0x08001ce8   0x00000034   Code   RO         5197    i.Light_Init        signaloutput.o
-    0x08001d1c   0x08001d1c   0x0000001c   Code   RO         5198    i.Light_Start       signaloutput.o
-    0x08001d38   0x08001d38   0x0000001c   Code   RO         5199    i.Light_Stop        signaloutput.o
-    0x08001d54   0x08001d54   0x00000004   Code   RO          137    i.MemManage_Handler  stm32f4xx_it.o
-    0x08001d58   0x08001d58   0x00000002   Code   RO          138    i.NMI_Handler       stm32f4xx_it.o
-    0x08001d5a   0x08001d5a   0x00000002   PAD
-    0x08001d5c   0x08001d5c   0x00000078   Code   RO          252    i.NVIC_Init         misc.o
-    0x08001dd4   0x08001dd4   0x0000000c   Code   RO         2798    i.PWR_BackupAccessCmd  stm32f4xx_pwr.o
-    0x08001de0   0x08001de0   0x00000002   Code   RO          139    i.PendSV_Handler    stm32f4xx_it.o
-    0x08001de2   0x08001de2   0x00000002   PAD
-    0x08001de4   0x08001de4   0x00000028   Code   RO         5313    i.Pin_Input         temperaturehumiditysensor.o
-    0x08001e0c   0x08001e0c   0x00000034   Code   RO         5314    i.Pin_Output        temperaturehumiditysensor.o
-    0x08001e40   0x08001e40   0x00000020   Code   RO         3495    i.RCC_AHB1PeriphClockCmd  stm32f4xx_rcc.o
-    0x08001e60   0x08001e60   0x00000020   Code   RO         3501    i.RCC_APB1PeriphClockCmd  stm32f4xx_rcc.o
-    0x08001e80   0x08001e80   0x00000020   Code   RO         3504    i.RCC_APB2PeriphClockCmd  stm32f4xx_rcc.o
-    0x08001ea0   0x08001ea0   0x00000020   Code   RO         3506    i.RCC_APB2PeriphResetCmd  stm32f4xx_rcc.o
-    0x08001ec0   0x08001ec0   0x000000e8   Code   RO         3513    i.RCC_GetClocksFreq  stm32f4xx_rcc.o
-    0x08001fa8   0x08001fa8   0x00000040   Code   RO         3514    i.RCC_GetFlagStatus  stm32f4xx_rcc.o
-    0x08001fe8   0x08001fe8   0x0000002c   Code   RO         3522    i.RCC_LSEConfig     stm32f4xx_rcc.o
-    0x08002014   0x08002014   0x0000000c   Code   RO         3536    i.RCC_RTCCLKCmd     stm32f4xx_rcc.o
-    0x08002020   0x08002020   0x0000003c   Code   RO         3537    i.RCC_RTCCLKConfig  stm32f4xx_rcc.o
-    0x0800205c   0x0800205c   0x00000016   Code   RO         2969    i.RTC_Bcd2ToByte    stm32f4xx_rtc.o
-    0x08002072   0x08002072   0x0000001c   Code   RO         2971    i.RTC_ByteToBcd2    stm32f4xx_rtc.o
+    0x080001d0   0x080001d0   0x000000a8   Code   RO         6071    .text               mc_w.l(mktime.o)
+    0x08000278   0x08000278   0x00000024   Code   RO         6074    .text               mc_w.l(memcpya.o)
+    0x0800029c   0x0800029c   0x00000024   Code   RO         6076    .text               mc_w.l(strstr.o)
+    0x080002c0   0x080002c0   0x0000000e   Code   RO         6078    .text               mc_w.l(strlen.o)
+    0x080002ce   0x080002ce   0x00000012   Code   RO         6080    .text               mc_w.l(strcpy.o)
+    0x080002e0   0x080002e0   0x00000026   Code   RO         6345    .text               mf_w.l(f2d.o)
+    0x08000306   0x08000306   0x00000002   PAD
+    0x08000308   0x08000308   0x00000030   Code   RO         6347    .text               mf_w.l(cdrcmple.o)
+    0x08000338   0x08000338   0x0000002c   Code   RO         6368    .text               mc_w.l(uidiv.o)
+    0x08000364   0x08000364   0x00000062   Code   RO         6370    .text               mc_w.l(uldiv.o)
+    0x080003c6   0x080003c6   0x00000002   PAD
+    0x080003c8   0x080003c8   0x0000008c   Code   RO         6375    .text               mc_w.l(localtime_i.o)
+    0x08000454   0x08000454   0x00000000   Code   RO         6378    .text               mc_w.l(iusefp.o)
+    0x08000454   0x08000454   0x0000014e   Code   RO         6379    .text               mf_w.l(dadd.o)
+    0x080005a2   0x080005a2   0x000000e4   Code   RO         6381    .text               mf_w.l(dmul.o)
+    0x08000686   0x08000686   0x000000de   Code   RO         6383    .text               mf_w.l(ddiv.o)
+    0x08000764   0x08000764   0x00000030   Code   RO         6385    .text               mf_w.l(dfixul.o)
+    0x08000794   0x08000794   0x00000024   Code   RO         6387    .text               mc_w.l(init.o)
+    0x080007b8   0x080007b8   0x0000001e   Code   RO         6390    .text               mc_w.l(llshl.o)
+    0x080007d6   0x080007d6   0x00000020   Code   RO         6392    .text               mc_w.l(llushr.o)
+    0x080007f6   0x080007f6   0x00000024   Code   RO         6394    .text               mc_w.l(llsshr.o)
+    0x0800081a   0x0800081a   0x000000ba   Code   RO         6397    .text               mf_w.l(depilogue.o)
+    0x080008d4   0x080008d4   0x0000000a   Code   RO          305    i.ADC_ClearITPendingBit  stm32f4xx_adc.o
+    0x080008de   0x080008de   0x00000016   Code   RO          306    i.ADC_Cmd           stm32f4xx_adc.o
+    0x080008f4   0x080008f4   0x00000030   Code   RO          307    i.ADC_CommonInit    stm32f4xx_adc.o
+    0x08000924   0x08000924   0x00000016   Code   RO          312    i.ADC_DeInit        stm32f4xx_adc.o
+    0x0800093a   0x0800093a   0x00000008   Code   RO          318    i.ADC_GetConversionValue  stm32f4xx_adc.o
+    0x08000942   0x08000942   0x00000026   Code   RO          320    i.ADC_GetITStatus   stm32f4xx_adc.o
+    0x08000968   0x08000968   0x0000004c   Code   RO         5267    i.ADC_IRQHandler    lightsensor.o
+    0x080009b4   0x080009b4   0x00000020   Code   RO          325    i.ADC_ITConfig      stm32f4xx_adc.o
+    0x080009d4   0x080009d4   0x00000054   Code   RO          326    i.ADC_Init          stm32f4xx_adc.o
+    0x08000a28   0x08000a28   0x000000b8   Code   RO          331    i.ADC_RegularChannelConfig  stm32f4xx_adc.o
+    0x08000ae0   0x08000ae0   0x0000000a   Code   RO          333    i.ADC_SoftwareStartConv  stm32f4xx_adc.o
+    0x08000aea   0x08000aea   0x0000000c   Code   RO         5593    i.Audio_Play        audio.o
+    0x08000af6   0x08000af6   0x00000022   Code   RO         5596    i.Audio_Transmit16Bits  audio.o
+    0x08000b18   0x08000b18   0x00000070   Code   RO         5597    i.Audio_TransmitByte  audio.o
+    0x08000b88   0x08000b88   0x00000012   Code   RO         5598    i.Audio_Volume      audio.o
+    0x08000b9a   0x08000b9a   0x00000004   Code   RO          134    i.BusFault_Handler  stm32f4xx_it.o
+    0x08000b9e   0x08000b9e   0x00000002   PAD
+    0x08000ba0   0x08000ba0   0x000000cc   Code   RO         5134    i.Button_Init       button.o
+    0x08000c6c   0x08000c6c   0x0000013c   Code   RO         5771    i.Communicate_Init  communicate.o
+    0x08000da8   0x08000da8   0x0000003c   Code   RO         5772    i.Communicate_WiFiCheck  communicate.o
+    0x08000de4   0x08000de4   0x00000268   Code   RO         5773    i.Communicate_WiFiConfig  communicate.o
+    0x0800104c   0x0800104c   0x00000024   Code   RO         5774    i.Communicate_WiFiRX  communicate.o
+    0x08001070   0x08001070   0x00000020   Code   RO         5775    i.Communicate_WiFiTX  communicate.o
+    0x08001090   0x08001090   0x0000003c   Code   RO         5776    i.Communicate_ZigBeeCheck  communicate.o
+    0x080010cc   0x080010cc   0x00000230   Code   RO         5777    i.Communicate_ZigBeeConfig  communicate.o
+    0x080012fc   0x080012fc   0x00000024   Code   RO         5778    i.Communicate_ZigBeeRX  communicate.o
+    0x08001320   0x08001320   0x000000dc   Code   RO         5779    i.Communicate_ZigBeeTX  communicate.o
+    0x080013fc   0x080013fc   0x0000005c   Code   RO         5503    i.DMA2_Stream1_IRQHandler  wifi.o
+    0x08001458   0x08001458   0x0000005c   Code   RO         5412    i.DMA2_Stream5_IRQHandler  zigbee.o
+    0x080014b4   0x080014b4   0x00000028   Code   RO         5504    i.DMA2_Stream6_IRQHandler  wifi.o
+    0x080014dc   0x080014dc   0x00000028   Code   RO         5413    i.DMA2_Stream7_IRQHandler  zigbee.o
+    0x08001504   0x08001504   0x00000034   Code   RO         1338    i.DMA_ClearITPendingBit  stm32f4xx_dma.o
+    0x08001538   0x08001538   0x00000016   Code   RO         1339    i.DMA_Cmd           stm32f4xx_dma.o
+    0x0800154e   0x0800154e   0x00000008   Code   RO         1345    i.DMA_GetCurrDataCounter  stm32f4xx_dma.o
+    0x08001556   0x08001556   0x00000002   PAD
+    0x08001558   0x08001558   0x00000064   Code   RO         1349    i.DMA_GetITStatus   stm32f4xx_dma.o
+    0x080015bc   0x080015bc   0x0000003a   Code   RO         1350    i.DMA_ITConfig      stm32f4xx_dma.o
+    0x080015f6   0x080015f6   0x00000002   PAD
+    0x080015f8   0x080015f8   0x00000058   Code   RO         1351    i.DMA_Init          stm32f4xx_dma.o
+    0x08001650   0x08001650   0x00000004   Code   RO         1354    i.DMA_SetCurrDataCounter  stm32f4xx_dma.o
+    0x08001654   0x08001654   0x00000002   Code   RO          135    i.DebugMon_Handler  stm32f4xx_it.o
+    0x08001656   0x08001656   0x00000002   PAD
+    0x08001658   0x08001658   0x00000048   Code   RO         5098    i.Delay_ms          delay.o
+    0x080016a0   0x080016a0   0x00000018   Code   RO         5099    i.Delay_s           delay.o
+    0x080016b8   0x080016b8   0x0000004c   Code   RO         5100    i.Delay_us          delay.o
+    0x08001704   0x08001704   0x00000040   Code   RO         5657    i.Display_Clear     display.o
+    0x08001744   0x08001744   0x00000064   Code   RO         5659    i.Display_HardwareInit  display.o
+    0x080017a8   0x080017a8   0x000000e0   Code   RO         5660    i.Display_Init      display.o
+    0x08001888   0x08001888   0x0000002a   Code   RO         5664    i.Display_SetPosition  display.o
+    0x080018b2   0x080018b2   0x00000002   PAD
+    0x080018b4   0x080018b4   0x000000bc   Code   RO         5665    i.Display_ShowChar  display.o
+    0x08001970   0x08001970   0x0000007e   Code   RO         5666    i.Display_ShowString  display.o
+    0x080019ee   0x080019ee   0x00000002   PAD
+    0x080019f0   0x080019f0   0x00000038   Code   RO         5135    i.EXTI9_5_IRQHandler  button.o
+    0x08001a28   0x08001a28   0x0000000c   Code   RO         1626    i.EXTI_ClearITPendingBit  stm32f4xx_exti.o
+    0x08001a34   0x08001a34   0x00000018   Code   RO         1630    i.EXTI_GetITStatus  stm32f4xx_exti.o
+    0x08001a4c   0x08001a4c   0x00000094   Code   RO         1631    i.EXTI_Init         stm32f4xx_exti.o
+    0x08001ae0   0x08001ae0   0x0000000c   Code   RO         5192    i.Fan_GetState      signaloutput.o
+    0x08001aec   0x08001aec   0x00000034   Code   RO         5193    i.Fan_Init          signaloutput.o
+    0x08001b20   0x08001b20   0x0000001c   Code   RO         5194    i.Fan_Start         signaloutput.o
+    0x08001b3c   0x08001b3c   0x0000001c   Code   RO         5195    i.Fan_Stop          signaloutput.o
+    0x08001b58   0x08001b58   0x00000090   Code   RO         2004    i.GPIO_Init         stm32f4xx_gpio.o
+    0x08001be8   0x08001be8   0x00000046   Code   RO         2005    i.GPIO_PinAFConfig  stm32f4xx_gpio.o
+    0x08001c2e   0x08001c2e   0x00000012   Code   RO         2008    i.GPIO_ReadInputDataBit  stm32f4xx_gpio.o
+    0x08001c40   0x08001c40   0x00000004   Code   RO         2011    i.GPIO_ResetBits    stm32f4xx_gpio.o
+    0x08001c44   0x08001c44   0x00000004   Code   RO         2012    i.GPIO_SetBits      stm32f4xx_gpio.o
+    0x08001c48   0x08001c48   0x00000004   Code   RO          136    i.HardFault_Handler  stm32f4xx_it.o
+    0x08001c4c   0x08001c4c   0x00000050   Code   RO         5667    i.I2C_CheckACK      display.o
+    0x08001c9c   0x08001c9c   0x00000034   Code   RO         5668    i.I2C_Start         display.o
+    0x08001cd0   0x08001cd0   0x00000034   Code   RO         5669    i.I2C_Stop          display.o
+    0x08001d04   0x08001d04   0x0000005c   Code   RO         5670    i.I2C_TransmitByte  display.o
+    0x08001d60   0x08001d60   0x0000004c   Code   RO         5671    i.I2C_TransmitDataCommand  display.o
+    0x08001dac   0x08001dac   0x00000018   Code   RO         5847    i.Information_GetDateTime  information.o
+    0x08001dc4   0x08001dc4   0x00000042   Code   RO         5848    i.Information_GetTimeStamp  information.o
+    0x08001e06   0x08001e06   0x000000a0   Code   RO         5849    i.Information_InitializeRTC  information.o
+    0x08001ea6   0x08001ea6   0x0000002c   Code   RO         5850    i.Information_SetDateTime  information.o
+    0x08001ed2   0x08001ed2   0x00000014   Code   RO         5892    i.Int32toInt8       userlibrary.o
+    0x08001ee6   0x08001ee6   0x00000002   PAD
+    0x08001ee8   0x08001ee8   0x00000068   Code   RO         5269    i.LightSensor_GetValue  lightsensor.o
+    0x08001f50   0x08001f50   0x000000c0   Code   RO         5270    i.LightSensor_Init  lightsensor.o
+    0x08002010   0x08002010   0x0000000c   Code   RO         5196    i.Light_GetState    signaloutput.o
+    0x0800201c   0x0800201c   0x00000034   Code   RO         5197    i.Light_Init        signaloutput.o
+    0x08002050   0x08002050   0x0000001c   Code   RO         5198    i.Light_Start       signaloutput.o
+    0x0800206c   0x0800206c   0x0000001c   Code   RO         5199    i.Light_Stop        signaloutput.o
+    0x08002088   0x08002088   0x00000004   Code   RO          137    i.MemManage_Handler  stm32f4xx_it.o
+    0x0800208c   0x0800208c   0x00000002   Code   RO          138    i.NMI_Handler       stm32f4xx_it.o
     0x0800208e   0x0800208e   0x00000002   PAD
-    0x08002090   0x08002090   0x00000050   Code   RO         2981    i.RTC_EnterInitMode  stm32f4xx_rtc.o
-    0x080020e0   0x080020e0   0x00000014   Code   RO         2982    i.RTC_ExitInitMode  stm32f4xx_rtc.o
-    0x080020f4   0x080020f4   0x0000004c   Code   RO         2985    i.RTC_GetDate       stm32f4xx_rtc.o
-    0x08002140   0x08002140   0x00000050   Code   RO         2990    i.RTC_GetTime       stm32f4xx_rtc.o
-    0x08002190   0x08002190   0x00000064   Code   RO         2995    i.RTC_Init          stm32f4xx_rtc.o
-    0x080021f4   0x080021f4   0x000000c8   Code   RO         3001    i.RTC_SetDate       stm32f4xx_rtc.o
-    0x080022bc   0x080022bc   0x000000d0   Code   RO         3002    i.RTC_SetTime       stm32f4xx_rtc.o
-    0x0800238c   0x0800238c   0x00000060   Code   RO         3018    i.RTC_WaitForSynchro  stm32f4xx_rtc.o
-    0x080023ec   0x080023ec   0x0000001c   Code   RO         3022    i.RTC_WriteProtectionCmd  stm32f4xx_rtc.o
-    0x08002408   0x08002408   0x00000002   Code   RO          140    i.SVC_Handler       stm32f4xx_it.o
-    0x0800240a   0x0800240a   0x00000002   PAD
-    0x0800240c   0x0800240c   0x00000040   Code   RO         4193    i.SYSCFG_EXTILineConfig  stm32f4xx_syscfg.o
-    0x0800244c   0x0800244c   0x0000003c   Code   RO         5315    i.Sensor_Check      temperaturehumiditysensor.o
-    0x08002488   0x08002488   0x00000064   Code   RO         5316    i.Sensor_Convert    temperaturehumiditysensor.o
-    0x080024ec   0x080024ec   0x00000100   Code   RO         5317    i.Sensor_GetHumidity  temperaturehumiditysensor.o
-    0x080025ec   0x080025ec   0x0000005c   Code   RO         5318    i.Sensor_GetTemperature  temperaturehumiditysensor.o
-    0x08002648   0x08002648   0x00000054   Code   RO         5319    i.Sensor_Getstate   temperaturehumiditysensor.o
-    0x0800269c   0x0800269c   0x00000044   Code   RO         5320    i.Sensor_ReadBit    temperaturehumiditysensor.o
-    0x080026e0   0x080026e0   0x00000020   Code   RO         5321    i.Sensor_ReadByte   temperaturehumiditysensor.o
-    0x08002700   0x08002700   0x0000002c   Code   RO         5322    i.Sensor_Reset      temperaturehumiditysensor.o
-    0x0800272c   0x0800272c   0x0000004c   Code   RO         5323    i.Sensor_WriteBit   temperaturehumiditysensor.o
-    0x08002778   0x08002778   0x0000001c   Code   RO         5324    i.Sensor_WriteByte  temperaturehumiditysensor.o
-    0x08002794   0x08002794   0x000000e8   Code   RO            4    i.SetSysClock       system_stm32f4xx.o
-    0x0800287c   0x0800287c   0x000001c4   Code   RO         5890    i.ShowerHost_DisplayHelp  userlibrary.o
-    0x08002a40   0x08002a40   0x0000022c   Code   RO         5891    i.ShowerHost_DisplayNormal  userlibrary.o
-    0x08002c6c   0x08002c6c   0x000001c4   Code   RO         5892    i.ShowerHost_DisplayRepair  userlibrary.o
-    0x08002e30   0x08002e30   0x00000068   Code   RO         5893    i.ShowerHost_FanControl  userlibrary.o
-    0x08002e98   0x08002e98   0x00000018   Code   RO         5894    i.ShowerHost_GetHelpState  userlibrary.o
-    0x08002eb0   0x08002eb0   0x00000018   Code   RO         5895    i.ShowerHost_GetRepairState  userlibrary.o
-    0x08002ec8   0x08002ec8   0x00000050   Code   RO         5896    i.ShowerHost_GetWiFiData  userlibrary.o
-    0x08002f18   0x08002f18   0x00000038   Code   RO         5897    i.ShowerHost_GetZigBeeData  userlibrary.o
-    0x08002f50   0x08002f50   0x00000018   Code   RO         5898    i.ShowerHost_HumidityDetect  userlibrary.o
-    0x08002f68   0x08002f68   0x00000070   Code   RO         5899    i.ShowerHost_Init   userlibrary.o
-    0x08002fd8   0x08002fd8   0x00000050   Code   RO         5900    i.ShowerHost_InitInformation  userlibrary.o
-    0x08003028   0x08003028   0x00000014   Code   RO         5902    i.ShowerHost_LightDetect  userlibrary.o
-    0x0800303c   0x0800303c   0x0000008c   Code   RO         5903    i.ShowerHost_SetDevice  userlibrary.o
-    0x080030c8   0x080030c8   0x00000014   Code   RO         5904    i.ShowerHost_SetHelpState  userlibrary.o
-    0x080030dc   0x080030dc   0x00000014   Code   RO         5905    i.ShowerHost_SetRepairState  userlibrary.o
-    0x080030f0   0x080030f0   0x00000018   Code   RO         5906    i.ShowerHost_TemperatureDetect  userlibrary.o
-    0x08003108   0x08003108   0x0000000c   Code   RO         5200    i.SignalOutput_Init  signaloutput.o
-    0x08003114   0x08003114   0x00000002   Code   RO          141    i.SysTick_Handler   stm32f4xx_it.o
-    0x08003116   0x08003116   0x00000002   PAD
-    0x08003118   0x08003118   0x00000068   Code   RO            6    i.SystemInit        system_stm32f4xx.o
-    0x08003180   0x08003180   0x00000048   Code   RO         5136    i.TIM3_IRQHandler   button.o
-    0x080031c8   0x080031c8   0x00000054   Code   RO         5137    i.TIM3_Init         button.o
-    0x0800321c   0x0800321c   0x0000004c   Code   RO         5138    i.TIM4_IRQHandler   button.o
-    0x08003268   0x08003268   0x00000054   Code   RO         5139    i.TIM4_Init         button.o
-    0x080032bc   0x080032bc   0x00000006   Code   RO         4261    i.TIM_ClearITPendingBit  stm32f4xx_tim.o
-    0x080032c2   0x080032c2   0x00000018   Code   RO         4266    i.TIM_Cmd           stm32f4xx_tim.o
-    0x080032da   0x080032da   0x00000022   Code   RO         4287    i.TIM_GetITStatus   stm32f4xx_tim.o
-    0x080032fc   0x080032fc   0x00000012   Code   RO         4291    i.TIM_ITConfig      stm32f4xx_tim.o
-    0x0800330e   0x0800330e   0x00000004   Code   RO         4332    i.TIM_SetCounter    stm32f4xx_tim.o
-    0x08003312   0x08003312   0x00000002   PAD
-    0x08003314   0x08003314   0x00000084   Code   RO         4338    i.TIM_TimeBaseInit  stm32f4xx_tim.o
-    0x08003398   0x08003398   0x00000044   Code   RO         5325    i.TemperatureHumiditySensor_Init  temperaturehumiditysensor.o
-    0x080033dc   0x080033dc   0x00000098   Code   RO         5414    i.USART1_DMAReceiveInit  zigbee.o
-    0x08003474   0x08003474   0x00000094   Code   RO         5415    i.USART1_DMATransmitInit  zigbee.o
-    0x08003508   0x08003508   0x00000040   Code   RO         5416    i.USART1_IRQHandler  zigbee.o
-    0x08003548   0x08003548   0x00000080   Code   RO         5417    i.USART1_Init       zigbee.o
-    0x080035c8   0x080035c8   0x00000098   Code   RO         5501    i.USART6_DMAReceiveInit  wifi.o
-    0x08003660   0x08003660   0x00000094   Code   RO         5502    i.USART6_DMATransmitInit  wifi.o
-    0x080036f4   0x080036f4   0x00000040   Code   RO         5503    i.USART6_IRQHandler  wifi.o
-    0x08003734   0x08003734   0x00000080   Code   RO         5504    i.USART6_Init       wifi.o
-    0x080037b4   0x080037b4   0x00000018   Code   RO         4820    i.USART_Cmd         stm32f4xx_usart.o
-    0x080037cc   0x080037cc   0x00000012   Code   RO         4821    i.USART_DMACmd      stm32f4xx_usart.o
-    0x080037de   0x080037de   0x00000054   Code   RO         4824    i.USART_GetITStatus  stm32f4xx_usart.o
-    0x08003832   0x08003832   0x0000004a   Code   RO         4826    i.USART_ITConfig    stm32f4xx_usart.o
-    0x0800387c   0x0800387c   0x000000d4   Code   RO         4827    i.USART_Init        stm32f4xx_usart.o
-    0x08003950   0x08003950   0x0000000a   Code   RO         4834    i.USART_ReceiveData  stm32f4xx_usart.o
-    0x0800395a   0x0800395a   0x00000004   Code   RO          142    i.UsageFault_Handler  stm32f4xx_it.o
-    0x0800395e   0x0800395e   0x00000002   PAD
-    0x08003960   0x08003960   0x0000007c   Code   RO         5505    i.WiFi_Init         wifi.o
-    0x080039dc   0x080039dc   0x00000040   Code   RO         5507    i.WiFi_ReceiveString  wifi.o
-    0x08003a1c   0x08003a1c   0x00000058   Code   RO         5509    i.WiFi_TransmitString  wifi.o
-    0x08003a74   0x08003a74   0x00000080   Code   RO         5418    i.ZigBee_Init       zigbee.o
-    0x08003af4   0x08003af4   0x00000040   Code   RO         5420    i.ZigBee_ReceiveString  zigbee.o
-    0x08003b34   0x08003b34   0x00000058   Code   RO         5422    i.ZigBee_TransmitString  zigbee.o
-    0x08003b8c   0x08003b8c   0x00000028   Code   RO         6262    i.__0sprintf        mc_w.l(printfa.o)
-    0x08003bb4   0x08003bb4   0x0000000e   Code   RO         6344    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08003bc2   0x08003bc2   0x00000002   Code   RO         6345    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08003bc4   0x08003bc4   0x0000000e   Code   RO         6346    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08003bd2   0x08003bd2   0x00000002   PAD
-    0x08003bd4   0x08003bd4   0x00000184   Code   RO         6267    i._fp_digits        mc_w.l(printfa.o)
-    0x08003d58   0x08003d58   0x000006b4   Code   RO         6268    i._printf_core      mc_w.l(printfa.o)
-    0x0800440c   0x0800440c   0x00000024   Code   RO         6269    i._printf_post_padding  mc_w.l(printfa.o)
-    0x08004430   0x08004430   0x0000002e   Code   RO         6270    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x0800445e   0x0800445e   0x0000000a   Code   RO         6272    i._sputc            mc_w.l(printfa.o)
-    0x08004468   0x08004468   0x00000046   Code   RO         5074    i.main              main.o
-    0x080044ae   0x080044ae   0x00000818   Data   RO         5667    .constdata          display.o
-    0x08004cc6   0x08004cc6   0x00000002   PAD
-    0x08004cc8   0x08004cc8   0x00000020   Data   RO         6342    Region$$Table       anon$$obj.o
+    0x08002090   0x08002090   0x00000078   Code   RO          252    i.NVIC_Init         misc.o
+    0x08002108   0x08002108   0x0000000c   Code   RO         2798    i.PWR_BackupAccessCmd  stm32f4xx_pwr.o
+    0x08002114   0x08002114   0x00000002   Code   RO          139    i.PendSV_Handler    stm32f4xx_it.o
+    0x08002116   0x08002116   0x00000002   PAD
+    0x08002118   0x08002118   0x00000028   Code   RO         5313    i.Pin_Input         temperaturehumiditysensor.o
+    0x08002140   0x08002140   0x00000034   Code   RO         5314    i.Pin_Output        temperaturehumiditysensor.o
+    0x08002174   0x08002174   0x00000020   Code   RO         3495    i.RCC_AHB1PeriphClockCmd  stm32f4xx_rcc.o
+    0x08002194   0x08002194   0x00000020   Code   RO         3501    i.RCC_APB1PeriphClockCmd  stm32f4xx_rcc.o
+    0x080021b4   0x080021b4   0x00000020   Code   RO         3504    i.RCC_APB2PeriphClockCmd  stm32f4xx_rcc.o
+    0x080021d4   0x080021d4   0x00000020   Code   RO         3506    i.RCC_APB2PeriphResetCmd  stm32f4xx_rcc.o
+    0x080021f4   0x080021f4   0x000000e8   Code   RO         3513    i.RCC_GetClocksFreq  stm32f4xx_rcc.o
+    0x080022dc   0x080022dc   0x00000040   Code   RO         3514    i.RCC_GetFlagStatus  stm32f4xx_rcc.o
+    0x0800231c   0x0800231c   0x0000002c   Code   RO         3522    i.RCC_LSEConfig     stm32f4xx_rcc.o
+    0x08002348   0x08002348   0x0000000c   Code   RO         3536    i.RCC_RTCCLKCmd     stm32f4xx_rcc.o
+    0x08002354   0x08002354   0x0000003c   Code   RO         3537    i.RCC_RTCCLKConfig  stm32f4xx_rcc.o
+    0x08002390   0x08002390   0x00000016   Code   RO         2969    i.RTC_Bcd2ToByte    stm32f4xx_rtc.o
+    0x080023a6   0x080023a6   0x0000001c   Code   RO         2971    i.RTC_ByteToBcd2    stm32f4xx_rtc.o
+    0x080023c2   0x080023c2   0x00000002   PAD
+    0x080023c4   0x080023c4   0x00000050   Code   RO         2981    i.RTC_EnterInitMode  stm32f4xx_rtc.o
+    0x08002414   0x08002414   0x00000014   Code   RO         2982    i.RTC_ExitInitMode  stm32f4xx_rtc.o
+    0x08002428   0x08002428   0x0000004c   Code   RO         2985    i.RTC_GetDate       stm32f4xx_rtc.o
+    0x08002474   0x08002474   0x00000050   Code   RO         2990    i.RTC_GetTime       stm32f4xx_rtc.o
+    0x080024c4   0x080024c4   0x00000064   Code   RO         2995    i.RTC_Init          stm32f4xx_rtc.o
+    0x08002528   0x08002528   0x000000c8   Code   RO         3001    i.RTC_SetDate       stm32f4xx_rtc.o
+    0x080025f0   0x080025f0   0x000000d0   Code   RO         3002    i.RTC_SetTime       stm32f4xx_rtc.o
+    0x080026c0   0x080026c0   0x00000060   Code   RO         3018    i.RTC_WaitForSynchro  stm32f4xx_rtc.o
+    0x08002720   0x08002720   0x0000001c   Code   RO         3022    i.RTC_WriteProtectionCmd  stm32f4xx_rtc.o
+    0x0800273c   0x0800273c   0x00000002   Code   RO          140    i.SVC_Handler       stm32f4xx_it.o
+    0x0800273e   0x0800273e   0x00000002   PAD
+    0x08002740   0x08002740   0x00000040   Code   RO         4193    i.SYSCFG_EXTILineConfig  stm32f4xx_syscfg.o
+    0x08002780   0x08002780   0x0000003c   Code   RO         5315    i.Sensor_Check      temperaturehumiditysensor.o
+    0x080027bc   0x080027bc   0x00000064   Code   RO         5316    i.Sensor_Convert    temperaturehumiditysensor.o
+    0x08002820   0x08002820   0x00000100   Code   RO         5317    i.Sensor_GetHumidity  temperaturehumiditysensor.o
+    0x08002920   0x08002920   0x0000005c   Code   RO         5318    i.Sensor_GetTemperature  temperaturehumiditysensor.o
+    0x0800297c   0x0800297c   0x00000054   Code   RO         5319    i.Sensor_Getstate   temperaturehumiditysensor.o
+    0x080029d0   0x080029d0   0x00000044   Code   RO         5320    i.Sensor_ReadBit    temperaturehumiditysensor.o
+    0x08002a14   0x08002a14   0x00000020   Code   RO         5321    i.Sensor_ReadByte   temperaturehumiditysensor.o
+    0x08002a34   0x08002a34   0x0000002c   Code   RO         5322    i.Sensor_Reset      temperaturehumiditysensor.o
+    0x08002a60   0x08002a60   0x0000004c   Code   RO         5323    i.Sensor_WriteBit   temperaturehumiditysensor.o
+    0x08002aac   0x08002aac   0x0000001c   Code   RO         5324    i.Sensor_WriteByte  temperaturehumiditysensor.o
+    0x08002ac8   0x08002ac8   0x000000e8   Code   RO            4    i.SetSysClock       system_stm32f4xx.o
+    0x08002bb0   0x08002bb0   0x00000200   Code   RO         5895    i.ShowerHost_DisplayHelp  userlibrary.o
+    0x08002db0   0x08002db0   0x0000026c   Code   RO         5896    i.ShowerHost_DisplayNormal  userlibrary.o
+    0x0800301c   0x0800301c   0x00000200   Code   RO         5897    i.ShowerHost_DisplayRepair  userlibrary.o
+    0x0800321c   0x0800321c   0x00000068   Code   RO         5898    i.ShowerHost_FanControl  userlibrary.o
+    0x08003284   0x08003284   0x00000018   Code   RO         5899    i.ShowerHost_GetHelpState  userlibrary.o
+    0x0800329c   0x0800329c   0x00000018   Code   RO         5900    i.ShowerHost_GetRepairState  userlibrary.o
+    0x080032b4   0x080032b4   0x0000013c   Code   RO         5901    i.ShowerHost_GetWiFiData  userlibrary.o
+    0x080033f0   0x080033f0   0x000000ec   Code   RO         5902    i.ShowerHost_GetZigBeeData  userlibrary.o
+    0x080034dc   0x080034dc   0x00000018   Code   RO         5903    i.ShowerHost_HumidityDetect  userlibrary.o
+    0x080034f4   0x080034f4   0x000000ac   Code   RO         5904    i.ShowerHost_Init   userlibrary.o
+    0x080035a0   0x080035a0   0x00000050   Code   RO         5905    i.ShowerHost_InitInformation  userlibrary.o
+    0x080035f0   0x080035f0   0x00000014   Code   RO         5907    i.ShowerHost_LightDetect  userlibrary.o
+    0x08003604   0x08003604   0x00000154   Code   RO         5908    i.ShowerHost_SendWiFiData  userlibrary.o
+    0x08003758   0x08003758   0x000000ac   Code   RO         5909    i.ShowerHost_SendZigBeeData  userlibrary.o
+    0x08003804   0x08003804   0x0000008c   Code   RO         5910    i.ShowerHost_SetDevice  userlibrary.o
+    0x08003890   0x08003890   0x00000014   Code   RO         5911    i.ShowerHost_SetHelpState  userlibrary.o
+    0x080038a4   0x080038a4   0x00000014   Code   RO         5912    i.ShowerHost_SetRepairState  userlibrary.o
+    0x080038b8   0x080038b8   0x00000018   Code   RO         5913    i.ShowerHost_TemperatureDetect  userlibrary.o
+    0x080038d0   0x080038d0   0x0000005c   Code   RO         5914    i.ShowerHost_WiFiCheck  userlibrary.o
+    0x0800392c   0x0800392c   0x00000056   Code   RO         5915    i.ShowerHost_ZigBeeCheck  userlibrary.o
+    0x08003982   0x08003982   0x0000000c   Code   RO         5200    i.SignalOutput_Init  signaloutput.o
+    0x0800398e   0x0800398e   0x00000002   Code   RO          141    i.SysTick_Handler   stm32f4xx_it.o
+    0x08003990   0x08003990   0x00000068   Code   RO            6    i.SystemInit        system_stm32f4xx.o
+    0x080039f8   0x080039f8   0x0000004c   Code   RO         5136    i.TIM3_IRQHandler   button.o
+    0x08003a44   0x08003a44   0x00000054   Code   RO         5137    i.TIM3_Init         button.o
+    0x08003a98   0x08003a98   0x00000054   Code   RO         5138    i.TIM4_IRQHandler   button.o
+    0x08003aec   0x08003aec   0x00000054   Code   RO         5139    i.TIM4_Init         button.o
+    0x08003b40   0x08003b40   0x00000006   Code   RO         4261    i.TIM_ClearITPendingBit  stm32f4xx_tim.o
+    0x08003b46   0x08003b46   0x00000018   Code   RO         4266    i.TIM_Cmd           stm32f4xx_tim.o
+    0x08003b5e   0x08003b5e   0x00000022   Code   RO         4287    i.TIM_GetITStatus   stm32f4xx_tim.o
+    0x08003b80   0x08003b80   0x00000012   Code   RO         4291    i.TIM_ITConfig      stm32f4xx_tim.o
+    0x08003b92   0x08003b92   0x00000004   Code   RO         4332    i.TIM_SetCounter    stm32f4xx_tim.o
+    0x08003b96   0x08003b96   0x00000002   PAD
+    0x08003b98   0x08003b98   0x00000084   Code   RO         4338    i.TIM_TimeBaseInit  stm32f4xx_tim.o
+    0x08003c1c   0x08003c1c   0x0000006c   Code   RO         5325    i.TemperatureHumiditySensor_Init  temperaturehumiditysensor.o
+    0x08003c88   0x08003c88   0x000000a8   Code   RO         5414    i.USART1_DMAReceiveInit  zigbee.o
+    0x08003d30   0x08003d30   0x00000094   Code   RO         5415    i.USART1_DMATransmitInit  zigbee.o
+    0x08003dc4   0x08003dc4   0x00000040   Code   RO         5416    i.USART1_IRQHandler  zigbee.o
+    0x08003e04   0x08003e04   0x00000080   Code   RO         5417    i.USART1_Init       zigbee.o
+    0x08003e84   0x08003e84   0x000000a8   Code   RO         5505    i.USART6_DMAReceiveInit  wifi.o
+    0x08003f2c   0x08003f2c   0x00000094   Code   RO         5506    i.USART6_DMATransmitInit  wifi.o
+    0x08003fc0   0x08003fc0   0x00000040   Code   RO         5507    i.USART6_IRQHandler  wifi.o
+    0x08004000   0x08004000   0x00000080   Code   RO         5508    i.USART6_Init       wifi.o
+    0x08004080   0x08004080   0x00000018   Code   RO         4820    i.USART_Cmd         stm32f4xx_usart.o
+    0x08004098   0x08004098   0x00000012   Code   RO         4821    i.USART_DMACmd      stm32f4xx_usart.o
+    0x080040aa   0x080040aa   0x00000054   Code   RO         4824    i.USART_GetITStatus  stm32f4xx_usart.o
+    0x080040fe   0x080040fe   0x0000004a   Code   RO         4826    i.USART_ITConfig    stm32f4xx_usart.o
+    0x08004148   0x08004148   0x000000d4   Code   RO         4827    i.USART_Init        stm32f4xx_usart.o
+    0x0800421c   0x0800421c   0x0000000a   Code   RO         4834    i.USART_ReceiveData  stm32f4xx_usart.o
+    0x08004226   0x08004226   0x00000004   Code   RO          142    i.UsageFault_Handler  stm32f4xx_it.o
+    0x0800422a   0x0800422a   0x00000002   PAD
+    0x0800422c   0x0800422c   0x0000007c   Code   RO         5509    i.WiFi_Init         wifi.o
+    0x080042a8   0x080042a8   0x00000044   Code   RO         5511    i.WiFi_ReceiveString  wifi.o
+    0x080042ec   0x080042ec   0x00000058   Code   RO         5513    i.WiFi_TransmitString  wifi.o
+    0x08004344   0x08004344   0x00000080   Code   RO         5418    i.ZigBee_Init       zigbee.o
+    0x080043c4   0x080043c4   0x00000044   Code   RO         5420    i.ZigBee_ReceiveString  zigbee.o
+    0x08004408   0x08004408   0x00000058   Code   RO         5422    i.ZigBee_TransmitString  zigbee.o
+    0x08004460   0x08004460   0x00000028   Code   RO         6319    i.__0sprintf        mc_w.l(printfa.o)
+    0x08004488   0x08004488   0x0000000e   Code   RO         6401    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08004496   0x08004496   0x00000002   Code   RO         6402    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08004498   0x08004498   0x0000000e   Code   RO         6403    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080044a6   0x080044a6   0x00000002   PAD
+    0x080044a8   0x080044a8   0x00000184   Code   RO         6324    i._fp_digits        mc_w.l(printfa.o)
+    0x0800462c   0x0800462c   0x000006b4   Code   RO         6325    i._printf_core      mc_w.l(printfa.o)
+    0x08004ce0   0x08004ce0   0x00000024   Code   RO         6326    i._printf_post_padding  mc_w.l(printfa.o)
+    0x08004d04   0x08004d04   0x0000002e   Code   RO         6327    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x08004d32   0x08004d32   0x0000000a   Code   RO         6329    i._sputc            mc_w.l(printfa.o)
+    0x08004d3c   0x08004d3c   0x00000052   Code   RO         5074    i.main              main.o
+    0x08004d8e   0x08004d8e   0x00000818   Data   RO         5672    .constdata          display.o
+    0x080055a6   0x080055a6   0x0000000c   Data   RO         6072    .constdata          mc_w.l(mktime.o)
+    0x080055b2   0x080055b2   0x0000000c   Data   RO         6376    .constdata          mc_w.l(localtime_i.o)
+    0x080055be   0x080055be   0x00000002   PAD
+    0x080055c0   0x080055c0   0x00000020   Data   RO         6399    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08004ce8, Size: 0x00000eb8, Max: 0x00018000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080055e0, Size: 0x00005ce0, Max: 0x00018000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08004ce8   0x00000014   Data   RW            7    .data               system_stm32f4xx.o
-    0x20000014   0x08004cfc   0x00000010   Data   RW         3543    .data               stm32f4xx_rcc.o
-    0x20000024   0x08004d0c   0x00000002   Data   RW         5201    .data               signaloutput.o
-    0x20000026   0x08004d0e   0x00000002   PAD
-    0x20000028   0x08004d10   0x00000009   Data   RW         5272    .data               lightsensor.o
-    0x20000031   0x08004d19   0x00000003   PAD
-    0x20000034   0x08004d1c   0x00000014   Data   RW         5326    .data               temperaturehumiditysensor.o
-    0x20000048   0x08004d30   0x00000004   Data   RW         5423    .data               zigbee.o
-    0x2000004c   0x08004d34   0x00000004   Data   RW         5510    .data               wifi.o
-    0x20000050   0x08004d38   0x00000030   Data   RW         5776    .data               communicate.o
-    0x20000080   0x08004d68   0x00000003   Data   RW         5908    .data               userlibrary.o
-    0x20000083   0x08004d6b   0x00000001   PAD
-    0x20000084        -       0x00000014   Zero   RW         5271    .bss                lightsensor.o
-    0x20000098        -       0x00000400   Zero   RW         5775    .bss                communicate.o
-    0x20000498        -       0x0000061c   Zero   RW         5907    .bss                userlibrary.o
-    0x20000ab4   0x08004d6b   0x00000004   PAD
-    0x20000ab8        -       0x00000400   Zero   RW          124    STACK               startup_stm32f401xx.o
+    0x20000000   0x080055e0   0x00000014   Data   RW            7    .data               system_stm32f4xx.o
+    0x20000014   0x080055f4   0x00000010   Data   RW         3543    .data               stm32f4xx_rcc.o
+    0x20000024   0x08005604   0x00000002   Data   RW         5201    .data               signaloutput.o
+    0x20000026   0x08005606   0x00000002   PAD
+    0x20000028   0x08005608   0x00000009   Data   RW         5272    .data               lightsensor.o
+    0x20000031   0x08005611   0x00000003   PAD
+    0x20000034   0x08005614   0x00000014   Data   RW         5326    .data               temperaturehumiditysensor.o
+    0x20000048   0x08005628   0x00000008   Data   RW         5424    .data               zigbee.o
+    0x20000050   0x08005630   0x00000008   Data   RW         5515    .data               wifi.o
+    0x20000058   0x08005638   0x00000030   Data   RW         5781    .data               communicate.o
+    0x20000088   0x08005668   0x00000027   Data   RW         5918    .data               userlibrary.o
+    0x200000af   0x0800568f   0x00000001   PAD
+    0x200000b0        -       0x00000014   Zero   RW         5271    .bss                lightsensor.o
+    0x200000c4        -       0x00000400   Zero   RW         5423    .bss                zigbee.o
+    0x200004c4        -       0x00000400   Zero   RW         5514    .bss                wifi.o
+    0x200008c4        -       0x00001000   Zero   RW         5780    .bss                communicate.o
+    0x200018c4        -       0x0000401c   Zero   RW         5917    .bss                userlibrary.o
+    0x200058e0        -       0x00000400   Zero   RW          124    STACK               startup_stm32f401xx.o
 
 
 ==============================================================================
@@ -2763,13 +2864,13 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        176          4          0          0          0       2436   audio.o
-       576         40          0          0          0       3611   button.o
-      1620        486          0         48       1024       6862   communicate.o
+       588         40          0          0          0       3619   button.o
+      1936        574          0         48       4096       8666   communicate.o
        172         14          0          0          0       1700   delay.o
       1096         32       2072          0          0       9108   display.o
-       228          0          0          0          0       2444   information.o
-       352         36          0          9         20       2877   lightsensor.o
-        70          0          0          0          0        547   main.o
+       294          0          0          0          0       4051   information.o
+       372         38          0          9         20       3002   lightsensor.o
+        82          0          0          0          0        551   main.o
        120         14          0          0          0       1052   misc.o
        252         60          0          2          0       5110   signaloutput.o
         36          8        404          0       1024        856   startup_stm32f401xx.o
@@ -2777,7 +2878,7 @@ Image component sizes
        332         38          0          0          0       5772   stm32f4xx_dma.o
        184         16          0          0          0       2184   stm32f4xx_exti.o
        240          0          0          0          0       3655   stm32f4xx_gpio.o
-        26          0          0          0          0       5674   stm32f4xx_it.o
+        26          0          0          0          0       5082   stm32f4xx_it.o
         12          6          0          0          0        554   stm32f4xx_pwr.o
        540         66          0         16          0       7823   stm32f4xx_rcc.o
        938         62          0          0          0       8252   stm32f4xx_rtc.o
@@ -2785,15 +2886,15 @@ Image component sizes
        218         28          0          0          0       4379   stm32f4xx_tim.o
        422          8          0          0          0       5029   stm32f4xx_usart.o
        336         32          0         20          0     306497   system_stm32f4xx.o
-      1000         86          0         20          0       9130   temperaturehumiditysensor.o
-      2188        456          0          3       1564      10997   userlibrary.o
-       856         92          0          4          0       6970   wifi.o
-       860         92          0          4          0       7054   zigbee.o
+      1040         94          0         20          0       9334   temperaturehumiditysensor.o
+      3558        578          0         39      16412      16632   userlibrary.o
+       920        110          0          8       1024       7187   wifi.o
+       924        110          0          8       1024       7279   zigbee.o
 
     ----------------------------------------------------------------------
-     13398       1704       2510        132       3636     428873   Object Totals
+     15362       1960       2508        176      23600     438110   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        26          0          2          6          4          0   (incl. Padding)
+        26          0          0          6          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -2814,7 +2915,9 @@ Image component sizes
         30          0          0          0          0         68   llshl.o
         36          0          0          0          0         68   llsshr.o
         32          0          0          0          0         68   llushr.o
+       140          6         12          0          0         76   localtime_i.o
         36          0          0          0          0         68   memcpya.o
+       168         18         12          0          0         80   mktime.o
       2236         86          0          0          0        532   printfa.o
         18          0          0          0          0         68   strcpy.o
         14          0          0          0          0         68   strlen.o
@@ -2830,18 +2933,18 @@ Image component sizes
         38          0          0          0          0         68   f2d.o
 
     ----------------------------------------------------------------------
-      3780        102          0          0          0       1984   Library Totals
-         6          0          0          0          0          0   (incl. Padding)
+      4088        126         26          0          0       2140   Library Totals
+         6          0          2          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-      2670        102          0          0          0       1260   mc_w.l
+      2978        126         24          0          0       1416   mc_w.l
       1104          0          0          0          0        724   mf_w.l
 
     ----------------------------------------------------------------------
-      3780        102          0          0          0       1984   Library Totals
+      4088        126         26          0          0       2140   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -2850,15 +2953,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     17178       1806       2510        132       3636     414121   Grand Totals
-     17178       1806       2510        132       3636     414121   ELF Image Totals
-     17178       1806       2510        132          0          0   ROM Totals
+     19450       2086       2534        176      23600     422610   Grand Totals
+     19450       2086       2534        176      23600     422610   ELF Image Totals
+     19450       2086       2534        176          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                19688 (  19.23kB)
-    Total RW  Size (RW Data + ZI Data)              3768 (   3.68kB)
-    Total ROM Size (Code + RO Data + RW Data)      19820 (  19.36kB)
+    Total RO  Size (Code + RO Data)                21984 (  21.47kB)
+    Total RW  Size (RW Data + ZI Data)             23776 (  23.22kB)
+    Total ROM Size (Code + RO Data + RW Data)      22160 (  21.64kB)
 
 ==============================================================================
 

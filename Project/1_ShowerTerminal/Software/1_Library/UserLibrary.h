@@ -39,7 +39,8 @@ extern "C"
 // Initialize all peripherals
 void ShowerTerminal_Init(void);
 
-void ShowerTerminal_GetZigBeeData(void);
+void ShowerTerminal_SendZigBeeData(uint8_t Timeout);
+void ShowerTerminal_GetZigBeeData(uint8_t Timeout);
 void ShowerTerminal_SetDevice(void);
 
 uint8_t ShowerTerminal_ObjectLeftCheck(void);
@@ -66,9 +67,6 @@ void ShowerTerminal_CardObjectLeft(void);
 void ShowerTerminal_IdleState(void);
 
 void ShowerTerminal_DisplayContent(uint8_t *MainContent);
-
-
-void ShowerTerminal_SendZigBeeData(void);
         
 #ifdef __cplusplus
 }

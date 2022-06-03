@@ -109,11 +109,13 @@ void InfraredObjectTX_Init(void)
 
 /**
  * @brief  Initialize input and output pin.
- * @param  None.
+ * @param  Threshold: Infrared intensity threshold indicating object presence,
+ *          0 ~ 4095.
  * @retval None.
  */
-void InfraredObject_Init(void)
+void InfraredObject_Init(uint16_t Threshold)
 {
+    Threshold_Object = Threshold;
     InfraredObjectRX_Init();
     InfraredObjectTX_Init();
 }
@@ -145,7 +147,7 @@ uint16_t InfraredObject_GetValue(void)
 
     // Emit infrared
     GPIO_SetBits(INFRAREDOBJECTTX_PINGROUP, INFRAREDOBJECTTX_PIN);
-    Delay_ms(100);
+    Delay_ms(200);
 
     // Receive and sample
     for (int i = 0; i < 10; i++)

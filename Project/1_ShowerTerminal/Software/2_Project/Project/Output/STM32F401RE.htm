@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Output\STM32F401RE.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Output\STM32F401RE.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Jun 02 02:55:12 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Jun 03 21:07:25 2022
 <BR><P>
-<H3>Maximum Stack Usage =        800 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =       3232 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; ShowerTerminal_CardTakeProcess &rArr; ShowerTerminal_GetZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 <P>
@@ -277,7 +277,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[80]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeTX
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Stream5_IRQHandler
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeTX
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeRX
 </UL>
 
@@ -582,8 +583,8 @@ Global Symbols
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_Halt
 </UL>
 
-<P><STRONG><a name="[74]"></a>Communicate_Init</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, communicate.o(i.Communicate_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 584<LI>Call Chain = Communicate_Init &rArr; Communicate_ZigBeeConfig &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[74]"></a>Communicate_Init</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, communicate.o(i.Communicate_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2136<LI>Call Chain = Communicate_Init &rArr; Communicate_ZigBeeConfig &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_s
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
@@ -596,8 +597,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_Init
 </UL>
 
-<P><STRONG><a name="[7a]"></a>Communicate_ZigBeeCheck</STRONG> (Thumb, 52 bytes, Stack size 264 bytes, communicate.o(i.Communicate_ZigBeeCheck))
-<BR><BR>[Stack]<UL><LI>Max Depth = 296<LI>Call Chain = Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[7a]"></a>Communicate_ZigBeeCheck</STRONG> (Thumb, 56 bytes, Stack size 1032 bytes, communicate.o(i.Communicate_ZigBeeCheck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1064<LI>Call Chain = Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
@@ -608,8 +609,8 @@ Global Symbols
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_Init
 </UL>
 
-<P><STRONG><a name="[7b]"></a>Communicate_ZigBeeConfig</STRONG> (Thumb, 374 bytes, Stack size 280 bytes, communicate.o(i.Communicate_ZigBeeConfig))
-<BR><BR>[Stack]<UL><LI>Max Depth = 576<LI>Call Chain = Communicate_ZigBeeConfig &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[7b]"></a>Communicate_ZigBeeConfig</STRONG> (Thumb, 378 bytes, Stack size 1048 bytes, communicate.o(i.Communicate_ZigBeeConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2112<LI>Call Chain = Communicate_ZigBeeConfig &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_s
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
@@ -627,13 +628,13 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ZigBee_ReceiveString
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_ZigBeeCheck
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_ZigBeeCheck
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeCheck
 </UL>
 
-<P><STRONG><a name="[81]"></a>Communicate_ZigBeeTX</STRONG> (Thumb, 146 bytes, Stack size 288 bytes, communicate.o(i.Communicate_ZigBeeTX))
-<BR><BR>[Stack]<UL><LI>Max Depth = 584<LI>Call Chain = Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[81]"></a>Communicate_ZigBeeTX</STRONG> (Thumb, 150 bytes, Stack size 1056 bytes, communicate.o(i.Communicate_ZigBeeTX))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2120<LI>Call Chain = Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
@@ -646,12 +647,13 @@ Global Symbols
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
 </UL>
 
-<P><STRONG><a name="[3a]"></a>DMA2_Stream5_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, zigbee.o(i.DMA2_Stream5_IRQHandler))
+<P><STRONG><a name="[3a]"></a>DMA2_Stream5_IRQHandler</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, zigbee.o(i.DMA2_Stream5_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DMA2_Stream5_IRQHandler &rArr; DMA_GetITStatus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_GetITStatus
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_Cmd
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_ClearITPendingBit
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xx.o(RESET)
 </UL>
@@ -711,12 +713,14 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[61]"></a>Delay_ms</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, delay.o(i.Delay_ms))
 <BR><BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InfraredObject_GetValue
+<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM4_IRQHandler
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_s
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SendZigBeeData
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_Init
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardTakeProcess
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardFirstReadProcess
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_ZigBeeCheck
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SendZigBeeData
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ZigBee_TransmitString
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ZigBee_ReceiveString
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeCheck
@@ -737,6 +741,7 @@ Global Symbols
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_Init
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_InUseProcess
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_IdleState
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardTakeProcess
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardObjectLeft
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeConfig
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_Init
@@ -1039,7 +1044,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_GetTime
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_GetDate
 </UL>
-<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_InitInformation
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_DisplayContent
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_InitInformation
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Information_GetTimeStamp
 </UL>
 
@@ -1049,7 +1055,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mktime
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Information_GetDateTime
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SendZigBeeData
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
 </UL>
 
 <P><STRONG><a name="[a3]"></a>Information_InitializeRTC</STRONG> (Thumb, 160 bytes, Stack size 24 bytes, information.o(i.Information_InitializeRTC))
@@ -1138,7 +1145,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InfraredHuman_GetState
 </UL>
 
-<P><STRONG><a name="[bb]"></a>InfraredHuman_Init</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, infraredhuman.o(i.InfraredHuman_Init))
+<P><STRONG><a name="[bb]"></a>InfraredHuman_Init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, infraredhuman.o(i.InfraredHuman_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = InfraredHuman_Init &rArr; InfraredHumanTX_Init &rArr; GPIO_PinAFConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Init
@@ -1218,7 +1225,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InfraredObject_GetState
 </UL>
 
-<P><STRONG><a name="[c8]"></a>InfraredObject_Init</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, infraredobject.o(i.InfraredObject_Init))
+<P><STRONG><a name="[c8]"></a>InfraredObject_Init</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, infraredobject.o(i.InfraredObject_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = InfraredObject_Init &rArr; InfraredObjectRX_Init &rArr; ADC_RegularChannelConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InfraredObjectTX_Init
@@ -1849,8 +1856,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[ef]"></a>ShowerTerminal_CardFirstReadProcess</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, userlibrary.o(i.ShowerTerminal_CardFirstReadProcess))
-<BR><BR>[Stack]<UL><LI>Max Depth = 752<LI>Call Chain = ShowerTerminal_CardFirstReadProcess &rArr; ShowerTerminal_GetZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[ef]"></a>ShowerTerminal_CardFirstReadProcess</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, userlibrary.o(i.ShowerTerminal_CardFirstReadProcess))
+<BR><BR>[Stack]<UL><LI>Max Depth = 3184<LI>Call Chain = ShowerTerminal_CardFirstReadProcess &rArr; ShowerTerminal_GetZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Audio_Play
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Valve_Start
@@ -1858,11 +1865,11 @@ Global Symbols
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlowMeter_Start
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlowMeter_Clear
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SetDevice
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_ReservationCheck
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_DisplayContent
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SendZigBeeData
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_ReservationCheck
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_DisplayContent
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SetDevice
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NFC_SetCheckUserNumber
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NFC_SetCheckCardNumber
 </UL>
@@ -1885,8 +1892,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f9]"></a>ShowerTerminal_CardTakeProcess</STRONG> (Thumb, 258 bytes, Stack size 40 bytes, userlibrary.o(i.ShowerTerminal_CardTakeProcess))
-<BR><BR>[Stack]<UL><LI>Max Depth = 776<LI>Call Chain = ShowerTerminal_CardTakeProcess &rArr; ShowerTerminal_GetZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[f9]"></a>ShowerTerminal_CardTakeProcess</STRONG> (Thumb, 268 bytes, Stack size 40 bytes, userlibrary.o(i.ShowerTerminal_CardTakeProcess))
+<BR><BR>[Stack]<UL><LI>Max Depth = 3208<LI>Call Chain = ShowerTerminal_CardTakeProcess &rArr; ShowerTerminal_GetZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Audio_Play
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Valve_Stop
@@ -1895,21 +1902,23 @@ Global Symbols
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlowMeter_GetValueL
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FlowMeter_Clear
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_s
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SetDevice
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_DisplayContent
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SendZigBeeData
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_DisplayContent
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SetDevice
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f0]"></a>ShowerTerminal_DisplayContent</STRONG> (Thumb, 264 bytes, Stack size 56 bytes, userlibrary.o(i.ShowerTerminal_DisplayContent))
+<P><STRONG><a name="[f0]"></a>ShowerTerminal_DisplayContent</STRONG> (Thumb, 284 bytes, Stack size 56 bytes, userlibrary.o(i.ShowerTerminal_DisplayContent))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = ShowerTerminal_DisplayContent &rArr; Display_ShowString &rArr; Display_ShowChar &rArr; Display_SetPosition &rArr; I2C_TransmitDataCommand &rArr; I2C_TransmitByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Valve_GetState
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Information_GetDateTime
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_ShowString
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_ShowChar
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
@@ -1937,10 +1946,11 @@ Global Symbols
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f2]"></a>ShowerTerminal_GetZigBeeData</STRONG> (Thumb, 336 bytes, Stack size 152 bytes, userlibrary.o(i.ShowerTerminal_GetZigBeeData))
-<BR><BR>[Stack]<UL><LI>Max Depth = 736<LI>Call Chain = ShowerTerminal_GetZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[f2]"></a>ShowerTerminal_GetZigBeeData</STRONG> (Thumb, 352 bytes, Stack size 1048 bytes, userlibrary.o(i.ShowerTerminal_GetZigBeeData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 3168<LI>Call Chain = ShowerTerminal_GetZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Int8toUint32
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SetDevice
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Int8toUint32
 <LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Int8toInt32
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Information_GetTimeStamp
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeTX
@@ -1949,6 +1959,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardTakeProcess
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardFirstReadProcess
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[fd]"></a>ShowerTerminal_HumanDetect</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, userlibrary.o(i.ShowerTerminal_HumanDetect))
@@ -1984,8 +1995,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[100]"></a>ShowerTerminal_Init</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, userlibrary.o(i.ShowerTerminal_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 608<LI>Call Chain = ShowerTerminal_Init &rArr; Communicate_Init &rArr; Communicate_ZigBeeConfig &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[100]"></a>ShowerTerminal_Init</STRONG> (Thumb, 144 bytes, Stack size 24 bytes, userlibrary.o(i.ShowerTerminal_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2160<LI>Call Chain = ShowerTerminal_Init &rArr; Communicate_Init &rArr; Communicate_ZigBeeConfig &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InfraredHuman_Init
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InfraredObject_Init
@@ -2068,17 +2079,19 @@ Global Symbols
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f1]"></a>ShowerTerminal_SendZigBeeData</STRONG> (Thumb, 232 bytes, Stack size 136 bytes, userlibrary.o(i.ShowerTerminal_SendZigBeeData))
-<BR><BR>[Stack]<UL><LI>Max Depth = 720<LI>Call Chain = ShowerTerminal_SendZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[f1]"></a>ShowerTerminal_SendZigBeeData</STRONG> (Thumb, 250 bytes, Stack size 1040 bytes, userlibrary.o(i.ShowerTerminal_SendZigBeeData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 3160<LI>Call Chain = ShowerTerminal_SendZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Uint32toInt8
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_ZigBeeCheck
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Int32toInt8
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Information_GetTimeStamp
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeTX
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardTakeProcess
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardFirstReadProcess
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[f3]"></a>ShowerTerminal_SetDevice</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, userlibrary.o(i.ShowerTerminal_SetDevice))
@@ -2086,9 +2099,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Information_SetDateTime
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardTakeProcess
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardTakeProcess
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardFirstReadProcess
-<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[113]"></a>ShowerTerminal_SetHelpState</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, userlibrary.o(i.ShowerTerminal_SetHelpState))
@@ -2121,8 +2134,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[10a]"></a>ShowerTerminal_ZigBeeCheck</STRONG> (Thumb, 84 bytes, Stack size 136 bytes, userlibrary.o(i.ShowerTerminal_ZigBeeCheck))
-<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = ShowerTerminal_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[10a]"></a>ShowerTerminal_ZigBeeCheck</STRONG> (Thumb, 88 bytes, Stack size 1032 bytes, userlibrary.o(i.ShowerTerminal_ZigBeeCheck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1064<LI>Call Chain = ShowerTerminal_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeRX
@@ -2140,7 +2153,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xx.o(.text)
 </UL>
-<P><STRONG><a name="[23]"></a>TIM3_IRQHandler</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, button.o(i.TIM3_IRQHandler))
+<P><STRONG><a name="[23]"></a>TIM3_IRQHandler</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, button.o(i.TIM3_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = TIM3_IRQHandler &rArr; ShowerTerminal_DisplayContent &rArr; Display_ShowString &rArr; Display_ShowChar &rArr; Display_SetPosition &rArr; I2C_TransmitDataCommand &rArr; I2C_TransmitByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
@@ -2150,6 +2163,7 @@ Global Symbols
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
 <LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SetRepairState
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Audio_Play
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_DisplayContent
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
@@ -2166,7 +2180,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Button_Init
 </UL>
 
-<P><STRONG><a name="[24]"></a>TIM4_IRQHandler</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, button.o(i.TIM4_IRQHandler))
+<P><STRONG><a name="[24]"></a>TIM4_IRQHandler</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, button.o(i.TIM4_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = TIM4_IRQHandler &rArr; ShowerTerminal_DisplayContent &rArr; Display_ShowString &rArr; Display_ShowChar &rArr; Display_SetPosition &rArr; I2C_TransmitDataCommand &rArr; I2C_TransmitByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
@@ -2176,6 +2190,7 @@ Global Symbols
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SetHelpState
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Audio_Play
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetRepairState
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_DisplayContent
 </UL>
@@ -2288,7 +2303,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_Init
 </UL>
 
-<P><STRONG><a name="[118]"></a>USART1_DMAReceiveInit</STRONG> (Thumb, 140 bytes, Stack size 72 bytes, zigbee.o(i.USART1_DMAReceiveInit))
+<P><STRONG><a name="[118]"></a>USART1_DMAReceiveInit</STRONG> (Thumb, 148 bytes, Stack size 72 bytes, zigbee.o(i.USART1_DMAReceiveInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = USART1_DMAReceiveInit &rArr; NVIC_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
@@ -2422,7 +2437,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_Init
 </UL>
 
-<P><STRONG><a name="[7f]"></a>ZigBee_ReceiveString</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, zigbee.o(i.ZigBee_ReceiveString))
+<P><STRONG><a name="[7f]"></a>ZigBee_ReceiveString</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, zigbee.o(i.ZigBee_ReceiveString))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
@@ -2458,10 +2473,10 @@ Global Symbols
 <LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_NearReservationEnd
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_InUseProcess
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_IdleState
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_DisplayContent
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardTakeProcess
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_CardObjectLeft
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeTX
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Communicate_ZigBeeConfig
 </UL>
@@ -2476,12 +2491,12 @@ Global Symbols
 
 <P><STRONG><a name="[145]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[42]"></a>main</STRONG> (Thumb, 160 bytes, Stack size 24 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 800<LI>Call Chain = main &rArr; ShowerTerminal_CardTakeProcess &rArr; ShowerTerminal_GetZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
+<P><STRONG><a name="[42]"></a>main</STRONG> (Thumb, 168 bytes, Stack size 24 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 3232<LI>Call Chain = main &rArr; ShowerTerminal_CardTakeProcess &rArr; ShowerTerminal_GetZigBeeData &rArr; Communicate_ZigBeeTX &rArr; Communicate_ZigBeeCheck &rArr; Communicate_ZigBeeRX &rArr; ZigBee_ReceiveString
 </UL>
 <BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_WaterStopRemind
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_TakeObjectProcess
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SetDevice
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_SendZigBeeData
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_ReservationCheck
 <LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_ObjectLeftCheck
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_ObjectDetect
@@ -2492,6 +2507,7 @@ Global Symbols
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_InUseProcess
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_IdleState
 <LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_HumanDetect
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetZigBeeData
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetRepairState
 <LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_GetHelpState
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowerTerminal_DisplayContent

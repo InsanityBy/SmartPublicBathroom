@@ -26,59 +26,193 @@ Project File Date:  06/01/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
-Build target 'F401RE'
+Rebuild target 'F401RE'
+assembling startup_stm32f401xx.s...
+compiling stm32f4xx_cec.c...
+compiling misc.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_can.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_crc.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_cryp_des.c...
+compiling stm32f4xx_cryp.c...
+compiling stm32f4xx_dac.c...
+compiling stm32f4xx_cryp_tdes.c...
+compiling stm32f4xx_cryp_aes.c...
+compiling stm32f4xx_dbgmcu.c...
+compiling stm32f4xx_dcmi.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_dfsdm.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_flash_ramfunc.c...
+compiling stm32f4xx_dsi.c...
+compiling stm32f4xx_dma2d.c...
+compiling stm32f4xx_hash_sha1.c...
+compiling stm32f4xx_fmpi2c.c...
+compiling stm32f4xx_hash_md5.c...
+compiling stm32f4xx_hash.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_iwdg.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_lptim.c...
+compiling stm32f4xx_rng.c...
+compiling stm32f4xx_qspi.c...
+compiling stm32f4xx_sai.c...
+compiling stm32f4xx_pwr.c...
+compiling stm32f4xx_ltdc.c...
+compiling stm32f4xx_rtc.c...
+compiling stm32f4xx_spdifrx.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_tim.c...
+compiling Delay.c...
+compiling main.c...
+compiling Valve.c...
+compiling FlowMeter.c...
+compiling stm32f4xx_wwdg.c...
+compiling TemperatureSensor.c...
+..\..\1_Library\TemperatureSensor.c(231): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          Temperature = (float)Data * 0.0625;
+..\..\1_Library\TemperatureSensor.c: 1 warning, 0 errors
+compiling Button.c...
+compiling InfraredObject.c...
+compiling Audio.c...
+compiling Communicate.c...
+..\..\1_Library\Communicate.c(74): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(ZigBee_TXBuffer, ZigBee_Recovery);
+..\..\1_Library\Communicate.c(75): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+..\..\1_Library\Communicate.c(105): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Command, "%s%d\r\n", ZigBee_Type, DeviceType);
+..\..\1_Library\Communicate.c(106): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(106): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(107): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+..\..\1_Library\Communicate.c(114): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Command, "%s%d\r\n", ZigBee_SetChannel, ZigBee_Channel);
+..\..\1_Library\Communicate.c(115): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(115): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(116): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+..\..\1_Library\Communicate.c(123): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Command, "%s%04X\r\n", ZigBee_SetPANID, ZigBee_PANID);
+..\..\1_Library\Communicate.c(124): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(124): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(125): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+..\..\1_Library\Communicate.c(132): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Command, "%s%04X\r\n", ZigBee_SetGroupID, ZigBee_GroupID);
+..\..\1_Library\Communicate.c(133): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(133): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(134): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+..\..\1_Library\Communicate.c(141): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Command, "%s%02X%02X\r\n", ZigBee_UserID, DeviceType, ID);
+..\..\1_Library\Communicate.c(142): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(142): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(143): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+..\..\1_Library\Communicate.c(150): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Command, "%s%d\r\n", ZigBee_DataFormat, DataFormat);
+..\..\1_Library\Communicate.c(151): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(151): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(152): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+..\..\1_Library\Communicate.c(159): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(ZigBee_TXBuffer, ZigBee_DeviceReset);
+..\..\1_Library\Communicate.c(160): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+..\..\1_Library\Communicate.c(168): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(ZigBee_TXBuffer, "AT+ZIGB_STATUS=?\r\n");
+..\..\1_Library\Communicate.c(169): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+..\..\1_Library\Communicate.c(191): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Command, "%s%02X%02X\r\n", ZigBee_Addressing, DeviceType, ID);
+..\..\1_Library\Communicate.c(192): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(192): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+      strcpy(ZigBee_TXBuffer, Command);
+..\..\1_Library\Communicate.c(193): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
+..\..\1_Library\Communicate.c(200): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(Command, "%s03,%02X%02X,", ZigBee_Send, DeviceType, ID);
+..\..\1_Library\Communicate.c(248): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+          else if (strstr(ReceivedData, "OK") != NULL)
+..\..\1_Library\Communicate.c: 36 warnings, 0 errors
+compiling InfraredHuman.c...
+compiling ZigBee.c...
+compiling Display.c...
+compiling NFC.c...
+compiling Information.c...
 compiling UserLibrary.c...
-..\..\1_Library\UserLibrary.c(207): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(271): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
                   sprintf(ACK, "$%cA$", ShowerTerminalSerial);
-..\..\1_Library\UserLibrary.c(213): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(278): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
                   sprintf(NAK, "$%cN$", ShowerTerminalSerial);
-..\..\1_Library\UserLibrary.c(422): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(487): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "Temp: %.2f", Terminal_Information.WaterTemperature);
-..\..\1_Library\UserLibrary.c(426): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(491): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "Flow: %.2f", Terminal_Information.WaterFlow);
-..\..\1_Library\UserLibrary.c(430): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(495): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "Remain: %.2f", remain);
-..\..\1_Library\UserLibrary.c(443): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(508): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "Water Stop!");
-..\..\1_Library\UserLibrary.c(462): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(527): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "Time Up!");
-..\..\1_Library\UserLibrary.c(469): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(534): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "Time Up Soon!");
-..\..\1_Library\UserLibrary.c(480): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(545): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
       sprintf(Content, "No Appointment!");
-..\..\1_Library\UserLibrary.c(517): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(582): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
       sprintf(Content, "Cost: %.2f", cost);
-..\..\1_Library\UserLibrary.c(542): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(609): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
       sprintf(Content, "Swipe Card!");
-..\..\1_Library\UserLibrary.c(554): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(621): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
       sprintf(Content, "Object Left!");
-..\..\1_Library\UserLibrary.c(564): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(631): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "Reserved!");
-..\..\1_Library\UserLibrary.c(568): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(635): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "Idle...");
-..\..\1_Library\UserLibrary.c(637): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(647): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
       sprintf(Content, "%02d%02d%02d %02d:%02d ", Terminal_Information.CurrentDate.RTC_Year,
-..\..\1_Library\UserLibrary.c(645): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(655): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "WaterON");
-..\..\1_Library\UserLibrary.c(649): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(659): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "NoWater");
-..\..\1_Library\UserLibrary.c(654): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+..\..\1_Library\UserLibrary.c(664): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
       uint8_t FrontSpace = (16 - strlen(MainContent)) / 2;
-..\..\1_Library\UserLibrary.c(659): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+..\..\1_Library\UserLibrary.c(669): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
       Display_ShowString(FrontSpace * 8, 1, MainContent, strlen(MainContent), FONTSIZE_16);
-..\..\1_Library\UserLibrary.c(660): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+..\..\1_Library\UserLibrary.c(670): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
       for (int i = FrontSpace + strlen(MainContent); i < 16; i++)
-..\..\1_Library\UserLibrary.c(668): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(678): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "Valve ON ");
-..\..\1_Library\UserLibrary.c(672): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(682): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
           sprintf(Content, "Valve OFF ");
-..\..\1_Library\UserLibrary.c(676): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+..\..\1_Library\UserLibrary.c(686): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
       sprintf(Content, "%011d", Terminal_Information.UserSerial);
 ..\..\1_Library\UserLibrary.c: 23 warnings, 0 errors
 linking...
-Program Size: Code=21012 RO-data=2532 RW-data=80 ZI-data=1864  
+Program Size: Code=21300 RO-data=2532 RW-data=96 ZI-data=6216  
 FromELF: creating hex file...
-".\Output\STM32F401RE.axf" - 0 Error(s), 23 Warning(s).
+".\Output\STM32F401RE.axf" - 0 Error(s), 60 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -91,7 +225,7 @@ Package Vendor: Keil
   E:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:16
 </pre>
 </body>
 </html>

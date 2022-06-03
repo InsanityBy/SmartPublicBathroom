@@ -189,6 +189,8 @@ void TIM3_IRQHandler(void)
             uint8_t Content[] = "Device Failure !";
             ShowerTerminal_DisplayContent(Content);
             Audio_Play(AudioRepair);
+            Delay_ms(10);
+
             /***************************FUNCTION END******************************/
         }
     }
@@ -219,6 +221,8 @@ void TIM4_IRQHandler(void)
                 ShowerTerminal_DisplayContent(Content);
             }
             Audio_Play(AudioHelp);
+            Delay_ms(10);
+
             /***************************FUNCTION END******************************/
         }
     }

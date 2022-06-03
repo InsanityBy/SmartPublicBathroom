@@ -29,9 +29,6 @@ extern "C"
 #define NFC_SET 0x00
 
 /* Exported functions --------------------------------------------------------*/
-// Initialize all pins and SPI2
-void NFC_PinInit(void);
-
 // Initialize RC522
 void NFC_Init(void);
 

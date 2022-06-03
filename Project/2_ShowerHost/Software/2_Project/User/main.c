@@ -30,10 +30,11 @@ int main(void)
     /* Infinite loop */
     while (1)
     {
-        ShowerHost_GetWiFiData();
-        ShowerHost_GetZigBeeData();
-        ShowerHost_SetDevice();
-        
+        ShowerHost_GetZigBeeData(2);
+        ShowerHost_SendWiFiData(2);
+        ShowerHost_GetWiFiData(2);
+        ShowerHost_SendZigBeeData(2);
+
         if (ShowerHost_GetRepairState())
         {
             ShowerHost_DisplayRepair();
@@ -49,13 +50,11 @@ int main(void)
             ShowerHost_FanControl();
 
             ShowerHost_LightDetect();
-            //ShowerHost_LightControl();
+            // ShowerHost_LightControl();
 
             ShowerHost_DisplayNormal();
-
-            //ShowerHost_SendWiFiData();
-            //ShowerHost_SendZigBeeData();
         }
+
         Delay_s(1);
     }
 }

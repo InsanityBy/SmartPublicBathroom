@@ -21,6 +21,7 @@
 #include "ZigBee.h"
 #include "Delay.h"
 #include <stdio.h>
+#include <string.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -47,7 +48,11 @@ uint8_t ZigBeeStringReceive_Flag = 0;
 uint8_t ZigBeeStringTransmit_Flag = 1;
 
 // Length of received data
-uint16_t ZigBeeDataLength;
+uint16_t ZigBeeDataLength = 0;
+
+// Received data buffer
+uint8_t *pZigBeeReceivedDataRead;
+uint8_t ZigBeeReceivedDataBuffer[1024];
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -107,8 +112,8 @@ void USART1_DMAReceiveInit(uint8_t *pData)
     DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte; // uint8_t
     DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
     DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
-    DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)pData;        // Receive buffer
-    DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte; // uint8_t
+    DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)ZigBeeReceivedDataBuffer; // Receive buffer
+    DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;             // uint8_t
     DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
     DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
     DMA_InitStructure.DMA_BufferSize = 0xFFFF; // Max buffer size
@@ -128,6 +133,8 @@ void USART1_DMAReceiveInit(uint8_t *pData)
 
     // Enable DMA
     DMA_Cmd(DMA2_Stream5, ENABLE);
+
+    pZigBeeReceivedDataRead = pData;
 }
 
 /**
@@ -149,7 +156,7 @@ void USART1_DMATransmitInit(uint8_t *pData)
     DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte; // uint8_t
     DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
     DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
-    DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)pData;        // Receive buffer
+    DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)pData;        // Transmit buffer
     DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte; // uint8_t
     DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
     DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
@@ -292,9 +299,11 @@ uint16_t ZigBee_ReceiveString(uint16_t nTime)
     if (!ZigBeeStringReceive_Flag)
         return ZigBeeDataLength;
 
+    uint16_t CurrentLength = ZigBeeDataLength;
     ZigBeeStringReceive_Flag = 0x00;
+    ZigBeeDataLength = 0;
 
-    return ZigBeeDataLength;
+    return CurrentLength;
 }
 
 /**
@@ -336,6 +345,11 @@ void DMA2_Stream5_IRQHandler(void)
     if (DMA_GetITStatus(DMA2_Stream5, DMA_IT_TCIF5) != RESET)
     {
         DMA_ClearITPendingBit(DMA2_Stream5, DMA_IT_TCIF5);
+        if(ZigBeeDataLength > 1024)
+        {
+            ZigBeeDataLength = 1024;
+        }
+        memcpy(pZigBeeReceivedDataRead, ZigBeeReceivedDataBuffer, ZigBeeDataLength);
         ZigBeeStringReceive_Flag = 0x01;
         DMA_Cmd(DMA2_Stream5, ENABLE);
     }

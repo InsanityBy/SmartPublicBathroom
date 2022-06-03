@@ -16,18 +16,24 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
-#define MAXZIGBEELENGTH 128
+#define MAXZIGBEELENGTH 1024
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 // Terminal information
 uint8_t ShowerTerminalSerial = 0x01;
 uint8_t FatherHostSerial = 0x01;
+uint8_t Communicate_ZigBeeChannel = 15;
+uint16_t Communicate_ZigBeePANID = 0x1234;
+uint16_t Communicate_ZigBeeGroupID = 0x1111;
+
 ShowerTerminal_InformationTypeDef Terminal_Information;
 uint8_t CardCurrentState = 0;
 float price = 0.04;
 uint8_t ACK[MAXZIGBEELENGTH];
 uint8_t NAK[MAXZIGBEELENGTH];
+uint16_t InfraredObject_Threshold = 2048;
+uint8_t InfraredHuman_Threshold = 8;
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -122,7 +128,8 @@ void ShowerTerminal_Init(void)
     Button_Init();
 
     // Initialize communicate
-    Communicate_Init();
+    Communicate_Init(ShowerTerminalSerial, Communicate_ZigBeeChannel,
+                     Communicate_ZigBeePANID, Communicate_ZigBeeGroupID);
 
     // Initialize display
     Display_Init();
@@ -133,10 +140,10 @@ void ShowerTerminal_Init(void)
     FlowMeter_Clear();
 
     // Initialize infrared human sensor
-    InfraredHuman_Init();
+    InfraredHuman_Init(InfraredHuman_Threshold);
 
     // Initialize infrared object sensor
-    InfraredObject_Init();
+    InfraredObject_Init(InfraredObject_Threshold);
 
     // Initialize NFC reader
     NFC_Init();
@@ -150,9 +157,6 @@ void ShowerTerminal_Init(void)
 
     Delay_s(2);
 
-    // First upload
-    // ShowerTerminal_SendZigBeeData();
-
     // Display initialization finished
     uint8_t Content[] = {"Initialized!"};
     Display_ShowString(16, 1, Content, 0xFF, FONTSIZE_16);
@@ -160,15 +164,75 @@ void ShowerTerminal_Init(void)
     Display_Clear();
 }
 
+
+uint8_t ShowerTerminal_ZigBeeCheck(void)
+{
+    uint8_t ReceivedData[MAXZIGBEELENGTH];
+    for (int i = 0; i < 10; i++)
+    {
+        Delay_ms(1);
+        if (Communicate_ZigBeeRX(ReceivedData) == 0)
+        {
+            continue;
+        }
+        else if ((ReceivedData[0] != '$') || (ReceivedData[3] != '$'))
+        {
+            continue;
+        }
+        else if (ReceivedData[1] != ShowerTerminalSerial)
+        {
+            continue;
+        }
+        else if (ReceivedData[2] == 'A')
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    return 0;
+}
+
+void ShowerTerminal_SendZigBeeData(uint8_t Timeout)
+{
+    uint8_t TransmitData[MAXZIGBEELENGTH];
+    uint32_t StartTime = Information_GetTimeStamp();
+
+    TransmitData[0] = '$';
+    TransmitData[1] = ShowerTerminalSerial;
+    Uint32toInt8(Terminal_Information.NFCSerial, &TransmitData[2], &TransmitData[3],
+                 &TransmitData[4], &TransmitData[5]);
+    Uint32toInt8(Terminal_Information.UserSerial, &TransmitData[6], &TransmitData[7],
+                 &TransmitData[8], &TransmitData[9]);
+    TransmitData[10] = Terminal_Information.TerminalState;
+    Int32toInt8((int32_t)Terminal_Information.WaterTemperature * 100, &TransmitData[11],
+                &TransmitData[12], &TransmitData[13], &TransmitData[14]);
+    Int32toInt8((int32_t)Terminal_Information.WaterFlow * 100, &TransmitData[15],
+                &TransmitData[16], &TransmitData[17], &TransmitData[18]);
+    Int32toInt8((int32_t)Terminal_Information.AccountBalance * 100, &TransmitData[19],
+                &TransmitData[20], &TransmitData[21], &TransmitData[22]);
+    TransmitData[23] = '$';
+
+    do
+    {
+        Delay_ms(300);
+        Communicate_ZigBeeTX(ZigBee_TypeCoordinator, FatherHostSerial, TransmitData, 24);
+        if ((Information_GetTimeStamp() - StartTime) > Timeout) // Over time
+            return;
+    } while (ShowerTerminal_ZigBeeCheck() == 0);    // Check ACK
+}
+
 /**
  * @brief  Get data from host and resolve.
  * @param  None.
  * @retval None.
  */
-void ShowerTerminal_GetZigBeeData(void)
+void ShowerTerminal_GetZigBeeData(uint8_t Timeout)
 {
     uint8_t ReceivedData[MAXZIGBEELENGTH];
-    uint16_t length;
+    uint16_t length = 0;
     uint8_t correct = 0;
     uint32_t StartTime = Information_GetTimeStamp();
     do
@@ -176,37 +240,38 @@ void ShowerTerminal_GetZigBeeData(void)
         length = Communicate_ZigBeeRX(ReceivedData);
         if (length != 0)
         {
-            if ((ReceivedData[0] == '$') && (ReceivedData[30] == '$')) // Whole frame
+            if ((ReceivedData[0] == '$') && (ReceivedData[31] == '$')) // Whole frame
             {
-                Terminal_Information.UserSerial = Int8toUint32(ReceivedData[1], ReceivedData[2], ReceivedData[3], ReceivedData[4]);
-                Terminal_Information.TerminalState = ReceivedData[5];
-                Terminal_Information.AccountBalance = (float)Int8toInt32(ReceivedData[6], ReceivedData[7], ReceivedData[8], ReceivedData[9]) / 100;
+                Terminal_Information.UserSerial = Int8toUint32(ReceivedData[2], ReceivedData[3], ReceivedData[4], ReceivedData[5]);
+                Terminal_Information.TerminalState = ReceivedData[6];
+                Terminal_Information.AccountBalance = (float)Int8toInt32(ReceivedData[7], ReceivedData[8], ReceivedData[9], ReceivedData[10]) / 100;
 
-                Terminal_Information.CurrentDate.RTC_Year = ReceivedData[10];
-                Terminal_Information.CurrentDate.RTC_Month = ReceivedData[11];
-                Terminal_Information.CurrentDate.RTC_Date = ReceivedData[12];
-                Terminal_Information.CurrentDate.RTC_WeekDay = ReceivedData[13];
+                Terminal_Information.CurrentDate.RTC_Year = ReceivedData[11];
+                Terminal_Information.CurrentDate.RTC_Month = ReceivedData[12];
+                Terminal_Information.CurrentDate.RTC_Date = ReceivedData[13];
+                Terminal_Information.CurrentDate.RTC_WeekDay = ReceivedData[14];
 
-                Terminal_Information.CurrentTime.RTC_Hours = ReceivedData[14];
-                Terminal_Information.CurrentTime.RTC_Minutes = ReceivedData[15];
-                Terminal_Information.CurrentTime.RTC_Seconds = ReceivedData[16];
-                Terminal_Information.CurrentTime.RTC_H12 = ReceivedData[17];
+                Terminal_Information.CurrentTime.RTC_Hours = ReceivedData[15];
+                Terminal_Information.CurrentTime.RTC_Minutes = ReceivedData[16];
+                Terminal_Information.CurrentTime.RTC_Seconds = ReceivedData[17];
+                Terminal_Information.CurrentTime.RTC_H12 = ReceivedData[18];
 
-                Terminal_Information.ReserveStartTime.RTC_Hours = ReceivedData[18];
-                Terminal_Information.ReserveStartTime.RTC_Minutes = ReceivedData[19];
-                Terminal_Information.ReserveStartTime.RTC_Seconds = ReceivedData[20];
-                Terminal_Information.ReserveStartTime.RTC_H12 = ReceivedData[21];
+                Terminal_Information.ReserveStartTime.RTC_Hours = ReceivedData[19];
+                Terminal_Information.ReserveStartTime.RTC_Minutes = ReceivedData[20];
+                Terminal_Information.ReserveStartTime.RTC_Seconds = ReceivedData[21];
+                Terminal_Information.ReserveStartTime.RTC_H12 = ReceivedData[22];
 
-                Terminal_Information.ReserveStopTime.RTC_Hours = ReceivedData[22];
-                Terminal_Information.ReserveStopTime.RTC_Minutes = ReceivedData[23];
-                Terminal_Information.ReserveStopTime.RTC_Seconds = ReceivedData[24];
-                Terminal_Information.ReserveStopTime.RTC_H12 = ReceivedData[25];
+                Terminal_Information.ReserveStopTime.RTC_Hours = ReceivedData[23];
+                Terminal_Information.ReserveStopTime.RTC_Minutes = ReceivedData[24];
+                Terminal_Information.ReserveStopTime.RTC_Seconds = ReceivedData[25];
+                Terminal_Information.ReserveStopTime.RTC_H12 = ReceivedData[26];
 
-                Terminal_Information.ReservedUser = Int8toUint32(ReceivedData[26], ReceivedData[27], ReceivedData[28], ReceivedData[29]);
+                Terminal_Information.ReservedUser = Int8toUint32(ReceivedData[27], ReceivedData[28], ReceivedData[29], ReceivedData[30]);
 
                 sprintf(ACK, "$%cA$", ShowerTerminalSerial);
                 Communicate_ZigBeeTX(ZigBee_TypeCoordinator, FatherHostSerial, ACK, 4);
                 correct = 1;
+                ShowerTerminal_SetDevice();
             }
             else // Received but error
             {
@@ -214,7 +279,7 @@ void ShowerTerminal_GetZigBeeData(void)
                 Communicate_ZigBeeTX(ZigBee_TypeCoordinator, FatherHostSerial, NAK, 4);
             }
         }
-        if ((Information_GetTimeStamp() - StartTime) > 5)
+        if ((Information_GetTimeStamp() - StartTime) > Timeout) // Over time
             return;
     } while ((length == 0) || (correct != 1));
 }
@@ -377,8 +442,8 @@ void ShowerTerminal_CardFirstReadProcess(void)
     Terminal_Information.TerminalState |= ShowerTerminal_FirstReadCard; // Set flag
 
     // Query data
-    ShowerTerminal_SendZigBeeData();
-    ShowerTerminal_GetZigBeeData();
+    ShowerTerminal_SendZigBeeData(0xFF);
+    ShowerTerminal_GetZigBeeData(0xFF);
     ShowerTerminal_SetDevice();
 
     // Clear flag
@@ -519,8 +584,8 @@ void ShowerTerminal_CardTakeProcess(void)
 
     // Upload
     Terminal_Information.TerminalState |= ShowerTerminal_CardOff;
-    ShowerTerminal_SendZigBeeData();
-    ShowerTerminal_GetZigBeeData();
+    ShowerTerminal_SendZigBeeData(0xFF);
+    ShowerTerminal_GetZigBeeData(0xFF);
     ShowerTerminal_SetDevice();
     Terminal_Information.TerminalState &= (~ShowerTerminal_CardOff);
 
@@ -533,6 +598,8 @@ void ShowerTerminal_CardTakeProcess(void)
     Terminal_Information.WaterTemperature = 0;
     Terminal_Information.WaterFlow = 0;
     Terminal_Information.AccountBalance = 0;
+
+    Delay_s(1);
 }
 
 void ShowerTerminal_NotUseProcess(void)
@@ -571,69 +638,12 @@ void ShowerTerminal_IdleState(void)
     Delay_s(1);
 }
 
-uint8_t ShowerTerminal_ZigBeeCheck(void)
-{
-    uint8_t ReceivedData[MAXZIGBEELENGTH];
-    for (int i = 0; i < 10; i++)
-    {
-        Delay_ms(1);
-        if (Communicate_ZigBeeRX(ReceivedData) == 0)
-        {
-            continue;
-        }
-        else if ((ReceivedData[0] != '$') || (ReceivedData[3] != '$'))
-        {
-            continue;
-        }
-        else if (ReceivedData[1] != ShowerTerminalSerial)
-        {
-            continue;
-        }
-        else if (ReceivedData[2] == 'A')
-        {
-            return 1;
-        }
-        else
-        {
-            return 0;
-        }
-    }
-    return 0;
-}
-
-void ShowerTerminal_SendZigBeeData(void)
-{
-    uint8_t TransmitData[MAXZIGBEELENGTH];
-    TransmitData[0] = '$';
-    TransmitData[1] = ShowerTerminalSerial;
-    Uint32toInt8(Terminal_Information.NFCSerial, &TransmitData[2], &TransmitData[3],
-                 &TransmitData[4], &TransmitData[5]);
-    Uint32toInt8(Terminal_Information.UserSerial, &TransmitData[6], &TransmitData[7],
-                 &TransmitData[8], &TransmitData[9]);
-    TransmitData[10] = Terminal_Information.TerminalState;
-    Int32toInt8((int32_t)Terminal_Information.WaterTemperature * 100, &TransmitData[11],
-                &TransmitData[12], &TransmitData[13], &TransmitData[14]);
-    Int32toInt8((int32_t)Terminal_Information.WaterFlow * 100, &TransmitData[15],
-                &TransmitData[16], &TransmitData[17], &TransmitData[18]);
-    Int32toInt8((int32_t)Terminal_Information.AccountBalance * 100, &TransmitData[19],
-                &TransmitData[20], &TransmitData[21], &TransmitData[22]);
-    TransmitData[23] = '$';
-
-    Communicate_ZigBeeTX(ZigBee_TypeCoordinator, FatherHostSerial, TransmitData, 24);
-
-    // Check
-    if (ShowerTerminal_ZigBeeCheck() == 0)
-    {
-        Delay_ms(5);
-        Communicate_ZigBeeTX(ZigBee_TypeCoordinator, FatherHostSerial, TransmitData, 24);
-    }
-}
-
 void ShowerTerminal_DisplayContent(uint8_t *MainContent)
 {
     uint8_t Content[22];
 
     // Date and time
+    Information_GetDateTime(&Terminal_Information.CurrentDate, &Terminal_Information.CurrentTime);
     sprintf(Content, "%02d%02d%02d %02d:%02d ", Terminal_Information.CurrentDate.RTC_Year,
             Terminal_Information.CurrentDate.RTC_Month, Terminal_Information.CurrentDate.RTC_Date,
             Terminal_Information.CurrentTime.RTC_Hours, Terminal_Information.CurrentTime.RTC_Minutes);
@@ -676,4 +686,5 @@ void ShowerTerminal_DisplayContent(uint8_t *MainContent)
     sprintf(Content, "%011d", Terminal_Information.UserSerial);
     Display_ShowString(60, 3, Content, 22, FONTSIZE_8);
 }
+
 /***********************************END OF FILE********************************/

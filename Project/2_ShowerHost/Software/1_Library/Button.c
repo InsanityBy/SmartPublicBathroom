@@ -188,6 +188,8 @@ void TIM3_IRQHandler(void)
             ShowerHost_SetRepairState();
             ShowerHost_DisplayRepair();
             Audio_Play(AudioRepair);
+            Delay_ms(10);
+
             /***************************FUNCTION END******************************/
         }
     }
@@ -217,6 +219,8 @@ void TIM4_IRQHandler(void)
                 ShowerHost_DisplayHelp();
             }
             Audio_Play(AudioHelp);
+            Delay_ms(10);
+
             /***************************FUNCTION END******************************/
         }
     }

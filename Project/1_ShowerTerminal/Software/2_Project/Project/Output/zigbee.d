@@ -30,3 +30,4 @@
 .\output\zigbee.o: ..\Library\inc\misc.h
 .\output\zigbee.o: ..\..\1_Library\Delay.h
 .\output\zigbee.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\output\zigbee.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

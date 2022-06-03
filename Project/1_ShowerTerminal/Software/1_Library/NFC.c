@@ -172,6 +172,9 @@ uint8_t UserNumber_Block = 0x02;
 uint8_t key[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 
 /* Private function prototypes -----------------------------------------------*/
+// Initialize all pins and SPI2
+void NFC_PinInit(void);
+
 /* Private functions ---------------------------------------------------------*/
 /*===============================================================================
 ***********************Register read and write functions***********************

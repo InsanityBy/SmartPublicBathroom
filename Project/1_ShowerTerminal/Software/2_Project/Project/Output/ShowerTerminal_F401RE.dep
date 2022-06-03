@@ -65,18 +65,18 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
 I (..\User\main.h)(0x6278C664)
-I (..\..\1_Library\UserLibrary.h)(0x6297AABB)
-I (..\..\1_Library\Audio.h)(0x62965897)
+I (..\..\1_Library\UserLibrary.h)(0x629A0627)
+I (..\..\1_Library\Audio.h)(0x62985199)
 I (..\..\1_Library\Button.h)(0x6278C597)
-I (..\..\1_Library\Communicate.h)(0x6297539F)
+I (..\..\1_Library\Communicate.h)(0x62985815)
 I (..\..\1_Library\ZigBee.h)(0x6293BAEC)
 I (..\..\1_Library\Delay.h)(0x6294711B)
 I (..\..\1_Library\Display.h)(0x62909EF4)
 I (..\..\1_Library\FlowMeter.h)(0x6278C574)
 I (..\..\1_Library\Information.h)(0x6297AAB9)
-I (..\..\1_Library\InfraredHuman.h)(0x6281F508)
-I (..\..\1_Library\InfraredObject.h)(0x627B7098)
-I (..\..\1_Library\NFC.h)(0x628A70FE)
+I (..\..\1_Library\InfraredHuman.h)(0x6298569C)
+I (..\..\1_Library\InfraredObject.h)(0x629855B9)
+I (..\..\1_Library\NFC.h)(0x629852DD)
 I (..\..\1_Library\TemperatureSensor.h)(0x6278C563)
 I (..\..\1_Library\Valve.h)(0x6278C547)
 F (..\Driver\stm32f4xx_conf.h)(0x58221742)()
@@ -1251,7 +1251,7 @@ I (..\Library\inc\stm32f4xx_syscfg.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_tim.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_usart.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
-F (..\User\main.c)(0x6297AABA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+F (..\User\main.c)(0x629A074B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
 I (..\User\main.h)(0x6278C664)
 I (..\CMSIS\stm32f4xx.h)(0x61262D32)
 I (..\CMSIS\core_cm4.h)(0x581CC64D)
@@ -1280,18 +1280,18 @@ I (..\Library\inc\stm32f4xx_tim.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_usart.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
-I (..\..\1_Library\UserLibrary.h)(0x6297AABB)
-I (..\..\1_Library\Audio.h)(0x62965897)
+I (..\..\1_Library\UserLibrary.h)(0x629A0627)
+I (..\..\1_Library\Audio.h)(0x62985199)
 I (..\..\1_Library\Button.h)(0x6278C597)
-I (..\..\1_Library\Communicate.h)(0x6297539F)
+I (..\..\1_Library\Communicate.h)(0x62985815)
 I (..\..\1_Library\ZigBee.h)(0x6293BAEC)
 I (..\..\1_Library\Delay.h)(0x6294711B)
 I (..\..\1_Library\Display.h)(0x62909EF4)
 I (..\..\1_Library\FlowMeter.h)(0x6278C574)
 I (..\..\1_Library\Information.h)(0x6297AAB9)
-I (..\..\1_Library\InfraredHuman.h)(0x6281F508)
-I (..\..\1_Library\InfraredObject.h)(0x627B7098)
-I (..\..\1_Library\NFC.h)(0x628A70FE)
+I (..\..\1_Library\InfraredHuman.h)(0x6298569C)
+I (..\..\1_Library\InfraredObject.h)(0x629855B9)
+I (..\..\1_Library\NFC.h)(0x629852DD)
 I (..\..\1_Library\TemperatureSensor.h)(0x6278C563)
 I (..\..\1_Library\Valve.h)(0x6278C547)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
@@ -1413,9 +1413,9 @@ I (..\Library\inc\stm32f4xx_tim.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_usart.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
-F (..\..\1_Library\Button.c)(0x6297606B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\button.o --omf_browse .\output\button.crf --depend .\output\button.d)
-I (..\..\1_Library\UserLibrary.h)(0x6297AABB)
-I (..\..\1_Library\Audio.h)(0x62965897)
+F (..\..\1_Library\Button.c)(0x629851EC)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\button.o --omf_browse .\output\button.crf --depend .\output\button.d)
+I (..\..\1_Library\UserLibrary.h)(0x629A0627)
+I (..\..\1_Library\Audio.h)(0x62985199)
 I (..\CMSIS\stm32f4xx.h)(0x61262D32)
 I (..\CMSIS\core_cm4.h)(0x581CC64D)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1444,20 +1444,20 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
 I (..\..\1_Library\Button.h)(0x6278C597)
-I (..\..\1_Library\Communicate.h)(0x6297539F)
+I (..\..\1_Library\Communicate.h)(0x62985815)
 I (..\..\1_Library\ZigBee.h)(0x6293BAEC)
 I (..\..\1_Library\Delay.h)(0x6294711B)
 I (..\..\1_Library\Display.h)(0x62909EF4)
 I (..\..\1_Library\FlowMeter.h)(0x6278C574)
 I (..\..\1_Library\Information.h)(0x6297AAB9)
-I (..\..\1_Library\InfraredHuman.h)(0x6281F508)
-I (..\..\1_Library\InfraredObject.h)(0x627B7098)
-I (..\..\1_Library\NFC.h)(0x628A70FE)
+I (..\..\1_Library\InfraredHuman.h)(0x6298569C)
+I (..\..\1_Library\InfraredObject.h)(0x629855B9)
+I (..\..\1_Library\NFC.h)(0x629852DD)
 I (..\..\1_Library\TemperatureSensor.h)(0x6278C563)
 I (..\..\1_Library\Valve.h)(0x6278C547)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-F (..\..\1_Library\InfraredObject.c)(0x6297702B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\infraredobject.o --omf_browse .\output\infraredobject.crf --depend .\output\infraredobject.d)
-I (..\..\1_Library\InfraredObject.h)(0x627B7098)
+F (..\..\1_Library\InfraredObject.c)(0x62985B7E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\infraredobject.o --omf_browse .\output\infraredobject.crf --depend .\output\infraredobject.d)
+I (..\..\1_Library\InfraredObject.h)(0x629855B9)
 I (..\CMSIS\stm32f4xx.h)(0x61262D32)
 I (..\CMSIS\core_cm4.h)(0x581CC64D)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1486,8 +1486,8 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
 I (..\..\1_Library\Delay.h)(0x6294711B)
-F (..\..\1_Library\InfraredHuman.c)(0x62978156)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\infraredhuman.o --omf_browse .\output\infraredhuman.crf --depend .\output\infraredhuman.d)
-I (..\..\1_Library\InfraredHuman.h)(0x6281F508)
+F (..\..\1_Library\InfraredHuman.c)(0x6298569B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\infraredhuman.o --omf_browse .\output\infraredhuman.crf --depend .\output\infraredhuman.d)
+I (..\..\1_Library\InfraredHuman.h)(0x6298569C)
 I (..\CMSIS\stm32f4xx.h)(0x61262D32)
 I (..\CMSIS\core_cm4.h)(0x581CC64D)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1516,8 +1516,8 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
 I (..\..\1_Library\Delay.h)(0x6294711B)
-F (..\..\1_Library\NFC.c)(0x62976E68)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\nfc.o --omf_browse .\output\nfc.crf --depend .\output\nfc.d)
-I (..\..\1_Library\NFC.h)(0x628A70FE)
+F (..\..\1_Library\NFC.c)(0x629852D7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\nfc.o --omf_browse .\output\nfc.crf --depend .\output\nfc.d)
+I (..\..\1_Library\NFC.h)(0x629852DD)
 I (..\CMSIS\stm32f4xx.h)(0x61262D32)
 I (..\CMSIS\core_cm4.h)(0x581CC64D)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1547,7 +1547,7 @@ I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
 I (..\..\1_Library\Delay.h)(0x6294711B)
 F (..\..\1_Library\Audio.c)(0x628BCD93)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\audio.o --omf_browse .\output\audio.crf --depend .\output\audio.d)
-I (..\..\1_Library\Audio.h)(0x62965897)
+I (..\..\1_Library\Audio.h)(0x62985199)
 I (..\CMSIS\stm32f4xx.h)(0x61262D32)
 I (..\CMSIS\core_cm4.h)(0x581CC64D)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1607,8 +1607,8 @@ I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
 I (..\..\1_Library\Display_Data.h)(0x628BCF31)
 I (..\..\1_Library\Delay.h)(0x6294711B)
-F (..\..\1_Library\Communicate.c)(0x6297AB3B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\communicate.o --omf_browse .\output\communicate.crf --depend .\output\communicate.d)
-I (..\..\1_Library\Communicate.h)(0x6297539F)
+F (..\..\1_Library\Communicate.c)(0x6298E742)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\communicate.o --omf_browse .\output\communicate.crf --depend .\output\communicate.d)
+I (..\..\1_Library\Communicate.h)(0x62985815)
 I (..\CMSIS\stm32f4xx.h)(0x61262D32)
 I (..\CMSIS\core_cm4.h)(0x581CC64D)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1640,7 +1640,7 @@ I (..\..\1_Library\ZigBee.h)(0x6293BAEC)
 I (..\..\1_Library\Delay.h)(0x6294711B)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-F (..\..\1_Library\ZigBee.c)(0x629490EF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\zigbee.o --omf_browse .\output\zigbee.crf --depend .\output\zigbee.d)
+F (..\..\1_Library\ZigBee.c)(0x6298E62B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\zigbee.o --omf_browse .\output\zigbee.crf --depend .\output\zigbee.d)
 I (..\..\1_Library\ZigBee.h)(0x6293BAEC)
 I (..\CMSIS\stm32f4xx.h)(0x61262D32)
 I (..\CMSIS\core_cm4.h)(0x581CC64D)
@@ -1671,6 +1671,7 @@ I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
 I (..\..\1_Library\Delay.h)(0x6294711B)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 F (..\..\1_Library\Information.c)(0x6297A637)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\information.o --omf_browse .\output\information.crf --depend .\output\information.d)
 I (..\..\1_Library\Information.h)(0x6297AAB9)
 I (..\CMSIS\stm32f4xx.h)(0x61262D32)
@@ -1701,9 +1702,9 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
 I (E:\Keil_v5\ARM\ARMCC\include\time.h)(0x60252378)
-F (..\..\1_Library\UserLibrary.c)(0x6297B5BA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\userlibrary.o --omf_browse .\output\userlibrary.crf --depend .\output\userlibrary.d)
-I (..\..\1_Library\UserLibrary.h)(0x6297AABB)
-I (..\..\1_Library\Audio.h)(0x62965897)
+F (..\..\1_Library\UserLibrary.c)(0x629A06BD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\User -I ..\Library\inc -I ..\..\1_Library-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx-o .\output\userlibrary.o --omf_browse .\output\userlibrary.crf --depend .\output\userlibrary.d)
+I (..\..\1_Library\UserLibrary.h)(0x629A0627)
+I (..\..\1_Library\Audio.h)(0x62985199)
 I (..\CMSIS\stm32f4xx.h)(0x61262D32)
 I (..\CMSIS\core_cm4.h)(0x581CC64D)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1732,15 +1733,15 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x581CC67B)
 I (..\Library\inc\stm32f4xx_wwdg.h)(0x581CC67B)
 I (..\Library\inc\misc.h)(0x581CC67B)
 I (..\..\1_Library\Button.h)(0x6278C597)
-I (..\..\1_Library\Communicate.h)(0x6297539F)
+I (..\..\1_Library\Communicate.h)(0x62985815)
 I (..\..\1_Library\ZigBee.h)(0x6293BAEC)
 I (..\..\1_Library\Delay.h)(0x6294711B)
 I (..\..\1_Library\Display.h)(0x62909EF4)
 I (..\..\1_Library\FlowMeter.h)(0x6278C574)
 I (..\..\1_Library\Information.h)(0x6297AAB9)
-I (..\..\1_Library\InfraredHuman.h)(0x6281F508)
-I (..\..\1_Library\InfraredObject.h)(0x627B7098)
-I (..\..\1_Library\NFC.h)(0x628A70FE)
+I (..\..\1_Library\InfraredHuman.h)(0x6298569C)
+I (..\..\1_Library\InfraredObject.h)(0x629855B9)
+I (..\..\1_Library\NFC.h)(0x629852DD)
 I (..\..\1_Library\TemperatureSensor.h)(0x6278C563)
 I (..\..\1_Library\Valve.h)(0x6278C547)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)

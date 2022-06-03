@@ -39,4 +39,5 @@
 .\output\userlibrary.o: ..\..\1_Library\LightSensor.h
 .\output\userlibrary.o: ..\..\1_Library\SignalOutput.h
 .\output\userlibrary.o: ..\..\1_Library\TemperatureHumiditySensor.h
+.\output\userlibrary.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\output\userlibrary.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

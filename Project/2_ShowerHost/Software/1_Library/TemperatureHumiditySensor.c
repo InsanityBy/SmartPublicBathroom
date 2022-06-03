@@ -302,11 +302,15 @@ uint8_t Sensor_Getstate(void)
 
 /**
  * @brief  Initialize temperature sensor, check sensor presence.
- * @param  None.
+ * @param  TempThreshold: Temperature threshold, -40 ~ 85.
+ * @param  HumThreshold: Humidity threshold, 0 ~ 99.
  * @retval The state of sensor, 1 for not exist, 0 for exist.
  */
-uint8_t TemperatureHumiditySensor_Init(void)
+uint8_t TemperatureHumiditySensor_Init(float TempThreshold, float HumThreshold)
 {
+    Temperature_Threshold = TempThreshold;
+    Humidity_Threshold = HumThreshold;
+
     // GPIO initialize
     RCC_AHB1PeriphClockCmd(SENSOR_CLOCK, ENABLE); // Enable clock
     GPIO_InitTypeDef GPIO_InitStructure;

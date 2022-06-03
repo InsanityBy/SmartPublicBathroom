@@ -36,28 +36,26 @@ extern "C"
 // Initialize all peripherals
 void ShowerHost_Init(void);
 
-void ShowerHost_GetWiFiData(void);
-void ShowerHost_GetZigBeeData(void);
+void ShowerHost_SendWiFiData(uint8_t Timeout);
+void ShowerHost_SendZigBeeData(uint8_t Timeout);
+void ShowerHost_GetWiFiData(uint8_t Timeout);
+void ShowerHost_GetZigBeeData(uint8_t Timeout);
 void ShowerHost_SetDevice(void);
 
 uint8_t ShowerHost_GetRepairState(void);
-void ShowerHost_SetRepairState(void);
 uint8_t ShowerHost_GetHelpState(void);
-void ShowerHost_SetHelpState(void);
-
 void ShowerHost_TemperatureDetect(void);
 void ShowerHost_HumidityDetect(void);
-void ShowerHost_FanControl(void);
-
 void ShowerHost_LightDetect(void);
+
+void ShowerHost_SetRepairState(void);
+void ShowerHost_SetHelpState(void);
+void ShowerHost_FanControl(void);
 void ShowerHost_LightControl(void);
 
 void ShowerHost_DisplayHelp(void);
 void ShowerHost_DisplayRepair(void);
 void ShowerHost_DisplayNormal(void);
-
-void ShowerHost_SendWiFiData(void);
-void ShowerHost_SendZigBeeData(void);
         
 #ifdef __cplusplus
 }

@@ -153,62 +153,57 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Data</ItemText>
+          <ItemText>WiFiDataLength</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ZigBeeDataLength</ItemText>
+          <ItemText>WiFi_RXBuffer</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ZigBee_RXBuffer</ItemText>
+          <ItemText>Content</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ZigBee_TXBuffer</ItemText>
+          <ItemText>ReceivedDataBuffer</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>WiFi_TXBuffer</ItemText>
+          <ItemText>pReceivedDataRead</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>WiFiDataLength</ItemText>
+          <ItemText>Terminal_InformationFromTerminal</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
-          <ItemText>WiFi_RXBuffer</ItemText>
+          <ItemText>Host_Information</ItemText>
         </Ww>
         <Ww>
           <count>7</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Content</ItemText>
+          <ItemText>Terminal_InformationFromCloud</ItemText>
         </Ww>
         <Ww>
           <count>8</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ZigBee_TXBuffer</ItemText>
+          <ItemText>OnlineTerminalFlag</ItemText>
         </Ww>
         <Ww>
           <count>9</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ReceivedData</ItemText>
+          <ItemText>Terminal_InformationFromTerminal</ItemText>
         </Ww>
         <Ww>
           <count>10</count>
           <WinNumber>1</WinNumber>
-          <ItemText>RTC_DateStruct</ItemText>
-        </Ww>
-        <Ww>
-          <count>11</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>RTC_Format</ItemText>
+          <ItemText>ZigBee_RXBuffer</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>
@@ -253,6 +248,12 @@
       <pszMrulep></pszMrulep>
       <pSingCmdsp></pSingCmdsp>
       <pMultCmdsp></pMultCmdsp>
+      <SystemViewers>
+        <Entry>
+          <Name>System Viewer\USART6</Name>
+          <WinId>35905</WinId>
+        </Entry>
+      </SystemViewers>
       <DebugDescription>
         <Enable>1</Enable>
         <EnableFlashSeq>0</EnableFlashSeq>

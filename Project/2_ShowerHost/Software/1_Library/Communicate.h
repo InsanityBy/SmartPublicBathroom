@@ -28,7 +28,7 @@ extern "C"
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
 // Initialize ZigBee and WiFi device
-uint8_t Communicate_Init(void);
+uint8_t Communicate_Init(uint8_t ID, uint8_t Channel, uint16_t PANID, uint16_t GroupID);
 
 // Config ZigBee device
 uint8_t Communicate_ZigBeeConfig(uint8_t DeviceType, uint8_t DataFormat, uint8_t ID);
