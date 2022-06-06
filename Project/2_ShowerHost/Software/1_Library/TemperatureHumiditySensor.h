@@ -25,19 +25,10 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Temperature - humidity sensor initialize
 uint8_t TemperatureHumiditySensor_Init(float TempThreshold, float HumThreshold);
-
-// Start convert
 void Sensor_Convert(void);
-
-// Get temperature
 float Sensor_GetTemperature(void);
-
-// Get humidity
 float Sensor_GetHumidity(void);
-
-// Get temperature and humidity state, 1 for fan should be on and 0 for off.
 uint8_t Sensor_Getstate(void);
 
 #ifdef __cplusplus

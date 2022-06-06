@@ -7,13 +7,11 @@
  * @brief   This file contains all the functions for communicate between shower
  *          host and shower terminal by ZigBee.(For shower host.)
  * @note    Follow steps to use.
- *          - Use ZigBee_Init(uint8_t *pTransmitData, uint8_t *pReceiveData) to
- *              initialize ZigBee device.
- *          - Use ZigBee_TransmitByte(uint8_t data) to send 1 byte data.
- *          - Use ZigBee_TransmitString(uint16_t length, uint16_t nTime) to send
- *              string.
+ *          - Use ZigBee_Init() to initialize ZigBee device.
+ *          - Use ZigBee_TransmitByte() to send 1 byte data.
+ *          - Use ZigBee_TransmitString() to send string.
  *          - Use ZigBee_ReceiveByte() to receive 1 byte data.
- *          - Use ZigBee_ReceiveString(uint16_t nTime) to receive string.
+ *          - Use ZigBee_ReceiveString() to receive string.
  ******************************************************************************
  */
 
@@ -51,8 +49,8 @@ uint8_t ZigBeeStringTransmit_Flag = 1;
 uint16_t ZigBeeDataLength = 0;
 
 // Received data buffer
+uint8_t ZigBeeReceivedDataBuffer[256];
 uint8_t *pZigBeeReceivedDataRead;
-uint8_t ZigBeeReceivedDataBuffer[1024];
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -307,7 +305,7 @@ uint16_t ZigBee_ReceiveString(uint16_t nTime)
 }
 
 /**
- * @brief  USART1 interrupt function. Handle RXNE and IDLE interrupt.
+ * @brief  USART1 interrupt function. Handle IDLE interrupt.
  * @param  None.
  * @retval None.
  */
@@ -317,7 +315,8 @@ void USART1_IRQHandler(void)
     {
         ZigBeeDataLength = 0xFFFF - DMA_GetCurrDataCounter(DMA2_Stream5);
         DMA_Cmd(DMA2_Stream5, DISABLE);
-        uint8_t clear = USART_ReceiveData(USART1); // IDLE flag is cleared by reading SR and DR
+        uint16_t clear = USART1->SR;
+        clear = USART1->DR; // IDLE flag is cleared by reading SR and DR
     }
 }
 
@@ -345,13 +344,14 @@ void DMA2_Stream5_IRQHandler(void)
     if (DMA_GetITStatus(DMA2_Stream5, DMA_IT_TCIF5) != RESET)
     {
         DMA_ClearITPendingBit(DMA2_Stream5, DMA_IT_TCIF5);
-        if(ZigBeeDataLength > 1024)
+        if(ZigBeeDataLength > 256)
         {
-            ZigBeeDataLength = 1024;
+            ZigBeeDataLength = 256;
         }
         memcpy(pZigBeeReceivedDataRead, ZigBeeReceivedDataBuffer, ZigBeeDataLength);
         ZigBeeStringReceive_Flag = 0x01;
         DMA_Cmd(DMA2_Stream5, ENABLE);
     }
 }
+
 /***********************************END OF FILE********************************/

@@ -18,7 +18,7 @@
 /* Private define ------------------------------------------------------------*/
 #define TerminalMaxNumber 6
 #define MAXWIFIDTALENGTH 1024
-#define MAXZIGBEELENGTH 1024
+#define MAXZIGBEELENGTH 256
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
@@ -32,13 +32,13 @@ uint16_t Communicate_ZigBeeGroupID = 0x1111;
 ShowerHost_InformationTypeDef Host_Information;
 
 // Terminal information buffer
-uint8_t Terminal_InformationFromCloud[TerminalMaxNumber + 1][MAXZIGBEELENGTH];
 uint8_t OnlineTerminalFlag[TerminalMaxNumber + 1] = {0};
-uint8_t ReceivedOnceFromTerminalFlag[TerminalMaxNumber + 1] = {0};
+uint8_t Terminal_InformationFromCloud[TerminalMaxNumber + 1][MAXZIGBEELENGTH];
 uint8_t Terminal_InformationFromTerminal[TerminalMaxNumber + 1][MAXZIGBEELENGTH];
-float LightSensorThreshold = 2.8;
-float TemperatureSensorThreshold = 26;
-float HumiditySensorThreshold = 30;
+uint8_t ReceivedOnceFromTerminalFlag[TerminalMaxNumber + 1] = {0};
+float LightSensorThreshold = 1.65;
+float TemperatureSensorThreshold = 30;
+float HumiditySensorThreshold = 50;
 uint8_t GetNewDataFromTerminal = 0;
 uint8_t GetNewDataFromCloud = 0;
 
@@ -47,6 +47,15 @@ uint8_t NAK[MAXZIGBEELENGTH];
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
+/**
+ * @brief  Conver uint32 to uint8.
+ * @param  Data: Uint32 data.
+ * @param  Data0: Uint8 data0.
+ * @param  Data1: Uint8 data1.
+ * @param  Data2: Uint8 data2.
+ * @param  Data3: Uint8 data3.
+ * @retval None.
+ */
 void Uint32toInt8(uint32_t Data, uint8_t *Data0, uint8_t *Data1, uint8_t *Data2, uint8_t *Data3)
 {
     *Data0 = Data & 0x000000FF;
@@ -58,6 +67,14 @@ void Uint32toInt8(uint32_t Data, uint8_t *Data0, uint8_t *Data1, uint8_t *Data2,
     *Data3 = Data & 0x000000FF;
 }
 
+/**
+ * @brief  Conver uint8 to uint32.
+ * @param  Data0: Uint8 data0.
+ * @param  Data1: Uint8 data1.
+ * @param  Data2: Uint8 data2.
+ * @param  Data3: Uint8 data3.
+ * @retval Uint32 data.
+ */
 uint32_t Int8toUint32(uint8_t Data0, uint8_t Data1, uint8_t Data2, uint8_t Data3)
 {
     uint32_t temp = 0;
@@ -71,6 +88,15 @@ uint32_t Int8toUint32(uint8_t Data0, uint8_t Data1, uint8_t Data2, uint8_t Data3
     return temp;
 }
 
+/**
+ * @brief  Conver int32 to uint8.
+ * @param  Data: Int32 data.
+ * @param  Data0: Uint8 data0.
+ * @param  Data1: Uint8 data1.
+ * @param  Data2: Uint8 data2.
+ * @param  Data3: Uint8 data3.
+ * @retval None.
+ */
 void Int32toInt8(int32_t Data, uint8_t *Data0, uint8_t *Data1, uint8_t *Data2, uint8_t *Data3)
 {
     *Data0 = Data & 0x000000FF;
@@ -82,6 +108,14 @@ void Int32toInt8(int32_t Data, uint8_t *Data0, uint8_t *Data1, uint8_t *Data2, u
     *Data3 = Data & 0x000000FF;
 }
 
+/**
+ * @brief  Conver uint8 to int32.
+ * @param  Data0: Uint8 data0.
+ * @param  Data1: Uint8 data1.
+ * @param  Data2: Uint8 data2.
+ * @param  Data3: Uint8 data3.
+ * @retval Int32 data.
+ */
 int32_t Int8toInt32(uint8_t Data0, uint8_t Data1, uint8_t Data2, uint8_t Data3)
 {
     int32_t temp = 0;
@@ -119,52 +153,82 @@ void ShowerHost_InitInformation(void)
  */
 void ShowerHost_Init(void)
 {
+    uint8_t Content[64];
+
     // Wait supply stable
     Delay_ms(10);
-
-    // Initialize date and time recoder
-    Information_InitializeRTC();
-
-    // Initialize information
-    ShowerHost_InitInformation();
-
-    // Initialize audio
-    // Audio_Init();
-    Audio_Volume(15);
-
-    // Initialize buttons
-    Button_Init();
-
-    // Initialize communicate
-    Communicate_Init(ShowerHostSerial, Communicate_ZigBeeChannel,
-                     Communicate_ZigBeePANID, Communicate_ZigBeeGroupID);
 
     // Initialize display
     Display_Init();
     Display_Clear();
 
+    // Initialize date and time recoder
+    sprintf(Content, "RTC Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
+    Information_InitializeRTC();
+
+    // Initialize information
+    Display_Clear();
+    sprintf(Content, "Setting information...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
+    ShowerHost_InitInformation();
+
+    // Initialize audio
+    Display_Clear();
+    sprintf(Content, "Audio Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
+    // Audio_Init();
+    Audio_Volume(15);
+
+    // Initialize buttons
+    Display_Clear();
+    sprintf(Content, "Button Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
+    Button_Init();
+
+    // Initialize communicate
+    Display_Clear();
+    sprintf(Content, "Communication Device Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
+    Communicate_Init(ShowerHostSerial, Communicate_ZigBeeChannel,
+                     Communicate_ZigBeePANID, Communicate_ZigBeeGroupID);
+
     // Initialize light sensor
+    Display_Clear();
+    sprintf(Content, "Light Sensor Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
     LightSensor_Init(LightSensorThreshold);
 
     // Initialize signal output
+    Display_Clear();
+    sprintf(Content, "Fan and Light Controller Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
     SignalOutput_Init();
 
     // Initialize temperature - humdity sensor
+    Display_Clear();
+    sprintf(Content, "Temperature - Humidity Sensor Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
     TemperatureHumiditySensor_Init(TemperatureSensorThreshold, HumiditySensorThreshold);
 
     // Display initialization finished
-    uint8_t Content[] = {"Initialized!"};
-    Display_ShowString(16, 1, Content, 0xFF, FONTSIZE_16);
-    Delay_s(10);
     Display_Clear();
+    sprintf(Content, "Initialized!");
+    Display_ShowString(16, 1, Content, 0xFF, FONTSIZE_16);
+    Delay_s(5);
 }
 
+/**
+ * @brief  Check acknowledge from destination.
+ * @param  None.
+ * @retval Status, 1 for success, 0 for failure.
+ */
 uint8_t ShowerHost_ZigBeeCheck(uint8_t Serial)
 {
     uint8_t ReceivedData[MAXZIGBEELENGTH];
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 50; i++)
     {
-        Delay_ms(1);
+        Delay_ms(2);
         if (Communicate_ZigBeeRX(ReceivedData) == 0)
         {
             continue;
@@ -189,12 +253,17 @@ uint8_t ShowerHost_ZigBeeCheck(uint8_t Serial)
     return 0;
 }
 
+/**
+ * @brief  Check acknowledge from destination.
+ * @param  None.
+ * @retval Status, 1 for success, 0 for failure.
+ */
 uint8_t ShowerHost_WiFiCheck(void)
 {
     uint8_t ReceivedData[MAXZIGBEELENGTH];
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 50; i++)
     {
-        Delay_ms(1);
+        Delay_ms(2);
         if (Communicate_WiFiRX(ReceivedData) == 0)
         {
             continue;
@@ -220,11 +289,92 @@ uint8_t ShowerHost_WiFiCheck(void)
 }
 
 /**
- * @brief  Get data from cloud server and resolve.
- * @param  None.
- * @retval None.
+ * @brief  Send information of terminal to terminal by ZigBee.
+ * @param  Timeout: Set timeout in seconds.
+ * @retval Status, 1 for success, 0 for failure, 2 for not send.
  */
-void ShowerHost_GetWiFiData(uint8_t Timeout)
+uint8_t ShowerHost_SendZigBeeData(uint8_t Timeout)
+{
+    if ((GetNewDataFromTerminal == 1) && (GetNewDataFromCloud == 1))
+    {
+        uint8_t status = 0;
+        uint8_t TransmitData[MAXZIGBEELENGTH];
+        uint32_t StartTime = Information_GetTimeStamp();
+
+        for (int i = 0; i < TerminalMaxNumber; i++)
+        {
+            if (OnlineTerminalFlag[i] == 0)
+                continue;
+
+            memcpy(TransmitData, Terminal_InformationFromCloud[i], 32);
+            Communicate_ZigBeeTX(ZigBee_TypeRouter, Terminal_InformationFromCloud[i][1], TransmitData, 32);
+
+            do
+            {
+                Delay_ms(100);
+                Communicate_ZigBeeTX(ZigBee_TypeRouter, Terminal_InformationFromCloud[i][1], TransmitData, 32);
+                status = ShowerHost_ZigBeeCheck(Terminal_InformationFromCloud[i][1]);
+                if ((Information_GetTimeStamp() - StartTime) > Timeout) // Over time
+                    return status;
+            } while (status == 0); // Check ACK
+        }
+        GetNewDataFromTerminal = 0;
+        GetNewDataFromCloud = 0;
+        return status;
+    }
+    return 2;
+}
+
+/**
+ * @brief  Send information of host and terminal to cloud by WiFi.
+ * @param  Timeout: Set timeout in seconds.
+ * @retval Status, 1 for success, 0 for failure.
+ */
+uint8_t ShowerHost_SendWiFiData(uint8_t Timeout)
+{
+    uint8_t status = 0;
+    uint8_t TransmitData[MAXZIGBEELENGTH];
+    uint32_t StartTime = Information_GetTimeStamp();
+
+    TransmitData[0] = '$';
+    TransmitData[1] = ShowerHostSerial;
+    TransmitData[2] = Host_Information.HostState;
+    Int32toInt8((int32_t)(Host_Information.Temperature * 100.0), &TransmitData[3], &TransmitData[4],
+                &TransmitData[5], &TransmitData[6]);
+    Int32toInt8((int32_t)(Host_Information.Humidity * 100.0), &TransmitData[7], &TransmitData[8],
+                &TransmitData[9], &TransmitData[10]);
+    Int32toInt8((int32_t)(Host_Information.Light * 100.0), &TransmitData[11], &TransmitData[12],
+                &TransmitData[13], &TransmitData[14]);
+    TransmitData[15] = Host_Information.TerminalNumber;
+
+    uint8_t cnt = 0;
+    for (int i = 0; i < TerminalMaxNumber; i++)
+    {
+        if (OnlineTerminalFlag[i] == 0)
+            continue;
+        memcpy(&TransmitData[16 + cnt * 24], Terminal_InformationFromTerminal[i], 24);
+        cnt++;
+    }
+    TransmitData[16 + Host_Information.TerminalNumber * 24] = '$';
+    TransmitData[17 + Host_Information.TerminalNumber * 24] = '\r';
+    TransmitData[18 + Host_Information.TerminalNumber * 24] = '\n';
+
+    do
+    {
+        Delay_ms(100);
+        Communicate_WiFiTX(TransmitData, 19 + Host_Information.TerminalNumber * 24);
+        status = ShowerHost_WiFiCheck();
+        if ((Information_GetTimeStamp() - StartTime) > Timeout) // Over time
+            return status;
+    } while (status == 0);
+}
+
+/**
+ * @brief  Get data from cloud server and resolve.
+ * @param  Timeout: Set timeout in seconds.
+ * @retval Status, 1 for success, 0 for failure.
+ */
+uint8_t ShowerHost_GetWiFiData(uint8_t Timeout)
 {
     uint8_t ReceivedData[MAXWIFIDTALENGTH];
     uint16_t length = 0;
@@ -256,16 +406,16 @@ void ShowerHost_GetWiFiData(uint8_t Timeout)
                     for (int i = 0; i < num; i++)
                     {
                         uint8_t CurrentTerminalSerial = ReceivedData[14 + i * 32];
-                        for (int j = 0; j < 32; j++)
-                        {
-                            Terminal_InformationFromCloud[CurrentTerminalSerial][j] = ReceivedData[13 + i * 32 + j];
-                        }
+                        memcpy(Terminal_InformationFromCloud[CurrentTerminalSerial],
+                               &ReceivedData[13 + i * 32], 32);
                     }
+
+                    // ACK
                     sprintf(ACK, "$%cA$", ShowerHostSerial);
                     Communicate_WiFiTX(ACK, 4);
+                    ShowerHost_SetDevice();
                     correct = 1;
                     GetNewDataFromCloud = 1;
-                    ShowerHost_SetDevice();
                 }
             }
             else // Received but error
@@ -275,14 +425,23 @@ void ShowerHost_GetWiFiData(uint8_t Timeout)
             }
         }
         if ((Information_GetTimeStamp() - StartTime) > Timeout) // Over time
-            return;
+            return correct;
     } while ((length == 0) || (correct != 1));
+
+    return correct;
 }
 
-void ShowerHost_GetZigBeeData(uint8_t Timeout)
+/**
+ * @brief  Get data from terminal.
+ * @param  Timeout: Set timeout in seconds.
+ * @retval Status, 1 for success, 0 for failure.
+ */
+uint8_t ShowerHost_GetZigBeeData(uint8_t Timeout)
 {
     uint8_t ReceivedData[MAXZIGBEELENGTH];
     uint8_t CurrentTerminalNumber = 0;
+    uint8_t status = 0;
+
     for (int i = 0; i < Host_Information.TerminalNumber + 1; i++) // Try to check and add 1 new terminal each time
     {
         uint16_t length = 0;
@@ -303,13 +462,21 @@ void ShowerHost_GetZigBeeData(uint8_t Timeout)
                         ReceivedOnceFromTerminalFlag[CurrentTerminalSerial] == 1; // Avoid repeat
                         memcpy(Terminal_InformationFromTerminal[CurrentTerminalSerial], ReceivedData, 24);
                         OnlineTerminalFlag[CurrentTerminalSerial] = 1; // Add terminal
+
                         sprintf(ACK, "$%cA$", CurrentTerminalSerial);
-                        Communicate_ZigBeeTX(ZigBee_TypeRouter, CurrentTerminalSerial, ACK, 4);
+                        for (int j = 0; j < 5; j++)
+                        {
+                            Delay_ms(100);
+                            Communicate_ZigBeeTX(ZigBee_TypeRouter, CurrentTerminalSerial, ACK, 4);
+                        }
+
                         correct = 1;
+                        status = 1;
                         GetNewDataFromTerminal = 1;
                     }
                 }
             }
+
             if ((Information_GetTimeStamp() - StartTime) > Timeout) // Over time
                 break;
         } while ((length == 0) || (correct != 1));
@@ -321,118 +488,74 @@ void ShowerHost_GetZigBeeData(uint8_t Timeout)
         CurrentTerminalNumber += OnlineTerminalFlag[i];
     }
     Host_Information.TerminalNumber = CurrentTerminalNumber;
+
+    return status;
 }
 
-void ShowerHost_SendWiFiData(uint8_t Timeout)
-{
-    uint8_t TransmitData[MAXZIGBEELENGTH];
-    TransmitData[0] = '$';
-    TransmitData[1] = ShowerHostSerial;
-    TransmitData[2] = Host_Information.HostState;
-    Int32toInt8((int32_t)Host_Information.Temperature * 100, &TransmitData[3], &TransmitData[4],
-                &TransmitData[5], &TransmitData[6]);
-    Int32toInt8((int32_t)Host_Information.Humidity * 100, &TransmitData[7], &TransmitData[8],
-                &TransmitData[9], &TransmitData[10]);
-    Int32toInt8((int32_t)Host_Information.Light * 100, &TransmitData[11], &TransmitData[12],
-                &TransmitData[13], &TransmitData[14]);
-    TransmitData[15] = Host_Information.TerminalNumber;
-
-    uint8_t cnt = 0;
-    for (int i = 0; i < TerminalMaxNumber; i++)
-    {
-        if (OnlineTerminalFlag[i] == 0)
-            continue;
-        memcpy(&TransmitData[16 + cnt * 24], Terminal_InformationFromTerminal[i], 24);
-        cnt++;
-    }
-    TransmitData[16 + Host_Information.TerminalNumber * 24] = '$';
-    TransmitData[17 + Host_Information.TerminalNumber * 24] = '\r';
-    TransmitData[18 + Host_Information.TerminalNumber * 24] = '\n';
-
-    Communicate_WiFiTX(TransmitData, 19 + Host_Information.TerminalNumber * 24);
-
-    // Check
-    if (ShowerHost_WiFiCheck() == 0)
-    {
-        Delay_ms(5);
-        Communicate_WiFiTX(TransmitData, 19 + Host_Information.TerminalNumber * 24);
-    }
-}
-
-void ShowerHost_SendZigBeeData(uint8_t Timeout)
-{
-    if ((GetNewDataFromTerminal == 1) && (GetNewDataFromCloud == 1))
-    {
-        uint8_t TransmitData[MAXZIGBEELENGTH];
-        uint32_t StartTime = Information_GetTimeStamp();
-
-        for (int i = 0; i < TerminalMaxNumber; i++)
-        {
-            if (OnlineTerminalFlag[i] == 0)
-                continue;
-
-            memcpy(TransmitData, Terminal_InformationFromCloud[i], 32);
-            Communicate_ZigBeeTX(ZigBee_TypeRouter, Terminal_InformationFromCloud[i][1], TransmitData, 32);
-
-            do
-            {
-                Delay_ms(5);
-                Communicate_ZigBeeTX(ZigBee_TypeRouter, Terminal_InformationFromCloud[i][1], TransmitData, 32);
-                if ((Information_GetTimeStamp() - StartTime) > Timeout) // Over time
-                    return;
-            } while (ShowerHost_ZigBeeCheck(Terminal_InformationFromCloud[i][1]) == 0); // Check ACK
-        }
-        GetNewDataFromTerminal = 0;
-        GetNewDataFromCloud = 0;
-    }
-}
-
+/**
+ * @brief  Set host according to information.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_SetDevice(void)
 {
     // Date & time
     Information_SetDateTime(&Host_Information.CurrentDate, &Host_Information.CurrentTime);
 
     // Fan
-    if ((Host_Information.HostState & ShowerHost_Fan) == ShowerHost_Fan)
+    // Set by cloud
+    if ((Host_Information.StateControl & ShowerHost_Fan) == ShowerHost_Fan)
     {
-        if (Fan_GetState() == 0)
+        if ((Host_Information.HostState & ShowerHost_Fan) == ShowerHost_Fan)
         {
-            Audio_Play(AudioRemind);
-            Delay_ms(10);
+            if (Fan_GetState() == 0)
+            {
+                Audio_Play(Audio_Remind);
+                Delay_ms(10);
+            }
+            Fan_Start();
         }
-        Fan_Start();
-    }
-    else
-    {
-        if (Fan_GetState() == 1)
+        else
         {
-            Audio_Play(AudioRemind);
-            Delay_ms(10);
+            if (Fan_GetState() == 1)
+            {
+                Audio_Play(Audio_Remind);
+                Delay_ms(10);
+            }
+            Fan_Stop();
         }
-        Fan_Stop();
     }
 
     // Light
-    if ((Host_Information.HostState & ShowerHost_Light) == ShowerHost_Light)
+    // Set by cloud
+    if ((Host_Information.StateControl & ShowerHost_Light) == ShowerHost_Light)
     {
-        if (Light_GetState() == 0)
+        if ((Host_Information.HostState & ShowerHost_Light) == ShowerHost_Light)
         {
-            Audio_Play(AudioRemind);
-            Delay_ms(10);
+            if (Light_GetState() == 0)
+            {
+                Audio_Play(Audio_Remind);
+                Delay_ms(10);
+            }
+            Light_Start();
         }
-        Light_Start();
-    }
-    else
-    {
-        if (Light_GetState() == 1)
+        else
         {
-            Audio_Play(AudioRemind);
-            Delay_ms(10);
+            if (Light_GetState() == 1)
+            {
+                Audio_Play(Audio_Remind);
+                Delay_ms(10);
+            }
+            Light_Stop();
         }
-        Light_Stop();
     }
 }
 
+/**
+ * @brief  Check whether need repair.
+ * @param  None.
+ * @retval Status, 1 for need, 0 for not.
+ */
 uint8_t ShowerHost_GetRepairState(void)
 {
     if ((Host_Information.HostState & ShowerHost_Repair) == ShowerHost_Repair)
@@ -445,6 +568,11 @@ uint8_t ShowerHost_GetRepairState(void)
     }
 }
 
+/**
+ * @brief  Check whether need help.
+ * @param  None.
+ * @retval Status, 1 for need, 0 for not.
+ */
 uint8_t ShowerHost_GetHelpState(void)
 {
     if ((Host_Information.HostState & ShowerHost_Help) == ShowerHost_Help)
@@ -457,33 +585,63 @@ uint8_t ShowerHost_GetHelpState(void)
     }
 }
 
+/**
+ * @brief  Get temperature.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_TemperatureDetect(void)
 {
     Sensor_Convert();
     Host_Information.Temperature = Sensor_GetTemperature();
 }
 
+/**
+ * @brief  Get humidity.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_HumidityDetect(void)
 {
     Sensor_Convert();
     Host_Information.Humidity = Sensor_GetHumidity();
 }
 
+/**
+ * @brief  Get light intensity.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_LightDetect(void)
 {
     Host_Information.Light = LightSensor_GetValue();
 }
 
+/**
+ * @brief  Set repair state to host state.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_SetRepairState(void)
 {
     Host_Information.HostState = Host_Information.HostState | ShowerHost_Repair;
 }
 
+/**
+ * @brief  Set help state to host state.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_SetHelpState(void)
 {
     Host_Information.HostState = Host_Information.HostState | ShowerHost_Help;
 }
 
+/**
+ * @brief  Control fan according to temperature, humidity and cloud server.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_FanControl(void)
 {
     // Set by cloud
@@ -496,7 +654,7 @@ void ShowerHost_FanControl(void)
     {
         if (Fan_GetState() == 0)
         {
-            Audio_Play(AudioRemind);
+            Audio_Play(Audio_Remind);
             Delay_ms(10);
         }
         Fan_Start();
@@ -506,7 +664,7 @@ void ShowerHost_FanControl(void)
     {
         if (Fan_GetState() == 1)
         {
-            Audio_Play(AudioRemind);
+            Audio_Play(Audio_Remind);
             Delay_ms(10);
         }
         Fan_Stop();
@@ -514,6 +672,11 @@ void ShowerHost_FanControl(void)
     }
 }
 
+/**
+ * @brief  Control light according to time, light intensity and cloud server.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_LightControl(void)
 {
     // Set by cloud
@@ -523,36 +686,45 @@ void ShowerHost_LightControl(void)
     }
 
     // Only turn on when night, when not controlled by cloud
-    if ((Host_Information.CurrentTime.RTC_Hours > 8) && (Host_Information.CurrentTime.RTC_Hours < 18))
+    if ((Host_Information.CurrentTime.RTC_Hours >= 8) && (Host_Information.CurrentTime.RTC_Hours <= 18))
     {
         if (Light_GetState() == 1)
         {
-            Audio_Play(AudioRemind);
+            Audio_Play(Audio_Remind);
             Delay_ms(10);
         }
         Light_Stop();
+        Host_Information.HostState = Host_Information.HostState & (~ShowerHost_Light);
+        return;
     }
 
     if (LightSensor_GetState())
     {
         if (Light_GetState() == 0)
         {
-            Audio_Play(AudioRemind);
+            Audio_Play(Audio_Remind);
             Delay_ms(10);
         }
         Light_Start();
+        Host_Information.HostState = Host_Information.HostState | ShowerHost_Light;
     }
     else
     {
         if (Light_GetState() == 1)
         {
-            Audio_Play(AudioRemind);
+            Audio_Play(Audio_Remind);
             Delay_ms(10);
         }
         Light_Stop();
+        Host_Information.HostState = Host_Information.HostState & (~ShowerHost_Light);
     }
 }
 
+/**
+ * @brief  Display when in need of help.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_DisplayHelp(void)
 {
     uint8_t Content[22];
@@ -604,6 +776,11 @@ void ShowerHost_DisplayHelp(void)
     Display_ShowString(108, 3, Content, 22, FONTSIZE_8);
 }
 
+/**
+ * @brief  Display when in need of repair.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_DisplayRepair(void)
 {
     uint8_t Content[22];
@@ -655,6 +832,11 @@ void ShowerHost_DisplayRepair(void)
     Display_ShowString(108, 3, Content, 22, FONTSIZE_8);
 }
 
+/**
+ * @brief  Display normal content.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerHost_DisplayNormal(void)
 {
     static uint8_t cnt = 0;

@@ -25,13 +25,8 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Initialize input pin and ADC to sample
 void LightSensor_Init(float Threshold);
-
-// Get light state, 1 for environment is dark and light should be on
 uint8_t LightSensor_GetState(void);
-
-// Get specific lighting value
 float LightSensor_GetValue(void);
 
 #ifdef __cplusplus

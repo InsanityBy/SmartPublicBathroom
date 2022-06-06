@@ -26,16 +26,9 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Initialize ZigBee device
 uint8_t Communicate_Init(uint8_t ID, uint8_t Channel, uint16_t PANID, uint16_t GroupID);
-
-// Config ZigBee device
 uint8_t Communicate_ZigBeeConfig(uint8_t DeviceType, uint8_t DataFormat, uint8_t ID);
-
-// ZigBee transmit
 uint8_t Communicate_ZigBeeTX(uint8_t DeviceType, uint8_t ID, uint8_t *Data, uint16_t Length);
-
-// ZigBee receive
 uint16_t Communicate_ZigBeeRX(uint8_t *Data);
 
 #ifdef __cplusplus

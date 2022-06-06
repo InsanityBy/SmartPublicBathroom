@@ -36,10 +36,10 @@ extern "C"
 // Initialize all peripherals
 void ShowerHost_Init(void);
 
-void ShowerHost_SendWiFiData(uint8_t Timeout);
-void ShowerHost_SendZigBeeData(uint8_t Timeout);
-void ShowerHost_GetWiFiData(uint8_t Timeout);
-void ShowerHost_GetZigBeeData(uint8_t Timeout);
+uint8_t ShowerHost_SendZigBeeData(uint8_t Timeout);
+uint8_t ShowerHost_SendWiFiData(uint8_t Timeout);
+uint8_t ShowerHost_GetZigBeeData(uint8_t Timeout);
+uint8_t ShowerHost_GetWiFiData(uint8_t Timeout);
 void ShowerHost_SetDevice(void);
 
 uint8_t ShowerHost_GetRepairState(void);

@@ -32,7 +32,7 @@ int main(void)
     {
         ShowerHost_GetZigBeeData(2);
         ShowerHost_SendWiFiData(2);
-        ShowerHost_GetWiFiData(2);
+        //ShowerHost_GetWiFiData(2);
         ShowerHost_SendZigBeeData(2);
 
         if (ShowerHost_GetRepairState())
@@ -50,7 +50,7 @@ int main(void)
             ShowerHost_FanControl();
 
             ShowerHost_LightDetect();
-            // ShowerHost_LightControl();
+            ShowerHost_LightControl();
 
             ShowerHost_DisplayNormal();
         }

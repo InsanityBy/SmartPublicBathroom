@@ -11,13 +11,12 @@
  *          - Use Display_On() and Display_Off() to turn on and turn off display.
  *          - Use Display_Clear() to clear screen, screen will be dark.
  *          - Use Display_LightUp() to light up all screen.
- *          - Use Display_SetPosition(uint8_t x, uint8_t y) to set display position.
- *          - Use Display_ShowChar(uint8_t x, uint8_t y, uint8_t data, uint8_t
- *              size) to show a char, position and size can be configured.
- *          - Use Display_ShowString(uint8_t x, uint8_t y, uint8_t *data,
- *              uint8_t size) to show a string, position and size can be configured.
- *          - Use Display_DrawBMP(uint8_t x1, uint8_t y1 ,uint8_t x2, uint8_t
- *              y2, uint8_t *data) to show an image of bmp within rectangular
+ *          - Use Display_SetPosition() to set display position.
+ *          - Use Display_ShowChar() to show a char, position and size can be
+ *              configured.
+ *          - Use Display_ShowString() to show a string, position and size can
+ *              be configured.
+ *          - Use Display_DrawBMP() to show an image of bmp within rectangular
  *              region determined by x1, y1, x2, y2.
  ******************************************************************************
  */
@@ -268,7 +267,7 @@ void Display_Clear(void)
 }
 
 /**
- * @brief  Light up screen. After using this function, screen will be all dark.
+ * @brief  Light up screen. After using this function, screen will be all bright.
  * @param  None.
  * @retval None.
  */
@@ -475,4 +474,5 @@ void Display_Init(void)
     I2C_TransmitDataCommand(0xAF, TRANSMIT_COMMAND);
     Display_Clear();
 }
+
 /***********************************END OF FILE********************************/

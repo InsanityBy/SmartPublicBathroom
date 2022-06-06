@@ -8,10 +8,9 @@
  *         shower host.)
  * @note    Follow steps to use.
  *          - Use Information_InitializeRTC() to initialize RTC.
- *          - Use Information_SetDateTime(RTC_DateTypeDef *Date, RTC_TimeTypeDef
- *              *Time) to set date and time.
- *          - Use Information_SetDateTime(RTC_DateTypeDef *Date, RTC_TimeTypeDef
- *              *Time) to get current date and time.
+ *          - Use Information_SetDateTime() to set date and time.
+ *          - Use Information_SetDateTime() to get current date and time.
+ *          - Use Information_GetTimeStamp() to get current time in seconds.
  ******************************************************************************
  */
 

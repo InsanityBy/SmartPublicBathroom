@@ -49,16 +49,9 @@ typedef struct
 #define ShowerHost_Help 0x01
 
 /* Exported functions --------------------------------------------------------*/
-// Initialize RTC
 void Information_InitializeRTC(void);
-
-// Set date and time
 void Information_SetDateTime(RTC_DateTypeDef* Date, RTC_TimeTypeDef* Time);
-
-// Get date and time
 void Information_GetDateTime(RTC_DateTypeDef* Date, RTC_TimeTypeDef* Time);
-
-// Get time stamp in seconds
 uint32_t Information_GetTimeStamp(void);
 
 #ifdef __cplusplus

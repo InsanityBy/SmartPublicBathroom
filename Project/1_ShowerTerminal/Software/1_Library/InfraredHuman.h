@@ -25,13 +25,8 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Initialize output pin to emit infrared, input pin to receive data
 void InfraredHuman_Init(uint8_t Threshold);
-
-// Get human state, 1 for object presence, 0 for not
 uint8_t InfraredHuman_GetState(void);
-
-// Get correct reception number
 uint8_t InfraredHuman_GetValue(void);
 
 #ifdef __cplusplus

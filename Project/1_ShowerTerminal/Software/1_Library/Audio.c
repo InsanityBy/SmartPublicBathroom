@@ -8,14 +8,13 @@
  *          terminal.)
  * @note    Follow steps to use.
  *          - Use Audio_Init() to initialize audio device.
- *          - Use Audio_Play(uint16_t address) to play sound. NOTE: WILL BREAK
- *              CURRENT PLAY!
- *          - Use Audio_PlayAfter(uint16_t address) to play sound when finished.
- *          - Use void Audio_Loop() to go into loop mode. Use this function again
- *              or use other function except Audio_Volume(uint8_t volume) to go
- *              out of loop mode.
+ *          - Use Audio_Play() to play sound. NOTE: WILL BREAK CURRENT PLAY!
+ *          - Use Audio_PlayAfter() to play sound when last audio finished.
+ *          - Use Audio_Loop() to go into loop mode. Use this function again
+ *              or use other function except Audio_Volume() to jump out of loop
+ *              mode.
  *          - Use Audio_Stop() to stop play.
- *          - Use Audio_Volume(uint8_t volume) to set volume.
+ *          - Use Audio_Volume() to set volume.
  ******************************************************************************
  */
 

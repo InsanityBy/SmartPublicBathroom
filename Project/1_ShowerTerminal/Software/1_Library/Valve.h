@@ -25,16 +25,9 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Initialize valve control pin
 void Valve_Init(void);
-
-// Start valve
 void Valve_Start(void);
-
-// Stop valve
 void Valve_Stop(void);
-
-//Get valve state
 uint8_t Valve_GetState(void);
 
 #ifdef __cplusplus

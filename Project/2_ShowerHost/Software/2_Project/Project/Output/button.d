@@ -39,4 +39,3 @@
 .\output\button.o: ..\..\1_Library\LightSensor.h
 .\output\button.o: ..\..\1_Library\SignalOutput.h
 .\output\button.o: ..\..\1_Library\TemperatureHumiditySensor.h
-.\output\button.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

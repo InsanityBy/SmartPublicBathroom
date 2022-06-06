@@ -25,13 +25,8 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Temperature sensor initialize
 uint8_t TemperatureSensor_Init(void);
-
-// Start convert
 void Sensor_Convert(void);
-
-// Get temperature
 float Sensor_GetTemperature(void);
 
 #ifdef __cplusplus

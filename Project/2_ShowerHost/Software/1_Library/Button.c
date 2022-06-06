@@ -15,7 +15,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "UserLibrary.h"
 #include "Button.h"
-#include <stdio.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -187,8 +186,8 @@ void TIM3_IRQHandler(void)
             /***************************FUNCTION BEGIN****************************/
             ShowerHost_SetRepairState();
             ShowerHost_DisplayRepair();
-            Audio_Play(AudioRepair);
-            Delay_ms(10);
+            Audio_Play(Audio_Warn);
+            Delay_ms(500);
 
             /***************************FUNCTION END******************************/
         }
@@ -218,8 +217,8 @@ void TIM4_IRQHandler(void)
             {
                 ShowerHost_DisplayHelp();
             }
-            Audio_Play(AudioHelp);
-            Delay_ms(10);
+            Audio_Play(Audio_Warn);
+            Delay_ms(500);
 
             /***************************FUNCTION END******************************/
         }

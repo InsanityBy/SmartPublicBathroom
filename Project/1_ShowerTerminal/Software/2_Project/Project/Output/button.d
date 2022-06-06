@@ -41,4 +41,3 @@
 .\output\button.o: ..\..\1_Library\NFC.h
 .\output\button.o: ..\..\1_Library\TemperatureSensor.h
 .\output\button.o: ..\..\1_Library\Valve.h
-.\output\button.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

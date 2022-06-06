@@ -25,7 +25,6 @@ extern "C"
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Initialize button input pins
 void Button_Init(void);
 
 #ifdef __cplusplus

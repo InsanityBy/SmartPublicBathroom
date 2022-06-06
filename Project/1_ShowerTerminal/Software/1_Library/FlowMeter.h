@@ -24,22 +24,11 @@
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/  
-//Flow meter initialize 
 void FlowMeter_Init(void);
-
-//Start flow meter
 void FlowMeter_Start(void);
-
-//Stop flow meter
 void FlowMeter_Stop(void);
-
-//Clear flow meter
 void FlowMeter_Clear(void);
-
-//Get flow meter value(Unit: Liter)
 float FlowMeter_GetValueL(void);
-
-//Get flow meter value(Unit: r)
 uint32_t FlowMeter_GetValueR(void);
 
 #ifdef __cplusplus

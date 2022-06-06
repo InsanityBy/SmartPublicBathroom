@@ -23,32 +23,22 @@ extern "C"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
-#define AudioRemind 0x0000
-#define AudioWarn 0x0001
-#define AudioHelp 0x0002
-#define AudioRepair 0x0003
-#define AudioObjectLeft 0x0004
-#define AudioTimeUp 0x0005
-#define AudioWaterStop 0x0006
+#define Audio_Remind 0x0000
+#define Audio_Warn 0x0001
+#define Audio_SwipeCard 0x0002
+#define Audio_ReserveFirst 0x0003
+#define Audio_NoWater 0x0004
+#define Audio_ReserveToStop 0x0005
+#define Audio_ReserveStopped 0x0006
+#define Audio_ObjectLeft 0x0007
 
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-// Initialize audio device
 void Audio_Init(void);
-
-// Play sound, break into current play
 void Audio_Play(uint16_t address);
-
-// Play sound after current play
 void Audio_PlayAfter(uint16_t address);
-
-// Start loop mode
 void Audio_Loop(void);
-
-// Stop play
 void Audio_Stop(void);
-
-// Set volume
 void Audio_Volume(uint8_t volume);
 
 #ifdef __cplusplus

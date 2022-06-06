@@ -7,13 +7,11 @@
  * @brief   This file contains all the functions for communicate between shower
  *          host and shower terminal by WiFi.(For shower host.)
  * @note    Follow steps to use.
- *          - Use WiFi_Init(uint8_t *pTransmitData, uint8_t *pReceiveData) to
- *              initialize WiFi device.
- *          - Use WiFi_TransmitByte(uint8_t data) to send 1 byte data.
- *          - Use WiFi_TransmitString(uint16_t length, uint16_t nTime) to send
- *              string.
+ *          - Use WiFi_Init() to initialize WiFi device.
+ *          - Use WiFi_TransmitByte() to send 1 byte data.
+ *          - Use WiFi_TransmitString() to send string.
  *          - Use WiFi_ReceiveByte() to receive 1 byte data.
- *          - Use WiFi_ReceiveString(uint16_t nTime) to receive string.
+ *          - Use WiFi_ReceiveString() to receive string.
  ******************************************************************************
  */
 
@@ -51,8 +49,8 @@ uint8_t WiFiStringTransmit_Flag = 1;
 uint16_t WiFiDataLength = 0;
 
 // Received data buffer
-uint8_t *pWiFiReceivedDataRead;
 uint8_t WiFiReceivedDataBuffer[1024];
+uint8_t *pWiFiReceivedDataRead;
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -317,7 +315,8 @@ void USART6_IRQHandler(void)
     {
         WiFiDataLength = 0xFFFF - DMA_GetCurrDataCounter(DMA2_Stream1);
         DMA_Cmd(DMA2_Stream1, DISABLE);
-        uint8_t clear = USART_ReceiveData(USART6); // IDLE flag is cleared by reading SR and DR
+        uint16_t clear = USART6->SR;
+        clear = USART6->DR; // IDLE flag is cleared by reading SR and DR
     }
 }
 
@@ -354,4 +353,5 @@ void DMA2_Stream1_IRQHandler(void)
         DMA_Cmd(DMA2_Stream1, ENABLE);
     }
 }
+
 /***********************************END OF FILE********************************/

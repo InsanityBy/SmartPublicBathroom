@@ -55,19 +55,10 @@ extern "C"
 #define WiFi_SocketTCPServer "TCPS"
 
 /* Exported functions --------------------------------------------------------*/
-// Initialize WiFi device
 void WiFi_Init(uint8_t *pTransmitData, uint8_t *pReceiveData);
-
-// Transmit 1 byte data
 void WiFi_TransmitByte(uint8_t data);
-
-// Transmit word string
 void WiFi_TransmitString(uint16_t length, uint16_t nTime);
-
-// Receive 1 byte data
 uint8_t WiFi_ReceiveByte(void);
-
-// Receive word string
 uint16_t WiFi_ReceiveString(uint16_t nTime);
 
 #ifdef __cplusplus

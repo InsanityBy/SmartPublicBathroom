@@ -10,10 +10,8 @@
  *          - Use NFC_Init() to initialize device.
  *          - Use NFC_ReadData() to get data from card.
  *          - Use NFC_WriteData() to write data to card.
- *          - Use NFC_SetCheckCardNumber(uint32_t CardNumber, uint8_t operation)
- *              to set or check the card number.
- *          - Use NFC_SetCheckUserNumber(uint32_t UserNumber, uint8_t operation)
- *              to set or check the user number.
+ *          - Use NFC_SetCheckCardNumber() to set or check the card number.
+ *          - Use NFC_SetCheckUserNumber() to set or check the user number.
  ******************************************************************************
  */
 
@@ -839,7 +837,7 @@ void NFC_Init(void)
     GPIO_SetBits(NFC_NSS_PINGROUP, NFC_NSS_PIN);
     PCD_Reset();
     PCD_AntennaOff();
-    Delay_us(10);
+    Delay_ms(1);
     PCD_AntennaOn();
     M500PcdConfigISOType('A');
 }

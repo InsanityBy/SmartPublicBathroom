@@ -8,20 +8,18 @@
  *          (For shower host.)
  * @note    Follow steps to use.
  *          - Use Communicate_Init() to initialize device.
- *          - Use Communicate_ZigBeeConfig(uint8_t DeviceType, uint8_t DataFormat)
- *              to set the device type to coordinator, router or terminal; set
- *              the data format, like only data, head + data. NOTE: Set device ID
- *              by writing 1 byte ID to ZigBee_ID variable.
- *          - Use Communicate_ZigBeeTX(uint8_t ID, uint8_t *Data) to transmit data
- *              to ID device.
- *          - Use Communicate_ZigBeeRX(uint8_t *Data) to get the received data.
- *          - Use Communicate_WiFiConfig(uint8_t WorkMode, uint8_t WiFiMode, uint8_t
- *              SocketMode) to set the device work mode to AT command or transparent
- *              transmission; set the WiFi mode to STA or AP; set the socket mode
- *              to server or client using TCP or UDP. NOTE: Set WiFi name and password
- *              by writing to WiFi_Name and WiFi_Password variable.
- *          - Use Communicate_WiFiTX(uint8_t *Data) to transmit data to ID device.
- *          - Use Communicate_WiFiRX(uint8_t *Data) to get the received data.
+ *          - Use Communicate_ZigBeeConfig() to set the device type to coordinator,
+ *              router or terminal; set the data format, like only data, head +
+ *              data. NOTE: Set device ID by writing 1 byte ID to ZigBee_ID variable.
+ *          - Use Communicate_ZigBeeTX() to transmit data to ID device.
+ *          - Use Communicate_ZigBeeRX() to get the received data.
+ *          - Use Communicate_WiFiConfig() to set the device work mode to AT command
+ *              or transparent transmission; set the WiFi mode to STA or AP; set
+ *              the socket mode to server or client using TCP or UDP. NOTE: Set
+ *              WiFi name and password by writing to WiFi_Name and WiFi_Password
+ *              variable.
+ *          - Use Communicate_WiFiTX() to transmit data to ID device.
+ *          - Use Communicate_WiFiRX() to get the received data.
  ******************************************************************************
  */
 
@@ -38,32 +36,33 @@
 #define COMMUNICATE_ERR 0x01
 
 // Buffer max length
-#define COMMUNICATE_MAXLENGTH 1024
+#define COMMUNICATE_ZIGBEEMAXLENGTH 256
+#define COMMUNICATE_WIFIMAXLENGTH 1024
 
 // Timeout(ms)
 #define Communicate_TimeOut 100
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
-// Information of ZigBee device
+// Default information of ZigBee device
 uint8_t ZigBee_ID = 0x01;
 uint8_t ZigBee_Channel = 15;
 uint16_t ZigBee_PANID = 0x1234;
 uint16_t ZigBee_GroupID = 0x1111;
 
 // Name and password of WiFi
-char WiFi_Name[] = "\"insanity\"";
-char WiFi_Password[] = "\"20010120\"";
+const char WiFi_Name[] = "\"insanity\"";
+const char WiFi_Password[] = "\"20010120\"";
 
 // IP and port of TCP server
-char Socket_IP[] = "\"192.168.137.135\"";
-uint16_t Socket_Port = 10000;
+const char Socket_IP[] = "\"192.168.137.1\"";
+const uint16_t Socket_Port = 10000;
 
 // Buffer
-uint8_t ZigBee_TXBuffer[COMMUNICATE_MAXLENGTH];
-uint8_t ZigBee_RXBuffer[COMMUNICATE_MAXLENGTH];
-uint8_t WiFi_TXBuffer[COMMUNICATE_MAXLENGTH];
-uint8_t WiFi_RXBuffer[COMMUNICATE_MAXLENGTH];
+uint8_t ZigBee_TXBuffer[COMMUNICATE_ZIGBEEMAXLENGTH];
+uint8_t ZigBee_RXBuffer[COMMUNICATE_ZIGBEEMAXLENGTH];
+uint8_t WiFi_TXBuffer[COMMUNICATE_WIFIMAXLENGTH];
+uint8_t WiFi_RXBuffer[COMMUNICATE_WIFIMAXLENGTH];
 
 /* Private function prototypes -----------------------------------------------*/
 // ZigBee check acknowledge
@@ -75,7 +74,10 @@ uint8_t Communicate_WiFiCheck(void);
 /* Private functions ---------------------------------------------------------*/
 /**
  * @brief  Initialize ZigBee and WiFi device.
- * @param  None.
+ * @param  ID: ZigBee ID, 0 ~ 255.
+ * @param  Channel: ZigBee channel, 11 ~ 26.
+ * @param  PANID: ZigBee PANID, 0x0000 ~ 0xFFFF.
+ * @param  GroupID: ZigBee GroupID, 0x0000 ~ 0xFFFF.
  * @retval Status, COMMUNICATE_OK for success, COMMUNICATE_ERR for not.
  */
 uint8_t Communicate_Init(uint8_t ID, uint8_t Channel, uint16_t PANID, uint16_t GroupID)
@@ -84,8 +86,6 @@ uint8_t Communicate_Init(uint8_t ID, uint8_t Channel, uint16_t PANID, uint16_t G
     ZigBee_Channel = Channel;
     ZigBee_PANID = PANID;
     ZigBee_GroupID = GroupID;
-    
-    Delay_s(1);
 
     // Initialize ZigBee device
     ZigBee_Init(ZigBee_TXBuffer, ZigBee_RXBuffer);
@@ -97,7 +97,7 @@ uint8_t Communicate_Init(uint8_t ID, uint8_t Channel, uint16_t PANID, uint16_t G
     {
         return COMMUNICATE_ERR;
     }
-    Delay_s(3);
+    Delay_s(4);
 
     // ZigBee config
     if (Communicate_ZigBeeConfig(ZigBee_TypeCoordinator,
@@ -147,7 +147,7 @@ uint8_t Communicate_Init(uint8_t ID, uint8_t Channel, uint16_t PANID, uint16_t G
  */
 uint8_t Communicate_ZigBeeConfig(uint8_t DeviceType, uint8_t DataFormat, uint8_t ID)
 {
-    uint8_t Command[COMMUNICATE_MAXLENGTH];
+    uint8_t Command[COMMUNICATE_ZIGBEEMAXLENGTH];
 
     // Set device type
     sprintf(Command, "%s%d\r\n", ZigBee_Type, DeviceType);
@@ -210,15 +210,7 @@ uint8_t Communicate_ZigBeeConfig(uint8_t DeviceType, uint8_t DataFormat, uint8_t
     {
         return COMMUNICATE_ERR;
     }
-    Delay_s(3);
-
-    // Status
-    strcpy(ZigBee_TXBuffer, "AT+ZIGB_STATUS=?\r\n");
-    ZigBee_TransmitString(strlen(ZigBee_TXBuffer), Communicate_TimeOut);
-    if (Communicate_ZigBeeCheck() != COMMUNICATE_OK)
-    {
-        return COMMUNICATE_ERR;
-    }
+    Delay_s(5);
 
     return COMMUNICATE_OK;
 }
@@ -233,7 +225,7 @@ uint8_t Communicate_ZigBeeConfig(uint8_t DeviceType, uint8_t DataFormat, uint8_t
  */
 uint8_t Communicate_ZigBeeTX(uint8_t DeviceType, uint8_t ID, uint8_t *Data, uint16_t Length)
 {
-    uint8_t Command[COMMUNICATE_MAXLENGTH];
+    uint8_t Command[COMMUNICATE_ZIGBEEMAXLENGTH];
 
     // Set destination ID
     sprintf(Command, "%s%02X%02X\r\n", ZigBee_Addressing, DeviceType, ID);
@@ -274,6 +266,10 @@ uint16_t Communicate_ZigBeeRX(uint8_t *Data)
     {
         return length;
     }
+    if (length > COMMUNICATE_ZIGBEEMAXLENGTH)
+    {
+        length = COMMUNICATE_ZIGBEEMAXLENGTH;
+    }
 
     memcpy(Data, ZigBee_RXBuffer, length);
     return length;
@@ -286,8 +282,8 @@ uint16_t Communicate_ZigBeeRX(uint8_t *Data)
  */
 uint8_t Communicate_ZigBeeCheck(void)
 {
-    uint8_t ReceivedData[COMMUNICATE_MAXLENGTH];
-    for (int i = 0; i < 5; i++)
+    uint8_t ReceivedData[COMMUNICATE_ZIGBEEMAXLENGTH];
+    for (int i = 0; i < 50; i++)
     {
         if (Communicate_ZigBeeRX(ReceivedData) == 0)
         {
@@ -297,7 +293,7 @@ uint8_t Communicate_ZigBeeCheck(void)
         {
             return COMMUNICATE_OK;
         }
-        Delay_ms(1);
+        Delay_ms(2);
     }
     return COMMUNICATE_ERR;
 }
@@ -310,7 +306,7 @@ uint8_t Communicate_ZigBeeCheck(void)
  */
 uint8_t Communicate_WiFiConfig(uint8_t *WiFiMode, uint8_t *SocketMode)
 {
-    uint8_t Command[COMMUNICATE_MAXLENGTH];
+    uint8_t Command[COMMUNICATE_WIFIMAXLENGTH];
 
     // Close command echo
     strcpy(WiFi_TXBuffer, WiFi_EchoDisable);
@@ -377,7 +373,7 @@ uint8_t Communicate_WiFiConfig(uint8_t *WiFiMode, uint8_t *SocketMode)
     strcpy(WiFi_TXBuffer, WiFi_DeviceReset);
     WiFi_TransmitString(strlen(WiFi_TXBuffer), Communicate_TimeOut);
     Communicate_WiFiCheck();
-    Delay_ms(5);
+    Delay_s(5);
 
     return COMMUNICATE_OK;
 }
@@ -408,6 +404,10 @@ uint16_t Communicate_WiFiRX(uint8_t *Data)
     {
         return length;
     }
+    if (length > COMMUNICATE_WIFIMAXLENGTH)
+    {
+        length = COMMUNICATE_WIFIMAXLENGTH;
+    }
 
     memcpy(Data, WiFi_RXBuffer, length);
     return length;
@@ -420,8 +420,8 @@ uint16_t Communicate_WiFiRX(uint8_t *Data)
  */
 uint8_t Communicate_WiFiCheck(void)
 {
-    uint8_t ReceivedData[COMMUNICATE_MAXLENGTH];
-    for (int i = 0; i < 5; i++)
+    uint8_t ReceivedData[COMMUNICATE_WIFIMAXLENGTH];
+    for (int i = 0; i < 50; i++)
     {
         if (Communicate_WiFiRX(ReceivedData) == 0)
         {
@@ -431,7 +431,7 @@ uint8_t Communicate_WiFiCheck(void)
         {
             return COMMUNICATE_OK;
         }
-        Delay_ms(1);
+        Delay_ms(2);
     }
     return COMMUNICATE_ERR;
 }

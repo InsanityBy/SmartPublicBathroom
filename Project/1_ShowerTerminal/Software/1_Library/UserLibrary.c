@@ -16,7 +16,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
-#define MAXZIGBEELENGTH 1024
+#define MAXZIGBEELENGTH 256
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
@@ -34,9 +34,19 @@ uint8_t ACK[MAXZIGBEELENGTH];
 uint8_t NAK[MAXZIGBEELENGTH];
 uint16_t InfraredObject_Threshold = 2048;
 uint8_t InfraredHuman_Threshold = 8;
+uint8_t QueryFail = 0;
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
+/**
+ * @brief  Conver uint32 to uint8.
+ * @param  Data: Uint32 data.
+ * @param  Data0: Uint8 data0.
+ * @param  Data1: Uint8 data1.
+ * @param  Data2: Uint8 data2.
+ * @param  Data3: Uint8 data3.
+ * @retval None.
+ */
 void Uint32toInt8(uint32_t Data, uint8_t *Data0, uint8_t *Data1, uint8_t *Data2, uint8_t *Data3)
 {
     *Data0 = Data & 0x000000FF;
@@ -48,6 +58,14 @@ void Uint32toInt8(uint32_t Data, uint8_t *Data0, uint8_t *Data1, uint8_t *Data2,
     *Data3 = Data & 0x000000FF;
 }
 
+/**
+ * @brief  Conver uint8 to uint32.
+ * @param  Data0: Uint8 data0.
+ * @param  Data1: Uint8 data1.
+ * @param  Data2: Uint8 data2.
+ * @param  Data3: Uint8 data3.
+ * @retval Uint32 data.
+ */
 uint32_t Int8toUint32(uint8_t Data0, uint8_t Data1, uint8_t Data2, uint8_t Data3)
 {
     uint32_t temp = 0;
@@ -61,6 +79,15 @@ uint32_t Int8toUint32(uint8_t Data0, uint8_t Data1, uint8_t Data2, uint8_t Data3
     return temp;
 }
 
+/**
+ * @brief  Conver int32 to uint8.
+ * @param  Data: Int32 data.
+ * @param  Data0: Uint8 data0.
+ * @param  Data1: Uint8 data1.
+ * @param  Data2: Uint8 data2.
+ * @param  Data3: Uint8 data3.
+ * @retval None.
+ */
 void Int32toInt8(int32_t Data, uint8_t *Data0, uint8_t *Data1, uint8_t *Data2, uint8_t *Data3)
 {
     *Data0 = Data & 0x000000FF;
@@ -72,6 +99,14 @@ void Int32toInt8(int32_t Data, uint8_t *Data0, uint8_t *Data1, uint8_t *Data2, u
     *Data3 = Data & 0x000000FF;
 }
 
+/**
+ * @brief  Conver uint8 to int32.
+ * @param  Data0: Uint8 data0.
+ * @param  Data1: Uint8 data1.
+ * @param  Data2: Uint8 data2.
+ * @param  Data3: Uint8 data3.
+ * @retval Int32 data.
+ */
 int32_t Int8toInt32(uint8_t Data0, uint8_t Data1, uint8_t Data2, uint8_t Data3)
 {
     int32_t temp = 0;
@@ -101,7 +136,7 @@ void ShowerTerminal_InitInformation(void)
     Terminal_Information.WaterTemperature = 0;
     Terminal_Information.WaterFlow = 0;
     Terminal_Information.AccountBalance = 0;
-    Terminal_Information.TerminalState = 0xC0;
+    Terminal_Information.TerminalState = 0x00;
 }
 
 /**
@@ -111,66 +146,99 @@ void ShowerTerminal_InitInformation(void)
  */
 void ShowerTerminal_Init(void)
 {
-    // Wait supply stable
+    uint8_t Content[64];
+
+    // Wait poewr supply stable
     Delay_ms(10);
-
-    // Initialize date and time recoder
-    Information_InitializeRTC();
-
-    // Initialize information
-    ShowerTerminal_InitInformation();
-
-    // Initialize audio
-    // Audio_Init();
-    Audio_Volume(15);
-
-    // Initialize buttons
-    Button_Init();
-
-    // Initialize communicate
-    Communicate_Init(ShowerTerminalSerial, Communicate_ZigBeeChannel,
-                     Communicate_ZigBeePANID, Communicate_ZigBeeGroupID);
 
     // Initialize display
     Display_Init();
     Display_Clear();
 
+    // Initialize date and time recoder
+    sprintf(Content, "RTC Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
+    Information_InitializeRTC();
+
+    // Initialize information
+    Display_Clear();
+    sprintf(Content, "Setting information...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
+    ShowerTerminal_InitInformation();
+
+    // Initialize audio
+    Display_Clear();
+    sprintf(Content, "Audio Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
+    // Audio_Init();
+    Audio_Volume(15);
+
+    // Initialize buttons
+    Display_Clear();
+    sprintf(Content, "Button Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
+    Button_Init();
+
+    // Initialize communicate
+    Display_Clear();
+    sprintf(Content, "Communication Device Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
+    Communicate_Init(ShowerTerminalSerial, Communicate_ZigBeeChannel,
+                     Communicate_ZigBeePANID, Communicate_ZigBeeGroupID);
+
     // Initialize flow meter
+    Display_Clear();
+    sprintf(Content, "Flow Meter Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
     FlowMeter_Init();
     FlowMeter_Clear();
 
     // Initialize infrared human sensor
+    Display_Clear();
+    sprintf(Content, "Infrared Sensor Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
     InfraredHuman_Init(InfraredHuman_Threshold);
 
     // Initialize infrared object sensor
     InfraredObject_Init(InfraredObject_Threshold);
 
     // Initialize NFC reader
+    Display_Clear();
+    sprintf(Content, "NFC Reader Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
     NFC_Init();
 
     // Initialize temperature sensor
+    Display_Clear();
+    sprintf(Content, "Temperature Sensor Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
     TemperatureSensor_Init();
 
     // Initialize valve control
+    Display_Clear();
+    sprintf(Content, "Valve Controller Initializing...");
+    Display_ShowString(0, 0, Content, 84, FONTSIZE_8);
     Valve_Init();
     Valve_Stop();
 
-    Delay_s(2);
-
     // Display initialization finished
-    uint8_t Content[] = {"Initialized!"};
-    Display_ShowString(16, 1, Content, 0xFF, FONTSIZE_16);
-    Delay_s(1);
     Display_Clear();
+    sprintf(Content, "Initialized!");
+    Display_ShowString(16, 1, Content, 84, FONTSIZE_16);
+    Delay_s(5);
 }
 
-
+/**
+ * @brief  Check acknowledge from destination.
+ * @param  None.
+ * @retval Status, 1 for success, 0 for failure.
+ */
 uint8_t ShowerTerminal_ZigBeeCheck(void)
 {
     uint8_t ReceivedData[MAXZIGBEELENGTH];
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 50; i++)
     {
-        Delay_ms(1);
+        Delay_ms(2);
         if (Communicate_ZigBeeRX(ReceivedData) == 0)
         {
             continue;
@@ -195,8 +263,14 @@ uint8_t ShowerTerminal_ZigBeeCheck(void)
     return 0;
 }
 
-void ShowerTerminal_SendZigBeeData(uint8_t Timeout)
+/**
+ * @brief  Send information of terminal to host by ZigBee.
+ * @param  Timeout: Set timeout in seconds.
+ * @retval Status, 1 for success, 0 for failure.
+ */
+uint8_t ShowerTerminal_SendZigBeeData(uint8_t Timeout)
 {
+    uint8_t status = 0;
     uint8_t TransmitData[MAXZIGBEELENGTH];
     uint32_t StartTime = Information_GetTimeStamp();
 
@@ -207,34 +281,37 @@ void ShowerTerminal_SendZigBeeData(uint8_t Timeout)
     Uint32toInt8(Terminal_Information.UserSerial, &TransmitData[6], &TransmitData[7],
                  &TransmitData[8], &TransmitData[9]);
     TransmitData[10] = Terminal_Information.TerminalState;
-    Int32toInt8((int32_t)Terminal_Information.WaterTemperature * 100, &TransmitData[11],
+    Int32toInt8((int32_t)(Terminal_Information.WaterTemperature * 100.0), &TransmitData[11],
                 &TransmitData[12], &TransmitData[13], &TransmitData[14]);
-    Int32toInt8((int32_t)Terminal_Information.WaterFlow * 100, &TransmitData[15],
+    Int32toInt8((int32_t)(Terminal_Information.WaterFlow * 100.0), &TransmitData[15],
                 &TransmitData[16], &TransmitData[17], &TransmitData[18]);
-    Int32toInt8((int32_t)Terminal_Information.AccountBalance * 100, &TransmitData[19],
+    Int32toInt8((int32_t)(Terminal_Information.AccountBalance * 100.0), &TransmitData[19],
                 &TransmitData[20], &TransmitData[21], &TransmitData[22]);
     TransmitData[23] = '$';
 
     do
     {
-        Delay_ms(300);
+        Delay_ms(100);
         Communicate_ZigBeeTX(ZigBee_TypeCoordinator, FatherHostSerial, TransmitData, 24);
+        status = ShowerTerminal_ZigBeeCheck();
         if ((Information_GetTimeStamp() - StartTime) > Timeout) // Over time
-            return;
-    } while (ShowerTerminal_ZigBeeCheck() == 0);    // Check ACK
+            return status;
+    } while (status == 0); // Check ACK
+    return status;
 }
 
 /**
  * @brief  Get data from host and resolve.
- * @param  None.
- * @retval None.
+ * @param  Timeout: Set timeout in seconds.
+ * @retval Status, 1 for success, 0 for failure.
  */
-void ShowerTerminal_GetZigBeeData(uint8_t Timeout)
+uint8_t ShowerTerminal_GetZigBeeData(uint8_t Timeout)
 {
     uint8_t ReceivedData[MAXZIGBEELENGTH];
     uint16_t length = 0;
     uint8_t correct = 0;
     uint32_t StartTime = Information_GetTimeStamp();
+
     do
     {
         length = Communicate_ZigBeeRX(ReceivedData);
@@ -242,36 +319,40 @@ void ShowerTerminal_GetZigBeeData(uint8_t Timeout)
         {
             if ((ReceivedData[0] == '$') && (ReceivedData[31] == '$')) // Whole frame
             {
-                Terminal_Information.UserSerial = Int8toUint32(ReceivedData[2], ReceivedData[3], ReceivedData[4], ReceivedData[5]);
-                Terminal_Information.TerminalState = ReceivedData[6];
-                Terminal_Information.AccountBalance = (float)Int8toInt32(ReceivedData[7], ReceivedData[8], ReceivedData[9], ReceivedData[10]) / 100;
+                if ((ReceivedData[1] == ShowerTerminalSerial)) // Check address
+                {
+                    Terminal_Information.UserSerial = Int8toUint32(ReceivedData[2], ReceivedData[3], ReceivedData[4], ReceivedData[5]);
+                    Terminal_Information.TerminalState = ReceivedData[6];
+                    Terminal_Information.AccountBalance = (float)Int8toInt32(ReceivedData[7], ReceivedData[8], ReceivedData[9], ReceivedData[10]) / 100.0;
 
-                Terminal_Information.CurrentDate.RTC_Year = ReceivedData[11];
-                Terminal_Information.CurrentDate.RTC_Month = ReceivedData[12];
-                Terminal_Information.CurrentDate.RTC_Date = ReceivedData[13];
-                Terminal_Information.CurrentDate.RTC_WeekDay = ReceivedData[14];
+                    Terminal_Information.CurrentDate.RTC_Year = ReceivedData[11];
+                    Terminal_Information.CurrentDate.RTC_Month = ReceivedData[12];
+                    Terminal_Information.CurrentDate.RTC_Date = ReceivedData[13];
+                    Terminal_Information.CurrentDate.RTC_WeekDay = ReceivedData[14];
 
-                Terminal_Information.CurrentTime.RTC_Hours = ReceivedData[15];
-                Terminal_Information.CurrentTime.RTC_Minutes = ReceivedData[16];
-                Terminal_Information.CurrentTime.RTC_Seconds = ReceivedData[17];
-                Terminal_Information.CurrentTime.RTC_H12 = ReceivedData[18];
+                    Terminal_Information.CurrentTime.RTC_Hours = ReceivedData[15];
+                    Terminal_Information.CurrentTime.RTC_Minutes = ReceivedData[16];
+                    Terminal_Information.CurrentTime.RTC_Seconds = ReceivedData[17];
+                    Terminal_Information.CurrentTime.RTC_H12 = ReceivedData[18];
 
-                Terminal_Information.ReserveStartTime.RTC_Hours = ReceivedData[19];
-                Terminal_Information.ReserveStartTime.RTC_Minutes = ReceivedData[20];
-                Terminal_Information.ReserveStartTime.RTC_Seconds = ReceivedData[21];
-                Terminal_Information.ReserveStartTime.RTC_H12 = ReceivedData[22];
+                    Terminal_Information.ReserveStartTime.RTC_Hours = ReceivedData[19];
+                    Terminal_Information.ReserveStartTime.RTC_Minutes = ReceivedData[20];
+                    Terminal_Information.ReserveStartTime.RTC_Seconds = ReceivedData[21];
+                    Terminal_Information.ReserveStartTime.RTC_H12 = ReceivedData[22];
 
-                Terminal_Information.ReserveStopTime.RTC_Hours = ReceivedData[23];
-                Terminal_Information.ReserveStopTime.RTC_Minutes = ReceivedData[24];
-                Terminal_Information.ReserveStopTime.RTC_Seconds = ReceivedData[25];
-                Terminal_Information.ReserveStopTime.RTC_H12 = ReceivedData[26];
+                    Terminal_Information.ReserveStopTime.RTC_Hours = ReceivedData[23];
+                    Terminal_Information.ReserveStopTime.RTC_Minutes = ReceivedData[24];
+                    Terminal_Information.ReserveStopTime.RTC_Seconds = ReceivedData[25];
+                    Terminal_Information.ReserveStopTime.RTC_H12 = ReceivedData[26];
 
-                Terminal_Information.ReservedUser = Int8toUint32(ReceivedData[27], ReceivedData[28], ReceivedData[29], ReceivedData[30]);
+                    Terminal_Information.ReservedUser = Int8toUint32(ReceivedData[27], ReceivedData[28], ReceivedData[29], ReceivedData[30]);
 
-                sprintf(ACK, "$%cA$", ShowerTerminalSerial);
-                Communicate_ZigBeeTX(ZigBee_TypeCoordinator, FatherHostSerial, ACK, 4);
-                correct = 1;
-                ShowerTerminal_SetDevice();
+                    // ACK
+                    sprintf(ACK, "$%cA$", ShowerTerminalSerial);
+                    Communicate_ZigBeeTX(ZigBee_TypeCoordinator, FatherHostSerial, ACK, 4);
+                    ShowerTerminal_SetDevice();
+                    correct = 1;
+                }
             }
             else // Received but error
             {
@@ -280,16 +361,28 @@ void ShowerTerminal_GetZigBeeData(uint8_t Timeout)
             }
         }
         if ((Information_GetTimeStamp() - StartTime) > Timeout) // Over time
-            return;
+            return correct;
     } while ((length == 0) || (correct != 1));
+
+    return correct;
 }
 
+/**
+ * @brief  Set terminal according to information.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_SetDevice(void)
 {
     // Date & time
     Information_SetDateTime(&Terminal_Information.CurrentDate, &Terminal_Information.CurrentTime);
 }
 
+/**
+ * @brief  Check whether there are objects left.
+ * @param  None.
+ * @retval Status, 1 for left, 0 for not.
+ */
 uint8_t ShowerTerminal_ObjectLeftCheck(void)
 {
     if ((Terminal_Information.TerminalState & ShowerTerminal_ObjectLeft) == ShowerTerminal_ObjectLeft)
@@ -302,6 +395,11 @@ uint8_t ShowerTerminal_ObjectLeftCheck(void)
     }
 }
 
+/**
+ * @brief  Check whether need repair.
+ * @param  None.
+ * @retval Status, 1 for need, 0 for not.
+ */
 uint8_t ShowerTerminal_GetRepairState(void)
 {
     if ((Terminal_Information.TerminalState & ShowerTerminal_Repair) == ShowerTerminal_Repair)
@@ -314,6 +412,11 @@ uint8_t ShowerTerminal_GetRepairState(void)
     }
 }
 
+/**
+ * @brief  Check whether need help.
+ * @param  None.
+ * @retval Status, 1 for need, 0 for not.
+ */
 uint8_t ShowerTerminal_GetHelpState(void)
 {
     if ((Terminal_Information.TerminalState & ShowerTerminal_Help) == ShowerTerminal_Help)
@@ -326,6 +429,11 @@ uint8_t ShowerTerminal_GetHelpState(void)
     }
 }
 
+/**
+ * @brief  Check whether there is human.
+ * @param  None.
+ * @retval Status, 1 for human presence, 0 for not.
+ */
 uint8_t ShowerTerminal_HumanDetect(void)
 {
     if (InfraredHuman_GetState())
@@ -338,6 +446,11 @@ uint8_t ShowerTerminal_HumanDetect(void)
     }
 }
 
+/**
+ * @brief  Check whether there is object.
+ * @param  None.
+ * @retval Status, 1 for object presence, 0 for not.
+ */
 uint8_t ShowerTerminal_ObjectDetect(void)
 {
     if (InfraredObject_GetState())
@@ -350,6 +463,11 @@ uint8_t ShowerTerminal_ObjectDetect(void)
     }
 }
 
+/**
+ * @brief  Check whether there is card.
+ * @param  None.
+ * @retval Status, 1 for card presence, 0 for not.
+ */
 uint8_t ShowerTerminal_CardDetect(void)
 {
     uint8_t key[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
@@ -364,6 +482,11 @@ uint8_t ShowerTerminal_CardDetect(void)
     }
 }
 
+/**
+ * @brief  Check whether it is the first time swipe card.
+ * @param  None.
+ * @retval Status, 1 for fisrt read, 0 for not.
+ */
 uint8_t ShowerTerminal_CardFirstRead(void)
 {
     if (CardCurrentState == 0)
@@ -377,6 +500,11 @@ uint8_t ShowerTerminal_CardFirstRead(void)
     }
 }
 
+/**
+ * @brief  Check whether the card is taken.
+ * @param  None.
+ * @retval Status, 1 for card taken, 0 for not.
+ */
 uint8_t ShowerTerminal_CardTake(void)
 {
     if (CardCurrentState == 1)
@@ -390,6 +518,11 @@ uint8_t ShowerTerminal_CardTake(void)
     }
 }
 
+/**
+ * @brief  Check whether the user has reservation.
+ * @param  None.
+ * @retval Status, 1 for have, 0 for not.
+ */
 uint8_t ShowerTerminal_ReservationCheck(void)
 {
     // Reserved and current user matches
@@ -405,6 +538,11 @@ uint8_t ShowerTerminal_ReservationCheck(void)
     }
 }
 
+/**
+ * @brief  Process the situation: objects are left.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_TakeObjectProcess(void)
 {
     if (ShowerTerminal_CardDetect() || ShowerTerminal_ObjectDetect())
@@ -418,20 +556,53 @@ void ShowerTerminal_TakeObjectProcess(void)
     }
 }
 
+/**
+ * @brief  Set help state to terminal state.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_SetHelpState(void)
 {
     Terminal_Information.TerminalState = Terminal_Information.TerminalState | ShowerTerminal_Help;
 }
 
+/**
+ * @brief  Set repair state to terminal state.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_SetRepairState(void)
 {
     Terminal_Information.TerminalState = Terminal_Information.TerminalState | ShowerTerminal_Repair;
 }
 
+/**
+ * @brief  Process the situation: first swipe card fail.
+ * @param  None.
+ * @retval None.
+ */
+void ShowerTerminal_CardFirstReadFailProcess(void)
+{
+    // Audio and display
+    Audio_Play(Audio_Warn);
+    Delay_ms(10);
+    uint8_t Content[16] = "Query Fail!";
+    ShowerTerminal_DisplayContent(Content);
+    Delay_s(2);
+    sprintf(Content, "Swipe Again!");
+    ShowerTerminal_DisplayContent(Content);
+    Delay_s(2);
+}
+
+/**
+ * @brief  Process the situation: first swipe card.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_CardFirstReadProcess(void)
 {
     // Audio and display
-    Audio_Play(AudioRemind);
+    Audio_Play(Audio_Remind);
     Delay_ms(10);
     uint8_t Content[] = "Wait...";
     ShowerTerminal_DisplayContent(Content);
@@ -442,20 +613,39 @@ void ShowerTerminal_CardFirstReadProcess(void)
     Terminal_Information.TerminalState |= ShowerTerminal_FirstReadCard; // Set flag
 
     // Query data
-    ShowerTerminal_SendZigBeeData(0xFF);
-    ShowerTerminal_GetZigBeeData(0xFF);
-    ShowerTerminal_SetDevice();
-
-    // Clear flag
-    Terminal_Information.TerminalState &= (~ShowerTerminal_FirstReadCard);
+    uint8_t status;
+    status = ShowerTerminal_SendZigBeeData(5); // 5s to ensure correct send
+    if (status == 1)
+    {
+        status = ShowerTerminal_GetZigBeeData(5); // 5s to ensure correct receive
+        if (status == 1)
+        {
+            Terminal_Information.TerminalState &= (~ShowerTerminal_FirstReadCard); // Clear flag
+        }
+        else
+        {
+            Terminal_Information.TerminalState &= (~ShowerTerminal_FirstReadCard); // Clear flag
+            QueryFail = 1;
+            ShowerTerminal_CardFirstReadFailProcess();
+            return;
+        }
+    }
+    else
+    {
+        Terminal_Information.TerminalState &= (~ShowerTerminal_FirstReadCard); // Clear flag
+        QueryFail = 1;
+        ShowerTerminal_CardFirstReadFailProcess();
+        return;
+    }
 
     // Preparation
+    QueryFail = 0;
     if (ShowerTerminal_ReservationCheck())
     {
         // Valve on
         if (Valve_GetState() == 0)
         {
-            Audio_Play(AudioRemind);
+            Audio_Play(Audio_Remind);
             Delay_ms(10);
         }
         Valve_Start();
@@ -466,8 +656,19 @@ void ShowerTerminal_CardFirstReadProcess(void)
     }
 }
 
+/**
+ * @brief  Process the situation: in use.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_InUseProcess(void)
 {
+    // Query fail
+    if (QueryFail == 1)
+    {
+        return;
+    }
+
     // Set flag
     Terminal_Information.TerminalState |= ShowerTerminal_InUse;
 
@@ -499,21 +700,31 @@ void ShowerTerminal_InUseProcess(void)
     Delay_s(1);
 }
 
+/**
+ * @brief  Process the situation: in use and water supply stopped.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_WaterStopRemind(void)
 {
     uint8_t Content[17];
     if ((Terminal_Information.TerminalState & ShowerTerminal_WaterSupply) != ShowerTerminal_WaterSupply)
     {
-        Audio_Play(AudioWarn);
+        Audio_Play(Audio_NoWater);
         sprintf(Content, "Water Stop!");
         ShowerTerminal_DisplayContent(Content);
-        Delay_s(3);
+        Delay_s(5);
     }
 }
 
+/**
+ * @brief  Process the situation: in use and near reservation time ends.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_NearReservationEnd(void)
 {
-    static uint8_t cnt = 0;
+    static uint16_t cnt = 0;
     uint8_t Content[17];
     uint32_t ReserveEndTime = Terminal_Information.ReserveStopTime.RTC_Hours * 3600 +
                               Terminal_Information.ReserveStopTime.RTC_Minutes * 60 +
@@ -521,32 +732,42 @@ void ShowerTerminal_NearReservationEnd(void)
     uint32_t CurrentTime = Terminal_Information.CurrentTime.RTC_Hours * 3600 +
                            Terminal_Information.CurrentTime.RTC_Minutes * 60 +
                            Terminal_Information.CurrentTime.RTC_Seconds;
-    if (((cnt % 5) == 0) && (CurrentTime >= ReserveEndTime))
+    if (((cnt % 15) == 0) && (CurrentTime >= ReserveEndTime))
     {
-        Audio_Play(AudioWarn);
+        Audio_Play(Audio_ReserveStopped);
         sprintf(Content, "Time Up!");
         ShowerTerminal_DisplayContent(Content);
-        Delay_s(3);
+        Delay_s(2);
     }
-    if (((cnt % 15) == 0) && (ReserveEndTime - CurrentTime) <= 300)
+    if (((cnt % 45) == 0) && (ReserveEndTime - CurrentTime) <= 300)
     {
-        Audio_Play(AudioWarn);
+        Audio_Play(Audio_ReserveToStop);
         sprintf(Content, "Time Up Soon!");
         ShowerTerminal_DisplayContent(Content);
-        Delay_s(3);
+        Delay_s(2);
     }
     cnt++;
 }
 
+/**
+ * @brief  Process the situation: no reservation.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_NoReservationProcess(void)
 {
     uint8_t Content[17];
-    Audio_Play(AudioRemind);
+    Audio_Play(Audio_ReserveFirst);
     sprintf(Content, "No Appointment!");
     ShowerTerminal_DisplayContent(Content);
-    Delay_s(1);
+    Delay_s(2);
 }
 
+/**
+ * @brief  Process the situation: card taken.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_CardTakeProcess(void)
 {
     uint8_t Content[17];
@@ -573,7 +794,7 @@ void ShowerTerminal_CardTakeProcess(void)
     // Valve stop
     if (Valve_GetState() == 1)
     {
-        Audio_Play(AudioRemind);
+        Audio_Play(Audio_Remind);
         Delay_ms(10);
     }
     Valve_Stop();
@@ -584,9 +805,8 @@ void ShowerTerminal_CardTakeProcess(void)
 
     // Upload
     Terminal_Information.TerminalState |= ShowerTerminal_CardOff;
-    ShowerTerminal_SendZigBeeData(0xFF);
-    ShowerTerminal_GetZigBeeData(0xFF);
-    ShowerTerminal_SetDevice();
+    ShowerTerminal_SendZigBeeData(0xFF); // 256s to ensure success
+    ShowerTerminal_GetZigBeeData(2);
     Terminal_Information.TerminalState &= (~ShowerTerminal_CardOff);
 
     // Clear flag
@@ -602,27 +822,42 @@ void ShowerTerminal_CardTakeProcess(void)
     Delay_s(1);
 }
 
+/**
+ * @brief  Process the situation: human presence without swiping card.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_NotUseProcess(void)
 {
     uint8_t Content[17];
-    Audio_Play(AudioRemind);
+    Audio_Play(Audio_SwipeCard);
     sprintf(Content, "Swipe Card!");
     ShowerTerminal_DisplayContent(Content);
-    Delay_s(1);
+    Delay_s(3);
 }
 
+/**
+ * @brief  Process the situation: objects are left.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_CardObjectLeft(void)
 {
     // Set flag
     Terminal_Information.TerminalState |= ShowerTerminal_ObjectLeft;
 
     uint8_t Content[17];
-    Audio_Play(AudioWarn);
+    Audio_Play(Audio_ObjectLeft);
     sprintf(Content, "Object Left!");
     ShowerTerminal_DisplayContent(Content);
     Delay_s(1);
 }
 
+/**
+ * @brief  Process the situation: idle.
+ * @param  None.
+ * @retval None.
+ */
 void ShowerTerminal_IdleState(void)
 {
     uint8_t Content[17];
@@ -638,6 +873,11 @@ void ShowerTerminal_IdleState(void)
     Delay_s(1);
 }
 
+/**
+ * @brief  Display main contens with other information, like time, serial state...
+ * @param  MainContent: Content to display.
+ * @retval None.
+ */
 void ShowerTerminal_DisplayContent(uint8_t *MainContent)
 {
     uint8_t Content[22];
